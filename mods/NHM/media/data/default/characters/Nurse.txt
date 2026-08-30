@@ -1,7 +1,0 @@
-#name Enfermera|Enfermera
-
-#desc Nombre: Enfermera
-#desc_append Edad: 22-25 años
-#desc_append Una joven enfermera que es asistente de Demiurgo. Aparentemente está fuertemente influenciada por él.
-#desc_append Se siente su constante ansiedad por su temblorosa voz.
-#exit

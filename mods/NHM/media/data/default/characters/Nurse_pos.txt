@@ -1,2 +1,0 @@
-#npc_create Enfermera|NPC/Nurse.png|11559,7544,0
-#exit

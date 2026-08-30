@@ -1,7 +1,0 @@
-#name Silk|Silk
-
-#desc Nombre: Silk
-#desc_append Edad: Desconocida
-#desc_append Hermosa jovencita. Tiene buena experiencia en Peletería, enseña a los supervivientes el oficio en el Oasis.
-#desc_append Extremadamente amigable con todos.
-#exit

@@ -1,7 +1,0 @@
-#name Sabueso|Sabueso
-
-#desc Nombre: Sabueso
-#desc_append Edad: Desconocida
-#desc_append Cazador experimentado, una vez perdió un ojo en el pasado, las circunstancias no son reveladas. Enseña a los sobrevivientes un oficio en el Oasis.
-#desc_append Amable y paciente con los novatos.
-#exit

@@ -1,6 +1,0 @@
-*Demiurge_q1_t1
-#name Encuentra armarios en el primer piso
-*Demiurge_q1_t2
-#name Buscar archivo de almacenamiento
-*Demiurge_q1_t3
-#name Regreso a Demiurgo

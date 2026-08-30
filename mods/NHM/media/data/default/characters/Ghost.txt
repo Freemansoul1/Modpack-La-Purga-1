@@ -1,7 +1,0 @@
-#name Ghost|Ghost
-
-#desc Nombre: Fantasma
-#desc_append Edad: Desconocida
-#desc_append Un hombre extraño con ropa que oculta completamente su rostro y cuerpo. No está claro si es hombre o mujer.
-#desc_append Probablemente tonto, o simplemente no habla...
-#exit

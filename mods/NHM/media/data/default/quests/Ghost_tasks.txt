@@ -1,8 +1,0 @@
-*ghost_q1_t1
-#name Llegar a la Montaña Negra
-*ghost_q1_t2
-#name Baja al Búnquer
-*ghost_q1_t3
-#name Encuentra la entrada
-*ghost_q1_t4
-#name Deja el lugar

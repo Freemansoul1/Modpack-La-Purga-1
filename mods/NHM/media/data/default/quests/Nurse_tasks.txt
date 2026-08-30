@@ -1,6 +1,0 @@
-*enfermera_q1_t1
-#name Encuentra una computadora en la oficina de Demiurgo
-*enfermera_q1_t2
-#name Cargar datos en disquete
-*enfermera_q1_t3
-#name Volver con la hermana

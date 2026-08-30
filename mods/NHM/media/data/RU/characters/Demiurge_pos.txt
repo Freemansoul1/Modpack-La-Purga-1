@@ -1,2 +1,0 @@
-#npc_create Demiurge|NPC/Demiurge.png|11539,7557,1
-#exit

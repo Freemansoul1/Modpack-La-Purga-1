@@ -1,7 +1,0 @@
-#name Farmacéutica|Farmacéutica
-
-#desc Nombre: Farmacéutica
-#desc_append Edad: Alrededor de los 30
-#desc_append Una gran profesional en su campo. Es la encargada de los medicamentos del Purgatorio.
-#desc_append No está claro quién y cómo repone las existencias de medicamentos en el Purgatorio.
-#exit

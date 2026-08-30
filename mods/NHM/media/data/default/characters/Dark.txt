@@ -1,6 +1,0 @@
-#name Dark|Dark
-
-#desc Nombre: Charles Dark
-#desc_append Edad: 20-25 años
-#desc_append El más joven de los militares. Le gusta el humor negro.
-#exit
