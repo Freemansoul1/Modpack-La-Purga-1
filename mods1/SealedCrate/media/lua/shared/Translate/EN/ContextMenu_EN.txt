@@ -1,0 +1,4 @@
+ContextMenu_EN = {
+    ContextMenu_QNW_SC_Open                =   "Open",
+    ContextMenu_QNW_SC_Close               =   "Close",
+}

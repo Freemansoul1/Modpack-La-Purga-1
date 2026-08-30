@@ -1,0 +1,6 @@
+Sandbox_ES = {
+    Sandbox_Prisonner = "Mod Esposar",
+
+    Sandbox_Prisonner_Inspect = "Activar la acción Inspeccionar del menú contextual",
+    Sandbox_Prisonner_Inspect_tooltip = "Esta acción enumera todos los elementos que lleva el personaje restringido.",
+}

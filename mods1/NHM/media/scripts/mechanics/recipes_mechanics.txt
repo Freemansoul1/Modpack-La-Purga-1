@@ -1,0 +1,1595 @@
+module NHM
+{	
+	imports
+	{
+		Base
+	}
+            /******************************Разбор деталей**************/
+
+	    recipe 0. Dismantle Instruments
+    {
+        Wrench/LugWrench/TirePump/Jack,
+		keep Screwdriver,
+        Result:ScrapMetal=1,
+        Time:500.0,
+     	Category:Mechanic,
+        OnGiveXP:Mech20XP,
+    }
+
+        recipe 0. Deconstruct a Tire
+	{
+		ModernTire1/ModernTire2/ModernTire3/OldTire1/OldTire2/OldTire3/NormalTire1/NormalTire2/NormalTire3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:RubberTire,
+        Time:500.0,
+		Category:Mechanic,
+		OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    recipe 0. Deconstruct a Seat
+	{
+		NormalCarSeat1/NormalCarSeat2/NormalCarSeat3,
+		keep Wrench,
+		keep Screwdriver,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:Pillow=2,
+        Time:500.0,
+		Category:Mechanic,
+		OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    recipe 0. Deconstruct a Hood
+	{
+		EngineDoor1/EngineDoor2/EngineDoor3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:ScrapMetal=4,
+        Time:500.0,
+        Category:Mechanic,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    recipe 0. Deconstruct a Door
+	{
+		RearCarDoorDouble1/RearCarDoorDouble2/FrontCarDoor1/FrontCarDoor2/FrontCarDoor3/RearCarDoor1/RearCarDoor2/RearCarDoor3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:ScrapMetal=4,
+        Time:500.0,
+		Category:Mechanic,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    	recipe 0. Deconstruct a Trunk Door
+	{
+		TrunkDoor1/TrunkDoor2/TrunkDoor3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:ScrapMetal=4,
+        Time:500.0,
+		Category:Mechanic,
+		OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    recipe 0. Deconstruct a Suspension
+	{
+		NormalSuspension1/NormalSuspension2/NormalSuspension3/ModernSuspension1/ModernSuspension2/ModernSuspension3,
+		keep Wrench,
+		keep Screwdriver,
+		keep Hammer,
+		BlowTorch = 2,
+		Result:ScrapMetal=4,
+		Time:500,
+		Category:Mechanic,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+	recipe 0. Deconstruct a Brake
+	{
+		OldBrake1/OldBrake2/OldBrake3/ModernBrake1/ModernBrake2/ModernBrake3/NormalBrake1/NormalBrake2/NormalBrake3,
+		keep Wrench,
+		keep Screwdriver,
+		keep Hammer,
+		BlowTorch = 2,
+		Result:ScrapMetal=4,
+		Time:500,
+		Category:Mechanic,
+		OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+recipe 0. Deconstruct a Gas Tank
+	{
+		SmallGasTank1/SmallGasTank2/SmallGasTank3/NormalGasTank1/NormalGasTank2/NormalGasTank3/BigGasTank1/BigGasTank2/BigGasTank3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:ScrapMetal=4,
+        Time:500.0,
+		Category:Mechanic,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+    recipe 0. Deconstruct a Muffler
+	{
+		OldCarMuffler1/OldCarMuffler2/OldCarMuffler3/NormalCarMuffler1/NormalCarMuffler2/NormalCarMuffler3/ModernCarMuffler1/ModernCarMuffler2/ModernCarMuffler3,
+		keep Wrench,
+		keep Hammer,
+		BlowTorch = 2,
+        Result:ScrapMetal=4,
+        Time:500.0,
+		Category:Mechanic,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+	}
+
+
+recipe 0. Deconstruct a Window
+	{
+		RearWindow1/RearWindow2/RearWindow3/Windshield1/Windshield2/Windshield3/FrontWindow1/FrontWindow2/FrontWindow3/RearWindow1/RearWindow2/RearWindow3/RearWindshield1/RearWindshield2/RearWindshield3,
+		Result:NHM.Glass,
+        keep Hammer,
+		Time:400,
+		Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+	}
+
+    /**************************1 level******************/
+
+  		recipe 1. Make Small Gas Tank Type Standart
+    {
+		IngotBronze,
+		ScrapMetal=5,
+		UnusableMetal=5,
+		BlowTorch=5,
+		WeldingRods=2,
+ 		keep WeldingMask,
+        Result:SmallGasTank1,
+        SkillRequired:Mechanics=1,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 1. Make Standart Seat Type Standart
+    {
+		Pillow=2,
+		Sheet=2,
+		ScrapMetal=5,
+		UnusableMetal=5,
+		Screws=6,
+		keep Needle,
+		Thread=4,
+     	keep Screwdriver,
+        Result:NormalCarSeat1,
+        SkillRequired:Mechanics=1;Tailoring=1,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 1. Make Standart Seat Type Heavy-Duty
+   	{
+        Pillow=3,
+		Sheet=3,
+		ScrapMetal=10,
+		UnusableMetal=10,
+		Screws=8,
+		keep Needle,
+		Thread=4,
+		keep Screwdriver,
+        Result:NormalCarSeat2,
+        SkillRequired:Mechanics=1;Tailoring=1,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 1. Make Standart Seat Type Sport
+    {
+        Pillow=2,
+		Sheet=2,
+		ScrapMetal=7,
+		UnusableMetal=7,
+		Screws=6,
+		keep Needle,
+		Thread=4,
+		keep Screwdriver,
+        Result:NormalCarSeat3,
+        SkillRequired:Mechanics=1;Tailoring=1,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       /**************************2 level******************/
+
+      	recipe 2. Make Double Rear Door Type Standart
+    {
+        
+    	SmallSheetMetal=3,
+	    Screws=12,
+    	Hinge=4,
+    	Doorknob=2,
+    	BlowTorch=10,
+    	WeldingRods=5,
+    	keep WeldingMask,
+    	keep Screwdriver,
+     	keep Wrench,
+        Result:RearCarDoorDouble1,
+        SkillRequired:Mechanics=2,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 2. Make Front Door Type Standart
+    {
+        
+    	SmallSheetMetal=2,
+	    Screws=6,
+	    Hinge=2,
+    	Doorknob=1,
+    	BlowTorch=5,
+    	WeldingRods=4,
+     	keep WeldingMask,
+    	keep Screwdriver,
+    	keep Wrench,
+        Result:FrontCarDoor1,
+        SkillRequired:Mechanics=2,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	    recipe 2. Make Standart Gas Tank Type Standart
+   	{
+		IngotBronze,
+		SmallSheetMetal=1,
+		ScrapMetal=7,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:NormalGasTank1,
+        SkillRequired:Mechanics=2,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+    	recipe 2. Make Small Gas Tank Type Heavy-Duty
+    {
+		IngotBronze,
+		UnusableMetal=10,
+		ScrapMetal=10,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:SmallGasTank2,
+        SkillRequired:Mechanics=2,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+	}
+
+		recipe 2. Make Hood Type Standart
+    {
+        
+    	SmallSheetMetal=3,
+    	Screws=4,
+    	Hinge=2,
+    	BlowTorch=10,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:EngineDoor1,
+        SkillRequired:Mechanics=2,
+        Time:600.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 2. Make Trunk Door Type Standart
+    {
+        
+	    SmallSheetMetal=3,
+    	Screws=4,
+    	Hinge=2,
+    	BlowTorch=10,
+    	WeldingRods=4,
+    	keep WeldingMask,
+    	keep Screwdriver,
+	    keep Wrench,
+        Result:TrunkDoor1,
+        SkillRequired:Mechanics=2,
+        Time:600.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+		recipe 2. Make Rear Door Type Standart
+    {
+        
+    	SmallSheetMetal=2,
+    	Screws=6,
+  	    Hinge=2,
+	    Doorknob=1,
+	    BlowTorch=5,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:RearCarDoor1,
+        SkillRequired:Mechanics=2,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+    /**************************3 level******************/
+
+        recipe 3. Make Double Rear Door Type Heavy-Duty
+    {
+        
+     	SmallSheetMetal=4,
+	    Screws=16,
+	    Hinge=4,
+	    Doorknob=2,
+	    BlowTorch=10,
+	    WeldingRods=5,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:RearCarDoorDouble2,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+    	recipe 3. Make Front Door Type Heavy-Duty
+    {
+        
+	    SmallSheetMetal=3,
+     	Screws=8,
+	    Hinge=2,
+    	Doorknob=1,
+	    BlowTorch=6,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:FrontCarDoor2,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+         recipe 3. Make Big Gas Tank Type Standart
+   	{
+		IngotBronze,
+		IngotNickel,
+		SmallSheetMetal=1,
+		ScrapMetal=10,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:BigGasTank1,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       	recipe 3. Make Standart Gas Tank Type Heavy-Duty
+    {
+		IngotBronze,
+		SmallSheetMetal=3,
+		ScrapMetal=12,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:NormalGasTank2,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       	recipe 3. Make Small Gas Tank Type Sport
+   	{
+		UnusableMetal=7,
+		IngotBronze,
+		ScrapMetal=7,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:SmallGasTank3,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+    	recipe 3. Make Hood Type Heavy-Duty
+    {
+        
+    	SmallSheetMetal=5,
+    	Screws=6,
+    	Hinge=2,
+	    BlowTorch=10,
+    	WeldingRods=4,
+    	keep WeldingMask,
+    	keep Screwdriver,
+    	keep Wrench,
+        Result:EngineDoor2,
+        SkillRequired:Mechanics=3,
+        Time:600.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 3. Make Trunk Door Type Heavy-Duty
+    {
+        
+    	SmallSheetMetal=5,
+	    Screws=4,
+	    Hinge=2,
+	    BlowTorch=10,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:TrunkDoor2,
+        SkillRequired:Mechanics=3,
+        Time:600.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	    recipe 3. Make Rear Door Type Heavy-Duty
+   	{
+        
+    	SmallSheetMetal=3,
+	    Screws=8,
+	    Hinge=2,
+	    Doorknob=1,
+	    BlowTorch=5,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:RearCarDoor2,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 3. Make Windshield Type Standart
+    {
+     	NHM.Glass=4,
+        DuctTape=2,
+        Result:Windshield1,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 3. Make Rear Windshield Type Standart
+    {
+	    NHM.Glass=4,
+	    DuctTape=2,
+        Result:RearWindshield1,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 3. Make Front Window Type Standart
+   	{
+    	NHM.Glass=2,
+    	DuctTape=1,
+        Result:FrontWindow1,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 3. Make Rear Window Type Standart
+    {
+	    NHM.Glass=2,
+	    DuctTape=1,
+        Result:RearWindow1,
+        SkillRequired:Mechanics=3,
+        Time:500.0,
+      	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        /**************************4 level******************/
+
+        recipe 4. Make Old Brake Type Standart
+   	{
+		IngotBronze,
+		Screws=2,
+		Wire=2,
+		ScrapMetal=5,
+		BlowTorch=5,
+		WeldingRods=4,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:OldBrake1,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Front Door Type Sport
+    {
+        
+	    SmallSheetMetal=2,
+	    Screws=7,
+	    Hinge=2,
+	    Doorknob=1,
+	    BlowTorch=5,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+     	keep Wrench,
+        Result:FrontCarDoor3,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       	recipe 4. Make Big Gas Tank Type Heavy-Duty
+    {
+		IngotBronze,
+		IngotNickel,
+		SmallSheetMetal=3,
+		ScrapMetal=15,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:BigGasTank2,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       	recipe 4. Make Standart Gas Tank Type Sport
+    {
+		IngotBronze,
+		SmallSheetMetal=2,
+		ScrapMetal=10,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:NormalGasTank3,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Hood Type Sport
+    {
+        
+    	SmallSheetMetal=4,
+	    Screws=2,
+	    Hinge=2,
+	    BlowTorch=10,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:EngineDoor3,
+        SkillRequired:Mechanics=4,
+        Time:600.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Trunk Door Type Sport
+    {
+        
+	    SmallSheetMetal=4,
+	    Screws=4,
+	    Hinge=2,
+	    BlowTorch=10,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:TrunkDoor3,
+        SkillRequired:Mechanics=4,
+        Time:600.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Rear Door Type Sport
+    {
+        
+	    SmallSheetMetal=2,
+	    Screws=6,
+	    Hinge=2,
+	    Doorknob=1,
+	    BlowTorch=5,
+	    WeldingRods=4,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Wrench,
+        Result:RearCarDoor3,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+		recipe 4. Make RubberTire
+    {
+        NHM.Rubber=8,
+        Glue=3,
+		keep Screwdriver,
+        Result:RubberTire,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+     	recipe 4. Make Valu-Tire Type Standart
+    {
+		ScrapMetal=5,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=2,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=4,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:OldTire1,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+     	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Windshield Type Heavy-Duty
+   	{
+     	NHM.Glass=6,
+	    DuctTape=3,
+        Result:Windshield2,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Rear Windshield Type Heavy-Duty
+    {
+	    NHM.Glass=6,
+    	DuctTape=3,
+        Result:RearWindshield2,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 4. Make Front Window Type Heavy-Duty
+    {
+	    NHM.Glass=3,
+	    DuctTape=2,
+        Result:FrontWindow2,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 4. Make Rear Window Type Heavy-Duty
+   	{
+	    NHM.Glass=3,
+    	DuctTape=2,
+        Result:RearWindow2,
+        SkillRequired:Mechanics=4,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        /**************************5 level******************/
+
+        recipe 5. Make Regular Brake Type Standart
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=4,
+		Wire=2,
+		ScrapMetal=5,
+		BlowTorch=5,
+		WeldingRods=2,
+        keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalBrake1,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 5. Make Old Brake Type Heavy-Duty
+    {
+        IngotBronze,
+		Screws=4,
+		Wire=4,
+		ScrapMetal=7,
+		BlowTorch=5,
+		WeldingRods=3,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:OldBrake2,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       	recipe 5. Make Big Gas Tank Type Sport
+    {
+		IngotBronze,
+		IngotNickel,
+		SmallSheetMetal=2,
+		ScrapMetal=13,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+        Result:BigGasTank3,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+       recipe 5. Make Bad Muffler Type Standart
+    {
+        IngotBronze,
+    	ScrapMetal=5,
+	    BlowTorch=5,
+	    WeldingRods=4,
+	    keep WeldingMask,
+        Result:OldCarMuffler1,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+
+
+       	recipe 5. Make Regular Tire Type Standart
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=6,
+		RubberTire=1,
+        NHM.Rubber=4,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:NormalTire1,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 5. Make Valu-Tire Type Heavy-Duty
+   	{
+		ScrapMetal=10,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=2,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=4,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:OldTire2,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 5. Make Regular Suspension Type Standart
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=6,
+		Wire=4,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalSuspension1,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+    	recipe 5. Make Windshield Type Sport
+    {
+    	NHM.Glass=4,
+    	DuctTape=2,
+        Result:Windshield3,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 5. Make Rear Windshield Type Sport
+    {
+	    NHM.Glass=4,
+    	DuctTape=2,
+        Result:RearWindshield3,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 5. Make Front Window Type Sport
+    {
+	    NHM.Glass=2,
+    	DuctTape=1,
+        Result:FrontWindow3,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 5. Make Rear Window Type Sport
+    {
+	    NHM.Glass=2,
+	    DuctTape=1,
+        Result:RearWindow3,
+        SkillRequired:Mechanics=5,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+/**************************6 level******************/
+
+        recipe 6. Make Regular Brake Type Heavy-Duty
+    {
+		IngotBronze,
+        SmallSheetMetal=1,
+		Screws=6,
+		Wire=2,
+		ScrapMetal=10,
+		BlowTorch=5,
+		WeldingRods=1,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalBrake2,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 6. Make Old Brake Type Sport
+    {
+		IngotBronze,
+		Screws=3,
+		Wire=3,
+		ScrapMetal=6,
+		BlowTorch=5,
+		WeldingRods=3,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:OldBrake3,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 6. Make Average Muffler Type Standart
+    {
+        IngotBronze,
+	    SmallSheetMetal=3,
+	    ScrapMetal=5,
+	    BlowTorch=5,
+	    WeldingRods=2,
+	    keep WeldingMask,
+        Result:NormalCarMuffler1,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 6. Make Bad Muffler Type Heavy-Duty
+    {
+        
+	    IngotBronze,
+    	ScrapMetal=10,
+     	BlowTorch=5,
+    	WeldingRods=4,
+    	keep WeldingMask,
+        Result:OldCarMuffler2,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+
+
+        recipe 6. Make Regular Tire Type Heavy-Duty
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=8,
+		RubberTire=1,
+        NHM.Rubber=4,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:NormalTire2,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 6. Make Valu-Tire Type Sport
+    {
+		ScrapMetal=7,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=2,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=4,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:OldTire3,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+    }
+
+        recipe 6. Make Regular Suspension Type Heavy-Duty
+    {
+		IngotBronze,
+        SmallSheetMetal=1,
+		Screws=8,
+		Wire=6,
+		BlowTorch=5,
+		WeldingRods=2,
+ 		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalSuspension2,
+        SkillRequired:Mechanics=6,
+        Time:500.0,
+        Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+/**************************7 level******************/
+
+	    recipe 7. Make Performance Brake Type Standart
+   	{
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=1,
+		Screws=6,
+		Wire=2,
+		ScrapMetal=5,
+		BlowTorch=5,
+		WeldingRods=4,
+   		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:ModernBrake1,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+    	recipe 7. Make Regular Brake Type Sport
+   	{
+	    IngotBronze,
+		SmallSheetMetal=1,
+		Screws=4,
+		Wire=4,
+		ScrapMetal=7,
+		BlowTorch=5,
+		WeldingRods=1,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalBrake3,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 7. Make Average Muffler Type Heavy-Duty
+    {
+        IngotBronze,
+	    SmallSheetMetal=4,
+	    ScrapMetal=10,
+	    BlowTorch=5,
+	    WeldingRods=2,
+	    keep WeldingMask,
+        Result:NormalCarMuffler2,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	    recipe 7. Make Bad Muffler Type Sport
+   	{
+        IngotBronze,
+     	ScrapMetal=7,
+    	BlowTorch=5,
+    	WeldingRods=4,
+    	keep WeldingMask,
+        Result:OldCarMuffler3,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+
+
+        recipe 7. Make Performance Tire Type Standart
+    {
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=1,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=6,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:ModernTire1,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 7. Make Regular Tire Type Sport
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=7,
+		RubberTire=1,
+        NHM.Rubber=4,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:NormalTire3,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 7. Make Performance Suspension Type Standart
+   	{
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=1,
+		Screws=8,
+		Wire=4,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:ModernSuspension1,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 7. Make Regular Suspension Type Sport
+    {
+		IngotBronze,
+		SmallSheetMetal=1,
+		Screws=6,
+		Wire=5,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:NormalSuspension3,
+        SkillRequired:Mechanics=7,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 7. Unhotwire vehicle
+	{
+		SkillRequired:Electricity=3,
+		SkillRequired:Mechanics=7,
+		destroy Screwdriver,
+		Result:Screwdriver,
+		OnCreate:unHotwire,
+		Category:Mechanic,
+		Time:200,
+	}
+
+/**************************8 level******************/
+
+        recipe 8. Make Performance Brake Type Heavy-Duty
+    {
+		IngotBronze,
+		IngotChromium,
+        SmallSheetMetal=1,
+		Screws=8,
+		Wire=2,
+		ScrapMetal=10,
+		BlowTorch=5,
+		WeldingRods=1,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+		keep WeldingMask,
+        Result:ModernBrake2,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	    recipe 8. Make Performance Muffler Type Standart
+    {
+        IngotBronze,
+		IngotNickel,
+	    SmallSheetMetal=1,
+        ScrapMetal=5,
+	    BlowTorch=5,
+	    WeldingRods=2,
+	    keep WeldingMask,
+        Result:ModernCarMuffler1,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 8. Make Average Muffler Type Sport
+    {
+        IngotBronze,
+	    SmallSheetMetal=3,
+     	ScrapMetal=7,
+	    BlowTorch=5,
+	    WeldingRods=2,
+	    keep WeldingMask,
+        Result:NormalCarMuffler3,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+
+        recipe 8. Make Performance Tire Type Heavy-Duty
+   	{
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=3,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=6,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:ModernTire2,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 8. Make Performance Suspension Type Heavy-Duty
+    {
+		IngotBronze,
+		IngotChromium,
+        SmallSheetMetal=1,
+		Screws=10,
+		Wire=6,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+		keep WeldingMask,
+        Result:ModernSuspension2,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	   recipe 8. Make Car Battery Type Standart
+    {
+        SmallSheetMetal=1,
+		ElectricWire=6,
+		Plastic=10,
+		Rubber=3,
+		FlaskSulphuricAcid,
+		BlowTorch=10,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:CarBattery1,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	   recipe 8. Make Car Battery Type Heavy-Duty
+    {
+        SmallSheetMetal=1,
+		ElectricWire=6,
+		Plastic=10,
+		Rubber=3,
+		FlaskSulphuricAcid,
+		BlowTorch=10,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:CarBattery2,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+	   recipe 8. Make Car Battery Type Sport
+    {
+        SmallSheetMetal=1,
+		ElectricWire=6,
+		Plastic=10,
+		Rubber=3,
+		FlaskSulphuricAcid,
+		BlowTorch=10,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:CarBattery3,
+        SkillRequired:Mechanics=8,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+/**************************9 level******************/
+
+        recipe 9. Make Performance Brake Type Sport
+   	{
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=1,
+		Screws=6,
+		Wire=2,
+		ScrapMetal=7,
+		BlowTorch=5,
+		WeldingRods=1,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:ModernBrake3,
+        SkillRequired:Mechanics=9,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 9. Make Performance Muffler Type Heavy-Duty
+    {
+        IngotBronze,
+		IngotNickel,
+	    SmallSheetMetal=3,
+    	ScrapMetal=10,
+    	BlowTorch=5,
+    	WeldingRods=2,
+    	keep WeldingMask,
+        Result:ModernCarMuffler2,
+        SkillRequired:Mechanics=9,
+        Time:500.0,
+    	Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 9. Make Performance Muffler Type Sport
+    {
+        IngotBronze,
+		IngotNickel,
+    	SmallSheetMetal=2,
+	    ScrapMetal=7,
+	    BlowTorch=5,
+    	WeldingRods=2,
+	    keep WeldingMask,
+        Result:ModernCarMuffler3,
+        SkillRequired:Mechanics=9,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+
+        recipe 9. Make Performance Tire Type Sport
+    {
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=2,
+		Screws=4,
+		RubberTire=1,
+        NHM.Rubber=6,
+        Glue=1,
+		BlowTorch=3,
+		WeldingRods=2,
+		keep TirePump,
+		keep WeldingMask,
+		keep Hammer,
+		keep Jack,
+		keep Wrench,
+		keep Screwdriver,
+        Result:ModernTire3,
+        SkillRequired:Mechanics=9,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+        recipe 9. Make Performance Suspension Type Sport
+    {
+		IngotBronze,
+		IngotChromium,
+		SmallSheetMetal=1,
+		Screws=9,
+		Wire=5,
+		BlowTorch=5,
+		WeldingRods=2,
+		keep WeldingMask,
+		keep Hammer,
+		keep Wrench,
+		keep LugWrench,
+		keep Screwdriver,
+        Result:ModernSuspension3,
+        SkillRequired:Mechanics=9,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+/*************************************10 level******************/
+
+
+
+	    recipe Make Engine Parts (10)
+    {
+        ScrapMetal=5,
+        NHM.Rubber=4,
+        NHM.Plastic=4,
+	    Screws=10,
+	    SmallSheetMetal=1,
+	    BlowTorch=5,
+	    WeldingRods=2,
+	    keep WeldingMask,
+	    keep Screwdriver,
+	    keep Hammer,
+        Result:EngineParts=4,
+        SkillRequired:Mechanics=10,
+        Time:500.0,
+	    Category:Mechanic,
+        OnGiveXP:MWaMEXP,
+		NearItem:Mechanics Workbench,
+   	}
+
+}
+
+
+
+
+

@@ -1,0 +1,145 @@
+module Base
+{
+	/***Handmade***/
+	
+	item SurvivalShirt
+	{
+	    DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = SurvivalShirt,
+		ClothingItem = SurvivalShirt,
+		BodyLocation = ShortSleeveShirt,
+		Icon = SurvivalShirt,
+		BloodLocation = Shirt,
+        BiteDefense = 10,
+        ScratchDefense = 10,
+        Insulation = 0.2,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+        WorldStaticModel = TShirt_Ground,
+	}
+	
+	item HandWraps
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = HandWraps,
+		ClothingItem = Gloves_HandWraps,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+        BiteDefense = 10,
+        ScratchDefense = 10,
+		Icon = HandWraps,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+	}
+	
+	/***Tactical***/
+	
+    item TacticalBagBig
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = TacticalBagBig,
+        ClothingItem = Bag_TacticalBagBig,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	Duffelbag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+        WorldStaticModel = TacticalBagBig,
+        AttachmentsProvided = Back, 
+    }
+	
+    item TacticalJacket
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = TacticalJacket,
+        ClothingItem = Jacket_TacticalJacket,
+        BodyLocation = Jacket,
+        Icon = TacticalJacket,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.95,
+        BiteDefense = 20,
+        ScratchDefense = 40,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.70,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.55,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+	
+	item TacticalGloves
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = TacticalGloves,
+		ClothingItem = Gloves_TacticalGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = TacticalGloves,
+        BiteDefense = 40,
+        ScratchDefense = 40,
+        BulletDefense = 20,
+		Weight = 0.1,
+        Insulation = 0.25,
+        WindResistance = 0.3,
+	}
+	
+	item TacticalGlovesF
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = TacticalGlovesF,
+		ClothingItem = Gloves_TacticalGlovesF,
+		BodyLocation = Hands,
+		IconsForTexture = GlovesLeatherBlackpng;GlovesLeatherBrown,
+		BloodLocation = Hands,
+        BiteDefense = 40,
+        ScratchDefense = 40,
+        BulletDefense = 20,
+        Weight = 0.1,
+        Insulation = 0.75,
+        WindResistance = 0.75,
+        FabricType = Leather,
+	}
+	
+	item Hat_TacticalBalaclava
+	{
+	    DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = TacticalBalaclava,
+		ClothingItem = Hat_TacticalBalaclava,
+		BodyLocation = Hat,
+		BloodLocation = Head,
+		Icon = Balaclava,
+		CanHaveHoles = false,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 0.5,
+	}
+	
+	item Hat_CottonHat
+	{
+	    DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Cotton Hat,
+		ClothingItem = Hat_CottonHat,
+		BodyLocation = Mask,
+		Icon = CottonHat,
+		CanHaveHoles = false,
+		ChanceToFall = 1,
+		Insulation = 0.10,
+		Weight = 0.5,
+	}
+}

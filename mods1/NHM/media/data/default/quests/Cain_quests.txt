@@ -1,0 +1,18 @@
+*cain_q1
+#name Datos secretos
+#desc Cain, en su forma habitual, te pide que llenes la memoria USB con datos secretos de una computadora especial en Louisville.
+#desc
+#desc Las misiones de planos de armas son diarias.
+
+*cain_q2
+#name Comunicación con el mundo exterior
+#desc Cain te pide que visites 2 centros de comunicación y resuelvas problemas para restablecer la comunicación con el mundo exterior.
+#desc Cain te aconseja tener al menos un destornillador contigo.
+#desc
+#desc Las misiones de planos de armas son diarias.
+
+*cain_q3
+#name Modelo mundial
+#desc Cain te pide que crees muestras ambientales universales usando una combinación de una muestra de suelo, una muestra de tejido infectado y una muestra de agua infectada.
+#desc
+#desc Las misiones de planos de armas son diarias.

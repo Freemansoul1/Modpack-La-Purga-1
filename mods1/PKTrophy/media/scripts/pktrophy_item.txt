@@ -1,0 +1,20 @@
+module Base
+{
+    imports
+    {
+        Base
+    }
+
+    item PKTrophy
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = PK Trophy,
+		ClothingItem = Necklace_DogTag,
+		BodyLocation = Necklace,
+		Icon = Necklace_Dogtags,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Dogtags_Ground,
+	}
+}

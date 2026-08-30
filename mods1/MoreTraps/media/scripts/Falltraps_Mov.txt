@@ -1,0 +1,101 @@
+
+module MoreTraps
+{
+	item Trampa de zombies
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Zedtrap,
+		WorldObjectSprite	= fall_trap_01_16,
+	}
+	
+	item Trampa sonora
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Sirentrap,
+		WorldObjectSprite	= fall_trap_01_10,
+	}
+	
+	
+	item Trampa de caida A
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Falltrap,
+		WorldObjectSprite	= fall_trap_01_1,
+	}
+	item Trampa de caida B
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Falltrap,
+		WorldObjectSprite	= fall_trap_01_0,
+	}
+	item Trampa de caida C
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Falltrap,
+		WorldObjectSprite	= fall_trap_01_18,
+	}
+	item Trampa de caida D
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Falltrap,
+		WorldObjectSprite	= fall_trap_01_21,
+	}
+	
+	VehicleSirenAlarm
+	
+	item Mina terrestre A
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Landmine,
+		WorldObjectSprite	= fall_trap_01_8,
+	}
+	item Mina terrestre B
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Landmine,
+		WorldObjectSprite	= fall_trap_01_2,
+	}
+	item Mina terrestre C
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Landmine,
+		WorldObjectSprite	= fall_trap_01_25,
+	}
+	item Mina terrestre D
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Landmine,
+		WorldObjectSprite	= fall_trap_01_29,
+	}
+
+}

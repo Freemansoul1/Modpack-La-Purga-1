@@ -1,0 +1,2 @@
+#npc_create Sentry|NPC/Sentry.png|11571,7594,0
+#exit

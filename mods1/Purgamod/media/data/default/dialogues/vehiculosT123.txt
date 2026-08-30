@@ -1,0 +1,337 @@
+*estandarT1
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 250 monedas, elige el que quieras"
+#has_item Base.Money,250
+      #jump estandarT1comprado
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*estandarT1comprado
+#choice 
+    Ford Crown|Ford Crown
+    Celica|Celica
+*Ford Crown  
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up CrownT1.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.85vicwag,1,common
+#exit
+*na1
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit  
+*Celica
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up CelicaT1.png|5
+#choice
+    se11|Si.
+    na11|No.
+*se11
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.91celica,1,common
+#exit
+*na11
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*deportivoT1
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 250 monedas, elige el que quieras"
+#has_item Base.Money,250
+      #jump deportivoT1comprado
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*deportivoT1comprado
+#choice 
+    Dash Elite|Dash Elite, modern car
+    Mercia|Mercia, Carluxury
+*Dash Elite
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up ModerncarT1.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.ModernCar,1,common
+#exit
+*na2
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*Mercia
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up MerciaT1.png|5
+#choice
+    se22|Si.
+    na22|No.
+*se22
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.CarLuxury,1,common
+#exit
+*na22
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*industrialT1
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 250 monedas, elige el que quieras"
+#has_item Base.Money,250
+      #jump industrialT1comprado
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*industrialT1comprado
+#choice 
+    Dash|Dash
+    51Chevy3100|51Chevy3100
+*Dash
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up DashT1.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.PickUpVan,1,common
+#exit
+*na3
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*51Chevy3100
+#m Jerryson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up ChevyT1.png|5
+#choice
+    se33|Si.
+    na33|No.
+*se33
+#remove_item Base.Money,250
+#m Jerryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.51chevy3100,1,common
+#exit
+*na33
+#m Jerryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*estandarT2
+#m Jameson Ford|vehiculosvendedorbasico.png|"Perfecto, son 350 monedas, elige el que quieras"
+#has_item Base.Money,350
+      #jump estandarT2comprado
+#m Jameson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*estandarT2comprado
+#choice 
+    Ford Falcon|Ford Falcon
+    Impala|Impala
+*Ford Falcon
+#m Jameson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up FalconT2.png|5
+#choice
+    se4|Si.
+    na4|No.
+*se4
+#remove_item Base.Money,350
+#m Jameson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.73falcon,1,rare
+#exit
+*na4
+#m Jameson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit 
+*Impala
+#m Jameson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up ImpalaT2.png|5
+#choice
+    se44|Si.
+    na44|No.
+*se44
+#remove_item Base.Money,350
+#m Jameson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.71impala,1,rare
+#exit
+*na44
+#m Jameson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*deportivoT2
+#m Jameson Ford|vehiculosvendedorbasico.png|"Perfecto, son 350 monedas por el Ford Mustang"
+#has_item Base.Money,350
+      #jump deportivoT2comprado
+#m Jameson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*deportivoT2comprado
+#m Jameson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up MustangT2.png|5
+#choice
+    se5|Si.
+    na5|No.
+*se5
+#remove_item Base.Money,350
+#m Jameson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.64mustang,1,rare
+#exit
+*na5
+#m Jameson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*industrialT2
+#m Jameson Ford|vehiculosvendedorbasico.png|"Perfecto, son 350 monedas, elige el que quieras"
+#has_item Base.Money,350
+      #jump industrialT2comprado
+#m Jameson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*industrialT2comprado
+#choice 
+    Blazer|Blazer
+    ChevyStepVan|ChevyStepVan
+*Blazer
+#m Jameson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up BlazerT2.png|5
+#choice
+    se6|Si.
+    na6|No.
+*se6
+#remove_item Base.Money,350
+#m Jameson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.87blazer,1,rare
+#exit
+*na6
+#m Jameson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*ChevyStepVan
+#m Jameson Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up StepVanT2.png|5
+#choice
+    se66|Si.
+    na66|No.
+*se66
+#remove_item Base.Money,350
+#m Jameson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.chevystepvan,1,rare
+#exit
+*na66
+#m Jameson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+
+
+
+
+
+*estandarT3
+#m Jason Ford|vehiculosvendedorbasico.png|"Perfecto, son 500 monedas, elige el que quieras"
+#has_item Base.Money,500
+      #jump estandarT3comprado
+#m Jason Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*estandarT3comprado
+#choice 
+    Pursuit special|Pursuit special
+    Transam|Transam
+*Pursuit special
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up PursuitspecialT3.png|5
+#choice
+    se7|Si.
+    na7|No.
+*se7
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.pursuitspecial,1,rare
+#exit
+*na7
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*Transam
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up PontiacT3.png|5
+#choice
+    se77|Si.
+    na77|No.
+*se77
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.77transam,1,rare
+#exit
+*na77
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*deportivoT3
+#m Jason Ford|vehiculosvendedorbasico.png|"Perfecto, son 500 monedas, elige el que quieras"
+#has_item Base.Money,500
+      #jump deportivoT3comprado
+#m Jason Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*deportivoT3comprado
+#choice 
+    Datsun|Datsun
+    Chevalier Cosette|Chevalier Cosette, sportscar
+*Datsun
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up DatsunT3.png|5
+#choice
+    se8|Si.
+    na8|No.
+*se8
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.79datsun280z,1,rare
+#exit
+*na8
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*Chevalier Cosette
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up ChevycoseteT3.png|5
+#choice
+    se88|Si.
+    na88|No.
+*se88
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.SportsCar,1,rare
+#exit
+*na88
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*industrialT3
+#m Jason Ford|vehiculosvendedorbasico.png|"Perfecto, son 500 monedas, elige el que quieras"
+#has_item Base.Money,500
+      #jump industrialT3comprado
+#m Jason Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*industrialT3comprado
+#choice 
+    Ford F700|Ford F700
+    Isuzubox|Isuzubox
+*Ford F700
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up CamionT3.png|5
+#choice
+    se9|Si.
+    na9|No.
+*se9
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.f700box,1,rare
+#exit
+*na9
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*Isuzubox
+#m Jason Ford|vehiculosvendedorbasico.png|"¿Estás seguro?"
+#pop_up IsuzuboxT3.png|5
+#choice
+    se99|Si.
+    na99|No.
+*se99
+#remove_item Base.Money,500
+#m Jason Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.isuzubox,1,rare
+#exit
+*na99
+#m Jason Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit

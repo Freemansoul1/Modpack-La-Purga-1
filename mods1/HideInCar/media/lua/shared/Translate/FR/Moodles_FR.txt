@@ -1,0 +1,4 @@
+Moodles_FR {
+    Moodles_GhostedInCar_Good_lvl4 = "Caché dans la voiture",
+    Moodles_GhostedInCar_Good_desc_lvl4 = "Le joueur est caché dans la voiture.",
+}

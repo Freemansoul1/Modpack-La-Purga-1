@@ -1,0 +1,188 @@
+VERSION = 1,
+
+perk NHModSkills
+{
+	parent = None,
+	translation = Additional,
+	passive = false,
+	xp1 = 0,
+	xp2 = 0,
+	xp3 = 0,
+	xp4 = 0,
+	xp5 = 0,
+	xp6 = 0,
+	xp7 = 0,
+	xp8 = 0,
+	xp9 = 0,
+	xp10 = 0,
+}
+
+perk Chemistry
+{
+	parent = NHModSkills,
+	translation = Chemistry,
+	passive = false,
+	xp1 = 50,
+	xp2 = 100,
+	xp3 = 200,
+	xp4 = 500,
+	xp5 = 1000,
+	xp6 = 2000,
+	xp7 = 3000,
+	xp8 = 4000,
+	xp9 = 5000,
+	xp10 = 6000,
+}
+
+perk Engineering
+{
+	parent = NHModSkills,
+	translation = Engineering,
+	passive = false,
+	xp1 = 50,
+	xp2 = 100,
+	xp3 = 200,
+	xp4 = 500,
+	xp5 = 1000,
+	xp6 = 2000,
+	xp7 = 3000,
+	xp8 = 4000,
+	xp9 = 5000,
+	xp10 = 6000,
+}
+
+perk Leatherworking
+{
+	parent = NHModSkills,
+	translation = Leatherworking,
+	passive = false,
+	xp1 = 50,
+	xp2 = 100,
+	xp3 = 200,
+	xp4 = 500,
+	xp5 = 1000,
+	xp6 = 2000,
+	xp7 = 3000,
+	xp8 = 4000,
+	xp9 = 5000,
+	xp10 = 6000,
+}
+
+perk Art
+{
+	parent = NHModSkills,
+	translation = Art,
+	passive = false,
+	xp1 = 10,
+	xp2 = 10,
+	xp3 = 10,
+	xp4 = 10,
+	xp5 = 10,
+	xp6 = 10,
+	xp7 = 10,
+	xp8 = 10,
+	xp9 = 10,
+	xp10 = 10,
+}
+
+perk Endurance
+{
+	parent = None,
+	translation = Endurance,s
+	passive = false,
+	xp1= 0,
+	xp2 = 0,
+	xp3 = 0,
+	xp4 = 0,
+	xp5 = 0,
+	xp6 = 0,
+	xp7 = 0,
+	xp8 = 0,
+	xp9 = 0,
+	xp10 = 0,
+}
+
+perk MineEndurance
+{
+	parent = Endurance,
+	translation = MineEndurance,
+	passive = true,
+	xp1= 10,
+	xp2 = 10,
+	xp3 = 10,
+	xp4 = 10,
+	xp5 = 10,
+	xp6 = 10,
+	xp7 = 10,
+	xp8 = 10,
+	xp9 = 10,
+	xp10 = 10,
+}
+
+perk Reputation
+{
+	parent = None,
+	translation = Reputation,
+	passive = false,
+	xp1 = 0,
+	xp2 = 0,
+	xp3 = 0,
+	xp4 = 0,
+	xp5 = 0,
+	xp6 = 0,
+	xp7 = 0,
+	xp8 = 0,
+	xp9 = 0,
+	xp10 = 0,
+}
+
+perk RepDoc
+{
+	parent = Reputation,
+	translation = RepDoc,
+	passive = false,
+	xp1 = 20,
+	xp2 = 20,
+	xp3 = 20,
+	xp4 = 40,
+	xp5 = 40,
+	xp6 = 40,
+	xp7 = 60,
+	xp8 = 60,
+	xp9 = 60,
+	xp10 = 80,
+}
+
+perk RepArmy
+{
+	parent = Reputation,
+	translation = RepArmy,
+	passive = false,
+	xp1 = 20,
+	xp2 = 20,
+	xp3 = 20,
+	xp4 = 40,
+	xp5 = 40,
+	xp6 = 40,
+	xp7 = 60,
+	xp8 = 60,
+	xp9 = 60,
+	xp10 = 80,
+}
+
+perk RepCrafts
+{
+	parent = Reputation,
+	translation = RepCrafts,
+	passive = false,
+	xp1 = 20,
+	xp2 = 20,
+	xp3 = 20,
+	xp4 = 40,
+	xp5 = 40,
+	xp6 = 40,
+	xp7 = 60,
+	xp8 = 60,
+	xp9 = 60,
+	xp10 = 80,
+}

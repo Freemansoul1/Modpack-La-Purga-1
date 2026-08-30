@@ -1,0 +1,9 @@
+#name Señor Oscuro|Señor Oscuro
+#set_stat Señor Oscuro|reputation|99999
+
+#desc Name: El Señor Oscuro
+#desc_append Edad: Desconocida
+#desc_append El poderoso señor de la oscuridad
+#is_alive Señor Oscuro,true
+    #desc_append Estado: Vivo
+#exit

@@ -1,0 +1,5 @@
+Recipe_IT = {
+	Recipe_Make_Rope_Cuffs = "Costruisci manette di corda",
+	Recipe_Make_Leather_Cuffs = "Costruisci manette di pelle",
+	Recipe_Make_Front_Leather_Cuffs = "Costruisci manette di pelle (davanti)",
+}

@@ -1,0 +1,51 @@
+module Base
+{
+	model KeyCardBlue
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardBlue,
+		scale = 0.6,
+	}
+	model KeyCardCyan
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardCyan,
+		scale = 0.6,
+	}
+	model KeyCardGreen
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardGreen,
+		scale = 0.6,
+	}
+	model KeyCardOrange
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardOrange,
+		scale = 0.6,
+	}
+	model KeyCardPurple
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardPurple,
+		scale = 0.6,
+	}
+	model KeyCardRed
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardRed,
+		scale = 0.6,
+	}
+	model KeyCardWhite
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardWhite,
+		scale = 0.6,
+	}
+	model KeyCardYellow
+	{
+		mesh = WorldItems/Keycard,
+		texture = WorldItems/KeyCardYellow,
+		scale = 0.6,
+	}
+}

@@ -1,0 +1,23 @@
+module Base
+{
+
+
+	item gunrack_wood
+	{
+		WorldObjectSprite	= gunrack_0,
+		DisplayName		= Wooden Gun Rack,
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= gunrack_ico,
+		Weight		  	= 1.2,
+	}
+	item gunrack_metal
+	{
+		WorldObjectSprite	= gunrack_4,
+		DisplayName		= Metallic Gun Rack,
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= gunrack2_ico,
+		Weight		  	= 2,
+	}
+}

@@ -1,0 +1,6 @@
+ContextMenu_JP = {
+    ContextMenu_Pick_Up_Bicycle = "自転車を拾う",
+    ContextMenu_BicycleLock = "自転車用の鍵を取り付ける",
+    ContextMenu_BicycleUnlock = "自転車の鍵を外す",
+    ContextMenu_Lift_Bicycle = "自転車を持ち上げる",
+}

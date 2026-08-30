@@ -1,0 +1,11 @@
+Recipe_EN = {
+    Recipe_CultivateZ2 = "Cultivate Z-2 Bacteria",
+    Recipe_CultivateZ5 = "Cultivate Z-5 Bacteria",
+    Recipe_CreateBiofuel = "Create Biofuel",
+    Recipe_CreateBiopropane = "Create Biopropane",
+    Recipe_EmptyPetriDish = "Empty Petri Dish",
+    Recipe_SterilizePetriDish = "Sterilize Petri Dish",
+    Recipe_OpenBoxOfPetriDishes = "Open Box of Petri Dishes",
+    Recipe_CraftBioreactor = "Create Bioreactor",
+    Recipe_CreateDirtyPetriDish = "Create dirty Petry dish",
+}

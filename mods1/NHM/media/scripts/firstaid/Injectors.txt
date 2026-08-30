@@ -1,0 +1,28 @@
+module NHM {
+    imports {
+        Base
+    }
+
+    item AdrenalineInjector
+    {
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Adrenaline Injector,
+        Icon = AdrenalineInjector,
+        DisplayCategory = FirstAid,
+        StaticModel = AdrenalineInjector,
+        WorldStaticModel = AdrenalineInjectorGround,
+        Tooltip = Tooltip_AdrenalineInjector,
+    }
+
+    item Vaccine
+    {
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Vaccine,
+        Icon = Vaccine,
+        DisplayCategory = FirstAid,
+        StaticModel = Vaccine,
+        WorldStaticModel = VaccineGround,
+    }
+}

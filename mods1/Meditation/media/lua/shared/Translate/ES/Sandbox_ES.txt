@@ -1,0 +1,71 @@
+Sandbox_ES = {	
+    
+    Sandbox_Meditation = "Meditación",
+	
+    Sandbox_everyoneDoesYoga = "Todos pueden meditar (Anulación de rasgo)",
+	Sandbox_everyoneDoesYoga_tooltip = "Si esto está seleccionado, todos en tu servidor podrán meditar en lugar de sentarse, y así obtener invisibilidad si tu servidor permite esa función. <RGB:1.0,0.6,0.0> \nCuando esta casilla está seleccionada, los jugadores no necesitarán el rasgo de Yogui para meditar.",
+	
+    Sandbox_animationOffByDefault = "Animación apagada por defecto (Anulación de función)",
+	Sandbox_animationOffByDefault_tooltip = "Si esto está seleccionado, los jugadores no meditarán al sentarse a menos que primero seleccionen\n'Confirmar meditación al sentarse' a través de las Opciones del Mod en el juego. <RGB:1.0,0.6,0.0> \nMod Options es otro mod que debe estar instalado para que esta función funcione.",
+	
+    Sandbox_trainForTheTrait = "Entrenar para el rasgo (Rasgo dinámico)",
+	Sandbox_trainForTheTrait_tooltip = "Si se selecciona esta opción, todos en su servidor podrán meditar en lugar de sentarse (anula que Todos pueden meditar);\nsin embargo, los jugadores no podrán acceder a ninguna habilidad especial hasta que hayan meditado durante la duración mínima requerida.<RGB:1.0,0.6,0.0> \nCuando esta casilla de verificación está seleccionada, los jugadores no necesitarán el rasgo Yogi para meditar\na menos que deban hacerlo. También se selecciona Leer antes de practicar.",
+	
+    Sandbox_mustReadBeforePractice = "Debe leer antes de entrenar (Rasgo dinámico)",
+	Sandbox_mustReadBeforePractice_tooltip = "Si esto está seleccionado, se requerirá que los jugadores lean uno de los libros de este mod sobre meditación\npara aprender a meditar antes de que se les permita entrenar para el rasgo.\n <RGB:1.0,0.6,0.0> DEBES habilitar Entrenar para el rasgo o no tendrás forma de obtener habilidades especiales cuando se seleccione esta opción.\n <RGB:1.0,0.6,0.0> DEBES habilitar el mod secundario, Meditación - Dominando el yoga, o los libros para aprender meditación NO APARECERÁN.",
+	
+    Sandbox_oneWithTheForce = "Uno con la Fuerza (Función de invisibilidad)",
+	Sandbox_oneWithTheForce_tooltip = "Si esto está seleccionado, el acto de meditar intentará hacer que los jugadores sean invisibles para los zombis.\nLos jugadores no pueden haber visto recientemente, haber sido vistos por, ni haber sido atacados por zombis. Presionar\nteclas o botones cancelará esta invisibilidad. <RGB:1.0,0.6,0.0> \nDebes abrir el archivo ServerName.ini de este servidor manualmente en un editor de texto\ny desactivar el Anti-Cheat Tipo 12 para que esta función funcione correctamente.",
+	
+    Sandbox_serenityTakesPractice = "La serenidad requiere práctica (Función de invisibilidad)",
+	Sandbox_serenityTakesPractice_tooltip = "Si esto está seleccionado, se requerirá que los jugadores practiquen la meditación más de 9 de cada\n10 días para retener la capacidad de volverse invisibles para los zombis.",
+	
+    Sandbox_meditativeResting = "Recuperación meditativa (Función de descanso)",
+	Sandbox_meditativeResting_tooltip = "Cuando esto está habilitado, meditar hará que los jugadores recuperen resistencia como si estuvieran descansando y se vuelvan más saludables.\nLas tasas de recuperación para varios aspectos de la salud mental y física se pueden ajustar a continuación.",
+
+	Sandbox_dedication = "Efectos de la dedicación (Función de descanso)",
+	Sandbox_dedication_tooltip = "Cuando esto está habilitado, los bonos de descanso meditativo se reducirán o aumentarán\nen relación con la frecuencia con la que el jugador medita. Los jugadores que no mediten al menos\nuna vez cada diez días se recuperarán a la mitad de cada tasa listada a continuación. Los jugadores que mediten\nmás de 3, 5, 7 u 9 de cada 10 días se recuperarán hasta tres veces cada tasa listada a continuación.",
+	
+    Sandbox_painlessRecovery = "Recuperación sin dolor (Función de descanso)",
+	Sandbox_painlessRecovery_tooltip = "Cuando esto está habilitado, los niveles de dolor de los jugadores se reducirán a 0 durante la recuperación meditativa;\nsin embargo, el dolor de las lesiones de los jugadores volverá rápidamente cuando dejen de meditar.",
+	
+    Sandbox_healingRequiresFocus = "La recuperación meditativa requiere concentración",
+	Sandbox_healingRequiresFocus_tooltip = "Cuando esto está habilitado, los jugadores DEBEN dejar de interactuar con el juego usando su teclado\no gamepad para beneficiarse de los efectos de la recuperación meditativa; si rompen\nsu concentración, romperán su pose (es decir, volverán a la animación de sentarse normal),\ny ya no se beneficiarán de los efectos de la recuperación meditativa.",
+	
+    Sandbox_trainingRequiredForTrait = "Entrenamiento necesario para ser Yogui",
+	Sandbox_trainingRequiredForTrait_tooltip = "Cuando se habilita el entrenamiento para el rasgo, ¿cuánto tiempo debería tomar en minutos de entrenamiento?\nObtener el rasgo de Yogui otorga acceso a la recuperación meditativa y otras habilidades de yogui. <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_fearRecovery = "Miedo reducido por momento de recuperación",
+	Sandbox_fearRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el miedo por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_panicRecovery = "Pánico reducido por momento de recuperación",
+	Sandbox_panicRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el pánico por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_angerRecovery = "Enojo reducido por momento de recuperación",
+	Sandbox_angerRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el enojo por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_stressRecovery = "Estrés reducido por momento de recuperación",
+	Sandbox_stressRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el estrés por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_fatigueRecovery = "Fatiga reducida por momento de recuperación",
+	Sandbox_fatigueRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse la fatiga por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_hungerRecovery = "Hambre reducida por momento de recuperación",
+	Sandbox_hungerRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el hambre por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_thirstRecovery = "Sed reducida por momento de recuperación",
+	Sandbox_thirstRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse la sed por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_boredomRecovery = "Aburrimiento reducido por momento de recuperación",
+	Sandbox_boredomRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse el aburrimiento por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_happinessRecovery = "Infelicidad reducida por momento de recuperación",
+	Sandbox_happinessRecovery_tooltip = "Cuando la recuperación meditativa está activa, ¿cuánto debería reducirse la infelicidad por momento de recuperación? <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_recoveryFrequency = "Tics entre momentos de recuperación",
+	Sandbox_recoveryFrequency_tooltip = "¿Cuántos tics deben pasar antes de que los valores de recuperación anteriores se apliquen nuevamente a los jugadores que descansan?\nEsta configuración sirve para ayudar a las personas a utilizar este mod a cualquier velocidad de juego. No estoy seguro de cómo manejar esto\nprogramáticamente, así que puede que necesites ajustar una tasa justa de recuperación para tu servidor. <RGB:1.0,0.6,0.0> ",
+	
+    Sandbox_literatureFrequencyMultiplier = "Multiplicador de frecuencia de literatura",
+	Sandbox_literatureFrequencyMultiplier_tooltip = "Multiplicador para la probabilidad de encontrar literatura meditativa (debe habilitar la expansión Dominando el Yoga). <RGB:1.0,0.6,0.0> "
+	
+}

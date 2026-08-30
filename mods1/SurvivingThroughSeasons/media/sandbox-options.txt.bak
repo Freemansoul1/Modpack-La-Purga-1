@@ -1,0 +1,19 @@
+VERSION = 1,
+
+option sts.MaxDaysInMonth
+{
+	type = double,
+	min = 1.0,
+	max = 30.0,
+	default = 10.0,
+
+	page = sts,
+	translation = sts_MaxDaysInMonth,
+}
+
+
+option sts.ScaleErosion
+{
+	type = boolean, default = false,
+	page = sts, translation = sts_ScaleErosion,
+}

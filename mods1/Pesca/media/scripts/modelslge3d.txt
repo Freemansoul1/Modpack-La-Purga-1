@@ -1,0 +1,546 @@
+module Base
+{
+	model FishBook
+	{
+		mesh = FishBook,
+	}
+	model FHBookA
+	{
+		mesh = FHBookA,
+	}
+	model FHBookB
+	{
+		mesh = FHBookB,
+	}
+	model FHBookC
+	{
+		mesh = FHBookC,
+	}
+	model FHBookD
+	{
+		mesh = FHBookD,
+	}
+	model FHBookE
+	{
+		mesh = FHBookE,
+	}
+	model FHBookF
+	{
+		mesh = FHBookF,
+	}
+	model FHBookG
+	{
+		mesh = FHBookG,
+	}
+
+	model FishBookClosedGroundA
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FishBookA,
+        scale = 0.4,
+    }
+	model FishBookClosedGroundB
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FishBookB,
+        scale = 0.4,
+    }
+	model FishBookClosedGroundC
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FishBookC,
+        scale = 0.4,
+    }
+	model FishBookClosedGroundD
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FishBookD,
+        scale = 0.4,
+    }
+	model FishBookClosedGroundE
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FishBookE,
+        scale = 0.4,
+    }
+	model SportFishBookClosedGround
+    {
+        mesh = WorldItems/BookClosed,
+        texture = SportFishBook,
+        scale = 0.4,
+    }
+	model LegendaryBookClosedGround
+    {
+        mesh = WorldItems/BookClosed,
+        texture = LegendaryFishBook,
+        scale = 0.4,
+    }
+
+	model LegendaryFishingRod_Modern
+	{
+		mesh = Weapons/2Handed/LegendaryFishingRod_Modern,
+
+		attachment world
+		{
+			offset = 0.0000 0.2500 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model GoldenFishingRod_Ground
+    {
+        mesh = Weapons/2Handed/GoldenFishingRod,
+		attachment world
+		{
+			offset = 0.0000 0.2500 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
+	model FHBookClosedGroundA
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookA,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundB
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookB,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundC
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookC,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundD
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookD,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundE
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookE,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundF
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookF,
+        scale = 0.4,
+    }
+	model FHBookClosedGroundG
+    {
+        mesh = WorldItems/BookClosed,
+        texture = FHBookG,
+        scale = 0.4,
+    }
+	model FishPati
+	{
+		mesh = WorldItems/Pati,
+		texture = WorldItems/Pati,
+		scale = 1,
+	}
+	model FishSurubi
+	{
+		mesh = WorldItems/Surubi,
+		texture = WorldItems/Surubi,
+		scale = 1,
+	}
+	model FishDorado
+	{
+		mesh = WorldItems/Dorado,
+		texture = WorldItems/Dorado,
+		scale = 1,
+	}
+	model FishPalometa
+	{
+		mesh = WorldItems/Palometa,
+		texture = WorldItems/Palometa,
+		scale = 1,
+	}
+	model FishPiranha
+	{
+		mesh = WorldItems/Piranha,
+		texture = WorldItems/Piranha,
+		scale = 1,
+	}
+	model FishPacu
+	{
+		mesh = WorldItems/Pacu,
+		texture = WorldItems/Pacu,
+		scale = 1,
+	}
+
+	model LGClimaMag
+	{
+		mesh = LGClimaMag,
+	}
+	model LGClimaMagGround
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/LGClimaMag,
+        scale = 0.4,
+    }
+
+	model RedWorm_Ground
+    {
+        mesh = WorldItems/Worm,
+		texture = WorldItems/RedWorm,
+        scale = 0.3,
+    }
+	model LGFOldMag1
+	{
+		mesh = LGFOldMag1,
+	}
+	model LGFOldMag1_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/LGFOldMag1,
+        scale = 0.4,
+    }
+	model LGFOldMag2
+	{
+		mesh = LGFOldMag2,
+	}
+	model LGFOldMag2_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/LGFOldMag2,
+        scale = 0.4,
+    }
+	model LGFOldMag3
+	{
+		mesh = LGFOldMag3,
+	}
+	model LGFOldMag3_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/LGFOldMag3,
+        scale = 0.4,
+    }
+	model FishingBoxS_Ground
+    {
+        mesh = WorldItems/Clothing/FishingBoxS,
+        texture = fishingboxs,
+    }
+	model FishingBoxM_Ground
+    {
+        mesh = WorldItems/Clothing/FishingBoxM,
+        texture = fishingboxm,
+    }
+	model FishingBoxB_Ground
+    {
+        mesh = WorldItems/Clothing/FishingBoxB,
+        texture = fishingboxb,
+    }
+	model HiddenBox_Ground
+    {
+        mesh = WorldItems/HiddenBox,
+        texture = WorldItems/HiddenBox,
+		scale = 1,
+    }
+	model TreeBranchPile_Ground
+	{
+		mesh = WorldItems/TreeBranchPile_Ground,
+		texture = WorldItems/TreeBranchPile_Ground,
+		scale = 1,
+	}
+	model TwigsPack_Ground
+	{
+		mesh = WorldItems/TwigsPack_Ground,
+		texture = WorldItems/TreeBranchPile_Ground,
+		scale = 1,
+	}
+	model FishingLine2
+	{
+		mesh = WorldItems/FishingLine2,
+		texture = WorldItems/FishingLine2,
+		scale = 0.65,
+	}
+	model FishingLine3
+	{
+		mesh = WorldItems/FishingLine3,
+		texture = WorldItems/FishingLine3,
+		scale = 0.7,
+	}
+	model FishingLine4
+	{
+		mesh = WorldItems/FishingLine4,
+		texture = WorldItems/FishingLine4,
+		scale = 0.71,
+	}
+
+	model SmallHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFHook1,
+        scale = 3,
+    }
+	model MediumHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFHook1,
+        scale = 4,
+    }
+	model BigHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFHook1,
+        scale = 5,
+    }
+	model RustySmallHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFRustyHook1,
+        scale = 3,
+    }
+	model RustyMediumHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFRustyHook1,
+        scale = 4,
+    }
+	model RustyBigHook
+    {
+        mesh = WorldItems/AFHook,
+		texture = WorldItems/AFRustyHook1,
+        scale = 5,
+    }
+	model Fishinglurebox_Ground
+    {
+        mesh = WorldItems/Fishinglurebox,
+		texture = WorldItems/Fishinglurebox,
+        scale = 1,
+    }
+
+	model Algae_a
+    {
+        mesh = WorldItems/Algae_a,
+        texture = WorldItems/Algae_a,
+        scale = 0.4,
+    }
+	model Algae_b
+    {
+        mesh = WorldItems/Algae_b,
+        texture = WorldItems/Algae_b,
+        scale = 0.001,
+    }
+	model FishAnguila
+    {
+        mesh = WorldItems/FishAnguila,
+        texture = WorldItems/FishAnguila,
+        scale = 1.0,
+    }
+	model Tararira
+    {
+        mesh = WorldItems/Tararira,
+        texture = WorldItems/Tararira,
+        scale = 1.0,
+    }
+	model RiverCrab
+    {
+        mesh = WorldItems/RiverCrab,
+        texture = WorldItems/RiverCrab,
+        scale = 0.7,
+    }
+	model RiverRay
+    {
+        mesh = WorldItems/RiverRay,
+        texture = WorldItems/RiverRay,
+        scale = 1.0,
+    }
+	model Arapaima
+    {
+        mesh = WorldItems/Arapaima,
+        texture = WorldItems/Arapaima,
+        scale = 0.8,
+    }
+
+	model WoodenFishingNet
+    {
+        mesh = WorldItems/WoodenFishingNet,
+        texture = WorldItems/WoodenFishingNet,
+        scale = 1.0,
+    }
+
+	model RubberBandsBox_Ground
+    {
+        mesh = WorldItems/PaperclipBox,
+        texture = WorldItems/RubberBandsBox,
+        scale = 0.6,
+    }
+
+	model CarpFish
+	{
+		mesh = WorldItems/Carp,
+		texture = WorldItems/Carp,
+		scale = 1.0,
+	}
+	model PayaraFish
+	{
+		mesh = WorldItems/Payara,
+		texture = WorldItems/Payara,
+		scale = 1.0,
+	}
+	model GiantSnakeheadFish
+	{
+		mesh = WorldItems/GiantSnakehead,
+		texture = WorldItems/GiantSnakehead,
+		scale = 0.25,
+	}
+	model WaterTurtle
+	{
+		mesh = WorldItems/WaterTurtle,
+		texture = WorldItems/WaterTurtle,
+		scale = 0.2,
+	}
+	model Tarpon
+	{
+		mesh = WorldItems/Tarpon,
+		texture = WorldItems/Tarpon,
+		scale = 1.0,
+	}
+	model Tucunare
+	{
+		mesh = WorldItems/Tucunare,
+		texture = WorldItems/Tucunare,
+		scale = 1.0,
+	}
+	model RTCatfish
+	{
+		mesh = WorldItems/RTCatfish,
+		texture = WorldItems/RTCatfish,
+		scale = 1.0,
+	}
+	model Walleye
+	{
+		mesh = WorldItems/Walleye,
+		texture = WorldItems/Walleye,
+		scale = 0.5,
+	}
+
+
+	model Dentudo
+	{
+		mesh = WorldItems/Dentudo,
+		texture = WorldItems/Dentudo,
+		scale = 1.0,
+	}
+	model Pejerrey
+	{
+		mesh = WorldItems/Pejerrey,
+		texture = WorldItems/Pejerrey,
+		scale = 1.0,
+	}
+	model RainbowTrout
+	{
+		mesh = WorldItems/RainbowTrout,
+		texture = WorldItems/RainbowTrout,
+		scale = 1.0,
+	}
+	model SalmonFish
+	{
+		mesh = WorldItems/SalmonFish,
+		texture = WorldItems/SalmonFish,
+		scale = 1.0,
+	}
+	model Piraiba
+	{
+		mesh = WorldItems/Piraiba,
+		texture = WorldItems/Piraiba,
+		scale = 1.0,
+	}
+	model Arowana
+	{
+		mesh = WorldItems/Arowana,
+		texture = WorldItems/Arowana,
+		scale = 1.0,
+	}
+
+	model LeadFishingbox1_Ground
+    {
+        mesh = WorldItems/LeadFishingbox,
+        texture = WorldItems/LeadFishingbox1,
+        scale = 0.1,
+    }
+
+	model LeadFishingbox2_Ground
+    {
+        mesh = WorldItems/LeadFishingbox,
+        texture = WorldItems/LeadFishingbox2,
+        scale = 0.1,
+    }
+
+	model LeadFishingbox3_Ground
+    {
+        mesh = WorldItems/LeadFishingbox,
+        texture = WorldItems/LeadFishingbox3,
+        scale = 0.1,
+    }
+
+	model LeadFishingbox4_Ground
+    {
+        mesh = WorldItems/LeadFishingbox,
+        texture = WorldItems/LeadFishingbox4,
+        scale = 0.1,
+    }
+
+	model LeadFishingbox5_Ground
+    {
+        mesh = WorldItems/LeadFishingbox,
+        texture = WorldItems/LeadFishingbox5,
+        scale = 0.1,
+    }
+	
+	
+	model SmallHookPacket_Ground
+    {
+        mesh = WorldItems/SmallHookPacket,
+        texture = WorldItems/SmallHookPacket,
+        scale = 0.15,
+    }
+
+	model MediumHookPacket_Ground
+    {
+        mesh = WorldItems/MediumHookPacket,
+        texture = WorldItems/MediumHookPacket,
+        scale = 0.2,
+    }
+
+	model BigHookPacket_Ground
+    {
+        mesh = WorldItems/BigHookPacket,
+        texture = WorldItems/BigHookPacket,
+        scale = 0.3,
+    }
+	
+	model WturtlePiece_Ground
+    {
+        mesh = WorldItems/turtlePiece,
+        texture = WorldItems/turtlePiece,
+        scale = 0.8,
+    }
+	model WturtlePiece_GroundCooked
+    {
+        mesh = WorldItems/turtlePiece,
+        texture = WorldItems/turtlePieceCooked,
+        scale = 0.8,
+    }
+	model WturtlePiece_GroundBurnt
+    {
+        mesh = WorldItems/turtlePiece,
+        texture = WorldItems/turtlePieceBurnt,
+        scale = 0.8,
+    }
+	model WturtlePiece_GroundRotten
+    {
+        mesh = WorldItems/turtlePiece,
+        texture = WorldItems/turtlePieceRotten,
+        scale = 0.8,
+    }
+}

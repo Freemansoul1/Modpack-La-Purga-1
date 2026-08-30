@@ -1,0 +1,4 @@
+UI_EN = {
+    UI_optionscreen_binding_Forced Sync = "Forced Sync",
+    UI_optionscreen_binding_Force Sync Key = "Force Sync Key",
+}

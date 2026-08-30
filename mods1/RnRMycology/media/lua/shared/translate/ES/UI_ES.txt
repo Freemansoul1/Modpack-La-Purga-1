@@ -1,0 +1,4 @@
+UI_ES = {
+    UI_trait_mycologist = "Micologo",
+    UI_trait_mycologistdesc = "Entusiasta de la busqueda y cultivacion de hongos. Comienza con +2 en Micologia.",
+}

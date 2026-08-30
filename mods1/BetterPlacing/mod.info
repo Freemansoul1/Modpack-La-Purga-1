@@ -1,0 +1,5 @@
+name=Better Placement
+poster=poster.png
+id=BP3D1
+description=Allows finer tuned placement of 3D models on the Z axis, allowing better visual placement of items
+versionMin=41.56

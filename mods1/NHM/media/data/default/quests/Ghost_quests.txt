@@ -1,0 +1,5 @@
+*ghost_q1
+#name Tesorería
+#desc El fantasma te da una guía para el nivel inferior del búnquer, al que se puede acceder con una tarjeta roja y un código especial que solo él conoce.
+#desc
+#desc El Tesoro es una misión semanal.

@@ -1,0 +1,5 @@
+Recipes_CH = {
+    Recipe_MakeRappelRope = "制作垂降绳",
+    Recipe_MakeSwissSeat = "制作攀爬安全带",
+	Recipe_MakeEscapeRope = "制作绳降套件",
+}

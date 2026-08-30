@@ -1,0 +1,37 @@
+IGUI_ES = {
+IGUI_CUI_Display_UpdateRate = "Tasa de actualización del inventario",
+     IGUI_CUI_Display_MaxItemPerGroup = "Máximo de artículos para mostrar por grupo de artículos",
+     IGUI_CUI_Display_OpacityPresets = "Preajuste de opacidad del inventario",
+     IGUI_CUI_Display_BookMarkStyle = "Estilo del icono de marcador",
+     IGUI_CUI_Display_EquipStyle = "Estilo de icono de equipo",
+     IGUI_CUI_Display_ControllerHighlight = "Estilo de resaltado seleccionado por el controlador",
+     IGUI_CUI_Display_BookTrack = "Marcar libros de habilidades superiores (WIP)",
+
+     IGUI_CUI_Display_EnableDrainableDetail = "Mostrar estado drenable detallado",
+     IGUI_CUI_Display_EnableShowModdedGun = "Mostrar armas modificadas",
+     IGUI_CUI_Display_EnableDetailedAttachments = "Mostrar archivos adjuntos en la sección ampliada",
+     IGUI_CUI_Display_EnableMagazineDetail = "Mostrar estado detallado de la revista",
+    
+     IGUI_CUI_Display_EnableShowModdedGun = "Mostrar armas modificadas",
+     IGUI_CUI_Display_EnableTrackLitItems = "Seguimiento de libros y medios",
+     IGUI_CUI_Display_EnableTrackMediaItems = "Seguimiento de medios vistos",
+     IGUI_CUI_Display_EnableBadCondHighlight = "Resaltar armas en mal estado",
+     IGUI_CUI_Display_EnableEquipmentLine = "Habilitar separador de equipos",
+     IGUI_CUI_Display_EnablePinItem = "Mostrar elemento fijado (WIP)",
+     IGUI_CUI_Display_EnableFilledMagazine = "",
+     IGUI_CUI_Display_ItemDataUpdateRate = "Tasa de actualización de datos del artículo",
+     IGUI_CUI_Display_InventoryUpdateRate = "Tasa de actualización del inventario",
+     IGUI_CUI_Display_EnableDelayedItemDataUpdate = "Habilitar actualización de datos de elementos retrasados",
+     IGUI_CUI_Display_EnableDelayedInventoryUpdate = "Habilitar actualización de inventario retrasada",
+     IGUI_CUI_Display_ExperimentalTableWipe = "Borrado de mesa experimental",
+
+     IGUI_CUI_Display_EnableTrackDuplicates = "Función de seguimiento de elementos duplicados",
+     IGUI_CUI_Display_EnableTrackDuplicateLiteratures = "Seguimiento de literatura duplicada",
+     IGUI_CUI_Display_EnableTrackDuplicateWeapons = "Seguimiento de armas duplicadas",
+     IGUI_CUI_Display_EnableTrackDuplicateWeaponsComparison = "Comparar condiciones de armas",
+     IGUI_CUI_Display_EnableTrackDuplicateClothings = "Seguimiento de ropa duplicada",
+     IGUI_CUI_Display_EnableTrackDuplicateFoods = "Seguimiento de alimentos duplicados",
+     IGUI_CUI_Display_EnableTrackDuplicateItems = "Seguimiento de elementos genéricos duplicados"
+    
+     IGUI_CUI_Display_EnableTrackDuplicates_Tooltip = "Compare el artículo del contenedor objetivo con el inventario del personaje.\nEl contenedor no equipado no se incluirá.",
+}

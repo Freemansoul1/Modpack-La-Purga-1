@@ -1,0 +1,4 @@
+IGUI_EN = {
+	IGUI_CraftUI_Controls1 = "%1/%2 = Up/Down     %3/%4 = Change Category     C = Craft One     R = Craft All     F = Favorite     U = Force Reload     ESC = Close",
+    IGUI_CraftUI_Controls2 = "%1/%2 = Up/Down     %3/%4 = Change Category     C = Add Ingredient     F = Favorite     U = Force Reload     ESC = Close",
+}

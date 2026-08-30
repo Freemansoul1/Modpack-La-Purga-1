@@ -1,0 +1,4 @@
+Recipe_RU = {
+    Recipe_Create_BobbyPin = "Создать заколку",
+	Recipe_Create_BobbyPin2 = "Создать заколки",
+}

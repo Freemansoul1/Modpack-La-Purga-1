@@ -1,0 +1,25 @@
+Sandbox_JP = {
+    Sandbox_HIC = "車に隠れる",
+
+    Sandbox_HIC_Active = "Mod 有効",
+    Sandbox_HIC_Active_tooltip = "Modを有効または無効にします。",
+	
+	Sandbox_HIC_MoodleActive = "ムードル有効",
+	Sandbox_HIC_MoodleActive_tooltip = "ムードルを有効または無効にする。",
+
+
+    Sandbox_HIC_MinimalCondition = "最低条件",
+    Sandbox_HIC_MinimalCondition_tooltip = "隠れるために必要な車両パーツの最低条件パーセンテージ。",
+
+    Sandbox_HIC_Radius = "検出範囲",
+    Sandbox_HIC_Radius_tooltip = "ゾンビが車内のプレイヤーを検出できる範囲。",
+
+    Sandbox_HIC_CheckForTraits = "特性を確認",
+    Sandbox_HIC_CheckForTraits_tooltip = "有効にすると、目立ちやすいと目立ちにくい特性を確認します。",
+
+    Sandbox_HIC_TraitCoefficient = "特性影響係数",
+    Sandbox_HIC_TraitCoefficient_tooltip = "0-100％の値を表す特性係数に基づいて半径を調整します。",
+
+    Sandbox_HIC_ZombieMemory = "ゾンビの記憶",
+    Sandbox_HIC_ZombieMemory_tooltip = "有効にすると、ゾンビに追いかけられている間、たとえ見えなくてもプレイヤーは隠れることができません。無効にすると、ゾンビに見られない時にプレイヤーは隠れることができます。"
+}

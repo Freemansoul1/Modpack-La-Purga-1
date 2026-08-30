@@ -1,0 +1,4 @@
+UI_EN = {
+    UI_optionscreen_binding_LandClaimBindings = "Land Claim Controls",
+    UI_optionscreen_binding_LandClaimBindings_Destroy = "[Raiding] Destroy TC when close by",
+}

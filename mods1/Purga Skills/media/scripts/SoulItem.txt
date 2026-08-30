@@ -1,0 +1,10 @@
+module Base{
+    item Soul{
+        Type                = Literature,
+        Weight              = 0.21,
+        DisplayName         = My Soul,
+        DisappearOnUse      = FALSE,
+        Icon                = soul,
+        WorldStaticModel    = Soul.DragonColor
+    }
+}

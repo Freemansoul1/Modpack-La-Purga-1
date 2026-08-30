@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Garryson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Garryson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos reforzables, ¿qué necesitas?"
+#choice
+    hmmwvht|chevystepvanswat
+    hmmwvtr|84gageV300fsv
+    m151canvas|Stryker_APC
+    nada|De momento no necesito nada
+*hmmwvht
+#m Garryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado
+#m Garryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Garryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado1
+#m Garryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Garryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado2
+#m Garryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Garryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Garryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningford350swat.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,800
+#m Garryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.chevystepvanswat,1,rare
+#exit
+*na1
+#m Garryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Garryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up TuninggageV300.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,800
+#m Garryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.84gageV300fsv,1,rare
+#exit
+*na2
+#m Garryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Garryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningstrykerapc.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,800
+#m Garryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.Stryker_APC,1,rare
+#exit
+*na3
+#m Garryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

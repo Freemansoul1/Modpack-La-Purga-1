@@ -1,0 +1,5 @@
+Sandbox_PTBR = {
+    Sandbox_Hide = "Esconda-se",
+    Sandbox_Hide_HidingSpeed = "Velocidade de Esconder-se",
+    Sandbox_Hide_HidingSpeed_tooltip = "Determina quanto tempo leva para se esconder em algum lugar. "
+}

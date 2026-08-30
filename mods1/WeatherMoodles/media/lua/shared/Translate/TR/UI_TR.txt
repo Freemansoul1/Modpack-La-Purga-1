@@ -1,0 +1,39 @@
+UI_TR = {
+	UI_WeatherMoodles_EnableRain = "Yaðmur aktif",
+	UI_WeatherMoodles_EnableRain_Tooltip = "Yaðmur moodle'ýný aktif eder.",
+	UI_WeatherMoodles_RainIs = "Yaðmur",
+	
+	UI_WeatherMoodles_EnableSnow = "Kar aktif",
+	UI_WeatherMoodles_EnableSnow_Tooltip = "Kar moodle'ýný aktif eder.",
+	UI_WeatherMoodles_SnowIs = "Kar",
+	
+	UI_WeatherMoodles_EnableCloud = "Bulut aktif",
+	UI_WeatherMoodles_EnableCloud_Tooltip = "Bulut moodle'ýný aktif eder.",
+	UI_WeatherMoodles_CloudIs = "Bulutlar",
+	
+	UI_WeatherMoodles_EnableWind = "Rüzgar aktif",
+	UI_WeatherMoodles_EnableWind_Tooltip = "Rüzgar moodle'ýný aktif eder.",
+	UI_WeatherMoodles_WindIs = "Rüzgar",
+	
+	UI_WeatherMoodles_EnableFog = "Sis aktif",
+	UI_WeatherMoodles_EnableFog_Tooltip = "Sis moodle'ýný aktif eder.",
+	UI_WeatherMoodles_FogIs = "Sis",
+	
+	UI_WeatherMoodles_EnableSun = "Güneþ aktif",
+	UI_WeatherMoodles_EnableSun_Tooltip = "Güneþ moodle'ýný aktif eder.",
+	UI_WeatherMoodles_SunIs = "Güneþ",
+
+	UI_WeatherMoodles_IsAltTex = "Alternatif texture'lar",
+	UI_WeatherMoodles_IsAltTex_Tooltip = "Alternatif texture'larý kullanmak için aktif edin.<br>(Laast'a teþekkürler)",
+	UI_WeatherMoodles_EnableExtreme = "Þiddetli hava olayý moodle'larý",
+	UI_WeatherMoodles_EnableExtreme_Tooltip = "Þiddetli hava olaylarýný gösteren moodle'larý aktif eder.",
+	UI_WeatherMoodles_IsCombine = "Moodle'larý birleþtir",
+	UI_WeatherMoodles_IsCombine_Tooltip = "Eðer bir þiddetli hava olayý gerçekleþiyorsa, tüm moodle'lar gizlenir.<br>(Þiddetli hava olayý moodle'ý ve sis moodle'ý hariç)",
+	UI_WeatherMoodles_ShowInside = "Ýç mekanda göster",
+	UI_WeatherMoodles_ShowInside_Tooltip = "Oyuncu iç mekanlardayken de moodle'lar görünür.",
+	UI_WeatherMoodles_BGColor_Tooltip = "Moodle'ýn arkaplan rengini belirler.<br>Ýyidir = Yeþil | Kötüdür = Kýrmýzý",
+	UI_WeatherMoodles_Good = "Ýyidir",
+	UI_WeatherMoodles_Bad = "Kötüdür",
+	
+	UI_optionscreen_binding_KeyToggle = "Weather Moodles aç/kapat",
+}

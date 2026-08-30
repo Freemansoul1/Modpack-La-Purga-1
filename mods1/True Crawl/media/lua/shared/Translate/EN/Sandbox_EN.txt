@@ -1,0 +1,24 @@
+Sandbox_EN = {
+	Sandbox_TrueCrawl = "True Crawl",
+	Sandbox_TrueCrawl_ZombieRadius = "Zombie Radius",
+	Sandbox_TrueCrawl_ZombieRadius_tooltip = "This value controls the zombie sight radius when player is crawling. It goes from 1(Extremely Small) to 20(Extremely Far). Default is 5 (Medium Radius). My recommendation is to keep between 5 - 10 to have a more immersive gameplay.",
+
+	Sandbox_TrueCrawl_StealhModeEnable = "Stealth Mode",
+	Sandbox_TrueCrawl_StealhModeEnable_tooltip = "Toggles the Stealth Mode ON or OFF. If OFF, only the vanilla Sneaking system will be used. [Default is True].",
+
+	Sandbox_TrueCrawl_MoodleEnable = "Moodle Stealth Indicator",
+	Sandbox_TrueCrawl_MoodleEnable_tooltip = "Toggles the Moodle Stealth Indicator. (Works ONLY if Stealth Mode is ON!) [Default is True]. ",
+
+	Sandbox_TrueCrawl_CrawlUnderVehiclesEnable = "Crawl Under Vehicles",
+	Sandbox_TrueCrawl_CrawlUnderVehiclesEnable_tooltip = "Toggles the ability to Crawl under Vehicles. (YOU MUST BE CRAWLING!) [Default is True, Default Key is Shift]. ",
+	
+	Sandbox_TrueCrawl_RealisticEndurance = "Realistic Endurance",
+	Sandbox_TrueCrawl_RealisticEndurance_tooltip = "Toggles the Realistic Endurance mode. This mode improves the game immersion by limiting how much you can crawl. [Default is True]. ",
+
+	Sandbox_TrueCrawl_CancelCrawlWhenSpotted = "Cancel Crawl When Spotted",
+	Sandbox_TrueCrawl_CancelCrawlWhenSpotted_tooltip = "Auto disable the Crawling Pose when spotted by zombies. [Default is False]. ",
+	
+	Sandbox_TrueCrawl_StealhModeServer = "Enable Server Mode",
+	Sandbox_TrueCrawl_StealhModeServer_tooltip = "Use this option only if you're hosting an Local or Dedicated server. (To avoid issues). [Default is False]. ",
+}
+

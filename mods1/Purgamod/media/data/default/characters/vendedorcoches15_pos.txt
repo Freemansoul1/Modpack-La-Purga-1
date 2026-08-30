@@ -1,0 +1,5 @@
+#is_flag vendedorcoches15,true
+    #npc_create Carreyson Ford|NPC_jarrison7.png|12231,2643,0
+    #exit
+#npc_create Carreyson Ford|NPC_jarrison7.png|12231,2643,0
+#exit

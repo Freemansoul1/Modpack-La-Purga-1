@@ -1,0 +1,6 @@
+Recipe_JP = {
+
+Recipe_makeDoorsRepairKitWood = "ドア用修理キットを作成する",
+Recipe_makeDoorsReinforceKitMetal = "ドア用補強キットを作成する",
+
+}

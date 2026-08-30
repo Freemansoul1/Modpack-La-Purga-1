@@ -1,0 +1,3 @@
+ContextMenu_CN = {
+	ContextMenu_UseChem = "使用化学",
+}

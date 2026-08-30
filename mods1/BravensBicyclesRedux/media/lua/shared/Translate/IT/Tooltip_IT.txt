@@ -1,0 +1,6 @@
+Tooltip_IT = {
+	Tooltip_item_BicycleFrame = "Pode ser largado para gerar uma bici com todas as peças que você tem em seu inventário.",
+	Tooltip_item_BicycleBasket = "Può essere installato su bicis normali per spazio di archiviazione aggiuntivo.",
+	Tooltip_item_BicycleLock = "Utilizzato per bloccare una bici, impedendo ad altri di entrarvi.",
+	Tooltip_item_BicycleLockKey = "Usato per rimuovere il lucchetto di una bici.",
+}

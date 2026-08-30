@@ -1,0 +1,14 @@
+ContextMenu_FR = {
+	ContextMenu_EasyOutfitsApplyTag = "Appliquer l'étiquette de la tenue",
+	ContextMenu_EasyOutfitsRenameTag = "Renommer l'étiquette de la tenue",
+	ContextMenu_EasyOutfitsApplyPlayer = "Impossible d'appliquer l'étiquette à l'inventaire du joueur",
+	ContextMenu_EasyOutfitsApplyFloor = "Impossible d'appliquer l'étiquette à l'étage",
+	ContextMenu_EasyOutfitsApplyVehicle = "Impossible d'appliquer l'étiquette aux véhicules",
+	ContextMenu_EasyOutfitsStoreOutfit = "Stocker la tenue",
+	ContextMenu_EasyOutfitsWearOutfit = "Porter la tenue",
+	ContextMenu_EasyOutfitsRetreiveOutfit = "Récupérer la tenue",
+	ContextMenu_EasyOutfitsRegisterOutfit = "Enregistrer la tenue",
+	ContextMenu_EasyOutfitsRemoveOutfit = "Supprimer l'étiquette de la tenue",
+	ContextMenu_EasyOutfitsStoreAndRegisterOutfit = "Stocker & Enregistrer",
+	ContextMenu_EasyOutfitsFixFavoriteWeapon = "Fix Favorite Weapon",
+}

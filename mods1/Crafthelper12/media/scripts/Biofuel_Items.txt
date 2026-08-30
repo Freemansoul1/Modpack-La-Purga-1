@@ -1,0 +1,255 @@
+module warpbiofuel
+{
+	imports
+	{
+		Base
+	}
+
+	item BioreactorCrafted
+	{
+		DisplayCategory = Tool,
+		Weight	=	5.0,
+        Type	=	Normal,
+		DisplayName	= BioreactorCrafted,
+	    Icon	=	BioreactorCrafted,
+	    Tooltip =   Tooltip_Bioreactor_Crafted,
+	}
+
+	item BioreactorConsumer
+    {
+        DisplayCategory = Tool,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Bioreactor,
+        Icon	=	BioreactorConsumer,
+        Tooltip =   Tooltip_Bioreactor,
+    }
+
+    item Petridish
+    {
+        DisplayCategory = Tool,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= PetriDish,
+        Icon	=	Petridish,
+        Tooltip =   Tooltip_Petridish,
+    }
+
+        recipe CreateDirtyPetridish
+        {
+		NHM.Glass = 3,
+		Result:DirtyPetridish = 1,
+		Time:300.0,
+		AnimNode:Disassemble,
+		NeedToBeLearn:false,
+                Category:Chemistry,
+                SkillRequired:Chemistry=3,
+                NearItem:Chemistry Workbench,
+	}
+
+
+	item BoxOfPetriDishes
+    {
+        DisplayCategory = Tool,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	BoxOfPetriDishes,
+        Icon	=	JarBox,
+        WorldStaticModel = BoxOfJars,
+    }
+
+    item DirtyPetridish
+    {
+        DisplayCategory = Tool,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= DirtyPetriDish,
+        Icon	=	PetridishDirty,
+        Tooltip =   Tooltip_Petridish_Dirty,
+    }
+
+	item ContaminatedSample
+	{
+		DisplayCategory = Item,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	ContaminatedSample,
+        Tooltip =   Tooltip_ContaminatedSample,
+		Icon	=	ContaminatedSample,
+	}
+
+	item ContaminatedSample2
+    {
+        DisplayCategory = Item,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	ContaminatedSample2,
+        Tooltip =   Tooltip_ContaminatedSample2,
+        Icon	=	ContaminatedSample2,
+    }
+
+	item Z2Bacteria
+	{
+		DisplayCategory = Item,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	Z2Bacteria,
+		Tooltip =   Tooltip_Z2Bacteria,
+		Icon	=	Bacterium,
+		DaysFresh	=	2,
+		DaysTotallyRotten	=	4,
+		Poison = true,
+		PoisonDetectionLevel = 7,
+		PoisonPower = 240,
+		UseForPoison = 38,
+	}
+
+	item Z5Bacteria
+    {
+        DisplayCategory = Item,
+        Weight	=	0.2,
+        Type	=	Food,
+        DisplayName	=	Z5Bacteria,
+        Tooltip =   Tooltip_Z5Bacteria,
+        Icon	=	Bacterium2,
+        DaysFresh	=	2,
+        DaysTotallyRotten	=	4,
+        Poison = true,
+        PoisonDetectionLevel = 7,
+        PoisonPower = 240,
+        UseForPoison = 38,
+    }
+
+    item ResearchNotes
+    {
+        DisplayCategory = Item,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	BiofuelResearchNotes,
+        Tooltip =   Tooltip_BiofuelResearchNotes,
+        Icon	=	Notebook,
+        WorldStaticModel = EmptyNotebook,
+    }
+
+	recipe CultivateZ2
+	{
+		ContaminatedSample = 1,
+		Petridish = 1,
+		Result:Z2Bacteria = 1,
+		Time:300.0,
+		OnGiveXP:Give3DoctorXP,
+                OnGiveXP:Chemistry3_OnGiveXP,
+		AnimNode:Disassemble,
+		NeedToBeLearn:false,
+		SkillRequired:Chemistry=6/Doctor=6,
+		AllowRottenItem:true,
+		OnCreate:Recipe.OnCreate.CultivateBacteria,
+                Category:Chemistry,
+                NearItem:Chemistry Workbench,
+		AllowFrozenItem:false,
+	}
+
+	recipe CultivateZ5
+    {
+        ContaminatedSample2 = 1,
+        Petridish = 1,
+        Result:Z5Bacteria = 1,
+        Time:300.0,
+        OnGiveXP:Give3DoctorXP,
+        OnGiveXP:Chemistry3_OnGiveXP,
+        AnimNode:Disassemble,
+        NeedToBeLearn:false,
+        SkillRequired:Chemistry=6/Doctor=6,
+        AllowRottenItem:true,
+        OnCreate:Recipe.OnCreate.CultivateBacteria,
+        Category:Chemistry,
+        NearItem:Chemistry Workbench,
+        AllowFrozenItem:false,
+    }
+
+	recipe CreateBiofuel
+	{
+		Z2Bacteria = 2,
+		CompostBag = 3,
+		destroy EmptyPetrolCan/PetrolCan,
+		keep BioreactorCrafted/BioreactorConsumer,
+		Result:PetrolCan = 1,
+		Sound:MakePlaster,
+		Time: 180.0,
+		AllowRottenItem:true,
+		OnCreate:Recipe.OnCreate.CreateBiofuelGasoline,
+                NearItem:Chemistry Workbench,
+                Category:Chemistry,
+		NeedToBeLearn:false,
+		AllowFrozenItem:false,
+	}
+
+	recipe CreateBiopropane
+	{
+		Z5Bacteria = 2,
+		CompostBag = 3,
+		destroy PropaneTank = 1,
+		keep BioreactorCrafted/BioreactorConsumer,
+		Result:PropaneTank = 1,
+		Sound:MakePlaster,
+		Time: 180.0,
+		AllowRottenItem:true,
+		OnCreate:Recipe.OnCreate.CreateBiofuelPropane,
+		NeedToBeLearn:false,
+                Category:Chemistry,
+                NearItem:Chemistry Workbench,
+		AllowFrozenItem:false,
+	}
+
+	recipe EmptyPetriDish
+    {
+        destroy Z2Bacteria/Z5Bacteria,
+        Result:DirtyPetridish,
+        AnimNode:Disassemble,
+        Sound:EmptyPan,
+        AllowRottenItem:true,
+        Time:40.0,
+        Category:Chemistry,
+    }
+
+    recipe SterilizePetriDish
+    {
+        destroy DirtyPetridish,
+        WaterPot;5,
+        CanBeDoneFromFloor:true,
+        Result:Petridish,
+        Time:150.0,
+        Heat:-0.22,
+        Category:Chemistry,
+    }
+
+    recipe Construct Homemade Bioreactor
+    {
+        Pot=1,
+        SheetMetal=1,
+        SmallSheetMetal=2,
+        BlowTorch=1,
+        Screws=20,
+        keep Screwdriver,
+        keep Saw/GardenSaw,
+        keep BallPeenHammer,
+	    NoBrokenItems: true,
+		Result: BioreactorCrafted,
+		Time: 3500,
+		Category: Welding,
+		SkillRequired: MetalWelding=6,
+		AnimNode: Disassemble,
+		OnGiveXP: Give5MetalWeldingXP,
+		Prop1: Screwdriver,
+		NeedToBeLearn: false,
+    }
+
+     recipe OpenBoxOfPetriDishes
+     {
+        BoxOfPetriDishes,
+        Result:Petridish=30,
+        Sound:PutItemInBag,
+        Time:15.0,
+        NeedToBeLearn: false,
+     }
+}

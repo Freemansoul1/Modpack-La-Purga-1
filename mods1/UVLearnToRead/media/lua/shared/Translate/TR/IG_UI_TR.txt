@@ -1,0 +1,4 @@
+IGUI_TR = {
+	IGUI_perks_Piano = "Okuma Öğrenme",
+	IGUI_perks_Learning = "Eğitim",
+}

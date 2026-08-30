@@ -1,0 +1,16 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+item 556BulletsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= 556 Bullets Mold,
+        Icon = BulletMold,
+    }
+}

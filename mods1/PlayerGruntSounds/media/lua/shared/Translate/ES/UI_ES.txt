@@ -1,0 +1,4 @@
+UI_ES = {
+	UI_DynamicGruntSounds = "Sonidos de gruñidos dinámicos",
+    UI_DynamicGruntSoundsTooltip = "Si esta opción está activada, la probabilidad de que el personaje gruña depende de la resistencia que tenga",
+}

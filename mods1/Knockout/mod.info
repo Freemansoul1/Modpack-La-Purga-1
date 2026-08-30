@@ -1,0 +1,5 @@
+name=Real Knockouts
+poster=poster.png
+id=RealKnockouts1
+description=This mod introduces a new layer of realism, allowing your character to be knocked unconscious in situations like car crashes, severe damage and injuries.
+require=MoodleFramework1,UIAPI1

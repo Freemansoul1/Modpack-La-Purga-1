@@ -1,0 +1,97 @@
+#is_flag pharmacist_intro,true
+    #jump loop
+
+*intro
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Две таблетки викодина плюс два кубика физраствора..."
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Сегодня вечером переливание."
+#m Фармацевт|NPCPortraits/PharmacistP.png|"А? Тебе чего?"
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Ладно. На чем я там остановилась..."
+#exit
+
+*intro_hello
+#m "Здравствуйте! Я ${female,новенькая,новенький}. Не поможете мне? Вы можете что-нибудь рассказать об этом месте?"
+#m Фармацевт|NPCPortraits/PharmacistP.png|"А чего рассказывать... Госпиталь Милосердия, до Инцидента был дорогущим санаторием, в котором лечились богатейшие жители округа Нокс. Да и не только..."
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Демиург главный. Персонал весьма ограничен, но нам хватает. Ну, разве что Ассистенту лишние руки не помешали бы." 
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Заведующий, по идее, заместить Демиурга. Но это чушь, его обычно замещает Сестра."
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Я Фармацевт. Заведую лекарствами. Высшее образование имею, между прочим! Большего тебе знать не нужно."
+#m "Хм... И на этом спасибо."
+#fade_out black
+#set_flag pharmacist_intro,true
+#fade_in
+#reveal Pharmacist
+#exit
+
+*loop
+#m Фармацевт|NPCPortraits/PharmacistP.png|"Тебе чего?"
+
+#choice
+    questPHARMACIST|Взять задание Фармацевта
+    tutorial6|[Обучение 6]
+    quest_exit|Уйти
+    questPHARMACISTcomplete|Сдать задание Фармацевта|pharmacist_q1_flag
+
+*tutorial6
+    #m Обучение|NPCPortraits/Tutorial.png|"Привет, ${female,выжившая,выживший}. На связи Команда сервера New Hope. Ты ${female,нашла,нашел} Шестую обучающую подсказку. Собери все 8, прежде чем покинуть Госпиталь Милосердия, чтобы получить награду у Часового."
+    #m Обучение|NPCPortraits/Tutorial.png|"Прежде чем выйти отсюда, нужно усвоить пару базовых аспектов."
+    #m Обучение|NPCPortraits/Tutorial.png|"1. Лут спавна сильно урезан. В нашем модпаке упор сделан на альтернативную добычу и крафт, чтобы сделать лутинг не основой выживания, а одной из возможных опций. Лут спавнится часто, каждые 4 реальных часа, так что на любой вылазке вы с огромным шансом что-нибудь найдете."
+    #m Обучение|NPCPortraits/Tutorial.png|"2. Некоторые территории на карте являются Зараженными зонами (или зонами радиации). В таких местах ваш персонаж будет накапливать болезнь и получать урон, вплоть до смерти."
+    #m Обучение|NPCPortraits/Tutorial.png|"Чтобы этого избежать, создайте защиту - противогаз и фильтры к нему. Если вы успели набрать заражения до использования защиты, то покиньте зараженную область и скушайте Угольных таблеток."
+#set_flag tutorial6,true
+#exit
+
+*questPHARMACIST
+#is_quest pharmacist_q1|locked
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Я совсем забегалась и не успеваю подготовить препарат. Держи вот ступу и пестик, иди на первый этаж. Там есть угловая комната, в которой обычно Ассистент тусуется."
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Из нее пройдешь в операционную. Там стоит медицинский столик, маленький такой. На нем чаши всякие найдешь. И колбу с веществом! Она там одна, не перепутаешь."
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Надо перемолоть вещество и засыпать в упаковку. Упаковка там же, все подготовлено. Поспеши, пожалуйста."
+    #quest_unlock pharmacist_q1
+    #task_unlock pharmacist_q1|t1 
+    #add_item NHM.QuestHMortPest,1
+    #exit
+#is_quest pharmacist_q1|unlocked,uncompleted
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Принес лекарство?"
+    #exit
+#is_quest pharmacist_q1|unlocked,completed
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Твоя помощь больше не требуется."
+#exit
+
+*questPHARMACISTcomplete
+#has_item NHM.QuestHTablets,1
+    #remove_item NHM.QuestHTablets,1
+    #m "Вот ваше лекарство."
+    #m Вы протягиваете Фармацевту упаковку таблеток странного сине-зеленого цвета.
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"Отлично! Еще пару месяцев он продержится без приступов..."
+    #m "Кто "он"?"
+    #m Фармацевт|NPCPortraits/PharmacistP.png|"А? Неважно. Спасибо за помощь, можешь идти."
+    #set_flag pharmacist_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,4.5
+    #exit
+#m Фармацевт|NPCPortraits/PharmacistP.png|"А где лекарство? Я же просила побыстрее..."
+#exit
+
+*quest1_q1_pharmacist
+#cutscene true
+#m Ничего не подписано... Для чего это все? На упаковке написано "мнестик"... Никогда не ${female,слышала,слышал} о таком препарате...
+#has_item NHM.QuestHMortPest,1
+    #remove_item NHM.QuestHMortPest,1
+    #add_item NHM.QuestHTablets,1
+    #set_flag q1_pharmacist_flag,true
+    #m Что за Фармацевт такой, порошки и препараты без подписей использует... А если что-то перепутать? Можно же человека убить! И что за хрень этот "мнестик"?
+    #exit
+#m Черт, а где ступа с пестиком...
+#exit
+
+*quest_exit
+#exit

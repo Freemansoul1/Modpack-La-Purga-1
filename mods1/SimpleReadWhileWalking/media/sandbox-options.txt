@@ -1,0 +1,23 @@
+VERSION = 1,
+
+option ReadWalking.FogDarkness
+{
+	type = double,
+	min = 0,
+	max = 1.0,
+	default = 1.0,
+
+	page = Mods,
+	translation = ReadWalking_FogDarkness,
+}
+
+option ReadWalking.ReadSpeed
+{
+	type = double,
+	min = 0.2,
+	max = 100.0,
+	default = 1.0,
+
+	page = Mods,
+	translation = ReadWalking_ReadSpeed,
+}

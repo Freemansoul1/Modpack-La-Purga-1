@@ -1,0 +1,34 @@
+--bandido compra droga coca alta calidad 
+
+#offer NHM.IngotGold,9999|1
+
+#demand Sprout.Blockcocaine|5
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

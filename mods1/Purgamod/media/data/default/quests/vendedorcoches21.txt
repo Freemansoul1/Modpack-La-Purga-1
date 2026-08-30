@@ -1,0 +1,4 @@
+#quest vendedorcoches21|hidden
+     #task t0|hidden
+         #set Deliver|Base.Money,30|Base.Money,60
+         #action RunScript|vendedorcoches21.txt,venta

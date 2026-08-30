@@ -1,0 +1,5 @@
+#is_flag vendedorcoches17,true
+    #npc_create Jeyrison Ford|NPC_jarrison7.png|8312,6858,1
+    #exit
+#npc_create Jeyrison Ford|NPC_jarrison7.png|8312,6858,1
+#exit

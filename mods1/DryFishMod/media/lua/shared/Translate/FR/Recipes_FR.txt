@@ -1,0 +1,7 @@
+Recipes_FR {
+    Recipe_Prepare_Dry_Fish = "Transformation du poisson",
+    Recipe_Make_Drier_1 = "Filet de séchage artisanal",
+    Recipe_Make_Drier_9 = "Filet de séchage artisanal",
+    Recipe_Make_Drier_8 = "Support de séchage artisanal",
+    Recipe_Make_Drier_15 = "Brochette de séchage artisanale",
+}

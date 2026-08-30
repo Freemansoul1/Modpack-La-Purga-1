@@ -1,0 +1,8 @@
+VERSION = 1,
+
+option vehicleBlacklist.blacklistedVehicles
+{
+    type = string, default = ,
+    page = vehicleBlacklist_vehicleBlacklistOptions,
+    translation = vehicleBlacklist_blacklistedVehicles,
+}

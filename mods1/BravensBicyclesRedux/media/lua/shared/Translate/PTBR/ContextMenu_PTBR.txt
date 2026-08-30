@@ -1,0 +1,6 @@
+ContextMenu_PTBR = {
+    ContextMenu_Pick_Up_Bicycle = "Pegar bike",
+    ContextMenu_BicycleLock = "Instalar a trava da bike",
+    ContextMenu_BicycleUnlock = "Remover a trava da bike",
+    ContextMenu_Lift_Bicycle = "Levantar a bike",
+}

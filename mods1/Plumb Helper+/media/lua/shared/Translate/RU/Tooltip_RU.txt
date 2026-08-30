@@ -1,0 +1,21 @@
+Tooltip_RU = {
+  
+Tooltip_PlumbHelper 	= "Помощник сантехника"
+Tooltip_PlumbHelper2 	= "Активировать курсор для поиска источников воды над вами."
+Tooltip_PlumbHelper3 	= "Легенда:"
+Tooltip_PlumbHelper4 	= "Красный = нет источника воды, в помещении"
+Tooltip_PlumbHelper4B 	= "Красный = нет источника воды, на улице"
+Tooltip_PlumbHelper5 	= "Желтый = есть вода, на улице"
+Tooltip_PlumbHelper6 	= "Синий = водопровод активен"
+Tooltip_PlumbHelper7 	= "Зеленый = найдена сантехника"
+Tooltip_PlumbHelper8 	= "Красный = не найдена сантехника"
+Tooltip_PlumbHelper9 	= "Активировать курсор для поиска сантехники под вами."
+Tooltip_PlumbHelper10 	= "Найти сантехнику"
+Tooltip_PlumbHelper11 	= "Найти дождевые бочки"
+Tooltip_IsOutside 		= "Этот блок на улице"
+Tooltip_IsInside 		= "Этот блок в помещении"
+Tooltip_WaterON 		= "Городское водоснабжение работает."
+Tooltip_WaterONB 		= "(Влияет на точность Помощника сантехника в стандартных зданиях.)"
+Tooltip_WaterOFF 		= "Городское водоснабжение не работает."
+
+}

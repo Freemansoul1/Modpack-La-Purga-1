@@ -1,0 +1,246 @@
+module Base
+{
+    item ChemLab
+    {
+	DisplayCategory =	Tool,
+        Type		=	Normal,
+        DisplayName	=	Chemistry Lab,
+        Icon		=	ChemLab,
+        Weight		=	6,
+        WorldStaticModel =	ChemLab,
+    }
+
+    item Buffout
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Buffout,
+        Icon		=	Buffout,
+        Weight		=	0.2,
+        StaticModel 	=	Buffout,
+        WorldStaticModel =	Buffout,
+	Tags	=	Chem,
+    }
+
+    item Bufftats
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Bufftats,
+        Icon		=	Buffout,
+        Weight		=	0.2,
+        StaticModel 	=	Buffout,
+        WorldStaticModel =	Buffout,
+	Tags	=	Chem,
+    }
+    item Buffjet
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Buffjet,
+        Icon		=	Buffout,
+        Weight		=	0.2,
+        StaticModel 	=	Buffout,
+        WorldStaticModel =	Buffout,
+	Tags	=	Chem,
+    }
+
+    item Daytrip
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Day Tripper,
+        Icon		=	Daytrip,
+        Weight		=	0.2,
+        StaticModel 	=	Daytrip,
+        WorldStaticModel =	Daytrip,
+	Tags	=	Chem,
+    }
+
+    item EmptyStimpack
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Stimpack [Empty],
+        Icon		=	Stimpack,
+        Weight		=	0.1,
+        StaticModel 	=	Stimpack,
+        WorldStaticModel =	Stimpack,
+    }
+
+    item Stimpack
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Stimpack [Loaded],
+        Icon		=	Stimpack,
+        Weight		=	0.2,
+        StaticModel 	=	Stimpack,
+        WorldStaticModel =	Stimpack,
+	Tags	=	Chem,
+    }
+
+    item SuperStimpack
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Super Stimpack [Loaded],
+        Icon		=	SuperStimpack,
+        Weight		=	0.2,
+        StaticModel 	=	Stimpack,
+        WorldStaticModel =	Stimpack,
+	Tags	=	Chem,
+    }
+
+    item EmptyJet
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Jet [Empty],
+        Icon		=	Jet,
+        Weight		=	0.1,
+        StaticModel 	=	Jet,
+        WorldStaticModel =	Jet,
+    }
+
+    item Jet
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Jet [Loaded],
+        Icon		=	Jet,
+        Weight		=	0.2,
+        StaticModel 	=	Jet,
+        WorldStaticModel =	Jet,
+	Tags	=	Chem,
+    }
+
+    item Rocket
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Rocket [Loaded],
+        Icon		=	Jet,
+        Weight		=	0.2,
+        StaticModel 	=	Jet,
+        WorldStaticModel =	Jet,
+	Tags	=	Chem,
+    }
+
+    item Mentats
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Mentats,
+        Icon		=	Mentats,
+        Weight		=	0.2,
+        StaticModel 	=	Mentats,
+        WorldStaticModel =	Mentats,
+	Tags	=	Chem,
+    }
+
+    item EmptyPsycho
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Psycho [Empty],
+        Icon		=	Psycho,
+        Weight		=	0.1,
+        StaticModel 	=	Psycho,
+        WorldStaticModel =	Psycho,
+    }
+
+    item Psycho
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Psycho [Loaded],
+        Icon		=	Psycho,
+        Weight		=	0.2,
+        StaticModel 	=	Psycho,
+        WorldStaticModel =	Psycho,
+	Tags	=	Chem,
+    }
+
+    item Slasher
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Slasher [Loaded],
+        Icon		=	Psycho,
+        Weight		=	0.2,
+        StaticModel 	=	Psycho,
+        WorldStaticModel =	Psycho,
+	Tags	=	Chem,
+    }
+
+    item EmptyMedX
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Med-X [Empty],
+        Icon		=	MedX,
+        Weight		=	0.1,
+        StaticModel 	=	MedX,
+        WorldStaticModel =	MedX,
+    }
+
+    item MedX
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Med-X [Loaded],
+        Icon		=	MedX,
+        Weight		=	0.2,
+        StaticModel 	=	MedX,
+        WorldStaticModel =	MedX,
+	Tags	=	Chem,
+    }
+    item EmptyXcell
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	X-Cell [Empty],
+        Icon		=	Xcell,
+        Weight		=	0.1,
+        StaticModel 	=	Xcell,
+        WorldStaticModel =	Xcell,
+    }
+
+    item Xcell
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	X-Cell [Loaded],
+        Icon		=	Xcell,
+        Weight		=	0.2,
+        StaticModel 	=	Xcell,
+        WorldStaticModel =	Xcell,
+	Tags	=	Chem,
+    }
+
+    item Cateye
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Cateye,
+        Icon		=	Cateye,
+        Weight		=	0.2,
+        StaticModel 	=	Cateye,
+        WorldStaticModel =	Cateye,
+	Tags	=	Chem,
+    }
+
+    item Fixer
+    {
+	DisplayCategory =	FirstAid,
+        Type		=	Normal,
+        DisplayName	=	Fixer,
+        Icon		=	Fixer,
+        Weight		=	0.2,
+        StaticModel 	=	Fixer,
+        WorldStaticModel =	Fixer,
+	Tags	=	Chem,
+    }
+
+ }

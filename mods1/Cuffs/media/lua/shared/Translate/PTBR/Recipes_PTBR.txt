@@ -1,0 +1,5 @@
+Recipes_PTBR = {
+	Recipes_Make_Rope_Cuffs = "Fazer nó de algema",
+	Recipes_Make_Leather_Cuffs = "Fazer algemas de couro",
+	Recipes_Make_Front_Leather_Cuffs = "Fazer algemas de couro (Frontal)",
+}

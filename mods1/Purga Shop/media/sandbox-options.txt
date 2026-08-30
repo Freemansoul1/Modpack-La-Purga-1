@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option PlayerShops.CurrencyItem
+{
+  type = string,
+  default = Base.Money,
+
+  page = PlayerShops,
+  translation = PlayerShops_CurrencyItem
+}

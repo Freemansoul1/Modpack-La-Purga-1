@@ -1,0 +1,97 @@
+module SensorsTraps
+{
+    imports
+    {
+        Base
+    }
+
+    /************************ Items ************************/
+
+
+    item LSElectronicsMagTraps
+    {
+        Type = Literature,
+        DisplayCategory = SkillBook,
+        DisplayName = Electronics Magazine Vol. 6 Traps,
+        StaticModel = Magazine,
+        Icon = MagazineElectronics03,
+        WorldStaticModel = MagazineElec3Ground,
+        Weight = 0.1,
+        TeachedRecipes = Make Shock Trap;Make Nail Trap;Make Broken Glass Trap,
+        ReplaceOnUse = LSElectronicsMagTraps,
+    }
+
+    item LSTrapShock
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Shock Trap,
+        Icon = CannedSardines,
+        WorldStaticModel = CannedSardines,
+        Weight = 0.1,
+    }
+
+    item LSTrapNails
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Nails Trap,
+        Icon = CannedSardines,
+        WorldStaticModel = CannedSardines,
+        Weight = 0.1,
+    }
+
+    item LSTrapBrokenGlass
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Broken Glass Trap,
+        Icon = CannedSardines,
+        WorldStaticModel = CannedSardines,
+        Weight = 0.1,
+    }
+
+    /*********************** Recipes ***********************/
+
+    recipe Make Shock Trap
+    {
+        ElectronicsScrap=1,
+        ElectricWire=1,
+        CarBattery1/CarBattery2/CarBattery3
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSTrapShock,
+        SkillRequired:Electricity=3,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+    
+    recipe Make Nail Trap
+    {
+        ElectricWire=1,
+        Nails=30,
+        TinCanEmpty,
+        GunPowder=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSTrapNails,
+        SkillRequired:Electricity=3,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Broken Glass Trap
+    {
+        ElectricWire=1,
+        brokenglass_1_0/brokenglass_1_1/brokenglass_1_2/brokenglass_1_3,
+        TinCanEmpty,
+        GunPowder=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSTrapBrokenGlass,
+        SkillRequired:Electricity=3,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+}

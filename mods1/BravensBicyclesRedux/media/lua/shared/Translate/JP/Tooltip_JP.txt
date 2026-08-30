@@ -1,0 +1,6 @@
+Tooltip_JP = {
+	Tooltip_item_BicycleFrame = "ドロップして、インベントリにあるすべてのパーツを含むバイクをスポーンできます。",
+	Tooltip_item_BicycleBasket = "追加のストレージとして通常の自転車に取り付けることができます。",
+	Tooltip_item_BicycleLock = "自転車をロックして、他の人が自転車に入るのを防ぐために使用されます。",
+	Tooltip_item_BicycleLockKey = "自転車のロックを解除するために使用されます。",
+}

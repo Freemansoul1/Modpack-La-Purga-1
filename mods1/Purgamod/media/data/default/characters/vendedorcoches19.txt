@@ -1,0 +1,9 @@
+#name Garryson Ford|Garryson Ford
+#set_stat Garryson Ford|reputation|10
+
+#desc Name: Garryson Ford
+#desc_append Edad: 69
+#desc_append Un hermano del vendedor de coches que me encontré poco después de aparecer en éste mundo.
+#is_alive Garryson Ford,true
+    #desc_append Estado: Vivo
+#exit

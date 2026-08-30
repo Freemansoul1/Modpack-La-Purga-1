@@ -1,0 +1,15 @@
+Recipes_FR = {
+    Recipe_CraftScrapFrame1 = "Souder un cadre de ferraille ordinaire",
+    Recipe_CraftScrapSuspension1 = "Souder une suspension de ferraille ordinaire",
+    Recipe_CraftScrapBrakes1 = "Souder des freins de ferraille ordinaire",
+    Recipe_CraftScrapTire1 = "Moulez un pneu de ferraille ordinaire",
+    
+    Recipe_CraftScrapFrame2 = "Souder un cadre de ferraille VTT",
+    Recipe_CraftScrapSuspension2 = "Souder une suspension de ferraille VTT",
+    Recipe_CraftScrapBrakes2 = "Souder des freins de ferraille VTT",
+    Recipe_CraftScrapTire2 = "Moulez un pneu de ferraille VTT",
+
+    Recipe_CraftScrapSeat = "Fabriquer une selle de ferraille",
+    Recipe_CraftBikeLock = "Fabriquer un antivol de vélo",
+    Recipe_CraftHeadlight = "Fabriquer un phare de vélo",
+}

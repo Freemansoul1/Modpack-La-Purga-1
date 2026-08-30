@@ -1,0 +1,36 @@
+*Lara_q1_t1
+#name Busca 20 fresas
+*Lara_q1_t2
+#name Lleva las 20 fresas a Lara
+
+*Lara_q2_t1
+#name Busca 10 muestras de la misma bacteria	
+*Lara_q2_t2
+#name Lleva las 10 muestras a Lara
+
+*Lara_q3_t1
+#name Ve al cementerio de Luisville
+*Lara_q3_t2
+#name Busca una lápida en forma de ángel
+*Lara_q3_t3
+#name Busca alguna pista
+*Lara_q3_t4
+#name Ve a la ubicación donde Lara te ha marcado en el mapa
+*Lara_q3_t5
+#name Encuentra el laboratorio del padre de Lara
+*Lara_q3_t6
+#name Encuentra el despacho del cientifico
+*Lara_q3_t7
+#name Asegura la zona de zombies
+*Lara_q3_t8
+#name Ve hacia el despacho del cientifico 
+*Lara_q3_t9
+#name Busca la fórmula
+*Lara_q3_t10
+#name Habla con Lara
+
+
+
+
+
+

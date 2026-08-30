@@ -1,0 +1,5 @@
+Recipe_EN = {
+	Recipe_Make_Rope_Cuffs = "Make Rope Cuffs",
+	Recipe_Make_Leather_Cuffs = "Make Leather Cuffs",
+	Recipe_Make_(FRONT)_Leather_Cuffs = "Make Leather Cuffs (front)",
+}

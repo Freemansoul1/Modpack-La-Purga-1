@@ -1,0 +1,27 @@
+VERSION = 1,
+
+option RappelKit.MaxFloor
+{
+    type = integer,
+    min = 1,
+    default = 3,
+    max = 6,
+    page = RappelKit,
+    translation = RappelKit_MaxFloor,
+}
+
+option RappelKit.DeleteOnUse
+{
+    type = boolean,
+    default = false,
+    page = RappelKit,
+    translation = RappelKit_DeleteOnUse,
+}
+
+option RappelKit.WorksBothWays
+{
+    type = boolean,
+    default = true,
+    page = RappelKit,
+    translation = RappelKit_WorksBothWays,
+}

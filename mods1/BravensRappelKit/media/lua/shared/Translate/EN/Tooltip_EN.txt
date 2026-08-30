@@ -1,0 +1,5 @@
+Tooltip_EN = {
+    Tooltip_RappelRope = "Can be combined with a Swiss Seat to make a Rappel Kit.<br>Cannot be used by itself. ",
+    Tooltip_SwissSeat = "Can be combined with a Rappel Rope to make a Rappel Kit.<br>Cannot be used by itself. ",
+    Tooltip_RappelKit = "Can be used as an escape from upper storeys.<br>Can only be used to climb down.<br>Right click tile NEAR target to deploy OR climb.",
+}

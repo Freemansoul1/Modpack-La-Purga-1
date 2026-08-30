@@ -1,0 +1,15 @@
+--Contrabandista droga opio
+
+#name Contrabandista2|Contrabandista2
+
+#set_stat Contrabandista2|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Desconocido
+
+#desc_append Edad: Desconocido
+
+#desc_append Solo sé que vende droga.
+
+#exit

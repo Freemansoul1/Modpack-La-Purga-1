@@ -1,0 +1,5 @@
+#is_flag vendedorcoches3,true
+    #npc_create Jameson Ford|NPC_jarrison2.png|7984,11037,0
+    #exit
+#npc_create Jameson Ford|NPC_jarrison2.png|7984,11037,0
+#exit

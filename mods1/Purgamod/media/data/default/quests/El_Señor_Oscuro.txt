@@ -1,0 +1,8 @@
+#quest El_Señor_Oscuro|unlocked
+     #task t0|unlocked|hidden
+         #set GotoLocation|11552,7696,0|point
+         #action RunScript|El_Señor_Oscuro.txt,elprimerencuentro
+         #action UnlockTask|El_Señor_Oscuro|t1
+     #task t1
+         #set GotoLocation|11548,7707,0|point
+         #action RunScript|bendicionmaldita1.txt,regreso

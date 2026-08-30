@@ -1,0 +1,36 @@
+module Base
+{
+	item RappelRope
+	{
+	    DisplayCategory = Material,
+		Weight	=	1.4,
+		Type	=	Normal,
+		DisplayName	=	ItemName_Base.RappelRope,
+		Icon	=	RappelRope,
+		Tooltip = Tooltip_RappelRope,
+		WorldStaticModel = Rope,
+	}
+
+	item SwissSeat
+	{
+	    DisplayCategory = Material,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	ItemName_Base.SwissSeat,
+		Icon	=	SwissSeat,
+		Tooltip = Tooltip_SwissSeat,
+		WorldStaticModel = Rope,
+	}
+
+	item EscapeRope
+	{
+	    DisplayCategory = Material,
+		Weight	=	1.5,
+		Type	=	Normal,
+		DisplayName	=	ItemName_Base.EscapeRope,
+		Icon	=	EscapeRope,
+		Tooltip = Tooltip_RappelKit,
+		WorldStaticModel = Rope,
+        AttachmentType = Screwdriver,
+	}
+}

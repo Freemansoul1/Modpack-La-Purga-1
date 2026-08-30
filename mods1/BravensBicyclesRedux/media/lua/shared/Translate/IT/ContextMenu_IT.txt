@@ -1,0 +1,6 @@
+ContextMenu_IT = {
+    ContextMenu_Pick_Up_Bicycle = "Ritira la bici",
+    ContextMenu_BicycleLock = "Installare il lucchetto per bici",
+    ContextMenu_BicycleUnlock = "Rimuovere il lucchetto per bici",
+    ContextMenu_Lift_Bicycle = "Sollevare la bici",
+}

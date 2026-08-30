@@ -1,0 +1,6 @@
+Tooltip_PTBR = {
+	Tooltip_item_BicycleFrame = "Pode ser largado para gerar uma bike com todas as peças que você tem em seu inventário.",
+	Tooltip_item_BicycleBasket = "Pode ser instalada em bikes comuns para armazenamento extra.",
+	Tooltip_item_BicycleLock = "Usada para trancar uma bike, impedindo que outras pessoas entrem nela.",
+	Tooltip_item_BicycleLockKey = "Usada para remover a trava de uma bike.",
+}

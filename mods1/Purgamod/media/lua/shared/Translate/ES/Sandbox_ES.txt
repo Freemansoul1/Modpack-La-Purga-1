@@ -1,0 +1,5 @@
+Sandbox_ES = {
+     Sandbox_NPCQuest = "Gremio de comerciantes",
+     Sandbox_NPCQuest_Whitelist = "Lista blanca",
+     Sandbox_NPCQuest_Whitelist_tooltip = "Escriba aqui los nombres de usuario de los jugadores que quieres dar acceso al gremio de comerciantes.<br>Separe los nombres de usuario con un ','. ",
+}

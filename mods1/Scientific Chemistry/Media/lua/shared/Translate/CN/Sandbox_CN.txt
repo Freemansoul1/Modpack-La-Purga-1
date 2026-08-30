@@ -1,0 +1,18 @@
+Sandbox_CN = {
+    Sandbox_ScientificChemistry = "科学化学",
+
+    Sandbox_Frequency = "瘾君子特质需要化学的频率",
+    Sandbox_Cold = "失去瘾君子特质所需的时间",
+    Sandbox_Xcell = "X-细胞",
+    Sandbox_Psycho = "心理",
+    Sandbox_Mentats = "门塔茨",
+    Sandbox_Buffout = "增益",
+
+    Sandbox_Frequency_tooltip = "以小时为单位",
+    Sandbox_Cold_tooltip = "以小时为单位",
+    Sandbox_Xcell_tooltip = "经验值X-细胞",
+    Sandbox_Psycho_tooltip   = "经验值心理",
+    Sandbox_Mentats_tooltip = "经验值门塔茨",
+    Sandbox_Buffout_tooltip   = "经验值增益",
+
+}

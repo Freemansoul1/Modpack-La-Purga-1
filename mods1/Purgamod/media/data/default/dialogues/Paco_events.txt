@@ -1,0 +1,83 @@
+
+*introduccion
+
+        #set_volume music|0
+        #fade_out
+        #cutscene true
+        #hide_panel
+        #sfx IntroduccionPurga
+
+        --Introduccion
+        #wait 7
+        #pop_up principio1.png|8
+        #wait 1
+        #pop_up principio2.png|8
+        #wait 1
+        #pop_up principio3.png|8
+        #wait 1
+        #pop_up principio4.png|8
+        #wait 1
+        #pop_up principio5.png|7
+        #wait 1
+
+        --voz 52s 
+        
+        #pop_up frase1.png|13
+        #wait 1
+        #pop_up frase2.png|13
+        #wait 1
+
+        --1:25 Los muertos
+        #pop_up muertos.png|8
+        #wait 1
+        #pop_up muertos1.png|7
+        #wait 1
+        #pop_up muertos2.png|8
+        #wait 1
+
+        --gaia 1:53
+        #pop_up Gaia.png|20
+        #wait 1
+
+        --culto 2:15
+        #pop_up culto.png|23
+        #wait 1
+
+        --enclave 2:40
+        #pop_up enclave.png|28
+        #wait 1
+
+        --final 3:09
+        #pop_up final1.png|13
+        #wait 1
+        #pop_up final2.png|13
+        #wait 1
+
+        --final de recursos 03:37
+        #pop_up recursos.png|8
+        #wait 1
+
+        --nuevos grupos 03:48
+        
+        #pop_up grupo1.png|14
+        #wait 1
+        #pop_up grupo2.png|12
+        #wait 1
+
+        --purgaa 4:17
+        #pop_up purga1.png|25
+        #wait 2
+
+        -- final 4:50
+        #fade_in
+        --#set_flag Paco_Purga,true
+        #task_unlock gd_msq1|t1
+        #quest_unlock el_purgatorio
+        #restore_volume
+        #exit      
+
+*musica
+        #cutscene true
+        #bgm intropurga|false|true
+        #walk_to 11551,7572,0
+        #look_at 11550,7572|true

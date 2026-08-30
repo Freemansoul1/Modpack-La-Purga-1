@@ -1,0 +1,6 @@
+ContextMenu_CH = {
+    ContextMenu_Pick_Up_Bicycle = "拿起自行车",
+    ContextMenu_BicycleLock = "安装自行车锁",
+    ContextMenu_BicycleUnlock = "拆自行车锁",
+    ContextMenu_Lift_Bicycle = "举起自行车",
+}

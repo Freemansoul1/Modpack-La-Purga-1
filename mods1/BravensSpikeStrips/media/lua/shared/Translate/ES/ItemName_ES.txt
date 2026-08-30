@@ -1,0 +1,3 @@
+ItemName_ES = {
+    ItemName_Braven.SpikeStrip = "Banda de pinchos",
+}

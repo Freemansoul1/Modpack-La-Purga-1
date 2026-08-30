@@ -1,0 +1,62 @@
+VERSION = 1,
+
+option SCGloomyPlaceReload.Enable
+{
+	type = boolean, default = true,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadEnable,
+}
+
+option SCGloomyPlaceReload.LoggerEnterExit
+{
+	type = boolean, default = true,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadLoggerEnterExit,
+}
+
+option SCGloomyPlaceReload.EnableGhostMode
+{
+	type = boolean, default = true,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadEnableGhostMode,
+}
+
+option SCGloomyPlaceReload.SayStatus
+{
+	type = boolean, default = true,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadSayStatus,
+}
+
+option SCGloomyPlaceReload.DistinguishBetweenEntrancesAndExits
+{
+	type = boolean, default = false,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadDistinguishBetweenEntrancesAndExits,
+}
+
+option SCGloomyPlaceReload.DelayGhostMode
+{
+	type = integer, min = 0, max = 3000, default = 5,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadDelayGhostMode,
+}
+
+option SCGloomyPlaceReload.DelayDifferentHeights
+{
+	type = integer, min = 100, max = 3000, default = 300,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadDelayDifferentHeights,
+}
+
+option SCGloomyPlaceReload.DelayIsTreatAsSolidFloor
+{
+	type = integer, min = 10, max = 3000, default = 60,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadDelayIsTreatAsSolidFloor,
+}
+
+option SCGloomyPlaceReload.DelayAdminCreate
+{
+	type = integer, min = 100, max = 3000, default = 200,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceReloadDelayAdminCreate,
+}
+
+option SCGloomyPlaceReload.ShopAndTraderIntergration
+{
+	type = boolean, default = false,
+	page = SCGloomyPlaceReload, translation = SCGloomyPlaceShopAndTraderIntergration,
+}
+

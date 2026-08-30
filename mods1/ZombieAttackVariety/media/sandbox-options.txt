@@ -1,0 +1,35 @@
+VERSION = 1,
+
+option ZombieAttackVariety.chanceOfZombification = {
+	type = integer,
+	default = 0,
+	min = 0,
+	max = 100,
+	page = ZombieAttackVariety,
+	translation = ZombieAttackVariety_chanceOfZombification,
+}
+
+option ZombieAttackVariety.chanceOfFakeInfection = {
+	type = integer,
+	default = 0,
+	min = 0,
+	max = 100,
+	page = ZombieAttackVariety,
+	translation = ZombieAttackVariety_chanceOfFakeInfection,
+}
+
+option Roleplay.Whitelist1
+{
+    type = string,
+    default = ,
+    page = Roleplay whitelist,
+    translation = Roleplay_Whitelist,
+}
+
+option Eventos.Whitelist2
+{
+    type = string,
+    default = ,
+    page = Roleplay whitelist,
+    translation = Roleplay_Whitelist,
+}

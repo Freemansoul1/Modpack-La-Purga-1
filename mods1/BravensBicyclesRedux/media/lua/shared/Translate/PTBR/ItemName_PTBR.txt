@@ -1,0 +1,36 @@
+ItemName_PTBR = {
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "Quadro de bicicleta normal",
+    ItemName_Base.BicycleSuspensionRegular3 = "Suspensão de bicicleta normal",
+    ItemName_Base.BicycleBrakesRegular3 = "Freio de bicicleta normal",
+    ItemName_Base.BicycleTireRegular = "Pneu de bicicleta normal",
+    ItemName_Base.BicycleSeat = "Selim de bicicleta",
+
+    ItemName_Base.BicycleFrameRegularScrap = "Quadro de bike comum (Sucata)",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "Suspensão de bike comum (Sucata)",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "Freio de bike comum (Sucata)",
+    ItemName_Base.BicycleTireRegularScrap = "Pneu de bike comum (Sucata)",
+    ItemName_Base.BicycleSeatScrap = "Selim de bike (Sucata)",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "quadro de MTB",
+    ItemName_Base.BicycleSuspensionMTB3 = "Suspensão de MTB",
+    ItemName_Base.BicycleBrakesMTB3 = "Freio de MTB",
+    ItemName_Base.BicycleTireMTB = "Pneu de MTB",
+
+    ItemName_Base.BicycleFrameMTBScrap = "Quadro de MTB (Sucata)",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "Suspensão de MTB (Sucata)",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "Freio de MTB (Sucata)",
+    ItemName_Base.BicycleTireMTBScrap = "Pneu de MTB (Sucata)",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "Cesta de bike",
+    ItemName_Base.BicycleHeadlight3 = "Farol de bike",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "Trava de bike",
+    ItemName_Base.BicycleLockKey = "Chave de trava de bike",
+    ItemName_Base.BicyclesMagVol1 = "Ciclismo Vol. 1",
+    ItemName_Base.BicyclesMagVol2 = "Ciclismo Vol. 2",
+    ItemName_Base.BicyclesMagVol3 = "Ciclismo Vol. 3",
+}

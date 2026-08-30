@@ -1,0 +1,5 @@
+#is_flag vendedorcoches7,true
+    #npc_create Ferguson Ford|NPC_jarrison6.png|12273,658,2
+    #exit
+#npc_create Ferguson Ford|NPC_jarrison6.png|12273,658,2
+#exit

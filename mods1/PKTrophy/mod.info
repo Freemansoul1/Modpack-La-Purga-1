@@ -1,0 +1,10 @@
+id=PKTrophy1
+name=Player Kill Trophy
+description=When a player dies, a kill trophy spawns on the dead player.
+poster=poster.png
+authors=Monkey
+icon=icon.png
+tags=Build 41
+versionMin=41.0
+
+

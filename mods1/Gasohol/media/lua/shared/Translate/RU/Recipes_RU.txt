@@ -1,0 +1,4 @@
+Recipe_RU = {
+
+Recipe_Distill_Gasohol = "Дистилляция бензина",
+}

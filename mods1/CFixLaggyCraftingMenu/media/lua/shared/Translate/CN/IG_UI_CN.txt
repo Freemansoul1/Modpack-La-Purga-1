@@ -1,0 +1,4 @@
+IGUI_CN = {
+	IGUI_CraftUI_Controls1 = "%1/%2 = 上/下     %3/%4 = 变更类别     C = 合成一个     R = 合成全部     F = 收藏     U = 強制重載     ESC = 关闭",
+	IGUI_CraftUI_Controls2 = "%1/%2 = 上/下     %3/%4 = 变更类别     C = 添加配料     F = 收藏     U = 強制重載     ESC = 关闭",
+}

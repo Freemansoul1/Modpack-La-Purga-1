@@ -1,0 +1,18 @@
+Sandbox_EN = {
+    Sandbox_ScientificChemistry = "Scientific Chemistry",
+
+    Sandbox_Frequency = "Frequency that Chems is needed for Junkie Trait",
+    Sandbox_Cold = "Amount of time needed to lose Junkie Trait",
+    Sandbox_Xcell = "X-Cell",
+    Sandbox_Psycho = "Psycho",
+    Sandbox_Mentats = "Mentats",
+    Sandbox_Buffout = "Buffout",
+
+    Sandbox_Frequency_tooltip = "In Hours",
+    Sandbox_Cold_tooltip = "In Hours",	
+    Sandbox_Xcell_tooltip = "XP gain for X-Cell",
+    Sandbox_Psycho_tooltip   = "XP gain for Psycho",
+    Sandbox_Mentats_tooltip = "XP gain for Mentats",
+    Sandbox_Buffout_tooltip   = "XP gain for Buffout",
+
+}

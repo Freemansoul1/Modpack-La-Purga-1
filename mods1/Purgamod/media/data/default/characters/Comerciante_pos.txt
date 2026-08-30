@@ -1,0 +1,2 @@
+#npc_create Comerciante|NPC_Comerciante.png|13036,7015,0
+#exit

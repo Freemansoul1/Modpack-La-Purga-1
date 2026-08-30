@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option FixInside.ActivePatch
+{
+    type = boolean,
+    default = false,
+    page = FixInside,
+    translation = FixInside_ActivePatch,
+
+}
+

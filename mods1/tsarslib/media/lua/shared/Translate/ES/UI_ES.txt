@@ -1,0 +1,15 @@
+UI_ES = {
+/************ TRUE ACTIONS ACT 4 ************/
+	UI_chat_set_animations = "Animaciones Hablando",
+	UI_chat_context_anim_disable = "Deshabilitar",
+	UI_chat_context_anim_random = "Aleatorio",
+	UI_chat_context_anim_nodding = "Asintiendo",
+	UI_chat_context_anim_talking_1 = "Hablando 1",
+	UI_chat_context_anim_talking_2 = "Hablando 2",
+	UI_chat_context_anim_talking_3 = "Hablando 3",
+	UI_chat_context_anim_talking_4 = "Hablando 4",
+	UI_chat_context_anim_talking_5 = "Hablando 5",
+	UI_chat_context_anim_ylling = "Gritando",
+	UI_chat_context_anim_arguing_1 = "Argumentando 1",
+	UI_chat_context_anim_arguing_2 = "Argumentando 2",
+}

@@ -1,0 +1,8 @@
+UI_ES = {
+UI_ZL_Trait_ChemExpert = "Experto en Quimica alternativa",
+UI_ZL_Trait_ChemExpert_Description = "Resistencia a volverse adicto a las Drogas y +1 Primeros Auxilios",
+
+UI_ZL_Trait_ChemJunkie = "Adicto a las Drogas",
+UI_ZL_Trait_ChemJunkie_Description = "Adicto a las Drogas y las necesita para funcionar sin problemas",
+
+}

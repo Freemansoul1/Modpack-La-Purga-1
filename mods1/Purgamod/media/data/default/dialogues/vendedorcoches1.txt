@@ -1,0 +1,101 @@
+#is_flag Monopatin_intro,true
+	#jump venta
+*Intro
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Veo qué eres nuevo por aquí, toma, un monopatín, te será de gran utilidad, será tu mejor amigo si tienes cuidado usándolo, puedes reclamarlo a través del menú contextual estando en la calle."
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Si no tienes el nivel tres de la habilidad destreza tendrás una pequeña probabilidad de caerte si estás usándolo, progresivamente se irá reduciendo la probabilidad conforme subas el nivel hasta qué en el nivel tres será cero."
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Usar el monopatín te subirá lentamente estado físico y destreza, también puedes recogerlo del suelo y ponerlo en tu inventario haciendo click derecho sobre él y seleccionando la opción habilitada para recogerlo."
+#m Jarrison Ford|vehiculosvendedorbasico.png|"También deberás tener cuidado con acercarte a los zombies mientras manejas el monopatín, puedes caerte y probablemente esa sea tu tumba o salgas muy perjudicado, cuidado."
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Por ahí no hay vehículos apenas, así qué será una de tus mejores herramientas, suerte ahí fuera."
+#reward PinkSlip.Skateboard,1,common
+#set_flag Monopatin_intro,true
+#exit
+
+*venta
+#cutscene true
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Jarrison, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos básicos, te puedo vender un modelo de coche o moto básicos o un monopatín para aumentar tu movilidad en éste mundo, ¿qué necesitas?"
+#choice
+     coche|Quiero comprar un coche.
+     moto|Quiero comprar una moto.
+     bici|Quiero comprar un monopatín.
+     Dici|Quiero cambiar la bici por un monopatín
+     nada|De momento no necesito nada
+
+*Dici
+#m Jarrison Ford|vehiculosvendedorbasico.png|"perfecto, déjame revisar tu inventario en busca de las piezas"
+#has_item Base.BicycleSeat|Base.BicycleBasket3|Base.BicycleFrameRegular|Base.BicycleHeadlight3|Base.BicycleBrakesRegular3,2|Base.BicycleTireRegular,2|Base.BicycleSuspensionRegular3
+      #jump dinerodevuelta
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Te faltan piezas, vuelve cuándo las tengas todas"
+#exit
+*dinerodevuelta
+#reward PinkSlip.Skateboard,1,common
+#remove_item Base.BicycleSeat|Base.BicycleBasket3|Base.BicycleFrameRegular|Base.BicycleHeadlight3|Base.BicycleBrakesRegular3,2|Base.BicycleTireRegular,2|Base.BicycleSuspensionRegular3,2
+#exit
+
+*coche
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 130 monedas"
+#has_item Base.Money,130
+      #jump cochecomprado
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*moto 
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 120 monedas"
+#has_item Base.Money,120
+      #jump motocomprada
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*bici
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 9 monedas"
+#has_item Base.Money,9
+      #jump bicicomprada
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+*nada
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up YugoT0.png|5
+#choice
+    se|Si.
+    na|No.
+*se
+#remove_item Base.Money,130
+#m Jarrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.86yugo,1,common
+#exit
+*na
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+*motocomprada
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up ZanellaT0.png|5
+#choice
+    si|Si.
+    no|No.
+*si
+#remove_item Base.Money,120
+#m Jarrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu moto"
+#reward PinkSlip.90zanella50cc,1,common
+#exit
+*no
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*bicicomprada
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up MonopatinT0.png|5
+#choice
+    si1|Si.
+    no1|No.
+*si1
+#remove_item Base.Money,9
+#m Jarrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu monopatín"
+#reward PinkSlip.Skateboard,1,common
+#exit
+*no1
+#m Jarrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+
+

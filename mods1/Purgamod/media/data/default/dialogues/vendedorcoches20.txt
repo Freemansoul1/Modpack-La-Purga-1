@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Jennerson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos reforzables, ¿qué necesitas?"
+#choice
+    hmmwvht|90pierceArrow
+    hmmwvtr|87fordB700prison
+    m151canvas|49powerWagonPA
+    nada|De momento no necesito nada
+*hmmwvht
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado1
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado2
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningpiercearrow.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,800
+#m Jennerson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.90pierceArrow,1,rare
+#exit
+*na1
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningfordb700.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,800
+#m Jennerson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.87fordB700prison,1,rare
+#exit
+*na2
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningpowerwagon.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,800
+#m Jennerson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.49powerWagonPA,1,rare
+#exit
+*na3
+#m Jennerson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

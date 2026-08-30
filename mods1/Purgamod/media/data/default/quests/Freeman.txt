@@ -1,0 +1,13 @@
+#quest Freeman_q0|unlocked|hidden
+    #task t1|unlocked|hidden
+        #set GotoLocation|11538,7603,0|point
+        #action RunScript|Freeman.txt,introduccion
+#quest Freeman_q1
+    #task t1|unlocked
+        #set GotoLocation|13049,6920,13054,6922,0|true
+        #action RunScript|Freeman.txt,Pandora 
+    #task t2
+        #set RaiseFlag|Freeman_q1_cleared
+        #action CompleteQuest|Freeman_q1
+       
+     

@@ -1,0 +1,5 @@
+Sandbox_CH = {
+    Sandbox_Hide = "隐藏自己",
+    Sandbox_Hide_HidingSpeed = "隐藏速度",
+    Sandbox_Hide_HidingSpeed_tooltip = "确定隐藏某处需要多长时间。 "
+}

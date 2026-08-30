@@ -1,0 +1,5 @@
+name=Magic Chat1
+poster=poster.png
+id=MagicChat1
+description= <RGB:0.7,0.7,0.7> Magic Chat makes your chat "magically" appear and disappear when new messages arrive, and adds gamepad support for the chat interface. Please visit its page on the Steam Workshop for more information!
+require=modoptions1

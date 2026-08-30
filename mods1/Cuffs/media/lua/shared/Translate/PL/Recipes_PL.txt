@@ -1,0 +1,4 @@
+Recipes_PL = {
+	recipe_Make_Rope_Cuffs = "Zrob kajdanki z liny",
+	recipe_Make_Leather_Cuffs = "Zrob kajdanki ze skory",
+}

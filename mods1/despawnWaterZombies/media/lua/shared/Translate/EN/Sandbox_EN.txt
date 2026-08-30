@@ -1,0 +1,11 @@
+Sandbox_EN = {
+    Sandbox_despawnZombies = "Despawn Zombies on Water & More",
+    Sandbox_despawnZombies_howOften = "How often to check?",
+    Sandbox_despawnZombies_howOften_option1 = "Single Player"
+    Sandbox_despawnZombies_howOften_option2 = "Every In Game Minute",
+    Sandbox_despawnZombies_howOften_option3 = "Every 10 In Game Minutes",
+    Sandbox_despawnZombies_howOften_option4 = "Every In Game Hour",
+    Sandbox_despawnZombies_howOften_option5 = "Every In Game Day",
+    Sandbox_despawnZombies_howOften_tooltip = "Do NOT choose Single Player if using on a server/host. <BR>Single Player on a server will do absolutely nothing but make zombies flash in and out of existence",
+    Sandbox_despawnZombies_tooltip = "Despawn zombies that end up on water. Will also clean up blood or items near the zombie",
+}

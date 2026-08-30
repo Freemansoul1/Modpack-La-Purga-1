@@ -1,0 +1,7 @@
+Sandbox_EN = {
+    Sandbox_KnockedDown = "Knocked Down",
+    Sandbox_KnockedDown_HealthThreshold = "Health Threshold",
+    Sandbox_KnockedDown_HealthReduceCut = "Health Reduction Multiplier",
+    Sandbox_KnockedDown_HealthIncreaseMult = "Health Increasing Multiplier",
+    Sandbox_KnockedDown_DropHandItemsWhileKnocked = "Drop Hand Items on Knockdown",
+}

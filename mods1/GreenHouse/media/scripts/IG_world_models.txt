@@ -1,0 +1,25 @@
+module ImprovisedGlass {
+    imports {
+        Base
+    }
+
+    model RoastingPanWithGlassShards {
+        mesh = WorldItems/IGRoastingPan,
+        texture = WorldItems/IGPanWithGlassShards,
+        scale = 0.3,
+    }
+
+    model RoastingPanWithGlassPane {
+        mesh = WorldItems/IGRoastingPan,
+        texture = WorldItems/IGPanWithGlassPane,
+        scale = 0.3,
+    }
+
+    model GlassPane {
+        mesh = WorldItems/IGGlassPane,
+        texture = WorldItems/IGGlassPane,
+        scale = 0.6,
+    }
+
+
+}

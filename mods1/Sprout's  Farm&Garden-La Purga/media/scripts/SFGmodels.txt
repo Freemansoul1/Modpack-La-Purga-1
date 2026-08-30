@@ -1,0 +1,151 @@
+module Sprout
+{
+	imports
+	{
+		Base
+	}
+	model Opium_Latex_Ground
+	{
+		mesh = WorldItems/Opium_Latex,
+		texture = WorldItems/Opium_Latex_tex,
+		scale = 0.004,
+	}
+	model Meth_Brick_Ground
+    {
+        mesh = WorldItems/Meth_Brick2,
+        texture = WorldItems/Meth_Brick2,
+		scale = 0.004,
+    }
+model DrugBrick
+{
+    mesh = WorldItems/DrugBrickMesh,
+    texture = WorldItems/DrugBrick,
+    scale = 0.1,
+}
+model RoseB
+	{
+		mesh = WorldItems/roses,
+		texture = WorldItems/rosearrangement,
+		scale = 0.05,
+	}
+model LarkB
+	{
+		mesh = WorldItems/multiflower,
+		texture = WorldItems/larkspurarrangement,
+		scale = 0.005,
+	}
+model DelphiB
+	{
+		mesh = WorldItems/multiflower,
+		texture = WorldItems/Delphiarrangement,
+		scale = 0.005,
+	}
+model DahliaB
+	{
+		mesh = WorldItems/roses,
+		texture = WorldItems/dahliaarrangement,
+		scale = 0.05,
+	}
+model GernB
+	{
+		mesh = WorldItems/roses,
+		texture = WorldItems/geraniumarrangement,
+		scale = 0.05,
+	}
+model PentaB
+	{
+		mesh = WorldItems/roses,
+		texture = WorldItems/pentaarrangement,
+		scale = 0.05,
+	}
+model RoseS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/rose,
+		scale = 0.005,
+	}
+model LarkS
+	{
+		mesh = WorldItems/multiflower.single,
+		texture = WorldItems/lark,
+		scale = 0.005,
+	}
+model DelphiS
+	{
+		mesh = WorldItems/multiflower.single,
+		texture = WorldItems/delphi,
+		scale = 0.005,
+	}
+model DahliaS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/dalhia,
+		scale = 0.005,
+	}
+model GernS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/gern,
+		scale = 0.005,
+	}
+model PentaS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/penta,
+		scale = 0.005,
+	}
+model DaisyS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/daisy,
+		scale = 0.005,
+	}
+model CarnS
+	{
+		mesh = WorldItems/singleflower,
+		texture = WorldItems/carn,
+		scale = 0.005,
+	}
+
+/********************weed****************************/
+
+
+model bong1
+	{
+		mesh = WorldItems/BONG,
+		texture = WorldItems/bong1,
+		scale = 0.01,
+	}
+model bong2
+	{
+		mesh = WorldItems/BONG,
+		texture = WorldItems/bong2,
+		scale = 0.01,
+	}
+model baggie
+	{
+		mesh = WorldItems/baggie,
+		texture = WorldItems/baggie,
+		scale = 0.05,
+	}
+
+model grinder
+	{
+		mesh = WorldItems/GRINDER,
+		texture = WorldItems/GRINDER,
+		scale = 0.05,
+	}
+model blunt
+	{
+		mesh = WorldItems/blunt,
+		texture = WorldItems/blunt,
+		scale = 0.01,
+	}
+model joint
+	{
+		mesh = WorldItems/joint,
+		texture = WorldItems/joint,
+		scale = 0.01,
+	}
+
+}

@@ -1,0 +1,2 @@
+#npc_create Marshall|NPC/Marshall.png|12158,10949,1
+#exit

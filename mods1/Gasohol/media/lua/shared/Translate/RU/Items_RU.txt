@@ -1,0 +1,7 @@
+Items_RU = {
+
+DisplayName_Distiller = "Дистиллятор",
+DisplayName_Distiller_with_water = "Дистиллированная вода",
+DisplayName_Distill_Gasohol = "Дистилляция бензина",
+DisplayName_Create_Distiller = "Создать дистиллятор",
+}

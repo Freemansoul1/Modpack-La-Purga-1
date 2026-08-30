@@ -1,0 +1,31 @@
+Sandbox_ES = {
+
+    Sandbox_SCGloomyPlaceReload = "SC | Lugar sombrío",
+    Sandbox_SCGloomyPlaceReloadEnable = "Habilitar modificación",
+
+    Sandbox_SCGloomyPlaceReloadEnableGhostMode = "Habilitar la invisibilidad al teletransportarse",
+    Sandbox_SCGloomyPlaceReloadEnableGhostMode_tooltip = "¡El parámetro AntiCheatProtectionType12 debe estar configurado = falso! Cuando esta función está habilitada, antes de ingresar al teletransporte, los jugadores reciben invisibilidad para zombies y jugadores; Después de completar con éxito el teletransporte, se devuelve el estado que tenía antes de ingresar.",
+
+    Sandbox_SCGloomyPlaceReloadDelayGhostMode = "Retraso de invisibilidad después de la teletransportación.",
+    Sandbox_SCGloomyPlaceReloadDelayGhostMode_tooltip = "Después de teletransportarse, el jugador permanecerá completamente invisible durante la cantidad especificada de milisegundos.",
+
+    Sandbox_SCGloomyPlaceReloadLoggerEnterExit = "Entrada/Salida del Usuario",
+    Sandbox_SCGloomyPlaceReloadLoggerEnterExit_tooltip = "Para cualquier uso de teletransportes, la información estará en el servidor. La creación y eliminación de puntos no desactiva el registro.",
+
+    Sandbox_SCGloomyPlaceReloadDelayDifferentHeights = "Retraso de altura",
+    Sandbox_SCGloomyPlaceReloadDelayDifferentHeights_tooltip = "Este parámetro es responsable del retraso después de la teletransportación en una coordenada Z distinta de 0. Si el servidor no tiene tiempo para procesar el teletransporte, aumente este parámetro en 20 o 50 milisegundos. Aumentar hasta que la modificación sea estable.",
+
+    Sandbox_SCGloomyPlaceReloadDelayIsTreatAsSolidFloor = "Retraso en la verificación del piso",
+    Sandbox_SCGloomyPlaceReloadDelayIsTreatAsSolidFloor_tooltip = "Este parámetro es responsable del retraso después de la teletransportación. Se revisa el piso, si no está allí el jugador será devuelto. Si el servidor no tiene tiempo para procesar el teletransporte, aumente este parámetro en 5 o 10 milisegundos. Aumentar hasta que la modificación sea estable.",
+
+    Sandbox_SCGloomyPlaceReloadDelayAdminCreate = "Retraso de creación",
+    Sandbox_SCGloomyPlaceReloadDelayAdminCreate_tooltip = "Debido a la peculiaridad del motor PZ, después de realizar un teletransporte hasta el punto donde se creará, se necesita tiempo. Si el servidor no tiene tiempo para procesar el teletransporte, aumente este parámetro en 20 o 50 milisegundos. Realizar el aumento hasta que la modificación sea estable.",
+    Sandbox_SCGloomyPlaceReloadSayStatus = "Informar estado de teletransportación",
+    Sandbox_SCGloomyPlaceReloadSayStatus_tooltip = "Cuando esté habilitado, el personaje informará el estado actual de teletransportación.",
+
+    Sandbox_SCGloomyPlaceShopAndTraderIntergration = "[Integración] Shop And Traders",
+    Sandbox_SCGloomyPlaceShopAndTraderIntergration_tooltip = "Cuando habilites esta función, podrás cobrar una tarifa personalizada por usar el teletransporte.",
+
+    Sandbox_SCGloomyPlaceReloadDistitainingBetweenEntrancesAndExits = "Distinguir entradas y salidas",
+    Sandbox_SCGloomyPlaceReloadDistitainingBetweenEntrancesAndExits_tooltip = "Cuando esta opción está habilitada en el menú contextual, el nombre de la acción será ''Acceso'' o ''Salir'', de lo contrario será ''Teletransporte'' ",
+}

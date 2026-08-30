@@ -1,0 +1,4 @@
+
+#quest el_purgatorio
+      #task musica|unlocked
+           #set QuestArea|inside|11527,7534,11607,7695|1|intropurga

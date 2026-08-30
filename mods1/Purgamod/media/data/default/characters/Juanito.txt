@@ -1,0 +1,15 @@
+#name Juanito|Juanito
+
+#set_stat Juanito|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Juanito Pérez
+
+#desc_append Edad: 72
+
+#desc_append Juanito "El Andaluz" del Oasis es un hombre de pura cepa andaluza, un pescador que ha vivido toda su vida con el mar en la piel y el arte en el alma. 
+#desc_append Antes del apocalipsis, Juanito tenía una tienda de pesca deportiva en un rincón acogedor de su pueblo.
+#desc_append Ahora, tras el apocalipsis, la vida ha cambiado drásticamente, pero Juanito sigue siendo el mismo andaluz con arte, sólo que ahora su mundo se ha reducido a su caña de pescar y a los peces que aún logra atrapar.
+
+#exit

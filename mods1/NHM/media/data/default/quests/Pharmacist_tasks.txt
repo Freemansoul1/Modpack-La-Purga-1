@@ -1,0 +1,6 @@
+*farmacéutico_q1_t1
+#name Encuentra el quirófano junto a la habitación del Asistente
+*farmacéutico_q1_t2
+#name Crear una cura
+*farmacéutico_q1_t3
+#name Devolver al farmacéutico

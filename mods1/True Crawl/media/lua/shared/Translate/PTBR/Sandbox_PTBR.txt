@@ -1,0 +1,25 @@
+Sandbox_PTBR = {
+	Sandbox_TrueCrawl = "True Crawl",
+	Sandbox_TrueCrawl_ZombieRadius = "Alcance de Visão do Zumbi",
+	Sandbox_TrueCrawl_ZombieRadius_tooltip = "Este valor controla o alcance da visão dos zumbis enquanto o jogador está rastejando. Vai de 1(Extremamente Pequeno) até 20(Extremamente Longe). O padrão é 5 (Alcance Médio). Minha recomendação é manter o valor entre 5 - 10 para ter uma Gameplay mais imersiva.",
+
+	Sandbox_TrueCrawl_StealhModeEnable = "Modo Furtividade",
+	Sandbox_TrueCrawl_StealhModeEnable_tooltip = "Ativa ou Desativa o Modo Furtividade. (Se desativado, apenas a furtividade do jogo original será usada. [Padrão é True].",
+
+	Sandbox_TrueCrawl_MoodleEnable = "Indicador do Modo Furtividade",
+	Sandbox_TrueCrawl_MoodleEnable_tooltip = "Ativa ou Desativa o Indicador do Modo Furtividade. (Só funciona se o Modo Furtividade estiver ativo!) [Padrão é True].",
+
+	Sandbox_TrueCrawl_CrawlUnderVehiclesEnable = "Rastejar Sob Veículos",
+	Sandbox_TrueCrawl_CrawlUnderVehiclesEnable_tooltip = "Ativa ou Desativa a habilidade de Rastejar Sob Veículos. (VOCÊ PRECISA ESTAR RASTEJANDO!) [Padrão é True, Tecla padrão é Shift].",
+	
+	Sandbox_TrueCrawl_RealisticEndurance = "Resistência Realista",
+	Sandbox_TrueCrawl_RealisticEndurance_tooltip = "Ativa ou Desativa o modo Resistência Realista, esse modo adiciona mais imersão ao jogo, limitando o quanto você consegue rastejar até cansar. [Padrão é True]. ",
+	
+	Sandbox_TrueCrawl_CancelCrawlWhenSpotted = "Levantar Automaticamente quando Detectado",
+	Sandbox_TrueCrawl_CancelCrawlWhenSpotted_tooltip = "Levanta automaticamente quando detectado por zumbis. [Padrão é False]. ",
+	
+	Sandbox_TrueCrawl_StealhModeServer = "Ativar Modo Servidor",
+	Sandbox_TrueCrawl_StealhModeServer_tooltip = "Só utilize essa opção se você estiver hosteando um Servidor Local ou Dedicado. (Para evitar problemas). [Padrão é False]. ",
+}
+ 
+ 

@@ -1,0 +1,100 @@
+module FaunaButcher
+{
+    imports
+    {
+        Base,
+    }
+
+
+    recipe Acariciar Gato
+    {
+        GatoEuropeo/Smallanimalmeat,
+        Smallanimalmeat=2,
+        Result: GatoEuropeo,
+        Time: 450.0,
+        NeedToBeLearn: False,
+        AnimNode: PetCat,
+        Prop2: Source=1,
+        Sound: Purring,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        OnCreate: FaunaRecipe.PetCat,
+        IsHidden: true,
+        AllowRottenItem:false,
+        AllowFrozenItem:false,
+        CanBeDoneFromFloor:false,
+        StopOnWalk:false,
+        StopOnRun:true,
+        RemoveResultItem:false,
+        AllowOnlyOne:true,
+    }
+
+    recipe Acariciar Perro
+    {
+        PastorAleman/Rabbitmeat,
+        Rabbitmeat=2,
+        Result: PastorAleman,
+        Time: 450.0,
+        NeedToBeLearn: False,
+        AnimNode: PetDog,
+        Prop2: Source=1,
+        Sound: Panting,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        OnCreate: FaunaRecipe.PetDog,
+        IsHidden: true,
+        AllowRottenItem:false,
+        AllowFrozenItem:false,
+        CanBeDoneFromFloor:false,
+        StopOnWalk:true,
+        StopOnRun:true,
+        RemoveResultItem:false,
+        AllowOnlyOne:true,
+    }
+
+    recipe Ordeñar Vaca
+    {
+        Vaca/Potato/Cabbage/Tomato,
+        Potato=15,
+        Cabbage=15,
+        Tomato=15,
+        Result:Vaca,
+        Sound:Cow,
+        Time:700.0,
+        NeedToBeLearn: False,
+        AnimNode: PetDog,
+        Category:Cooking,
+        CanBeDoneFromFloor         : True,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	    OnCreate:FaunaRecipe.OnCreate.GetMilk,
+        IsHidden: true,
+        AllowRottenItem:false,
+        AllowFrozenItem:false,
+        StopOnWalk:true,
+        StopOnRun:true,
+        RemoveResultItem:false,
+        AllowOnlyOne:true,
+    }
+
+    recipe Obtener huevos
+    {
+        Gallina/Potato/Cabbage/Tomato,
+        Potato=10,
+        Cabbage=10,
+        Tomato=10,
+        Result:Gallina,
+        Sound:Hen,
+        Time:500.0,
+        NeedToBeLearn: False,
+        AnimNode: PetDog,
+        Category:Cooking,
+        CanBeDoneFromFloor         : True,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	    OnCreate:FaunaRecipe.OnCreate.GetEggs,
+        IsHidden: true,
+        AllowRottenItem:false,
+        AllowFrozenItem:false,
+        StopOnWalk:true,
+        StopOnRun:true,
+        RemoveResultItem:false,
+        AllowOnlyOne:true,
+    }
+}

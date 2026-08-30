@@ -1,0 +1,6 @@
+Tooltip_DE = {
+	Tooltip_item_BicycleFrame = "Kann fallen gelassen werden, um ein Fahrrad mit allen Teilen zu spawnen, die Sie in Ihrem Inventar haben.",
+	Tooltip_item_BicycleBasket = "Kann für zusätzlichen Stauraum an normalen Fahrrädern installiert werden.",
+	Tooltip_item_BicycleLock = "Wird verwendet, um ein Fahrrad zu verriegeln und andere am Betreten zu hindern.",
+	Tooltip_item_BicycleLockKey = "Wird verwendet, um ein Fahrradschloss zu entfernen.",
+}

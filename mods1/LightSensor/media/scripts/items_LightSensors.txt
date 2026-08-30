@@ -1,0 +1,178 @@
+module LightSensors
+{
+    imports
+    {
+        Base
+    }
+
+    /************************ Items ************************/
+
+    item LSElectronicsMag
+    {
+        Type = Literature,
+        DisplayCategory = SkillBook,
+        DisplayName = Electronics Magazine Vol. 5 Sensors,
+        StaticModel = Magazine,
+        Icon = MagazineElectronics03,
+        WorldStaticModel = MagazineElec3Ground,
+        Weight = 0.1,
+        TeachedRecipes = Make Light Sensor;Make Proximity Sensor;Make Zombie Sensor;Make Room Sensor;Make Temperature Sensor;Make Rain Sensor;Make Power Sensor,
+        ReplaceOnUse = LSElectronicsMag,
+    }
+
+    item LSLightSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Light Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSProxySensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Proximity Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSZombieSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Zombie Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSRoomSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Room Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSTemperatureSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Temperature Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSRainSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Rain Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    item LSPowerSensor
+    {
+        Type = Normal,
+        DisplayCategory = Electronics,
+        DisplayName = Power Sensor,
+        Icon = MotionSensor,
+        WorldStaticModel = MotionSensor,
+        Weight = 0.1,
+    }
+
+    /*********************** Recipes ***********************/
+
+    recipe Make Light Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSLightSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Proximity Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSProxySensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Zombie Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSZombieSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Room Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSRoomSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Temperature Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSTemperatureSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Rain Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSRainSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+
+    recipe Make Power Sensor
+    {
+        ElectronicsScrap=2,
+        Glue=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+        Result:LSPowerSensor,
+        SkillRequired:Electricity=2,
+        NeedToBeLearn:true,
+        Time:250.0,
+        Category:Electrical,
+    }
+}

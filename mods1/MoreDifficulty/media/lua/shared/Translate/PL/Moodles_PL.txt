@@ -1,0 +1,10 @@
+Moodles_PL {
+    Moodles_Tier1_Good_lvl4 = "Strefa Poziom 1",
+    Moodles_Tier1_Good_desc_lvl4 = "Brak obniżenia skuteczności broni. Niczego się nie boisz.",
+    Moodles_Tier2_Good_lvl1 = "Strefa Poziom 2",
+    Moodles_Tier2_Good_desc_lvl1 = "Nieznaczne obniżenie skuteczności broni. To miejsce sprawia, że czujesz się niespokojny.",
+    Moodles_Tier3_Bad_lvl1 = "Strefa Poziom 3",
+    Moodles_Tier3_Bad_desc_lvl1 = "Umiarkowane obniżenie skuteczności broni. Strach i niepewność czają się w cieniach.",
+    Moodles_Tier4_Bad_lvl4 = "Strefa Poziom 4",
+    Moodles_Tier4_Bad_desc_lvl4 = "Znaczne obniżenie skuteczności broni. Czujesz przytłaczający ciężar śmierci i rozpaczy.",
+}

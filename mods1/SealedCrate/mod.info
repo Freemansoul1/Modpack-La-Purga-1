@@ -1,0 +1,6 @@
+name=密封箱子(Sealed Crate)
+id=QNW_SealedCrate1
+description=使用钉子和螺丝可以分别密封木箱和金属箱，密封后的箱子中物品不再参与游戏内各种计算。
+description=Use nails and screws to seal wooden boxes and metal boxes respectively, and the items in the sealed boxes no longer participate in various calculations in the game.
+poster=poster.png
+require=QNW_QNWLibrary1

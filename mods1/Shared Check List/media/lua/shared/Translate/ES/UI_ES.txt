@@ -1,0 +1,4 @@
+UI_ES = {
+UI_noList = "No hay tareas registradas.",
+UI_TitleList = "Lista de verificación",
+}

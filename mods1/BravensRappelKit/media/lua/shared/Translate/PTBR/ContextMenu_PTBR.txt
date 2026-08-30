@@ -1,0 +1,5 @@
+ContextMenu_PTBR = {
+    ContextMenu_Climb_Escape_Rope = "Usar Kit de Rapel",
+    ContextMenu_Add_Escape_Rope = "Implantar Kit de Rapel",
+	ContextMenu_Remove_Escape_Rope = "Remover Kit de Rapel",
+}

@@ -1,0 +1,7 @@
+Sandbox_EN = {
+	Sandbox_ForcedSync = "Forced Sync Options",
+	Sandbox_ForcedSync_ForceSyncOnKey = "Force Sync On Key",
+	Sandbox_ForcedSync_ForceSyncOnWeaponHitCharacter = "Force Sync On Weapon Hit Character",
+	Sandbox_ForcedSync_ForceSyncOnWeaponSwing = "Force Sync On Weapon Swing",
+	Sandbox_ForcedSync_ForceSyncOnHitZombie = "Force Sync On Hit Zombie",
+}

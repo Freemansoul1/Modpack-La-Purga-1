@@ -1,0 +1,187 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+    recipe Make Supressor1
+    {
+        ScrapMetal=5,
+        PopEmpty,
+        Screws=4,
+        DuctTape=1,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Supressor1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=4,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Supressor2
+    {
+        ScrapMetal=7,
+        IngotIron,
+        Screws=6,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Supressor2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=6,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Holosight1
+    {
+		ScrapMetal=10,
+        IngotSteel=2,
+        Screws=8,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Holosight1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=6,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make ScopeHandmade2x
+    {
+		ScrapMetal=14,
+        Glass=12,
+		Microchip=1,
+		ElectronicsScrap=4,
+        IngotSteel,
+        Screws=12,
+        DuctTape=4,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:ScopeHandmade2x,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=7;Electronic=3,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Foregrip1
+    {
+		ScrapMetal=10,
+        IngotSteel=2,
+        Screws=8,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Foregrip1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Foregrip2
+    {
+		ScrapMetal=12,
+        Reinforcedwood=3,
+        IngotSteel,
+        Screws=8,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Foregrip2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Laser1
+    {
+		LightBulbRed,
+		ScrapMetal=10,
+        Glass=2,
+		Microchip=4,
+		ElectronicsScrap=10,
+        IngotSteel,
+        Screws=12,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+
+        Result:Laser1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer10_OnGiveXP,
+        SkillRequired:Engineering=6;Electronic=6,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Gunlight1
+    {
+		HandTorch,
+        DuctTape=2,
+        Screws=4,
+        keep Screwdriver,
+
+        Result:Gunlight1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        SkillRequired:Engineering=1,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+}

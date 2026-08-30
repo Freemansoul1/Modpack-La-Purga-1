@@ -1,0 +1,1080 @@
+Recipe_ES = {
+
+    /****************************General****************************/
+
+Recipe_Make_TattooNeedle   =  "0 lvl. Fabricar Aguja de Tatuaje",
+Recipe_Make_CornBeer   =  "3 lvl. Fabricar Cerveza de Maiz",
+Recipe_Make_MushroomBeer = "3 lvl. Fabricar Cerveza de Champi√±on",
+Recipe_Make_StrawberryWine  = "4 lvl. Fabricar Vino de Fresa",
+Recipe_Make_PotatoWhiskey  = "5 lvl. Fabricar Whiskey de Papa",
+Recipe_Make_Samogon  = "2 lvl. Fabricar Samogon",
+Recipe_Make_Hat  = "Fabricar Sombrero de Periodico",
+Recipe_Make_ReinforcedwoodWet = "Fabricar Madera Reforzada",
+Recipe_Make_Universal_Mold  = "Fabricar Molde Universal de Balas",
+Recipe_Make_Universal_Bullets  = "Fabricar Bala Universal",
+Recipe_Make_Pistol_Bullets  = "Fabricar Balas de 9mm",
+Recipe_Make_308_Bullets  = "Fabricar Balas .308",
+Recipe_Make_556_Bullets  = "Fabricar Balas 5.56",
+Recipe_Make_223_Bullets  = "Fabricar Balas .223",
+Recipe_Make_Shotgun_Shells  = "Fabricar Cartuchos de Escopeta",
+Recipe_Make_SAMag  = "Fabricar Cargador de Carabina",
+Recipe_Make_ARMag  = "Fabricar Cargador "Kraken"",
+Recipe_Make_AKMag  = "Fabricar Cargador "Shark"",
+Recipe_Make_MKMag  = "Fabricar Cargador "Barracuda"",
+Recipe_Make_DSAMag  = "Fabricar Cargador "Leviathan"",
+Recipe_Make_Shotgun1 = "5 lvl. Fabricar Escopeta "Satyr"",
+Recipe_Make_Shotgun2 = "6 lvl. Fabricar Escopeta "Cyclops"",
+Recipe_Make_SRifleSVD = "8 lvl. Fabricar Carabina "Vulture"",
+Recipe_Make_SRifleM1A = "8 lvl. Fabricar Carabina "Stormbird"",
+Recipe_Make_BRifleMOS = "7 lvl. Fabricar Rifle "Termite"",
+Recipe_Make_BRifle700M = "7 lvl. Fabricar Rifle "Hornet"",
+Recipe_Make_AssaultRifleMK = "9 lvl. Fabricar Rifle de Asalto "Barracuda"",
+Recipe_Make_AssaultRifleAK = "9 lvl. Fabricar Rifle de Asalto "Shark"",
+Recipe_Make_AssaultRifleAR = "9 lvl. Fabricar Rifle de Asalto "Kraken"",
+Recipe_Make_AssaultRifleDSA = "9 lvl. Fabricar Rifle de Asalto "Leviathan"",
+Recipe_Make_Supressor1 = "lvl 4. Fabricar un supresor met√°lico",
+Recipe_Make_Supressor2 = "lvl 6. Fabricar un supresor improvisado",
+Recipe_Make_Holosight1 = "lvl 6. Fabricar una mira holografica para arma",
+Recipe_Make_ScopeHandmade2x = "lvl 7. Fabricar mira improvisada 2x",
+Recipe_Make_Foregrip1 = "lvl 7. Fabricar un agarre frontal improvisado",
+Recipe_Make_Foregrip2 = "lvl 7. Fabricar un agarre frontal de madera",
+Recipe_Make_Laser1 = "lvl 6. Fabricar un laser improvisado",
+Recipe_Make_Gunlight1 = "lvl 1. Fabricar una luz para arma",
+Recipe_Obsosat_Kost = "Chupar Hueso",
+
+    /****************************Survivalist****************************/
+
+Recipe_Make_Torchlight = "Fabricar Antorcha",
+Recipe_Make_Stone_Saw  = "Fabricar Sierra de Piedra",
+Recipe_Spear_-_Create = "Lanza - Crear",
+Recipe_Spear_-_Upgrade = "Lanza - Mejorar",
+Recipe_Spear_-_Reclaim  = "Lanza - Recuperar Mejora",
+Recipe_Rip_Paper_Sheets  = "Arrancar Paginas",
+Recipe_Rip_Books  = "Arrancar paginas del libro",
+Recipe_Make_Sharped_Stone  = "Hacer piedra afilada",
+Recipe_Make_Stone  = "Fabricar Piedra de Piedras Astilladas",
+Recipe_Make_Bowl  = "Fabricar Cuenco",
+Recipe_Make_Mugl  = "Fabricar Jarra",
+Recipe_Make_Sulfur_Powder  = "Fabricar Polvo de Azufre",
+Recipe_Make_Matches  = "Fabricar Cerillas",
+Recipe_Search_Wallet  = "Buscar Cartera",
+Recipe_Make_Cigarettes = "Fabricar Cigarrillos",
+Recipe_Make_BucketHelmet = "Fabricar Casco de Cubo",
+Recipe_Make_TrashArmor = "Fabricar Armadura de Basura",
+Recipe_Break_TreeBranch = "Romper Rama de arbol",
+
+    /****************************Cooking****************************/
+Recipe_Open_With_Hands  = "Abrir con las Manos",
+Recipe_Open_With_Can_Opener  = "Abrir con Abrelatas",
+Recipe_Open_Damaged_Tin_Can  = "Abrir Inexactamente",
+Recipe_0._Make_tea  = "0 lvl. Hacer Te",
+Recipe_0.Make_Gravy = "0 lvl. Hacer Salsa",
+Recipe_0.Make_SaltPinch = "0 lvl. Hacer Pizca de Sal",
+Recipe_Make_Hot_Sweet_Cuppa  = "0 lvl. Hacer Taza Caliente Dulce",
+Recipe_Make_Hot_Cuppa  = "0 lvl. Hacer Taza Caliente",
+Recipe_Make_Pinecone_Cuppa  = "0 lvl. Hacer Taza de PiÒa",
+Recipe_Grind_mushroom  = "0 lvl. Triturar ChampiÒon",
+Recipe_Make_Cake_Batter  = "3 lvl. Hacer Masa de Pastel",
+Recipe_Make_Pie_Dough  = "3 lvl. Hacer Masa para Tarta",
+Recipe_Make_Bread_Dough  = "3 lvl. Hacer Masa de Pan",
+Recipe_3.Icecream = "3 lvl. Hacer Helado",
+Recipe_Slice_Fillet = "1 lvl. Cortar Filete",
+Recipe_Slice_Frog = "1 lvl. Cortar Rana",
+Recipe_Butcher_Bird = "1 lvl. Despiezar Pajaro",
+Recipe_Butcher_Rabbit = "1 lvl. Despiezar Conejo",
+Recipe_Butcher_Small_Animal = "1 lvl. Despiezar Animal PequeÒo",
+Recipe_Make_Fried_Shrimp  = "0 lvl. Hacer Camarones Fritos",
+Recipe_Make_Fried_Onion_Rings = "0 lvl. Hacer Aros de Cebolla Fritos",
+Recipe_Make_Ketchup = "5 lvl. Hacer Ketchup",
+Recipe_Make_Mayonnaise = "5 lvl. Hacer Mayonesa",
+Recipe_Prepare_Muffins = "4 lvl. Hacer Muffins",
+Recipe_Make_Jar_of_Bell_Peppers = "6 lvl. Hacer Tarro de Pimientos",
+Recipe_Make_Jar_of_Broccoli = "6 lvl. Hacer Tarro de Brocoli",
+Recipe_Make_Jar_of_Cabbage = "6 lvl. Hacer Tarro de Col",
+Recipe_Make_Jar_of_Carrots = "6 lvl. Hacer Tarro de Zanahorias",
+Recipe_Make_Jar_of_Eggplants = "6 lvl. Hacer Tarro de Berenjenas",
+Recipe_Make_Jar_of_Leeks = "6 lvl. Hacer Tarro de Puerros",
+Recipe_Make_Jar_of_Potatoes = "6 lvl. Hacer Tarro de Patatas",
+Recipe_Make_Jar_of_Red_Radishes = "6 lvl. Hacer Tarro de Rabanos Rojos",
+Recipe_Make_Jar_of_Tomatoes = "6 lvl. Hacer Tarro de Tomates",
+Recipe_Make_Pancake = "4 lvl. Hacer Panqueques",
+Recipe_Make_Tortilla  = "3 lvl. Hacer Tortilla",
+Recipe_Extract_Tortilla  = "Extraer Tortilla",
+Recipe_Extract_Waffles  = "Extraer Gofres",
+Recipe_Waffles_cook  = "3 lvl. Hacer Gofres",
+Recipe_Make_Squid_Calamari  = "0 lvl. Hacer Calamares",
+Recipe_Make_Maki = "4 lvl. Hacer Maki",
+Recipe_Make_Sushi = "4 lvl. Hacer Sushi",
+Recipe_Make_Taco  = "3 lvl. Hacer Masa para Tacos",
+Recipe_Extract_Taco  = "Extraer Tacos",
+Recipe_OilVegetable  = "7 lvl. Hacer Base para Aceite Vegetal",
+Recipe_Vinegar  = "5 lvl. Hacer Vinagre",
+Recipe_Make_Salt  = "0 lvl. Hacer Sal",
+Recipe_Make_MincedMeat  = "8 lvl. Hacer Carne Picada",
+Recipe_1._Grind_berry = "1 lvl. Triturar Bayas",
+Recipe_1._Prepare_sucrose_pot = "1 lvl. Hacer Azucar",
+Recipe_1._Filter_sucrose = "Extraer Azucar",
+Recipe_2._Fill_pan_with_potato = "2 lvl. Hacer Papas Fritas",
+Recipe_2._Extract_Crisps = "Extraer Papas Fritas",
+Recipe_Empty_Frying_Pot  = "Limpiar Olla Freidora",
+Recipe_Empty_BakingTray  = "Limpiar Bandeja de Horno",
+Recipe_2._Grind_corn = "2 lvl. Hacer Harina",
+Recipe_3._Make_yeast_mix = "7 lvl. Hacer Levadura",
+Recipe_3._Extract_yeast = "Extraer Levadura",
+Recipe_Make_Baguette_Dough  = "3 lvl. Hacer Masa para Baguette",
+Recipe_5._Extract_pancake = "Extraer Panqueques",
+Recipe_Make_Butter  = "7 lvl. Hacer Mantequilla",
+Recipe_Extract_Butter  = "Extraer Mantequilla",
+Recipe_Make_Croissant  = "5 lvl. Hacer Masa para Croissants",
+Recipe_Extract_Croissant  = "Extraer Croissants",
+Recipe_Make_BeefJerky  = "8 lvl. Hacer Carne Seca",
+Recipe_Make_Ham  = "9 lvl. Hacer Jamon",
+Recipe_Extract_Ham  = "Extraer Jamon",
+Recipe_Make_MeatPatty  = "0 lvl. Hacer Hamburguesa",
+Recipe_Make_PancakeMix = "5 lvl. Hacer Mezcla para Panqueques",
+Recipe_5._craft_Milk  = "5 lvl. Hacer Leche de Arroz",
+Recipe_2_Fries_Potato  = "2 lvl. Hacer Papas Fritas",
+Recipe_2_Extract_Fries  = "Extraer Papas Fritas",
+Recipe_2._JamFruit  = "2 lvl. Hacer Mermelada de Frutas",
+Recipe_2_Extract_Jam  = "Extraer Mermelada de Frutas",
+Recipe_Make_HotDog  = "0 lvl. Hacer Hot Dog",
+Recipe_Make_DoughRolled  = "5 lvl. Hacer Masa",
+Recipe_Make_Cheese  = "7 lvl. Hacer Queso",
+Recipe_Extract_Cheese  = "Extraer Queso",
+Recipe_Make_Sausage  = "8 lvl. Hacer Salchicha",
+Recipe_Extract_Sausage  = "Extraer Salchicha",
+Recipe_Make_Salami  = "8 lvl. Hacer Salami",
+Recipe_Extract_Salami  = "Extraer Salami",
+Recipe_Make_Pizza  = "0 lvl. Hacer Pizza",
+Recipe_Make_BeefJerkyFish = "8 lvl. Hacer Carne Seca (Pescado)",
+Recipe_Make_Onigiri = "4 lvl. Hacer Onigiri",
+Recipe_Make_Biscuits = "2 lvl. Hacer Galletas",
+Recipe_Get_6_Biscuits = "Extraer Galletas",
+Recipe_Make_Chocolate_Cookie_Dough = "2 lvl. Hacer Masa para Galletas de Chocolate",
+Recipe_Make_Chocolate_Chip_Cookie_Dough = "2 lvl. Hacer Galletas con Masa de Chocolate Chip",
+Recipe_Make_Oatmeal_Cookie_Dough = "2 lvl. Hacer Masa para Galletas de Avena",
+Recipe_Make_Sugar_Cookie_Dough = "2 lvl. Hacer Masa para Galletas de Azucar",
+Recipe_Make_Shortbread_Cookie_Dough = "2 lvl. Hacer Masa para Galletas de Mantequilla",
+Recipe_Make_TomatoPaste = "5 lvl. Hacer Pasta de Tomate",
+Recipe_Make_EnergyDrink = "4 lvl. Hacer Bebida Energetica",
+Recipe_Make_Isotonic = "6 lvl. Hacer Isotonico",
+Recipe_Make_ConePan = "3 lvl. Hacer Conos para Helado",
+Recipe_Extract_Cone = "Extraer Conos para Helado",
+
+    /****************************Carpentry****************************/
+
+Recipe_Build_Spiked_Weapon  = "Hacer Bate de Beisbol con Puntas",
+Recipe_Saw_Logs3  = "Serrar con Sierra de Piedra",
+Recipe_Create_Spare_Key  = "Hacer Llave de Repuesto",
+Recipe_Create_Key  = "Crear Llave",
+Recipe_Alter_Doorknob_to_Match_Key  = "Ajustar Pomo de Puerta para que Coincida con la Llave",
+
+    /****************************Health****************************/
+
+Recipe_Disinfect_with_Alcohol  = "Desinfectar con Alcohol",
+Recipe_Disinfect_with_Boiling_Water  = "Desinfectar con Agua Hirviendo",
+Recipe_Make_Poultice  = "Preparar Cataplasma",
+Recipe_0._Search_the_body  = "0 lvl. Desmembrar cuerpo",
+Recipe_Make_CoalPills = "0 lvl. Hacer Pastillas de Carbon",
+Recipe_Make_PillsSleepingTablets  = "2 lvl. Hacer Pastillas para Dormir",
+Recipe_Make_Bandage  = "2 lvl. Hacer Vendaje",
+Recipe_Make_Band-Aid  = "3 lvl. Hacer vendas Adhesivas",
+Recipe_Make_PillsAntiDep  = "3 lvl. Hacer Antidepresivos",
+Recipe_Make_Disinfectant  = "3 lvl. Hacer Desinfectante",
+Recipe_Make_LemonGrassHerbDec  = "3 lvl. Hacer Infusion de Hierba de Limon",
+Recipe_Make_CommonMallowHerbDec  = "3 lvl. Hacer Infusion de Malva Comun",
+Recipe_Make_PillsBeta  = "4 lvl. Hacer Betabloqueadores",
+Recipe_Make_Pills  = "4 lvl. Hacer Analgesicos",
+Recipe_Make_PillsVitamins  = "5 lvl. Hacer Vitaminas",
+Recipe_Make_Antibiotics  = "5 lvl. Hacer Antibioticos",
+Recipe_Make_SalineBag  = "3 lvl. Hacer Bolsa de Solucion Salina",
+Recipe_Make_FullBloodBag  = "5 lvl. Hacer Bolsa de Sangre Completa",
+Recipe_Make_AdrenalineInjector  = "7 lvl. Hacer Inyector de Adrenalina",
+Recipe_Make_AntizinTier3  = "6 lvl. Hacer Antizina",
+Recipe_Make_Vaccine   =  "8 lvl. Hacer Vacuna",
+Recipe_Get_FakeInfection = "Verificar Nivel de Radiacion",
+
+    /****************************Electrical****************************/
+
+Recipe_Dismantle_Electronic = "0 lvl. Desmantelar Electronicos"
+Recipe_Make_BatteryCharger = "4 lvl. Hacer Cargador de Bateria"
+Recipe_Make_Battery = "0 lvl. Hacer Bateria"
+Recipe_Charge_Battery = "0 lvl. Cargar Bateria"
+Recipe_Make_Noise_Maker = "2 lvl. Hacer Generador de Ruido"
+Recipe_Make_Amplifier = "0 lvl. Hacer Amplificador"
+Recipe_Make_RadioTransmitter = "0 lvl. Hacer Transmisor de Radio"
+Recipe_Make_RadioReceiver = "0 lvl. Hacer Receptor de Radio"
+Recipe_Make_ElectricWire = "0 lvl. Hacer Cable Electrico"
+Recipe_Make_WristWatchLeftDigitalRed = "1 lvl. Hacer Reloj Digital"
+Recipe_Make_Bulb = "1 lvl. Hacer Bombilla"
+Recipe_Make_WalkieTalkie1 = "2 lvl. Hacer Walkie-talkie (750 m)"
+Recipe_Make_WalkieTalkie2 = "3 lvl. Hacer Walkie-talkie (2 km)"
+Recipe_Make_WalkieTalkie3 = "4 lvl. Hacer Walkie-talkie (4 km)"
+Recipe_Make_WalkieTalkie4 = "6 lvl. Hacer Walkie-talkie (8 km)"
+Recipe_Make_WalkieTalkie5 = "7 lvl. Hacer Walkie-talkie (16 km)"
+Recipe_Make_HamRadio1 = "5 lvl. Hacer Radio de aficionado (7,5 km)"
+Recipe_Make_CarBatteryCharger = "5 lvl. Hacer Cargador de Bateria de Coche"
+Recipe_Make_HamRadio2 = "8 lvl. Hacer Radio Militar (20 km)"
+Recipe_Make_RadioRed = "5 lvl. Hacer Radio"
+Recipe_Make_TvBlack = "5 lvl. Hacer Television"
+Recipe_Make_CDplayer = "1 lvl. Hacer Reproductor de CD"
+Recipe_Make_GeigerCounter = "2 lvl. Hacer Contador Geiger"
+Recipe_Make_PoisonAnalyzer = "3 lvl. Hacer Analizador de Exposicion a la Radiacion"
+Recipe_Make_Generator = "9 lvl. Hacer Generador"
+Recipe_Make_HandTorch = "1 lvl. Hacer linterna de Mano"
+Recipe_Make_Torch = "2 lvl. Hacer Linterna"
+Recipe_Make_HatPNV = "6 lvl. Hacer Gafas de Vision Nocturna"
+Recipe_Fix_HatPNV = "5 lvl. Arreglar Gafas de Vision Nocturna"
+Recipe_Make_VirusTester = "2 lvl. Hacer Analizador de Sangre"
+
+    /****************************Farming****************************/
+
+Recipe_Open_Packet_of_Seeds = "Abrir Paquete de Semillas",
+Recipe_Open_Packet_of_Tobacco_Seeds = "Abrir Paquete de Semillas de Tabaco",
+Recipe_Put_Tobacco_Seeds_in_Packet = "Poner Semillas de Tabaco en Paquete",
+Recipe_Open_Packet_of_Corn_Seeds = "Abrir Paquete de Semillas de Maiz",
+Recipe_Put_Corn_Seeds_in_Packet = "Poner Semillas de Ma√≠z en Paquete",
+Recipe_Open_Packet_of_Cannabis_Seeds = "Abrir Paquete de Semillas de Cannabis",
+Recipe_Put_Cannabis_Seeds_in_Packet = "Poner Semillas de Cannabis en Paquete",
+Recipe_Open_Packet_of_Rice_Seeds = "Abrir Paquete de Semillas de Arroz",
+Recipe_Put_Rice_Seeds_in_Packet = "Poner Semillas de Arroz en Paquete",
+
+    /****************************Storage****************************/
+
+Recipe_Switch_Blade_to_Blunt = "Cambiar a Contundente",
+Recipe_Switch_Blunt_to_Blade = "Cambiar a Filoso",
+
+Recipe_Open_Jar = "Abrir Frasco",
+Recipe_Open_Box_of_Bullets = "Abrir Caja de Balas",
+Recipe_Make_Stacks1 = "Apilar Ramas",
+Recipe_Make_Stacks2 = "Apilar Ramitas",
+Recipe_UnStacks1 = "Desapilar Ramas",
+Recipe_UnStacks2 = "Desapilar Ramitas",
+Recipe_Stack_Cigarettes = "Colocar Cigarrillos en Paquete",
+Recipe_UnStack_Cigarettes = "Abrir Paquete de Cigarrillos",
+Recipe_Open_Box = "Abrir Caja",
+Recipe_Extract_sugar = "Azucar - abrir",
+Recipe_Pack_sugar = "Azucar - empacar",
+Recipe_Pack_coffee = "Cafe - abrir",
+Recipe_Unpack_coffee = "Cafe - empacar",
+
+Recipe_Pack_CopperOre = "Empacar en Bolsa: Mineral de Cobre",
+Recipe_Pack_TinOre = "Empacar en Bolsa: Mineral de EstaÒo",
+Recipe_Pack_IronOre = "Empacar en Bolsa: Mineral de Hierro",
+Recipe_Pack_GalenaOre = "Empacar en Bolsa: Mineral de Galena",
+Recipe_Pack_ChromiumOre = "Empacar en Bolsa: Mineral de Cromo",
+Recipe_Pack_NickelOre = "Empacar en Bolsa: Mineral de Niquel",
+
+Recipe_Pack_IngotCopper = "Empacar en Bolsa: Lingotes de Cobre",
+Recipe_Pack_IngotTin = "Empacar en Bolsa: Lingotes de EstaÒo",
+Recipe_Pack_IngotIron = "Empacar en Bolsa: Lingotes de Hierro",
+Recipe_Pack_IngotLead = "Empacar en Bolsa: Lingotes de Plomo",
+Recipe_Pack_IngotChromium = "Empacar en Bolsa: Lingotes de Cromo",
+Recipe_Pack_IngotNickel = "Empacar en Bolsa: Lingotes de Niquel",
+Recipe_Pack_IngotBronze = "Empacar en Bolsa: Lingotes de Bronce",
+Recipe_Pack_IngotSteel = "Empacar en Bolsa: Lingotes de Acero",
+
+Recipe_Pack_SulfurOre = "Empacar en Bolsa: Mineral de Azufre",
+Recipe_Pack_Stones = "Empacar en Bolsa: Piedras",
+Recipe_Pack_LimestoneOre = "Empacar en Bolsa: Mineral de Caliza",
+Recipe_Pack_Coal = "Empacar en Bolsa: Carbon",
+Recipe_Pack_SulfurPowder = "Empacar en Bolsa: Polvo de Azufre",
+Recipe_Pack_SaltPinch = "Empacar en Bolsa: Pizca de Sal",
+
+Recipe_Pack_LemonGrass = "Empacar en Bolsa: Hierba de Limon",
+Recipe_Pack_Ginseng = "Empacar en Bolsa: Ginseng",
+Recipe_Pack_Comfrey = "Empacar en Bolsa: Consuelda",
+Recipe_Pack_Plantain = "Empacar en Bolsa: Platano",
+Recipe_Pack_WildGarlic = "Empacar en Bolsa: Ajo Silvestre",
+Recipe_Pack_BlackSage = "Empacar en Bolsa: Salvia Negra",
+Recipe_Put_Rice_in_Sack = "Empacar en Bolsa: Arroz",
+
+Recipe_Pack_SheetMetal = "Empacar Laminas de Metal",
+Recipe_Pack_MetalPipe = "Empacar Tuberias de Metal",
+Recipe_Pack_MetalBar = "Empacar Barras de Metal",
+
+Recipe_Unpack_CopperOre = "Abrir Bolsa: Mineral de Cobre",
+Recipe_Unpack_TinOre = "Abrir Bolsa: Mineral de EstaÒo",
+Recipe_Unpack_IronOre = "Abrir Bolsa: Mineral de Hierro",
+Recipe_Unpack_GalenaOre = "Abrir Bolsa: Mineral de Galena",
+Recipe_Unpack_ChromiumOre = "Abrir Bolsa: Mineral de Cromo",
+Recipe_Unpack_NickelOre = "Abrir Bolsa: Mineral de Niquel",
+
+Recipe_Unpack_IngotCopper = "Abrir Bolsa: Lingotes de Cobre",
+Recipe_Unpack_IngotTin = "Abrir Bolsa: Lingotes de EstaÒo",
+Recipe_Unpack_IngotIron = "Abrir Bolsa: Lingotes de Hierro",
+Recipe_Unpack_IngotLead = "Abrir Bolsa: Lingotes de Plomo",
+Recipe_Unpack_IngotChromium = "Abrir Bolsa: Lingotes de Cromo",
+Recipe_Unpack_IngotNickel = "Abrir Bolsa: Lingotes de Niquel",
+Recipe_Unpack_IngotBronze = "Abrir Bolsa: Lingotes de Bronce",
+Recipe_Unpack_IngotSteel = "Abrir Bolsa: Lingotes de Acero",
+
+Recipe_Unpack_SulfurOre = "Abrir Bolsa: Mineral de Azufre",
+Recipe_Unpack_Stones = "Abrir Bolsa: Piedras",
+Recipe_Unpack_LimestoneOre = "Abrir Bolsa: Mineral de Caliza",
+Recipe_Unpack_Coal = "Abrir Bolsa: Carbon",
+Recipe_Unpack_SulfurPowder = "Abrir Bolsa: Polvo de Azufre",
+Recipe_Unpack_SaltPinch = "Abrir Bolsa: Pizca de Sal",
+
+Recipe_Unpack_LemonGrass = "Abrir Saco: Hierba de Limon",
+Recipe_Unpack_Ginseng = "Abrir Saco: Ginseng",
+Recipe_Unpack_Comfrey = "Abrir Saco: Consuelda",
+Recipe_Unpack_Plantain = "Abrir Saco: Platano",
+Recipe_Unpack_WildGarlic = "Abrir Saco: Ajo Silvestre",
+Recipe_Unpack_BlackSage = "Abrir Saco: Salvia Negra",
+Recipe_Open_Sack_of_Rice = "Abrir Saco: Arroz",
+
+Recipe_Unpack_SheetMetal = "Desempaquetar Laminas de Metal",
+Recipe_Unpack_MetalPipe = "Desempaquetar Tubos de Metal",
+Recipe_Unpack_MetalBar = "Desempaquetar Barras de Metal",
+
+    /****************************LeatherWorking****************************/
+
+Recipe_Gut_The_Carcass = "0 lvl. Destripar Carcasa de Animal",
+Recipe_Tan_Thin_Leather = "0 lvl. Curtir Cuero Fino",
+Recipe_Tan_Thick_Leather = "4 lvl. Curtir Cuero Grueso",
+Recipe_Tan_Thin_Leather_Alt = "0 lvl. Curtir Cuero Fino (alt)",
+Recipe_Tan_Thick_Leather_Alt = "4 lvl. Curtir Cuero Grueso (alt)",
+Recipe_Make_Belt = "0 lvl. Hacer Cinturon",
+Recipe_Make_Leather_Gloves = "0 lvl. Hacer Guantes de Cuero",
+Recipe_Make_Black_Leather_Gloves = "0 lvl. Hacer Guantes de Cuero Negros",
+Recipe_Make_Holster = "1 lvl. Hacer Funda",
+Recipe_Make_Fanny_Pack = "1 lvl. Hacer RiÒonera",
+Recipe_Make_Double_Holster = "2 lvl. Hacer Doble Funda",
+Recipe_Make_Satchel = "1 lvl. Hacer Bolsa",
+Recipe_Make_ModuleBagStart = "2 lvl. Hacer Bolsa de Modulos (lvl. 1/4)",
+Recipe_Make_School_Bag = "2 lvl. Hacer Mochila Escolar",
+Recipe_Make_KnifeSheathLeg = "1 lvl. Hacer Vaina de Cuchillo",
+Recipe_Make_SwordSheath = "2 lvl. Hacer Vaina de Espada",
+Recipe_Make_ModuleBag2 = "3 lvl. Hacer Bolsa de Modulos (lvl. 2/4)",
+Recipe_Make_ModuleBag3 = "4 lvl. Hacer Bolsa de Modulos (lvl. 3/4)",
+Recipe_Make_ModuleBagTop = "5 lvl. Hacer Bolsa de Modulos (lvl. 4/4)",
+Recipe_Make_Tourist_Bag = "6 lvl. Hacer Bolsa de Turista",
+Recipe_Make_BoneHelmet = "3 lvl. Hacer Casco de Hueso",
+Recipe_Make_BoneArmor = "2 lvl. Hacer Armadura de Hueso",
+Recipe_Make_BoneLegPads = "1 lvl. Hacer Rodilleras de Hueso",
+Recipe_Make_BoneBracer = "1 lvl. Hacer Brazales de Hueso",
+Recipe_Make_Quiver = "3 lvl. Hacer Carcaj",
+Recipe_Make_BoneNeckPads = "2 lvl. Hacer Protectores de Cuello de Hueso",
+Recipe_Make_MetalNeckPads = "6 lvl. Hacer Protectores de Cuello de Metal",
+
+    /****************************Metalworking****************************/
+
+Recipe_Make_Scrap = "0 lvl. Hacer Chatarra Metalica",
+Recipe_Make_UnusableMetal = "0 lvl. Hacer Metal inservible",
+Recipe_Empty_Petrol_Can = "0 lvl. Vaciar Lata de Gasolina",
+Recipe_Empty_Blow_Torch = "0 lvl. Vaciar Soplete",
+Recipe_Empty_Propane_Tank = "0 lvl. Vaciar Tanque de Propano",
+Recipe_Refill_Empty_Blow_Torch = "0 lvl. Rellenar Soplete Vacio",
+Recipe_Make_Empty_Blow_Torch = "0 lvl. Hacer Antorcha de Propano",
+Recipe_Make_Welding_Mask = "0 lvl. Hacer Mascara de Soldar",
+Recipe_Make_PickAxe = "0 lvl. Hacer Pico",
+Recipe_Make_BallPeen_Hammer = "0 lvl. Hacer Martillo de Bola",
+
+Recipe_Make_MetalHelmet = "6 lvl. Hacer Casco de Metal",
+Recipe_Make_MetalArmor = "6 lvl. Hacer Armadura de Metal",
+Recipe_Make_MetalLegPads = "6 lvl. Hacer Rodilleras de Metal",
+Recipe_Make_MetalBracer = "6 lvl. Hacer Brazales de Metal",
+Recipe_Make_MetalNeckPads = "6 lvl. Hacer Protector de Cuello de Metal",
+
+    /****************************Mining****************************/
+
+Recipe_Make_Tongs = "0 lvl. Hacer Tenazas",
+Recipe_Make_CokeCoal = "0 lvl. Hacer Carbon de Coqueria",
+Recipe_Make_Copper_Ingot = "0 lvl. Hacer Lingote de Cobre",
+Recipe_Make_Copper_Ingot_Alt = "0 lvl. Hacer Lingote de Cobre (alt)",
+Recipe_Make_Tin_Ingot = "0 lvl. Hacer Lingote de EstaÒo",
+Recipe_Make_Tin_Ingot_Alt = "0 lvl. Hacer Lingote de EstaÒo (alt)",
+Recipe_Make_Iron_Ingot = "2 lvl. Hacer Lingote de Hierro",
+Recipe_Make_Iron_Ingot_Alt = "2 lvl. Hacer Lingote de Hierro (alt)",
+Recipe_Make_Lead_Ingot = "2 lvl. Hacer Lingote de Plomo (alt)",
+Recipe_Make_Lead_Ingot_Alt = "2 lvl. Hacer Lingote de Plomo (alt)",
+Recipe_Make_Nickel_Ingot = "4 lvl. Hacer Lingote de Niquel",
+Recipe_Make_Chromium_Ingot = "4 lvl. Hacer Lingote de Cromo",
+Recipe_Make_Bronze_Ingot = "1 lvl. Hacer Lingote de Bronce",
+Recipe_Make_Bronze_Ingot_Alt = "1 lvl. Hacer Lingote de Bronce (alt)",
+Recipe_Make_Steel_Ingot = "3 lvl. Hacer Lingote de Acero",
+Recipe_Make_Steel_Ingot_Alt = "3 lvl. Hacer Lingote de Acero (alt)",
+Recipe_Make_Silver_Ingot = "0 lvl. Hacer Lingote de Plata",
+Recipe_Make_Silver_Nugget = "0 lvl. Hacer Pepita de Plata",
+Recipe_Make_Gold_Ingot = "0 lvl. Hacer Lingote de Oro",
+Recipe_Make_Gold_Nugget = "0 lvl. Hacer Pepita de Oro",
+Recipe_Make_Coal = "0 lvl. Hacer Carbon",
+Recipe_Make_Coal_Alt = "0 lvl. Hacer Carbon (alt)",
+Recipe_Make_HQSteel = "6 lvl. Hacer Metal de Alta Calidad",
+Recipe_Make_ArmorPlate = "6 lvl. Hacer Placas de Armadura",
+
+    /****************************Blacksmith****************************/
+
+Recipe_Make_Nails = "4 lvl. Hacer Clavos",
+Recipe_Make_RoastingPan = "1 lvl. Hacer Bandeja para Asar",
+Recipe_Make_Pot = "1 lvl. Hacer Olla",
+Recipe_Make_Spoon = "0 lvl. Hacer Cuchara",
+Recipe_Make_BakingTray = "1 lvl. Hacer Bandeja para Hornear",
+Recipe_Make_MuffinTray = "1 lvl. Hacer Bandeja para Muffins",
+Recipe_Make_BakingPan = "1 lvl. Hacer Molde para Hornear",
+Recipe_Make_Kettle = "1 lvl. Hacer Hervidor",
+Recipe_Make_TinOpener = "2 lvl. Hacer Abre-latas",
+Recipe_Make_JarLid = "2 lvl. Hacer Tapa de Frasco",
+Recipe_Make_Doorknob = "2 lvl. Hacer Pomo de Puerta",
+Recipe_Make_Pan = "2 lvl. Hacer Sarten",
+Recipe_Make_HandShovel = "2 lvl. Hacer Pala de Mano",
+Recipe_Make_KitchenKnife = "3 lvl. Hacer Cuchillo de Cocina",
+Recipe_Make_DumbBell = "3 lvl. Hacer Pesas (Mancuernas)",
+Recipe_Make_BarBell = "3 lvl. Hacer Pesas (Barra)",
+Recipe_Make_Scissors = "3 lvl. Hacer Tijeras",
+Recipe_Make_Shovel = "4 lvl. Hacer Pala",
+Recipe_Make_Hinge = "3 lvl. Hacer Bisagra",
+Recipe_Make_WeldingRods = "3 lvl. Hacer Electrodos de Soldadura",
+Recipe_Make_Tweezers = "5 lvl. Hacer Pinzas",
+Recipe_Make_Needle = "3 lvl. Hacer Aguja",
+Recipe_Make_FishingNet = "5 lvl. Hacer Red de Pesca",
+Recipe_Make_Wire = "5 lvl. Hacer Alambre",
+Recipe_Make_BarbedWire = "5 lvl. Hacer Alambre de Pua",
+Recipe_Make_EmptyPropaneTank = "6 lvl. Hacer Tanque de Propano",
+Recipe_Make_MetalBar = "5 lvl. Hacer Barra de Metal",
+Recipe_Make_MetalPipe = "5 lvl. Hacer Tuberia de Metal",
+Recipe_Make_Jack = "6 lvl. Hacer Gato",
+Recipe_Make_LugWrench = "6 lvl. Hacer Llave de Rueda",
+Recipe_Make_TirePump = "5 lvl. Hacer Bomba de Neumaticos",
+Recipe_Make_Wrench = "6 lvl. Hacer Llave inglesa",
+Recipe_Make_Hammer = "6 lvl. Hacer Martillo",
+Recipe_Make_Saw = "6 lvl. Hacer Sierra",
+Recipe_Make_SledgeHammer2 = "7 lvl. Hacer Mazo",
+Recipe_Make_Crowbar1 = "6 lvl. Hacer Palanca",
+Recipe_Make_HuntingKnife1 = "7 lvl. Hacer Cuchillo de Caza",
+Recipe_Make_Scalpel = "8 lvl. Hacer Bisturi",
+Recipe_Make_AntiqueStove = "9 lvl. Hacer Estufa Antigua",
+Recipe_Make_Can = "4 lvl. Hacer Lata de Gasolina Vacia",
+Recipe_Make_SheetMetal = "2 lvl. Hacer Chapa de Metal",
+Recipe_Make_ScrewsBox = "3 lvl. Hacer Caja de Tornillos",
+
+    /****************************Chemistry****************************/
+
+Recipe_Make_Sulfur_Ore = "0 lvl. Hacer Mineral de Azufre",
+Recipe_Make_Limestone = "0 lvl. Hacer Piedra Caliza",
+Recipe_Make_Plastic  = "0 lvl. Hacer Plastico",
+Recipe_Make_Rubber  = "0 lvl. Hacer goma",
+Recipe_Make_Glass  = "0 lvl. Hacer Vidrio",
+Recipe_Make_BakingSoda  = "5 lvl. Hacer Bicarbonato de Sodio",
+Recipe_Make_ChemKit  = "0 lvl. Hacer Kit de Quimica",
+Recipe_Empty_ChemKit  = "0 lvl. Vaciar Kit de Quimica",
+Recipe_Power_ChemKit  = "0 lvl. Recargar Kit de Quimica",
+Recipe_Make_Flask  = "0 lvl. Hacer Frasco de Productos Quimicos",
+Recipe_Empty_Flask  = "0 lvl. Vaciar Frasco de Productos Quimicos",
+Recipe_Synthesize_Nitric_Acid  = "1 lvl. Sintetizar aÅcido Nitrico",
+Recipe_Synthesize_Potassium_Nitrate  = "1 lvl. Sintetizar Nitrato de Potasio",
+Recipe_Synthesize_Wood_Ash = "0 lvl. Sintetizar Ceniza de Madera",
+Recipe_Make_EmptyJar = "1 lvl. Hacer Frasco",
+Recipe_Synthesize_Fungal_Spores  = "2 lvl. Sintetizar Esporas Fungicas",
+Recipe_Make_Bottle = "2 lvl. Hacer Botella de Plastico",
+Recipe_Synthesize_Salt_Pinch  = "1 lvl. Sintetizar Pizca de Sal",
+Recipe_Synthesize_Ammonia = "2 lvl. Sintetizar Amoniaco",
+Recipe_Synthesize_Alkali  = "2 lvl. Sintetizar Alcalino",
+Recipe_Synthesize_SulphuricAcid = "3 lvl. Sintetizar acido Sulfurico",
+Recipe_Synthesize_ChloricAcid = "4 lvl. Sintetizar acido Clorico",
+Recipe_Synthesize_SaltPinch = "0 lvl. Sintetizar Pizca de Sal",
+Recipe_Synthesize_Catalyst = "1 lvl. Sintetizar Catalizador",
+Recipe_Synthesize_Catalyst_Alt = "1 lvl. Sintetizar Catalizador (alt)",
+Recipe_Synthesize_Alcohol = "5 lvl. Sintetizar Alcohol",
+Recipe_Synthesize_Nitrogen = "0 lvl. Sintetizar Nitrogeno",
+Recipe_Synthesize_Salicylate = "4 lvl. Sintetizar Salicilato",
+Recipe_Make_Cold_Pack = "0 lvl. Hacer Bolsa de Hielo",
+Recipe_Make_PlasterPowder = "3 lvl. Hacer Polvo de Yeso",
+Recipe_Make_Scotch_Tape = "4 lvl. Hacer Cinta Adhesiva",
+Recipe_Make_Soap2 = "2 lvl. Hacer Jabon",
+Recipe_Make_Fertilizer = "5 lvl. Hacer Fertilizante",
+Recipe_Make_PaintWhite = "5 lvl. Hacer Pintura Blanca",
+Recipe_Make_HairDyeWhite = "5 lvl. Hacer Tinte para el Cabello Blanco",
+Recipe_Make_Glue = "4 lvl. Hacer Pegamento",
+Recipe_Make_Wood_Glue = "4 lvl. Hacer Pegamento para Madera",
+Recipe_Make_PetrolCan = "7 lvl. Hacer Bidon de Gasolina",
+Recipe_Make_DuctTape = "4 lvl. Hacer Cinta americana",
+Recipe_Make_Bleach = "2 lvl. Hacer Lejia",
+Recipe_Make_Tarp = "1 lvl. Hacer Lona",
+Recipe_Make_Powder = "1 lvl. Hacer Polvora",
+Recipe_Make_Powder_Alt = "3 lvl. Hacer Polvora (alt)",
+Recipe_Make_HairDyeColor = "5 lvl. Tinte para el Cabello - AÒadir Colorante",
+Recipe_Make_BulbColor = "1 lvl. Bombilla - AÒadir Colorante",
+Recipe_Make_PaintColor = "5 lvl. Pintura - AÒadir Colorante",
+
+    /****************************Dyes****************************/
+
+Recipe_Make_DyeBlack = "Hacer Tinte Negro",
+Recipe_Make_DyeTurquoise = "Hacer Tinte Turquesa",
+Recipe_Make_DyeCyan = "Hacer Tinte Cian",
+Recipe_Make_DyeLightBlue = "Hacer Tinte Azul Claro",
+Recipe_Make_DyeYellow = "Hacer Tinte Amarillo",
+Recipe_Make_DyeGreen = "Hacer Tinte Verde",
+Recipe_Make_DyeBrown = "Hacer Tinte Marron",
+Recipe_Make_DyeRed = "Hacer Tinte Rojo",
+Recipe_Make_DyeOrange = "Hacer Tinte Naranja",
+Recipe_Make_DyePink = "Hacer Tinte Rosa",
+Recipe_Make_DyeLightBrown = "Hacer Tinte Marron Claro",
+Recipe_Make_DyeGrey = "Hacer Tinte Gris",
+Recipe_Make_DyeBlue = "Hacer Tinte Azul",
+Recipe_Make_DyePurple = "Hacer Tinte Morado",
+Recipe_Make_DyeMagenta = "Hacer Tinte Magenta",
+
+    /****************************Engineer****************************/
+
+Recipe_Make_Screwdriver  = "0 lvl. Hacer Destornillador",
+
+Recipe_Make_NHGasMask  = "0 lvl. Hacer Mascara de Gas",
+Recipe_Make_Handmade_GasMask_Filter  = "0 lvl. Hacer Filtro de Mascara de Gas improvisado",
+Recipe_Make_Regular_GasMask_Filter  = "2 lvl. Hacer Filtro Regular de Mascara de Gas",
+Recipe_Make_Advanced_GasMask_Filter  = "4 lvl. Hacer Filtro Avanzado de Mascara de Gas",
+
+Recipe_Make_Light_Arrow  = "0 lvl. Hacer Flechas",
+
+Recipe_Make_Trash_Bomb = "5 lvl. Hacer Bomba Casera",
+
+Recipe_Make_Handmade_Mace = "1 lvl. Hacer Maza improvisada",
+Recipe_Make_Regular_Mace = "3 lvl. Hacer Maza Regular",
+Recipe_Make_Advanced_Mace = "5 lvl. Hacer Maza avanzada",
+
+Recipe_Make_Handmade_Sword  = "0 lvl. Hacer Espada improvisada",
+Recipe_Make_Regular_Sword  = "3 lvl. Hacer Espada Corta",
+Recipe_Make_Advanced_Sword  = "6 lvl. Hacer Espada de Dos Manos",
+
+Recipe_Make_Handmade_Big_Hammer  = "2 lvl. Hacer Porra",
+Recipe_Make_Regular_Big_Hammer  = "4 lvl. Hacer Gran Martillo",
+Recipe_Make_Advanced_Big_Hammer  = "6 lvl. Hacer Gran Martillo Avanzado",
+
+Recipe_Make_Handmade_Halberd  = "0 lvl. Hacer Alabarda improvisada",
+Recipe_Make_Regular_Halberd  = "2 lvl. Hacer Alabarda regular",
+Recipe_Make_Advanced_Halberd  = "4 lvl. Hacer Alabarda avanzada",
+
+Recipe_Make_Pipe_Sword  = "4 lvl. Hacer Espada de Tubo",
+
+Recipe_Make_Wrench_Knife  = "1 lvl. Hacer Cuchillo improvisado",
+Recipe_Make_Regular_Knife  = "3 lvl. Hacer Cuchillo regular",
+Recipe_Make_Advanced_Knife  = "5 lvl. Hacer Cuchillo Avanzado",
+
+Recipe_Make_Handmade_Axe  = "2 lvl. Hacer Hacha improvisada",
+Recipe_Make_Regular_Axe  = "4 lvl. Hacer Hacha regular",
+Recipe_Make_Advanced_Axe  = "6 lvl. Hacer Hacha avanzada",
+
+Recipe_Make_Composite_Bow  = "1 lvl. Hacer Arco Compuesto",
+Recipe_Make_Recursive_Bow  = "4 lvl. Hacer Arco Recurvo",
+
+Recipe_Make_Crossbow  = "5 lvl. Hacer Ballesta",
+Recipe_Make_9mm_Mold  = "1 lvl. Hacer Molde para Balas 9mm",
+Recipe_Make_Pistol_Bullets  = "1 lvl. Hacer Balas de Pistola",
+Recipe_Make_Pistol_Bullets_Alt  = "1 lvl. Hacer Balas de Pistola (alt)",
+
+Recipe_Make_308_Mold  = "3 lvl. Hacer Molde para Balas .308",
+Recipe_Make_Rifle_Bullets  = "3 lvl. Hacer Balas de Rifle",
+Recipe_Make_Rifle_Bullets_Alt  = "3 lvl. Hacer Balas de Rifle (alt)",
+
+Recipe_Make_556_Mold  = "5 lvl. Hacer Molde para Balas 5.56",
+Recipe_Make_Assault_Rifle_Bullets  = "5 lvl. Hacer Balas de Rifle de Asalto",
+Recipe_Make_Assault_Rifle_Bullets_Alt  = "5 lvl. Hacer Balas de Rifle de Asalto (alt)",
+
+Recipe_Make_Shotgun_Shells_Mold  = "1 lvl. Hacer Molde para Cartuchos de Escopeta",
+Recipe_Make_Shotgun_Shells  = "1 lvl. Hacer Cartuchos de Escopeta",
+Recipe_Make_Shotgun_Shells_Alt  = "1 lvl. Hacer Cartuchos de Escopeta (alt)",
+
+Recipe_Make_Bipod = "6 lvl. Hacer Bipode",
+
+Recipe_Make_SMG1 = "4 lvl. Hacer Subfusil 'Granizo'",
+Recipe_Make_SMG2 = "7 lvl. Hacer Subfusil 'Ciclon'",
+Recipe_Make_Rifle1 = "6 lvl. Hacer Rifle 'Leopardo'",
+Recipe_Make_Rifle2 = "8 lvl. Hacer Rifle 'Lince'",
+Recipe_Make_Semiauto_Rifle1 = "5 lvl. Hacer Rifle Semiautomatico 'Libelula'",
+Recipe_Make_Semiauto_Rifle2 = "7 lvl. Hacer Rifle Semiautomatico 'Cigarra'",
+Recipe_Make_Assault_RifleM1 = "7 lvl. Hacer Fusil de Asalto 'Buho'",
+Recipe_Make_Assault_RifleM2 = "9 lvl. Hacer Fusil de Asalto 'Halcon'",
+Recipe_Make_Assault_RifleAK1 = "6 lvl. Hacer Fusil de Asalto 'Condor'",
+Recipe_Make_Assault_RifleAK2 = "8 lvl. Hacer Fusil de Asalto 'Buitre'",
+Recipe_Make_ShotgunDB = "2 lvl. Hacer Escopeta de Doble Ca√±√≥n 'Viejo Amigo'",
+Recipe_Make_Shotgun1 = "4 lvl. Hacer Escopeta 'Satiro'",
+Recipe_Make_Shotgun2 = "7 lvl. Hacer Escopeta 'Ciclope'",
+
+Recipe_Make_Pistol_barrel = "3 lvl. Hacer Parte: CaÒon de Pistola",
+Recipe_Make_Gun_bolt = "4 lvl. Hacer Parte: Corredera",
+Recipe_Make_Gun_Bolt_semiauto = "4 lvl. Hacer Parte: Piston-Corredera",
+Recipe_Make_Trigger_group = "2 lvl. Hacer Parte: Grupo del Gatillo",
+Recipe_Make_Pistol_body = "3 lvl. Hacer Parte: Cuerpo de Pistola",
+Recipe_Make_Revolver_drum = "3 lvl. Hacer Parte: Tambor de Revolver",
+Recipe_Make_Rifle_body = "5 lvl. Hacer Parte: Cuerpo de Rifle",
+Recipe_Make_Spring = "2 lvl. Hacer Parte: Resorte",
+Recipe_Make_Wooden_furniture = "1 lvl. Hacer Parte: Piezas de Madera",
+Recipe_Make_Rifle_barrel = "3 lvl. Hacer Parte: CaÒon de Rifle",
+Recipe_Make_Chromed_Rifle_barrel = "7 lvl. Hacer Parte: CaÒon de Rifle Cromado",
+Recipe_Make_Chromed_Pistol_barrel = "5 lvl. Hacer Parte: CaÒon de Pistola Cromado",
+Recipe_Make_Hiql_Rifle_body = "7 lvl. Hacer Parte: Cuerpo de Rifle Mejorado",
+Recipe_Make_Hiql_Pistol_body = "5 lvl. Hacer Parte: Cuerpo de Pistola Mejorado",
+Recipe_Make_Chrome_Rifle_barrel = "7 lvl. Hacer Parte Cromada: CaÒon de Rifle",
+Recipe_Make_Chrome_Pistol_barrel = "3 lvl. Hacer Parte Cromada: CaÒon de Pistola",
+Recipe_Make_Upgrade_Rifle_body = "7 lvl. Hacer Parte de Mejora: Cuerpo de Rifle",
+Recipe_Make_Upgrade_Pistol_body = "5 lvl. Hacer Parte de Mejora: Cuerpo de Pistola",
+Recipe_Make_Gas_Tube = "6 lvl. Hacer Parte: Tubo de Gas",
+
+    /****************************Faction****************************/
+
+
+Recipe_Make_Tabard = "0 lvl. Fabricar Tabardo"
+Recipe_Make_Chainmail = "0 lvl. Fabricar Cota de Malla"
+Recipe_Make_Trousers_Medival = "0 lvl. Fabricar Pantalones Medievales"
+
+Recipe_Make_CultArmor2 = "Fabricar Armadura de El Culto"
+Recipe_Make_CultMask2 = "Fabricar Mascara de El Culto"
+Recipe_Make_CultHelmet2 = "Fabricar Casco de El Culto"
+Recipe_Make_CultPauldrons2 = "Fabricar Espaldar de El Culto"
+
+Recipe_Make_LVKHelmet = "Fabricar Casco de Los Hijos de Gaia"
+Recipe_Make_LVKArmor = "Fabricar Armadura de Los Hijos de Gaia"
+Recipe_Make_LVKBracer = "Fabricar Brazaletes de Los Hijos de Gaia"
+Recipe_Remake_LVKBracer = "Rehacer Brazaletes de Los Hijos de Gaia"
+Recipe_Remake_LVKHelmet = "Rehacer Casco de Los Hijos de Gaia"
+Recipe_Remake_LVKArmor = "Rehacer Armadura de Los Hijos de Gaia"
+
+Recipe_Make_BBNBHelmet = "Fabricar Casco de El Enclave"
+Recipe_Make_BBNBArmor = "Fabricar Armadura de El Enclave"
+Recipe_Make_BBNBBracer = "Fabricar Brazaletes de El Enclave"
+Recipe_Make_BBNBLegPads = "Fabricar Hombreras de El Enclave"
+Recipe_Remake_BBNBBracer = "Rehacer Brazaletes de El Enclave"
+Recipe_Remake_BBNBHelmet = "Rehacer Casco de El Enclave"
+Recipe_Remake_BBNBArmor = "Rehacer Armadura de El Enclave"
+Recipe_Remake_BBNBLegPads = "Rehacer Hombreras de El Enclave"
+
+    /****************************Mechanics****************************/
+
+Recipe_0._Dismantle_Instruments = "0 lvl. Desmontar Instrumentos",
+Recipe_0._Deconstruct_a_Tire = "0 lvl. Desmontar un Neumatico",
+Recipe_0._Deconstruct_a_Door = "0 lvl. Desmontar una Puerta",
+Recipe_0._Deconstruct_a_Trunk_Door = "0 lvl. Desmontar una Puerta de Maletero",
+Recipe_0._Deconstruct_a_Suspension = "0 lvl. Desmontar una Suspension",
+Recipe_0._Deconstruct_a_Window = "0 lvl. Desmontar una Ventana",
+Recipe_0._Deconstruct_a_Brake = "0 lvl. Desmontar un Freno",
+Recipe_0._Deconstruct_a_Seat = "0 lvl. Desmontar un Asiento",
+Recipe_0._Deconstruct_a_Gas_Tank = "0 lvl. Desmontar un Tanque de Gas",
+Recipe_0._Deconstruct_a_Hood = "0 lvl. Desmontar un Capo",
+Recipe_0._Deconstruct_a_Muffler = "0 lvl. Desmontar un Silenciador",
+
+Recipe_1._Make_Small_Gas_Tank_Type_Standart = "1 lvl. Fabricar Tanque de Gas PequeÒo Tipo Estandar",
+Recipe_1._Make_Standart_Seat_Type_Standart = "1 lvl. Fabricar Asiento Estandar Tipo Estandar",
+Recipe_1._Make_Standart_Seat_Type_Heavy-Duty = "1 lvl. Fabricar Asiento Estandar industrial",
+Recipe_1._Make_Standart_Seat_Type_Sport = "1 lvl. Fabricar Asiento Estandar Tipo Deportivo",
+
+Recipe_2._Make_Double_Rear_Door_Type_Standart = "2 lvl. Fabricar Puerta Trasera Doble Tipo Estandar",
+Recipe_2._Make_Front_Door_Type_Standart = "2 lvl. Fabricar Puerta Delantera Tipo Estandar",
+Recipe_2._Make_Standart_Gas_Tank_Type_Standart = "2 lvl. Fabricar Tanque de Gas Estandar Tipo Estandar",
+Recipe_2._Make_Small_Gas_Tank_Type_Heavy-Duty = "2 lvl. Fabricar Tanque de Gas PequeÒo Tipo industrial",
+Recipe_2._Make_Hood_Type_Standart = "2 lvl. Fabricar Capo Tipo Estandar",
+Recipe_2._Make_Trunk_Door_Type_Standart = "2 lvl. Fabricar Puerta de Maletero Tipo Estandar",
+Recipe_2._Make_Rear_Door_Type_Standart = "2 lvl. Fabricar Puerta Trasera Tipo Estandar",
+
+Recipe_3._Make_Double_Rear_Door_Type_Heavy-Duty = "3 lvl. Fabricar Puerta Trasera Doble Tipo industrial",
+Recipe_3._Make_Front_Door_Type_Heavy-Duty = "3 lvl. Fabricar Puerta Delantera Tipo industrial",
+Recipe_3._Make_Big_Gas_Tank_Type_Standart = "3 lvl. Fabricar Tanque de Gas Grande Tipo Estandar",
+Recipe_3._Make_Standart_Gas_Tank_Type_Heavy-Duty = "3 lvl. Fabricar Tanque de Gas Estandar Tipo industrial",
+Recipe_3._Make_Small_Gas_Tank_Type_Sport = "3 lvl. Fabricar Tanque de Gas PequeÒo Tipo Deportivo",
+Recipe_3._Make_Hood_Type_Heavy-Duty = "3 lvl. Fabricar Capo≥ Tipo industrial",
+Recipe_3._Make_Trunk_Door_Type_Heavy-Duty = "3 lvl. Fabricar Puerta de Maletero Tipo industrial",
+Recipe_3._Make_Rear_Door_Type_Heavy-Duty = "3 lvl. Fabricar Puerta Trasera Tipo industrial",
+Recipe_3._Make_Windshield_Type_Standart = "3 lvl. Fabricar Parabrisas Tipo Estandar",
+Recipe_3._Make_Rear_Windshield_Type_Standart = "3 lvl. Fabricar Parabrisas Trasero Tipo Estandar",
+Recipe_3._Make_Front_Window_Type_Standart = "3 lvl. Fabricar Ventana Delantera Tipo Estandar",
+Recipe_3._Make_Rear_Window_Type_Standart = "3 lvl. Fabricar Ventana Trasera Tipo Estandar",
+
+Recipe_4._Make_Old_Brake_Type_Standart = "4 lvl. Fabricar Freno Viejo Tipo Estandar",
+Recipe_4._Make_Front_Door_Type_Sport = "4 lvl. Fabricar Puerta Delantera Tipo Deportivo",
+Recipe_4._Make_Big_Gas_Tank_Type_Heavy-Duty = "4 lvl. Fabricar Tanque de Gas Grande Tipo industrial",
+Recipe_4._Make_Standart_Gas_Tank_Type_Sport = "4 lvl. Fabricar Tanque de Gas Estandar Tipo Deportivo",
+Recipe_4._Make_Hood_Type_Sport = "4 lvl. Fabricar Capo Tipo Deportivo",
+Recipe_4._Make_Trunk_Door_Type_Sport = "4 lvl. Fabricar Puerta de Maletero Tipo Deportivo",
+Recipe_4._Make_Rear_Door_Type_Sport = "4 lvl. Fabricar Puerta Trasera Tipo Deportivo",
+Recipe_4._Make_Valu-Tire_Type_Standart = "4 lvl. Fabricar Neumatico de Valor Tipo Estandar",
+Recipe_4._Make_Windshield_Type_Heavy-Duty = "4 lvl. Fabricar Parabrisas Tipo industrial",
+Recipe_4._Make_Rear_Windshield_Type_Heavy-Duty = "4 lvl. Fabricar Parabrisas Trasero Tipo industrial",
+Recipe_4._Make_Front_Window_Type_Heavy-Duty = "4 lvl. Fabricar Ventana Delantera Tipo industrial",
+Recipe_4._Make_Rear_Window_Type_Heavy-Duty = "4 lvl. Fabricar Ventana Trasera Tipo industrial",
+Recipe_4._Make_RubberTire = "4 lvl. Fabricar Neumatico de Goma",
+
+Recipe_5._Make_Regular_Brake_Type_Standart = "5 lvl. Fabricar Freno Regular Tipo Estandar",
+Recipe_5._Make_Old_Brake_Type_Heavy-Duty = "5 lvl. Fabricar Freno Viejo Tipo industrial",
+Recipe_5._Make_Big_Gas_Tank_Type_Sport = "5 lvl. Fabricar Tanque de Gas Grande Tipo Deportivo",
+Recipe_5._Make_Bad_Muffler_Type_Standart = "5 lvl. Fabricar Silenciador Malo Tipo Estandar",
+Recipe_5._Make_Sports_Seat_Type_Standart = "5 lvl. Fabricar Asiento Deportivo Tipo Estandar",
+Recipe_5._Make_Regular_Tire_Type_Standart = "5 lvl. Fabricar Neumatico Regular Tipo Estandar",
+Recipe_5._Make_Valu-Tire_Type_Heavy-Duty = "5 lvl. Fabricar Neumatico de Valor Tipo industrial",
+Recipe_5._Make_Windshield_Type_Sport = "5 lvl. Fabricar Parabrisas Tipo Deportivo",
+Recipe_5._Make_Rear_Windshield_Type_Sport = "5 lvl. Fabricar Parabrisas Trasero Tipo Deportivo",
+Recipe_5._Make_Front_Window_Type_Sport = "5 lvl. Fabricar Ventana Delantera Tipo Deportivo",
+Recipe_5._Make_Rear_Window_Type_Sport = "5 lvl. Fabricar Ventana Trasera Tipo Deportivo",
+Recipe_5._Make_Regular_Suspension_Type_Standart = "5 lvl. Fabricar Suspension Regular Tipo Estandar",
+
+Recipe_6._Make_Regular_Brake_Type_Heavy-Duty = "6 lvl. Fabricar Freno Regular Tipo industrial",
+Recipe_6._Make_Old_Brake_Type_Sport = "6 lvl. Fabricar Freno Viejo Tipo Deportivo",
+Recipe_6._Make_Average_Muffler_Type_Standart = "6 lvl. Fabricar Silenciador Promedio Tipo Estandar",
+Recipe_6._Make_Bad_Muffler_Type_Heavy-Duty = "6 lvl. Fabricar Silenciador Malo Tipo industrial",
+Recipe_6._Make_Sports_Seat_Type_Heavy-Duty = "6 lvl. Fabricar Asiento Deportivo Tipo industrial",
+Recipe_6._Make_Regular_Tire_Type_Heavy-Duty = "6 lvl. Fabricar Neumatico Regular Tipo industrial",
+Recipe_6._Make_Valu-Tire_Type_Sport = "6 lvl. Fabricar Neumatico de Valor Tipo Deportivo",
+Recipe_6._Make_Regular_Suspension_Type_Heavy-Duty = "6 lvl. Fabricar Suspension Regular Tipo industrial",
+
+Recipe_7._Unhotwire_vehicle = "7 lvl. Quitar cables de puenteado del vehiculo",
+Recipe_7._Make_Performance_Brake_Type_Standart = "7 lvl. Fabricar Freno de Alto Rendimiento Tipo Estandar",
+Recipe_7._Make_Regular_Brake_Type_Sport = "7 lvl. Fabricar Freno Regular Tipo Deportivo",
+Recipe_7._Make_Average_Muffler_Type_Heavy-Duty = "7 lvl. Fabricar Silenciador Promedio Tipo industrial",
+Recipe_7._Make_Bad_Muffler_Type_Sport = "7 lvl. Fabricar Silenciador Malo Tipo Deportivo",
+Recipe_7._Make_Big_Seat_Type_Standart = "7 lvl. Fabricar Asiento Grande Tipo Estandar",
+Recipe_7._Make_Sports_Seat_Type_Sport = "7 lvl. Fabricar Asiento Deportivo Tipo Deportivo",
+Recipe_7._Make_Performance_Tire_Type_Standart = "7 lvl. Fabricar Neumatico de Alto Rendimiento Tipo Estandar",
+Recipe_7._Make_Regular_Tire_Type_Sport = "7 lvl. Fabricar Neumatico Regular Tipo Deportivo",
+Recipe_7._Make_Performance_Suspension_Type_Standart = "7 lvl. Fabricar Suspension de Alto Rendimiento Tipo Estandar",
+Recipe_7._Make_Regular_Suspension_Type_Sport = "7 lvl. Fabricar Suspension Regular Tipo Deportivo",
+
+
+Recipe_8._Make_Performance_Brake_Type_Heavy-Duty = "8 lvl. Fabricar Freno de Alto Rendimiento Tipo industrial",
+Recipe_8._Make_Performance_Muffler_Type_Standart = "8 lvl. Fabricar Silenciador de Alto Rendimiento Tipo Estandar",
+Recipe_8._Make_Average_Muffler_Type_Sport = "8 lvl. Fabricar Silenciador Promedio Tipo Deportivo",
+Recipe_8._Make_Big_Seat_Type_Heavy-Duty = "8 lvl. Fabricar Asiento Grande Tipo Resistente",
+Recipe_8._Make_Performance_Tire_Type_Heavy-Duty = "8 lvl. Fabricar Neumatico de Alto Rendimiento Tipo industrial",
+Recipe_8._Make_Performance_Suspension_Type_Heavy-Duty = "8 lvl. Fabricar Suspension de Alto Rendimiento Tipo industrial",
+Recipe_8._Make_Car_Battery_Type_Standart = "8 lvl. Fabricar Bateria de Automovil Tipo Estandar",
+Recipe_8._Make_Car_Battery_Type_Heavy-Duty = "8 lvl. Fabricar Bateria de Automovil Tipo industrial",
+Recipe_8._Make_Car_Battery_Type_Sport = "8 lvl. Fabricar Bateria de Automovil Tipo Deportivo",
+
+Recipe_9._Make_Performance_Brake_Type_Sport = "9 lvl. Fabricar Freno de Alto Rendimiento Tipo Deportivo",
+Recipe_9._Make_Performance_Muffler_Type_Heavy-Duty = "9 lvl. Fabricar Silenciador de Alto Rendimiento Tipo industrial",
+Recipe_9._Make_Performance_Muffler_Type_Sport = "9 lvl. Fabricar Silenciador de Alto Rendimiento Tipo Deportivo",
+Recipe_9._Make_Big_Seat_Type_Sport = "9 lvl. Fabricar Asiento Grande Tipo Deportivo",
+Recipe_9.Make_Performance_Tire_Type_Sport = "9 lvl. Fabricar Neumatico de Alto Rendimiento Tipo Deportivo",
+Recipe_9.Make_Performance_Suspension_Type_Sport = "9 lvl. Fabricar Suspension de Alto Rendimiento Tipo Deportivo",
+Recipe_Make_car_key = "10 lvl. Fabricar Llave de Automovil",
+Recipe_Make_Engine_Parts = "10 lvl. Fabricar Piezas de Motor",
+
+    /****************************Fixing****************************/
+
+Recipe_Fix_Pipe_Sword = "4 lvl. Arreglar Espada de Tubo",
+
+Recipe_Fix_Regular_Halberd = "2 lvl. Arreglar Alabarda Regular",
+Recipe_Fix_Advanced_Halberd = "4 lvl. Arreglar Alabarda Avanzada",
+
+Recipe_Fix_Regular_Sword = "3 lvl. Arreglar Espada Regular",
+Recipe_Fix_Advanced_Sword = "6 lvl. Arreglar Espada Avanzada",
+
+Recipe_Fix_RegularMace = "3 lvl. Arreglar Mazo Regular",
+Recipe_Fix_AdvancedMace = "5 lvl. Arreglar Mazo Avanzado",
+
+Recipe_Fix_RegularBigHammer = "4 lvl. Arreglar Gran Martillo Regular",
+Recipe_Fix_AdvancedBigHammer = "6 lvl. Arreglar Gran Martillo Avanzado",
+
+Recipe_Fix_RegularAxe = "4 lvl. Arreglar Hacha Regular",
+Recipe_Fix_AdvancedAxe = "6 lvl. Arreglar Hacha Avanzada",
+
+Recipe_Fix_RegularKnife = "4 lvl. Arreglar Cuchillo Regular",
+Recipe_Fix_AdvancedKnife = "6 lvl. Arreglar Cuchillo Avanzado",
+
+Recipe_Fix_RegularPistol = "3 lvl. Arreglar Pistola Regular",
+Recipe_Fix_AdvancedPistol = "5 lvl. Arreglar Pistola Avanzada",
+
+Recipe_Fix_RegularRifle = "5 lvl. Arreglar Rifle Regular",
+Recipe_Fix_AdvancedRifle = "7 lvl. Arreglar Rifle Avanzado",
+
+Recipe_Fix_RegularAssaultRifle = "7 lvl. Arreglar Rifle de Asalto Regular",
+Recipe_Fix_AdvancedAssaultRifle = "9 lvl. Arreglar Rifle de Asalto Avanzado",
+
+Recipe_Fix_RegularShotgun = "3 lvl. Arreglar Escopeta Regular",
+Recipe_Fix_AdvancedShotgun = "5 lvl. Arreglar Escopeta Avanzada",
+
+Recipe_Fix_Crossbow = "5 lvl. Arreglar Ballesta",
+
+Recipe_Fix_CompositeBow = "1 lvl. Arreglar Arco Compuesto",
+Recipe_Fix_RecursiveBow = "4 lvl. Arreglar Arco Recursivo",
+
+Recipe_Fix_BoneHelmet = "3 lvl. Arreglar Casco de Hueso",
+Recipe_Fix_BoneArmor = "2 lvl. Arreglar Armadura de Hueso",
+Recipe_Fix_BoneBracer = "1 lvl. Arreglar Brazaletes de Hueso",
+Recipe_Fix_BoneLegPads = "1 lvl. Arreglar Hombreras de Hueso",
+Recipe_Fix_BoneNeckPads = "1 lvl. Arreglar Protector de Cuello de Hueso",
+
+Recipe_Fix_MetalHelmet = "6 lvl. Arreglar Casco de Metal",
+Recipe_Fix_MetalArmor = "5 lvl. Arreglar Armadura de Metal",
+Recipe_Fix_MetalBracer = "4 lvl. Arreglar Brazaletes de Metal",
+Recipe_Fix_MetalLegPads = "4 lvl. Arreglar Hombreras de Metal",
+Recipe_Fix_MetalNeckPads = "4 lvl. Arreglar Protector de Cuello de Metal"
+
+Recipe_Fix_Tabard = "0 lvl. Arreglar Tabardo",
+
+Recipe_Fix_CultArmor2 = "0 lvl. Arreglar Armadura de El Culto",
+Recipe_Fix_CultMask2 = "0 lvl. Arreglar Mascara de El Culto",
+Recipe_Fix_CultHelmet2 = "0 lvl. Arreglar Casco de El Culto",
+Recipe_Fix_CultPauldrons2 = "0 lvl. Arreglar Espaldar de El Culto",
+
+Recipe_Fix_LVKBracer = "4 lvl. Arreglar Brazaletes de Los Hijos de Gaia",
+Recipe_Fix_LVKArmor = "5 lvl. Arreglar Armadura de Los Hijos de Gaia",
+Recipe_Fix_LVKHelmet = "6 lvl. Arreglar Casco de Los Hijos de Gaia",
+
+Recipe_Fix_BBNBLegPads = "4 lvl. Arreglar Hombreras de El Enclave",
+Recipe_Fix_BBNBBracer = "4 lvl. Arreglar Brazaletes de El Enclave",
+Recipe_Fix_BBNBArmor = "5 lvl. Arreglar Armadura de El Enclave",
+Recipe_Fix_BBNBHelmet = "6 lvl. Arreglar Casco de El Enclave"
+
+    /****************************Trapper****************************/
+
+Recipe_Hunt_Down_Wolf_With_Bow = "5 lvl. Cazar Lobo con Arco",
+Recipe_Hunt_Down_Boar_With_Bow = "7 lvl. Cazar Jabali con Arco",
+Recipe_Hunt_Down_Bear_With_Bow = "9 lvl. Cazar Oso con Arco",
+Recipe_Hunt_Down_Goat_With_Bow = "6 lvl. Cazar Cabra con Arco",
+Recipe_Hunt_Down_Cow_With_Bow = "6 lvl. Cazar Vaca con Arco",
+Recipe_Hunt_Down_Fox_With_Bow = "3 lvl. Cazar Zorro con Arco",
+Recipe_Hunt_Down_ODeer_With_Bow = "8 lvl. Cazar Venado Viejo con Arco",
+Recipe_Hunt_Down_YDeer_With_Bow = "9 lvl. Cazar Venado Joven con Arco",
+Recipe_Hunt_Down_Dog_With_Bow = "4 lvl. Cazar Perro con Arco",
+Recipe_Hunt_Down_Moose_With_Bow = "9 lvl. Cazar Alce con Arco",
+Recipe_Hunt_Down_Coyote_With_Bow = "5 lvl. Cazar Coyote con Arco",
+Recipe_Hunt_Down_Hare_With_Bow = "2 lvl. Cazar Liebre con Arco",
+Recipe_Hunt_Down_Chicken_With_Bow = "1 lvl. Cazar Pollo con Arco",
+Recipe_Hunt_Down_Crow_With_Bow = "2 lvl. Cazar Cuervo con Arco",
+
+Recipe_Make_Mouse_Trap = "0 lvl. Fabricar Trampa para Ratones",
+Recipe_Make_Snare_Trap = "1 lvl. Fabricar Trampa de Lazo",
+Recipe_Make_Stick_Trap = "2 lvl. Fabricar Trampa de Palo",
+Recipe_Make_Trap_Box = "2 lvl. Fabricar Caja Trampa",
+Recipe_Make_Wooden_Cage_Trap = "3 lvl. Fabricar Trampa de Jaula de Madera",
+Recipe_Make_Cage_Trap = "4 lvl. Fabricar Trampa de Jaula",
+
+    /****************************Sewing****************************/
+
+Recipe_Make_HandWraps = "0 lvl. Fabricar Envolturas para Manos",
+Recipe_Make_SurvivalShirt = "0 lvl. Fabricar Camisa de Supervivencia",
+Recipe_Rip_Denim_Clothing = "Desgarrar Ropa Vaquera",
+Recipe_Rip_Leather_Clothing = "Desgarrar Ropa de Cuero",
+Recipe_Rip_Cotton_Clothing = "Desgarrar Ropa de Algodon",
+Recipe_Make_Ammo_Pouch = "4 lvl. Coser Bolsa de Cintura para Municion",
+Recipe_Make_Medical_Pouch = "4 lvl. Coser Bolsa de Cintura para Suministros Medicos",
+Recipe_Make_Supply_Pouch = "4 lvl. Coser Bolsa de Cintura para Suministros",
+Recipe_Make_Felt = "1 lvl. Fabricar Fieltro",
+Recipe_Make_Thread = "0 lvl. Fabricar Hilo",
+Recipe_Make_Tissue = "0 lvl. Fabricar Tejido",
+Recipe_Make_Eyepatch = "1 lvl. Fabricar Parche para Ojo",
+Recipe_Make_Hoodie = "1 lvl. Fabricar Sudadera con Capucha",
+Recipe_Make_EarMuffs = "2 lvl. Fabricar Orejeras",
+Recipe_Make_Scarf = "3 lvl. Fabricar Bufanda",
+Recipe_Make_WoolyHat = "3 lvl. Fabricar Gorro de Lana",
+Recipe_Make_WinterHat = "4 lvl. Fabricar Gorro de Invierno",
+Recipe_Make_Balaclava = "4 lvl. Fabricar PasamontaÒas",
+Recipe_Make_Jacket = "4 lvl. Fabricar Chaqueta",
+Recipe_Make_Jacket_Ranger = "5 lvl. Fabricar Chaqueta de Guardabosques",
+Recipe_Make_Trousers_Ranger = "5 lvl. Fabricar Pantalones de Guardabosques",
+Recipe_Make_Jacket_Padded = "6 lvl. Fabricar Chaqueta Acolchada",
+Recipe_Make_Trousers_Padded = "6 lvl. Fabricar Pantalones Acolchados",
+Recipe_Make_Poncho_Yellow = "2 lvl. Fabricar Poncho Amarillo",
+Recipe_Make_Twine = "1 lvl. Fabricar Cuerda",
+Recipe_Make_Rope = "2 lvl. Fabricar Soga",
+Recipe_Make_Sheet = "2 lvl. Fabricar Sabana",
+Recipe_Make_BrezentBag = "4 lvl. Fabricar Bolsa de Lona",
+Recipe_Make_Kotomka = "0 lvl. Fabricar Mochila Kotomka",
+Recipe_Make_Wool_Cape = "5 lvl. Fabricar Capa de Lana",
+Recipe_Make_Thread_Alt = "0 lvl. Fabricar Hilo (alternativo)",
+
+    /****************************Raiding****************************/
+
+    Recipe_Make_Handmade_Raider_Axe = "5 lvl. Make Raider Axe",
+
+    /****************************Caches****************************/
+
+Recipe_GhostQuest1 = "Buscar escondite"
+Recipe_GhostQuest2 = "Buscar escondite"
+Recipe_GhostQuest3 = "Buscar escondite"
+Recipe_GhostQuest4 = "Buscar escondite"
+Recipe_GhostQuest5 = "Buscar escondite"
+Recipe_GhostQuest6 = "Buscar escondite"
+Recipe_GhostQuest7 = "Buscar escondite"
+Recipe_GhostQuest8 = "Buscar escondite"
+Recipe_GhostQuest9 = "Buscar escondite"
+Recipe_GhostQuest10 = "Buscar escondite"
+Recipe_GhostQuest11 = "Buscar escondite"
+Recipe_GhostQuest12 = "Buscar escondite"
+Recipe_GhostQuest13 = "Buscar escondite"
+Recipe_GhostQuest14 = "Buscar escondite"
+Recipe_GhostQuest15 = "Buscar escondite"
+Recipe_GhostQuest16 = "Buscar escondite"
+Recipe_GhostQuest17 = "Buscar escondite"
+Recipe_GhostQuest18 = "Buscar escondite"
+Recipe_GhostQuest19 = "Buscar escondite"
+Recipe_GhostQuest20 = "Buscar escondite"
+Recipe_GhostQuest21 = "Buscar escondite"
+Recipe_GhostQuest22 = "Buscar escondite"
+Recipe_GhostQuest23 = "Buscar escondite"
+Recipe_GhostQuest24 = "Buscar escondite"
+Recipe_GhostQuest25 = "Buscar escondite"
+Recipe_GhostQuest26 = "Buscar escondite"
+Recipe_GhostQuest27 = "Buscar escondite"
+Recipe_GhostQuest28 = "Buscar escondite"
+Recipe_GhostQuest29 = "Buscar escondite"
+Recipe_GhostQuest30 = "Buscar escondite"
+
+Recipe_Make_UnitedSample = "[E] Crear una Muestra Combinada"
+Recipe_Make_QuestHerb = "[E] Crear Polen"
+Recipe_Get_Bear_Head = "[E] Obtener Cabeza de Oso"
+Recipe_Make_QuestKioshiComposite = "[E] Crear Pieza de Coche de Kioshi"
+Recipe_Make_QuestKioshiRifle = "[E] Crear Rifle de Kioshi"
+Recipe_Make_QuestKioshiWeapon4 = "[E] Crear Guardamanos para el Rifle de Kioshi"
+Recipe_Make_QuestZBlood = "[E] Obtener Sangre de Zed"
+Recipe_Make_QuestCelestius = "[E] Crear Celestius"
+Recipe_Make_QuestRawSkin = "[E] Hacer Piel Cruda"
+Recipe_Make_QuestReadySkinWet = "[E] Hacer Cuero Crudo Curtido"
+Recipe_Make_QuestFinalSkin = "[E] Hacer Cuero Curtido"
+Recipe_Make_QuestIndigoDye = "[E] Hacer Tinte de Indigo"
+Recipe_Make_QuestSparkleAmplifier = "[E] Extraer Amplificador de Sparkle"
+Recipe_Make_QuestSparkleFinal = "[E] Hacer Radio HF Hecha a Mano"
+
+    /****************************WeaponPartsCraft****************************/
+
+
+Recipe_Make_PistolMag = "4 lvl. Fabricar Cargador de Pistola",
+Recipe_Make_PistolB1 = "4 lvl. Fabricar Pistola 'Insurgente'",
+Recipe_Make_PistolB2 = "5 lvl. Fabricar Pistola 'Renegada'",
+Recipe_Make_Revolver1 = "4 lvl. Fabricar Revolver 'Maverick'",
+Recipe_Make_Revolver2 = "5 lvl. Fabricar Revolver 'Desertor'",
+Recipe_Make_RifleB0 = "5 lvl. Fabricar Rifle 'Leopardo de las Nieves'",
+
+Recipe_Make_ForearmMOS1 = "7 lvl. Fabricar Culata Improvisada para 'Termita'",
+Recipe_Make_ForearmMOS2 = "7 lvl. Fabricar Culata de Madera para 'Termita'",
+Recipe_Make_Forearm700M1 = "7 lvl. Fabricar Culata Improvisada para 'Avispa'",
+Recipe_Make_Forearm700M2 = "7 lvl. Fabricar Culata de Madera para 'Avispa'",
+Recipe_Make_HandguardM1A1 = "8 lvl. Fabricar Guardamanos Improvisado para 'Ave Tormenta'",
+Recipe_Make_HandguardM1A2 = "8 lvl. Fabricar Guardamanos de Madera para 'Ave Tormenta'",
+Recipe_Make_StockM1A1 = "8 lvl. Fabricar Culata Improvisada para 'Ave Tormenta'",
+Recipe_Make_StockM1A2 = "8 lvl. Fabricar Culata de Madera para 'Ave Tormenta'",
+Recipe_Make_HandguardSVD1 = "8 lvl. Fabricar Guardamanos Improvisado para 'Buitre'",
+Recipe_Make_HandguardSVD2 = "8 lvl. Fabricar Guardamanos de Madera para 'Buitre'",
+Recipe_Make_StockSVD1 = "8 lvl. Fabricar Culata Improvisada para 'Buitre'",
+Recipe_Make_StockSVD2 = "8 lvl. Fabricar Culata de Madera para 'Buitre'",
+
+Recipe_Make_HandguardAR1 = "9 lvl. Fabricar Guardamanos Improvisado para 'Kraken'",
+Recipe_Make_HandguardAR2 = "9 lvl. Fabricar Guardamanos de Madera para 'Kraken'",
+Recipe_Make_StockAR1 = "9 lvl. Fabricar Culata Improvisada para 'Kraken'",
+Recipe_Make_StockAR2 = "9 lvl. Fabricar Culata de Madera para 'Kraken'",
+Recipe_Make_HandguardAK1 = "9 lvl. Fabricar Guardamanos Improvisado para 'Tiburon'",
+Recipe_Make_HandguardAK2 = "9 lvl. Fabricar Guardamanos de Madera para 'Tiburon'",
+Recipe_Make_StockAK1 = "9 lvl. Fabricar Culata Improvisada para 'Tiburon'",
+Recipe_Make_StockAK2 = "9 lvl. Fabricar Culata de Madera para 'Tiburon'",
+Recipe_Make_HandguardMK1 = "9 lvl. Fabricar Guardamanos Improvisado para 'Barracuda'",
+Recipe_Make_HandguardMK2 = "9 lvl. Fabricar Guardamanos de Madera para 'Barracuda'",
+Recipe_Make_StockMK1 = "9 lvl. Fabricar Culata Improvisada para 'Barracuda'",
+Recipe_Make_StockMK2 = "9 lvl. Fabricar Culata de Madera para 'Barracuda'",
+Recipe_Make_HandguardDSA1 = "9 lvl. Fabricar Guardamanos Improvisado para 'Leviatan'",
+Recipe_Make_HandguardDSA2 = "9 lvl. Fabricar Guardamanos de Madera para 'Leviatan'",
+Recipe_Make_StockDSA1 = "9 lvl. Fabricar Culata Improvisada para 'Leviatan'",
+Recipe_Make_StockDSA2 = "9 lvl. Fabricar Culata de Madera para 'Leviatan'",
+
+    /****************************Paint****************************/
+
+Recipe_Paint_Shield2_Shark = "Pintar Escudo 'Tiburon'",
+Recipe_Paint_Shield2_LGN = "Pintar Escudo 'SCP'",
+Recipe_Wash_Shield2 = "Limpiar Escudo Reforzado",
+
+    /****************************Shield****************************/
+
+Recipe_Make_Shield1 = "2 lvl. Fabricar Escudo de Metal",
+Recipe_Make_Shield2 = "6 lvl. Fabricar Escudo Reforzado",
+Recipe_Fix_Shield1 = "2 lvl. Reparar Escudo de Metal",
+Recipe_Fix_Shield2 = "6 lvl. Reparar Escudo Reforzado",
+
+Recipe_Fix_AnyFirearm = "Reparar arma",
+
+Recipe_Crafts_Sell_CraftsItems = "0 lvl. Vender Articulos",
+Recipe_Crafts_Sell_Feather = "0 lvl. Vender Pluma",
+Recipe_Crafts_Sell_Fat = "0 lvl. Vender Grasa",
+Recipe_Crafts_Sell_Leather = "0 lvl. Vender Cuero",
+Recipe_Crafts_Sell_Cabbage = "0 lvl. Vender Col",
+Recipe_Crafts_Sell_Carrot = "0 lvl. Vender Zanahoria",
+Recipe_Crafts_Sell_Broccoli = "0 lvl. Vender Brocoli",
+Recipe_Crafts_Sell_Potato = "0 lvl. Vender Patata",
+Recipe_Crafts_Sell_Radish = "0 lvl. Vender Rabano",
+Recipe_Crafts_Sell_Strawberries = "0 lvl. Vender Fresas",
+Recipe_Crafts_Sell_Tomato = "0 lvl. Vender Tomate",
+
+Recipe_Crafts_Buy_Apple = "0 lvl. Comprar Manzana",
+Recipe_Crafts_Buy_Needle = "0 lvl. Comprar Aguja",
+Recipe_Crafts_Buy_Thread = "0 lvl. Comprar Hilo",
+Recipe_Crafts_Buy_Twine = "0 lvl. Comprar Cordel",
+Recipe_Crafts_Buy_EmptySandbag = "0 lvl. Comprar Saco de Arena Vacio",
+Recipe_Crafts_Buy_Cigarettes = "0 lvl. Comprar Cigarrillos",
+Recipe_Crafts_Buy_Rope = "1 lvl. Comprar Cuerda",
+Recipe_Crafts_Buy_Battery = "1 lvl. Comprar Bateria",
+Recipe_Crafts_Buy_HandTorch = "1 lvl. Comprar linterna de mano",
+Recipe_Crafts_Buy_FishingRod = "1 lvl. Comprar CaÒa de Pescar",
+Recipe_Crafts_Buy_Schoolbag = "1 lvl. Comprar Mochila Escolar",
+Recipe_Crafts_Buy_Torch = "2 lvl. Comprar Antorcha",
+Recipe_Crafts_Buy_Hammer = "2 lvl. Comprar Martillo",
+Recipe_Crafts_Buy_Saw = "2 lvl. Comprar Sierra",
+Recipe_Crafts_Buy_Wrench = "2 lvl. Comprar Llave Inglesa",
+Recipe_Crafts_Buy_HandShovel = "2 lvl. Comprar Pala de Mano",
+Recipe_Crafts_Buy_WeldingRods = "2 lvl. Comprar Varillas de Soldadura",
+Recipe_Crafts_Buy_Milk = "2 lvl. Comprar Leche",
+Recipe_Crafts_Buy_GardeningSprayEmpty = "2 lvl. Comprar Pulverizador de Jardineria",
+Recipe_Crafts_Buy_FurBoots = "2 lvl. Comprar Botas de Caza",
+Recipe_Crafts_Buy_KojankaDOWN = "2 lvl. Comprar Capa de Caza",
+Recipe_Crafts_Buy_TrousersLeatherHM = "2 lvl. Comprar Pantalones de Caza",
+Recipe_Crafts_Buy_JacketLongHM = "2 lvl. Comprar Abrigo de Caza",
+Recipe_Crafts_Buy_PipeWrench = "3 lvl. Comprar Llave de Tuberia",
+Recipe_Crafts_Buy_Shovel = "3 lvl. Comprar Pala",
+Recipe_Crafts_Buy_MetalBar = "3 lvl. Comprar Barra de Metal",
+Recipe_Crafts_Buy_MetalPipe = "3 lvl. Comprar Tuberia de Metal",
+Recipe_Crafts_Buy_SheetMetal = "3 lvl. Comprar Chapa de Metal",
+Recipe_Crafts_Buy_Glue = "3 lvl. Comprar Pegamento",
+Recipe_Crafts_Buy_Woodglue = "3 lvl. Comprar pegamento de madera",
+Recipe_Crafts_Buy_DuctTape = "3 lvl. Comprar Cinta americana",
+Recipe_Crafts_Buy_Scotchtape = "3 lvl. Comprar Cinta adhesiva",
+Recipe_Crafts_Buy_TrapSnare = "3 lvl. Comprar Trampa de Lazo",
+Recipe_Crafts_Buy_TrapStick = "3 lvl. Comprar Trampa de Palo",
+Recipe_Crafts_Buy_ScrewsBox = "4 lvl. Comprar Caja de Tornillos",
+Recipe_Crafts_Buy_TrapCrate = "4 lvl. Comprar Caja Trampa",
+
+Recipe_Crafts_Buy_TrapBox = "4 lvl. Comprar Caja Trampa",
+Recipe_Crafts_Buy_FishingNet = "4 lvl. Comprar Red de Pesca",
+Recipe_Crafts_Buy_Toolbox = "4 lvl. Comprar Caja de Herramientas",
+Recipe_Crafts_Buy_MeleeJournal = "5 lvl. Comprar Libro 'Historia de la Herreria'",
+Recipe_Crafts_Buy_Jack = "5 lvl. Comprar Gato Hidraulico",
+Recipe_Crafts_Buy_LugWrench = "5 lvl. Comprar Llave de Tuerca",
+Recipe_Crafts_Buy_TirePump = "5 lvl. Comprar inflador de Neumaticos",
+Recipe_Crafts_Buy_NailsBox = "5 lvl. Comprar Caja de Clavos",
+Recipe_Crafts_Buy_TrapCage = "5 lvl. Comprar Jaula Trampa",
+Recipe_Crafts_Buy_CombinationPadlock = "5 lvl. Comprar Candado de Combinacion",
+Recipe_Crafts_Buy_MetalFlaskEmpty = "6 lvl. Comprar Frasco de Metal Vacio",
+Recipe_Crafts_Buy_FoldingKnife = "6 lvl. Comprar Cuchillo Plegable",
+Recipe_Crafts_Buy_Generator = "6 lvl. Comprar Generador",
+Recipe_Crafts_Buy_CarBatteryCharger = "6 lvl. Comprar Cargador de Bateria de Coche",
+Recipe_Crafts_Buy_EnergyDrink = "7 lvl. Comprar Bebida Energetica",
+Recipe_Crafts_Buy_Isotonic = "7 lvl. Comprar Isotonico",
+Recipe_Crafts_Buy_IngotCopper = "8 lvl. Comprar Lingote de Cobre",
+Recipe_Crafts_Buy_IngotTin = "8 lvl. Comprar Lingote de EstaÒo",
+Recipe_Crafts_Buy_HazmatNH = "8 lvl. Comprar Equipo de Proteccion bioquimico",
+Recipe_Crafts_Buy_IngotIron = "9 lvl. Comprar Lingote de Hierro",
+Recipe_Crafts_Buy_IngotLead = "9 lvl. Comprar Lingote de Plomo",
+Recipe_Crafts_Buy_BeerBottle = "9 lvl. Comprar Botella de Cerveza",
+Recipe_Crafts_Buy_LongJohns = "9 lvl. Comprar Calzoncillos Largos",
+Recipe_Crafts_Buy_IngotChromium = "9 lvl. Comprar Lingote de Cromo",
+Recipe_Crafts_Buy_IngotNickel = "9 lvl. Comprar Lingote de Niquel",
+Recipe_Make_Dagger = "3 lvl. Fabricar Daga",
+
+Recipe_Play_Guitar_1 = "3 lvl. Tocar Mental",
+Recipe_Play_Guitar_2 = "2 lvl. Tocar Lonely Day",
+Recipe_Play_Guitar_3 = "1 lvl. Tocar Aerials",
+Recipe_Play_Guitar_4 = "6 lvl. Tocar 28 Days Later",
+Recipe_Play_Guitar_5 = "4 lvl. Tocar Mutter",
+Recipe_Play_Guitar_6 = "7 lvl. Tocar Piratas del Caribe",
+Recipe_Play_Guitar_7 = "5 lvl. Tocar Build Home",
+Recipe_Play_Guitar_8 = "7 lvl. Tocar Where Is My Mind",
+Recipe_Play_Guitar_9 = "8 lvl. Tocar Mad World",
+Recipe_Play_Guitar_10 = "8 lvl. Tocar Inception",
+Recipe_Play_Guitar_11 = "9 lvl. Tocar Kookooshka",
+Recipe_Play_Guitar_12 = "6 lvl. Tocar Splin",
+Recipe_Play_Guitar_13 = "9 lvl. Tocar Shape Of My Heart",
+Recipe_Play_Flute_1 = "0 lvl. Tocar en el Funeral",
+Recipe_Learn_Music = "Aprender Musica",
+
+Recipe_Make_Good_Cigarettes = "Hacer Cigarrillos de Calidad",
+Recipe_Make_Marijuana_Joint = "Hacer Porro de Marihuana",
+
+Recipe_Switch_2_to_6 = "Convertir x2 en x6",
+Recipe_Switch_6_to_2 = "Convertir x6 en x2",
+
+}

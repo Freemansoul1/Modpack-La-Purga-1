@@ -1,0 +1,9 @@
+*marshall_q1_t1
+#name Mata a 150 zombis
+*marshall_q1_t2
+#name Completa la tarea
+
+*marshall_q2_t1
+#name Mata a 400 zombis
+*marshall_q2_t2
+#name Completa la tarea

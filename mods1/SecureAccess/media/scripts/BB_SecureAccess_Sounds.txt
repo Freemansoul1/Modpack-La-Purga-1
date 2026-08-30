@@ -1,0 +1,14 @@
+module Base
+{
+	sound SA_Door_Beep
+	{
+        category = Player, loop = false, is3D = true,
+        clip { file = media/sound/SA Door Beep.ogg, distanceMax = 5, volume = 0.1f, }
+	}
+
+	sound SA_Door_Slide
+	{
+        category = Player, loop = false, is3D = true,
+        clip { file = media/sound/SA Door Slide.ogg, distanceMax = 5, volume = 0.6f, }
+	}
+}

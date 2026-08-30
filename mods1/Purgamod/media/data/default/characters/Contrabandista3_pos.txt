@@ -1,0 +1,3 @@
+--Contrabandista droga hachis
+#npc_create Contrabandista3|NPC_Contrabandista3.png|4851,11379,2
+#exit

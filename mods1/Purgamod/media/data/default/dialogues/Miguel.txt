@@ -1,0 +1,56 @@
+#lua getPlayer():Say("Miguel está chapoteando...")
+#wait 3
+
+#is_flag Miguel_intro,true
+	#jump loop
+
+*intro
+	#m Miguel|media/ui/Miguel.png| "Hola... Soy Miguel Phelps."
+	#m Miguel|media/ui/Miguel.png| "Antes, fui nadador profesional y gané varias medallas olímpicas... pero esos días quedaron atrás."
+	#m Miguel|media/ui/Miguel.png| "Ahora enseño a nadar a los pocos que quedan en el oasis... Es vital poder escapar cuando esas cosas, esos cadáveres errantes, se acercan en hordas." 
+	#m Miguel|media/ui/Miguel.png| "El agua es su debilidad, pero también puede ser la tuya si no estás preparado. He visto a demasiados ahogarse en su intento por huir... atrapados tanto por el agua como por las garras de los no-muertos."
+	#set_flag Miguel_intro,true
+	#is_lua getPlayer():HasTrait("Goodmanners")|true
+		#stat_inc Miguel|Reputacion|5
+		#jump loop
+	#is_lua getPlayer():HasTrait("Badmanners")|true
+		#stat_inc Miguel|Reputacion|1.5
+		#jump loop
+	#stat_inc Miguel|Reputacion|3.5
+	
+
+*loop
+
+
+#m Miguel|media/ui/Miguel.png| "¿Qué necesitas? Pero hazlo rápido, nunca se sabe cuándo pueden aparecer esas cosas..."
+
+--Menu principal
+#choice
+	comprar|"Comprar"
+	tutorial|[Tutorial Nado]
+	intro_No|"Nada"
+
+*intro_No
+	#m Miguel|media/ui/Miguel.png| "Estoy muy liado... y el tiempo es vida."
+	#exit	
+
+
+
+*comprar
+	#script EleccionMiguel.txt
+	
+
+
+*tutorial
+#m Miguel|media/ui/Miguel.png| "Para aprender a nadar, necesitas tirarte al agua, pero no será fácil. Usa las teclas AWSD+SHIFT+ESPACIO a la vez. Recuerda, si no tienes el conocimiento o el equipo adecuado, el agua podría convertirse en tu tumba."
+#m Miguel|media/ui/Miguel.png| "Al principio, te aconsejo usar un flotador salvavidas o una recámara de coche. He visto cómo el pánico ahoga a los novatos... Asegúrate de dominar los métodos de natación antes de arriesgarte más."
+#m Miguel|media/ui/Miguel.png| "Eventualmente, nadarás sin problemas, pero no subestimes la importancia de la resistencia. Si te quedas sin fuerzas, serás una presa fácil tanto para el agua como para los zombies."
+#m Miguel|media/ui/Miguel.png| "Un consejo más, usa gafas de buceo y un buen bañador. Mantente seco, o te resfriarás... y no querrás atraer a esas cosas con tus estornudos... JA JA JA, aunque ya nada es tan gracioso, ¿verdad?"
+
+
+
+	
+
+			
+
+

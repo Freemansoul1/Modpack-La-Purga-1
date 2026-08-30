@@ -1,0 +1,4 @@
+*gd_msq1
+#name Bienvenido a la Purga
+#desc Al llegar a éste extraño mundo un extraño hombre me quiso explicar el funcionamiento del mismo.
+

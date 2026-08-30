@@ -1,0 +1,18 @@
+IGUI_EN = {
+    IGUI_invpanel_Chem_Prop = "Chemical Properties",
+    IGUI_invpanel_Chem_Jet = "+12 Endurance / -2.5% Hunger / +3 Drunkness / -15 Unhappyness and Boredom Lost",
+    IGUI_invpanel_Chem_Rocket = "+24 Endurance / -5.5% Hunger / +5 Drunkness / -15 Unhappyness and Boredom Lost",
+    IGUI_invpanel_Chem_Buffout = "+67 Endurance / +45% Fatigue / -10 Pain / Random Agility Skill XP Gain",
+    IGUI_invpanel_Chem_Bufftats = "+15 Endurance / +63% Fatigue / -10 Pain / Random Agility Skill XP Gain x3 / Random Crafting Skill XP Gain x3",
+    IGUI_invpanel_Chem_Buffjet = "+82 Endurance/ +40% Fatigue / -8 Pain / Random Agility Skill XP Gain / -15 Unhappyness and Boredom Lost",
+    IGUI_invpanel_Chem_Daytrip = "-5 Pain / -10 Fatigue / -85 Unhappiness / -65 Boredom / -50 Fear,Panic,and Stress / Grovvy Times",
+    IGUI_invpanel_Chem_Stimpack = "+27 Health / -10 Pain",
+    IGUI_invpanel_Chem_SuperStimpack = "+68 Heath / -35 Pain / +15 Drunkness",
+    IGUI_invpanel_Chem_Mentats = "-85 Drunkness / +35 Fatigue / -75 Stress / -10 Unhappyness and Boredom / Random Crafting Skill XP Gain",
+    IGUI_invpanel_Chem_Psycho = "+35 Health / -95 Pain / +58% Endurance / High Anger Gain / -90 Fear,Panic,and Stress / -15% Thirst / +35% Drunkess / Random Combat Skill XP Gain",
+    IGUI_invpanel_Chem_Slasher = "+65 Health / -98 Pain / +85 Endurance / High Anger Gain / -99 Fear,Panic,and Stress / -20 Thirst / +50% Drunkess / Random Combat Skill XP Gain",
+    IGUI_invpanel_Chem_MedX = "-65 Pain / +25 Drunkness / -50 Stress / -35 Unhappyness and Boredom",
+    IGUI_invpanel_Chem_Xcell = "+15 Health / -45 Pain / +40 Endurance / +95 Fatigue / -85 Drunkness / -50 Unhappiness / -50 Boredom / Random Passive Skill XP Gain",
+    IGUI_invpanel_Chem_Fixer = "Aids Chemical Addiction",
+    IGUI_invpanel_Chem_Cateye = "Low light Visison for two hours",
+}

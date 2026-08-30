@@ -1,0 +1,5 @@
+ContextMenu_EN = {
+    ContextMenu_GeneratorAddWater = "Add Water",
+    ContextMenu_SteamGeneratorNeedFlame = "You need a lighter or matches to start the generator",
+	ContextMenu_GeneratorFixSteam = "You need generator knowledge and scrap metal",
+}

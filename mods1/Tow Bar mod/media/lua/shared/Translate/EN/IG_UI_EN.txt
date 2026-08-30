@@ -1,0 +1,7 @@
+IG_UI_EN = {
+   
+IGUI_noTowBar = "I need a tow bar !",
+IGUI_Item_TowBar = "This trailer bar will be useful for towing a vehicle.",
+IGUI_Item_TowHook = "This hook can be used for you to craft a tow bar.",
+
+    }

@@ -1,0 +1,479 @@
+#is_flag cain_intro,true
+    #jump loop
+
+*intro
+#m Cain|NPCPortraits/CainP.png|"Bueno, qué miras muchach@, ¿Me parezco a la Mona Lisa?"
+#m "Estás mirando a un guerrero cansado de la vida, amargado con el mundo entero."
+
+#choice
+    intro_hello_p|Responder positivamente
+    intro_hello_n|Responder negativamente
+    intro_leave|Salir
+
+*intro_leave
+#m "Estás a punto de irte cuando el hombre de repente levanta la voz."
+#m Cain|NPCPortraits/CainP.png|"¡EY! Tengo un trabajo para ti. Aunque no soy la persona más amable de la tierra, no omitiré la recompensa por el trabajo. Ven cuando seas maduro."
+#exit
+
+*intro_hello_p
+#m "¡Hola!, Yo solo pasaba por aquí... investigo el entorno."
+#m Cain|NPCPortraits/CainP.png|"No jodas por aquí. Soy Caín, pero no recuerdo mi verdadero nombre. Soy un ex militar y odio a los chulos y los asquerosos, y tú pareces ser ambas cosas."
+#m Cain|NPCPortraits/CainP.png|"Hay tareas, por supuesto, con recompensa. Podrás hacer tareas cada día, así tal vez dejes de ser una garrapata para el Oasis, ¿Interesado?"
+#fade_out black
+#set_flag cain_intro,true
+#fade_in
+#reveal Cain
+#exit
+
+*intro_hello_n
+#m "Quiero investigar, ¿hay prohición al respecto?"
+#m Cain|NPCPortraits/CainP.png|"Escucha idiota, si molestas no durarás mucho. Mejor cierra la boca y prepárate para trabajar."
+#m Cain|NPCPortraits/CainP.png|"Soy caín, y estoy aquí para asediar a gente como tú, hice esto en el ejército durante 20 años. ¿Quieres ser alguien?, si así es, sigue las órdenes del Oasis. Cómo sea, adelante."
+#fade_out black
+#set_flag cain_intro,true
+#fade_in
+#reveal Cain
+#exit
+
+*loop
+#m Cain|NPCPortraits/CainP.png|"Ya me resultas familiar y todo, muchach@."
+
+#is_quest cain_q1|locked
+    #set_flag q1_4_flag,false
+#is_quest cain_q1|completed
+    #set_flag q1_4_flag,false
+#is_quest cain_q1|failed
+    #set_flag q1_4_flag,false
+
+#is_quest cain_q2|locked
+    #set_flag q2_finish_flag,false
+#is_quest cain_q2|completed
+    #set_flag q2_finish_flag,false
+#is_quest cain_q2|failed
+    #set_flag q2_finish_flag,false
+
+#is_quest cain_q3|locked
+    #set_flag q3_finish_flag,false
+#is_quest cain_q3|completed
+    #set_flag q3_finish_flag,false
+#is_quest cain_q3|failed
+    #set_flag q3_finish_flag,false
+
+*backtolist
+#choice
+    questARlist|Tarea para rifles de asalto
+    questRlist|Tareas para rifles
+    quest_exit|Salir
+
+*questARlist
+#choice
+    questAR1|Tarea "Datos secretos" (Rifles de asalto)
+    backtolist|Volver a la lista general
+    quest_exit|Salir
+    questAR1_complete|Completa la misión|q1_4_flag
+
+
+*questAR1
+#is_quest cain_q1|locked 
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 9|true
+        #has_item NHM.QuestAEmptyFlash,1
+            #quest_unlock cain_q1
+            #m Cain|NPCPortraits/CainP.png|"Veo que llevas un pendrive vacío contigo. Entonces escucha."
+            #m Cain|NPCPortraits/CainP.png|"Hay un edificio en el extremo noroeste de Louisville, hay una computadora allí."
+            #m Cain|NPCPortraits/CainP.png|"Antes de toda la mierda, ese edificio era la compañía principal de las Fuerzas Armadas. Hay algunos datos secretos en esa computadora."
+            #m Cain|NPCPortraits/CainP.png|"Necesito que vayas allí muchach@ y que metas los datos de la carpeta K-Scenario en la unidad flash. No hagas preguntas ni leas el contenido."
+            #m Cain|NPCPortraits/CainP.png|"Pero no todo es tan simple, no puedes desbloquear la computadora así cómo así, necesitas una tarjeta de acceso. Solo puedes conseguir esta tarjeta de acceso en la antigua base militar, te la marcaré en tu mapa."
+            #m Cain|NPCPortraits/CainP.png|"¿Dónde buscar específicamente en esta base para obtener una tarjeta?, no lo sé, pero definitivamente está allí. Consigue una y sal de ahí, vas a Louisville, insertas esta tarjeta en la unidad del sistema y desbloqueas el acceso. La tarjeta de acceso, por cierto, es desechable, después de su uso, retírela de la computadora y deséchela."
+            #m Cain|NPCPortraits/CainP.png|"Bueno, entonces averígualo, y no olvides que no hay electricidad en Louisville, y la computadora no funciona con el poder de Dios. Eso es todo, vete a la mierda, no vuelvas sin el dispositivo de datos lleno."
+            #task_unlock cain_q1|t1
+            #exit
+        #m Cain|NPCPortraits/CainP.png|"Necesitas una memoria usb vacía para esta tarea. Consíguelo en algún lugar de la ciudad y regresa, luego te daré una tarea."
+        #exit
+    #m Cain|NPCPortraits/CainP.png|"Eres un inútil, trae lo que te pedí. Y no vayas a donde no debes ir, aumenta tu reputación para poder hacer esta misión mocos@."
+    #exit
+#is_quest cain_q1|unlocked,uncompleted
+    #m Cain|NPCPortraits/CainP.png|"¡No vuelvas sin una unidad flash!"
+    #exit
+#is_quest cain_q1|unlocked,completed
+    #m Cain|NPCPortraits/CainP.png|"Suficiente por hoy. Ven mañana."
+#exit
+
+*questAR1_complete
+#has_item NHM.QuestAFlash,1
+    #remove_item NHM.QuestAFlash,1
+    #m "Aquí está su memoria USB."
+    #m Cain|NPCPortraits/CainP.png|"¿Ah, de verdad lo trajiste?, bien hecho"
+    #set_flag cain_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,20
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,10
+        #exit
+    #reward EXP,RepArmy,15
+    #exit
+#m Cain|NPCPortraits/CainP.png|"¿Qué diablos?, ¿Dónde está mi unidad flash?"
+#exit
+
+*quest1_q1_3
+#cutscene true
+#is_lua not getPlayer():getCurrentSquare():haveElectricity()|true
+    #m "Sin luz. El edificio necesita tener electricidad."
+    #exit
+#m "Debo arrancar el ordenador... Primero debo insertar la tarjeta de acceso, y después la unidad flash USB."
+#pop_up NPCPortraits/Computer.png
+#has_item NHM.QuestAEmptyFlash,1|NHM.QuestKeycard,1
+    #remove_item NHM.QuestKeycard,1
+    #remove_item NHM.QuestAEmptyFlash,1
+    #add_item NHM.QuestAFlash,1
+    #set_flag q1_3_flag,true
+    #m "La tarjeta de acceso es realmente desechable... Ya no se puede utilizar."
+    #m "Listo. Es hora de zarpar."
+    #exit
+#m "Imposible interactuar con la computadora sin una unidad flash y la tarjeta de acceso"
+#exit
+
+*quest_exit
+#exit
+
+*reset_cain_q1
+    #set_flag q1_3_flag,false
+    #task_complete cain_q1|t0
+    #task_unlock cain_q1|t1
+#exit
+
+*randomcontainer
+#roll r_1,5|r_2,10|r_3,15|r_4,20|r_5,25|r_6,30|r_7,35|r_8,40|r_9,45|r_10,50|r_11,55|r_12,60|r_13,65|r_14,70|r_15,75|r_16,80|r_17,85|r_18,90|r_19,95|r_20,100
+#exit
+
+*r_1
+#task_unlock cain_q1|t4
+#exit
+
+*r_2
+#task_unlock cain_q1|t5
+#exit
+
+*r_3
+#task_unlock cain_q1|t6
+#exit
+
+*r_4
+#task_unlock cain_q1|t7
+#exit
+
+*r_5
+#task_unlock cain_q1|t8
+#exit
+
+*r_6
+#task_unlock cain_q1|t9
+#exit
+
+*r_7
+#task_unlock cain_q1|t10
+#exit
+
+*r_8
+#task_unlock cain_q1|t11
+#exit
+
+*r_9
+#task_unlock cain_q1|t12
+#exit
+
+*r_10
+#task_unlock cain_q1|t13
+#exit
+
+*r_11
+#task_unlock cain_q1|t14
+#exit
+
+*r_12
+#task_unlock cain_q1|t15
+#exit
+
+*r_13
+#task_unlock cain_q1|t16
+#exit
+
+*r_14
+#task_unlock cain_q1|t17
+#exit
+
+*r_15
+#task_unlock cain_q1|t18
+#exit
+
+*r_16
+#task_unlock cain_q1|t19
+#exit
+
+*r_17
+#task_unlock cain_q1|t20
+#exit
+
+*r_18
+#task_unlock cain_q1|t21
+#exit
+
+*r_19
+#task_unlock cain_q1|t22
+#exit
+
+*r_20
+#task_unlock cain_q1|t23
+#exit
+
+*questRlist
+#choice
+    questR1|Tarea "Comunicación con el mundo exterior" (Rifles)
+    questR2|Tarea "Modelo mundial" (Rifles)
+    backtolist|Volver a la lista general
+    questR1_complete|Completa la misión|q2_finish_flag
+    questR2_complete|Completa la misión|q3_finish_flag
+    quest_exit|Salir
+
+*questR1
+ #is_quest cain_q2|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 7|true
+        #m Cain|NPCPortraits/CainP.png|"Tengo una tarea de mucha responsabilidad que encomendarte, eres una de mis pocas opciones. Escucha atentamente para no tener ningún fallo."
+        #m Cain|NPCPortraits/CainP.png|"El condado de Knox tiene un sistema de comunicaciones de retransmisión. Varias torres están conectadas a una, que envía su señal al nodo Central, desde el cual es posible contactar con el mundo exterior."
+        #m Cain|NPCPortraits/CainP.png|"El problema es el siguiente... La conexión ha dejado de funcionar, supongo que hubo una avería en una de las estaciones, y realmente espero que todo esté en orden con el Nodo Central."
+        #m Cain|NPCPortraits/CainP.png|"Localicé el problema lo mejor que pude. Para resumir, tendrás que comprobar dos torres de retransmisión. Uno cerca de Muldraugh, y otra en Louisville."
+        #m Cain|NPCPortraits/CainP.png|"Necesitas un destornillador, eso es seguro. No puedes abrir los paneles sin él, a menos que los rompas... pero si lo rompes, te romperé el culo después."
+        #m Cain|NPCPortraits/CainP.png|"Y no te olvides de la protección contra radiacion en Louisville, si los fusibles están quemados allí, puede encontrar otros nuevos cerca, siempre quedan en la reserva."
+        #m Cain|NPCPortraits/CainP.png|"Vamos, buena suerte allí. Espero que no te ahogues."
+        #quest_unlock cain_q2
+        #task_unlock cain_q2|t1
+        #exit
+    #m Cain|NPCPortraits/CainP.png|"Siéntate en silencio y no jodas hasta que tu reputación suba."
+    #exit    
+#is_quest cain_q2|unlocked,uncompleted
+    #m Cain|NPCPortraits/CainP.png|"No puedes tomar esta misión dos veces en el mismo día."
+    #exit
+#is_quest cain_q2|unlocked,completed
+    #m Cain|NPCPortraits/CainP.png|"No tengo más mandados para ti. Ven mañana."
+#exit
+
+*questR1_complete
+#m Cain|NPCPortraits/CainP.png|"Vete a la mierda, para ser honesto, no esperaba tanta perseverancia de un tipo tan blando."
+#m Cain|NPCPortraits/CainP.png|"Pero eres realmente buen@. Les diré a todos en Osiris que lo eres."
+#set_flag cain_q2_completed,true
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+    #reward EXP,RepArmy,15
+    #exit
+#is_lua getPlayer():HasTrait("Badmanners")|true
+    #reward EXP,RepArmy,7
+    #exit
+#reward EXP,RepArmy,10.5
+#exit
+
+*questR1_fuse
+#has_item Base.Screwdriver,1
+    #deliver cain_q2|t5
+        #set_flag qfuse_cain_flag,true
+        #m "La torre está funcionando, es hora de moverse."
+        #exit
+    #m "Necesito fusibles."
+    #exit
+#m "No se puede abrir sin un destornillador..."
+#exit
+
+*questR1_fuse2
+#has_item Base.Screwdriver,1
+    #deliver cain_q2|t14
+        #set_flag qfuse2_cain_flag,true
+        #m "La señal está estabilizada, ahora tenemos que configurar la transmisión, buscaré la sala de control en el edificio."
+        #exit
+    #m "Necesito fusibles."
+    #exit
+#m "No se puede abrir sin un destornillador..."
+#exit
+
+*questR1_check
+#cutscene true
+#m "Que extraño, no veo ningún generador u otras fuentes de energía aquí, pero la computadora funciona. Algún tipo de tecnología militar, aparentemente..."
+#pop_up NPCPortraits/Computer.png
+#m "Tonterías, algo sucedió en el centro de comunicaciones Central... La señal no va al mundo exterior. Habrá que ir a comprobar qué ocurre."
+#m "Aparentemente, estas son las coordenadas del nodo."
+#set_flag q2check_cain_flag,true
+#exit
+
+*randomcontainer2
+#roll rr_1,25|rr_2,50|rr_3,75|rr_4,100
+#exit
+
+*rr_1
+#task_unlock cain_q2|t8
+#exit
+
+*rr_2
+#task_unlock cain_q2|t9
+#exit
+
+*rr_3
+#task_unlock cain_q2|t10
+#exit
+
+*rr_4
+#task_unlock cain_q2|t11
+#exit
+
+*fixthisshit
+#roll f_1,20|f_2,40|f_3,60|f_4,80|f_5,100
+#exit
+
+*f_1
+#task_unlock cain_q2|t17
+#exit
+
+*f_2
+#task_unlock cain_q2|t18
+#exit
+
+*f_3
+#task_unlock cain_q2|t19
+#exit
+
+*f_4
+#task_unlock cain_q2|t20
+#exit
+
+*f_5
+#task_unlock cain_q2|t21
+#exit
+
+*questR1_fix
+#m "Y aquí está la fuente de mis problemas, veamos..."
+#has_item Base.Screwdriver,1|NHM.QuestFixMag,1
+    #deliver cain_q2|t23
+        #remove_item NHM.QuestFixMag,1
+        #set_flag q2fix_cain_flag,true
+        #m "¡La estación está funcionando!, queda por comprobar la conexión ..."
+        #exit
+    #m "Sin cables y chips no puedo hacer reparaciones..."
+    #exit
+#m "No puedo abrirlo sin un destornillador ... Y sin una revista con instrucciones, es poco probable que descubra cómo solucionarlo. Las revistas parecen encontrarse en las ciudades."
+#exit
+
+*questR1_speak
+#pop_up NPCPortraits/Computer.png
+#m "Entonces, intentaré establecer una conexión con el Oasis."
+#m "¡HOLA!, ¡Llamando a Caín!, ¿me recibes?"
+#m "*interferencia en el aire*"
+#m "Tonterías..."
+#m Cain|NPCPortraits/CainP.png|"Oh, mierda, ¿a quién escucho?, ¿eres el/la muchach@ al que le asigné la tarea?"
+#m "Sí... Todo funciona?"
+#m Cain|NPCPortraits/CainP.png|"¡No solo funciona, sino que funciona de maravilla!, ¡la señal pasa sin interferencias!, bien hecho."
+#m Cain|NPCPortraits/CainP.png|"Regresa, pero primero limpia el interior de muertos, creo que ya se subieron por ahí con el ruido de la central. Una vez que los elimines, ven al Oasis para obtener una recompensa."
+#set_flag qspeak_cain_flag,true
+#exit
+
+*reset_cain_q2
+    #set_flag qfuse_cain_flag,false
+    #set_flag qfuse2_cain_flag,false
+    #set_flag q2check_cain_flag,false
+    #set_flag q2fix_cain_flag,false
+    #set_flag qspeak_cain_flag,false
+    #task_complete cain_q2|t0
+    #task_unlock cain_q2|t1
+#exit
+
+
+
+*questR2
+ #is_quest cain_q3|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 7|true
+        #m Cain|NPCPortraits/CainP.png|"Tengo una tarea bastante jodida, pero también tendrá una buena recompensa."
+        #m Cain|NPCPortraits/CainP.png|"Necesito 3 tipos diferentes de muestras."
+        #m Cain|NPCPortraits/CainP.png|"El primer tipo de muestras que debes conseguir lo hallarás en el suelo de las minas de Purgatown, debes conseguirlas en las minas que hay allí. Hay tres minas, una de cobre, otra de hierro, y otra de níquel, nivel uno, dos y tres respectivamente. En cada una de ellas, toma muestras del suelo local y sal."
+        #m Cain|NPCPortraits/CainP.png|"Para esto necesitas analizadores. Necesitarás filtros para tu máscara de gas. NO DARÉ FILTROS."
+        #m Cain|NPCPortraits/CainP.png|"Después de que termines en las minas, ocúpate de conseguir las muestras infectadas. Mata a unos 15 zombis, diserta sus cadáveres: obtendrás sus muestras. Necesitas 3 muestras, no más."
+        #m Cain|NPCPortraits/CainP.png|"Después de eso, ve a Louisville. El último tipo de muestras son muestras de agua contaminada. Para ellos, necesitas matraces químicos, también 3 piezas, tampoco te daré en este caso. Marcaré el lugar con agua más cercano en el mapa."
+        #m Cain|NPCPortraits/CainP.png|"Como resultado, debe tener 3 muestras de suelo, 3 muestras de agua, 3 muestras de tejido de los infectados. Y eso no es todo."
+        #m Cain|NPCPortraits/CainP.png|"A continuación, necesitará un banco de trabajo de químico. En él, a partir de las existencias, deberá crear muestras complejas. Mezcle una muestra de suelo, agua y tejido infectado. En total, de 9 muestras iniciales, recibirá 3 muestras combinadas. Entonces traelo aquí."
+        #m Cain|NPCPortraits/CainP.png|"Es todo, sigue adelante."
+        #quest_unlock cain_q3
+        #task_unlock cain_q3|t1
+        #add_item NHM.QuestAnalyzer,3
+        #exit
+    #m Cain|NPCPortraits/CainP.png|"Vete a la mierda, ¿dónde crees que estás muchach@?, sin reputación, tienes un palo, no un rifle."
+    #exit
+#is_quest cain_q3|unlocked,uncompleted
+    #m Cain|NPCPortraits/CainP.png|"No puedes retomar esta misión."
+    #exit
+#is_quest cain_q3|unlocked,completed
+    #m Cain|NPCPortraits/CainP.png|"No tengo más mandados para ti. Ven mañana."
+#exit
+
+*questR2_copper
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m "Espero estar haciendo todo bien..."
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer1,1
+    #m "¡Funcionó! Es hora de moverse."
+    #set_flag qcopper_cain_flag,true
+    #exit
+#m "¿Qué estoy haciendo aquí sin un analizador?"
+#exit
+
+*questR2_iron
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m "¿Cuánta tierra más necesito...?"
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer2,1
+    #m "¡Hurra!, queda el último."
+    #set_flag qiron_cain_flag,true
+    #exit
+#m "¿Qué estoy haciendo aquí sin un analizador?"
+#exit
+
+*questR2_nickel
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m "Vamos vamos..."
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer3,1
+    #m "¡LISTO! he completado la última parte de esta tarea."
+    #set_flag qnickel_cain_flag,true
+    #exit
+#m "¿Qué estoy haciendo aquí sin un analizador?"
+#exit
+
+*questR2_water
+#deliver cain_q3|t11
+    #add_item NHM.QuestFlaskWater,3
+    #set_flag qwater_cain_flag,true
+    #exit
+#m "Las muestras de agua deben recogerse en matraces químicos..."
+#exit
+
+*questR2_complete
+#has_item NHM.QuestUnitedSample,3
+    #remove_item NHM.QuestUnitedSample,3
+    #m Cain|NPCPortraits/CainP.png|"Por lo que veo todavía sigues vivo muchach@, incluso te había enterrado mentalmente en las minas de Purgatown."
+    #m Cain|NPCPortraits/CainP.png|"Genial, hoy hiciste una hazaña. Toma tu recompensa."
+    #set_flag cain_q3_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,15
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,7
+        #exit
+    #reward EXP,RepArmy,10.5
+    #exit
+#m Cain|NPCPortraits/CainP.png|"¿Dónde están mis muestras?"
+#exit
+
+*reset_cain_q3
+    #set_flag qcopper_cain_flag,false
+    #set_flag qiron_cain_flag,false
+    #set_flag qnickel_cain_flag,false
+    #set_flag qwater_cain_flag,false
+    #task_complete cain_q3|t0
+    #task_unlock cain_q3|t1
+#exit

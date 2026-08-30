@@ -1,0 +1,29 @@
+Recipes_FR = {
+
+  Recipe_Arm_the_trap = "Armer le piège",
+  Recipe_Open_Bear_trap = "Ouvrir le piège à ours",
+  Recipe_Make_Nailed_Planks = "Fabriquer des planches cloutées",
+  Recipe_Make_Nailed_Planks = "Fabriquer des planches cloutées",
+  Recipe_Add_camouflage_Trap_Planks_1 = "Ajouter du camouflage lvl 1",
+  Recipe_Add_camouflage_Trap_Planks_2 = "Ajouter du camouflage lvl 2",
+  Recipe_Add_camouflage_Trap_Planks_3 = "Ajouter du camouflage lvl 3",
+  Recipe_Add_camouflage_Trap_Planks_4 = "Ajouter du camouflage lvl 4",
+
+  Recipe_Add_camouflage_Bear_trap_1 = "Ajouter du camouflage lvl 1",
+  Recipe_Add_camouflage_Bear_trap_2 = "Ajouter du camouflage lvl 2",
+  Recipe_Add_camouflage_Bear_trap_3 = "Ajouter du camouflage lvl 3",
+  Recipe_Add_camouflage_Bear_trap_4 = "Ajouter du camouflage lvl 4",
+
+  Recipe_Make_trip_wire = "Fabriquer un fil-piège",
+  Recipe_Make_trip_wire_with_cans = "Attacher des conserves au fil-piège",
+
+  Recipe_Make_Spike_Trap = "Fabriquer un piège à pointes",
+  Recipe_Add_Nails_Spike_Trap = "Ajouter des clous au piège à pointes",
+
+  Recipe_Collect_Tripwire_Components = "Récupérer les composants du fil-piège",
+  Recipe_Collect_tripwire_components_with_cans = "Récupérer les composants du fil-piège avec conserves",
+  Recipe_Collect_components_broken_trap = "Récupérer les composants du piège cassé",
+
+
+
+}

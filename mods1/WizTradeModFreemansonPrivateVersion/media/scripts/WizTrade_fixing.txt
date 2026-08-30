@@ -1,0 +1,440 @@
+module Base
+{
+
+/*********************** LARGE GLUE VANILLA STUFF ***********************************************/
+	fixing Wiz Fix Axe
+	{
+	   Require : Axe,
+	   
+       Fixer : Wiz_LargeGlue=2,  
+	 
+	}
+
+	fixing Wiz Fix Hand Axe
+	{
+	   Require : HandAxe,
+
+       Fixer : Wiz_LargeGlue=2,
+       
+	}
+
+	fixing Wiz Fix PickAxe
+	{
+	   Require : PickAxe,
+       Fixer : Wiz_LargeGlue=2,
+       
+	}
+
+	fixing Wiz Fix Wood Axe
+	{
+	   Require : WoodAxe,
+       Fixer : Wiz_LargeGlue=2,
+       
+	}
+
+	fixing Wiz Fix Hand Scythe
+	{
+	   Require : HandScythe,
+       Fixer : Wiz_LargeGlue=2,
+       
+	}
+
+
+	fixing Wiz Fix Baseball Bat
+    {
+       Require : BaseballBat,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Nailed Baseball Bat
+    {
+       Require : BaseballBatNails,
+       Fixer : Wiz_LargeGlue=2,
+       
+       
+    }
+
+    fixing Wiz Fix Sledgehammer
+    {
+       Require : Sledgehammer,
+       Fixer : Wiz_LargeGlue=3, 
+    }
+
+ 
+    fixing Wiz Fix Snow Shovel
+    {
+       Require : SnowShovel,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Shovel
+    {
+       Require : Shovel,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Shovel2
+    {
+       Require : Shovel2,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Garden Hoe
+    {
+       Require : GardenHoe,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Broom
+    {
+       Require : Broom,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Leaf Rake
+    {
+       Require : LeafRake,
+       Fixer : Wiz_LargeGlue=2,
+    }
+
+    fixing Wiz Fix Rake
+    {
+       Require : Rake,
+       Fixer : Wiz_LargeGlue=2,
+    }
+
+    fixing Wiz Fix Hockey Stick
+    {
+       Require : HockeyStick,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix LaCrosse Stick
+    {
+       Require : LaCrosseStick,
+       Fixer : Wiz_LargeGlue=3,
+    }
+
+    fixing Wiz Fix PickAxe
+    {
+       Require : PickAxe,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Canoe Padel
+    {
+       Require : CanoePadel,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Double Canoe Padel
+    {
+       Require : CanoePadelX2,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Hockey Stick
+    {
+       Require : HockeyStick,
+       Fixer : Wiz_LargeGlue=3,
+       
+    }
+
+    fixing Wiz Fix Ice Hockey Stick
+    {
+       Require : IceHockeyStick,
+       Fixer : Wiz_LargeGlue=3, 
+    }
+
+    fixing Wiz Fix Hammer
+    {
+       Require : Hammer,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Club Hammer
+    {
+       Require : ClubHammer,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Wooden Mallet
+    {
+       Require : WoodenMallet,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Rolling Pin
+    {
+       Require : RollingPin,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Pan
+    {
+       Require : Pan,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Griddle Pan
+    {
+       Require : GridlePan,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Sauce Pan
+    {
+       Require : SaucePan,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Kitchen Knife
+    {
+       Require : KitchenKnife,
+       Fixer : Wiz_LargeGlue=1,
+       
+    }
+
+    fixing Wiz Fix Hunting Knife
+    {
+       Require : HuntingKnife,
+       Fixer : Wiz_LargeGlue=1,
+       
+    }
+
+    fixing Wiz Fix Hand Fork
+    {
+       Require : HandFork,
+       Fixer : Wiz_LargeGlue=1,
+       
+    }
+
+    fixing Wiz Fix Garden Fork
+    {
+       Require : GardenFork,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+
+    fixing Wiz Fix Spear
+    {
+       Require : SpearCrafted,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Bread Knife
+    {
+       Require : SpearBreadKnife,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Butter Knife
+    {
+       Require : SpearButterKnife,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Letter Opener
+    {
+       Require : SpearLetterOpener,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Scalpel
+    {
+       Require : SpearScalpel,    
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Spoon
+    {
+       Require : SpearSpoon,   
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Scissors
+    {
+       Require : SpearScissors,    
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Hand Fork
+    {
+       Require : SpearHandFork,     
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Screwdriver
+    {
+       Require : SpearScrewdriver,     
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Kitchen Knife
+    {
+       Require : SpearKnife,     
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Hunting Knife
+    {
+       Require : SpearHuntingKnife,   
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Machete
+    {
+       Require : SpearMachete,   
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+
+    fixing Wiz Fix Spear With Ice Pick
+    {
+       Require : SpearIcePick,
+       Fixer : Wiz_LargeGlue=2,
+       
+    }
+	
+	/**************************** WEAPONS ***************************************************/
+	
+	 fixing Fix Swiss Knife
+	{
+	   Require : Wiz_SwissKnife,
+	   
+       Fixer : Wiz_LargeGlue=1,
+       Fixer : Glue=1,
+       Fixer : Scotchtape=2,
+	}
+	
+	 fixing Fix Militar Knife
+	{
+	   Require : Wiz_MilitaryKnife,
+	   
+       Fixer : Wiz_LargeGlue=1,
+       Fixer : Glue=1,
+       Fixer : Scotchtape=2,
+	}
+	
+	/************************************** SENTAI CLOTH *********************************************/
+	
+	fixing Fix Prism Suit (Red)
+	
+	{
+	   Require : Wiz_FlashmanSuit_red,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Prism Suit (Green)
+	
+	{
+	   Require : Wiz_FlashmanSuit_green,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Prism Suit (Blue)
+	
+	{
+	   Require : Wiz_FlashmanSuit_blue,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Prism Suit (Yellow)
+	
+	{
+	   Require : Wiz_FlashmanSuit_yellow,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Prism Suit (Pink)
+	
+	{
+	   Require : Wiz_FlashmanSuit_pink,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Changeman Suit (Dragon)
+	
+	{
+	   Require : Wiz_ChangemanSuit_Dragon,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Changeman Suit (Griphon)
+	
+	{
+	   Require : Wiz_ChangemanSuit_Grifon,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Changeman Suit (Pegasus)
+	
+	{
+	   Require : Wiz_ChangemanSuit_Pegasus,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Changeman Suit (Mermaid)
+	
+	{
+	   Require : Wiz_ChangeSuit_Mermaid,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Changeman Suit (Phoenix)
+	
+	{
+	   Require : Wiz_ChangemanSuit_Fenix,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	fixing Fix Jaspion Armor
+	
+	{
+	   Require : Wiz_JaspionArmor,
+	   
+       Fixer : WizNanofiberCloth=1,
+	}
+	
+	
+	
+}

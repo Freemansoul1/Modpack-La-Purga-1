@@ -1,0 +1,39 @@
+Sandbox_RU = {
+	Sandbox_OnWeaponSwing = "Снижение ближнего боя в зоне",
+
+	Sandbox_OnWeaponSwing_Tier1dmg = "Модификатор урона 1 уровня",
+	Sandbox_OnWeaponSwing_Tier1dmg_tooltip = "например, 1.00",
+
+	Sandbox_OnWeaponSwing_Tier2dmg = "Модификатор урона 2 уровня",
+	Sandbox_OnWeaponSwing_Tier2dmg_tooltip = "например, 0.85",
+		
+	Sandbox_OnWeaponSwing_Tier3dmg = "Модификатор урона 3 уровня",
+	Sandbox_OnWeaponSwing_Tier3dmg_tooltip = "например, 0.7",
+	
+	Sandbox_OnWeaponSwing_Tier4dmg = "Модификатор урона 4 уровня",
+	Sandbox_OnWeaponSwing_Tier4dmg_tooltip = "например, 0.55",
+	
+	Sandbox_OnWeaponSwing_Tier1critrate = "Модификатор критического шанса 1 уровня",
+	Sandbox_OnWeaponSwing_Tier1critrate_tooltip = "например, 1.00",
+
+	Sandbox_OnWeaponSwing_Tier2critrate = "Модификатор критического шанса 2 уровня",
+	Sandbox_OnWeaponSwing_Tier2critrate_tooltip = "например, 0.85",
+		
+	Sandbox_OnWeaponSwing_Tier3critrate = "Модификатор критического шанса 3 уровня",
+	Sandbox_OnWeaponSwing_Tier3critrate_tooltip = "например, 0.7",
+	
+	Sandbox_OnWeaponSwing_Tier4critrate = "Модификатор критического шанса 4 уровня",
+	Sandbox_OnWeaponSwing_Tier4critrate_tooltip = "например, 0.55",
+	
+	Sandbox_OnWeaponSwing_Tier1critmulti = "Модификатор критического множителя 1 уровня",
+	Sandbox_OnWeaponSwing_Tier1critmulti_tooltip = "например, 1.00",
+
+	Sandbox_OnWeaponSwing_Tier2critmulti = "Модификатор критического множителя 2 уровня",
+	Sandbox_OnWeaponSwing_Tier2critmulti_tooltip = "например, 0.85",
+		
+	Sandbox_OnWeaponSwing_Tier3critmulti = "Модификатор критического множителя 3 уровня",
+	Sandbox_OnWeaponSwing_Tier3critmulti_tooltip = "например, 0.7",
+	
+	Sandbox_OnWeaponSwing_Tier4critmulti = "Модификатор критического множителя 4 уровня",
+	Sandbox_OnWeaponSwing_Tier4critmulti_tooltip = "например, 0.55",
+}

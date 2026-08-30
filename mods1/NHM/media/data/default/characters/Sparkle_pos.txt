@@ -1,0 +1,2 @@
+#npc_create Sparkle|NPC/Sparkle.png|11547,7648,0
+#exit

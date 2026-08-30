@@ -1,0 +1,8 @@
+IG_UI_FR = {
+   
+IGUI_noTowBar = "J'ai besoin d'une barre de remorquage !",
+IGUI_Item_TowBar = "Cette barre de remorque sera utile pour tracter un vehicule.",
+IGUI_Item_TowHook = "Ce crochet peut vous servir à fabriquer une barre de remorquage.",
+
+
+    }

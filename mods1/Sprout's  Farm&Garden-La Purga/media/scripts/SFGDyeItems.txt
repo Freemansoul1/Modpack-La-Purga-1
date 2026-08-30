@@ -1,0 +1,163 @@
+module Sprout
+{
+	imports
+	{
+		Base
+	}
+
+/****************Dyes***************/
+
+    	item BlackDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Black Dye,
+		Icon		=		BlackDye,
+		Weight		=		0.01,
+	}
+    	item BlueDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Blue Dye,
+		Icon		=		BlueDye,
+		Weight		=		0.01,
+	}
+    	item MagentaDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Magenta Dye,
+		Icon		=		MagentaDye,
+		Weight		=		0.01,
+	}
+    	item OrangeDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Orange Dye,
+		Icon		=		OrangeDye,
+		Weight		=		0.01,
+	}
+    	item PinkDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Pink Dye,
+		Icon		=		PinkDye,
+		Weight		=		0.01,
+	}
+    	item RedDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Red Dye,
+		Icon		=		RedDye,
+		Weight		=		0.01,
+	}
+    	item WhiteDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		White Dye,
+		Icon		=		WhiteDye,
+		Weight		=		0.01,
+	}
+    	item YellowDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Yellow Dye,
+		Icon		=		YellowDye,
+		Weight		=		0.01,
+	}
+    	item GreenDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Green Dye,
+		Icon		=		GreenDye,
+		Weight		=		0.01,
+	}
+    	item PurpleDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Purple Dye,
+		Icon		=		PurpleDye,
+		Weight		=		0.01,
+	}
+    	item GreyDye
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Grey Dye,
+		Icon		=		GreyDye,
+		Weight		=		0.01,
+	}
+    	item BrownDye2
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Brown Dye,
+		Icon		=		BrownDye,
+		Weight		=		0.01,
+	}
+    	item XanthanGum
+	{
+		Type		=		Normal,
+		DisplayCategory = Material,
+		DisplayName	=		Xanthan gum,
+		Icon		=		XanthanGum,
+		Weight		=		0.01,
+	}
+    item FlowerPaintMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	The Flower Painter 1,
+        Icon	=	MagazineFood,
+        TeachedRecipes  =   Make Red Dye;Make Orange Dye;Make Yellow Dye;Make Green Dye;Make Blue Dye;Make Purple Dye;Make Magenta Dye;Make Black Dye;Make White Dye;Make Grey Dye;Make Brown Dye,
+        ReplaceOnUse    =   FlowerPaintMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineHerbGround,
+    }
+
+    item FlowerPaintMag2
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	The Flower Painter 2,
+        Icon	=	MagazineFood,
+        TeachedRecipes  =   Make Xanthan Gum;Make Paintbrush;Mix Red Paint;Mix Black Paint;Mix Brown Paint;Mix Green Paint;Mix Grey Paint;Mix Orange Paint;Mix Pink Paint;Mix Purple Paint;Mix White Paint;Mix Yellow Paint;Mix Turquoise Paint;Mix Cyan Paint;Mix Light Brown Paint;Mix Light Blue Paint,
+        ReplaceOnUse    =   FlowerPaintMag2,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineHerbGround,
+    }
+    item NatDyeMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Natural Hair Dye 101,
+        Icon	=	MagazineFood,
+        TeachedRecipes  =  Mix Blue HairDye;Mix Green HairDye;Mix Strawberry Blonde HairDye;Mix Red HairDye;Mix Yellow HairDye;Mix Pink HairDye;Mix White HairDye;Mix Black HairDye;Mix Blonde HairDye,
+        ReplaceOnUse    =   NatDyeMag1,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineHerbGround,
+    }
+    item FlowerMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	The Art of Flower Arrangement,
+        Icon	=	MagazineFood,
+        TeachedRecipes  =  Make Rose Bouquet;Make Geranium Bouquet;Make Delphinium Bouquet; Make Penta Bouquet;Make Dahlia Bouquet;Make Larkspur Bouquet,
+        ReplaceOnUse    =   FlowerMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineHerbGround,
+    }
+}

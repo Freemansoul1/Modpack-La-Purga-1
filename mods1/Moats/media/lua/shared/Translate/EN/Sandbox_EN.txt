@@ -1,0 +1,5 @@
+Sandbox_EN = {
+    Sandbox_Moats = "Mod Moats",
+    Sandbox_Moats_RemoveShores = "Hide Shores",
+    Sandbox_Moats_RemoveShores_tooltip = "<IMAGE:media/ui/SBOMoatsHideShore.png> <LINE> Vanilla shows shores but hides paths between two water tiles. <LINE> This option hides shores around moats. <LINE> Quit and reload for a change to take effect.",
+}

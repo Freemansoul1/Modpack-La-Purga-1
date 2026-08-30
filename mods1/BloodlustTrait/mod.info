@@ -1,0 +1,6 @@
+name=Bloodlust Trait
+id=BloodlustTrait1
+require=MoodleFramework1
+icon=icon.png
+poster=poster.png
+description=<RGB:1.0,0.0,0.0>Uncontrollable desire to kill and an unhealthy obsession with bloodiness.

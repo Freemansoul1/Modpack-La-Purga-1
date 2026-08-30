@@ -1,0 +1,8 @@
+IGUI_RU = {
+	
+	IGUI_perks_Lockpicking = "Взлом",
+	IGUI_perks_Miscellaneous = "Прочее",
+
+	IGUI_zreIsReinforced = "Я не могу взломать армированную дверь!",
+	
+}

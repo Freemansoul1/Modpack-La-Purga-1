@@ -1,0 +1,11 @@
+Sandbox_ES = {
+	Sandbox_DryFishMod = "Mod de Pescado Seco",
+	Sandbox_DryFishMod_normalDryingMod = "Velocidad de Secado Normal",
+	Sandbox_DryFishMod_normalDryingMod_tooltip = "Velocidad a la cual el pescado preparado se seca normalmente",
+	Sandbox_DryFishMod_campfireDryingMod = "Velocidad de Secado: fogata",
+	Sandbox_DryFishMod_campfireDryingMod_tooltip = "Velocidad a la cual el pescado preparado se seca sobre una fogata con fuego",
+	Sandbox_DryFishMod_poisonChance = "Riesgo de Envenenamiento",
+	Sandbox_DryFishMod_poisonChance_tooltip = "Probabilidad de que el pescado se eche a perder al secarse sin fuego. La probabilidad es de 1 en X, 1 siempre, 0 desactiva los envenenamientos.",
+	Sandbox_DryFishMod_CraftingMagazine = "Revista de FabricaciÃ³n",
+	Sandbox_DryFishMod_CraftingMagazine_tooltip = "Cuando estÃ¡ activado, aparecerÃ¡n revistas y los jugadores deberÃ¡n leer la revista para usar las recetas del mod.",
+}

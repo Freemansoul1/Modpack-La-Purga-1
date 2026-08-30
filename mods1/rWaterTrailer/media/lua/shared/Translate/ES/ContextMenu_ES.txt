@@ -1,0 +1,17 @@
+ContextMenu_ES = {
+	ContextMenu_Add_Water_To_Trailer = "Rellenar la cisterna",
+
+	ContextMenu_VehicleAddWater = "Verter el agua en el tanque",
+
+	ContextMenu_VehicleSiphonWater = "Añadir el agua desde el tanque",
+   
+	ContextMenu_VehicleAddSingleWater = "Añadir el agua desde<br>",
+   
+	ContextMenu_VehicleAddWaterToItem = "Llenar desde el tanque",
+	ContextMenu_VehicleAddWaterToSingleItem = "<br>desde el tanque",
+
+   ContextMenu_Open_TankLid = "Abrir la cubierta"
+   ContextMenu_Close_TankLid = "Cerrar la cubierta"
+   
+   ContextMenu_Drain_Tank = "Drenar el tanque"
+}

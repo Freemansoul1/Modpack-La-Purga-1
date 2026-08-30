@@ -1,0 +1,36 @@
+ItemName_IT = {
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "Telaio per bici normale",
+    ItemName_Base.BicycleSuspensionRegular3 = "Sospensione normale della bici",
+    ItemName_Base.BicycleBrakesRegular3 = "Freno normale da bici",
+    ItemName_Base.BicycleTireRegular = "Pneumatico da bici normale",
+    ItemName_Base.BicycleSeat = "Seggiolino per bici",
+
+    ItemName_Base.BicycleFrameRegularScrap = "Telaio per bici normale (Rottame)",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "Sospensione normale della bici (Rottame)",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "Freno normale da bici (Rottame)",
+    ItemName_Base.BicycleTireRegularScrap = "Pneumatico da bici normale (Rottame)",
+    ItemName_Base.BicycleSeatScrap = "Seggiolino per bici (Rottame)",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "Telaio per MTB",
+    ItemName_Base.BicycleSuspensionMTB3 = "Sospensione per MTB",
+    ItemName_Base.BicycleBrakesMTB3 = "Freno per MTB",
+    ItemName_Base.BicycleTireMTB = "Pneumatico per MTB",
+
+    ItemName_Base.BicycleFrameMTBScrap = "Telaio per MTB (Rottame)",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "Sospensione per MTB (Rottame)",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "Freno per MTB (Rottame)",
+    ItemName_Base.BicycleTireMTBScrap = "Pneumatico per MTB (Rottame)",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "Cestino per bici",
+    ItemName_Base.BicycleHeadlight3 = "Faro per bici",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "Lucchetto per bici",
+    ItemName_Base.BicycleLockKey = "Chiave del lucchetto della bici",
+    ItemName_Base.BicyclesMagVol1 = "Ciclismo Vol. 1",
+    ItemName_Base.BicyclesMagVol2 = "Ciclismo Vol. 2",
+    ItemName_Base.BicyclesMagVol3 = "Ciclismo Vol. 3",
+}

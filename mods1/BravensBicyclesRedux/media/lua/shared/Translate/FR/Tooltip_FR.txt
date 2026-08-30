@@ -1,0 +1,6 @@
+Tooltip_FR = {
+	Tooltip_item_BicycleFrame = "Peut être déposé pour faire apparaître un vélo avec toutes les pièces que vous avez dans votre inventaire.",
+	Tooltip_item_BicycleBasket = "Peut être installé sur des vélos ordinaires pour un stockage supplémentaire.",
+	Tooltip_item_BicycleLock = "Utilisé pour verrouiller un vélo, empêchant les autres d'y entrer.",
+	Tooltip_item_BicycleLockKey = "Utilisé pour retirer le antivol d'un vélo.",
+}

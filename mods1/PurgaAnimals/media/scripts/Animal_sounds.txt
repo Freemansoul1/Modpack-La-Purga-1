@@ -1,0 +1,55 @@
+module Base {
+  
+    sound Woof
+    {
+        category = Item, loop = false, is3D = true,
+        clip {
+		
+		file = media/sound/PZ_DogBark_Whimper1.ogg,
+		distanceMin = 10, distanceMax = 100,
+		reverbFactor = 0.1, volume = 0.5,
+		
+		}
+    }
+
+    sound Purring 
+	{
+        category = Fauna, master = Ambient, loop = false, is3D = true,
+        clip { 
+		
+		file = media/sound/Purring.ogg, 
+		distanceMin = 0, distanceMax = 3,
+		reverbFactor = 0.1, volume = 5, }
+    }
+
+    sound Panting 
+	{
+        category = Fauna, master = Ambient, loop = false, is3D = true,
+        clip { 
+		
+		file = media/sound/Dog_petting.ogg, 
+		distanceMin = 0, distanceMax = 3,
+		reverbFactor = 0.1, volume = 5, }
+    }
+
+    sound Cow 
+	{
+        category = Fauna, master = Ambient, loop = false, is3D = true,
+        clip { 
+		
+		file = media/sound/Cow.ogg, 
+		distanceMin = 0, distanceMax = 3,
+		reverbFactor = 0.1, volume = 0.5, }
+    }
+
+    sound Hen 
+	{
+        category = Fauna, master = Ambient, loop = false, is3D = true,
+        clip { 
+		
+		file = media/sound/Hen.ogg, 
+		distanceMin = 0, distanceMax = 3,
+		reverbFactor = 0.1, volume = 0.5, }
+    }
+
+}

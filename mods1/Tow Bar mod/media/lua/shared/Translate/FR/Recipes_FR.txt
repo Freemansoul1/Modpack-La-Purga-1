@@ -1,0 +1,5 @@
+Recipe_FR = {
+
+Recipe_make_TowBar 					= "Faire une barre de remorquage",
+
+}

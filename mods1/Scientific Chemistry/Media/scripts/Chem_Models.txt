@@ -1,0 +1,119 @@
+module Base
+{
+
+model ChemLab
+	{
+		mesh    = Lab,
+		texture = chems/Lab,
+		scale   = 0.014,
+	}
+
+model Stimpack
+	{
+		mesh    = chems/Stimpack,
+		texture = chems/Stimpack,
+		scale   = 0.012,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+model Jet
+	{
+		mesh    = chems/Jet,
+		texture = chems/Jet,
+		scale   = 0.012,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+model Psycho
+	{
+		mesh    = chems/Psycho,
+		texture = chems/Psycho,
+		scale   = 0.012,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+
+
+model Daytrip
+	{
+		mesh    = chems/Buffout,
+		texture = chems/Daytrip,
+		scale   = 0.010,
+	}
+
+model Buffout
+	{
+		mesh    = chems/Buffout,
+		texture = chems/Buffout,
+		scale   = 0.010,
+	}
+model Cateye
+	{
+		mesh    = chems/Cateye,
+		texture = chems/Cateye,
+		scale   = 0.010,
+	}
+
+model Xcell
+	{
+		mesh    = chems/Xcell,
+		texture = chems/Xcell,
+		scale   = 0.010,
+	}
+
+model Mentats
+	{
+		mesh    = chems/Mentats,
+		texture = chems/Mentats,
+		scale   = 0.010,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+	}
+model Fixer
+	{
+		mesh    = chems/Fixer,
+		texture = chems/Fixer,
+		scale   = 0.010,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+	}
+model MedX
+	{
+		mesh    = chems/MedX,
+		texture = chems/MedX,
+		scale   = 0.010,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+	}
+
+}

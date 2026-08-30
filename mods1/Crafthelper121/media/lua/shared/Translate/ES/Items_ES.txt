@@ -1,0 +1,4 @@
+Items_ES = {
+       DisplayName_SprinklerCrafted = "Aspersor casero",
+}
+

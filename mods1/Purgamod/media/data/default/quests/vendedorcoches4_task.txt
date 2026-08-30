@@ -1,0 +1,2 @@
+*vendedorcoches4_t0
+#name vendedor

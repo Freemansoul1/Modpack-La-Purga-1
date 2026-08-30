@@ -1,0 +1,9 @@
+module Soul
+{
+	model DragonColor
+	{
+		mesh = WorldItems/Dragon,
+		texture = WorldItems/DragonColor,
+		scale = 0.001,
+	}
+}

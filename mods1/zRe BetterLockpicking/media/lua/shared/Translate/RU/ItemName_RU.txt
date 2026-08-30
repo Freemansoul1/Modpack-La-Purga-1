@@ -1,0 +1,6 @@
+ItemName_RU = {
+    ItemName_BetLock.BobbyPin = "Заколка",
+    ItemName_BetLock.HandmadeBobbyPin = "Самодельная заколка",
+    ItemName_BetLock.LockpickingMag = "Журнал «Взлом для чайников»",
+    ItemName_BetLock.AlarmMag = "Журнал «Сигнализация для чайников»",
+}

@@ -1,0 +1,7 @@
+#name Cain|Cain
+
+#desc Nombre: Cain
+#desc_append Edad: Desconocida
+#desc_append Ex militar, extremadamente amargado y desconfiado. Hermano gemelo de Abel.
+#desc_append Me odia, aunque.. como todos los demás.
+#exit

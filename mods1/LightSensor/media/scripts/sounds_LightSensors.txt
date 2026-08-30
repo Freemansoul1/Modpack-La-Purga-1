@@ -1,0 +1,64 @@
+module Base {
+
+    sound SensorAlarm1 {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/sensor-alarm-1.wav, 
+            distanceMin = 4, 
+            distanceMax = 50, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    sound TrapElectro1 {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/trap-electro-1.wav, 
+            distanceMin = 2, 
+            distanceMax = 16, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    sound TrapElectro2 {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/trap-electro-2.wav, 
+            distanceMin = 4, 
+            distanceMax = 16, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    sound TrapElectro3 {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/trap-electro-3.wav, 
+            distanceMin = 4, 
+            distanceMax = 16, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    sound TrapGlass1 {
+        category = Object, 
+        loop = false
+        is3D = true,
+        clip { 
+            file = media/sound/trap-glass-1.wav, 
+            distanceMin = 4, 
+            distanceMax = 16, 
+            reverbFactor = 0.1, volume = 1, 
+        } 
+    }
+
+    
+}

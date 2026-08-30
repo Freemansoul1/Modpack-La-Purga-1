@@ -1,0 +1,26 @@
+ItemName_EN = {
+	ItemName_Base.Stimpack = "Stimpack [Loaded]",
+	ItemName_Base.Psycho = "Psycho [Loaded]",
+	ItemName_Base.Slasher = "Slasher [Loaded]",
+	ItemName_Base.SuperStimpack = "Super Stimpack [Loaded]",
+	ItemName_Base.Jet = "Jet [Loaded]",
+	ItemName_Base.Rocket = "Rocket [Loaded]",
+	ItemName_Base.MedX = "Med-X [Loaded]",
+	ItemName_Base.Xcell = "X-Cell [Loaded]",
+	ItemName_Base.EmptyStimpack = "Stimpack [Empty]",
+	ItemName_Base.EmptyPsycho = "Psycho [Empty]",
+	ItemName_Base.EmptyJet = "Jet [Empty]",
+	ItemName_Base.EmptyMedX = "Med-X [Empty]",
+	ItemName_Base.EmptyXcell = "X-Cell [Empty]",
+	ItemName_Base.Buffout= "Buffout",
+	ItemName_Base.Bufftats= "Bufftats",
+	ItemName_Base.Buffjet= "Buffjet",
+	ItemName_Base.Mentats= "Mentats",
+	ItemName_Base.Fixer= "Fixer",
+	ItemName_Base.Daytrip = "Day Tripper",	
+	ItemName_Base.Cateye = "Cateye",	
+	
+
+	ItemName_Base.ChemLab = "Chemistry Lab",
+
+}

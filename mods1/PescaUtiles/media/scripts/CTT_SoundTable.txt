@@ -1,0 +1,15 @@
+module Base
+{
+
+	sound pageflip
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Fishingpageflip.ogg,
+			volume = 1.0,
+		}
+	}
+
+}
+

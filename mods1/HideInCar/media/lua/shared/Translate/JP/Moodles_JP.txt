@@ -1,0 +1,4 @@
+Moodles_JP {
+    Moodles_GhostedInCar_Good_lvl4 = "車の中に隠れる",
+    Moodles_GhostedInCar_Good_desc_lvl4 = "プレイヤーは車の中に隠れています。",
+}

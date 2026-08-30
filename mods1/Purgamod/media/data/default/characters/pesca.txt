@@ -1,0 +1,40 @@
+Anguila AdvancedFishing.Anguila
+Arapaima AdvancedFishing.Arapaima
+Arawana AdvancedFishing.Arowana
+Bagredecola roja: AdvancedFishing.Rtcatfish
+Cangrejoderío AdvancedFishing.Crab
+Carnetortuga AdvancedFishing.WturtlePiece
+Carpa AdvancedFishing.Carp
+Dentudo AdvancedFishing.Dentudo
+Dorado AdvancedFishing.Dorado
+Pacu AdvancedFishing.Pacu
+Palometa AdvancedFishing.Palometa
+Pati AdvancedFishing.Pati
+Payara AdvancedFishing.Payara
+Pejerrey AdvancedFishing.Peje
+Piraiba AdvancedFishing.Piraiba
+Piranha AdvancedFishing.Piranha
+Salmon AdvancedFishing.FSalmon
+Snakehead AdvancedFishing.Snakehead
+Surubi AdvancedFishing.Surubi
+Tararira AdvancedFishing.Tararira
+Tarpon AdvancedFishing.Tarpon
+Tortugaagua AdvancedFishing.Waterturtle
+Trucha aroiris AdvancedFishing.RainbowTrout
+Tucunare AdvancedFishing.Tucunare
+Walleye AdvancedFishing.Walleye
+
+
+
+
+Pesca:
+Nueva categoría de peces: De trofeo (Tienen muy baja probabilidad de ser pescados)
+Eliminados los aparejos del juego base. Inclusión de nuevos aparejos.
+Enciclopedias de pesca: Utilizadas para desbloquear información en los aparejos de pesca.
+Cajas antiguas que podrás obtener pescando o saqueando tumbas utilizando una pala. (Dentro podrás encontrar 
+diversos items que ayudarán a poder pescar peces mas grandes) 
+Sistema de pesca cambiado totalmente con sonidos nuevos y las chances se rigen por climatología.
+Puedes obtener datos de pesca al observar el clima si tienes la habilidad al nivel suficiente. 
+Leyendo el libro de pesca deportiva podrás devolver el pez al agua para obtener xp de pesca siempre y cuando el pez se encuentre vivo,
+ (El sistema agrega información nueva en tooltips sobre si el pez se encuentra vivo o muerto - cada especie tiene un tiempo diferente 
+ para morirse fuera del agua - congelar o cocinar el pez tambien lo mata.)

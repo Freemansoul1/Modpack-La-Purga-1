@@ -1,0 +1,4 @@
+--bandido droga coca
+
+#npc_create Bandido1|NPC_Bandido1.png|4833,6278,0
+#exit

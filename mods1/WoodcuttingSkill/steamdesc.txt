@@ -1,0 +1,79 @@
+The Apocalypse has come. Monstruosities have invaded us. What's happening here is not contained. These... things, keep coming endlessly. What, zombies? No, I'm talking about TREES !
+
+Are you one of those guys who like to deforest entire areas ?
+This mod is for you. (well, mostly for me)
+
+[hr][/hr]
+
+[h1]Woodcutting Skill[/h1]
+This mod adds a Woodcutting skill that makes chopping trees and removing bushes easier and more efficient. 
+At level 0, nothing changes from vanilla. The skill is all upsides.
+
+
+[h1]Benefits:[/h1]
+[list]
+[*]Less endurance used (-7 % per level)
+[*]Less calories used ( -12% calories modifier every 3 levels)
+[*]Less chance to lose axe condition (only when chopping trees)
+[*]A flat axe tree damage increase (+2 per level)
+[*]A chance of extra items when chopping medium and large trees
+[*] Also makes removing bushes easier (-7% endurance used/level and +10% action speed/level when removing bushes)
+[*] If you reach Woodcutting level 8, you can no longuer get "Excessive Exertion" from chopping trees. You will still get "High Exertion" but it can't worsen to "Excessive Exertion" from chopping trees.
+[/list]
+
+
+[h1]Extra items ?[/h1]
+The chance of extra items is pretty small, at low levels they are extremely rare.
+[list]
+[*] Logs
+[*] Tree Branches
+[*] Twigs
+[*] Pinecones (for pine trees only)
+[*] [spoiler]Tree fruits & acorns (rare) (for trees that aren't pine trees, if the [Woodcutting + Foraging] level is high enough (8), AND if it's not winter)[/spoiler]
+[*] [spoiler]Dead squirrels (extremely rare)(if the [Woodcutting + Foraging] level is high enough (8))[/spoiler]
+[/list]
+
+Note : Nature Abundance buffs/nerfs the chances of extra items accordingly. (-20%, -10%, +10%, +20%)
+Small trees (size 1 or size 2) never give extra items.
+
+
+[h1]The bigger they are...[/h1]
+...the more xp they give. And the higher the chances of extra items. And when you get extra items, you also get some Woodcutting xp. So yeah, go chop them big trees.
+
+[hr][/hr]
+
+[h1]Traits?[/h1]
+This mod adds a Woodcutter trait that gives +1 Woodcutting for 2 points.
+Other than that, the following are buffed :
+[list]
+[*]Lumberjack occupation: +3 woodcutting
+[*]Park Ranger occupation: +2 woodcutting
+[*]Farmer occupation: +1 woodcutting
+[*]Gardener trait : +1 woodcutting
+[/list]
+
+[hr][/hr]
+
+[h1]Skill books?[/h1]
+[u]There are no skill books[/u] for this skill. Maybe I will add some later on. But for now there are none.
+
+[hr][/hr]
+
+[h1]Sandbox Settings?[/h1]
+[u]There are no sandbox settings for this mod.,[/u]
+But there is a file ([i]media/lua/shared/WoodcuttingSkillDefinitions.lua[/i]) that you can easily edit to tweak some things.
+
+[hr][/hr]
+
+[h1]Multiplayer[/h1]
+This has been tested on a local multiplayer server, and it's working. All the code is client side anyway.
+
+[hr][/hr]
+
+[h1]Compatibility[/h1]
+This mod overrides the "Chop Tree" action and the "Remove Bush" action.
+"10 Years Later" changes some stuff with the Remove Bush action , but it's still fully compatible ; props to Dane.
+
+At one point I wanted to add a "Tree Kill Count" but it's just not worth the compatibility issues with other mods.
+
+[hr][/hr]

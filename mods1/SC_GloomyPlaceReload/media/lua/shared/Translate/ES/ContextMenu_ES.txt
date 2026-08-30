@@ -1,0 +1,9 @@
+ContextMenu_ES = {
+    ContextMenu_SCGPRRemove = "Quitar teletransporte",
+    ContextMenu_SCGPRCreate = "Crear teletransporte",
+    ContextMenu_SCGPREnter = "Acceso",
+    ContextMenu_SCGPRExit = "Salir",
+    ContextMenu_SCGPREdit = "Editar teletransporte",
+    ContextMenu_SCGPRMenu = "[Admin] | Lugar sombrío",
+    ContextMenu_SCGPRSharedEE = "Teletransporte",
+}

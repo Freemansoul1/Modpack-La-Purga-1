@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Jerrikson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos reforzables, ¿qué necesitas?"
+#choice
+    hmmwvht|McLarenF1
+    hmmwvtr|67gt500e
+    m151canvas|92nissanGTRlhd
+    nada|De momento no necesito nada
+*hmmwvht
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado1
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado2
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningmclarenf1.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,800
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.McLarenF1,1,rare
+#exit
+*na1
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuninggt500e.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,800
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.67gt500e,1,rare
+#exit
+*na2
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningnissangtr.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,800
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.92nissanGTRlhd,1,rare
+#exit
+*na3
+#m Jerrikson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

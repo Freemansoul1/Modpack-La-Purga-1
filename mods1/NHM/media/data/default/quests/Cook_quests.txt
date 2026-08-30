@@ -1,0 +1,5 @@
+*cook_q1
+#name Trae una botella de cerveza fría
+#desc El cocinero te pide que vayas a buscar una botella de cerveza fría a la nevera de la sala de descanso.
+#desc
+Las misiones de #desc Hospital son únicas. Todas las tareas inconclusas realizadas al salir del Hospital a través de Sentinel se enumerarán como fallidas.

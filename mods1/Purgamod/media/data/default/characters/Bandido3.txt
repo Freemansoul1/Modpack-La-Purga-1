@@ -1,0 +1,14 @@
+--Bandido droga hachis
+#name Bandido3|Bandido3
+
+#set_stat Bandido3|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Desconocido
+
+#desc_append Edad: Desconocido
+
+#desc_append Solo sé que vende droga.
+
+#exit

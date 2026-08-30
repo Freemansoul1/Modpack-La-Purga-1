@@ -1,0 +1,191 @@
+module RestoreUtilities 
+{
+
+	imports 
+	{
+		Base
+		Radio
+	}
+
+
+	recipe DowngradeScrap 
+	{
+		AdvancedScrap = 1,
+		
+		Result: ElectronicsScrap = 10,
+		Category: Electrical,
+		OnGiveXP: Recipe.OnGiveXP.DismantleElectronics,
+		Time: 30.0,
+	
+	}
+	
+	recipe UpgradeScrap
+	{
+		ElectronicsScrap = 15,
+		
+		Result: AdvancedScrap = 1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.AssembleAdvancedScrap,
+		Time: 120.0,
+		SkillRequired:Electricity=6,
+	
+	}
+
+	recipe InverterT1
+	{
+		AdvancedScrap = 1,
+		RadioTransmitter = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseInverterT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=6,
+	}
+	
+	recipe InverterT2
+	{
+		AdvancedScrap = 2,
+		FuseInverterT1 = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseInverterT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=10,
+	}
+	
+	recipe RubberWiresT1
+	{
+		AdvancedScrap = 2,
+		ElectricWire = 2,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseRubberWiresT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=4,
+	}
+	
+	recipe RubberWiresT2
+	{
+		AdvancedScrap = 2,
+		ElectricWire = 2,
+		FuseRubberWiresT1 = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseRubberWiresT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=8,
+	}
+	
+	recipe CoilT1
+	{
+		AdvancedScrap = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseCoilT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=5,
+	}
+	
+	recipe CoilT2
+	{
+		AdvancedScrap = 2,
+		FuseCoilT1 = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseCoilT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=7,
+	}
+	
+	recipe SparePartsT1
+	{
+		AdvancedScrap = 1,
+		Screws = 10,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseSparePartsT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=4,
+	}
+	
+	recipe SparePartsT2
+	{
+		AdvancedScrap = 2,
+		Nails = 10,
+		FuseSparePartsT1 = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseSparePartsT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=8,
+	}
+	
+	recipe MarkedCompsT1
+	{
+		AdvancedScrap = 2,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseMarkedCompsT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=4,
+	}
+	
+	recipe MarkedCompsT2
+	{
+		AdvancedScrap = 2,
+		FuseMarkedCompsT1 = 1,
+		keep [Recipe.GetItemTypes.Screwdriver],
+	
+		Result: FuseMarkedCompsT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=8,
+	}
+	
+	recipe NotesT1
+	{
+		AdvancedScrap = 1,
+		SheetPaper2 = 1,
+		keep [Recipe.GetItemTypes.Write],
+	
+		Result: FuseNotesT1,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier1Fuse,
+		Time: 150.0,
+		SkillRequired:Electricity=2,
+	}
+	
+	recipe NotesT2
+	{
+		AdvancedScrap = 2,
+		FuseNotesT1 = 1,
+		keep [Recipe.GetItemTypes.Write],
+	
+		Result: FuseNotesT2,
+		Category: Electrical,
+		OnGiveXP: RU_Recipe.OnGiveXp.Tier2Fuse,
+		Time: 200.0,
+		SkillRequired:Electricity=6,
+	}
+
+
+}

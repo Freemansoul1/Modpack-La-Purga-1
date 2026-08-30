@@ -1,0 +1,3 @@
+ItemName_PT = {
+    ItemName_Braven.SpikeStrip = "Fura-pneus",
+}

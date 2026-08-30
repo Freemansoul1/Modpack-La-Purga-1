@@ -1,0 +1,7 @@
+Recipes_CN {
+    Recipe_Prepare_Dry_Fish = "加工鱼",
+    Recipe_Make_Drier_1 = "工艺干燥网",
+    Recipe_Make_Drier_9 = "工艺干燥网",
+    Recipe_Make_Drier_8 = "工艺品晾晒架",
+    Recipe_Make_Drier_15 = "工艺烘干串",
+}

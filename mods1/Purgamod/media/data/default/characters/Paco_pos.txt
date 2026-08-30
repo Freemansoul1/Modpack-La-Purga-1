@@ -1,0 +1,5 @@
+#is_flag gd_msq1,true
+    #npc_create Paco|NPC_paco.png|11550,7572,0
+    #exit     
+#npc_create Paco|NPC_paco.png|11550,7572,0
+#exit

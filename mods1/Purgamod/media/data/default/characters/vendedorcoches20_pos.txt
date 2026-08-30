@@ -1,0 +1,5 @@
+#is_flag vendedorcoches20,true
+    #npc_create Jennerson Ford|NPC_jarrison7.png|7681,11869,1
+    #exit
+#npc_create Jennerson Ford|NPC_jarrison7.png|7681,11869,1
+#exit

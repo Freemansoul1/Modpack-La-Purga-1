@@ -1,0 +1,102 @@
+module Base
+{
+
+    item MetalArmor
+       {
+        ClothingItem = MetalArmor,
+        Type = Clothing,
+        DisplayName = Metal Armor,
+        BodyLocation = TorsoExtra,
+        CanBeEquipped = TorsoExtra,
+        Icon = MetalArmor,
+        BloodLocation = UpperBody; LowerBody,
+        BiteDefense = 100,
+        BulletDefense = 90,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 4,
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+        Tooltip = Tooltip_Armor,
+    }
+
+
+    item MetalLegPads
+    {
+        ClothingItem = MetalLegPads,
+        Type = Clothing,
+        DisplayName = Metal Knee Pads,
+        BodyLocation = LowerLegs,
+        Icon = MetalLegPads,
+        BloodLocation = LowerLegs,
+        BiteDefense = 100,
+        BulletDefense = 90,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+        Tooltip = Tooltip_LegPads,
+    }
+
+    item MetalBracer
+    {
+        ClothingItem = MetalBracer,
+        Type = Clothing,
+        DisplayName = Metal Bracer,
+        BodyLocation = LowerArms,
+        Icon = MetalBracer,
+        BloodLocation = LowerArms,
+        BiteDefense = 100,
+        BulletDefense = 90,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+        Tooltip = Tooltip_Bracer,
+    }
+
+    item Hat_MetalHelmet
+    {
+        ClothingItem = Hat_MetalHelmet,
+        Type = Clothing,
+        DisplayName = Metal Helmet,
+        BodyLocation = Hat,
+        IconsForTexture = MetalHelmet,
+        CanHaveHoles = false,
+        BloodLocation = Head,
+        BiteDefense = 100,
+        BulletDefense = 90,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ChanceToFall = 1,
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+        Tooltip = Tooltip_Helmet,
+    }
+
+    item MetalNeckPads
+    {
+        ClothingItem = MetalNeckPads,
+        Type = Clothing,
+        DisplayName = Metal Neck Pads,
+        BodyLocation = Scarf,
+        Icon = MetalNeckPads,
+        BloodLocation = Neck,
+        BiteDefense = 100,
+        BulletDefense = 90,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+        Tooltip = Tooltip_NeckPads,
+    }
+}

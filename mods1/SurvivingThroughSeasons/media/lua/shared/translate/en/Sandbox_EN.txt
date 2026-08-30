@@ -1,0 +1,6 @@
+Sandbox_EN = {
+	Sandbox_sts = "Surviving Through Seasons",
+
+	Sandbox_sts_MaxDaysInMonth = "Choose how many days to simulate in a month",
+	Sandbox_sts_MaxDaysInMonth_tooltip = "If set to 10 then 10 days will be simulated in each month (120 day years). Skipping 2 days for every 1 day played. Recommended setting 2+ hour days if setting a value less than 10 days. Erosion, farming, etc. will only account for days played (not skipped, 120 days in this case)",
+}

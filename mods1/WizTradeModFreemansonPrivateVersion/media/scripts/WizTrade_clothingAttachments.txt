@@ -1,0 +1,167 @@
+module Base
+{
+
+/****************** CLOTHING ATTACHMENTS ITEMS ******************************/
+	
+	item Wiz_SentaiHelmet_Chip_Light
+	{
+        DisplayCategory      =  LightSource,	
+		Type		  		 =	Drainable,	
+		DisplayName	 		 =	Flashman Helmet Chip Attachment (Light),
+		Icon			     =	Wiz_Chip_Light,
+		Weight		 		 =	0.1,
+		LightDistance		 =	25,
+		DisappearOnUse		 =	FALSE,
+		TorchCone			 =	TRUE,
+		UseDelta			 =	0.00001,
+		LightStrength		 =	2,
+		ActivatedItem		 =  TRUE,
+		cantBeConsolided 	 =  TRUE,
+		AttachmentType	 	 =  Wiz_AttachLight,
+        WorldStaticModel 	 =	Wiz_chip_ground_light,
+		Tooltip				 =  Tooltip_SentaiHelmet_Chip_Light,
+	}
+	
+	item Wiz_BobaFettAntena
+	{
+        DisplayCategory      =  LightSource,	
+		Type		  		 =	Drainable,	
+		DisplayName	 		 =	Boba Fett Helmet Attachment (Light),
+		Icon			     =	Wiz_BobaFettAntena,
+		StaticModel 		 =  Wiz_BobaFettAntena,
+		Weight		 		 =	0.1,
+		LightDistance		 =	25,
+		DisappearOnUse		 =	FALSE,
+		TorchCone			 =	TRUE,
+		UseDelta			 =	0.00001,
+		LightStrength		 =	4,
+		ActivatedItem		 =  TRUE,
+		cantBeConsolided 	 =  TRUE,
+		AttachmentType	 	 =  Wiz_AttachBobaFettLight,
+        WorldStaticModel 	 =	Wiz_BobaFettAntena_ground,
+		Tooltip				 =	Tooltip_Wiz_BobaFettAntena,	
+	}
+	
+	
+	item Wiz_SentaiHelmet_Chip_Radio
+	{
+	    DisplayCategory 	= Communications,
+		Type				= Radio,
+		Icon				= Wiz_Chip2,
+		Weight          	= 0.1,
+		DisplayName			= Sentai Helmet Chip Attachment (Radio),
+		UseDelta			= 0.005, 
+		DisappearOnUse		= FALSE,
+		TwoWay				= FALSE,
+		UseWhileEquipped	= TRUE,
+		IsPortable			= TRUE,
+		IsTelevision		= FALSE,
+		BaseVolumeRange		= 10,
+		MinChannel			= 88000,
+		MaxChannel			= 108000,
+		TransmitRange		= 0,
+		MicRange			= 0,
+		UsesBattery			= TRUE,
+        IsHighTier			= FALSE,		
+        AttachmentType 		= Wiz_AttachRadio,
+		WorldStaticModel    = Wiz_chip_ground_radio,
+		Tooltip 			= Tooltip_item_Radio,
+	}
+
+	
+	item Wiz_Jaspion_Light
+	{
+        DisplayCategory      =  LightSource,	
+		Type		  		 =	Drainable,	
+		DisplayName	 		 =	Jaspion Helmet Chip (Light),
+		Icon			     =	Wiz_Chip2,
+		StaticModel 		 =  Wiz_Jaspion_Light,
+		Weight		 		 =	0.1,
+		LightDistance		 =	25,
+		DisappearOnUse		 =	FALSE,
+		TorchCone			 =	TRUE,
+		UseDelta			 =	0.00001,
+		LightStrength		 =	4,
+		ActivatedItem		 =  TRUE,
+		cantBeConsolided 	 =  TRUE,
+		AttachmentType	 	 =  Wiz_Jaspion_Light_Type,
+        WorldStaticModel 	 =	Wiz_chip_ground_radio,
+		Tooltip				 =	Tooltip_SentaiHelmet_Chip_Light,	
+	}
+	
+	
+	
+	item Wiz_MinerHelmet_Light
+	{
+        DisplayCategory      =  LightSource,	
+		Type		  		 =	Drainable,	
+		DisplayName	 		 =	Miner Helmet Flashlight,
+		Icon			     =	Wiz_MinerHelmet_Light,
+		Weight		 		 =	0.2,
+		StaticModel 		 =  Wiz_MinerHelmet_Light,
+		LightDistance		 =	25,
+		DisappearOnUse		 =	FALSE,
+		TorchCone			 =	TRUE,
+		UseDelta			 =	0.0001,
+		LightStrength		 =	4,
+		ActivatedItem		 =  TRUE,
+		cantBeConsolided 	 =  TRUE,
+		AttachmentType	 	 =  Wiz_AttachMinerHelmet_Light,
+        WorldStaticModel 	 =	Wiz_MinerHelmetLight_ground,
+		ReplaceOnDeplete	 =  Wiz_MinerHelmet_Light_NoBat,
+		
+	}
+	
+	
+	item Wiz_MinerHelmet_Light_NoBat
+    {
+		DisplayCategory 			=   Junk,
+		Type						=	Normal,
+        Weight						=	0.2,
+        DisplayName					=	Miner Helmet Flashlight (No Battery),
+        Icon						=	Wiz_MinerHelmet_Light,
+		WorldStaticModel 			= 	Wiz_MinerHelmetLight_ground,
+		
+    }
+
+/************************************* ATTACHMENTS LOCATIONS *************************************/
+
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+		attachment helmet_attachment		/*knife_head*/
+		{
+			offset = -0.170 0.0030 0.0840,
+			rotate = -0.0570 21.000 -96.0000,
+			bone = Bip01_Head,
+		}
+		
+		
+
+		
+	}
+	
+	model MaleBody
+	{
+		mesh = Skinned/MaleBody,
+
+		attachment helmet_attachment
+		{
+			offset = -0.170 0.0030 0.0840,
+			rotate = -0.0570 21.000 -96.0000,
+			bone = Bip01_Head,	
+		}
+		
+		
+
+		
+	}
+	
+/************************************************************************************************/	
+	
+	
+	
+	
+	
+}

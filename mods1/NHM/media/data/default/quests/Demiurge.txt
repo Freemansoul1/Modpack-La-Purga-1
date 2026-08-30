@@ -1,0 +1,15 @@
+#quest Demiurge_q1
+    #task t1
+        #set GotoLocation|11536,7567,11539,7572,0|true
+        #action UnlockTask|Demiurge_q1|t2
+    #task t2
+        #set ContextAction|Buscar el caso en el Archivo|11536,7570,0|2|Demiurge.txt,quest1_q1_Demiurge|q1_Demiurge_flag
+        #action UnlockTask|Demiurge_q1|t3
+        #action SetFlag|Demiurge_q1_flag|true
+        #action SetFlag|q1_Demiurge_flag|false
+    #task t3
+        #set RaiseFlag|Demiurge_q1_completed
+        #action Reward|Base.Money,1,common
+        #action SetFlag|Demiurge_q1_completed|false
+        #action SetFlag|Demiurge_q1_flag|false
+        #action CompleteQuest|Demiurge_q1

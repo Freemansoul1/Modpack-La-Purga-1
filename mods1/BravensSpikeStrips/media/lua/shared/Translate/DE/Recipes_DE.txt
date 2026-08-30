@@ -1,0 +1,3 @@
+Recipes_DE = {
+    Recipe_craft_spikestrip = "Nagelsperre schmieden",
+}

@@ -1,0 +1,2 @@
+#npc_create Nurse|NPC/Nurse.png|11559,7544,0
+#exit

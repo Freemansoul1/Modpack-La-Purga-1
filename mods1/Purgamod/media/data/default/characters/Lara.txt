@@ -1,0 +1,15 @@
+#name Lara|Lara
+
+#set_stat Lara|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Lara Trump
+
+#desc_append Edad: 31
+
+#desc_append Una empresaria intrépida y patriota de los Estados Unidos.Lleva consigo un bandera estadounidense, incluso cuando las cosas se vuelven sombrías.
+#desc_append Antes del apocalipsis, Lara era dueña de una estación de servicio en las afueras de Luisville.
+#desc_append Ahora Su objetivo es mantener la estación de servicio del Oaisis en funcionamiento y proporcionar combustible todo aquel que lo necesite.
+
+#exit

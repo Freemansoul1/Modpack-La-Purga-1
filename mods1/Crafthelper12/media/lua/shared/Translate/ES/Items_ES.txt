@@ -1,0 +1,17 @@
+Items_ES = {
+	DisplayName_BioreactorCrafted = "Bioreactor casero",
+	DisplayName_Bioreactor = "Bioreactor",
+	DisplayName_PetriDish = "Placa de Petri",
+	DisplayName_BoxOfPetriDishes = "Caja de placas de Petri",
+	DisplayName_DirtyPetriDish = "placa de Petri sucia",
+	DisplayName_ContaminatedSample_OLD = "Zombie Ichor (OBSOLETE)",
+    DisplayName_ContaminatedSample2_OLD = "Discolored Zombie Ichor (OBSOLETE)",
+
+	DisplayName_ContaminatedSample = "Icor Zombie",
+	DisplayName_ContaminatedSample2 = "Icor Zombie descolorido",
+	DisplayName_Z2Bacteria = "Colonia de bacterias Z-2 NF",
+	DisplayName_Z5Bacteria = "Colonia de bacterias Z-5 NF",
+	DisplayName_BiofuelResearchNotes = "Notas de investigacion",
+
+}
+

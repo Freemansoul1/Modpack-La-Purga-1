@@ -1,0 +1,5 @@
+ItemName_ES =   {
+    ItemName_SealedCrate.SealedCrateWood1    =   "Caja.RAR(Sellada)",
+    ItemName_SealedCrate.SealedCrateWood2    =   "Caja.RAR(Sellada)",
+    ItemName_SealedCrate.SealedCrateWood3    =   "Caja.RAR(Sellada)",
+}

@@ -1,0 +1,25 @@
+Sandbox_DE = {
+    Sandbox_HIC = "Im Auto verstecken",
+
+    Sandbox_HIC_Active = "Mod aktiv",
+    Sandbox_HIC_Active_tooltip = "Mod aktivieren oder deaktivieren.",
+	
+	Sandbox_HIC_MoodleActive = "Moodle aktiv",
+	Sandbox_HIC_MoodleActive_tooltip = "Moodle aktivieren oder deaktivieren.",
+
+
+    Sandbox_HIC_MinimalCondition = "Minimale Bedingung",
+    Sandbox_HIC_MinimalCondition_tooltip = "Minimale Zustandsprozentzahl, die für Fahrzeugteile erforderlich ist, um sich zu verstecken.",
+
+    Sandbox_HIC_Radius = "Erkennungsradius",
+    Sandbox_HIC_Radius_tooltip = "Radius, in dem Zombies den Spieler im Auto erkennen können.",
+
+    Sandbox_HIC_CheckForTraits = "Auf Merkmale prüfen",
+    Sandbox_HIC_CheckForTraits_tooltip = "Wenn aktiviert, wird auf die auffälligen und unauffälligen Merkmale geprüft.",
+
+    Sandbox_HIC_TraitCoefficient = "Einflusskoeffizient der Merkmale",
+    Sandbox_HIC_TraitCoefficient_tooltip = "Passt den Radius basierend auf einem Merkmalskoeffizienten an, der einen Wert von 0-100 Prozent darstellt.",
+
+    Sandbox_HIC_ZombieMemory = "Zombies haben Gedächtnis",
+    Sandbox_HIC_ZombieMemory_tooltip = "Wenn aktiviert, kann sich der Spieler nicht verstecken, während er von einem Zombie verfolgt wird, auch wenn er nicht sichtbar ist. Wenn deaktiviert, kann sich der Spieler verstecken, wenn er von einem Zombie nicht gesehen wird."
+}

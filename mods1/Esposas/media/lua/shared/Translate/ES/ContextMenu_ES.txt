@@ -1,0 +1,5 @@
+ContextMenu_ES = {
+    ContextMenu_Restrain = "Esposar %1",
+    ContextMenu_Free = "Desesposar %1",
+    ContextMenu_Inventary = "Inspecionar %1",
+} 

@@ -1,0 +1,18 @@
+IGUI_ES = {
+IGUI_invpanel_Chem_Prop = "Propiedades Quimicas",
+IGUI_invpanel_Chem_Jet = "+12 Resistencia / -2.5% Hambre / +3 Ebriedad / -15 Perdida de Infelicidad y Aburrimiento",
+IGUI_invpanel_Chem_Rocket = "+24 Resistencia / -5.5% Hambre / +5 Ebriedad / -15 Perdida de Infelicidad y Aburrimiento",
+IGUI_invpanel_Chem_Buffout = "+67 Resistencia / +45% Fatiga / -10 Dolor / Ganancia Aleatoria de XP de Habilidad de Agilidad",
+IGUI_invpanel_Chem_Bufftats = "+15 Resistencia / +63% Fatiga / -10 Dolor / Ganancia Aleatoria de XP de Habilidad de Agilidad x3 / Ganancia Aleatoria de XP de Habilidad de Artesania x3",
+IGUI_invpanel_Chem_Buffjet = "+82 Resistencia / +40% Fatiga / -8 Dolor / Ganancia Aleatoria de XP de Habilidad de Agilidad / -15 Perdida de Infelicidad y Aburrimiento",
+IGUI_invpanel_Chem_Daytrip = "-5 Dolor / -10 Fatiga / -85 Infelicidad / -65 Aburrimiento / -50 Miedo, Panico y Estres / Tiempos Alegres",
+IGUI_invpanel_Chem_Stimpack = "+27 Salud / -10 Dolor",
+IGUI_invpanel_Chem_SuperStimpack = "+68 Salud / -35 Dolor / +15 Ebriedad",
+IGUI_invpanel_Chem_Mentats = "-85 Ebriedad / +35 Fatiga / -75 Estres / -10 Perdida de Infelicidad y Aburrimiento / Ganancia Aleatoria de XP de Habilidad de Artesania",
+IGUI_invpanel_Chem_Psycho = "+35 Salud / -95 Dolor / +58% Resistencia / Alta Ganancia de Ira / -90 Miedo, Panico y Estres / -15% Sed / +35% Ebriedad / Ganancia Aleatoria de XP de Habilidad de Combate",
+IGUI_invpanel_Chem_Slasher = "+65 Salud / -98 Dolor / +85 Resistencia / Alta Ganancia de Ira / -99 Miedo, Panico y Estres / -20 Sed / +50% Ebriedad / Ganancia Aleatoria de XP de Habilidad de Combate",
+IGUI_invpanel_Chem_MedX = "-65 Dolor / +25 Ebriedad / -50 Estres / -35 Perdida de Infelicidad y Aburrimiento",
+IGUI_invpanel_Chem_Xcell = "+15 Salud / -45 Dolor / +40 Resistencia / +95 Fatiga / -85 Ebriedad / -50 Infelicidad / -50 Aburrimiento / Ganancia Aleatoria de XP de Habilidad Pasiva",
+IGUI_invpanel_Chem_Fixer = "Ayuda en la Adiccion Quimica",
+IGUI_invpanel_Chem_Cateye = "Vision nocturna baja durante dos horas",
+}

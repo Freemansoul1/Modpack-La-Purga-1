@@ -1,0 +1,5 @@
+#is_flag vendedorcoches19,true
+    #npc_create Garryson Ford|NPC_jarrison7.png|7313,12415,0
+    #exit
+#npc_create Garryson Ford|NPC_jarrison7.png|7313,12415,0
+#exit

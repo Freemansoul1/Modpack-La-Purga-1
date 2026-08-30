@@ -1,0 +1,4 @@
+Recipe_ES = {
+    Recipe_Create_BobbyPin = "Fabricar horquilla",
+    Recipe_Create_BobbyPin2 = "Fabricar horquilla",
+}

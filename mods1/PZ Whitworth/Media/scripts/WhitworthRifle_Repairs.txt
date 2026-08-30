@@ -1,0 +1,11 @@
+
+module Base
+{
+    fixing Fix Whitworth Rifle
+    {
+       Require : WhitworthRifle,
+
+       Fixer : WhitworthRifle; Aiming=3,
+    }
+
+}

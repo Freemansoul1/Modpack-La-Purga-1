@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option Moats.RemoveShores
+{
+    type = boolean,
+    default = false,
+    page = Moats,
+    translation = Moats_RemoveShores,
+}
+

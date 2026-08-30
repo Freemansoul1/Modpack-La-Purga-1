@@ -1,0 +1,7 @@
+ItemName_JP = {
+
+ItemName_Base.DoorsRepairKitWood = "ドア用修理キット",
+ItemName_Base.DoorsRepairKitMetal = "ドア用補強キット",
+ItemName_Base.DoorsRepairKitEpoxy = "速乾性エポキシ樹脂",
+
+}

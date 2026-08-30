@@ -1,0 +1,5 @@
+ Recipe_FR = {
+	Recipe_Make_Rope_Cuffs = "Realiser des menottes de corde",
+	Recipe_Make_Leather_Cuffs = "Realiser des menottes en cuir",
+	Recipe_Make_(FRONT)_Leather_Cuffs = "Realiser des menottes en cuir (avant)",
+} 

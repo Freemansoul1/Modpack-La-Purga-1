@@ -1,0 +1,4 @@
+IGUI_CN = {
+	IGUI_Loc_String = "当前位置",
+	IGUI_Test_Catch_String = "字符串捕获测试：%1",
+}

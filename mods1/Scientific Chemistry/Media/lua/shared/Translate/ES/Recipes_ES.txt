@@ -1,0 +1,9 @@
+Recipe_ES = {
+Recipe_Load_Stimpack = "Cargar Stimpack",
+Recipe_Load_Jet = "Cargar Jet",
+Recipe_Load_Med-X = "Cargar Med-X",
+Recipe_Load_Psycho = "Cargar Psycho",
+Recipe_Construct_Chemistry_Lab = "Construir Laboratorio de Quimica",
+Recipe_Construct_Empty_Jet = "Hacer Jet Vacio",
+
+}

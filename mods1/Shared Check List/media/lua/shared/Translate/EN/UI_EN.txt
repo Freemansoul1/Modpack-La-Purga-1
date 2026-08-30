@@ -1,0 +1,4 @@
+UI_EN = {
+UI_noList = "No tasks registered.",
+UI_TitleList = "Check List",
+  }

@@ -1,0 +1,4 @@
+Tooltip_EN = {
+	Tooltip_RaidAxe = "Can be used to raid bases. Hit Player built Structures to cause damage and destroy them.",
+	Tooltip_RaidC4 = "Can be used to raid bases. Right click to be able to adjust the timer before it explodes.<br>Equip it as your Primary Weapon and Attack to throw it so it sets off.",
+}

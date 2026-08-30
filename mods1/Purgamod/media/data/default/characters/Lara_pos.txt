@@ -1,0 +1,2 @@
+#npc_create Lara|NPC_Lara.png|11581,7660,0
+#exit

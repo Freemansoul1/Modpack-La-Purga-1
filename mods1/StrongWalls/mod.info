@@ -1,0 +1,6 @@
+name=StrongWalls
+poster=poster.png
+id=StrongWalls1
+description=The strength of wooden and iron walls has been increased tenfold.
+tiledef=SPN 15935
+

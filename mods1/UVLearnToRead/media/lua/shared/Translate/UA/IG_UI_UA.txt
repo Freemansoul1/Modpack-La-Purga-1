@@ -1,0 +1,6 @@
+IGUI_UA = {
+
+IGUI_perks_LearningRead = "Навчання читанню"
+IGUI_perks_Miscellaneous = "Освіта"
+
+}

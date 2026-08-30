@@ -1,0 +1,15 @@
+Recipes_PT = {
+    Recipe_CraftScrapFrame1 = "Soldar quadro de sucata regular",
+    Recipe_CraftScrapSuspension1 = "Soldar suspensão de sucata regular",
+    Recipe_CraftScrapBrakes1 = "Soldar freios de sucata regulares",
+    Recipe_CraftScrapTire1 = "Moldar pneu de sucata comum",
+    
+    Recipe_CraftScrapFrame2 = "Soldar quadro de sucata de MTB",
+    Recipe_CraftScrapSuspension2 = "Soldar suspensão de sucata de MTB",
+    Recipe_CraftScrapBrakes2 = "Soldar freios de sucata de MTB",
+    Recipe_CraftScrapTire2 = "Moldar pneu de sucata de MTB",
+
+    Recipe_CraftScrapSeat = "Criar assento de sucata",
+    Recipe_CraftBikeLock = "Criar trava de bicicleta",
+    Recipe_CraftHeadlight = "Criar farol de bicicleta",
+}

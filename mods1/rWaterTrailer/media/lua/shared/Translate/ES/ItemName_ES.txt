@@ -1,0 +1,11 @@
+ItemName_ES = {
+   ItemName_Rotators.WaterTrailerTankLid1 = "Cubierta",
+   ItemName_Rotators.WaterTrailerTankLid2 = "Cubierta",
+   ItemName_Rotators.WaterTrailerTankPump1 = "Bomba",
+   ItemName_Rotators.WaterTrailerTankPump2 = "Bomba",
+   ItemName_Rotators.WaterTrailerTankFilter2 = "Filtro",
+
+   ItemName_RotatorsClothing.TShirt_RotatorsBlack = "Camiseta Rotators negra",
+
+
+}

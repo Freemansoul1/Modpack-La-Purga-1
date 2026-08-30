@@ -1,0 +1,7 @@
+name=Weather Moodles
+poster=poster.png
+id=WeatherMoodles1
+description=Adds moodles to show current weather conditions.
+description=Although not required, the ModOptions mod is recommended for customization.
+require=MoodleFramework1
+url=

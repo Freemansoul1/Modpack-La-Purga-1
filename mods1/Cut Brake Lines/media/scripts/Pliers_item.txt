@@ -1,0 +1,70 @@
+module Base
+{
+ 
+	model PA_Pliers
+	{
+		mesh = PA_Pliers,
+		texture = PA_Pliers,
+		scale = 0.000375,
+        	invertX = FALSE,
+			rotate = 0.0000 0.0000 0.0000,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.000375,
+		}
+	}
+
+	model PA_Pliers_Ground
+	{
+		mesh = PA_PliersGround,
+		texture = PA_Pliers2,
+		scale = 0.00375,
+		invertX = FALSE,
+			rotate = 0.0000 0.0000 0.0000,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		scale = 0.00375,
+		}
+
+	}
+
+	item Pliers
+    {
+        Weight			= 	0.5,
+        Type    		= 	Normal,
+        DisplayName     = 	Pliers,
+        icon 			= 	PA_Pliers,
+		Tags 			= 	Pliers,
+		AttachmentType 	= 	Screwdriver,
+		StaticModel = PA_Pliers,
+		WorldStaticModel = PA_Pliers_Ground,
+		primaryAnimMask = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+    }
+
+
+
+
+
+
+	sound WireCutting
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/WireCutting.ogg,
+		}
+	}
+
+
+
+
+
+}
+/*"Old Rusty Plier" (https://skfb.ly/ooJ6v) by Ricardo Dias Teixeira is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).*/

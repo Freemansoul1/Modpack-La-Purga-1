@@ -1,0 +1,34 @@
+--bandido4  compra  droga monguis alta calidad   
+
+#offer NHM.IngotGold,9999|1
+
+#demand Sprout.Hongomagico|5
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

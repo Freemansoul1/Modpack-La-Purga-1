@@ -1,0 +1,6 @@
+*limpiador_q1_t1
+#name Encuentra un lugar en el segundo piso
+*limpiador_q1_t2
+#name Limpiar mancha
+*limpiador_q1_t3
+#name Regreso al limpiador

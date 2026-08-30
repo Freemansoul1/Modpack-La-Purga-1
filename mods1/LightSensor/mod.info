@@ -1,0 +1,4 @@
+name=LightSensor
+poster=poster.png
+id=LightSensor1
+description=Craft sensors of various types, and apply them to objects to initiate an automatic action.

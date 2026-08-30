@@ -1,0 +1,9 @@
+id=HighlightPoweredAppliances1
+name=Highlight Powered Appliances
+description=Ever lose track of which appliances are powered and which aren't? 
+description="Highlight Powered Appliances" is here to shine a light on your power grid! This mod visually marks all appliances within the range of an active generator.
+poster=poster.png
+tags=Build 41,Misc,Multiplayer,Silly/Fun,Textures
+versionMin=41.0
+
+

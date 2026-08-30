@@ -1,0 +1,533 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+    recipe Make Tabard
+    {
+        MetalArmor2,
+        Result:Tabard,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Fix Tabard
+    {
+        DuctTape=4,
+        UnusableMetal=15,
+        keep BallPeenHammer,
+        Tabard,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:Tabard,
+        Category:Fixing,
+        Time:200.0,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:MetalWelding=5,
+        OnGiveXP:MetalWelding10_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Chainmail
+    {
+        RippedSheets=10,
+        LeatherStrips=4,
+        keep Needle,
+        keep Scissors,
+        Thread=5,
+        Result:Chainmail,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Trousers Medival
+    {
+        RippedSheets=10,
+        LeatherStrips=4,
+        keep Needle,
+        keep Scissors,
+        Thread=5,
+        Result:Trousers_Medival,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make CultArmor2
+    {
+        MetalArmor2,
+        Result:CultArmor2,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make CultMask2
+    {
+        Hat_MetalMask2,
+        Result:Hat_CultMask2,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make CultHelmet2
+    {
+        Hat_MetalHelmet2,
+        Result:Hat_CultHelmet2,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make CultPauldrons2
+    {
+        MetalPauldrons2,
+        Result:CultPauldrons2,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+    }
+
+    recipe Fix CultArmor2
+    {
+        DuctTape=4,
+        UnusableMetal=15,
+        keep BallPeenHammer,
+        CultArmor2,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:CultArmor2,
+        Category:Fixing,
+        Time:200.0,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:MetalWelding=5,
+        OnGiveXP:MetalWelding10_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Fix CultMask2
+    {
+        DuctTape=4,
+        UnusableMetal=9,
+        keep BallPeenHammer,
+        Hat_CultMask2,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:Hat_CultMask2,
+        Category:Fixing,
+        Time:200.0,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:MetalWelding=5,
+        OnGiveXP:MetalWelding10_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Fix CultHelmet2
+    {
+        DuctTape=4,
+        UnusableMetal=9,
+        keep BallPeenHammer,
+        Hat_CultHelmet2,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:Hat_CultHelmet2,
+        Category:Fixing,
+        Time:200.0,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:MetalWelding=5,
+        OnGiveXP:MetalWelding10_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Fix CultPauldrons2
+    {
+        DuctTape=4,
+        UnusableMetal=12,
+        keep BallPeenHammer,
+        CultPauldrons2,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:CultPauldrons2,
+        Category:Fixing,
+        Time:200.0,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:MetalWelding=4,
+        OnGiveXP:MetalWelding8_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make LVKArmor
+    {
+        MetalArmor,
+        Result:LVKArmor,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix LVKArmor
+    {
+        IngotSteel=4,
+        ReadyThinLeather=2,
+        LVKArmor,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:LVKArmor,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=5,
+        OnGiveXP:Engineer5_OnGiveXP,
+        OnCreate:RepairFull,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake LVKArmor
+    {
+        LVKArmor,
+        NoBrokenItems:false,
+        Result:MetalArmor,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Make LVKHelmet
+    {
+        Hat_MetalHelmet,
+        Result:LVKHelmet,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix LVKHelmet
+    {
+        IngotSteel=2,
+        LVKHelmet,
+        NoBrokenItems:false,
+        Result:LVKHelmet,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=6,
+        OnGiveXP:Engineer6_OnGiveXP,
+        OnCreate:RepairFull,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake LVKHelmet
+    {
+        LVKHelmet,
+        NoBrokenItems:false,
+        Result:Hat_MetalHelmet,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Make LVKBracer
+    {
+        MetalBracer,
+        Result:LVKBracer,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix LVKBracer
+    {
+        IngotSteel=2,
+        Belt2,
+        LVKBracer,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:LVKBracer,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=4,
+        OnCreate:RepairFull,
+        OnGiveXP:Engineer3_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake LVKBracer
+    {
+        LVKBracer,
+        NoBrokenItems:false,
+        Result:MetalBracer,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+
+    recipe Make BBNBArmor
+    {
+        MetalArmor,
+        Result:BBNBArmor,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix BBNBArmor
+    {
+        IngotSteel=4,
+        ReadyThinLeather=2,
+        BBNBArmor,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:BBNBArmor,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=5,
+        OnGiveXP:Engineer5_OnGiveXP,
+        OnCreate:RepairFull,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake BBNBArmor
+    {
+        BBNBArmor,
+        NoBrokenItems:false,
+        Result:MetalArmor,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Make BBNBHelmet
+    {
+        Hat_MetalHelmet,
+        Result:BBNBHelmet,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix BBNBHelmet
+    {
+        IngotSteel=2,
+        BBNBHelmet,
+        NoBrokenItems:false,
+        keep Screwdriver,
+        Result:BBNBHelmet,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=6,
+        OnGiveXP:Engineer6_OnGiveXP,
+        OnCreate:RepairFull,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake BBNBHelmet
+    {
+        BBNBHelmet,
+        NoBrokenItems:false,
+        Result:Hat_MetalHelmet,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Make BBNBBracer
+    {
+        MetalBracer,
+        Result:BBNBBracer,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix BBNBBracer
+    {
+        IngotSteel=2,
+        Belt2,
+        BBNBBracer,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:BBNBBracer,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=4,
+        OnCreate:RepairFull,
+        OnGiveXP:Engineer3_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake BBNBBracer
+    {
+        BBNBBracer,
+        NoBrokenItems:false,
+        Result:MetalBracer,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Make BBNBLegPads
+    {
+        MetalLegPads,
+        Result:BBNBLegPads,
+        Category:Faction,
+        Time:50,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        NeedToBeLearn:true,
+        OnCreate:RepairArmor,
+    }
+
+    recipe Fix BBNBLegPads
+    {
+        IngotSteel=2,
+        Belt2,
+        BBNBLegPads,
+        keep Screwdriver,
+        NoBrokenItems:false,
+        Result:BBNBLegPads,
+        Time:200.0,
+        Category:Faction,
+        NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        SkillRequired:Engineering=4,
+        OnCreate:RepairFull,
+        OnGiveXP:Engineer3_OnGiveXP,
+        NeedToBeLearn:true,
+    }
+
+    recipe Remake BBNBLegPads
+    {
+        BBNBLegPads,
+        NoBrokenItems:false,
+        Result:MetalLegPads,
+        Time:200.0,
+        Category:Faction,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+        Sound:Anvil,
+        OnCreate:RepairArmor,
+    }
+}

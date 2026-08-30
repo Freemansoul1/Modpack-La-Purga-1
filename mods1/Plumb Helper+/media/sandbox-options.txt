@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option PlumbHelper.WelcomeSeparator
+{
+    type = boolean,
+    default = false,
+    page = PlumbHelper,
+    translation = WelcomeSeparator,
+}
+
+option PlumbHelper.Utilities
+{
+    type = boolean,
+    default = true,
+    page = PlumbHelper,
+    translation = Utilities,
+}
