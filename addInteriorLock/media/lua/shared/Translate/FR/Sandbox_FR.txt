@@ -1,7 +1,0 @@
-Sandbox_FR = {
-
-    Sandbox_interiorLock = "Interieur verrouillable",
-
-    Sandbox_interiorLockKeepMainDoorLockableWithoutKey = "Portes principales",
-    Sandbox_interiorLockKeepMainDoorLockableWithoutKey_tooltip = "TRUE = Gardez la porte principale verrouillable/déverrouillable sans clé, c'est à dire que Vous pourrez toujours verrouiller les portes menant à l'extérieur sans clé, comme dans vanilla.",
-}
