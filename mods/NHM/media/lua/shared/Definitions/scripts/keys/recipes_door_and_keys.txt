@@ -1,0 +1,44 @@
+module NHM
+{
+	imports {Base}
+	
+
+	recipe Create Spare Key
+    {
+		keep Hammer/HammerStone,
+		Screwdriver,
+    	Spoon/Fork,
+		keep Key1/Key2/Key3/Key4/Key5,
+    	Result:Screwdriver,
+    	Category:Carpentry,
+		Sound:PZ_Saw,
+		CanBeDoneFromFloor:true,
+		OnCreate:makeSpareKey,
+    	Time:500.0,
+    }
+	
+	recipe Create Key
+    {
+		keep Hammer/HammerStone,
+		Screwdriver,
+    	Spoon/Fork,
+    	Result:Screwdriver,
+    	Category:Carpentry,
+		Sound:PZ_Saw,
+		OnCreate:KeyG,
+    	Time:500.0,
+    }
+	
+	recipe Alter Doorknob to Match Key
+    {
+    	Screwdriver,
+		keep Doorknob,
+		keep Key1/Key2/Key3/Key4/Key5,
+    	Result:Screwdriver,
+    	Category:Carpentry,
+		Sound:PZ_Saw,
+		OnCreate:matchDoorknobtoKey,
+    	Time:500.0,
+    }
+
+}

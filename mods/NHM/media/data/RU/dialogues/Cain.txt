@@ -1,0 +1,479 @@
+#is_flag cain_intro,true
+    #jump loop
+
+*intro
+#m Каин|NPCPortraits/CainP.png|"Ну и хули ты ${female,вылупилась,вылупился}? Я че, похож на Мона Лизу?"
+#m Вы смотрите на уставшего от жизни вояку, озлобленного на весь мир.
+
+#choice
+    intro_hello_p|Ответить позитивно
+    intro_hello_n|Ответить негативно
+    intro_leave|Уйти
+
+*intro_leave
+#m Вы собираетесь уходить, как вдруг мужчина повышает голос.
+#m Каин|NPCPortraits/CainP.png|"Э! У меня есть работа для тебя. Я хоть и не самый добрый человек на земле, но наградой за работу не обижу. Приходи, как созреешь."
+#exit
+
+*intro_hello_p
+#m "Здравствуйте! Я просто ${female,новенькая,новенький} тут... изучаю обстановку."
+#m Каин|NPCPortraits/CainP.png|"Ебалом тут не щелкай. Я Каин, но имя мое лучше не запоминай. Целее будешь. Я бывший военный и я ненавижу доходяг и подлиз, а ты, кажется, и то и другое."
+#m Каин|NPCPortraits/CainP.png|"Есть поручения, разумеется, за награду. Будешь исправно выполнять - возможно, перестанешь быть абузой для Оазиса. Интересует?"
+#fade_out black
+#set_flag cain_intro,true
+#fade_in
+#reveal Cain
+#exit
+
+*intro_hello_n
+#m "Хочу и смотрю. Запрещаешь?"
+#m Каин|NPCPortraits/CainP.png|"Слышь, ты че ${female,такая,такой} ${female,борзая,борзый}? Будешь выебываться - долго не протянешь. Лучше захлопни пасть и готовься работать."
+#m Каин|NPCPortraits/CainP.png|"Я Каин. И я здесь для того, чтобы осаждать таких, как ты. Я этим в армии 20 лет занимался. Хочешь стать по-настоящему ${female,крутой,крутым} - выполняй поручения Оазиса. Как будешь ${female,готова,готов} - заходи."
+#fade_out black
+#set_flag cain_intro,true
+#fade_in
+#reveal Cain
+#exit
+
+*loop
+#m Каин|NPCPortraits/CainP.png|"Знакомы уже. Че ${female,хотела,хотел}?"
+
+#is_quest cain_q1|locked
+    #set_flag q1_4_flag,false
+#is_quest cain_q1|completed
+    #set_flag q1_4_flag,false
+#is_quest cain_q1|failed
+    #set_flag q1_4_flag,false
+
+#is_quest cain_q2|locked
+    #set_flag q2_finish_flag,false
+#is_quest cain_q2|completed
+    #set_flag q2_finish_flag,false
+#is_quest cain_q2|failed
+    #set_flag q2_finish_flag,false
+
+#is_quest cain_q3|locked
+    #set_flag q3_finish_flag,false
+#is_quest cain_q3|completed
+    #set_flag q3_finish_flag,false
+#is_quest cain_q3|failed
+    #set_flag q3_finish_flag,false
+
+*backtolist
+#choice
+    questARlist|Задание на автоматы
+    questRlist|Задания на винтовки
+    quest_exit|Уйти
+
+*questARlist
+#choice
+    questAR1|Задание "Секретные данные" (Автоматы)
+    backtolist|Вернуться к общему списку
+    quest_exit|Уйти
+    questAR1_complete|Завершить задание|q1_4_flag
+
+
+*questAR1
+#is_quest cain_q1|locked 
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 9|true
+        #has_item NHM.QuestAEmptyFlash,1
+            #quest_unlock cain_q1
+            #m Каин|NPCPortraits/CainP.png|"Так, отлично. Флешка при тебе. Значит, слушай."
+            #m Каин|NPCPortraits/CainP.png|"Есть в Луисвилле одно здание. В дальнем конце. Там компьютер стоит."
+            #m Каин|NPCPortraits/CainP.png|"До всего пиздеца в этом здании находилась компания-прикрытие Вооруженных Сил. На том компьютере есть некоторые секретные данные."
+            #m Каин|NPCPortraits/CainP.png|"Мне надо, чтоб ты ${female,смоталась,смотался} туда и ${female,залила,залил} на флешку данные из папки K-Scenario. Вопросов не задавай."
+            #m Каин|NPCPortraits/CainP.png|"Но не всё так просто. Компьютер ты не разблокируешь. Нужна карта доступа. Ее ты можешь добыть только на старой военной базе. Я отмечу ее на твоей карте."
+            #m Каин|NPCPortraits/CainP.png|"Где конкретно на этой базе взять карту - не знаю. Но она там точно есть. Достанешь одну и съебывай оттуда. Приезжаешь в Луисвилл, вставляешь эту карту в системный блок и разблокируешь доступ. Карта доступа, кстати, одноразовая. После использования вытащи ее из компьютера и утилизируй."
+            #m Каин|NPCPortraits/CainP.png|"Ну а дальше сообразишь. И не забудь, что электричества в Луисвилле нет, а компьютер не на божьей силе работает. Всё, уебывай. Без флешки с данными не возвращайся."
+            #task_unlock cain_q1|t1
+            #exit
+        #m Каин|NPCPortraits/CainP.png|"Тебе для этого задания нужна флешка. Добудь ее где-нибудь в городе и возвращайся, тогда и выдам тебе задание."
+        #exit
+    #m Каин|NPCPortraits/CainP.png|"Да ${female,пошла,пошел} ты нахуй. Не лезь, куда не положено, сопляк."
+    #exit
+#is_quest cain_q1|unlocked,uncompleted
+    #m Каин|NPCPortraits/CainP.png|"Без флешки не возвращайся!"
+    #exit
+#is_quest cain_q1|unlocked,completed
+    #m Каин|NPCPortraits/CainP.png|"На сегодня с тебя хватит. Приходи завтра."
+#exit
+
+*questAR1_complete
+#has_item NHM.QuestAFlash,1
+    #remove_item NHM.QuestAFlash,1
+    #m Вот твоя флешка.
+    #m Каин|NPCPortraits/CainP.png|"Да неужели? ${female,Справилась,Справился}!"
+    #set_flag cain_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,20
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,10
+        #exit
+    #reward EXP,RepArmy,15
+    #exit
+#m Каин|NPCPortraits/CainP.png|"И че, блять? Где флешка-то моя?"
+#exit
+
+*quest1_q1_3
+#cutscene true
+#is_lua not getPlayer():getCurrentSquare():haveElectricity()|true
+    #m Нет света. Здание нужно запитать.
+    #exit
+#m Компьютер запускается... Сначала надо вставить карту доступа, затем флешку.
+#pop_up NPCPortraits/Computer.png
+#has_item NHM.QuestAEmptyFlash,1|NHM.QuestKeycard,1
+    #remove_item NHM.QuestKeycard,1
+    #remove_item NHM.QuestAEmptyFlash,1
+    #add_item NHM.QuestAFlash,1
+    #set_flag q1_3_flag,true
+    #m Карта доступа и правда одноразовая... Больше непригодна.
+    #m Готово. Пора отчаливать
+    #exit
+#m И как мне взаимодействовать с компьютером без флешки и карты доступа?
+#exit
+
+*quest_exit
+#exit
+
+*reset_cain_q1
+    #set_flag q1_3_flag,false
+    #task_complete cain_q1|t0
+    #task_unlock cain_q1|t1
+#exit
+
+*randomcontainer
+#roll r_1,5|r_2,10|r_3,15|r_4,20|r_5,25|r_6,30|r_7,35|r_8,40|r_9,45|r_10,50|r_11,55|r_12,60|r_13,65|r_14,70|r_15,75|r_16,80|r_17,85|r_18,90|r_19,95|r_20,100
+#exit
+
+*r_1
+#task_unlock cain_q1|t4
+#exit
+
+*r_2
+#task_unlock cain_q1|t5
+#exit
+
+*r_3
+#task_unlock cain_q1|t6
+#exit
+
+*r_4
+#task_unlock cain_q1|t7
+#exit
+
+*r_5
+#task_unlock cain_q1|t8
+#exit
+
+*r_6
+#task_unlock cain_q1|t9
+#exit
+
+*r_7
+#task_unlock cain_q1|t10
+#exit
+
+*r_8
+#task_unlock cain_q1|t11
+#exit
+
+*r_9
+#task_unlock cain_q1|t12
+#exit
+
+*r_10
+#task_unlock cain_q1|t13
+#exit
+
+*r_11
+#task_unlock cain_q1|t14
+#exit
+
+*r_12
+#task_unlock cain_q1|t15
+#exit
+
+*r_13
+#task_unlock cain_q1|t16
+#exit
+
+*r_14
+#task_unlock cain_q1|t17
+#exit
+
+*r_15
+#task_unlock cain_q1|t18
+#exit
+
+*r_16
+#task_unlock cain_q1|t19
+#exit
+
+*r_17
+#task_unlock cain_q1|t20
+#exit
+
+*r_18
+#task_unlock cain_q1|t21
+#exit
+
+*r_19
+#task_unlock cain_q1|t22
+#exit
+
+*r_20
+#task_unlock cain_q1|t23
+#exit
+
+*questRlist
+#choice
+    questR1|Задание "Связь с внешним миром" (Карабины)
+    questR2|Задание "Образцовый мир" (Винтовки)
+    backtolist|Вернуться к общему списку
+    questR1_complete|Завершить задание|q2_finish_flag
+    questR2_complete|Завершить задание|q3_finish_flag
+    quest_exit|Уйти
+
+*questR1
+ #is_quest cain_q2|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 7|true
+        #m Каин|NPCPortraits/CainP.png|"Хуево, конечно, что такое ответственное задание приходится поручать ${female,такой,такому} доходяге, но выбор у меня невелик. Слушай внимательно, чтоб не проебаться нигде."
+        #m Каин|NPCPortraits/CainP.png|"На территории округа Нокс есть Релейная система связи. Несколько вышек соединяются с одной, которая посылает сигнал в Центральный узел, из которого уже можно связаться с внешним миром."
+        #m Каин|NPCPortraits/CainP.png|"Проблема следующая... Связь перестала работать. Я предполагаю, что на одной из станций произошла поломка. И я очень надеюсь, что с Центральным узлом все в порядке."
+        #m Каин|NPCPortraits/CainP.png|"Я локализовал проблему насколько мог. Короче, тебе надо будет проверить две релейные вышки. Одна возле Малдро, вторая - в Луисвилле."
+        #m Каин|NPCPortraits/CainP.png|"Тебе нужна отвертка - это точно. Без нее щитки не вскроешь. Разве что ломать... но если сломаешь - я тебе потом ебало сломаю, ${female,поняла,понял}?"
+        #m Каин|NPCPortraits/CainP.png|"И про защиту от заражения в Луисвилле не забудь. Если там перегорели предохранители - новые ты найдешь неподалеку. Там всегда оставляют про запас."
+        #m Каин|NPCPortraits/CainP.png|"Давай, удачи там. Надеюсь, не подохнешь."
+        #quest_unlock cain_q2
+        #task_unlock cain_q2|t1
+        #exit
+    #m Каин|NPCPortraits/CainP.png|"${female,Разбежалась,Разбежался}. Сиди тихо и не выебывайся, пока репутации не ${female,набрала,набрал}."
+    #exit    
+#is_quest cain_q2|unlocked,uncompleted
+    #m Каин|NPCPortraits/CainP.png|"Ты не можешь повторно взять это задание."
+    #exit
+#is_quest cain_q2|unlocked,completed
+    #m Каин|NPCPortraits/CainP.png|"У меня больше нет поручений для тебя. Приходи завтра."
+#exit
+
+*questR1_complete
+#m Каин|NPCPortraits/CainP.png|"Нихуево ты ${female,постаралась,постарался}. Честно скажу - совсем не ожидал такого упорства от такого хлюпика."
+#m Каин|NPCPortraits/CainP.png|"Но ты и правда молодец. Я расскажу всем в Осирисе о том, что ты ${female,сделала,сделал}."
+#set_flag cain_q2_completed,true
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+    #reward EXP,RepArmy,14
+    #exit
+#is_lua getPlayer():HasTrait("Badmanners")|true
+    #reward EXP,RepArmy,7
+    #exit
+#reward EXP,RepArmy,10.5
+#exit
+
+*questR1_fuse
+#has_item Base.Screwdriver,1
+    #deliver cain_q2|t5
+        #set_flag qfuse_cain_flag,true
+        #m Вышка заработала. Пора двигаться дальше.
+        #exit
+    #m Мне нужен предохранитель.
+    #exit
+#m Без отвертки не вскрыть...
+#exit
+
+*questR1_fuse2
+#has_item Base.Screwdriver,1
+    #deliver cain_q2|t14
+        #set_flag qfuse2_cain_flag,true
+        #m Сигнал стабилизирован. Теперь нужно наладить передачу. Поищу пункт управления в здании.
+        #exit
+    #m Мне нужен предохранитель.
+    #exit
+#m Без отвертки не вскрыть...
+#exit
+
+*questR1_check
+#cutscene true
+#m Как странно. Не вижу здесь никакого генератора или прочих источников энергии, но компьютер работает. Какие-то военные технологии, видимо...
+#pop_up NPCPortraits/Computer.png
+#m Черт. Что-то случилось на Центральном узле связи... Сигнал не уходит во внешний мир. Придется сходить и проверить.
+#m Судя по всему, это координаты узла.
+#set_flag q2check_cain_flag,true
+#exit
+
+*randomcontainer2
+#roll rr_1,25|rr_2,50|rr_3,75|rr_4,100
+#exit
+
+*rr_1
+#task_unlock cain_q2|t8
+#exit
+
+*rr_2
+#task_unlock cain_q2|t9
+#exit
+
+*rr_3
+#task_unlock cain_q2|t10
+#exit
+
+*rr_4
+#task_unlock cain_q2|t11
+#exit
+
+*fixthisshit
+#roll f_1,20|f_2,40|f_3,60|f_4,80|f_5,100
+#exit
+
+*f_1
+#task_unlock cain_q2|t17
+#exit
+
+*f_2
+#task_unlock cain_q2|t18
+#exit
+
+*f_3
+#task_unlock cain_q2|t19
+#exit
+
+*f_4
+#task_unlock cain_q2|t20
+#exit
+
+*f_5
+#task_unlock cain_q2|t21
+#exit
+
+*questR1_fix
+#m А вот и источник моих проблем. Сейчас посмотрим...
+#has_item Base.Screwdriver,1|NHM.QuestFixMag,1
+    #deliver cain_q2|t23
+        #remove_item NHM.QuestFixMag,1
+        #set_flag q2fix_cain_flag,true
+        #m Станция заработала! Осталось проверить связь...
+        #exit
+    #m Без проводов и микросхем я не смогу произвести ремонт...
+    #exit
+#m Без отвертки не вскрыть... Да и без журнала с инструкциями я вряд ли разберусь, как это починить. Журналы, кажется, можно найти в городах.
+#exit
+
+*questR1_speak
+#pop_up NPCPortraits/Computer.png
+#m Так, попытаюсь настроить связь с Оазисом.
+#m "Прием! Вызываю Каина! Как слышно? Прием!"
+#m *помехи в эфире*
+#m Чёрт...
+#m Каин|NPCPortraits/CainP.png|"Ох нихуя себе, кого я слышу. Это ты что ль связь ${female,починила,починил}?"
+#m Да... Все работает?
+#m Каин|NPCPortraits/CainP.png|"Не просто работает, а пиздец как хорошо работает! Сигнал проходит без помех! Молодец, салага."
+#m Каин|NPCPortraits/CainP.png|"Давай обратно. Но предварительно зачисти внутреннюю часть от мертвецов. Думаю, они там уже повылезали на шум электростанции. Как зачистишь - выдвигайся в Оазис за наградой."
+#set_flag qspeak_cain_flag,true
+#exit
+
+*reset_cain_q2
+    #set_flag qfuse_cain_flag,false
+    #set_flag qfuse2_cain_flag,false
+    #set_flag q2check_cain_flag,false
+    #set_flag q2fix_cain_flag,false
+    #set_flag qspeak_cain_flag,false
+    #task_complete cain_q2|t0
+    #task_unlock cain_q2|t1
+#exit
+
+
+
+*questR2
+ #is_quest cain_q3|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 7|true
+        #m Каин|NPCPortraits/CainP.png|"Есть у меня задание. Сложное пиздец, но и наградой не обижу."
+        #m Каин|NPCPortraits/CainP.png|"Мне нужно, чтобы ты ${female,собрала,собрал} 3 разных вида образцов."
+        #m Каин|NPCPortraits/CainP.png|"Первый вид - образцы грунта. Про Хоуптаун ${female,слышала,слышал}? Там, где Шахты. Медная, Железная, Никелевая. Мне нужно, чтоб ты ${female,зашла,зашел} во все 3 шахты. В каждой из них возьми образцы местной породы и съебывай."
+        #m Каин|NPCPortraits/CainP.png|"Для этого тебе нужны Анализаторы. Их я дам. Чтобы выжить в Шахте - нужны будут фильтры к противогазу. ФИЛЬТРЫ Я НЕ ДАМ."
+        #m Каин|NPCPortraits/CainP.png|"После того, как закончишь в Шахтах, займись образцами зараженных. Убей штук 15 зомби, разделай их трупы - получишь их ткани. Тебе нужно штуки 3, не больше."
+        #m Каин|NPCPortraits/CainP.png|"После этого поезжай в Луисвилл. Последний вид образцов - образцы зараженной воды. Для них тебе нужны химические колбы. Тоже 3 штуки. Тоже не дам. Ближайший водоем я тебе отмечу на карте."
+        #m Каин|NPCPortraits/CainP.png|"По итогу у тебя должно быть 3 образца грунта, 3 образца воды, 3 образца тканей зараженного. И это не всё."
+        #m Каин|NPCPortraits/CainP.png|"Далее тебе понадобится Верстак Химика. На нем из имеющегося тебе надо будет создать Объединенные образцы. Смешать по одному образцу грунта, воды и ткани зараженного. Итого из 9 изначальных образцов ты получишь 3 Объединенных образца. Вот их ты мне и принесешь."
+        #m Каин|NPCPortraits/CainP.png|"Все, двигай давай."
+        #quest_unlock cain_q3
+        #task_unlock cain_q3|t1
+        #add_item NHM.QuestAnalyzer,3
+        #exit
+    #m Каин|NPCPortraits/CainP.png|"Нихуя себе, куда это ты ${female,собралась,собрался}. Без репутации хуй тебе, а не винтовка."
+    #exit
+#is_quest cain_q3|unlocked,uncompleted
+    #m Каин|NPCPortraits/CainP.png|"Ты не можешь повторно взять это задание."
+    #exit
+#is_quest cain_q3|unlocked,completed
+    #m Каин|NPCPortraits/CainP.png|"У меня больше нет поручений для тебя. Приходи завтра."
+#exit
+
+*questR2_copper
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m Надеюсь, я все делаю правильно...
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer1,1
+    #m Сработало! Пора двигаться дальше.
+    #set_flag qcopper_cain_flag,true
+    #exit
+#m Что я тут делаю без анализатора?
+#exit
+
+*questR2_iron
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m Сколько еще грунта тебе нужно...
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer2,1
+    #m Ура! Остался последний.
+    #set_flag qiron_cain_flag,true
+    #exit
+#m Что я тут делаю без анализатора?
+#exit
+
+*questR2_nickel
+#cutscene true
+#has_item NHM.QuestAnalyzer,1
+    #m Ну же, давай...
+    #remove_item NHM.QuestAnalyzer,1
+    #add_item NHM.QuestFullAnalyzer3,1
+    #m Есть! Последняя шахта пройдена.
+    #set_flag qnickel_cain_flag,true
+    #exit
+#m Что я тут делаю без анализатора?
+#exit
+
+*questR2_water
+#deliver cain_q3|t11
+    #add_item NHM.QuestFlaskWater,3
+    #set_flag qwater_cain_flag,true
+    #exit
+#m Образцы воды нужно набрать в химические колбы...
+#exit
+
+*questR2_complete
+#has_item NHM.QuestUnitedSample,3
+    #remove_item NHM.QuestUnitedSample,3
+    #m Каин|NPCPortraits/CainP.png|"Ебать, ты еще ${female,жива,жив}? Я тебя мысленно похоронил, еще когда ты ${female,ушла,ушел} в Хоуптаун."
+    #m Каин|NPCPortraits/CainP.png|"Ладно. Сегодня ты молодец. Держи награду."
+    #set_flag cain_q3_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,14
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,7
+        #exit
+    #reward EXP,RepArmy,10.5
+    #exit
+#m Каин|NPCPortraits/CainP.png|"А где мои образцы?"
+#exit
+
+*reset_cain_q3
+    #set_flag qcopper_cain_flag,false
+    #set_flag qiron_cain_flag,false
+    #set_flag qnickel_cain_flag,false
+    #set_flag qwater_cain_flag,false
+    #task_complete cain_q3|t0
+    #task_unlock cain_q3|t1
+#exit

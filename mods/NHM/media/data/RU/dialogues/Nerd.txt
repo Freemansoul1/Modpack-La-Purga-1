@@ -1,0 +1,411 @@
+#is_flag nerd_intro,true
+    #jump loop
+
+*intro
+#m Ботан|NPCPortraits/NerdP.png|"Привет, ${female,новенькая,новенький}. Рад видеть тебя в Оазисе."
+#m Ботан|NPCPortraits/NerdP.png|"Странное название для поселения, учитывая, что по определению Оазис - это богатое растительностью место в пустыне или полупустыне, изолированное от других массивов растительности."
+#m Ботан|NPCPortraits/NerdP.png|"Неважно... Я Ботан, хотя большинство зовут меня Душнилой. Не знаю, что это значит... Надеюсь, это что-то вроде "Душевный"."
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Ботан|NPCPortraits/NerdP.png|"Эээ... я что-то не так сказал?"
+#exit
+
+*intro_hello
+#m "Привет, Ботан. Ты тоже чему-то обучаешь?"
+#m Ботан|NPCPortraits/NerdP.png|"О да! Еще как обучаю. Химия! Тебе знакомо это слово?"
+#m Ботан|NPCPortraits/NerdP.png|"Одна из важнейших и обширных областей естествознания, наука, изучающая вещества, также их состав и строение, их свойства, зависящие от состава и строения..." 
+#m Ботан|NPCPortraits/NerdP.png|"...их превращения, ведущие к изменению состава — химические реакции, а также законы и закономерности, которым эти превращения подчиняются."
+#m "Да, да. Спасибо. Я ${female,поняла,понял}..."
+#fade_out black
+#set_flag nerd_intro,true
+#fade_in
+#reveal Nerd
+#exit
+
+*loop
+#m Ботан|NPCPortraits/NerdP.png|"Так... если расчеты верны... а, снова ты. Привет! Что ${female,хотела,хотел}?"
+
+#is_quest nerd_q1|locked
+    #set_flag nerd_q1_flag,false
+#is_quest nerd_q1|completed
+    #set_flag nerd_q1_flag,false
+#is_quest nerd_q1|failed
+    #set_flag nerd_q1_flag,false
+
+#is_quest nerd_q2|locked
+    #set_flag nerd_q2_flag,false
+#is_quest nerd_q2|completed
+    #set_flag nerd_q2_flag,false
+#is_quest nerd_q2|failed
+    #set_flag nerd_q2_flag,false
+
+#is_quest nerd_q3|locked
+    #set_flag nerd_q3_flag,false
+#is_quest nerd_q3|completed
+    #set_flag nerd_q3_flag,false
+#is_quest nerd_q3|failed
+    #set_flag nerd_q3_flag,false
+
+#is_quest nerd_q4|locked
+    #set_flag nerd_q4_flag,false
+#is_quest nerd_q4|completed
+    #set_flag nerd_q4_flag,false
+#is_quest nerd_q4|failed
+    #set_flag nerd_q4_flag,false
+
+*backtolist
+#choice
+    questsNERD|Обучающие задания
+    questsNERD2|Регулярные задания
+    quest_exit|Уйти
+    questsNERDabandon|Сбросить обучающие задания
+
+*questsNERD
+#choice
+    questNERD1_1|Задание "Основа Химии"
+    questNERD1_2|Задание "База для реагентов"
+    backtolist|Вернуться к общему списку
+    questNERD1_1_complete|Сдать Задание|nerd_q1_flag
+    questNERD1_2_complete|Сдать Задание|nerd_q2_flag
+
+*questNERD1_1
+#is_quest nerd_q2|unlocked,uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Не-не-не. Не положено. Техника безопасности. Не больше одного задания одновременно!"
+    #exit
+#is_quest nerd_q1|locked
+    #m Ботан|NPCPortraits/NerdP.png|"Моя первая лекция! Если будет что-то непонятно - ну... сочувствую. Химия - одна из важнейших областей знания человечества. Пластик, из которого сделана почти вся наша жизнь - продукт Химии. Любая современная еда и вода - это Химия. Удобрения - это Химия." 
+    #m Ботан|NPCPortraits/NerdP.png|"В общем, буквально всё вокруг - Химия. Главное, что тебе нужно - это Набор Химика. Незаменимая вещь. Для его создания тебе понадобится колба с азотом, которую можно получить с помощью коксового угля."
+    #m Ботан|NPCPortraits/NerdP.png|"А его ты можешь добыть с помощью обычного угля или при переплавке руды. В общем, ничего сложного. Из добываемых ресурсов можно делать химикаты, а их использовать в создании конечных продуктов."
+    #m Ботан|NPCPortraits/NerdP.png|"Не забывай: тебе нужен Верстак Химика! Итак, первое задание: пустая химическая колба. Немного стекла, воздействие температуры - и ценнейший инструмент готов. Принеси мне штуку, а то я разбил одну из своих."
+    #quest_unlock nerd_q1
+    #task_unlock nerd_q1|t1 
+    #set_flag nerd_q1_flag,true
+    #exit
+#is_quest nerd_q1|uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Ты ведь уже выполняешь это задание... разве нет?"
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Слишком много информации за день, пожалей себя. Приходи после 9 утра"
+#exit
+
+*questNERD1_1_complete
+#deliver nerd_q1|t1
+    #m Ботан|NPCPortraits/NerdP.png|"Хм... неплохо. Постарайся в следующий раз добиться чуть большего нагрева."
+    #set_flag nerd_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,1
+        #exit
+    #reward EXP,RepCrafts,1.5
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Не позорь великую науку! И не беспокой меня по пустякам!"
+#exit
+
+*questNERD1_2
+#is_quest nerd_q1|unlocked,uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Не-не-не. Не положено. Техника безопасности. Не больше одного задания одновременно!"
+    #exit
+#is_quest nerd_q2|locked
+    #m Ботан|NPCPortraits/NerdP.png|"Ввиду Инцидента, мы потеряли доступ к полноценному химическому синтезу и нормальных лабораторий у нас больше нет. Но в этом и прелесть Химии - можно добыть что угодно из того, что найдешь под ногами!"
+    #m Ботан|NPCPortraits/NerdP.png|"Азот - один из самых доступных ресурсов. Все что тебе нужно - это коксовый уголь, который делается из обычного. Ну, и пустая колба, чтобы этот самый азот собрать."
+    #m Ботан|NPCPortraits/NerdP.png|"Чем лучше твои познания в Химии, тем эффективнее создание. В будущем у тебя появится более эффективные рецепты для некоторых реагентов."
+    #m Ботан|NPCPortraits/NerdP.png|"Твое второе задание - это набор базовых ресурсов Химика. Ты можешь извлечь почти всё что тебе нужно из всего нескольких предметов: пластик, резина, стекло, зола, сера, известняк."
+    #m Ботан|NPCPortraits/NerdP.png|"Принеси мне единицу Золы, Серной руды и Известняка. Зола - это сожженная древесина, а серную руду и известняк можно добыть на горе Блэк. А еще добыть в собирательстве или выбить из камней. В общем, разберешься!"
+    #quest_unlock nerd_q2
+    #task_unlock nerd_q2|t1 
+    #set_flag nerd_q2_flag,true
+    #exit
+#is_quest nerd_q2|uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Ты ведь уже выполняешь это задание... разве нет?"
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Слишком много информации за день, пожалей себя. Приходи после 9 утра"
+#exit
+
+*questNERD1_2_complete
+#deliver nerd_q2|t1
+    #m Ботан|NPCPortraits/NerdP.png|"Надеюсь, поиск ресурсов не занял слишком много времени? А впрочем, можешь не отвечать. Спасибо."
+    #set_flag nerd_q2_completed,true
+    #reward Base.Money,2,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,4
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #reward EXP,RepCrafts,3
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"А ты думал, в сказку попал? Это Химия!"
+#exit
+
+*reset_nerd_q1
+#quest_reset nerd_q1
+#task_reset nerdcooldown|t1
+#exit
+
+*reset_nerd_q2
+#quest_reset nerd_q2
+#task_reset nerdcooldown|t2
+#exit
+
+*quest_exit
+#exit
+
+*questsNERDabandon
+#m Ботан|NPCPortraits/NerdP.png|"Ценнейшие знания о Химии ушли впустую, ты ничего не ${female,освоила,освоил}. Очень жаль..."
+#is_quest nerd_q1|unlocked,uncompleted,unfailed
+    #quest_fail nerd_q1
+    #set_flag nerd_q1_flag,false
+    #task_unlock nerdcooldown|t1
+#is_quest nerd_q2|unlocked,uncompleted,unfailed
+    #quest_fail nerd_q2
+    #set_flag nerd_q2_flag,false
+    #task_unlock nerdcooldown|t2
+#exit
+
+*questsNERD2
+#choice
+    questNERD1_3|Задание "Целестий"
+    questNERD1_4|Задание "Антимем"
+    backtolist|Вернуться к общему списку
+    questNERD1_3_complete|Сдать Задание|nerd_q3_flag
+    questNERD1_4_complete|Сдать Задание|nerd_q4_flag
+
+*questNERD1_3
+#is_quest nerd_q4|unlocked,uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Не-не-не. Не положено. Техника безопасности. Не больше одного задания одновременно!"
+    #exit
+#is_quest nerd_q3|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 3|true
+        #m Ботан|NPCPortraits/NerdP.png|"Хммм... Скажи, пожалуйста, знаешь ли ты химические свойства раствора Целестия? Может, ты вообще не знаешь, что это за раствор?"
+        #m "Какой еще Целестий..."
+        #m Ботан|NPCPortraits/NerdP.png|"Н-да... Хотя, чего я еще мог ожидать. Целестий - это мой научный прорыв! Особый раствор, имеющий свойства..."
+        #m Ботан|NPCPortraits/NerdP.png|"... хотя, знаешь, спешить некуда. Посмотрим для начала, справишься ли ты с заданием. Это будет не так уж и просто! По моим расчетам, шанс на успех примерно 30%. А если брать во внимание мои предположения касательно твоего IQ, то не больше 12%."
+        #m Ботан|NPCPortraits/NerdP.png|"Целестий - это особый раствор. Я назвал его так из-за небесно-голубого цвета. Целеста - значит "небесный". Тебе нужны 2 химических колбы. Обычных. Заполнишь их 2 веществами, затем смешаешь их и получишь Целестий. Принеси его мне."
+        #m Ботан|NPCPortraits/NerdP.png|"Первое - тебе нужна вода из местного пруда. Вода в нем необычная. Наполни колбу и на время забудь о ней. Вода пригодится позже. После этого найди серу. Собирательство тебе в помощь. Ну... или можешь съездить на гору Блэк."
+        #m Ботан|NPCPortraits/NerdP.png|"В общем, серу в порошок. Это - второй элемент. Еще тебе нужна кровь мертвеца. Убей одного и разделай его труп, а кровь набери в колбу."
+        #m Ботан|NPCPortraits/NerdP.png|"Итого у тебя будет колба с водой, колба с кровью и серный порошок. Объедини это в одной колбе, соотношение примерно по 1/3 каждого. Чуть не забыл! Кровь Зараженного должна быть нагрета. Тебе понадобится Верстак Химика. Прояви терпение и осторожность!"
+        #m Ботан|NPCPortraits/NerdP.png|"Если все сделаешь правильно - получишь Целестий. Принеси его мне и я, возможно, расскажу, зачем он нужен. Все, не мешай."
+        #quest_unlock nerd_q3
+        #task_unlock nerd_q3|t1 
+        #exit
+    #m Ботан|NPCPortraits/NerdP.png|"Ты правда думаешь, что осилишь? Не смеши меня."
+    #exit
+#is_quest nerd_q3|uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Если я не ошибаюсь, ты уже ${female,взяла,взял} это задание. Не так ли?"
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Работа окончена. Продолжим завтра."
+#exit
+
+*quest3_w
+#has_item NHM.ChemicalFlask,1
+    #deliver nerd_q3|t4
+        #set_flag q3_w2_flag,true
+        #add_item NHM.QuestFlaskWater2
+        #m Образец воды готов. Что там дальше?
+        #exit
+    #m Мне нужно набрать воды в колбу.
+    #exit
+#m Мне что, в карманы эту воду набрать?
+#exit
+
+*questNERD1_3_complete
+#has_item NHM.QuestCelestius,1
+    #remove_item NHM.QuestCelestius,1
+    #m "Я ${female,добыла,добыл} Целестий... вроде. Посмотришь?"
+    #m Ботан|NPCPortraits/NerdP.png|"Хм... Кровь плохо прогрелась. Но это некритично."
+    #m "Слушай, а не расскажешь, зачем оно вообще? Ты, вроде, обещал..."
+    #m Ботан|NPCPortraits/NerdP.png|"Не обещал. Я сказал "возможно". Ты, конечно, ${female,постаралась,постарался}, но я занят. Приходи позже."
+    #m "Когда?"
+    #m Ботан|NPCPortraits/NerdP.png|"Через часик."
+    #m Ботан|NPCPortraits/NerdP.png|"Если не хочешь ждать - езжай в Осирис и расспроси местных Докторов. Это возле железнодорожки Малдро."
+    #m "Ладно. И на том спасибо."
+    #set_flag nerd_q3_completed,true
+    #reward Base.Money,4,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,4
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #reward EXP,RepCrafts,3
+    #exit
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Где мой Целестий?"
+#exit
+
+*questNERD1_4
+#is_quest nerd_q3|unlocked,uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Не-не-не. Не положено. Техника безопасности. Не больше одного задания одновременно!"
+    #exit
+#is_quest nerd_q4|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 6|true
+        #has_item NHM.ChemicalFlask,2|Radio.WalkieTalkie2,1
+            #m Ботан|NPCPortraits/NerdP.png|"Есть у меня одно... поручение. Сверху, скажем так. От Демиурга. Знаешь его?"
+            #is_flag demiurge_intro,true
+                #m "Да, глава Госпиталя. Очень странный мужик."
+                #m Ботан|NPCPortraits/NerdP.png|"Да уж... Тебе еще многое предстоит узнать. Ну... или не предстоит."
+                #jump q4dialogue
+            #m "Неа... Что еще за Демиург?"
+            #m Ботан|NPCPortraits/NerdP.png|"Долго объяснять. Если кратко - глава Госпиталя. Руководит и Госпиталем, и Оазисом."
+            *q4dialogue
+            #m Ботан|NPCPortraits/NerdP.png|"В общем, он связался со мной и поручил одно задание. Причем... тебе. Лично тебе."
+            #m "В смысле... мне? Почему я?"
+            #m Ботан|NPCPortraits/NerdP.png|"Да уж, сразу видно, что ты новенький. Не принято у нас вопросы лишние задавать! Понятия не имею, почему ты. Но лишаться памяти не хочу."
+            #m Ботан|NPCPortraits/NerdP.png|"Возьми две колбы и рацию. Рация - для связи, колбы - для образцов. Ты про гору Блэк знаешь?"
+            #m "Ага... Что-то ${female,слышала,слышал}. Там, вроде, серу и известняк добыть можно."
+            #m Ботан|NPCPortraits/NerdP.png|"И не только. А еще там находится Лаборатория Прометея. И вход в Бункер. Но это неважно. Задание касается первого "этажа" в Горе."
+            #m Ботан|NPCPortraits/NerdP.png|"Демиург как-то упоминал, что Инцидент случился именно из-за сотрудников Лаборатории... Но не об этом сейчас. В Горе есть небольшой ручей, он вытекает наружу, за ее пределы."
+            #m Ботан|NPCPortraits/NerdP.png|"В этот ручей Прометеевцы сливали некий мутаген. Людей они туда не пускали, говорили, мол, токсичные отходы. Но после Инцидента все сотрудники Лаборатории пропали. Не погибли, а именно... пропали."
+            #m Ботан|NPCPortraits/NerdP.png|"И теперь... нам ничто не мешает изучить этот самый мутаген. Возьми 2 колбы, в одну набери этот самый мутаген, во вторую - образцы водорослей. Сразу проверим их воздействие на органику."
+            #m Ботан|NPCPortraits/NerdP.png|"По рации будем держать связь. Удачи!"
+            #m "Эээ... а что в этом задании такого особенного? Просто смотаться до горы и набрать говна в пробирки? И ради этого ${female,нужна,нужен} именно я?"
+            #m Ботан|NPCPortraits/NerdP.png|"Ты что, совсем меня не слушаешь? Я же сказал - у нас не принято задавать лишние вопросы."
+            #quest_unlock nerd_q4
+            #task_unlock nerd_q4|t1 
+            #exit
+        #m Ботан|NPCPortraits/NerdP.png|"Чтобы начать это задание, добудь желтую рацию Валу-Тех и 2 Химические колбы."
+        #exit
+    #m Ботан|NPCPortraits/NerdP.png|"Ты и так не создаешь впечатление умного человека, но чтоб так нагло..."   
+    #exit 
+#is_quest nerd_q4|uncompleted,unfailed
+    #m Ботан|NPCPortraits/NerdP.png|"Если я не ошибаюсь, ты уже ${female,взяла,взял} это задание. Не так ли?"
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Работа окончена. Продолжим завтра."
+#exit
+
+*quest4_mutagen
+#has_item NHM.ChemicalFlask,1|Radio.WalkieTalkie2,1
+    #deliver nerd_q4|t7
+        #set_flag q4_mutagen_flag,true
+        #add_item NHM.QuestFlaskMutagen
+        #m Образец мутагена есть. Теперь образцы водорослей.
+        #is_flag script1,false
+            #m Неизвестный|"Эй, прием. Ты меня слышишь?"
+            #m Голос грубый, мужской... не похож на Ботана.
+            #m "Приём, кто это?"
+            #m Неизвестный|"Неправильный вопрос. Кто я - неважно. По крайней мере сейчас."
+            #m Неизвестный|"Тебя ведь Ботан послал собрать "мутаген"? Якобы по ЛИЧНОМУ поручению Демиурга?"
+            #m "Что? Как вы узнали?"
+            #m Неизвестный|"А ты как думаешь? Выполнял точно такое же "поручение"."
+            #m Неизвестный|"Слушай внимательно. Ботан просто пешка в этих вопросах, а вот Демиург... Подозреваю, что он один из сотрудников Лаборатории Прометея."
+            #m "Но ведь... все сотрудники Лаборатории пропали!"
+            #m Неизвестный|"По словам Ботана. И, собственно, Демиурга. Не очень убедительно, не так ли?"
+            #m "И правда... Что мне делать?"
+            #m Неизвестный|"Продолжай выполнять поручения, набивай репутацию. Как получишь больше доверия - я с тобой снова свяжусь. Я должен продолжать копать."
+            #m Неизвестный|"Главное - не пей никаких препаратов, которые предложат в Оазисе. Есть основания полагать, что Демиург испытывает свое дерьмо на живых людях."
+            #m "Какое еще дерьмо?"
+            #m Неизвестный|"Позже. Ботан пытается выйти с тобой на связь, переключайся."
+            #m "Какая там частота..."
+            #set_flag script1,true
+        #m Ботан|NPCPortraits/NerdP.png|"Эй, прием. Ты здесь?"
+        #m "Да, Ботан. Я здесь. ${female,Взяла,Взял} образец мутагена. Что теперь?"
+        #m Ботан|NPCPortraits/NerdP.png|"Осторожно. Штука токсичная, не допускай попадания на кожу и ради Бога не пей. Случаи бывали, да... Теперь возьми образец воды чуть дальше от места разлива мутагена."
+        #exit
+    #m Мне нужно набрать мутаген в колбу.
+    #exit
+#m Нужна колба и рация. Без помощи Ботана я могу навредить себе.
+#exit
+
+*quest4_algae
+#has_item NHM.ChemicalFlask,1
+    #deliver nerd_q4|t8
+        #set_flag q4_algae_flag,true
+        #add_item NHM.QuestFlaskAlgae
+        #m "Образец воды готов. Эй, Ботан, мне возвращаться?"
+        #m Ботан|NPCPortraits/NerdP.png|"Нет. Подожди минутку."
+        #m Ботан|NPCPortraits/NerdP.png|"..."
+        #m Ботан|NPCPortraits/NerdP.png|"Поднимись на этаж выше. Найди большую железную дверь. Это вход в Лабораторию Прометея. Тебе туда не надо."
+        #m Ботан|NPCPortraits/NerdP.png|"Перед дверью будут лежать бочки с мутагеном. Вскрой одну из них и сравни содержимое бочки и колбы. Чисто визуально. Понять, есть ли разница в цвете."
+        #exit
+    #m Мне нужно набрать воды в колбу.
+    #exit
+#m Мне что, в карманы эту воду набрать?
+#exit
+
+*quest4_compare
+#has_item NHM.QuestFlaskMutagen,1
+        #m "Душнила, ты еще тут?"
+        #m Ботан|NPCPortraits/NerdP.png|"Да. Разумеется, я еще тут."
+        #m "Значит так... то, что я набрала внизу - чуть тусклее. Как будто... "выцвело", что ли. А тот, что в бочке, понасыщеннее будет."
+        #m Ботан|NPCPortraits/NerdP.png|"Наклонись поближе к бочке и рассмотри содержимое внимательнее."
+        #choice
+            questNERD3_yes|Наклониться
+            questNERD3_no|Обмануть Ботана
+        #exit
+#m А куда делся образец мутагена?
+#exit
+
+*questNERD3_yes
+#m Ох... зачем я так... близко...
+#m Что это со мной? Мысли в голове перемешались...
+#is_flag demiurge_intro,true
+    #m Я... помню это ощущение... Прямо как в Госпитале, когда я ${female,выполняла,выполнял} поручение Демиурга... Черт возьми, мысли в голове.... не... неуловимы...
+    #m "Эй... Я эээ... яяяяя тут нааааа..."
+    #m Ботан|NPCPortraits/NerdP.png|"Отлично. Мутаген еще не растерял свойства. Ты скоро придешь в себя. Возвращайся сразу же."
+    #apply_stat Fear,50
+    #set_flag q4_compare_flag,true
+    #exit
+#m Какое... странное чувство... Никогда такого... не...
+#m Кажется... теряю... сознание...
+#m Ботан|NPCPortraits/NerdP.png|"Эй, прием. Ты тут?."
+#m "Д-да... яяяя..."
+#m Ботан|NPCPortraits/NerdP.png|"Ага, я понял. Можешь возвращаться."
+#apply_stat Fear,50
+#set_flag q4_compare_flag,true
+#exit
+
+*questNERD3_no
+#m "Так, ну... я ${female,наклонилась,наклонился}. Никаких новых деталей не вижу."
+#m Ботан|NPCPortraits/NerdP.png|"Хм... А самочувствие твое как? В порядке?"
+#m "Эээ... да, вроде. А что?"
+#is_flag demiurge_intro,true
+    #m Ботан|NPCPortraits/NerdP.png|"Странно. Демиург не упоминал о твоей устойчивости к..."
+    #m "К чему?"
+    #m Ботан|NPCPortraits/NerdP.png|"Да так... Неважно. Можешь возвращаться."
+    #set_flag q4_compare_flag,true
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Жаль, что ты не ${female,познакомилась,познакомился} с Демиургом. Вам было бы что обсудить."
+#m "Эээ... цвет мутагена?"
+#m Ботан|NPCPortraits/NerdP.png|"Что? Нет, я о твоей устойчивости к..."
+#m "Это связь барахлит или ты не договариваешь?"
+#m Ботан|NPCPortraits/NerdP.png|"А? Да, связь, наверное. В общем, на этом всё. Возвращайся."
+#set_flag q4_compare_flag,true
+#exit
+
+*questNERD1_4_complete
+#has_item NHM.QuestFlaskMutagen,1|NHM.QuestFlaskAlgae,1
+    #remove_item NHM.QuestFlaskMutagen,1
+    #remove_item NHM.QuestFlaskAlgae,1
+    #m Ботан|NPCPortraits/NerdP.png|"Как ты себя чувствуешь? Голова не кружится?"
+    #m "Неа. А должна?"
+    #m Ботан|NPCPortraits/NerdP.png|"Что? Нет-нет, конечно, не должна. Просто интересуюсь твоим самочувствием."
+    #m "Спасибо, Душнила. Я пойду?"
+    #m Ботан|NPCPortraits/NerdP.png|"Конечно."
+    #set_flag nerd_q4_completed,true
+    #reward Base.Money,3,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,10
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,5
+        #exit
+    #reward EXP,RepCrafts,7.5
+    #exit
+#m Ботан|NPCPortraits/NerdP.png|"Мне нужны образцы мутагена и водорослей."
+#exit
+
+*reset_nerd_q3
+    #set_flag q3_w2_flag,false
+    #set_flag nerd_q3_flag,false
+    #task_complete nerd_q3|t0
+#exit
+
+*reset_nerd_q4
+    #set_flag nerd_q4_flag,false
+    #task_complete nerd_q4|t0
+#exit

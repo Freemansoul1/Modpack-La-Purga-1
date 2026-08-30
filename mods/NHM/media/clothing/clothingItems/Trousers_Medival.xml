@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\Bob_Trousers_Medival</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\Kate_Trousers_Medival</m_FemaleModel>
+	<m_GUID>b3a03055-d544-40b8-b11d-99d3ccdd392a</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\FactionFeatures\Trousers_Medival</textureChoices>
+</clothingItem>

@@ -1,3 +1,0 @@
-IG_UI_IT = {
-    IGUI_BarrelHasFuel = "Ha carburante all'interno.",
-}

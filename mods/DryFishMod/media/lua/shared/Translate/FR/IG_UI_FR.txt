@@ -1,7 +1,0 @@
-IGUI_FR = {
-    IGUI_ContainerTitle_DryFishNet = "Filet de séchage du poisson",
-    IGUI_ContainerTitle_DryFishRack = "Séchoir à poisson",
-    IGUI_ContainerTitle_DryFishSkewer = "Brochette de séchage de poisson",
-    IGUI_DryFishMod_RequiresCampfire = "Nécessite un feu de camp pour sécher",
-    IGUI_DryFishMod_DryProgressTooltip = "Progression du séchage : %1 %",
-}

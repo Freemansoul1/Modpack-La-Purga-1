@@ -1,0 +1,62 @@
+module Base
+{		
+
+	item Hat_Gasmask2
+	{
+		Type = Clothing,
+		DisplayName = Improvised Gasmask,
+		ClothingItem = Hat_Gasmask2,
+		BodyLocation = MaskEyes,
+		IconsForTexture = Gasmask2,
+		CanHaveHoles = false,
+        RemoveOnBroken = false,
+		BloodLocation = Head,
+		BiteDefense = 10,
+		ScratchDefense = 10,
+		ChanceToFall = 0,
+		Insulation = 0,
+		WaterResistance = 1,
+        Weight = 1,
+		Tooltip 		= "Improvised Radiation Protection",
+    }
+
+	item ClothPauldrons
+    {
+        Type = Clothing,
+        DisplayName = Cloth Pauldrons,
+        ClothingItem = ClothPauldrons,
+        BodyLocation = JacketHat,
+        Icon = PonchoWhite,
+        BloodLocation = Shirt;Head,
+        ClothingItemExtra = ClothPauldronsDown,
+        ClothingItemExtraOption = DownHoodie,
+        clothingExtraSubmenu = UpHoodie,
+        BiteDefense = 10,
+        ScratchDefense = 10,
+        NeckProtectionModifier = 0.8,
+        Insulation = 0.1,
+        WindResistance = 0.75,
+        WaterResistance = 1.0,
+		FabricType = Cotton,
+    }
+
+	item ClothPauldronsDown
+    {
+        Type = Clothing,
+        DisplayName = Cloth Pauldrons,
+        ClothingItem = ClothPauldronsDOWN,
+        BodyLocation = Pauldrons,
+        Icon = PonchoWhite,
+        BloodLocation = Shirt;FullHelmet,
+        ClothingItemExtra = ClothPauldrons,
+        ClothingItemExtraOption = UpHoodie,
+        clothingExtraSubmenu = DownHoodie,
+        BiteDefense = 10,
+        ScratchDefense = 10,
+        NeckProtectionModifier = 0.8,
+        Insulation = 0.1,
+        WindResistance = 0.75,
+        WaterResistance = 1.0,
+		FabricType = Cotton,
+    }
+}

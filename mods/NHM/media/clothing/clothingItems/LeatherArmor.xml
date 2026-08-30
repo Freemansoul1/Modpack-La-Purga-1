@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\Bob_LeatherArmor</m_MaleModel>
+	<m_FemaleModel>Static\clothes\Kate_LeatherArmor</m_FemaleModel>
+	<m_GUID>83f1bc16-f186-4109-8691-cf390b35bdcd</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Spine1</m_AttachBone>
+	<textureChoices>clothes\ChestArmor\LeatherArmor</textureChoices>
+</clothingItem>

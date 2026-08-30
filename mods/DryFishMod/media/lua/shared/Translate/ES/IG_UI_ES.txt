@@ -1,7 +1,0 @@
-IGUI_ES = {
-    IGUI_ContainerTitle_DryFishNet = "Red de secado de pescado",
-    IGUI_ContainerTitle_DryFishRack = "Estante de secado de pescado",
-    IGUI_ContainerTitle_DryFishSkewer = "Pincho de secado de pescado",
-    IGUI_DryFishMod_RequiresCampfire = "Requiere una fogata para secar",
-    IGUI_DryFishMod_DryProgressTooltip = "Progreso de secado: %1%",
-}

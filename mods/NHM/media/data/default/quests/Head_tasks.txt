@@ -1,0 +1,6 @@
+*cabeza_q1_t1
+#name Entra en la oficina del Demiurgo
+*cabeza_q1_t2
+#name Encuentra una bolsa de sangre
+*cabeza_q1_t3
+#name Regresar al Gerente

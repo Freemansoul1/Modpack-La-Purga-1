@@ -1,0 +1,117 @@
+module Base
+{
+
+
+	sound openfishingbox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FishingBoxOpen.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound closefishingbox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FishingBoxClose.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound putinfishingbox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FishingBoxPutIn.ogg,
+			volume = 1.0,
+		}
+	}
+
+
+	sound emincer
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/EMincer.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound mmincer
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/MMincer.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound browselurebox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FishingLureBrowse.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound openlurebox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FishingLureOpen.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound openhiddenbox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/HiddenboxOpen.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound woodgrip
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/woodengrip.ogg,
+			volume = 1.0,
+		}
+	}
+
+	sound FishingSnapping
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Fishing_Snap.ogg,
+			volume = 1.0,
+		}
+	}
+	sound FishingReel
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Fishing_reel.ogg,
+			volume = 1.0,
+		}
+	}
+
+
+}
+

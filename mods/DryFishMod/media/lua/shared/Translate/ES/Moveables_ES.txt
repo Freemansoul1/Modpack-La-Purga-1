@@ -1,5 +1,0 @@
-Moveables_En = {
-	DFM_Net = "Red de secado de pescado",
-	DFM_Rack = "Estante de secado de pescado",
-	DFM_Skewer = "Brocheta de secado de pescado",
-}

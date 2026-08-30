@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Bob_BoneLegPads</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Kate_BoneLegPads</m_FemaleModel>
+	<m_GUID>09fb3299-c1a2-46ee-b39f-25d157b7ce5e</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes\LegArmor\BoneLegPads</textureChoices>
+</clothingItem>

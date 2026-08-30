@@ -1,6 +1,0 @@
-UI_RU = {
-
-UI_Knockout_DebugOnlinePlayer = "Игроки онлайн"
-UI_Knockout_DebugForceKnockout = "Активировать режим без сознания"
-UI_Knockout_DebugWakeUpPlayer = "Разбудить игрока"
-}

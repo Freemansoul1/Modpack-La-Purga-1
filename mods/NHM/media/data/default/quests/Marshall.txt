@@ -1,0 +1,25 @@
+#quest marshall_q1|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Marshall.txt,reset_marshall_q1
+    #task t1
+        #set KillZombie|150
+        #action UnlockTask|marshall_q1|t2
+        #action SetFlag|marshall_q1_flag|true
+    #task t2
+        #set RaiseFlag|marshall_q1_completed
+        #action SetFlag|marshall_q1_completed|false
+        #action SetFlag|marshall_q1_flag|false
+        #action CompleteQuest|marshall_q1
+
+#quest marshall_q2|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Marshall.txt,reset_marshall_q2
+    #task t1
+        #set KillZombie|400
+        #action UnlockTask|marshall_q2|t2
+        #action SetFlag|marshall_q2_flag|true
+    #task t2
+        #set RaiseFlag|marshall_q2_completed
+        #action SetFlag|marshall_q2_completed|false
+        #action SetFlag|marshall_q2_flag|false
+        #action CompleteQuest|marshall_q2

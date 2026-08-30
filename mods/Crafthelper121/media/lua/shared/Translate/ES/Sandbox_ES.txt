@@ -1,5 +1,0 @@
-Sandbox_ES = {
-    Sandbox_WastelandFarming = "Farmeo avanzado",
-    Sandbox_WastelandFarming.EnableIndoorPenaltyWithoutLamp = "Penalty en interiores",
-    Sandbox_WastelandFarming.EnableIndoorPenaltyWithoutLamp_tooltip = "Activar deterioro de la vida de las plantas en interiores al no tener lampara",
-}

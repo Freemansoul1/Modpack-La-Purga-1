@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\TuristBag</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\TuristBag</m_FemaleModel>
+	<m_GUID>c3659809-414b-4e93-8ff7-e8369bde7f00</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\TuristBag</textureChoices>
+        <textureChoices>clothes\TuristBag2</textureChoices>
+        <textureChoices>clothes\TuristBag3</textureChoices>
+        <textureChoices>clothes\TuristBag4</textureChoices>
+</clothingItem>

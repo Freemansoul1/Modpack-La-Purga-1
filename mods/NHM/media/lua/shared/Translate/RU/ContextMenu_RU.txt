@@ -1,0 +1,317 @@
+ContextMenu_RU = {
+
+    /****************************Actions****************************/
+
+    ContextMenu_WearIt = "Надеть",
+    ContextMenu_TakePill = "Принять таблетку",
+    ContextMenu_ReadQ = "Прочесть заметки",
+    ContextMenu_TakeHerbDec = "Принять отвар",
+    ContextMenu_Search_Trash = "Искать в мусоре",
+    ContextMenu_Extract_Gas = "Заполнить пропановую горелку",
+    ContextMenu_Extract_MuchGas = "Заполнить баллон с пропаном",
+    ContextMenu_TakeGasFromGasStation = "Заправить газом",
+    ContextMenu_UseKeycard = "Использовать ключ-карту",
+    ContextMenu_Mining = "Добывать ресурсы",
+    ContextMenu_MicroChip_Search = "Искать микросхемы",
+
+    /****************************Sections****************************/
+
+    ContextMenu_Workbenches = "Верстаки",
+    ContextMenu_Smelting = "Выплавка",
+    ContextMenu_Decor = "Продвинутое",
+    ContextMenu_Decoration = "Декорации",
+    ContextMenu_NHContainer = "Контейнеры",
+    ContextMenu_Slots = "Игровые автоматы",
+    ContextMenu_NHLight = "Источники света",
+    ContextMenu_SlotMachines = "Игровые автоматы",
+    ContextMenu_RainCollectors = "Сбор дождевой воды",
+    ContextMenu_Posters = "Плакаты",
+
+    /****************************Workbenches****************************/
+
+    ContextMenu_Chemistry_Workbench = "Верстак Химика",
+    ContextMenu_FirstAid_Workbench = "Верстак Медика",
+    ContextMenu_Cooking_Workbench = "Верстак Кулинара",
+    ContextMenu_Mechanics_Workbench = "Верстак Автомеханика",
+    ContextMenu_Leatherworking_Workbench = "Верстак Кожевника",
+    ContextMenu_Tailor_Workbench = "Верстак Портного",
+    ContextMenu_Electric_Workbench = "Верстак Электрика",
+    ContextMenu_Engineer_Workbench = "Верстак Инженера",
+    ContextMenu_Research_Workbench = "Стол Исследователя",
+    ContextMenu_Blast_Furnace = "Доменная печь",
+    ContextMenu_Stone_Furnace = "Каменная печь",
+    ContextMenu_NHAnvil = "Наковальня",
+    ContextMenu_Foundry_Kettle = "Литейный котел",
+    ContextMenu_NHStill = "Самогонный аппарат",
+    ContextMenu_Trainer = "Тренажер",
+
+    /****************************Treadmill****************************/
+    
+    ContextMenu_Train = "Тренировать",
+    ContextMenu_TrainRun = "Бег",
+    ContextMenu_TrainLightfoot = "Легкий шаг",
+    ContextMenu_TrainNimble = "Проворность",
+    ContextMenu_TrainSneak = "Скрытность",
+
+    /****************************UserCarpentry****************************/
+
+    ContextMenu_Telescope = "Телескоп",
+    ContextMenu_Camera = "Камера",
+    ContextMenu_Searchlight = "Прожектор",
+    ContextMenu_NHBookCase = "Книжная стойка",
+    ContextMenu_NHSmallBookCase = "Журнальный столик",
+    ContextMenu_FanLocker = "Шкаф с отсеками",
+    ContextMenu_SlotMachine1 = "Игровой автомат 1",
+    ContextMenu_SlotMachine2 = "Игровой автомат 2",
+    ContextMenu_SlotMachine3 = "Игровой автомат 3",
+    ContextMenu_SlotMachine4 = "Игровой автомат 4",
+    ContextMenu_SlotMachine5 = "Игровой автомат 5",
+    ContextMenu_SlotMachine6 = "Игровой автомат 6",
+    ContextMenu_StoneWell1 = "Декоративный колодец",
+    ContextMenu_StoneWell2 = "Декоративный колодец 2",
+    ContextMenu_FarmDec1 = "Зеленый декор",
+    ContextMenu_FarmDec2 = "Зеленый декор 2",
+    ContextMenu_FarmDec3 = "Зеленый декор 3",
+    ContextMenu_FarmDec4 = "Зеленый декор 4",
+    ContextMenu_NHLocker1 = "Декоративный шкаф",
+    ContextMenu_NHLocker2 = "Большой шкаф",
+    ContextMenu_NHLocker3 = "Трансформатор",
+    ContextMenu_NHLocker4 = "Вместительный шкаф",
+    ContextMenu_LawnMower = "Газонокосилка",
+    ContextMenu_NHRainCollector = "Цистерна для воды",
+    ContextMenu_AnimePlakatik = "Постер с Ханако",
+    ContextMenu_RayOfHope = "Постер с радио Луч Надежды",
+    ContextMenu_Arnold = "Постер с Арни",
+    ContextMenu_Pepe = "Постер с лягушонком Пепе",
+    ContextMenu_Volchara = "Постер с санитаром леса",
+    ContextMenu_Gayshit = "Постер с нарисованной девочкой",
+
+    /****************************CarCraft****************************/
+
+    ContextMenu_CraftCar = "Сварить раму автомобиля",
+    ContextMenu_CarNeeds = "Необходимо",
+    ContextMenu_CarOutside = "Вы должны находиться снаружи!",
+    ContextMenu_Consuming = "<LINE>(расходуется)",
+    ContextMenu_Materials = "Все материалы должны находиться в основном инвентаре!",
+    ContextMenu_CarNormalDesc = "Полноразмерный седан, который можно найти по всему округу Нокс.",
+    ContextMenu_CarSmallDesc = "2-дверный 4-местный хэтчбек, который можно найти по всему округу Нокс.",
+    ContextMenu_CarStationWagonDesc = "Полноразмерный универсал, который можно найти по всему округу Нокс.",
+    ContextMenu_CarPickUpTruckDesc = "Пикап, который можно найти по всему округу Нокс.",
+    ContextMenu_CarPickUpVanDesc = "Внедорожник, который можно найти по всему округу Нокс.",
+
+    /****************************AdminCarpentry****************************/
+
+    ContextMenu_Admin = "Админское",
+    ContextMenu_Resources = "Ресурсы",
+    ContextMenu_NPCs = "NPC",
+
+    ContextMenu_Demiurge = "Демиург",
+    ContextMenu_Nurse = "Сестра",
+    ContextMenu_Sentry = "Часовой",
+    ContextMenu_Ghost = "Призрак",
+    ContextMenu_Hermit = "Отшельник",
+    ContextMenu_Head = "Заведующий",
+    ContextMenu_Assistant = "Ассистент",
+    ContextMenu_Pharmacist = "Фармацевт",
+    ContextMenu_Cook = "Кухарка",
+    ContextMenu_Cleaner = "Уборщица",
+    ContextMenu_Cain = "Каин",
+    ContextMenu_Abel = "Авель",
+    ContextMenu_Trader = "Торгаш",
+    ContextMenu_Nerd = "Ботан",
+    ContextMenu_Aspirin = "Аспирин",
+    ContextMenu_Kioshi = "Киоши",
+    ContextMenu_Sparkle = "Искра",
+    ContextMenu_Silk = "Шелк",
+    ContextMenu_Hound = "Ищейка",
+
+    /****************************Mining****************************/
+
+    ContextMenu_CopperMine = "Источник меди",
+    ContextMenu_TinMine = "Источник олова",
+    ContextMenu_IronMine = "Источник железа",
+    ContextMenu_LeadMine = "Источник свинца",
+    ContextMenu_ChromiumMine = "Источник хрома",
+    ContextMenu_NickelMine = "Источник никеля",
+    ContextMenu_GasStation = "Газоколонка",
+    ContextMenu_LimeMine = "Источник известняка",
+    ContextMenu_SaltMine = "Источник соли",
+    ContextMenu_SulfurMine = "Источник серы",
+    ContextMenu_CoalMine = "Источник угля",
+    ContextMenu_StoneMine = "Источник камня",
+
+    ContextMenu_Mine_Copper = "Добывать медь",
+    ContextMenu_Mine_Tin = "Добывать олово",
+    ContextMenu_Mine_Iron = "Добывать железо",
+    ContextMenu_Mine_Lead = "Добывать свинец",
+    ContextMenu_Mine_Nickel = "Добывать никель",
+    ContextMenu_Mine_Chromium = "Добывать хром",
+    ContextMenu_Mine_Sulfur = "Добывать серу",
+    ContextMenu_Mine_Limestone = "Добывать известняк",
+    ContextMenu_Mine_Coal = "Добывать уголь",
+    ContextMenu_Mine_Salt = "Добывать соль",
+    ContextMenu_Mine_Stone = "Добывать камень",
+    ContextMenu_Get_Petrol = "Добывать бензин",
+    ContextMenu_Entry_Lab = "Войти в лабораторию",
+    ContextMenu_Exit_Lab = "Выйти из лаборатории",
+    ContextMenu_Entry_Bunker = "Спуститься в бункер",
+    ContextMenu_Exit_Bunker = "Покинуть бункер",
+    ContextMenu_Rob_Card = "Взломать банкомат",
+    ContextMenu_EntryLuk = "Спуститься в канализацию",
+    ContextMenu_EntryLestnica = "Покинуть канализацию",
+    ContextMenu_Obvjesy_Search = "Искать обвесы",
+
+    ContextMenu_Active_Comp = "Добывать активное вещество",
+    ContextMenu_Get_Weaponparts = "Добывать детали оружия",
+
+    /****************************Doors****************************/
+
+    ContextMenu_Blue_Wooden_Door = "Голубая деревянная дверь",
+    ContextMenu_Brown_Wooden_Door = "Коричневая деревянная дверь",
+    ContextMenu_Dark_Brown_Wooden_Door = "Темная деревянная дверь",
+    ContextMenu_White_Wooden_Door = "Белая деревянная дверь",
+    ContextMenu_Metal_Beige_Door = "Бежевая металлическая дверь",
+    ContextMenu_Metal_Grey_Door = "Серая металлическая дверь",
+    ContextMenu_Metal_Orange_Door = "Оранжевая металлическая дверь",
+    ContextMenu_Brown_Window_Wooden_Door = "Коричневая дверь с окном",
+    ContextMenu_White_Window_Wooden_Door ="Белая дверь с окном",
+    ContextMenu_Strong_Door = "Укрепленная дверь",
+
+    /****************************NVGoggles****************************/
+
+    ContextMenu_NVCharge = "Зарядить. Заряд: ",
+    ContextMenu_NVFilter = "Фильтр: ",
+    ContextMenu_NVBrightness = "Яркость: ",
+    ContextMenu_NVNoiseless = "Бесшумный",
+    ContextMenu_NVLinearBlur = "Линейное размытие",
+    ContextMenu_NVInfrared = "Инфракрасный",
+    ContextMenu_NVXRay = "Рентген",
+
+    /****************************NPCs****************************/
+
+    ContextMenu_Quests = "Задания",
+    ContextMenu_Exchange = "Обмен валюты",
+
+    ContextMenu_Sentry_Hello = "Поговорить",
+    ContextMenu_Sentry_Exit = "Покинуть больницу",
+    
+    ContextMenu_Hermit_Hello = "Поздороваться",
+    ContextMenu_Hermit_Humour = "Послушать анекдот",
+
+    ContextMenu_Cleaner_Hello = "Поговорить",
+    ContextMenu_Demiurge_Hello = "Поговорить",
+    ContextMenu_Nurse_Hello = "Поговорить",
+    ContextMenu_Head_Hello = "Поговорить",
+    ContextMenu_Pharmacist_Hello = "Поговорить",
+    ContextMenu_Assistant_Hello = "Поговорить",
+    ContextMenu_Cook_Hello = "Поговорить",
+    ContextMenu_DailyFood = "Получить порцию пищи",
+
+    ContextMenu_Sparkle_Hello = "Поговорить",
+    ContextMenu_Kioshi_Hello = "Поговорить",
+    ContextMenu_Aspirin_Hello = "Поговорить",
+    ContextMenu_Nerd_Hello = "Поговорить",
+    ContextMenu_Hound_Hello = "Поговорить",
+    ContextMenu_Silk_Hello = "Поговорить",
+    ContextMenu_Trader_Hello = "Поговорить",
+    ContextMenu_Cain_Hello = "Поговорить",
+    ContextMenu_Abel_Hello = "Поговорить",
+
+    ContextMenu_TutorialElectric = "Обучение: Электрика",
+    ContextMenu_TutorialLeather = "Обучение: Шитье + Кожевничество",
+    ContextMenu_TutorialChem = "Обучение: Химия",
+    ContextMenu_TutorialAid = "Обучение: Первая помощь",
+    ContextMenu_TutorialEng = "Обучение: Инженерия",
+    ContextMenu_TutorialHunt = "Обучение: Охота",
+    ContextMenu_TutorialTrade = "Обучение: Торговля",
+
+    ContextMenu_Tutorial1 = "Обучение [1/8]",
+    ContextMenu_Tutorial2 = "Обучение [2/8]",
+    ContextMenu_Tutorial3 = "Обучение [3/8]",
+    ContextMenu_Tutorial4 = "Обучение [4/8]",
+    ContextMenu_Tutorial5 = "Обучение [5/8]",
+    ContextMenu_Tutorial6 = "Обучение [6/8]",
+    ContextMenu_Tutorial7 = "Обучение [7/8]",
+    ContextMenu_Tutorial8 = "Обучение [8/8]",
+
+    ContextMenu_CompleteQuest = "Завершить задание",
+
+    ContextMenu_CleanerQuest1 = "Задание: отмыть пол",
+    ContextMenu_CleanerQuest2 = "Задание: отстирать рубашку",
+
+    ContextMenu_DemiurgeQuest1 = "Задание: отыскать дело в архиве",
+    ContextMenu_DemiurgeQuest2 = "Задание: добыть анатомическую пилу",
+
+    ContextMenu_AssistantQuest1 = "Задание: исследовать бактерии",
+    ContextMenu_AssistantQuest2 = "Задание: карта звездного неба",
+
+    ContextMenu_NurseQuest1 = "Задание: принести дискету",
+    ContextMenu_NurseQuest2 = "Задание: наполнить колбу",
+
+    ContextMenu_HeadQuest1 = "Задание: достать огнетушитель",
+    ContextMenu_HeadQuest2 = "Задание: сменить пакет крови",
+
+    ContextMenu_CookQuest1 = "Задание: отмыть тарелку",
+    ContextMenu_CookQuest2 = "Задание: принести пиво",
+
+    ContextMenu_PharmacistQuest1 = "Задание: синтезировать таблетки",
+    ContextMenu_PharmacistQuest2 = "Задание: любовная записка",
+
+    ContextMenu_TraderExchange1 = "10 Серебряных самородков = 1 Монета",
+    ContextMenu_TraderExchange2 = "10 Золотых самородков = 1 Монета",
+    ContextMenu_TraderExchange3 = "1 Серебряный слиток = 10 Монет",
+    ContextMenu_TraderExchange4 = "1 Золотой слиток = 10 Монет",
+
+    ContextMenu_SparkleQuest1 = "Задание 0: добыть 5 электронных деталей",
+    ContextMenu_SparkleQuest2 = "Задание 1: добыть отвертку",
+    ContextMenu_SparkleQuest3 = "Задание 2: принести 3 кремния",
+    ContextMenu_SparkleQuest4 = "Задание 3: добыть 2 рации Валу-Тех",
+
+    ContextMenu_SilkQuest1 = "Задание 0: добыть котомку",
+    ContextMenu_SilkQuest2 = "Задание 1: добыть веревку",
+    ContextMenu_SilkQuest3 = "Задание 2: принести тонкую кожу",
+    ContextMenu_SilkQuest4 = "Задание 3: добыть школьный рюкзак",
+
+    ContextMenu_AspirinQuest1 = "Задание 0: создать 2 угольные таблетки",
+    ContextMenu_AspirinQuest2 = "Задание 1: добыть 2 образца зараженного",
+    ContextMenu_AspirinQuest3 = "Задание 2: принести по 1 припарке каждого вида",
+    ContextMenu_AspirinQuest4 = "Задание 3: найти витамины",
+
+    ContextMenu_NerdQuest1 = "Задание 0: создать химическую колбу",
+    ContextMenu_NerdQuest2 = "Задание 1: добыть 2 золы, 2 серного порошка, 2 известняка",
+    ContextMenu_NerdQuest3 = "Задание 2: синтезировать азот",
+    ContextMenu_NerdQuest4 = "Задание 3: синтезировать 2 пороха",
+
+    ContextMenu_KioshiQuest1 = "Задание 0: принести 4 стрелы",
+    ContextMenu_KioshiQuest2 = "Задание 1: добыть 4 гильзы",
+    ContextMenu_KioshiQuest3 = "Задание 2: создать пружину",
+    ContextMenu_KioshiQuest4 = "Задание 3: создать корпус пистолета",
+
+    ContextMenu_HoundQuest1 = "Задание 0: добыть 3 пера",
+    ContextMenu_HoundQuest2 = "Задание 1: добыть 3 кости",
+    ContextMenu_HoundQuest3 = "Задание 2: создать мышеловку",
+    ContextMenu_HoundQuest4 = "Задание 3: принести тушу дикого зайца",
+
+    ContextMenu_ARQuests = "Задания на автоматы",
+    ContextMenu_RQuests = "Задания на винтовки и карабины",
+    ContextMenu_PQuests = "Задания на пистолеты и револьверы",
+    ContextMenu_SQuests = "Задания на дробовики",
+    ContextMenu_SMGQuests = "Задания на пистолеты-пулеметы",
+
+    ContextMenu_CainQuest1AR = "Задание: отформатировать данные",
+    ContextMenu_CainQuest2AR = "Задание: скачать информацию с носителя",
+
+    ContextMenu_CainQuest1R = "Задание: добыть 20 жетонов",
+    ContextMenu_CainQuest2R = "Задание: добыть 40 жетонов",
+
+    ContextMenu_AbelQuest1P = "Задание: добыть припасов (еда)",
+
+    ContextMenu_AbelQuest1S = "Задание: добыть комплекты одежды",
+
+    ContextMenu_AbelQuest1SMG = "Задание: анализ среды Луисвилля",
+    ContextMenu_AbelQuest2SMG = "Задание: анализ агрессивной зараженной среды",
+
+    ContextMenu_GhostQuest1 = "Задание: поиск схрона",
+    ContextMenu_Ghost_Hello = "Поговорить",
+    
+}

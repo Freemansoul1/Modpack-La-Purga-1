@@ -1,4 +1,0 @@
-Tooltip_ES = {
-Tooltip_RaidAxe = "Puede usarse para atacar bases. Golpea las estructuras construidas por el jugador para causar daño y destruirlas.",
-Tooltip_RaidC4 = "Puede usarse para asaltar bases. Haz clic derecho para poder ajustar el cronometro antes de que explote.<br>Equipalo como tu arma principal y ataca para lanzarlo y que se active.",
-} 

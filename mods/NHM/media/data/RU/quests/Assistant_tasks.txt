@@ -1,0 +1,6 @@
+*assistant_q1_t1
+#name Найти жилую комнату с телескопом
+*assistant_q1_t2
+#name Посмотреть в телескоп
+*assistant_q1_t3
+#name Вернуться к Ассистенту

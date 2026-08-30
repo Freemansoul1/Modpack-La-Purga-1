@@ -1,0 +1,15 @@
+#quest nurse_q1
+    #task t1
+        #set GotoLocation|11538,7559,11543,7562,1|true
+        #action UnlockTask|nurse_q1|t2
+    #task t2
+        #set ContextAction|Загрузить данные на дискету|11543,7561,1|2|Nurse.txt,quest1_q1_nurse|q1_nurse_flag
+        #action UnlockTask|nurse_q1|t3
+        #action SetFlag|nurse_q1_flag|true
+        #action SetFlag|q1_nurse_flag|false
+    #task t3
+        #set RaiseFlag|nurse_q1_completed
+        #action Reward|Base.Money,1,common
+        #action SetFlag|nurse_q1_completed|false
+        #action SetFlag|nurse_q1_flag|false
+        #action CompleteQuest|nurse_q1

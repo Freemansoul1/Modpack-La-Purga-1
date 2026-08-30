@@ -1,0 +1,65 @@
+#is_flag trader_intro,true
+    #jump loop
+
+*intro
+#m Trader|NPCPortraits/TraderP.png|"Ven e intercambia. Tengo dinero mientras el cliente tenga el producto que necesito."
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Trader|NPCPortraits/TraderP.png|"¡Nos vemos!"
+#exit
+
+*intro_hello
+#m "Hola, ¿Qué estás intercambiando?"
+#m Trader|NPCPortraits/TraderP.png|"Oh ho ho ¡Trader sabía que no podías pasar de él!"
+#m Trader|NPCPortraits/TraderP.png|"Es muy simple, compro 5 piezas de oro o plata por 1 dólar, compro una barra de oro o plata por 20 dólares."
+#m "Estás vacío, ¿Por qué necesitas plata y oro... en este... "nuevo" mundo?"
+#m Trader|NPCPortraits/TraderP.png|"Novato demasiado curioso, ¡El comerciante está aquí para comerciar, no para responder preguntas! ¡Comercia o no estorbes!"
+#fade_out black
+#set_flag trader_intro,true
+#fade_in
+#reveal Trader
+#exit
+
+*loop
+#m Trader|NPCPortraits/TraderP.png|"Trader está aquí para comprar todo el oro y la plata del condado de Knox!"
+
+*backtolist
+#choice
+    buyNugget|Intercambiar pepitas
+    buyIngot|Intercambiar lingotes
+    quest_exit|Salir
+
+*buyNugget
+#has_item NHM.NuggetGold,5
+    #remove_item NHM.NuggetGold,5
+    #add_item Base.Money,1
+    #m Trader|NPCPortraits/TraderP.png|"¡El comerciante está feliz por un intercambio útil!"
+    #exit
+#has_item NHM.NuggetSilver,5
+    #remove_item NHM.NuggetSilver,5
+    #add_item Base.Money,1
+    #m Trader|NPCPortraits/TraderP.png|"El comerciante está feliz por un intercambio útil!"
+    #exit
+#m Trader|NPCPortraits/TraderP.png|"Trader se enfada cuando ve que pierde su tiempo, ¡Sal de aquí!"
+#exit
+
+*buyIngot
+#has_item NHM.IngotGold,1
+    #remove_item NHM.IngotGold,1
+    #add_item Base.Money,20
+    #m Trader|NPCPortraits/TraderP.png|"¡Es un placer hacer negocios con usted!"
+    #exit
+#has_item NHM.IngotSilver,1
+    #remove_item NHM.IngotSilver,1
+    #add_item Base.Money,20
+    #m Trader|NPCPortraits/TraderP.png|"¡Es un placer hacer negocios con usted!"
+    #exit
+#m Trader|NPCPortraits/TraderP.png|"Trader se enfada cuando ve que pierde su tiempo, ¡Sal de aquí!"
+#exit
+
+*quest_exit
+#exit

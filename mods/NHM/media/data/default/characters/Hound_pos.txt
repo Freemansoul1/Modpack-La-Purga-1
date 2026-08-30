@@ -1,0 +1,2 @@
+#npc_create Sabueso|NPC/Hound.png|11576,7662,0
+#exit

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\Bob_LeatherBracerR</m_MaleModel>
+	<m_FemaleModel>static\clothes\Kate_LeatherBracerR</m_FemaleModel>
+	<m_GUID>d3fa7ffc-8786-44b5-a5bb-3d0cb0d6e4e4</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_R_Hand</m_AttachBone>
+	<textureChoices>clothes\ArmsArmor\LeatherBracerR</textureChoices>
+</clothingItem>
+
+

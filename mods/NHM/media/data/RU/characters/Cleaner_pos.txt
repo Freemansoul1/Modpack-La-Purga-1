@@ -1,0 +1,2 @@
+#npc_create Cleaner|NPC/Cleaner.png|11542,7573,0
+#exit

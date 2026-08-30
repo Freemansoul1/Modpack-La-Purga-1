@@ -1,0 +1,6 @@
+ContextMenu_DE = {
+	ContextMenu_ThrowOutTheWindow = "%1 aus dem Fenster werfen"
+	ContextMenu_ThrowMultipleOutTheWindow = "%1 Gegenstände aus dem Fenster werfen"
+	ContextMenu_ThrowOverFence = "%1 über den Zaun werfen"
+	ContextMenu_ThrowMultipleOverFence = "%1 Gegenstände über den Zaun werfen"
+}

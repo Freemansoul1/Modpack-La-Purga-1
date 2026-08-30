@@ -1,6 +1,0 @@
-name=Last Push Trait - Remove from character creation
-id=LastPushTraitNotPickable1
-require=LastPushTrait1
-icon=icon.png
-poster=poster.png
-description=Removes the ability to pick the trait during character creation, making it only accessible when a certain strength level is achieved.

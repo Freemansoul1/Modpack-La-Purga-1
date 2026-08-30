@@ -1,0 +1,18 @@
+module Base
+{		
+
+	item Hat_PNV
+	{
+		Tags = NVITEM,
+		Type = Clothing,
+		DisplayName = Handmade PNV,
+		ClothingItem = Hat_PNV,
+		BodyLocation = MaskEyes,
+		IconsForTexture = PNV,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+        Weight = 1,
+        RemoveOnBroken = false,
+		Tooltip 		= Tooltip_PNV,
+    }
+}

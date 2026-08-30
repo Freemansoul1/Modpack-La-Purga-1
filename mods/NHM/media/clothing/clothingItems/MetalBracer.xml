@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Bob_MetalBracer</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Kate_MetalBracer</m_FemaleModel>
+	<m_GUID>98d2806e-ba1b-4678-9856-75f683a99a19</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes\ArmsArmor\MetalBracer</textureChoices>
+</clothingItem>

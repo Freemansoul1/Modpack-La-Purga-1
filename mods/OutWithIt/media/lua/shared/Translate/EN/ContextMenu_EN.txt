@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+	ContextMenu_ThrowOutTheWindow = "Throw %1 Out The Window"
+	ContextMenu_ThrowMultipleOutTheWindow = "Throw %1 Items Out The Window"
+	ContextMenu_ThrowOverFence = "Throw %1 Over Fence"
+	ContextMenu_ThrowMultipleOverFence = "Throw %1 Items Over Fence"
+}

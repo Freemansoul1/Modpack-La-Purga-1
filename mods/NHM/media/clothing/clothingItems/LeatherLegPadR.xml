@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\bob_LeatherLegPadR</m_MaleModel>
+	<m_FemaleModel>Static\clothes\kate_LeatherLegPadR</m_FemaleModel>
+	<m_GUID>f9a00f1f-9a09-4937-a28f-8abebb2b1361</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_R_Thigh</m_AttachBone>
+	<textureChoices>clothes\LegArmor\LeatherLegPadR</textureChoices>
+</clothingItem>

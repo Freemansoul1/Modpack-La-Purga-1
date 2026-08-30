@@ -1,0 +1,839 @@
+module NHM
+{
+    imports
+    {
+        Base
+    }
+
+item QuestHBroom
+{
+    Type = Normal,
+    DisplayName = QuestHBroom,
+    Icon = QuestHBroom,
+    Weight = 0.5,
+}
+
+item QuestHBroomDirty
+{
+    Type = Normal,
+    DisplayName = QuestHBroomDirty,
+    Icon = QuestHBroom,
+    Weight = 0.5,
+}
+
+item QuestHBucket
+{
+    Type = Normal,
+    DisplayName = QuestHBucket,
+    Icon = QuestHBucket,
+    Weight = 0.5,
+}
+
+item QuestHBucketDirty
+{
+    Type = Normal,
+    DisplayName = QuestHBucketDirty,
+    Icon = QuestHBucket,
+    Weight = 0.5,
+}
+
+item QuestHArchive
+{
+    Type = Normal,
+    DisplayName = QuestHArchive,
+    Icon = QuestHArchive,
+    Weight = 0.5,
+}
+
+item QuestHDisk
+{
+    Type = Normal,
+    DisplayName = QuestHDisk,
+    Icon = QuestHDisk,
+    Weight = 0.5,
+}
+
+item QuestHFullDisk
+{
+    Type = Normal,
+    DisplayName = QuestHFullDisk,
+    Icon = QuestHDisk,
+    Weight = 0.5,
+}
+
+item QuestHStars
+{
+    Type = Normal,
+    DisplayName = QuestHStars,
+    Icon = QuestHStars,
+    Weight = 0.5,
+}
+
+item QuestHEmptyStars
+{
+    Type = Normal,
+    DisplayName = QuestHEmptyStars,
+    Icon = SewingBox,
+    Weight = 0.5,
+}
+
+item QuestHMortPest
+{
+    Type = Normal,
+    DisplayName = QuestHMortPest,
+    Icon = QuestHMortPest,
+    Weight = 0.5,
+}
+
+item QuestHTablets
+{
+    Type = Normal,
+    DisplayName = QuestHTablets,
+    Icon = QuestHTablets,
+    Weight = 0.5,
+}
+
+item QuestHBloodBag
+{
+    Type = Normal,
+    DisplayName = QuestHBloodBag,
+    Icon = QuestHBloodBag,
+    Weight = 0.5,
+}
+
+item QuestHFullBloodBag
+{
+    Type = Normal,
+    DisplayName = QuestHFullBloodBag,
+    Icon = QuestHBloodBag,
+    Weight = 0.5,
+}
+
+item QuestHBeer
+{
+    Type = Normal,
+    DisplayName = QuestHBeer,
+    Icon = QuestHBeer,
+    Weight = 0.5,
+}
+
+item QuestHDailyWater
+{
+    Type = Food,
+    DisplayName = QuestHDailyWater,
+    Icon = QuestHDailyWater,
+    HungerChange = -4,
+    ThirstChange = -40,
+    Weight = 0.5,
+}
+
+item QuestHDailyFood
+{
+    Type = Food,
+    DisplayName = QuestHDailyFood,
+    Icon = QuestHDailyFood,
+    DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	HungerChange = -40,
+    Weight = 0.5,
+}
+
+item QuestHTip
+{
+    DisplayCategory = Quest,
+    Type = Normal,
+    DisplayName = QuestHTip,
+    Icon = Paper,
+    Weight = 0.5,
+}
+
+item QuestAFlash
+{
+    Type = Normal,
+    DisplayName = QuestAFlash,
+    Icon = QuestAFlash,
+    Weight = 0.1,
+}
+
+item QuestAEmptyFlash
+{
+    Type = Normal,
+    DisplayName = QuestAEmptyFlash,
+    Icon = QuestAFlash,
+    Weight = 0.1,
+}
+
+item QuestAnalyzer
+{
+    Type = Normal,
+    DisplayName = QuestAnalyzer,
+    Icon = AirAnalyzer,
+    Weight = 0.5,
+}
+
+item QuestFullAnalyzer1
+{
+    Type = Normal,
+    DisplayName = QuestFullAnalyzer1,
+    Icon = AirAnalyzer,
+    Weight = 0.5,
+}
+
+item QuestFullAnalyzer2
+{
+    Type = Normal,
+    DisplayName = QuestFullAnalyzer2,
+    Icon = AirAnalyzer,
+    Weight = 0.5,
+}
+
+item QuestFullAnalyzer3
+{
+    Type = Normal,
+    DisplayName = QuestFullAnalyzer3,
+    Icon = AirAnalyzer,
+    Weight = 0.5,
+}
+
+item QuestFlaskWater
+{
+    Type = Normal,
+    DisplayName = QuestFlaskWater,
+    Icon = ChemicalFlask,
+    Weight = 0.2,
+}
+
+item QuestFlaskWater2
+{
+    Type = Normal,
+    DisplayName = QuestFlaskWater2,
+    Icon = ChemicalFlask,
+    Weight = 0.2,
+}
+
+item QuestUnitedSample
+{
+    Type = Normal,
+    DisplayName = QuestUnitedSample,
+    Icon = ChemicalFlask,
+    Weight = 0.3,
+}
+
+recipe Make UnitedSample
+{
+    QuestFlaskWater,
+    InfectedSample,
+    QuestFullAnalyzer1/QuestFullAnalyzer2/QuestFullAnalyzer3,
+    Result:QuestUnitedSample,
+    Time:300.0,
+    Category:Chemistry,
+    NearItem:Chemistry Workbench,
+    IsHidden:true,
+}
+
+item QuestKeycard
+{
+    Type = Normal,
+    DisplayName = QuestKeycard,
+    Icon = QuestKeycard,
+    Weight = 0.1,
+}
+
+item QuestFuse
+{
+    Type = Normal,
+    DisplayName = QuestFuse,
+    Icon = QuestFuse,
+    Weight = 0.1,
+}
+
+item Microchip
+{
+    Type = Normal,
+    DisplayName = Microchip,
+    Icon = Microchip,
+    Weight = 0.1,
+}
+
+item QuestFixMag
+{
+    Type = Normal,
+    DisplayName = QuestFixMag,
+    Icon = QuestFixMag,
+    Weight = 0.1,
+}
+
+item QuestFirework
+{
+    Type = Normal,
+    DisplayName = QuestFirework,
+    Icon = QuestFirework,
+    Weight = 0.1,
+}
+
+item QuestAspirinWater
+{
+    Type = Food,
+    DisplayName = QuestAspirinWater,
+    IsCookable = TRUE,
+	ReplaceOnCooked = NHM.QuestAspirinWaterDry,
+	MinutesToCook = 10,
+    Icon = ChemicalFlask,
+    Weight = 0.1,
+}
+
+item QuestAspirinWaterDry
+{
+    Type = Normal,
+    DisplayName = QuestAspirinWaterDry,
+    Icon = ChemicalFlask,
+    Weight = 0.1,
+}
+
+item QuestHerbOne
+{
+    Type = Normal,
+    DisplayName = QuestHerbOne,
+    Icon = QuestHerbOne,
+    Weight = 0.1,
+}
+
+item QuestHerbTwo
+{
+    Type = Normal,
+    DisplayName = QuestHerbTwo,
+    Icon = QuestHerbTwo,
+    Weight = 0.1,
+}
+
+recipe Make QuestHerb
+{
+    QuestHerbOne,
+    QuestHerbTwo,
+    InfectedSample,
+    keep MortarPestle,
+    Result:QuestHerbMix,
+    NearItem:FirstAid Workbench,
+    Time:300.0,
+    IsHidden:true,
+}
+
+item QuestHerbMix
+{
+    Type = Normal,
+    DisplayName = QuestHerbMix,
+    Icon = QuestHerbMix,
+    Weight = 0.1,
+}
+
+item QuestCamera
+{
+	Weight	=	1,
+	Type	=	Normal,
+	DisplayName	=	QuestCamera,
+	Icon	=	QuestCamera,
+}
+
+item QuestBearCarcass
+{
+	Weight	=	25,
+	Type	=	Normal,
+	DisplayName	=	QuestBearCarcass,
+	Icon	=	BearCarcass,
+	WorldStaticModel = BearCarcass,
+}
+
+item QuestBearHead
+{
+	Weight	=	5,
+	Type	=	Normal,
+	DisplayName	=	QuestBearHead,
+	Icon	=	QuestBearHead,
+}
+
+recipe Get Bear Head
+{
+    QuestBearCarcass,
+    keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete/SharpedStone/AxeStone,
+    Result:QuestBearHead,
+    Time:500.0,
+    IsHidden:true,
+}
+
+item QuestAutoComposite
+{
+	Weight	=	3,
+	Type	=	Normal,
+	DisplayName	=	QuestAutoComposite,
+	Icon	=	QuestAutoComposite,
+}
+
+item QuestKioshiComposite
+{
+	Weight	=	4,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiComposite,
+	Icon	=	QuestKioshiComposite,
+}
+
+recipe Make QuestKioshiComposite
+{
+    QuestAutoComposite,
+    IngotCopper,
+    keep Screwdriver,
+    keep Tongs,
+    Result:QuestKioshiComposite,
+    Time:500.0,
+	NearItem:Mechanics Workbench,
+    IsHidden:true,
+}
+
+item QuestKioshiWeapon1
+{
+	Weight	=	1,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiWeapon1,
+	Icon	=	QuestKioshiWeapon,
+}
+
+item QuestKioshiWeapon2
+{
+	Weight	=	0.5,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiWeapon2,
+	Icon	=	QuestKioshiWeapon,
+}
+
+item QuestKioshiWeapon3
+{
+	Weight	=	1,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiWeapon3,
+	Icon	=	QuestKioshiWeapon,
+}
+
+item QuestKioshiWeapon4
+{
+	Weight	=	1.5,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiWeapon4,
+	Icon	=	QuestKioshiWeapon,
+}
+
+item QuestKioshiWeapon4Raw
+{
+	Weight	=	1.5,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiWeapon4Raw,
+	Icon	=	QuestKioshiWeapon4Raw,
+}
+
+recipe Make QuestKioshiWeapon4
+{
+    QuestKioshiWeapon4Raw,
+    Coal,
+    Result:QuestKioshiWeapon4,
+    Time:300.0,
+	NearItem:Blast Furnace,
+    Sound:WeaponCraft,
+    IsHidden:true,
+}
+
+item QuestKioshiRifle
+{
+	Weight	=	4.5,
+	Type	=	Normal,
+	DisplayName	=	QuestKioshiRifle,
+	Icon	=	QuestKioshiRifle,
+}
+
+recipe Make QuestKioshiRifle
+{
+    QuestKioshiWeapon1,
+    QuestKioshiWeapon2,
+    QuestKioshiWeapon3,
+    QuestKioshiWeapon4,
+    BlowTorch=10,
+    keep WeldingMask,
+    Result:QuestKioshiRifle,
+    Time:500.0,
+	NearItem:Engineer Workbench,
+    Sound:WeaponCraft,
+    IsHidden:true,
+}
+
+item QuestZBlood
+{
+	Weight	=	0.2,
+	Type	=	Normal,
+	DisplayName	=	QuestZBlood,
+	Icon	=	QuestZBlood,
+}
+
+item QuestCelestius
+{
+	Weight	=	0.2,
+	Type	=	Normal,
+	DisplayName	=	QuestCelestius,
+	Icon	=	QuestCelestius,
+}
+
+recipe Make QuestZBlood
+	{
+		CorpseMale/CorpseFemale,
+		keep Axe/AxeStone/KitchenKnife/HuntingKnife/Machete/FoldingKnife/HandmadeAxe/RegularAxe/AdvancedAxe/HandmadeKnife/RegularKnife/Dagger/SharpedStone,
+        ChemicalFlask,
+		Result:QuestZBlood,
+		Sound:SliceBread,
+		Time:50.0,
+        CanBeDoneFromFloor:true,
+        IsHidden:true,
+    }
+
+recipe Make QuestCelestius
+	{
+		QuestZBlood,
+        SulfurPowder,
+        QuestFlaskWater2,
+		Result:QuestCelestius,
+		Time:100.0,
+        NearItem:Chemistry Workbench,
+        CanBeDoneFromFloor:true,
+        IsHidden:true,
+    }
+
+item QuestFlaskMutagen
+{
+    Type = Normal,
+    DisplayName = QuestFlaskMutagen,
+    Icon = QuestFlaskMutagen,
+    Weight = 0.2,
+}
+
+item QuestFlaskAlgae
+{
+    Type = Normal,
+    DisplayName = QuestFlaskAlgae,
+    Icon = QuestFlaskAlgae,
+    Weight = 0.2,
+}
+
+item QuestStartSkin
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	QuestStartSkin,
+		Icon	=	RawThinLeather,
+	}
+
+item QuestRawSkin
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	QuestRawSkin,
+		Icon	=	RawThinLeather,
+	}
+
+item QuestReadySkin
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestReadySkin,
+    Icon	=	ReadyThinLeather,
+}
+
+item QuestReadySkinWet
+	{
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 30000,
+		ItemWhenDry	= NHM.QuestReadySkin,
+		DisplayName	=	QuestReadySkinWet,
+		Icon	=	ReadyThinLeather,
+	}
+
+item QuestFinalSkin
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestFinalSkin,
+    Icon	=	ReadyThinLeather,
+}
+
+recipe Make QuestRawSkin
+	{
+		QuestStartSkin,
+        keep RollingPin,
+		Result:QuestRawSkin,
+		Time:300.0,
+        NearItem:Cooking Workbench,
+        CanBeDoneFromFloor:true,
+        IsHidden:true,
+    }
+
+recipe Make QuestReadySkinWet
+	{
+		QuestRawSkin,
+        SaltPinch=2,
+        Water=4,
+		Result:QuestReadySkinWet,
+		Time:300.0,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        IsHidden:true,
+    }
+
+recipe Make QuestFinalSkin
+	{
+		QuestReadySkin,
+        Thread=2,
+        keep Scissors,
+		Result:QuestFinalSkin,
+		Time:300.0,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        IsHidden:true,
+    }
+
+item QuestSilkInstrument
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestSilkInstrument,
+    Icon	=	QuestSilkInstrument,
+}
+
+item QuestIndigoFlower
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestIndigoFlower,
+    Icon	=	QuestIndigoFlower,
+}
+
+item QuestIndigoDye
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestIndigoDye,
+    Icon	=	QuestIndigoDye,
+}
+
+recipe Make QuestIndigoDye
+	{
+		QuestIndigoFlower,
+        keep QuestSilkInstrument,
+		Result:QuestIndigoDye,
+		Time:200.0,
+		Sound:grind,
+        CanBeDoneFromFloor:true,
+        NearItem:Chemistry Workbench,
+        IsHidden:true,
+    }
+
+item QuestSparkleRadio
+{
+    Weight	=	0.4,
+    Type	=	Normal,
+    DisplayName	=	QuestSparkleRadio,
+    Icon	=	WalkieTalkieMilitary,
+}
+
+item QuestSparkleAmplifier
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestSparkleAmplifier,
+    Icon	=	Amplifier,
+}
+
+item QuestSparkleFinal
+{
+    Weight	=	0.5,
+    Type	=	Normal,
+    DisplayName	=	QuestSparkleFinal,
+    Icon	=	QuestSparkleFinal,
+}
+
+recipe Make QuestSparkleAmplifier
+{
+    keep Screwdriver,
+    QuestSparkleRadio,
+    Result:QuestSparkleAmplifier,
+	Time:50.0,
+	Sound:BatteryExtract,
+    CanBeDoneFromFloor:true,
+    IsHidden:true,
+}
+
+recipe Make QuestSparkleFinal
+{
+    keep Screwdriver,
+    QuestSparkleAmplifier,
+    Earbuds,
+    Radio.WalkieTalkie3,
+    Result:QuestSparkleFinal,
+	Time:100.0,
+    NearItem:Electric Workbench,
+	Sound:BatteryExtract,
+    CanBeDoneFromFloor:true,
+    IsHidden:true,
+}
+
+item QuestCableBox
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestCableBox,
+    Icon	=	QuestCableBox,
+}
+
+item QuestUtopiaSeed
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestUtopiaSeed,
+    Icon	=	QuestUtopiaSeed,
+}
+
+item QuestSpiderNote
+{
+    Weight	=	0.1,
+    Type	=	Normal,
+    DisplayName	=	QuestSpiderNote,
+    Icon	=	Paper,
+}
+
+item QuestConicalFlask
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestConicalFlask,
+    Icon	=	QuestConicalFlask,
+}
+
+item QuestSlicker
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestSlicker,
+    Icon	=	QuestSlicker,
+}
+
+item QuestPCB
+{
+    Weight	=	0.2,
+    Type	=	Normal,
+    DisplayName	=	QuestPCB,
+    Icon	=	QuestPCB,
+}
+
+item QChemistry
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QChemistry,
+		CustomContextMenu = ReadQ,
+		Icon	=	QChemistry,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QChemistry,
+	}
+
+item QElectric
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QElectric,
+		CustomContextMenu = ReadQ,
+		Icon	=	QElectric,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QElectric,
+	}
+
+item QEngineering
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QEngineering,
+		CustomContextMenu = ReadQ,
+		Icon	=	QEngineering,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QEngineering,
+	}
+
+item QFirstAid
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QFirstAid,
+		CustomContextMenu = ReadQ,
+		Icon	=	QFirstAid,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QFirstAid,
+	}
+
+item QHunting
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QHunting,
+		CustomContextMenu = ReadQ,
+		Icon	=	QHunting,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QHunting,
+	}
+
+item QLeatherworking
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QLeatherworking,
+		CustomContextMenu = ReadQ,
+		Icon	=	QLeatherworking,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QLeatherworking,
+	}
+
+item QTailoring
+    {
+	    DisplayCategory = Literature,
+		HungerChange	=	0,
+		Weight	=	0.2,
+		Type	=	Food,
+		DisplayName	=	QTailoring,
+		CustomContextMenu = ReadQ,
+		Icon	=	QTailoring,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_QTailoring,
+	}
+
+
+item QTrophyCup
+    {
+        Type = Normal,
+        DisplayName = QTrophyCup,
+        Icon = QTrophyCup,
+        Weight = 0.5,
+        WorldStaticModel = TrophyCup,
+    }
+
+model TrophyCup
+    {
+        mesh = TrophyCup,
+        texture = TrophyCup,
+    }
+
+}

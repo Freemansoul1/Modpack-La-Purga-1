@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\Bob_LeatherShinPlateR</m_MaleModel>
+	<m_FemaleModel>Static\clothes\Kate_LeatherShinPlateR</m_FemaleModel>
+	<m_GUID>efd435f6-fb41-4216-85d2-95db71df5395</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_R_Calf</m_AttachBone>
+	<textureChoices>clothes\LegArmor\LeatherShinPlateR</textureChoices>
+</clothingItem>

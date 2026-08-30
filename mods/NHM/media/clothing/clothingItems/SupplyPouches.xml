@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\Bob_Pouches</m_MaleModel>
+	<m_FemaleModel>Static\clothes\Kate_Pouches</m_FemaleModel>
+	<m_GUID>cecad3ab-f706-4015-8212-bda417f77e3d</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Pelvis</m_AttachBone>
+	<textureChoices>clothes\ChestArmor\SupplyPouches</textureChoices>
+</clothingItem>

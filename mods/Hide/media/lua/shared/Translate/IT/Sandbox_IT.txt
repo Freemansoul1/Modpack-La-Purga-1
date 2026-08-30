@@ -1,5 +1,0 @@
-Sandbox_IT = {
-    Sandbox_Hide = "Nasconditi",
-    Sandbox_Hide_HidingSpeed = "Velocità di nascondersi",
-    Sandbox_Hide_HidingSpeed_tooltip = "Determina quanto tempo ci vuole per nascondersi da qualche parte. "
-}

@@ -1,8 +1,0 @@
-name=Greenhouse
-poster=poster.png
-id=Greenhouse1
-description=Build Your Greenhouse. If you use Improvised Glass Mod it should be loaded AFTER Greenhouses.
-icon=Hammer.png
-tiledef=greenhousetiledef 671
-pack=greenhouse
-

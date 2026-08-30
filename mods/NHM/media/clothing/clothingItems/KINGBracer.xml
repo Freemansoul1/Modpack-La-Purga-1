@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\Clothes\KINGBracer</m_MaleModel>
+	<m_FemaleModel>Static\Clothes\KINGBracer</m_FemaleModel>
+	<m_GUID>f220f009-8e7c-4799-9e5d-99b61217de32</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>Clothes\KINGBracer</textureChoices>
+</clothingItem>

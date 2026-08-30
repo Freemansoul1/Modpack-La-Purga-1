@@ -1,0 +1,91 @@
+#is_flag nurse_intro,true
+    #jump loop
+
+*intro
+#m Сестра|NPCPortraits/NurseP.png|"Эй, привет. Быстро же ты ${female,пришла,пришел} в себя."
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Сестра|NPCPortraits/NurseP.png|"Будь ${female,осторожна,осторожен}."
+#exit
+
+*intro_hello
+#m "Здравствуйте... Вы знаете, как я здесь ${female,оказалась,оказался}?"
+#m Сестра|NPCPortraits/NurseP.png|"Привезли тебя сюда. Как и всех остальных."
+#m Сестра|NPCPortraits/NurseP.png|"Если хочешь что-то про Госпиталь узнать - спроси у Демиурга. Он тут главный." 
+#m Сестра|NPCPortraits/NurseP.png|"Он гениальный ученый и доктор! А я его ассистентка. Все зовут меня Сестра."
+#m "Сестра?.."
+#fade_out black
+#set_flag nurse_intro,true
+#fade_in
+#reveal Nurse
+#exit
+
+*loop
+#m Сестра|NPCPortraits/NurseP.png|"Не хочешь выполнить для меня поручение?"
+
+#choice
+    questNURSE|Взять задание Сестры
+    tutorial3|[Обучение 3]
+    quest_exit|Уйти
+    questNURSEcomplete|Сдать задание Сестры|nurse_q1_flag
+
+*tutorial3
+    #m Обучение|NPCPortraits/Tutorial.png|"Привет, ${female,выжившая,выживший}. На связи Команда сервера New Hope. Ты ${female,нашла,нашел} Третью обучающую подсказку. Собери все 8, прежде чем покинуть Госпиталь Милосердия, чтобы получить награду у Часового."
+    #m Обучение|NPCPortraits/Tutorial.png|"Большинство навыков на нашем сервере используют Верстаки. Это значит, что для крафтов, например, Химии, вам предварительно нужно будет построить Верстак Химика. А при крафте химикатов вам нужно будет стоять рядом с ним."
+    #m Обучение|NPCPortraits/Tutorial.png|"Чтобы построить любой верстак, возьмите в инвентарь молоток и нажмите правой кнопкой мыши в любом месте, чтобы открылось меню "Построить". В нем вы увидите отдельную вкладку "Верстаки". Каждый Верстак стоит 10 металлических деталей, которые можно добыть на Свалке."
+    #m Обучение|NPCPortraits/Tutorial.png|"Некоторые навыки требуют разные верстаки. Например, одни крафты Инженерии используют Верстак Инженера, другие - Наковальню, третьи - Доменную печь и так далее."
+    #m Обучение|NPCPortraits/Tutorial.png|"Чтобы понять, какой именно Верстак нужен для крафта, нажмите английскую B, найдите нужный крафт и снизу увидите "Необходимое оборудование"."
+#set_flag tutorial3,true
+#exit
+
+*questNURSE
+#is_quest nurse_q1|locked
+    #m Сестра|NPCPortraits/NurseP.png|"В кабинете Демиурга на втором этаже есть компьютер. Включи его, возьми эту дискету и загрузи на нее данные из папки Z-Incident."
+    #m Сестра|NPCPortraits/NurseP.png|"Как закончишь - принеси мне."
+    #quest_unlock nurse_q1
+    #task_unlock nurse_q1|t1 
+    #add_item NHM.QuestHDisk,1
+    #exit
+#is_quest nurse_q1|unlocked,uncompleted
+    #m Сестра|NPCPortraits/NurseP.png|"Я ведь уже отдала тебе дискету."
+    #exit
+#is_quest nurse_q1|unlocked,completed
+    #m Сестра|NPCPortraits/NurseP.png|"Других поручений нет."
+#exit
+
+*questNURSEcomplete
+#has_item NHM.QuestHFullDisk,1
+    #remove_item NHM.QuestHFullDisk,1
+    #m "Сестра, а что за Инцидент?"
+    #m Вы протягиваете дискету.
+    #m Сестра|NPCPortraits/NurseP.png|"А... Инцидент? Это... неважно. У Демиурга спроси, если хочешь. А за дискету спасибо."
+    #set_flag nurse_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,4.5
+    #exit
+#m Сестра|NPCPortraits/NurseP.png|"${female,Потерялась,потерялся} что ли?"
+#exit
+
+*quest1_q1_nurse
+#cutscene true
+#m Компьютер включен. Где там дискета...
+#has_item NHM.QuestHDisk,1
+    #remove_item NHM.QuestHDisk,1
+    #add_item NHM.QuestHFullDisk,1
+    #set_flag q1_nurse_flag,true
+    #m Файлы зашифрованы... Но судя по названиям, здесь что-то про Инцидент... Спрошу у Сестры, когда вернусь.
+    #exit
+#m И зачем я сюда ${female,пришла,пришел} без дискеты?
+#exit
+
+*quest_exit
+#exit

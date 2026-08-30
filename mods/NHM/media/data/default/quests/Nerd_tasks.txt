@@ -1,0 +1,37 @@
+*nerd_q1_t1
+#name Consigue un matraz químico
+*nerd_q1_t2
+#name Completa la tarea
+
+*nerd_q2_t1
+#name Consigue 1 Piedra caliza, mineral de azufre y ceniza
+*nerd_q2_t2
+#name Completa la tarea
+
+*nerd_q3_t1
+#name Llega al lago en Oasis
+*nerd_q3_t2
+#name Obtener una muestra de agua en un matraz
+*nerd_q3_t3
+#name Obtener polvo de azufre
+*nerd_q3_t5
+#name Obtén la sangre de un infectado usando el cadáver de un zombi, un frasco vacío y cualquier objeto afilado
+*nerd_q3_t6
+#name Fabrica Celestium en el banco de trabajo del químico usando sangre infectada calentada, polvo de azufre y muestra de agua
+*nerd_q3_t7
+#name Dale el Celestio a Nerd
+
+*nerd_q4_t1
+#name Llegar a la Montaña Negra
+*nerd_q4_t2
+#name Llega a la fuente dentro de la montaña
+*nerd_q4_t3
+#name Tomar una muestra mutágena
+*nerd_q4_t4
+#name Tomar una muestra de algas
+*nerd_q4_t5
+#name Encuentra la entrada al Laboratorio Prometheus en el segundo piso
+*nerd_q4_t6
+#name Compare el mutágeno obtenido en el depósito con el contenido del barril
+*nerd_q4_t9
+#name Vuelve a ver Nerd

@@ -1,0 +1,2 @@
+#npc_create Cook|NPC/Cook.png|11609,7571,0
+#exit

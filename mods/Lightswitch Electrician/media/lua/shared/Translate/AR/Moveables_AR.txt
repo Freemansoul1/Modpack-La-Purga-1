@@ -1,4 +1,0 @@
-Moveables_AR = {
-	Left_Light_Switch = "مفتاح الضوء الأيسر",
-	Right_Light_Switch = "مفتاح الضوء الأيمن",
-}

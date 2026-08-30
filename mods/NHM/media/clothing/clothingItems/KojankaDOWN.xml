@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\KojankaDOWN</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\KojankaDOWN</m_FemaleModel>
+	<m_GUID>bf4e6ccc-0eab-4590-899c-20dd43c0c234</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+        <textureChoices>clothes\Kojanka</textureChoices>
+</clothingItem>

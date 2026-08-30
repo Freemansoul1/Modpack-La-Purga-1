@@ -1,0 +1,82 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+    recipe Empty Petrol Can
+    {
+       destroy PetrolCan,
+
+       Result:EmptyPetrolCan,
+       Time:50.0,
+       Category:Welding,
+       IsHidden:true,
+    }
+
+    recipe Make Empty Blow Torch
+    {
+        ScrapMetal=2,
+        UnusableMetal=4,
+        Plastic=1,
+        Result:BlowTorch,
+        Time:200.0,
+	    Category:Welding,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+        OnCreate:Recipe.OnCreate.CraftEmptyBlowTorch,
+    }
+
+    recipe Make Scrap
+    {
+        Aluminum/ButterKnife/MuffinTray/Bell/KitchenTongs/Spatula/GrillBrush/Fork/KitchenKnife/Saucepan/TinOpener/Spoon/Pot/Kettle/RoastingPan/BakingPan/BakingTray/Scissors/BeerCanEmpty/camping.TentPeg/TinCanEmpty/PopEmpty/Pop2Empty/Pop3Empty/PaintbucketEmpty/BreadKnife/IcePick/Pan/GridlePan/MeatCleaver/Tweezers/Scalpel/SutureNeedle/Rake/LeafRake/Shovel/Shovel2/GardenHoe/GardenFork/LetterOpener/Corkscrew/Hinge/Doorknob/BarbedWire/HandFork/CarvingFork/Toolbox/Bag_JanitorToolbox/HandScythe/LeadPipe/MetalPipe/MetalBar,
+        BlowTorch=3,
+        keep WeldingMask,
+        Result:ScrapMetal,
+        RemoveResultItem:TRUE,
+        Category:Welding,
+        Time:80.0,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+        OnTest:NHIsMaterialValid,
+        OnCreate:MakeScrapOnCreate,
+    }   
+
+    recipe Make UnusableMetal
+    {
+        ScrapMetal=4,
+        BlowTorch=2,
+        keep WeldingMask,
+        Result:UnusableMetal=2,
+        Category:Welding,
+        Time:80.0,
+        OnGiveXP:MetalWelding1_OnGiveXP,
+    }   
+
+    recipe Make BucketHelmet
+    {
+        Plastic=3,
+        DuctTape=1,
+        Result:Hat_BucketHelmet,
+        Category:Survivalist,
+        Time:100.0,
+        Sound:PartsCraft,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make TrashArmor
+    {
+        Plastic=4,
+        DuctTape=2,
+        Result:TrashArmor,
+        Category:Survivalist,
+        Time:100.0,
+        Sound:PartsCraft,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+
+}

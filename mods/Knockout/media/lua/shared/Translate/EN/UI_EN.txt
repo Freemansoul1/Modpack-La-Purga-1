@@ -1,6 +1,0 @@
-UI_EN = {
-
-	UI_Knockout_DebugOnlinePlayer = "Online Players"
-	UI_Knockout_DebugForceKnockout = "Force Knockout"
-	UI_Knockout_DebugWakeUpPlayer = "Wake up player"
-}

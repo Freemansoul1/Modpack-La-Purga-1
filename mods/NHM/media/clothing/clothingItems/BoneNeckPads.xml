@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\Bob_BoneNeckPads</m_MaleModel>
+	<m_FemaleModel>static\clothes\Bob_BoneNeckPads</m_FemaleModel>
+	<m_GUID>a5ef4319-1caf-434f-8010-4ed87a53d419</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Neck</m_AttachBone>
+	<textureChoices>clothes\ChestArmor\BoneNeckPads</textureChoices>
+</clothingItem>

@@ -1,5 +1,0 @@
-Sandbox_RU = {
-    Sandbox_Hide = "Скрыть себя",
-    Sandbox_Hide_HidingSpeed = "Скорость скрытия",
-    Sandbox_Hide_HidingSpeed_tooltip = "Определяет, сколько времени потребуется, чтобы где-то спрятаться. "
-}

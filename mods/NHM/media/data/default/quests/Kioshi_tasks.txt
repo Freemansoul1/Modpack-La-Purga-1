@@ -1,0 +1,33 @@
+*kioshi_q1_t1
+#name Consigue 4 flechas para Kyoshi
+*kioshi_q1_t2
+#name Completa la tarea
+
+*kioshi_q2_t1
+#name Consigue 4 casquillos de bala para Kyoshi
+*kioshi_q2_t2
+#name Completa la tarea
+
+*kioshi_q3_t1
+#name Ve al taller de reparación de automóviles en West Point
+*kioshi_q3_t2
+#name Despeja el edificio
+*kioshi_q3_t8
+#name Encuentra en uno de los contenedores el Autocompuesto
+*kioshi_q3_t9
+#name Use el Autocompuesto, lingote de cobre, destornillador y tenazas para crear una pieza en Auto Mechanic Layout
+*kioshi_q3_t10
+#name Llévale el objeto a Kyoshi
+
+*kioshi_q4_t1
+#name Llegar a Gigamart
+*kioshi_q4_t2
+#name Despeja el edificio
+*kioshi_q4_t8
+#name Encuentra en uno de los contenedores las piezas para hacer el Antebrazo
+*kioshi_q4_t9
+#name Usa las piezas de empuñadura delantera y carbón para fabricar la empuñadura delantera en el alto horno
+*kioshi_q4_t10
+#name Usa 4 partes, un soplete de propano (y una máscara de soldador) para fabricar un rifle Kyoshi en el banco de trabajo del ingeniero.
+*kioshi_q4_t11
+#name Llévale el rifle a Kyoshi

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\clothes\Bob_KevlarArmor</m_MaleModel>
+	<m_FemaleModel>Skinned\clothes\Kate_KevlarArmor</m_FemaleModel>
+	<m_GUID>65a9c284-4162-4e6e-96e3-447b1fe755fa</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\ChestArmor\KevlarArmor</textureChoices>
+</clothingItem>

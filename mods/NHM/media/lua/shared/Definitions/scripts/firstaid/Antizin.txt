@@ -1,0 +1,17 @@
+module NHM {
+    imports {
+        Base
+    }
+
+    item AntizinTier3
+    {
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Antizin III,
+        Icon = AntizinTier3,
+        DisplayCategory = FirstAid,
+        StaticModel = Antizin,
+        WorldStaticModel = AntizinGround,
+        Tooltip = Tooltip_AntizinTier3,
+    }
+}

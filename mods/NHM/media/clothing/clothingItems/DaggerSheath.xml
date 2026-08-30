@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\Bob_DaggerSheath</m_MaleModel>
+	<m_FemaleModel>Static\clothes\Kate_DaggerSheath</m_FemaleModel>
+	<m_GUID>a9eb3afb-9696-44c3-8cdd-ee86481b394c</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_R_Thigh</m_AttachBone>
+	<textureChoices>Clothes\Equipment\DaggerSheath</textureChoices>
+</clothingItem>

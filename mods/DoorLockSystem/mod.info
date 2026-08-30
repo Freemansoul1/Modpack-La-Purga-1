@@ -1,4 +1,0 @@
-name=Door Lock System Build 41 Multiplayer
-poster=poster.png
-id=DoorLockSystem1
-description=Right click on a door for key options. On Multiplayer, if you have admin access you can get unlimited keys and reset keys to any door. If you are playing without admin, your options are to reset or duplicate a door key ONLY if you already have that key. In single player mode, all options are available.

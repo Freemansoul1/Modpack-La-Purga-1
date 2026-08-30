@@ -1,4 +1,0 @@
-Moodles_UA {
-    Moodles_GhostedInCar_Good_lvl4 = "—хований у машин≥",
-    Moodles_GhostedInCar_Good_desc_lvl4 = "√равець схований у машин≥.",
-}

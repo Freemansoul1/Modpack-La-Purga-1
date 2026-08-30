@@ -1,0 +1,2 @@
+#npc_create Abel|NPC/Abel.png|11584,7642,0
+#exit

@@ -1,0 +1,6 @@
+UI_EN = {
+	UI_ModOptions_DamageItemsOnFall_Name = "Damage Items On Fall"
+	UI_ModOptions_DamageItemsOnFall_Tooltip = "If enabled, thrown items will take damage when they fall down."
+	UI_ModOptions_AllowQuickEquippedItemsThrow_Name = "Allow Quick-Throw of Equipped Items"
+	UI_ModOptions_AllowQuickEquippedItemsThrow_Tooltip = "If enabled, equipped items can be directly thrown through interacting with a window / fence. If not, you can only throw them through the inventory."
+}

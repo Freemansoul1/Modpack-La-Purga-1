@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\SumkaBrezentLHand</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\SumkaBrezentLHand</m_FemaleModel>
+	<m_GUID>c097383a-b3ca-4218-8227-a743d80ce330</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\SumkaBrezent</textureChoices>
+        <textureChoices>clothes\SumkaBrezent2</textureChoices>
+        <textureChoices>clothes\SumkaBrezent3</textureChoices>
+        <textureChoices>clothes\SumkaBrezent4</textureChoices>
+</clothingItem>

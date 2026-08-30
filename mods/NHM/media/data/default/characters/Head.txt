@@ -1,0 +1,7 @@
+#name Gerente|Gerente
+
+#desc Nombre: Gerente
+#desc_append Edad: unos 40 años
+#desc_append Hombre de mediana edad. Antes del Incidente era un arribista, soñaba con dirigir el Hospital.
+#desc_append No le gusta Demiurgo, ya que cree que tomó su lugar.
+#exit

@@ -1,7 +1,0 @@
-name=Lightswitch Electrician
-id=Lightswitches1
-description=Adds ability to take,move and craft light switches.
-poster=poster.png
-icon=icon.png
-pack=lighting_indoor_01
-tiledef=Lightswitches 8675

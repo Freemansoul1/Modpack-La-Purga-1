@@ -1,8 +1,0 @@
-id=DryFishMod1
-name=Dried Fish Mod1
-description=This Mod adds the ability to convert fresh fish into dry fish with the use of special tiles, items and systems.
-poster=poster.png
-authors=Poltergeist,Sapph,glytc3r
-tiledef=DryFishMod 2699
-pack=DryFishMod
-versionMin=41.0

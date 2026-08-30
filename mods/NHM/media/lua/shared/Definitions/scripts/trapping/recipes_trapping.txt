@@ -1,0 +1,215 @@
+module NHM
+{
+	imports	{Base}
+
+/**********************Потрошить тушку****************************/
+    recipe Gut The Carcass
+	{
+        NHM.WolfCarcass/NHM.BearCarcass/NHM.BoarCarcass/GoatCarcass/CowCarcass/FoxCarcass/ODeerCarcass/YDeerCarcass/DogCarcass/MooseCarcass/CoyoteCarcass/HareCarcass/ChickenCarcass/CrowCarcass,
+        keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete,
+		Result:RawThinLeather=4,
+        RemoveResultItem:true,
+		Time:400.0,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking15_OnGiveXP,
+        OnCreate:GutTheCarcass_OnCreate,
+    }
+
+/**********************Выследить зверя****************************/
+	recipe Hunt Down Wolf With Bow
+	{
+		WolfFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:WolfCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=5,
+        OnCreate:HuntWolf_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Bear With Bow
+	{
+		BearFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:BearCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=10,
+        OnCreate:HuntBear_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Boar With Bow
+	{
+		BoarFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:BoarCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=7,
+        OnCreate:HuntBoar_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Goat With Bow
+	{
+		GoatFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:GoatCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=6,
+        OnCreate:HuntGoat_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Cow With Bow
+	{
+		CowFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:CowCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=6,
+        OnCreate:HuntCow_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Fox With Bow
+	{
+		FoxFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:FoxCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=3,
+        OnCreate:HuntFox_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down ODeer With Bow
+	{
+		ODeerFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:ODeerCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=8,
+        OnCreate:HuntODeer_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down YDeer With Bow
+	{
+		YDeerFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:YDeerCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=9,
+        OnCreate:HuntYDeer_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Dog With Bow
+	{
+		DogFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:DogCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=4,
+        OnCreate:HuntDog_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Moose With Bow
+	{
+		MooseFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:MooseCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=10,
+        OnCreate:HuntMoose_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Coyote With Bow
+	{
+		CoyoteFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:CoyoteCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=5,
+        OnCreate:HuntCoyote_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Hare With Bow
+	{
+		HareFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:HareCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=2,
+        OnCreate:HuntHare_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Chicken With Bow
+	{
+		ChickenFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:ChickenCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=1,
+        OnCreate:HuntChicken_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+
+    recipe Hunt Down Crow With Bow
+	{
+		CrowFootprints,
+        keep Bow/Bow3/CBow/CBow3/RBow/RBow3/HandmadeCrossbow,
+        LightArrow=3,
+		Result:CrowCarcass,
+        RemoveResultItem:true,
+		Time:800.0,
+		Category:Trapper,
+        SkillRequired:Trapping=2,
+        OnCreate:HuntCrow_OnCreate,
+        CanBeDoneFromFloor:false,
+    }
+}

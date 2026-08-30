@@ -1,0 +1,98 @@
+#quest kioshicooldown|hidden|unlocked
+    #task t1
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Kioshi.txt,reset_kioshi_q1
+    #task t2
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Kioshi.txt,reset_kioshi_q2
+
+#quest kioshi_q1
+    #task t1
+        #set Deliver|NHM.LightArrow,4
+        #action UnlockTask|kioshi_q1|t2
+    #task t2
+        #set RaiseFlag|kioshi_q1_completed
+        #action SetFlag|kioshi_q1_completed|false
+        #action SetFlag|kioshi_q1_flag|false
+        #action UnlockTask|kioshicooldown|t1
+        #action CompleteQuest|kioshi_q1
+
+#quest kioshi_q2
+    #task t1
+        #set Deliver|NHM.BulletCasing,4
+        #action UnlockTask|kioshi_q2|t2
+    #task t2
+        #set RaiseFlag|kioshi_q2_completed
+        #action SetFlag|kioshi_q2_completed|false
+        #action SetFlag|kioshi_q2_flag|false
+        #action UnlockTask|kioshicooldown|t2
+        #action CompleteQuest|kioshi_q2
+
+#quest kioshi_q3|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Kioshi.txt,reset_kioshi_q3
+    #task t1
+        #set GotoLocation|12254,6941,0|building|true
+        #action UnlockTask|kioshi_q3|t2
+    #task t2
+        #set Secure|12254,6941,0|building
+        #action RunScript|Kioshi.txt,randomcontainer
+        #action UnlockTask|kioshi_q3|t8
+    #task t3|hidden
+        #set LootContainer|toolcabinet|12261,6934,0|NHM.QuestAutoComposite,false
+    #task t4|hidden
+        #set LootContainer|metal_shelves|12263,6941,0|NHM.QuestAutoComposite,false
+    #task t5|hidden
+        #set LootContainer|metal_shelves|12268,6925,0|NHM.QuestAutoComposite,false
+    #task t6|hidden
+        #set LootContainer|shelves|12249,6926,0|NHM.QuestAutoComposite,false
+    #task t7|hidden
+        #set LootContainer|counter|12259,6936,0|NHM.QuestAutoComposite,false
+    #task t8
+        #set TaskCondition|kioshi_q3|t3/t4/t5/t6/t7
+        #action UnlockTask|kioshi_q3|t9
+    #task t9
+        #set FindItem|NHM.QuestKioshiComposite,1
+        #action SetFlag|kioshi_q3_flag|true
+        #action UnlockTask|kioshi_q3|t10
+    #task t10
+        #set RaiseFlag|kioshi_q3_completed
+        #action SetFlag|kioshi_q3_completed|false
+        #action SetFlag|kioshi_q3_flag|false
+        #action CompleteQuest|kioshi_q3
+
+#quest kioshi_q4|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Kioshi.txt,reset_kioshi_q4
+    #task t1
+        #set GotoLocation|12040,6860,0|building|true
+        #action UnlockTask|kioshi_q4|t2
+    #task t2
+        #set Secure|12040,6860,0|building
+        #action RunScript|Kioshi.txt,randomcontainer2
+        #action UnlockTask|kioshi_q4|t8
+    #task t3|hidden
+        #set LootContainer|metal_shelves|12046,6861,0|NHM.QuestKioshiWeapon4Raw,false
+    #task t4|hidden
+        #set LootContainer|metal_shelves|12045,6856,0|NHM.QuestKioshiWeapon4Raw,false
+    #task t5|hidden
+        #set LootContainer|metal_shelves|12039,6848,0|NHM.QuestKioshiWeapon4Raw,false
+    #task t6|hidden
+        #set LootContainer|metal_shelves|12032,6851,0|NHM.QuestKioshiWeapon4Raw,false
+    #task t7|hidden
+        #set LootContainer|crate|12043,6864,1|NHM.QuestKioshiWeapon4Raw,false
+    #task t8
+        #set TaskCondition|kioshi_q4|t3/t4/t5/t6/t7
+        #action UnlockTask|kioshi_q4|t9
+    #task t9
+        #set FindItem|NHM.QuestKioshiWeapon4,1
+        #action UnlockTask|kioshi_q4|t10
+    #task t10
+        #set FindItem|NHM.QuestKioshiRifle,1
+        #action SetFlag|kioshi_q4_flag|true
+        #action UnlockTask|kioshi_q4|t11
+    #task t11
+        #set RaiseFlag|kioshi_q4_completed
+        #action SetFlag|kioshi_q4_completed|false
+        #action SetFlag|kioshi_q4_flag|false
+        #action CompleteQuest|kioshi_q4

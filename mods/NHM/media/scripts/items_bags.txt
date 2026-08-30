@@ -1,0 +1,97 @@
+module NHM
+{
+	imports	{Base}
+
+item Quiver
+    {
+        WeightReduction	=	86,
+        Weight	=	0.4,
+        Type	=	Container,
+        Capacity	=	9,
+        DisplayName	=	 Quiver,
+        Icon        =  Quiver,
+        BodyLocation = SwordSheath,
+        OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Quiver,
+		ClothingItemExtra = Quiver,
+        ClothingItemExtraOption = WearIt,
+		CanBeEquipped = SwordSheath,
+		AcceptItemFunction = NHB.AcceptItemFunctionQuiver,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+		Tooltip = Tooltip_QuiverCarry,  
+        WorldStaticModel = QuiverGround,
+    }
+
+item AmmoPouches
+    {
+        WeightReduction	=	86,
+        Weight	=	0.4,
+        Type	=	Container,
+        Capacity	=	5,
+        DisplayName	=	 AmmoPouches,
+        Icon        =  AmmoPouches,
+        BodyLocation = SwordSheath,
+        OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = AmmoPouches,
+		ClothingItemExtra = AmmoPouches,
+        ClothingItemExtraOption = WearIt,
+		CanBeEquipped = SwordSheath,
+		AcceptItemFunction = NHB.AcceptItemFunctionAmmo,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+		Tooltip = Tooltip_AmmoPouches,  
+        WorldStaticModel = AmmoPouchesGround,
+    }
+
+item MedicalPouches
+    {
+        WeightReduction	=	86,
+        Weight	=	0.4,
+        Type	=	Container,
+        Capacity	=	5,
+        DisplayName	=	 MedicalPouches,
+        Icon        =  MedicalPouches,
+        BodyLocation = SwordSheath,
+        OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = MedicalPouches,
+		ClothingItemExtra = MedicalPouches,
+        ClothingItemExtraOption = WearIt,
+		CanBeEquipped = SwordSheath,
+		AcceptItemFunction = NHB.AcceptItemFunctionMedical,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+		Tooltip = Tooltip_MedicalPouches,  
+        WorldStaticModel = MedicalPouchesGround,
+    }
+
+item SupplyPouches
+    {
+        WeightReduction	=	86,
+        Weight	=	0.4,
+        Type	=	Container,
+        Capacity	=	5,
+        DisplayName	=	 SupplyPouches,
+        Icon        =  SupplyPouches,
+        BodyLocation = SwordSheath,
+        OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = SupplyPouches,
+		ClothingItemExtra = SupplyPouches,
+        ClothingItemExtraOption = WearIt,
+		CanBeEquipped = SwordSheath,
+		AcceptItemFunction = NHB.AcceptItemFunctionSupply,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+		Tooltip = Tooltip_SupplyPouches,  
+        WorldStaticModel = SupplyPouchesGround,
+    }
+
+}

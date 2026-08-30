@@ -1,5 +1,0 @@
-Sandbox_JP = {
-    Sandbox_Hide = "自分を隠す",
-    Sandbox_Hide_HidingSpeed = "隠れる速度",
-    Sandbox_Hide_HidingSpeed_tooltip = "どこかに隠れるのにかかる時間を決定します。 "
-}

@@ -1,0 +1,12 @@
+Sandbox_ES = {
+    Sandbox_PurgaRaidsConfig = "Raids config",
+    Sandbox_PurgaRaids_RaidingTime = "Tiempo Raideos",
+    Sandbox_PurgaRaids_MaxRaiders = "Maximo Raiders",
+    Sandbox_PurgaRaids_ExRaidingTime = "Cooldown Exraider",
+    Sandbox_PurgaRaids_ProtectionTime = "Cooldown Proteccion",
+    Sandbox_PurgaRaids_ResetRaids = "Resetear Data",
+    Sandbox_PurgaRaids_Enabled = "Activar Raideos",
+    Sandbox_PurgaRaids_RaidingTime_tooltip = "Tiempo que dura cada raid. En segundos",
+    Sandbox_PurgaRaids_ExRaidingTime_tooltip = "Tiempo de cooldown para volver a raidear. En segundos",
+    Sandbox_PurgaRaids_ProtectionTime_tooltip = "Tiempo de proteccion para safehouse antiraideos. En segundos",
+}

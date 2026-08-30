@@ -1,0 +1,29 @@
+module Base
+{
+
+    item Belt2
+    {
+        DisplayCategory = Accessory,
+        Weight	=	0.2,
+        Type	=	Clothing,
+        DisplayName	=	Belt,
+        Icon	=	Belt,
+        BodyLocation = Belt,
+        ClothingItem = Belt,
+        AttachmentsProvided = SmallBeltLeft,
+        WorldStaticModel = Belt_Ground,
+    }
+	
+    item HolsterSimple
+    {
+        DisplayCategory = Accessory,
+        Weight	=	0.2,
+        Type	=	Clothing,
+        DisplayName	=	Holster,
+        Icon	=	GunHolster,
+        BodyLocation = BeltExtra,
+        ClothingItem = Holster,
+        AttachmentsProvided = HolsterVanila,
+        WorldStaticModel = Holster_Ground,
+    }
+}

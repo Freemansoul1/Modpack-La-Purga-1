@@ -1,0 +1,132 @@
+#is_flag marshall_intro,true
+    #jump loop
+
+*intro
+#m Маршалл|NPCPortraits/MarshallP.png|"Очистись. Мы все должны очиститься."
+#m "Простите?"
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Пожилой солдат провожает вас взглядом.
+#exit
+
+*intro_hello
+#m "Что значит "очиститься"?"
+#m Маршалл|NPCPortraits/MarshallP.png|"То и значит. Пройти очищение. Убедиться, что в тебе нет заразы."
+#m Маршалл|NPCPortraits/MarshallP.png|"Ты ${female,заражена,заражен}? Надеюсь, нет. Потому что если я узнаю, что ты из них, я сразу же пущу тебе пулю в лоб."
+#m "Вы не очень-то и дружелюбны."
+#m Маршалл|NPCPortraits/MarshallP.png|"Дружелюбие - это слабость. Слабость - это порок. Мое дружелюбие никак не помогло мне, когда 3 моих друга оставили меня одного умирать."
+#m Маршалл|NPCPortraits/MarshallP.png|"Да, я сам вызвался, но я надеялся на помощь... А они просто сбежали. Меня чуть не съели мертвецы. Я чудом выжил. Чертов Френсис, чертов Луис..."
+#m Маршалл|NPCPortraits/MarshallP.png|"Я Билл. Билл Маршалл. Полковник Армии США. Друзьями мы точно не будем, но если ${female,готова,готов} сражаться с нечистыми - считай, что я тебя уже уважаю."
+#fade_out black
+#set_flag marshall_intro,true
+#fade_in
+#reveal Marshall
+#exit
+
+*loop
+#m Маршалл|NPCPortraits/MarshallP.png|"Отличный день для Очищения. Не так ли?"
+
+#is_quest marshall_q1|locked
+    #set_flag marshall_q1_flag,false
+#is_quest marshall_q1|completed
+    #set_flag marshall_q1_flag,false
+#is_quest marshall_q1|failed
+    #set_flag marshall_q1_flag,false
+
+#is_quest marshall_q2|locked
+    #set_flag marshall_q2_flag,false
+#is_quest marshall_q2|completed
+    #set_flag marshall_q2_flag,false
+#is_quest marshall_q2|failed
+    #set_flag marshall_q2_flag,false
+    
+*backtolist
+#choice
+    questZombies|Задания на Очищение
+    quest_exit|Уйти
+
+*questZombies
+#choice
+    questZ1|Задание "Очищение от Скверны"
+    questZ2|Задание "Гроза Мертвых"
+    backtolist|Вернуться к общему списку
+    questZ1_complete|Завершить задание|marshall_q1_flag
+    questZ2_complete|Завершить задание|marshall_q2_flag
+
+*questZ1
+#is_quest marshall_q2|unlocked,uncompleted,unfailed
+    #m Маршалл|NPCPortraits/MarshallP.png|"Одно Очищение за раз. Не дергай меня по пустякам."
+    #exit
+#is_quest marshall_q1|locked
+    #m Маршалл|NPCPortraits/MarshallP.png|"Мой долг - это очистить землю от нежити. Если ты хочешь мне помочь, то теперь это и твой долг." 
+    #m Маршалл|NPCPortraits/MarshallP.png|"Убей 150 мертвых. Очисти землю округа Нокс. Затем возвращайся."
+    #quest_unlock marshall_q1
+    #task_unlock marshall_q1|t1
+    #exit
+#is_quest marshall_q1|uncompleted,unfailed
+    #m Маршалл|NPCPortraits/MarshallP.png|"Ты уже занимаешься Очищением."
+    #exit
+#m Маршалл|NPCPortraits/MarshallP.png|"Все должно быть в меру. Возвращайся завтра."
+#exit
+
+*questZ1_complete
+#m Маршалл|NPCPortraits/MarshallP.png|"Отличная работа. Мир стал немного чище благодаря тебе."
+#set_flag marshall_q1_completed,true
+#reward Base.Money,1,rare
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+    #reward EXP,RepArmy,4
+    #exit
+#is_lua getPlayer():HasTrait("Badmanners")|true
+    #reward EXP,RepArmy,2
+    #exit
+#reward EXP,RepArmy,3
+#exit
+
+*quest_exit
+#exit
+
+*questZ2
+#is_quest marshall_q1|unlocked,uncompleted,unfailed
+    #m Маршалл|NPCPortraits/MarshallP.png|"Одно Очищение за раз. Не дергай меня по пустякам."
+    #exit
+#is_quest marshall_q2|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 3|true
+        #m Маршалл|NPCPortraits/MarshallP.png|"Ты ${female,должна,должен} стать Грозой Мертвых. 150 мертвых - это уже не твой размах. Пора брать выше." 
+        #m Маршалл|NPCPortraits/MarshallP.png|"Убей 400 ходячих. Только мы с тобой можем это остановить.."
+        #quest_unlock marshall_q2
+        #task_unlock marshall_q2|t1
+        #exit
+    #m Маршалл|NPCPortraits/MarshallP.png|"Рано тебе. Нужно больше Очищения."    
+    #exit
+#is_quest marshall_q2|uncompleted,unfailed
+    #m Маршалл|NPCPortraits/MarshallP.png|"Ты уже занимаешься Очищением."
+    #exit
+#m Маршалл|NPCPortraits/MarshallP.png|"Все должно быть в меру. Возвращайся завтра"
+#exit
+
+*questZ2_complete
+#m Маршалл|NPCPortraits/MarshallP.png|"Мертвые бежали бы в страхе при виде тебя. Если бы они умели испытывать страх. Я благодарен тебе."
+#set_flag marshall_q2_completed,true
+#reward Base.Money,4,rare
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+    #reward EXP,RepArmy,12
+    #exit
+#is_lua getPlayer():HasTrait("Badmanners")|true
+    #reward EXP,RepArmy,6
+    #exit
+#reward EXP,RepArmy,9
+#exit
+
+*reset_marshall_q1
+    #set_flag marshall_q1_flag,false
+    #task_complete marshall_q1|t0
+#exit
+
+*reset_marshall_q2
+    #set_flag marshall_q2_flag,false
+    #task_complete marshall_q2|t0
+#exit

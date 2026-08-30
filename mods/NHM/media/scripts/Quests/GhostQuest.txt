@@ -1,0 +1,550 @@
+module NHM
+{
+    imports
+    {
+        Base
+    }
+
+item GhostQuest1
+{
+    Type = Normal,
+    DisplayName = GhostQuest1,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest2
+{
+    Type = Normal,
+    DisplayName = GhostQuest2,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest3
+{
+    Type = Normal,
+    DisplayName = GhostQuest3,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest4
+{
+    Type = Normal,
+    DisplayName = GhostQuest4,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest5
+{
+    Type = Normal,
+    DisplayName = GhostQuest5,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest6
+{
+    Type = Normal,
+    DisplayName = GhostQuest6,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest7
+{
+    Type = Normal,
+    DisplayName = GhostQuest7,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest8
+{
+    Type = Normal,
+    DisplayName = GhostQuest8,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest9
+{
+    Type = Normal,
+    DisplayName = GhostQuest9,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest10
+{
+    Type = Normal,
+    DisplayName = GhostQuest10,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest11
+{
+    Type = Normal,
+    DisplayName = GhostQuest11,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest12
+{
+    Type = Normal,
+    DisplayName = GhostQuest12,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest13
+{
+    Type = Normal,
+    DisplayName = GhostQuest13,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest14
+{
+    Type = Normal,
+    DisplayName = GhostQuest14,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest15
+{
+    Type = Normal,
+    DisplayName = GhostQuest15,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest16
+{
+    Type = Normal,
+    DisplayName = GhostQuest16,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest17
+{
+    Type = Normal,
+    DisplayName = GhostQuest17,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest18
+{
+    Type = Normal,
+    DisplayName = GhostQuest18,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest19
+{
+    Type = Normal,
+    DisplayName = GhostQuest19,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest20
+{
+    Type = Normal,
+    DisplayName = GhostQuest20,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest21
+{
+    Type = Normal,
+    DisplayName = GhostQuest21,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest22
+{
+    Type = Normal,
+    DisplayName = GhostQuest22,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest23
+{
+    Type = Normal,
+    DisplayName = GhostQuest23,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest24
+{
+    Type = Normal,
+    DisplayName = GhostQuest24,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest25
+{
+    Type = Normal,
+    DisplayName = GhostQuest25,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest26
+{
+    Type = Normal,
+    DisplayName = GhostQuest26,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest27
+{
+    Type = Normal,
+    DisplayName = GhostQuest27,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest28
+{
+    Type = Normal,
+    DisplayName = GhostQuest28,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest29
+{
+    Type = Normal,
+    DisplayName = GhostQuest29,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+item GhostQuest30
+{
+    Type = Normal,
+    DisplayName = GhostQuest30,
+    Icon = GhostQuest,
+    Weight = 0.5,
+}
+
+
+
+recipe GhostQuest1
+    {
+        GhostQuest1,
+        Result:GhostQuest1,
+        RemoveResultItem:true,
+        IsHidden:true,
+        Time:100,
+        OnCreate:GhostQuest1_onCreate,
+    }
+
+recipe GhostQuest2
+    {
+        GhostQuest2,
+        Result:GhostQuest2,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest2_onCreate,
+    }
+
+recipe GhostQuest3
+    {
+        GhostQuest3,
+        Result:GhostQuest3,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest3_onCreate,
+    }
+
+recipe GhostQuest4
+    {
+        GhostQuest4,
+        Result:GhostQuest4,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest4_onCreate,
+    }
+
+recipe GhostQuest5
+    {
+        GhostQuest5,
+        Result:GhostQuest5,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest5_onCreate,
+    }
+
+recipe GhostQuest6
+    {
+        GhostQuest6,
+        Result:GhostQuest6,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest6_onCreate,
+    }
+
+recipe GhostQuest7
+    {
+        GhostQuest7,
+        Result:GhostQuest7,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest7_onCreate,
+    }
+
+recipe GhostQuest8
+    {
+        GhostQuest8,
+        Result:GhostQuest8,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest8_onCreate,
+    }
+
+recipe GhostQuest9
+    {
+        GhostQuest9,
+        Result:GhostQuest9,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest9_onCreate,
+    }
+
+recipe GhostQuest10
+    {
+        GhostQuest10,
+        Result:GhostQuest10,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest10_onCreate,
+    }
+
+recipe GhostQuest11
+    {
+        GhostQuest11,
+        Result:GhostQuest11,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest11_onCreate,
+    }
+
+recipe GhostQuest12
+    {
+        GhostQuest12,
+        Result:GhostQuest12,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest12_onCreate,
+    }
+
+recipe GhostQuest13
+    {
+        GhostQuest13,
+        Result:GhostQuest13,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest13_onCreate,
+    }
+
+recipe GhostQuest14
+    {
+        GhostQuest14,
+        Result:GhostQuest14,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest14_onCreate,
+    }
+
+recipe GhostQuest15
+    {
+        GhostQuest15,
+        Result:GhostQuest15,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest15_onCreate,
+    }
+
+recipe GhostQuest16
+    {
+        GhostQuest16,
+        Result:GhostQuest16,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest16_onCreate,
+    }
+
+recipe GhostQuest17
+    {
+        GhostQuest17,
+        Result:GhostQuest17,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest17_onCreate,
+    }
+
+recipe GhostQuest18
+    {
+        GhostQuest18,
+        Result:GhostQuest18,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest18_onCreate,
+    }
+
+recipe GhostQuest19
+    {
+        GhostQuest19,
+        Result:GhostQuest19,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest19_onCreate,
+    }
+
+recipe GhostQuest20
+    {
+        GhostQuest20,
+        Result:GhostQuest20,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest20_onCreate,
+    }
+
+recipe GhostQuest21
+    {
+        GhostQuest21,
+        Result:GhostQuest21,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest21_onCreate,
+    }
+
+recipe GhostQuest22
+    {
+        GhostQuest22,
+        Result:GhostQuest22,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest22_onCreate,
+    }
+
+recipe GhostQuest23
+    {
+        GhostQuest23,
+        Result:GhostQuest23,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest23_onCreate,
+    }
+
+recipe GhostQuest24
+    {
+        GhostQuest24,
+        Result:GhostQuest24,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest24_onCreate,
+    }
+
+recipe GhostQuest25
+    {
+        GhostQuest25,
+        Result:GhostQuest25,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest25_onCreate,
+    }
+
+recipe GhostQuest26
+    {
+        GhostQuest26,
+        Result:GhostQuest26,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest26_onCreate,
+    }
+
+recipe GhostQuest27
+    {
+        GhostQuest27,
+        Result:GhostQuest27,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest27_onCreate,
+    }
+
+recipe GhostQuest28
+    {
+        GhostQuest28,
+        Result:GhostQuest28,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest28_onCreate,
+    }
+
+recipe GhostQuest29
+    {
+        GhostQuest29,
+        Result:GhostQuest29,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest29_onCreate,
+    }
+
+recipe GhostQuest30
+    {
+        GhostQuest30,
+        Result:GhostQuest30,
+        IsHidden:true,
+        Time:100,
+        RemoveResultItem:true,
+        OnCreate:GhostQuest30_onCreate,
+    }
+
+}

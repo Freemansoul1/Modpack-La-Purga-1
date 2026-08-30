@@ -1,0 +1,128 @@
+
+module Base
+{
+
+	sound RaidSiren
+	{
+		sound LeaperScreamer { clip { file = media/sound/RaidSiren.ogg,   distanceMax = 4000, is3D = true, volume = 0.6, maxInstancesPerEmitter = 1, } }
+
+	}
+
+	recipe Hacer trampa sonora
+	{
+		keep [Recipe.GetItemTypes.Screwdriver],
+
+        Amplifier/MotionSensor/HomeAlarm/Speaker,
+        CarBattery,
+        ElectronicsScrap=5,
+        
+		SkillRequired:Trapping=3,
+		Result:MoreTraps.Trampa sonora,
+		
+		Sound:DropSoilFromDirtBag,
+		AnimNode:SetupTrap,
+		Prop1:Screwdriver,
+
+		Time:180.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+	}
+	
+	recipe Hacer trampa de zombies
+	{
+		keep [Recipe.GetItemTypes.Screwdriver],
+        CorpseMale/CorpseFemale,
+        MetalPipe=4,
+        
+		SkillRequired:Trapping=2,
+		Result:MoreTraps.Trampa de zombies,
+		
+		Sound:DropSoilFromDirtBag,
+		AnimNode:SetupTrap,
+		Prop1:MetalPipe,
+		Prop2:Rabbitmeat,
+
+		Time:180.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+	}
+	recipe Hacer trampa de caida A
+	{
+		keep [Recipe.GetItemTypes.Hammer]/[Recipe.GetItemTypes.Sledgehammer]/Log/Plank/BaseballBat/BaseballBatNails/Crowbar, 
+		SmallSheetMetal=4,
+		Nails=5,
+
+		SkillRequired:Trapping=3,
+		Result:MoreTraps.Trampa de caida A,
+		
+		AnimNode:SetupTrap2,
+		Sound:CrowbarHit,
+		Prop1:Hammer,
+		
+		Time:150.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+		AnimNode:SetupTrap2,
+
+			
+	}
+	recipe Hacer trampa de caida B
+	{
+		keep [Recipe.GetItemTypes.Hammer]/[Recipe.GetItemTypes.Sledgehammer]/Log/Plank/BaseballBat/BaseballBatNails/Crowbar, 
+		Plank=3,
+		Nails=5,
+
+		SkillRequired:Trapping=3,
+		Result:MoreTraps.Trampa de caida B,
+		
+		AnimNode:SetupTrap2,
+		Prop1:Hammer,
+		Sound:CrowbarHit,
+		
+		Time:150.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+
+			
+	}
+	recipe Hacer trampa de caida C
+	{
+		keep [Recipe.GetItemTypes.Hammer], 
+
+		Plank=2,
+		Nails=4,
+
+		SkillRequired:Trapping=5,
+		Result:MoreTraps.Trampa de caida C,
+		
+		Sound:CrowbarHit,
+		AnimNode:SetupTrap2,
+		Prop1:Hammer,
+		
+		Time:150.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+
+			
+	}
+	recipe Hacer trampa de caida D
+	{
+		keep [Recipe.GetItemTypes.Saw],
+		Plank=3,
+		Stake=4,
+		Nails=5,
+		SkillRequired:Trapping=3,
+		Result:MoreTraps.Trampa de caida D,
+		
+		AnimNode:SawLog,
+		Prop1:Saw,
+		Sound:Sawing,
+		
+		Time:150.0,
+		Category:Trapper,
+		OnGiveXP:Recipe.OnGiveXP.Trapping20,
+			
+	}
+
+	
+}

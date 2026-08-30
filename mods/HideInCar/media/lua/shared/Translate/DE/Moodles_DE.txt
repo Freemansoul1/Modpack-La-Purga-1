@@ -1,4 +1,0 @@
-Moodles_DE {
-    Moodles_GhostedInCar_Good_lvl4 = "Versteckt im Auto",
-    Moodles_GhostedInCar_Good_desc_lvl4 = "Der Spieler ist im Auto versteckt.",
-}

@@ -1,0 +1,378 @@
+#is_flag abel_intro,true
+    #jump loop
+
+*intro
+#m Авель|NPCPortraits/AbelP.png|"Здравствуй. Я тебя раньше не видел."
+#m Низкий томный голос мужчины заполняет комнату.
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Мужчина видит, как вы разворачиваетесь, и заговаривает с вами.
+#is_flag cain_intro,true
+    #m Авель|NPCPortraits/AbelP.png|"Постой! Я не такой злодей, как мой брат. Можешь не бояться, я не обижу. Заходи, если понадобится помощь."
+    #exit
+#m Авель|NPCPortraits/AbelP.png|"Нужна будет помощь - обращайся."
+#exit
+
+*intro_hello
+#m "Добрый день! Я пытаюсь понять, где я ${female,оказалась,оказался}. Изучаю местность."
+#m Авель|NPCPortraits/AbelP.png|"Я так и понял. Это Оазис - один из немногих безопасных уголков округа Нокс. Нейтральная территория для всех выживших."
+#m Авель|NPCPortraits/AbelP.png|"Неподалеку от Малдро, возле железнодорожного депо, есть база Осирис. Там еще пару наших сидит. И там тоже есть чем заняться!"
+#m Авель|NPCPortraits/AbelP.png|"Здесь мы предоставляем услуги, а точнее - даем задания. За их выполнение ты получишь награду. Зовут меня, кстати, Авель."
+#m Авель|NPCPortraits/AbelP.png|"Вот тот хмурый мужик возле бочки - мой родной брат, Каин. Вечно злой, но я его понимаю. Армия сделала его таким."
+#m Авель|NPCPortraits/AbelP.png|"Повезло, что меня не сделала таким же. В общем, чего тянуть. У меня тоже есть для тебя задания. Будет интересно - заглядывай. И к братцу моему тоже заскочи."
+#fade_out black
+#set_flag abel_intro,true
+#fade_in
+#reveal Abel
+#exit
+
+*loop
+#m Авель|NPCPortraits/AbelP.png|"О, это ты. Заданиями ${female,заинтересовалась,заинтересовался}?"
+
+#is_quest abel_q1|locked
+    #set_flag abel_q1_flag,false
+#is_quest abel_q1|completed
+    #set_flag abel_q1_flag,false
+#is_quest abel_q1|failed
+    #set_flag abel_q1_flag,false
+
+#is_quest abel_q2|locked
+    #set_flag abel_q2_flag,false
+#is_quest abel_q2|completed
+    #set_flag abel_q2_flag,false
+#is_quest abel_q2|failed
+    #set_flag abel_q2_flag,false
+
+#is_quest abel_q3|locked
+    #set_flag abel_q3_flag,false
+#is_quest abel_q3|completed
+    #set_flag abel_q3_flag,false
+#is_quest abel_q3|failed
+    #set_flag abel_q3_flag,false
+
+    
+*backtolist
+#choice
+    questPSlist|Задания на пистолеты и дробовики
+    questREMlist|Задание на ремкомплект
+    quest_exit|Уйти
+
+*questPSlist
+#choice
+    questPS1|Задание "Консервы для Оазиса" (Пистолет)
+    questPS2|Задание "Военная форма" (Дробовик)
+    backtolist|Вернуться к общему списку
+    questPS1_complete|Завершить задание|abel_q1_flag
+    questPS2_complete|Завершить задание|abel_q2_flag
+    quest_exit|Уйти
+
+*questPS1
+#is_quest abel_q1|locked
+    #m Авель|NPCPortraits/AbelP.png|"Оазису нужен провиант. Мы, конечно, и сами добываем, но времени на это не так много. А местные Ремесленники нас не очень любят, поэтому делятся неохотно. Принеси мне, пожалуйста, 10 любых консерв."
+    #quest_unlock abel_q1
+    #task_unlock abel_q1|t1
+    #set_flag abel_q1_flag,true
+    #exit
+#is_quest abel_q1|unlocked,uncompleted
+    #m Авель|NPCPortraits/AbelP.png|"Ты не можешь повторно взять это задание."
+    #exit
+#is_quest abel_q1|unlocked,completed
+    #m Авель|NPCPortraits/AbelP.png|"У меня больше нет поручений для тебя. Приходи завтра."
+#exit
+
+*questPS1_complete
+#deliver abel_q1|t1
+    #m Авель|NPCPortraits/AbelP.png|"Спасибо."
+    #set_flag abel_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,8
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,4
+    #reward EXP,RepArmy,6
+    #reward NHM.BlueprintPistol,1,rare
+    #exit
+#m Авель|NPCPortraits/AbelP.png|"Ничего, мы пока не голодаем."
+#exit
+
+*quest_exit
+#exit
+
+*questPS2
+#is_quest abel_q2|locked
+    #m Авель|NPCPortraits/AbelP.png|"У моих ребят из Осириса проблемы со снаряжением. Куртки уже совсем прохудились. Добудь новые, пожалуйста. Тут в коруге много мертвецов в армейских куртках."
+    #m Авель|NPCPortraits/AbelP.png|"Им все равно они уже без надобности. А нам неплохо поможет. Принеси мне 4 штуки. Камуфляж не важен, приму любые."
+    #quest_unlock abel_q2
+    #task_unlock abel_q2|t1
+    #set_flag abel_q2_flag,true
+    #exit
+#is_quest abel_q2|unlocked,uncompleted
+    #m Авель|NPCPortraits/AbelP.png|"Ты не можешь повторно взять это задание."
+    #exit
+#is_quest abel_q2|unlocked,completed
+    #m Авель|NPCPortraits/AbelP.png|"У меня больше нет поручений для тебя. Приходи завтра."
+#exit
+
+*questPS2_complete
+#deliver abel_q2|t1
+    #m Авель|NPCPortraits/AbelP.png|"Хорошая работа. Спасибо."
+    #set_flag abel_q2_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,6
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,3
+    #reward EXP,RepArmy,4.5
+    #reward NHM.BlueprintShotgun,1,rare
+    #exit
+#m Авель|NPCPortraits/AbelP.png|"Что ж, я надеюсь, ребята не замерзнут."
+#exit
+
+*questREMlist
+#choice
+    questREM|Задание "Дирижер"
+    backtolist|Вернуться к общему списку
+    quest_exit|Уйти
+    questREM_complete|Завершить задание|abel_q3_flag
+
+*questREM
+#is_quest abel_q3|locked
+    #has_item NHM.QuestFirework,3|Base.Matches,1
+        #m Авель|NPCPortraits/AbelP.png|"У нас есть одно важное задание... Регулярное задание. На окраинах округа Нокс бродят огромные толпы ходячих."
+        #m Авель|NPCPortraits/AbelP.png|"Парни с Осириса, как и наше начальство, запрещают нам зачищать их."
+        #m "Но почему?"
+        #m Авель|NPCPortraits/AbelP.png|"Хороший вопрос. Потому что это "пустая трата патронов" и потому что "на звуки выстрелов их придет в 2 раза больше". Звучит странно, но... разумно, наверное."
+        #m Авель|NPCPortraits/AbelP.png|"С начальством не спорят, нельзя ослушиваться приказов. Конец света не повод отменять военный трибунал..."
+        #m Авель|NPCPortraits/AbelP.png|"Ладно. Ближе к делу. Вместо того, чтоб зачищать их, мы регулярно используем систему фейерверков. Совокупность ярких источников света и громких источников звука позволяет нам управлять ордами мертвых и направлять их куда надо."
+        #m Авель|NPCPortraits/AbelP.png|"Единственная проблема с этим - вовремя отслеживать направление и численность орды. Чтоб отвлекая одну орду, не привлечь другую. Понимаешь?"
+        #m "Ага... вроде."
+        #m Авель|NPCPortraits/AbelP.png|"Расслабься. Все вычисления я беру на себя. С тебя - отвлечь орду"
+        #m Авель|NPCPortraits/AbelP.png|"Я дам тебе координаты 3 точек. Но есть одно но - после запуска фейрверка на первой точке ты привлечешь внимание орды. И чтобы план сработал - тебе нужно будет в течение 2 [игровых] часов зажечь фейерверки в двух оставшихся точках. Если не успеешь... ну, лучше тебе успеть."
+        #m Авель|NPCPortraits/AbelP.png|"В общем-то ничего страшного не случится, надеюсь. Но лучше никого лишний раз не подвергать опасности, верно?"
+        #m Авель|NPCPortraits/AbelP.png|"Ладно, удачи тебе."
+        #m Авель|NPCPortraits/AbelP.png|"И еще кое-что. Если у тебя будет при себе рация, то мы сможем связываться в процессе."
+        #m Авель|NPCPortraits/AbelP.png|"Желтая такая... Валу-тех, портативная... Держи при себе, если что. Запускать фейерверк мешает дерево, его можно срубить топором. Ну все, иди."
+        #quest_unlock abel_q3
+        #roll a1,10|a2,20|a3,30|a4,40|a5,50|a6,60|a7,70|a8,80|a9,90|a10,100
+        #task_unlock abel_q3|t21
+        #exit
+    #m Авель|NPCPortraits/AbelP.png|"Для выполнения этой миссии вам нужно найти 3 фейерверка, вы можете отыскать их в городе. Вам также может понадобиться топор, чтобы расчистить площадку для запуска фейерверка. И не забудьте спички!"
+    #exit
+#is_quest abel_q3|unlocked,uncompleted
+    #m Авель|NPCPortraits/AbelP.png|"Ты не можешь повторно взять это задание."
+    #exit
+#is_quest abel_q3|unlocked,completed
+    #m Авель|NPCPortraits/AbelP.png|"У меня больше нет поручений для тебя. Приходи завтра."
+#exit
+
+*reset_abel_q3
+    #set_flag q3_rem1_flag,false
+    #set_flag q3_rem2_flag,false
+    #set_flag q3_rem3_flag,false
+    #set_flag abel_q3_flag,false
+    #task_complete abel_q3|t0
+#exit
+
+*a1
+#task_unlock abel_q3|t1
+#ret
+
+*a2
+#task_unlock abel_q3|t3
+#ret
+
+*a3
+#task_unlock abel_q3|t5
+#ret
+
+*a4
+#task_unlock abel_q3|t7
+#ret
+
+*a5
+#task_unlock abel_q3|t9
+#ret
+
+*a6
+#task_unlock abel_q3|t11
+#ret
+
+*a7
+#task_unlock abel_q3|t13
+#ret
+
+*a8
+#task_unlock abel_q3|t15
+#ret
+
+*a9
+#task_unlock abel_q3|t17
+#ret
+
+*a10
+#task_unlock abel_q3|t19
+#ret
+
+*q_rem2
+#roll b1,10|b2,20|b3,30|b4,40|b5,50|b6,60|b7,70|b8,80|b9,90|b10,100
+#exit
+
+*b1
+#task_unlock abel_q3|t23
+#exit
+
+*b2
+#task_unlock abel_q3|t25
+#exit
+
+*b3
+#task_unlock abel_q3|t27
+#exit
+
+*b4
+#task_unlock abel_q3|t29
+#exit
+
+*b5
+#task_unlock abel_q3|t31
+#exit
+
+*b6
+#task_unlock abel_q3|t33
+#exit
+
+*b7
+#task_unlock abel_q3|t35
+#exit
+
+*b8
+#task_unlock abel_q3|t37
+#exit
+
+*b9
+#task_unlock abel_q3|t39
+#exit
+
+*b10
+#task_unlock abel_q3|t41
+#exit
+
+*q_rem3
+#roll с1,10|с2,20|с3,30|с4,40|с5,50|с6,60|с7,70|с8,80|с9,90|с10,100
+#exit
+
+*с1
+#task_unlock abel_q3|t45
+#exit
+
+*с2
+#task_unlock abel_q3|t47
+#exit
+
+*с3
+#task_unlock abel_q3|t49
+#exit
+
+*с4
+#task_unlock abel_q3|t51
+#exit
+
+*с5
+#task_unlock abel_q3|t53
+#exit
+
+*с6
+#task_unlock abel_q3|t55
+#exit
+
+*с7
+#task_unlock abel_q3|t57
+#exit
+
+*с8
+#task_unlock abel_q3|t59
+#exit
+
+*с9
+#task_unlock abel_q3|t61
+#exit
+
+*с10
+#task_unlock abel_q3|t63
+#exit
+
+*quest3_rem1
+#has_item NHM.QuestFirework,1|Base.Matches,1
+    #remove_item NHM.QuestFirework,1
+    #set_flag q3_rem1_flag,true
+    #sfx Quest_FireW
+    #pop_up NPCPortraits/Fireworks.png
+    #m Вау... Как красиво!
+    #has_item Radio.WalkieTalkie2,1
+        #m Авель|NPCPortraits/AbelP.png|"Приём. Слышно меня?"
+        #m "Слышно! Прием."
+        #m Авель|NPCPortraits/AbelP.png|"Полыхнуло что надо! Наблюдаю из Оазиса. Завораживает, не так ли?"
+        #m Авель|NPCPortraits/AbelP.png|"Ладно, не время. Помни, у тебя ровно 2 часа, чтобы зажечь следующие точки. Удачи, я на связи."
+        #exit
+    #m Медлить нельзя... Авель сказал, что после запуска первого фейерверка у меня будет 2 часа на запуск двух оставшихся. Жаль, нет рации с собой...
+    #exit
+#m Мне нужны Фейерверк и спички...
+#exit
+
+*quest3_rem2
+#has_item NHM.QuestFirework,1|Base.Matches,1
+    #remove_item NHM.QuestFirework,1
+    #set_flag q3_rem2_flag,true
+    #sfx Quest_FireW
+    #pop_up NPCPortraits/Fireworks2.png
+    #m Кажется, я слышу звуки орды. Надо бежать.
+    #has_item Radio.WalkieTalkie2,1
+        #m Авель|NPCPortraits/AbelP.png|"Приём. Снова я. Подтверждаю огонь со второй точки."
+        #m "Осталась последняя точка?"
+        #m Авель|NPCPortraits/AbelP.png|"Да. Времени мало. Беги. Свяжемся позже."
+        #exit
+    #m Осталась последняя точка... Надеюсь, у Авеля все под контролем. Без рации тяжело...
+    #exit
+#m Мне нужны Фейерверк и спички...
+#exit
+
+*quest3_rem3
+#has_item NHM.QuestFirework,1|Base.Matches,1
+    #remove_item NHM.QuestFirework,1
+    #remove_item Base.Matches,1
+    #set_flag q3_rem3_flag,true
+    #sfx Quest_FireW
+    #pop_up NPCPortraits/Fireworks3.png
+    #m Надеюсь, ${female,успела,успел}... Время вроде не вышло... Вернусь к Авелю и узнаю.
+    #has_item Radio.WalkieTalkie2,1
+        #m Авель|NPCPortraits/AbelP.png|"Приём. Отличная работа, возвращайся за наградой."
+        #m "Это всё? Может мне... нужно что-то зачистить?"
+        #m Авель|NPCPortraits/AbelP.png|"Парни с Осириса разберутся, ты уже достаточно ${female,сделала,сделал}."
+        #exit
+    #m Пора возвращаться...
+    #exit
+#m Мне нужны Фейерверк и спички...
+#exit
+
+*fail_abel_q3
+#is_quest abel_q3|unlocked,uncompleted,unfailed
+    #set_flag q3_rem1_flag,false
+    #set_flag q3_rem2_flag,false
+    #set_flag q3_rem3_flag,false
+    #set_flag abel_q3_flag,false
+    #quest_fail abel_q3
+    #exit
+#exit
+
+*questREM_complete
+#m Авель|NPCPortraits/AbelP.png|"Всего 3 залпа - и весь округ в безопасности. Ты ${female,поработала,поработал} на славу. Молодец."
+#set_flag abel_q3_completed,true
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+    #reward EXP,RepArmy,10
+#is_lua getPlayer():HasTrait("Badmanners")|true
+    #reward EXP,RepArmy,5
+#reward EXP,RepArmy,7.5
+#reward NHM.RepairKit,1,rare
+#exit

@@ -1,4 +1,0 @@
-ItemName_CN = {
-    ItemName_DFM.PreppedFish = "加工鱼",
-    ItemName_DFM.DryFish = "干鱼",
-}
