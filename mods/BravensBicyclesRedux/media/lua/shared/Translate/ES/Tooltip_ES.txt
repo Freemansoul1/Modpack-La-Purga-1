@@ -1,0 +1,6 @@
+Tooltip_ES = {
+	Tooltip_item_BicycleFrame = "Se puede soltar para generar una bici con todas las piezas que tiene en su inventario.",
+	Tooltip_item_BicycleBasket = "Se puede instalar en bicis normales para almacenamiento adicional.",
+	Tooltip_item_BicycleLock = "Se utiliza para bloquear una bici, evitando que otros entren en ella.",
+	Tooltip_item_BicycleLockKey = "Se utiliza para quitar el candado de una bici.",
+}

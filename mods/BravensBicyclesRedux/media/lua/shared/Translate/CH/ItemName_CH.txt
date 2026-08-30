@@ -1,0 +1,37 @@
+ItemName_CH = {
+
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "常规自行车架",
+    ItemName_Base.BicycleSuspensionRegular3 = "常规自行车悬挂",
+    ItemName_Base.BicycleBrakesRegular3 = "普通自行车刹车",
+    ItemName_Base.BicycleTireRegular = "普通自行车轮胎",
+    ItemName_Base.BicycleSeat = "自行车座",
+
+    ItemName_Base.BicycleFrameRegularScrap = "常规自行车架 (废料)",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "常规自行车悬挂 (废料)",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "普通自行车刹车 (废料)",
+    ItemName_Base.BicycleTireRegularScrap = "普通自行车轮胎 (废料)",
+    ItemName_Base.BicycleSeatScrap = "自行车座",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "山地自行车车架",
+    ItemName_Base.BicycleSuspensionMTB3 = "山地自行车避震器",
+    ItemName_Base.BicycleBrakesMTB3 = "山地自行车刹车",
+    ItemName_Base.BicycleTireMTB = "山地自行车轮胎",
+
+    ItemName_Base.BicycleFrameMTBScrap = "山地车车架 (废料)",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "山地自行车避震器（废料）",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "山地自行车刹车（废料）",
+    ItemName_Base.BicycleTireMTBScrap = "山地自行车轮胎（废料）",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "自行车篮",
+    ItemName_Base.BicycleHeadlight3 = "自行车头灯",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "自行车锁",
+    ItemName_Base.BicycleLockKey = "自行车锁钥匙",
+    ItemName_Base.BicyclesMagVol1 = "自行车卷。 1",
+    ItemName_Base.BicyclesMagVol2 = "自行车卷。 2",
+    ItemName_Base.BicyclesMagVol3 = "自行车卷。 3",
+}

@@ -1,0 +1,13 @@
+VERSION = 1,
+
+option FasterRacking
+{
+    type = boolean,
+    default = false,
+    page = BoltRifleTweak,
+	translation = FasterRacking,
+}
+
+
+
+

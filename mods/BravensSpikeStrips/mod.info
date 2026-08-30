@@ -1,0 +1,8 @@
+name=Braven's Spike strips
+id=BB_Traps_SpikeStrips1
+require=Purga_BB_Utils1
+poster=poster.png
+icon=icon.png
+authors=BitBraven
+modversion=1.2.0
+description=This mod adds functional road spike strips to the game!

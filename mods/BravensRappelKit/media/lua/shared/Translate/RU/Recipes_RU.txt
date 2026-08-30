@@ -1,0 +1,5 @@
+Recipes_RU = {
+    Recipe_MakeRappelRope = "Сделать спусковую веревку",
+    Recipe_MakeSwissSeat = "Сделать альпинистскую обвязку",
+	Recipe_MakeEscapeRope = "Сделать спусковой комплект",
+}

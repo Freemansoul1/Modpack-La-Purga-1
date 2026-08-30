@@ -1,0 +1,5 @@
+name=add_LockUnlockHouseDoor_Hotkey select only one
+id=add_LockUnlockHouseDoor_Hotkey select only one1
+poster=poster.png
+description=hotkey shift+X for lock the houses door
+

@@ -1,0 +1,3 @@
+ItemName_IT = {
+    ItemName_Braven.SpikeStrip = "Striscia di punte",
+}

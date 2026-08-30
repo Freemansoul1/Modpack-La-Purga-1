@@ -1,0 +1,24 @@
+IG_UI_PTBR = {
+	IGUI_VehicleNameBicycleRegular = "Bicicleta normal",
+	IGUI_VehicleNameBicycleRegularScrap = "Bicicleta normal (Sucata)",
+	IGUI_VehicleNameBicycleMTB = "Mountain Bike",
+	IGUI_VehicleNameBicycleMTBScrap = "Mountain Bike (Sucata)",
+	IGUI_VehicleNameBicycleTrailer = "Reboque de Bike"
+	IGUI_VehiclePartSeatFront= "Selim",
+	IGUI_VehiclePartSuspensionFront = "Garfo dianteiro",
+	IGUI_VehiclePartSuspensionRear = "Garfo traseiro",
+	IGUI_VehiclePartBrakeFront = "Freio dianteiro",
+	IGUI_VehiclePartBrakeRear = "Freio traseiro",
+	IGUI_VehiclePartTireFront = "Pneu dianteiro",
+	IGUI_VehiclePartTireRear = "Pneu traseiro",
+	IGUI_VehiclePartBikeBasket = "Cesta",
+	IGUI_VehiclePartTrunk = "Rack traseiro",
+	IGUI_VehiclePartHeadlight = "Farol",
+	IGUI_VehiclePartCatAccessories = "Acessórios",
+	IGUI_Settings_ToggleExhaustion = "Alternar Exaustão",
+	IGUI_Settings_Tooltip_ToggleExhaustion = "Determina se seu personagem ficará cansado ao pedalar. ",
+	IGUI_Settings_ToggleExp = "Alternar Exp",
+	IGUI_Settings_Tooltip_ToggleExp = "Determina se seu personagem receberá exp de condicionamento físico enquanto pedala. ",
+	IGUI_Settings_ToggleWarmth = "Alternar Calor",
+	IGUI_Settings_Tooltip_ToggleWarmth = "Determina se seu personagem vai se aquecer ao pedalar. "
+}

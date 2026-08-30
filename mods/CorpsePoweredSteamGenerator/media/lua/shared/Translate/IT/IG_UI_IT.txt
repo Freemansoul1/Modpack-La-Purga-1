@@ -1,0 +1,4 @@
+IGUI_IT = {
+	IGUI_Generator_Water = "Acqua: %1%",
+	IGUI_Generator_TypeSteam = "Generatore a vapore",
+}

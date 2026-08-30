@@ -1,0 +1,15 @@
+Recipes_ES = {
+    Recipe_CraftScrapFrame1 = "Soldar cuadro de chatarra regular",
+    Recipe_CraftScrapSuspension1 = "Soldar suspensión de chatarra regular",
+    Recipe_CraftScrapBrakes1 = "Soldar frenos de chatarra regulares",
+    Recipe_CraftScrapTire1 = "Moldar neumático de chatarra regular",
+    
+    Recipe_CraftScrapFrame2 = "Soldar cuadro de chatarra de MTB",
+    Recipe_CraftScrapSuspension2 = "Soldar suspensión de chatarra de MTB",
+    Recipe_CraftScrapBrakes2 = "Soldar frenos de chatarra de MTB",
+    Recipe_CraftScrapTire2 = "Moldar neumático de chatarra de MTB",
+
+    Recipe_CraftScrapSeat = "Hacer un asiento de chatarra",
+    Recipe_CraftBikeLock = "Hacer un candado de bici",
+    Recipe_CraftHeadlight = "Hacer un faro de bici",
+}

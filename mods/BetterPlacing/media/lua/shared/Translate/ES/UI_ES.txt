@@ -1,0 +1,5 @@
+UI_ES = {
+UI_optionscreen_binding_BetterPlacing Keys = "Mejor colocacion",
+UI_optionscreen_binding_BP Ajustar altura = "Ajustar altura",
+UI_optionscreen_binding_BP Restablecer altura = "Restablecer altura",
+}

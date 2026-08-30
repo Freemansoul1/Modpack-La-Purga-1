@@ -1,0 +1,13 @@
+IGUI_ES =
+{
+    IGUI_ItemCat_CarWanna = "PinkSlip",
+    IGUI_CW_Confirm = "¿Convertir en PinkSlip?",
+    IGUI_CW_Tooltip_Vehicle = "Vehiculo: ",
+    IGUI_CW_Tooltip_Invalid = "ERROR!!!",
+    IGUI_CW_Tooltip_Skin = "Skin: ",
+    IGUI_CW_Tooltip_Key = "Tiene llave",
+    IGUI_CW_Tooltip_HotWired = "Puenteado",
+    IGUI_CW_Tooltip_EngineQuality = "Calidad del motor: ",
+    IGUI_CW_Tooltip_Missing = "Partes faltantes: ",
+    IGUI_CW_Tooltip_Broken = "Partes rotas: ",
+}

@@ -1,0 +1,15 @@
+Recipes_CH = {
+    Recipe_CraftScrapFrame1 = "焊接常规报废自行车车架",
+    Recipe_CraftScrapSuspension1 = "焊接常规报废自行车悬架",
+    Recipe_CraftScrapBrakes1 = "焊接常规报废自行车制动器",
+    Recipe_CraftScrapTire1 = "模具定期报废自行车轮胎",
+
+    Recipe_CraftScrapFrame2 = "焊接山地车废车架",
+    Recipe_CraftScrapSuspension2 = "焊接山地车废料悬挂",
+    Recipe_CraftScrapBrakes2 = "焊接 MTB 废刹车片",
+    Recipe_CraftScrapTire2 = "模具山地车废轮胎",
+
+    Recipe_CraftScrapSeat = "制作废座",
+    Recipe_CraftBikeLock = "创建自行车锁",
+    Recipe_CraftHeadlight = "创建自行车前灯",
+}

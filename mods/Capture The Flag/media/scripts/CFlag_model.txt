@@ -1,0 +1,10 @@
+module Base {
+
+    model CFlagGround
+    {
+        mesh = WorldItems/CFlagGround,
+        texture = WorldItems/CFlag,
+        scale = 0.1,
+    }
+
+}

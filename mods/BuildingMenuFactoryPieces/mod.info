@@ -1,0 +1,7 @@
+name=Building Menu - Factory Pieces
+poster=poster.png
+id=BuildingMenuFactoryPieces1
+tiledef=FactoryPieces 2349
+pack=FactoryPieces
+description=Making machines.
+

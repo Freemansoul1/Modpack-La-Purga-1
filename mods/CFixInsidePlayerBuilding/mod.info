@@ -1,0 +1,5 @@
+id=FixInsidePlayerBuilding
+name=FixInsidePlayerBuilding1
+description=Those pillars will not prevent the game to detect rooms anymore.
+poster=preview.png
+icon=previewIcon.png

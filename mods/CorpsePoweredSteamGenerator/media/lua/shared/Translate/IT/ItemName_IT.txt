@@ -1,0 +1,3 @@
+ItemName_IT = {
+	ItemName_SteamGenerator.Generator = "Generatore a vapore",
+}

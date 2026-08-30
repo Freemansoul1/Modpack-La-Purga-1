@@ -1,0 +1,14 @@
+module SteamGenerator {
+	imports { Base }
+	item Generator {
+		DisplayCategory = Electronics,
+		Weight = 40,
+		Type = Normal,
+		DisplayName = Steam Powered Generator,
+		Icon = SteamGenerator,
+		Tooltip = Tooltip_SteamGenerator,
+		RequiresEquippedBothHands = true,
+		MetalValue = 500,
+		ConditionMax = 100,
+	}
+}

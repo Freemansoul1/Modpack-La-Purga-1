@@ -1,0 +1,4 @@
+Sandbox_EN = {
+	Sandbox_DisplayLocationEnable = "Show Coordinate",
+	Sandbox_DisplayLocationEnable_tooltip = "Displays the player current coordinates in the info bar",
+}

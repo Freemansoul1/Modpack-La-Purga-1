@@ -1,0 +1,8 @@
+name=Braven's Bicycles Redux
+id=Purga_BB_Bicycles1
+require=Purga_BB_Utils1
+poster=poster.png
+icon=icon.png
+authors=BitBraven
+modversion=1.0.0
+description=This mod adds working bicycles to the game!

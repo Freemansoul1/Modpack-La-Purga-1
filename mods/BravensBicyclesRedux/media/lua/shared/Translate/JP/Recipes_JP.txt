@@ -1,0 +1,15 @@
+Recipes_JP = {
+    Recipe_CraftScrapFrame1 = "通常のスクラップ自転車フレームを溶接します",
+    Recipe_CraftScrapSuspension1 = "通常のスクラップ自転車サスペンションを溶接する",
+    Recipe_CraftScrapBrakes1 = "通常のスクラップ自転車ブレーキを溶接する",
+    Recipe_CraftScrapTire1 = "通常のスクラップ自転車タイヤを成形する",
+    
+    Recipe_CraftScrapFrame2 = "MTBスクラップフレームを溶接します",
+    Recipe_CraftScrapSuspension2 = "溶接MTBスクラップサスペンション",
+    Recipe_CraftScrapBrakes2 = "溶接MTBスクラップブレーキ",
+    Recipe_CraftScrapTire2 = "モールドMTBスクラップタイヤ",
+
+    Recipe_CraftScrapSeat = "スクラップシートを作る",
+    Recipe_CraftBikeLock = "自転車用の鍵を作成する",
+    Recipe_CraftHeadlight = "自転車のヘッドライトを作る",
+}

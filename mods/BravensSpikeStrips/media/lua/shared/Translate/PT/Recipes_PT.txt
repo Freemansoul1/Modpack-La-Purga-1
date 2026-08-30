@@ -1,0 +1,3 @@
+Recipes_PT = {
+    Recipe_craft_spikestrip = "Forjar fura-pneus",
+}

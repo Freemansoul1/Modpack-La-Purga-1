@@ -1,0 +1,15 @@
+Recipes_DE = {
+    Recipe_CraftScrapFrame1 = "Fahrradrahmen aus normalem Schrott schweiﬂen",
+    Recipe_CraftScrapSuspension1 = "Fahrradaufh‰ngung aus normalem Schrott schweiﬂen",
+    Recipe_CraftScrapBrakes1 = "Schweiﬂen Sie normale Fahrradbremsen aus Schrott",
+    Recipe_CraftScrapTire1 = "Formen Sie einen normalen Fahrradreifen aus Schrott",
+
+    Recipe_CraftScrapFrame2 = "MTB-Schrottrahmen schweiﬂen",
+    Recipe_CraftScrapSuspension2 = "MTB-Schrottaufh‰ngung schweiﬂen",
+    Recipe_CraftScrapBrakes2 = "MTB-Schrottbremsen schweiﬂen",
+    Recipe_CraftScrapTire2 = "Mold MTB Altreifen",
+
+    Recipe_CraftScrapSeat = "Schrottsitz machen",
+    Recipe_CraftBikeLock = "Fahrradschloss erstellen",
+    Recipe_CraftHeadlight = "Fahrradscheinwerfer erstellen",
+}

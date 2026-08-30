@@ -1,0 +1,5 @@
+ContextMenu_JP = {
+    ContextMenu_Climb_Escape_Rope = "ラッペルキットを使用する",
+    ContextMenu_Add_Escape_Rope = "ラッペルキットを展開する",
+	ContextMenu_Remove_Escape_Rope = "ラペルキットを取り外します",
+}

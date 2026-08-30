@@ -1,0 +1,36 @@
+ItemName_DE = {
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "Normaler Fahrradrahmen",
+    ItemName_Base.BicycleSuspensionRegular3 = "Normale Fahrradaufhängung",
+    ItemName_Base.BicycleBrakesRegular3 = "Normale Fahrradbremse",
+    ItemName_Base.BicycleTireRegular = "Normaler Fahrradreifen",
+    ItemName_Base.BicycleSeat = "Fahrradsitz",
+
+    ItemName_Base.BicycleFrameRegularScrap = "Normaler Fahrradrahmen (Schrott)",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "Normale Fahrradaufhängung (Schrott)",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "Normale Fahrradbremse (Schrott)",
+    ItemName_Base.BicycleTireRegularScrap = "Normaler Fahrradreifen (Schrott)",
+    ItemName_Base.BicycleSeatScrap = "Fahrradsitz (Schrott)",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "Mountainbike-Rahmen",
+    ItemName_Base.BicycleSuspensionMTB3 = "Mountainbike-Federung",
+    ItemName_Base.BicycleBrakesMTB3 = "Mountainbike bremse",
+    ItemName_Base.BicycleTireMTB = "Mountainbike-Reifen",
+
+    ItemName_Base.BicycleFrameMTBScrap = "Mountainbike Rahmen (Schrott)",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "Mountainbike Federung (Schrott)",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "Mountainbike Bremse (Schrott)",
+    ItemName_Base.BicycleTireMTBScrap = "Mountainbike Bremse (Schrott)",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "Fahrradkorb",
+    ItemName_Base.BicycleHeadlight3 = "Fahrradscheinwerfer",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "Fahrradschloss",
+    ItemName_Base.BicycleLockKey = "Schlüssel für Fahrradschloss",
+    ItemName_Base.BicyclesMagVol1 = "Radfahren Vol. 1",
+    ItemName_Base.BicyclesMagVol2 = "Radfahren Vol. 2",
+    ItemName_Base.BicyclesMagVol3 = "Radfahren Vol. 3",
+}

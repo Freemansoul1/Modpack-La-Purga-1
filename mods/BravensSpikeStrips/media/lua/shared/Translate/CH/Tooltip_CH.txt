@@ -1,0 +1,3 @@
+Tooltip_CH = {
+	Tooltip_item_SpikeStrip = "将它们掉落或放置在地面上，以刺穿任何经过的汽车的轮胎。 ",
+}

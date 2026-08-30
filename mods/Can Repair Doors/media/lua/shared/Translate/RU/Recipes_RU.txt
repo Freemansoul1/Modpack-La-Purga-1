@@ -1,0 +1,5 @@
+Recipe_RU = {
+
+Recipe_makeDoorsRepairKitWood = "Создать ремкомплект для двери",
+Recipe_makeDoorsReinforceKitMetal = "Создать набор для укрепления двери",
+}

@@ -1,0 +1,36 @@
+ItemName_ES = {
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "Cuadro de bici común",
+    ItemName_Base.BicycleSuspensionRegular3 = "Suspensión común de bici",
+    ItemName_Base.BicycleBrakesRegular3 = "Freno de bici común",
+    ItemName_Base.BicycleTireRegular = "Neumático de bici común",
+    ItemName_Base.BicycleSeat = "Asiento de bici",
+
+    ItemName_Base.BicycleFrameRegularScrap = "Cuadro de bici común (Chatarra)",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "Suspensión común de bici (Chatarra)",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "Freno de bici común (Chatarra)",
+    ItemName_Base.BicycleTireRegularScrap = "Neumático de bici común (Chatarra)",
+    ItemName_Base.BicycleSeatScrap = "Asiento de bici",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "Cuadro de MTB",
+    ItemName_Base.BicycleSuspensionMTB3 = "Suspensión de MTB",
+    ItemName_Base.BicycleBrakesMTB3 = "Freno de MTB",
+    ItemName_Base.BicycleTireMTB = "Neumático de MTB",
+
+    ItemName_Base.BicycleFrameMTBScrap = "Cuadro de MTB (Chatarra)",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "Suspensión de MTB (Chatarra)",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "Freno de MTB (Chatarra)",
+    ItemName_Base.BicycleTireMTBScrap = "Neumático de MTB (Chatarra)",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "Cesta de bici",
+    ItemName_Base.BicycleHeadlight3 = "Faro de bici",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "Candado de bici",
+    ItemName_Base.BicycleLockKey = "llave de candado de bici",
+    ItemName_Base.BicyclesMagVol1 = "Ciclismo Vol. 1",
+    ItemName_Base.BicyclesMagVol2 = "Ciclismo Vol. 2",
+    ItemName_Base.BicyclesMagVol3 = "Ciclismo Vol. 3",
+}

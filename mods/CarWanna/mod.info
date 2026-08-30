@@ -1,0 +1,5 @@
+name=CarWanna
+id=CW1
+poster=poster.png
+icon=icon.png
+description=Multiplayer Vehicle Spawning Library

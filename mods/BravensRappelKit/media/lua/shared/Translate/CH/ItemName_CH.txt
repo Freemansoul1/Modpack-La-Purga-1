@@ -1,0 +1,5 @@
+ItemName_CH = {
+    ItemName_Base.RappelRope = "垂降绳",
+    ItemName_Base.SwissSeat = "攀岩安全带",
+	ItemName_Base.EscapeRope = "绳降套件",
+}

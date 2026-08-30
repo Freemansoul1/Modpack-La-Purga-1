@@ -1,0 +1,10 @@
+Sandbox_EN = {
+
+Sandbox_CAMmod = "Corpses auto move",
+
+Sandbox_CAMmodmaximumCorpsePile = "Maximum corpse pile",
+Sandbox_CAMmodmaximumCorpsePile_tooltip = "This is the quantity of corpses that can be stacked on the same pile.(reboot required)",
+
+
+
+ }   

@@ -1,0 +1,31 @@
+VERSION = 1,
+
+option ChevalDeFrise.WoodBaseHealth
+{
+	type = integer,
+	min = 1,
+	max = 99999,
+	default = 200,
+	page = ChevalDeFrise,
+	translation = ChevalDeFrise_WoodBaseHealth,
+}
+
+option ChevalDeFrise.WoodScaleHealth
+{
+	type = integer,
+	min = 1,
+	max = 99999,
+	default = 25,
+	page = ChevalDeFrise,
+	translation = ChevalDeFrise_WoodScaleHealth,
+}
+
+option ChevalDeFrise.WoodDamage
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 3,
+	page = ChevalDeFrise,
+	translation = ChevalDeFrise_WoodDamage,
+}

@@ -1,0 +1,6 @@
+ContextMenu_DE = {
+    ContextMenu_Pick_Up_Bicycle = "Fahrrad abholen",
+    ContextMenu_BicycleLock = "Fahrradschloss einbauen",
+    ContextMenu_BicycleUnlock = "Fahrradschloss entfernen",
+    ContextMenu_Lift_Bicycle = "Fahrrad hochheben",
+}

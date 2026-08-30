@@ -1,0 +1,7 @@
+VERSION = 1,
+
+option Character.DisplayLocationEnable
+{
+	type = boolean, default = true,
+	page = Character, translation = DisplayLocationEnable,
+}

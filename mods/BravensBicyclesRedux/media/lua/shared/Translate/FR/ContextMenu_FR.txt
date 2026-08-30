@@ -1,0 +1,6 @@
+ContextMenu_FR = {
+    ContextMenu_Pick_Up_Bicycle = "Ramasser le vélo",
+    ContextMenu_BicycleLock = "Installer le antivol de vélo",
+    ContextMenu_BicycleUnlock = "Retirer le antivol de vélo",
+    ContextMenu_Lift_Bicycle = "Soulever le vélo",
+}

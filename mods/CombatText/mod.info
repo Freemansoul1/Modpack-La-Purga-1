@@ -1,0 +1,4 @@
+name=Combat Text
+poster=poster.png
+id=CombatText1
+description=Show health bar above zombie heads and damage dealt
