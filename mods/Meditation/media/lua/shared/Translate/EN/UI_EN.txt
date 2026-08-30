@@ -1,0 +1,36 @@
+UI_EN = {
+    UI_Yogi_meditation = "Meditation",
+
+    UI_Yogi_meditate = "Meditate",
+
+    UI_Yogi_MO_meditateContextOption = "Meditate Context Menu Option",
+	UI_Yogi_MO_meditateSilently = "Meditate Silently",
+    UI_Yogi_MO_meditateWhenSitting = "Meditate When Sitting",
+    UI_Yogi_MO_haloNoteFeedback = "Halo Note Feedback",
+    UI_Yogi_MO_meditateBeforeSit = "Meditate Before Sit In Menu",
+    UI_Yogi_MO_disableAnimation = "Disable Custom Animation",
+    UI_Yogi_MO_serverOverride = "Confirm Meditate When Sitting",
+    UI_Yogi_MO_applyBalancedLabeling = "Apply Balanced Labeling",
+
+    UI_Yogi_MO_meditateContextOption_tooltip = "If this is selected, Meditate will appear as a unique option in the context menu, and Sit on Ground will behave normally. This option is only available to yogis unless the server has allowed all players to meditate.",
+	UI_Yogi_MO_meditateSilently_tooltip = "Lifestyle added its own version of meditation after this mod came out, and some servers run both (which I appreciate). Many people have reported on my mod page that they dislike the sound effect introduced at high levels in Lifestyle's meditation. If you are running this mod alongside Lifestyle, enabling this option will mute Lifestyle's meditation. Disable it if you like to hear sound effects when you meditate.",
+    UI_Yogi_MO_meditateWhenSitting_tooltip = "If this is selected, you will attempt to meditate whenever you sit on the ground. This option will only impact yogis unless the server has allowed all players to meditate. This setting overrides the context menu option above; if meditation is the default behavior for sitting, a unique context menu option will not appear.",
+    UI_Yogi_MO_haloNoteFeedback_tooltip = "If you enable halo note feedback, a (completely silent) message will appear above your head to indicate that this mod has made you invisible to zombies. A second message will appear when the mod reveals you to zombies again.",
+    UI_Yogi_MO_meditateBeforeSit_tooltip = "If this option is selected, Meditate will appear before Sit on Ground in the context menu instead of appearing low in the context menu in its original location. If you sit without meditating, Meditate will move to the top of your context menu until you activate it (because Sit on Ground will no longer be a valid reference point since it is removed from the menu when you sit).",
+    UI_Yogi_MO_disableAnimation_tooltip = "Disable the custom animation associated with this mod. Look, I'm new, I get it, it's a bit wonky. I intend to improve it someday, but if you hate it, this setting is for you. While meditating with this option selected, your character will appear to sit normally.",
+    UI_Yogi_MO_serverOverride_tooltip = "Your server may disable meditation as the default animation for those who are capable of meditating in the server's sandbox options (which are basically admin-level settings for the server). If your server disables meditation as the default animation for sitting, you must select this option in addition to 'Meditate When Sitting' in order to confirm that you would like to meditate when you sit.",
+    UI_Yogi_MO_applyBalancedLabeling_tooltip = "Edit the names of known context menu options that do not conform to the capitalization standards applied to most other menu options. For example, 'Sit on ground' becomes 'Sit on Ground' and 'Remove vegetation' (from the 10 Years Later mod) becomes 'Remove Vegetation'. More naming edits may be added if people request them.",
+
+    UI_Yogi_haloNote_gainSerenity = ". . . A feeling of serenity washes over you . . .",
+    UI_Yogi_haloNote_loseSerenity = ". . . Your mind is no longer at peace . . .",
+    UI_Yogi_haloNote_loseFocus = ". . . You lose focus, and your material needs return to the front of your mind . . .",
+    UI_Yogi_haloNote_canRestHere = ". . . This feels like a good place to rest . . .",
+    UI_Yogi_haloNote_comfySpot = ". . . This spot looks comfortable enough . . .",
+    UI_Yogi_haloNote_badTime = ". . . This seems like a bad time to meditate . . .",
+    UI_Yogi_haloNote_needTimeToRelax = ". . . You may need a couple minutes to relax . . .",
+    UI_Yogi_haloNote_needTimeBeforeRest = ". . . You may need a couple minutes to relax, but this is a nice place to rest . . .",
+    UI_Yogi_haloNote_unityAchieved = ". . . You suddenly experience the strangest sense of unity . . .",
+    UI_Yogi_haloNote_discoverMeditation = ". . . You decide to try meditating someday . . .",
+    UI_Yogi_haloNote_readyToSurvive = ". . . You get ready to face the apocalypse . . ."
+
+}

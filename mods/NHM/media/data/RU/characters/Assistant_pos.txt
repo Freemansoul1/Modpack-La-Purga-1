@@ -1,2 +1,0 @@
-#npc_create Assistant|NPC/Assistant.png|11544,7544,0
-#exit

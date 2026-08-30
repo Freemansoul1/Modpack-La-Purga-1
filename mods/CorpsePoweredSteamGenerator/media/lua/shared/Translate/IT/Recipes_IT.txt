@@ -1,0 +1,3 @@
+Recipes_IT = {
+	Recipe_Make_Steam_Generator = "Costruisci un generatore a vapore",
+}

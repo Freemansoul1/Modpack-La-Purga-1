@@ -1,0 +1,32 @@
+module Base
+{
+    item Pila de 5 troncos
+    {
+        DisplayName = Pila de 5 troncos,
+        DisplayCategory = Material,
+        Weight = 25,
+        Type = Normal,
+        Icon = Logs,
+        WorldStaticModel = LogPile5,
+    }
+
+    item Pila de 15 troncos
+    {
+        DisplayName = Pila de 15 troncos,
+        DisplayCategory = Material,
+        Weight = 35,
+        Type = Normal,
+        Icon = Logs,
+        WorldStaticModel = LogPile15,
+    }
+
+    item Pila de 40 troncos
+    {
+        DisplayName = Pila de 40 troncos,
+        DisplayCategory = Material,
+        Weight = 45,
+        Type = Normal,
+        Icon = Logs,
+        WorldStaticModel = LogPile40,
+    }
+}

@@ -1,0 +1,5 @@
+Recipes_DE = {
+    Recipe_MakeRappelRope = "Machen Sie ein Abseilseil",
+    Recipe_MakeSwissSeat = "Klettergurt Basteln",
+	Recipe_MakeEscapeRope = "Machen Sie eine Abseilausrüstung",
+}

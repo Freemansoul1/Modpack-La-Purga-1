@@ -1,0 +1,5 @@
+Recipe_RU = {
+	Recipe_Make_Rope_Cuffs = "Сделать верёвку для связывания",
+	Recipe_Make_Leather_Cuffs = "Сделать кожаные оковы",
+	Recipe_Make_(FRONT)_Leather_Cuffs = "Сделать кожаные оковы c руками спереди",
+}

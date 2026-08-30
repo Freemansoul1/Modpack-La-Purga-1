@@ -1,0 +1,7 @@
+name=Hephas Occupations & Traits
+id=HephasOccupationsAndTraits1
+authors=Hephaistos
+description=
+icon=icon.png
+require=ProfessionFramework1
+poster=poster.png

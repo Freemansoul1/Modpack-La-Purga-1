@@ -1,7 +1,0 @@
-#name Demiurgo|Demiurgo
-
-#desc Nombre: Demiurgo
-#desc_append Edad: Desconocida
-#desc_append Dirige el Hospital. Utiliza términos desconocidos en la conversación. No comparte mucha información sobre sí mismo.
-#desc_append A juzgar por sus propias palabras, antes del incidente no trabajaba en el Hospital.
-#exit

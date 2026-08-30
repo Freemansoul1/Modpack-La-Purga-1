@@ -1,0 +1,193 @@
+module WSS {
+    imports {
+        Base,
+    }
+
+    item Female_Biker {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Female - Biker,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Female_Biker,
+        Tags = WSS_Shop,
+    }
+
+    item Female_Nurse {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Female - Nurse,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Female_Nurse,
+        Tags = WSS_Shop,
+    }
+
+    item Female_Shopkeeper {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Female - Shopkeeper,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Female_Shopkeeper,
+        Tags = WSS_Shop,
+    }
+
+    item Female_Tracksuit {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Female - Tracksuit,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Female_Tracksuit,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Chef {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Sales - Male - Chef,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Chef,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Construction {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Construction,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Construction,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Fancy {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Fancy,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Fancy,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Fisher {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Fishermen,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Fisher,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Prepper {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Prepper,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Prepper,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Shady {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Shady,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Shady,
+        Tags = WSS_Shop,
+    }
+
+    item Male_Tracksuit {
+        Type = Container,
+        DisplayCategory = Container,
+        Weight = 20,
+        DisplayName = NPC Salesmen - Male - Tracksuit,
+        WeightReduction = 0,
+        Capacity = 5,
+        Icon = WSSShop,
+        WorldStaticModel = Male_Tracksuit,
+        Tags = WSS_Shop,
+    }
+
+    model Female_Biker {
+        mesh = WSS_Female_Biker,
+        texture = WSS_Female_Biker,
+    }
+
+    model Female_Nurse {
+        mesh = WSS_Female_Nurse,
+        texture = WSS_Female_Nurse,
+    }
+
+    model Female_Shopkeeper {
+        mesh = WSS_Female_Shopkeeper,
+        texture = WSS_Female_Shopkeeper,
+    }
+
+    model Female_Tracksuit {
+        mesh = WSS_Female_Tracksuit,
+        texture = WSS_Female_Tracksuit,
+    }
+
+    model Male_Chef {
+        mesh = WSS_Male_Chef,
+        texture = WSS_Male_Chef,
+    }
+
+    model Male_Construction {
+        mesh = WSS_Male_Construction,
+        texture = WSS_Male_Construction,
+    }
+
+    model Male_Fancy {
+        mesh = WSS_Male_Fancy,
+        texture = WSS_Male_Fancy,
+    }
+
+    model Male_Fisher {
+        mesh = WSS_Male_Fisher,
+        texture = WSS_Male_Fisher,
+    }
+
+    model Male_Prepper {
+        mesh = WSS_Male_Prepper,
+        texture = WSS_Male_Prepper,
+    }
+
+    model Male_Shady {
+        mesh = WSS_Male_Shady,
+        texture = WSS_Male_Shady,
+    }
+
+    model Male_Tracksuit {
+        mesh = WSS_Male_Tracksuit,
+        texture = WSS_Male_Tracksuit,
+    }
+
+}

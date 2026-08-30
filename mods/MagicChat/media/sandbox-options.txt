@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option MagicChat.allowIgnoringAdminAnnouncements = {
+	type = boolean,
+	default = false,
+	page = MagicChat,
+	translation = MagicChat_allowIgnoringAdminAnnouncements,
+}
+
+option MagicChat.minimumServerMessageDuration = {
+	type = integer,
+	min = 1,
+	max = 600,
+	default = 1,
+	page = MagicChat,
+	translation = MagicChat_minimumServerMessageDuration,
+}

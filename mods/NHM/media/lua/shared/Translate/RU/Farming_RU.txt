@@ -1,6 +1,0 @@
-FARMING_RU = {
-    Farming_Tobacco = "Табак",
-    Farming_Corn = "Кукуруза",
-    Farming_Cannabis = "Конопля",
-    Farming_Rice = "Рис",
-}

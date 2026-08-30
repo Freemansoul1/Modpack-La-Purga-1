@@ -1,7 +1,0 @@
-#name Centinela|Centinela
-
-#desc Nombre: Centinela
-#desc_append Edad: alrededor de 70
-#desc_append Abuelo bondadoso, ama su trabajo. El único en el Hospital tiene un arma de fuego, o más bien.. el único que no lo oculta.
-#desc_append Mucho tacto en la comunicación.
-#exit

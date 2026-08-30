@@ -1,0 +1,5 @@
+Recipes_JP = {
+    Recipe_MakeRappelRope = "ラペルロープを作る",
+    Recipe_MakeSwissSeat = "クライミングハーネスを作る",
+	Recipe_MakeEscapeRope = "ラペルキットを作る",
+}

@@ -1,0 +1,7 @@
+ItemName_EN = {
+    /* Glass Items */
+    ItemName_ImprovisedGlass.PanWithGlassShards = "Pan with Glass Shards",
+    ItemName_ImprovisedGlass.PanWithGlassPane = "Pan with Glass Pane",
+    ItemName_ImprovisedGlass.GlassPane = "Glass Pane"
+
+}

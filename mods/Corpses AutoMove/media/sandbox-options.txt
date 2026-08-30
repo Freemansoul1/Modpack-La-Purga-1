@@ -1,0 +1,12 @@
+VERSION = 1,
+
+
+
+option CAMmod.maximumCorpsePile = { 
+	type = integer,
+	default = 25,
+	min = 5,
+	max = 1000,
+	page = CAMmod,
+	translation = CAMmodmaximumCorpsePile,
+}

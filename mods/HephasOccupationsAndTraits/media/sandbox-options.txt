@@ -1,0 +1,339 @@
+VERSION = 1,
+
+option Hepha.DisableStartingItems
+{
+	type = boolean,
+	default = false,
+	page = Hepha,
+	translation = Hepha_DisableStartingItems,
+}
+
+
+option Hepha.BraveSeparator
+{
+    type = boolean,
+	default = false,
+	page = Hepha,
+	translation = Hepha_BraveSeparator,
+}
+
+
+
+option Hepha.DaysToGainBraveMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 10,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveMin,
+}
+option Hepha.DaysToGainBraveMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 18,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveMax,
+}
+option Hepha.KillsToGainBraveMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 1000,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveMin,
+}
+option Hepha.KillsToGainBraveMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 1800,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveMax,
+}
+
+
+
+option Hepha.DaysToGainBraveWithCowardMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 12,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithCowardMin,
+}
+option Hepha.DaysToGainBraveWithCowardMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 22,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithCowardMax,
+}
+option Hepha.KillsToGainBraveWithCowardMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 1250,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithCowardMin,
+}
+option Hepha.KillsToGainBraveWithCowardMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 2000,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithCowardMax,
+}
+
+
+
+option Hepha.DaysToGainBraveWithPacifistMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 14,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithPacifistMin,
+}
+option Hepha.DaysToGainBraveWithPacifistMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 22,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithPacifistMax,
+}
+option Hepha.KillsToGainBraveWithPacifistMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 1250,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithPacifistMin,
+}
+option Hepha.KillsToGainBraveWithPacifistMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 2000,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithPacifistMax,
+}
+
+
+
+option Hepha.DaysToGainBraveWithCowardAndPacifistMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 18,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithCowardAndPacifistMin,
+}
+option Hepha.DaysToGainBraveWithCowardAndPacifistMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 26,
+	page = Hepha,
+	translation = Hepha_DaysToGainBraveWithCowardAndPacifistMax,
+}
+option Hepha.KillsToGainBraveWithCowardAndPacifistMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 1750,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithCowardAndPacifistMin,
+}
+option Hepha.KillsToGainBraveWithCowardAndPacifistMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 2500,
+	page = Hepha,
+	translation = Hepha_KillsToGainBraveWithCowardAndPacifistMax,
+}
+
+
+
+option Hepha.DesensitizedSeparator
+{
+    type = boolean,
+	default = false,
+	page = Hepha,
+	translation = Hepha_DesensitizedSeparator,
+}
+
+
+
+option Hepha.DaysToGainDesensMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 35,
+	page = Hepha,
+	translation = Hepha_DaysToGainDesensMin,
+}
+option Hepha.DaysToGainDesensMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 50,
+	page = Hepha,
+	translation = Hepha_DaysToGainDesensMax,
+}
+option Hepha.KillsToGainDesensMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 5000,
+	page = Hepha,
+	translation = Hepha_KillsToGainDesensMin,
+}
+option Hepha.KillsToGainDesensMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 8000,
+	page = Hepha,
+	translation = Hepha_KillsToGainDesensMax,
+}
+
+
+
+option Hepha.DaysToGainDesensWithPsychoMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 27,
+	page = Hepha,
+	translation = Hepha_DaysToGainDesensWithPsychoMin,
+}
+option Hepha.DaysToGainDesensWithPsychoMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 37,
+	page = Hepha,
+	translation = Hepha_DaysToGainDesensWithPsychoMax,
+}
+option Hepha.KillsToGainDesensWithPsychoMin
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 3750,
+	page = Hepha,
+	translation = Hepha_KillsToGainDesensWithPsychoMin,
+}
+option Hepha.KillsToGainDesensWithPsychoMax
+{
+	type = integer,
+	min = 1,
+	max = 100000,
+	default = 6000,
+	page = Hepha,
+	translation = Hepha_KillsToGainDesensWithPsychoMax,
+}
+
+
+
+
+option Hepha.SmokerSeparator
+{
+    type = boolean,
+	default = false,
+	page = Hepha,
+	translation = Hepha_SmokerSeparator,
+}
+option Hepha.DaysToLoseSmokerMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 26,
+	page = Hepha,
+	translation = Hepha_DaysToLoseSmokerMin,
+}
+option Hepha.DaysToLoseSmokerMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 34,
+	page = Hepha,
+	translation = Hepha_DaysToLoseSmokerMax,
+}
+option Hepha.AmountOfCigsToGetSmokerMin
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 8,
+	page = Hepha,
+	translation = Hepha_AmountOfCigsToGetSmokerMin,
+}
+option Hepha.AmountOfCigsToGetSmokerMax
+{
+	type = integer,
+	min = 1,
+	max = 1000,
+	default = 16,
+	page = Hepha,
+	translation = Hepha_AmountOfCigsToGetSmokerMax,
+}
+
+option Hepha.ChanceToIncreaseEnduranceSmallBlunt
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 10,
+	page = Hepha,
+	translation = Hepha_ChanceToIncreaseEnduranceSmallBlunt,
+}
+
+option Hepha.ChanceToIncreaseEnduranceSmallBlade
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 8,
+	page = Hepha,
+	translation = Hepha_ChanceToIncreaseEnduranceSmallBlade,
+}
+
+option Hepha.ChanceToIncreaseEnduranceTwoHanded
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 18,
+	page = Hepha,
+	translation = Hepha_ChanceToIncreaseEnduranceTwoHanded,
+}

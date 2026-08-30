@@ -1,0 +1,11 @@
+Tooltip_EN = {
+	Tooltip_Bioreactor_Crafted = "A homemade bioreactor, to be used in creating biofuel"
+	Tooltip_Bioreactor = "A bioreactor, manufactured for small scale biofuel creation",
+	Tooltip_Petridish = "A sterile petri dish, used by biologists to hold and grow cells",
+	Tooltip_Petridish_Dirty = "A dirty petri dish, contaminated with unknown content",
+	Tooltip_ContaminatedSample = "A filthy piece of cloth with... some kind of bacterial growth on it",
+	Tooltip_ContaminatedSample2 = "A filthy piece of cloth with discolored bacterial growths on it",
+	Tooltip_Z2Bacteria = "A colony of Z-2 bacteria which can be used to create gasoline",
+	Tooltip_Z5Bacteria = "A colony of Z-5 bacteria which can be used to create propane",
+	Tooltip_BiofuelResearchNotes = "A small notebook full of scrawled handwritten notes.",
+}

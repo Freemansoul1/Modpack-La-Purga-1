@@ -1,4 +1,0 @@
-*cleaner_q1
-#name Lava la mancha cerca del ascensor
-#desc La Limpiadora te da un trapeador y un balde y te pide que limpies la mancha cerca del elevador en el segundo piso del Purgatorio.
-#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través del Centinela se enumerarán como fallidas.

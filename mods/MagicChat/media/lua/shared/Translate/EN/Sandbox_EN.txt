@@ -1,0 +1,9 @@
+Sandbox_EN = {
+    Sandbox_MagicChat = "Magic Chat",
+    
+    Sandbox_MagicChat_allowIgnoringAdminAnnouncements = "Allow Ignoring Admin Announcements",
+    Sandbox_MagicChat_allowIgnoringAdminAnnouncements_tooltip = "This will allow players to disable Magic Chat behavior even when an announcement is being made by an admin.",
+    
+    Sandbox_MagicChat_minimumServerMessageDuration = "Minimum Server Message Duration",
+    Sandbox_MagicChat_minimumServerMessageDuration_tooltip = "This option sets the duration (in seconds) for which the chat will remain open when players need to see server messages if their chats are closed when the messages arrive. It also guarantees that the server message will remain visible for this length of time. This minimum will not be enforced if the above setting is disabled. <RGB:1.0,0.6,0.0> "
+}

@@ -1,0 +1,4 @@
+IGUI_EN = {
+	IGUI_Loc_String = "Location",
+	IGUI_Test_Catch_String = "test Catch String: %1",
+}

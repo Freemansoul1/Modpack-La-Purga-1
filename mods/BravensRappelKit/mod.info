@@ -1,0 +1,9 @@
+name=Braven's Rappel Kit
+id=BB_E_RappelKit1
+poster=poster.png
+icon=icon.png
+authors=BitBraven
+modversion=1.1.1
+description=This mod adds a craftable Rappel Kit to the game that acts as an enhanced sheet rope!
+pack=BravensEscapeRope
+tiledef=BravensEscapeRopeTiles 2101

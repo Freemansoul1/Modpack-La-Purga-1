@@ -1,0 +1,12 @@
+VERSION = 1,
+
+option zReDSZOF.FireDamageMultiple
+{
+	type = double, min = 0, max = 20, default = 5.0, 
+	page = zReDSZOF_main, translation = zReDSZOF_FireDamageMultiple,
+}
+option zReDSZOF.RunChance
+{
+	type = integer, min = 5, max = 100, default = 65, 
+	page = zReDSZOF_main, translation = zReDSZOF_RunChance,
+}

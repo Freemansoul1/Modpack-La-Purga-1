@@ -1,0 +1,15 @@
+Recipes_IT = {
+    Recipe_CraftScrapFrame1 = "Saldare il normale telaio di rottame",
+    Recipe_CraftScrapSuspension1 = "Saldare le normali sospensioni di rottame",
+    Recipe_CraftScrapBrakes1 = "Saldare i normali freni di rottame",
+    Recipe_CraftScrapTire1 = "Modellare un normale pneumatico di rottame",
+    
+    Recipe_CraftScrapFrame2 = "Saldare il MTB telaio di rottame",
+    Recipe_CraftScrapSuspension2 = "Saldare le MTB sospensioni di rottame",
+    Recipe_CraftScrapBrakes2 = "Saldare i MTB freni di rottame",
+    Recipe_CraftScrapTire2 = "Modellare un MTB pneumatico di rottame",
+
+    Recipe_CraftScrapSeat = "Crea un sedile di scarto",
+    Recipe_CraftBikeLock = "Crea lucchetto per bici",
+    Recipe_CraftHeadlight = "Crea faro per bici",
+}

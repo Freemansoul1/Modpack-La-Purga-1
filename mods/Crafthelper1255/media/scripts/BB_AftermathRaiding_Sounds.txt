@@ -1,0 +1,8 @@
+module Base
+{
+	sound C4_Detonate
+	{
+        category = Vehicle, loop = false, is3D = true,
+        clip { file = media/sound/C4Noise.mp3, distanceMax = 10, volume = 1, }
+	}
+}

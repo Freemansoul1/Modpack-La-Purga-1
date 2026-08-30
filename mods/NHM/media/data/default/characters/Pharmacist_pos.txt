@@ -1,2 +1,0 @@
-#npc_create Farmacéutica|NPC/Pharmacist.png|11601,7570,1
-#exit

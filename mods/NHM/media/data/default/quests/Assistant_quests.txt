@@ -1,4 +1,0 @@
-*assistant_q1
-#name Dibujar el cielo estrellado
-#desc El asistente te entrega un kit de dibujo y te pide que dibujes el cielo estrellado que verás a través del telescopio. Le dará tu dibujo a su hija.
-#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través de Sentinel se enumerarán como fallidas.

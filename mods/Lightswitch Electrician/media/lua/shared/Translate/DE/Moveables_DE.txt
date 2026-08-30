@@ -1,0 +1,4 @@
+Moveables_DE = {
+	Left_Light_Switch = "Links Lichtschalter",
+	Right_Light_Switch = "Rechts Lichtschalter",
+}

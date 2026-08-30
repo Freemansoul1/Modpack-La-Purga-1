@@ -1,0 +1,4 @@
+Moodles_EN {
+    Moodles_Knockedout_Bad_lvl4 = "Unconscious!",
+    Moodles_Knockedout_Bad_desc_lvl4 = "You have been knocked out due to severe damage!",
+}

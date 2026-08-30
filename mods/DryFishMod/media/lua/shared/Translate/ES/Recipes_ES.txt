@@ -1,0 +1,7 @@
+Recipes_ES {
+    Recipe_Prepare_Dry_Fish = "Procesar pescado",
+    Recipe_Make_Drier_1 = "Fabricar red de secado",
+    Recipe_Make_Drier_9 = "Fabricar red de secado",
+    Recipe_Make_Drier_8 = "Fabricar estante de secado",
+    Recipe_Make_Drier_15 = "Fabricar brocheta de secado",
+}

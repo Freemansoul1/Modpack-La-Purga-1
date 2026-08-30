@@ -1,8 +1,0 @@
-VERSION = 1,
-
-option PKTrophy.Username = {
-	type = boolean, default = true, page = PKTrophy, translation = PKTrophy_Username,
-}
-option PKTrophy.FullName = {
-	type = boolean, default = false, page = PKTrophy, translation = PKTrophy_FullName,
-}

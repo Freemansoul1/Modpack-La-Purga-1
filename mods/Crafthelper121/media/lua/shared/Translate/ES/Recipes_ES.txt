@@ -1,0 +1,3 @@
+Recipe_ES = {
+    Recipe_CraftSprinkler = "Crear aspersor casero",
+}

@@ -1,0 +1,3 @@
+name=Give Item
+id=give-item1
+description=Directly give items to players around you instead of dropping them to the ground for anyone to pick it up.

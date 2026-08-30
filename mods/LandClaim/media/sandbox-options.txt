@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option LC.DistanceBetweenSafehouses
+{
+    type = integer,
+    min = 0,
+    default = 100,
+    max = 999999,
+    page = LC,
+    translation = DistanceBetweenSafehouses,
+}
+
+option LC.DestroyLandClaimTimedActionTime
+{
+    type = integer,
+    min = 0,
+    default = 1500,
+    max = 999999,
+    page = LC,
+    translation = DestroyLandClaimTimedActionTime,
+}
+
+option LC.SafehouseLevelRadius1
+{
+    type = integer,
+    min = 0,
+    default = 25,
+    max = 150,
+    page = LC,
+    translation = SafehouseLevelRadius1,
+}
+
+option LC.SafehouseLevelRadius2
+{
+    type = integer,
+    min = 0,
+    default = 50,
+    max = 150,
+    page = LC,
+    translation = SafehouseLevelRadius2,
+}
+
+option LC.SafehouseLevelRadius3
+{
+    type = integer,
+    min = 0,
+    default = 75,
+    max = 150,
+    page = LC,
+    translation = SafehouseLevelRadius3,
+}

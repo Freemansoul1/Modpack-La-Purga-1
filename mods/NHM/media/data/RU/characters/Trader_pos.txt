@@ -1,2 +1,0 @@
-#npc_create Trader|NPC/Trader.png|11587,7658,0
-#exit

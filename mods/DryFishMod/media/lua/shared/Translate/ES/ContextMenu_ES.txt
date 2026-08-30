@@ -1,0 +1,3 @@
+ContextMenu_ES = {
+    ContextMenu_DryFishMod_AddDrier = "Agregar pincho a la fogata",
+}

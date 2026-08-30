@@ -1,0 +1,5510 @@
+module PinkSlip {
+    imports
+    {
+        Base
+    }
+
+    item Skateboard
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Skateboard,
+        VehicleID = Base.Skateboard,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 100,
+        HasKey = false,
+        Tags = PinkSlip,
+    }
+
+    item 69miniPS
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 69miniPS,
+        VehicleID = Base.69miniPS,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87toyotaMR2c
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87toyotaMR2c,
+        VehicleID = Base.87toyotaMR2c,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+
+    item 67gt500e
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 67gt500e,
+        VehicleID = Base.67gt500e,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 92nissanGTRlhd
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92nissanGTRlhd,
+        VehicleID = Base.92nissanGTRlhd,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 90fordF350SWAT
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90fordF350SWAT,
+        VehicleID = Base.90fordF350SWAT,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 84gageV300fsv
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 84gageV300fsv,
+        VehicleID = Base.84gageV300fsv,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90pierceArrow
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90pierceArrow,
+        VehicleID = Base.90pierceArrow,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87fordB700prison
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87fordB700prison,
+        VehicleID = Base.87fordB700prison,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item Stryker_APC
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Stryker_APC,
+        VehicleID = Base.Stryker_APC,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92jeepYJse
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92jeepYJse,
+        VehicleID = Base.92jeepYJse,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 63Type2VanApocalypse
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 63Type2VanApocalypse,
+        VehicleID = Base.63Type2VanApocalypse,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 63Type2VanHippie
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 63Type2VanHippie,
+        VehicleID = Base.63Type2VanHippie,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 76chevyK20
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 76chevyK20,
+        VehicleID = Base.76chevyK20,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87chevySuburbanCUCV
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87chevySuburbanCUCV,
+        VehicleID = Base.87chevySuburbanCUCV,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 84mercLWB4M
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 84mercLWB4M,
+        VehicleID = Base.84mercLWB4M,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 69camaroSS
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 69camaroSS,
+        VehicleID = Base.69camaroSS,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70dodgeOP
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 70dodgeOP,
+        VehicleID = Base.70dodgeOP,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 68firebirdRamAirCustom
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 68firebirdRamAirCustom,
+        VehicleID = Base.68firebirdRamAirCustom,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 81deloreanDMC12BTTF
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 81deloreanDMC12BTTF,
+        VehicleID = Base.81deloreanDMC12BTTF,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 78amgeneralM49A2C
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 78amgeneralM49A2C,
+        VehicleID = Base.78amgeneralM49A2C,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80manKat1
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 80manKat1,
+        VehicleID = Base.80manKat1,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarLightsPolice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Nyala (Police),
+        VehicleID = Base.CarLightsPolice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarLuxury
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Mercia Lang 4000,
+        VehicleID = Base.CarLuxury,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarNormal
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Nyala,
+        VehicleID = Base.CarNormal,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarStationWagon
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Cerise Wagon,
+        VehicleID = Base.CarStationWagon,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarStationWagon2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Cerise Wagon 2,
+        VehicleID = Base.CarStationWagon2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarTaxi
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Taxi,
+        VehicleID = Base.CarTaxi,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item CarTaxi2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Taxi 2,
+        VehicleID = Base.CarTaxi2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ModernCar
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Elite,
+        VehicleID = Base.ModernCar,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ModernCar02
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Primani,
+        VehicleID = Base.ModernCar02,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ModernCar_ez
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: ModernCar_ez,
+        VehicleID = Base.ModernCar_ez,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ModernCar_Martin
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: ModernCar_Martin,
+        VehicleID = Base.ModernCar_Martin,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item OffRoad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Rancher,
+        VehicleID = Base.OffRoad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpTruck
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier D6,
+        VehicleID = Base.PickUpTruck,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpTruckLights
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier D6 Police,
+        VehicleID = Base.PickUpTruckLights,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpTruckLightsFire
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier D6 Fire,
+        VehicleID = Base.PickUpTruckLightsFire,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpTruckMccoy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier D6,
+        VehicleID = Base.PickUpTruckMccoy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpVan
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Bulldriver,
+        VehicleID = Base.PickUpVan,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpVanLights
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Bulldriver Lights,
+        VehicleID = Base.PickUpVanLights,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpVanLightsFire
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Bulldriver Fire,
+        VehicleID = Base.PickUpVanLightsFire,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpVanLightsPolice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Bulldriver Police,
+        VehicleID = Base.PickUpVanLightsPolice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item PickUpVanMccoy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dash Bulldriver,
+        VehicleID = Base.PickUpVanMccoy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item SUV
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Franklin All-Terrain,
+        VehicleID = Base.SUV,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item SmallCar
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Dart,
+        VehicleID = Base.SmallCar,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item SmallCar02
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Masterson Horizon,
+        VehicleID = Base.SmallCar02,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item SportsCar
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Cossette,
+        VehicleID = Base.SportsCar,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item SportsCar_ez
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: SportsCar_ez,
+        VehicleID = Base.SportsCar_ez,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item StepVan
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Step Van,
+        VehicleID = Base.StepVan,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item StepVan_Heralds
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: KY Heralds Chevalier Step Van,
+        VehicleID = Base.StepVan_Heralds,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item StepVan_Scarlet
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Scarlet Chevalier Step Van,
+        VehicleID = Base.StepVan_Scarlet,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item StepVanMail
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Mail Chevalier Step Van,
+        VehicleID = Base.StepVanMail,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item StepVanRadio
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Radio Chevalier Step Van,
+        VehicleID = Base.StepVanRadio,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Trailer,
+        VehicleID = Base.Trailer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailergenerador
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: TrailerGenerator,
+        VehicleID = Base.TrailerGenerator,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item TrailerAdvert
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Trailer (Advert),
+        VehicleID = Base.TrailerAdvert,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerCover
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Trailer (Covered),
+        VehicleID = Base.TrailerCover,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Van
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Franklin Valuline,
+        VehicleID = Base.Van,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Van_KnoxDisti
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Knox Distillery Valuline,
+        VehicleID = Base.Van_KnoxDisti,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Van_LectroMax
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Lectro Max Valuline,
+        VehicleID = Base.Van_LectroMax,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Van_MassGenFac
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Mass GenFac Valuline,
+        VehicleID = Base.Van_MassGenFac,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Van_Transit
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Transit Valuline,
+        VehicleID = Base.Van_Transit,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanAmbulance
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ambulance,
+        VehicleID = Base.VanAmbulance,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanRadio
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Radio Van,
+        VehicleID = Base.VanRadio,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanRadio_3N
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 3N Radio Van,
+        VehicleID = Base.VanRadio_3N,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanSeats
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Franklin Valuline,
+        VehicleID = Base.VanSeats,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanSpecial
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Franklin Valuline,
+        VehicleID = Base.VanSpecial,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item VanSpiffo
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Spiffo Van,
+        VehicleID = Base.VanSpiffo,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATADodge
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Dadge Steals Twin Turbo,
+        VehicleID = Base.ATADodge,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATADodgePpg
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Dadge Steals RT Twin Turbo (Pace Car),
+        VehicleID = Base.ATADodgePpg,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAMustangClassic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Fjord Mustard,
+        VehicleID = Base.ATAMustangClassic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAMustangPolice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Fjord Mustard (Police),
+        VehicleID = Base.ATAMustangPolice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAJeepClassic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Jaap Wrungel Classic,
+        VehicleID = Base.ATAJeepClassic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAJeepRubicon
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Jaap Wrungel Rubicon,
+        VehicleID = Base.ATAJeepRubicon,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAJeepArcher
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Jaap Wrungel Archer,
+        VehicleID = Base.ATAJeepArcher,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATASchoolBus
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: School Bear Bus,
+        VehicleID = Base.ATASchoolBus,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAPrisonBus
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Prison Bear Bus,
+        VehicleID = Base.ATAPrisonBus,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAArmyBus
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Army Bear Bus,
+        VehicleID = Base.ATAArmyBus,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerFirst
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar GNV 250,
+        VehicleID = Base.TrailerFirst,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerSecond
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar GNV 500,
+        VehicleID = Base.TrailerSecond,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerHome
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar iLYA-1990,
+        VehicleID = Base.TrailerHome,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerHomeHartman
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar iLYA-1990 (Hartman),
+        VehicleID = Base.TrailerHomeHartman,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+	GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerHomeExplorer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar iLYA-1990 (Explorer),
+        VehicleID = Base.TrailerHomeExplorer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerKbac
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar KBAC,
+        VehicleID = Base.TrailerKbac,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerGenerator
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar GENA-220,
+        VehicleID = Base.TrailerGenerator,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item AMC_bmw_classic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: BWM R80/7 Classic,
+        VehicleID = Base.AMC_bmw_classic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item AMC_bmw_custom
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: BWM R80/7 Custom,
+        VehicleID = Base.AMC_bmw_custom,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item AMC_harley
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Xarley-Davitsan Sportstep '86,
+        VehicleID = Base.AMC_harley,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item AMC_quad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Suvzuki Quadruiner,
+        VehicleID = Base.AMC_quad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerAMCWaverunnerWithBody
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Yamama Waveruiner 650TL,
+        VehicleID = Base.TrailerAMCWaverunnerWithBody,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerWithBoatMotor
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar BT-13M Boat,
+        VehicleID = Base.TrailerWithBoatMotor,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerWithBoatSailingYacht
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Autotsar BT-13M Yacht,
+        VehicleID = Base.TrailerWithBoatSailingYacht,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAPetyarbuilt
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Petyarbuilt 379,
+        VehicleID = Base.ATAPetyarbuilt,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAPetyarbuiltSleeper
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Petyarbuilt 379 Sleeper,
+        VehicleID = Base.ATAPetyarbuiltSleeper,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATAPetyarbuiltSleeperLong
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Petyarbuilt 379 Sleeper Long,
+        VehicleID = Base.ATAPetyarbuiltSleeperLong,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerTSMega
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Petyarbuilt Mega Trailer,
+        VehicleID = Base.TrailerTSMega,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item ATA_Luton
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: MolksAgen Luton Van,
+        VehicleID = Base.ATA_Luton,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATASamaraClassic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Samara,
+        VehicleID = Base.ATASamaraClassic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ATASamaraPolice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevalier Samara (Police),
+        VehicleID = Base.ATASamaraPolice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item U1550L
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = '90 Mercedes-Benz Unimog U1550L,
+        VehicleID = Base.U1550L,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item U1550LOffRoad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '90 Mercedes-Benz Unimog U1550L Off-Road,
+        VehicleID = Base.U1550LOffRoad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item UnimogTrailer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = '90 Mercedes-Benz Unimog U1550L Trailer,
+        VehicleID = Base.UnimogTrailer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item McLarenF1
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '92 McLaren F1,
+        VehicleID = Base.McLarenF1,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85vicsed
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 85 Ford Crown Victoria LTD,
+        VehicleID = Base.85vicsed,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85vicwag
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 85 Ford Crown Victoria Wagon,
+        VehicleID = Base.85vicwag,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85vicwag2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 85 Ford Crown Victoria Wagon 2,
+        VehicleID = Base.85vicwag2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 79brougham
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 79 Cadillac Brougham,
+        VehicleID = Base.79brougham,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item volvo244
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Volvo 244,
+        VehicleID = Base.volvo244,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 71impala
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 71 Chevrolet Impala,
+        VehicleID = Base.71impala,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91crx
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Honda CRX,
+        VehicleID = Base.91crx,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86yugo
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 86 Zastava Yugo,
+        VehicleID = Base.86yugo,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10utility
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 Utility,
+        VehicleID = Base.87c10utility,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10fire
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 Fire,
+        VehicleID = Base.87c10fire,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10mccoy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 McCoy,
+        VehicleID = Base.87c10mccoy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10lb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 lb,
+        VehicleID = Base.87c10lb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10sb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 sb,
+        VehicleID = Base.87c10sb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90ramlb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90 Dodge Ram lb,
+        VehicleID = Base.90ramlb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90ramsb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90 Dodge Ram sb,
+        VehicleID = Base.90ramsb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87blazer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet Blazer,
+        VehicleID = Base.87blazer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87suburban
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet Suburban,
+        VehicleID = Base.87suburban,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item astrovan
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevrolet Astro,
+        VehicleID = Base.astrovan,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 65gto
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 65 Pontiac GTO,
+        VehicleID = Base.65gto,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 69charger
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 69 Dodge Charger,
+        VehicleID = Base.69charger,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 69chargerdaytona
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 69 Dodge Charger Daytona,
+        VehicleID = Base.69chargerdaytona,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 73falcon
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 73 Ford Falcon,
+        VehicleID = Base.73falcon,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 77transam
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 77 Pontiac Trans Am,
+        VehicleID = Base.77transam,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70chevelle
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 70 Chevrolet Chevelle,
+        VehicleID = Base.70chevelle,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70elcamino
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 70 Chevrolet El Camino,
+        VehicleID = Base.70elcamino,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 68elcamino
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 68 Chevrolet El Camino,
+        VehicleID = Base.68elcamino,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 68wildcat
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 68 Buick Wildcat,
+        VehicleID = Base.68wildcat,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 68wildcatconvert
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 68 Buick Wildcat,
+        VehicleID = Base.68wildcatconvert,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 73pinto
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 73 Ford Pinto,
+        VehicleID = Base.73pinto,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item moveurself
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Move Urself Box Truck,
+        VehicleID = Base.moveurself,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isuzubox
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Isuzu N5,
+        VehicleID = Base.isuzubox,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isuzuboxelec
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Isuzu N5 (Elec),
+        VehicleID = Base.isuzuboxelec,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isuzuboxfood
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Isuzu N5 (Food),
+        VehicleID = Base.isuzuboxfood,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isuzuboxmccoy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Isuzu N5 McCoy,
+        VehicleID = Base.isuzuboxmccoy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item hmmwvtr
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1069,
+        VehicleID = Base.hmmwvtr,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item hmmwvht
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1025,
+        VehicleID = Base.hmmwvht,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m35a2bed
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M35A2,
+        VehicleID = Base.m35a2bed,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m35a2covered
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M35A2,
+        VehicleID = Base.m35a2covered,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m35a2fuel
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M49A2C,
+        VehicleID = Base.m35a2fuel,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m151canvas
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M151A2,
+        VehicleID = Base.m151canvas,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item firepumper
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Fire Engine,
+        VehicleID = Base.firepumper,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86bounder
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 86 Fleetwood Bounder,
+        VehicleID = Base.86bounder,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91blazerpd
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Chevrolet Blazer,
+        VehicleID = Base.91blazerpd,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85vicsheriff
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 85 Ford Crown Victoria LTD Sheriff,
+        VehicleID = Base.85vicsheriff,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85vicranger
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 85 Ford Crown Victoria LTD,
+        VehicleID = Base.85vicranger,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item pursuitspecial
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Pursuit Special,
+        VehicleID = Base.pursuitspecial,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item generallee
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: The General Lee,
+        VehicleID = Base.generallee,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item generalmeh
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: The General Meh,
+        VehicleID = Base.generalmeh,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item schoolbus
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford B700 School Bus,
+        VehicleID = Base.schoolbus,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item schoolbusshort
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford B700 School Bus Short,
+        VehicleID = Base.schoolbusshort,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item f700dump
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford F700 Dump Truck,
+        VehicleID = Base.f700dump,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item f700flatbed
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford F700 Flatbed,
+        VehicleID = Base.f700flatbed,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item f700box
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford F700 Box Truck,
+        VehicleID = Base.f700box,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 51chevy3100
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 51 Chevrolet 3100,
+        VehicleID = Base.51chevy3100,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 51chevy3100old
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 51 Chevrolet 3100 old,
+        VehicleID = Base.51chevy3100old,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 72beetle
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 72 Volkswagon Beetle,
+        VehicleID = Base.72beetle,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 63beetleBuggy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 63beetleBuggy,
+        VehicleID = Base.63beetleBuggy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+
+    item 79datsun280z
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 79 Datsun 280z,
+        VehicleID = Base.79datsun280z,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80f350
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 80 Ford F350,
+        VehicleID = Base.80f350,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80f350ambulance
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 80 Ford F350 EMS,
+        VehicleID = Base.80f350ambulance,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80f350offroad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 80 Ford F350 Off,
+        VehicleID = Base.80f350offroad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80f350quad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 80 Ford F350 Quad,
+        VehicleID = Base.80f350quad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 83hilux
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 83 Toyota Hilux,
+        VehicleID = Base.83hilux,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 83hiluxoffroad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 83 Toyota Hilux Off,
+        VehicleID = Base.83hiluxoffroad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86econoline
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 86 Ford Econoline,
+        VehicleID = Base.86econoline,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86econolineambulance
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 86 Ford E350 EMS,
+        VehicleID = Base.86econolineambulance,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86econolinerv
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 86 Ford E350 RV,
+        VehicleID = Base.86econolinerv,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10offroadlb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 Off lb,
+        VehicleID = Base.87c10offroadlb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87c10offroadsb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet C10 Off sb,
+        VehicleID = Base.87c10offroadsb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87caprice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet Caprice,
+        VehicleID = Base.87caprice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87capricePD
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet Caprice PD,
+        VehicleID = Base.87capricePD,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87blazeroffroad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 87 Chevrolet Blazer,
+        VehicleID = Base.87blazeroffroad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90corolla
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90 Toyota Corolla,
+        VehicleID = Base.90corolla,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90ramoffroadlb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90 Dodge Ram Off lb,
+        VehicleID = Base.90ramoffroadlb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90ramoffroadsb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 90 Dodge Ram Off sb,
+        VehicleID = Base.90ramoffroadsb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91celica
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Toyota Celica,
+        VehicleID = Base.91celica,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91wagoneer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Jeep Wagoneer,
+        VehicleID = Base.91wagoneer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92crownvic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Crown Victoria,
+        VehicleID = Base.92crownvic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92crownvicPD
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Crown Victoria,
+        VehicleID = Base.92crownvicPD,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92wrangler
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Jeep Wrangler,
+        VehicleID = Base.92wrangler,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92wrangleroffroad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Jeep Wrangler,
+        VehicleID = Base.92wrangleroffroad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92wranglerjurassic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Jeep Wrangler  JP Ed,
+        VehicleID = Base.92wranglerjurassic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92wranglerranger
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 92 Jeep Wrangler,
+        VehicleID = Base.92wranglerranger,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 93explorer
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 93 Ford Explorer,
+        VehicleID = Base.93explorer,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 93explorerjurassic
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 93 Ford Explorer JP Ed,
+        VehicleID = Base.93explorerjurassic,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item chevystepvan
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevrolet Step Van,
+        VehicleID = Base.chevystepvan,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item chevystepvanswat
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevrolet SWAT Van,
+        VehicleID = Base.chevystepvanswat,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item f700propane
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford F700 Propane,
+        VehicleID = Base.f700propane,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item tractorford7810
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Ford 7810,
+        VehicleID = Base.tractorford7810,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 64mustang
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 64 Ford Mustang,
+        VehicleID = Base.64mustang,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 71chevyc10stepside
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevrolet C10 step,
+        VehicleID = Base.71chevyc10stepside,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 71chevyc10lb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 71 Chevrolet C10 lb,
+        VehicleID = Base.71chevyc10lb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 71chevyc10sb
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 71 Chevrolet C10 sb,
+        VehicleID = Base.71chevyc10sb,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91chevys10
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Chevrolet S10,
+        VehicleID = Base.91chevys10,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91chevys10ext
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Chevrolet S10,
+        VehicleID = Base.91chevys10ext,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91chevys10offroad
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Chevrolet S10 Off,
+        VehicleID = Base.91chevys10offroad,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91chevys10offroadext
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 91 Chevrolet S10 Off Ext,
+        VehicleID = Base.91chevys10offroadext,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 93jeepcherokee
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 93 Jeep Cherokee,
+        VehicleID = Base.93jeepcherokee,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailer51chevy
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Chevrolet Bed,
+        VehicleID = Base.Trailer51chevy,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailermovingbig
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Move Urself 7x16,
+        VehicleID = Base.Trailermovingbig,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailermovingmedium
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Move Urself 5x8,
+        VehicleID = Base.Trailermovingmedium,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailerfuelmedium
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Fuel Trailer,
+        VehicleID = Base.Trailerfuelmedium,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailerfuelsmall
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Fuel Trailer (Small),
+        VehicleID = Base.Trailerfuelsmall,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item Trailercamperscamp
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: Camper Trailer,
+        VehicleID = Base.Trailercamperscamp,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 33,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91range
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '91 RANGE ROVER 4-door,
+        VehicleID = Base.91range,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 91range2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '91 RANGE ROVER 2-door,
+        VehicleID = Base.91range2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90niva
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '90 Lada Niva,
+        VehicleID = Base.90niva,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 89def110
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '89 LAND ROVER Defender 110 SUV,
+        VehicleID = Base.89def110,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 89def110op
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '89 LAND ROVER Defender 110 Offroad Pack SUV,
+        VehicleID = Base.89def110op,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 89def90
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '89 LAND ROVER Defender 90 SUV,
+        VehicleID = Base.89def90,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 89def90op
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '89 LAND ROVER Defender 90 Offroad Pack SUV,
+        VehicleID = Base.89def90op,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85mercJunk
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '85 Mercedes-Benz W123 Junker,
+        VehicleID = Base.85mercJunk,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85mercSedan
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '85 Mercedes-Benz W123 Sedan,
+        VehicleID = Base.85mercSedan,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85mercWagon
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '85 Mercedes-Benz W123 Station Wagon,
+        VehicleID = Base.85mercWagon,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 85mercWagon2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '85 Mercedes-Benz W123 Survivor Station Wagon,
+        VehicleID = Base.85mercWagon2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 67commando
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '67 Cadillac Gage Commando,
+        VehicleID = Base.67commando,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 67commandoPolice
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '67 Cadillac Gage Police,
+        VehicleID = Base.67commandoPolice,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 67commandoT50
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '67 Cadillac Gage Commando T50,
+        VehicleID = Base.67commandoT50,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87cruiser
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '87 TOYOTA Land Cruiser,
+        VehicleID = Base.87cruiser,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87cruiserLights
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '87 TOYOTA Land Cruiser variant 2,
+        VehicleID = Base.87cruiserLights,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 87cruiserRoofrack
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '87 TOYOTA Land Cruiser with roofrack,
+        VehicleID = Base.87cruiserRoofrack,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 88golf2doorMk2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '88 Volkswagen Golf Mk2 2-Door,
+        VehicleID = Base.88golf2doorMk2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 88golf4doorMk2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '88 Volkswagen Golf Mk2 4-Door,
+        VehicleID = Base.88golf4doorMk2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 88jetta2doorMk2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '88 Volkswagen Jetta Mk2 2-Door,
+        VehicleID = Base.88jetta2doorMk2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 88jetta4doorMk2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '88 Volkswagen Jetta Mk2 4-Door,
+        VehicleID = Base.88jetta4doorMk2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86oshkoshFRTR55
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: P19A FRTR55,
+        VehicleID = Base.86oshkoshFRTR55,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86oshkoshKYFD
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Oshkosh P19A KYFD,
+        VehicleID = Base.86oshkoshKYFD,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 100,
+        EngineQuality = 85,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86oshkoshUSMC
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Oshkosh P19A USMC,
+        VehicleID = Base.86oshkoshUSMC,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM1082
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1082 Trailer,
+        VehicleID = Base.TrailerM1082,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM1082tarp
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1082 Covered Trailer,
+        VehicleID = Base.TrailerM1082tarp,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM1095
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1095 Trailer,
+        VehicleID = Base.TrailerM1095,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM1095tarp
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M1095 Covered Trailer,
+        VehicleID = Base.TrailerM1095tarp,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 82oshkoshM911
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '82 Oshkosh M911 Truck,
+        VehicleID = Base.82oshkoshM911,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 82oshkoshM911B
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '82 Oshkosh M911 Black,
+        VehicleID = Base.82oshkoshM911B,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM127stake
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M127 Stake Trailer,
+        VehicleID = Base.TrailerM127stake,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM128van
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M128 Van Trailer,
+        VehicleID = Base.TrailerM128van,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM129van
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M129 Van Trailer,
+        VehicleID = Base.TrailerM129van,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM747lowbed
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M747 Lowbed Trailer,
+        VehicleID = Base.TrailerM747lowbed,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM967tanker
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M967 Tanker Trailer,
+        VehicleID = Base.TrailerM967tanker,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isoContainer2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: ISO Container,
+        VehicleID = Base.isoContainer2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item isoContainer3tanker
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: ISO Container Tank,
+        VehicleID = Base.isoContainer3tanker,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92amgeneralM998
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '92 AM General M998 HMMWV,
+        VehicleID = Base.92amgeneralM998,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item TrailerM101A3cargo
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '92 M101A3 Cargo Trailer,
+        VehicleID = Base.TrailerM101A3cargo,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m12police
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M12 Warthog Police,
+        VehicleID = Base.m12police,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m12transport
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M12 Warthog Transport,
+        VehicleID = Base.m12transport,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item m12warthog
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: M12 Warthog,
+        VehicleID = Base.m12warthog,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 59meteor
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '59 Cadillac Miller-Meteor,
+        VehicleID = Base.59meteor,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item ECTO1
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '59 Cadillac Miller-Meteor ECTO-1,
+        VehicleID = Base.ECTO1,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 74amgeneralM151A2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '74 AM General M151A2,
+        VehicleID = Base.74amgeneralM151A2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 78amgeneralM35A2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '78 AM General M35A2,
+        VehicleID = Base.78amgeneralM35A2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 84mercLWB2
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '84 Mercedes Benz W460 2-door,
+        VehicleID = Base.84mercLWB2,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 84mercLWB4
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '84 Mercedes Benz W460 4-door,
+        VehicleID = Base.84mercLWB4,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 84mercSWB
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '84 Mercedes Benz W460 SWB,
+        VehicleID = Base.84mercSWB,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 83amgeneralM923
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '83 AM General M923,
+        VehicleID = Base.83amgeneralM923,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 80kz1000
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '80 Kawasaki Kz1000 Police,
+        VehicleID = Base.80kz1000,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 92nissanGTR
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '92 NISSAN Skyline GT-R (R32),
+        VehicleID = Base.92nissanGTR,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150,
+        VehicleID = Base.86fordE150,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150dnd
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150 Mutt Cutts Van,
+        VehicleID = Base.86fordE150dnd,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150slide
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150 With Sliding Door,
+        VehicleID = Base.86fordE150slide,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150long
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150 Long Variant,
+        VehicleID = Base.86fordE150long,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150mm
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150 The Mystery Machine,
+        VehicleID = Base.86fordE150mm,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 86fordE150pd
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '86 Ford Econoline E-150 Payday Escape Van,
+        VehicleID = Base.86fordE150pd,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70dodgeRT
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Dodge Challenger R/T,
+        VehicleID = Base.70dodgeRT,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70dodgeTA
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Dodge Challenger T/A,
+        VehicleID = Base.70dodgeTA,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70dodgePD
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Dodge Challenger Police,
+        VehicleID = Base.70dodgePD,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item vino125
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '13 Yamaha Vino 125,
+        VehicleID = Base.vino125,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item vino125b
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '13 Yamaha Vino 125b,
+        VehicleID = Base.vino125b,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item vino125pizza
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '13 Yamaha Vino (PizzaBoy),
+        VehicleID = Base.vino125pizza,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 82jeepJ10
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '82 Jeep J10,
+        VehicleID = Base.82jeepJ10,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 82jeepJ10t
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '82 Jeep J10 Mellow Yellow Truck,
+        VehicleID = Base.82jeepJ10t,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 88chevyS10
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '88 Chevrolet S10,
+        VehicleID = Base.88chevyS10,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 89fordBronco
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '89 Ford Bronco,
+        VehicleID = Base.89fordBronco,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 97bushmaster
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '97 ADI Bushmaster,
+        VehicleID = Base.97bushmaster,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 97bushAmbulance
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '97 ADI Bushmaster Ambulance,
+        VehicleID = Base.97bushAmbulance,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 49powerWagon
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '49 Dodge Power Wagon,
+        VehicleID = Base.49powerWagon,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 49powerWagonPD
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '49 Dodge Power Wagon Police,
+        VehicleID = Base.49powerWagonPD,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 49powerWagonPA
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '49 Dodge Power Wagon Apocalypse,
+        VehicleID = Base.49powerWagonPA,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70barracuda
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Plymouth Barracuda,
+        VehicleID = Base.70barracuda,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70cuda
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Plymouth CUDA,
+        VehicleID = Base.70cuda,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 70barracudaAAR
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '70 Plymouth Barracuda AAR,
+        VehicleID = Base.70barracudaAAR,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 28ss100
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '28 Brough Superior SS100,
+        VehicleID = Base.28ss100,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 28ss100hermes
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '28 Brough Superior SS100 Hermes,
+        VehicleID = Base.28ss100hermes,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+    item 90zanella50cc
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: '90 Zanella 50cc Delivery Scooter,
+        VehicleID = Base.90zanella50cc,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        EngineQuality = 100,
+        GasTank = 33,
+        TirePSI = 100,
+        Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }
+
+       
+        
+    item 74amgeneralM151A2MP
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: 74amgeneralM151A2MP,
+        VehicleID = Base.74amgeneralM151A2MP,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }    
+
+
+        
+    item k153turret
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: k153turret,
+        VehicleID = Base.k153turret,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+	EngineQuality = 100,
+	TirePSI = 100,
+	Battery = 1,
+        HasKey = true,
+        Tags = PinkSlip,
+    }          
+  
+        
+    item BicycleMTB
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: BicycleMTB,
+        VehicleID = Base.BicycleMTB,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+        HasKey = true,
+        Tags = PinkSlip,
+    }          
+  
+    item BicycleRegular
+    {
+        DisplayCategory = CarWanna,
+        Weight  = 0.1,
+        Type    = Normal,
+        Icon    = AutoTitle,
+        DisplayName = PinkSlip: BicycleRegular,
+        VehicleID = Base.BicycleRegular,
+        WorldStaticModel = CW.AutoTitle,   
+        Tooltip = Tooltip_ClaimOutSide,	
+        Condition = 85,
+        GasTank = 30,
+        HasKey = true,
+        Tags = PinkSlip,
+    }    
+}
+

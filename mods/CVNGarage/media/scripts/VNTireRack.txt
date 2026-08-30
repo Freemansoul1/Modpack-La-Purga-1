@@ -1,0 +1,21 @@
+module VNTireRack {
+	imports {
+		Base
+	}
+
+	recipe Hacer estanteria para ruedas {
+		MetalPipe=10,
+		keep WeldingMask,
+		BlowTorch=5,
+		Result             : Moveables.vn_tire_rack_unpainted_0,
+		Time               : 500,
+		Category           : Welding,
+		OnGiveXP           : Give10MWXP,
+		SkillRequired      : MetalWelding=2,
+		AnimNode           : BlowTorchMid,
+		Prop1              : BlowTorch,
+		Prop2              : MetalPipe,
+		NeedToBeLearn      : false,
+		CanBeDoneFromFloor : true,
+	}
+}

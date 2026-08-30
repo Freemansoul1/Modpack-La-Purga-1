@@ -1,0 +1,12 @@
+Recipe_RU = {
+    /* Make Glass Recipes */
+    Recipe_IGPrepareGlassShards = "Приготовить стекло для выплавки",
+    Recipe_IGUnprepareGlassShards = "Извлечь стекло из жаровни",
+    Recipe_IGRemoveGlassPane = "Извлечь стеклянную панель",
+
+    /* Smash Glass Recipes */
+    Recipe_IGSmashGlassJar = "Разбить на осколки",
+    Recipe_IGSmashGlassPane = "Разбить на осколки",
+    Recipe_IGSmashWindshield = "Разбить на осколки",
+    Recipe_IGSmashWindows = "Разбить на осколки",
+}

@@ -1,0 +1,3 @@
+ContextMenu_PT = {
+    ContextMenu_DryFishMod_AddDrier = "Adicione o espeto à fogueira",
+}

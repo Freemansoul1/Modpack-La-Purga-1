@@ -1,0 +1,6 @@
+Tooltip_CH = {
+	Tooltip_item_BicycleFrame = "可以掉落在地上以生成一辆包含您库存中所有零件的自行车。",
+	Tooltip_item_BicycleBasket = "可以安装在普通自行车上以提供额外的存储空间。",
+	Tooltip_item_BicycleLock = "用于锁定自行车，防止他人进入。",
+	Tooltip_item_BicycleLockKey = "用于卸下自行车的锁。",
+}

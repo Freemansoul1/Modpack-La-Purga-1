@@ -1,8 +1,0 @@
-VERSION = 1,
-
-option IGMAR.AllowList
-{
-	type = integer, min = 0, max = 2147483647, default = 698437230,
-	page = IGMAR,
-	translation = IGMAR_AllowList,
-}

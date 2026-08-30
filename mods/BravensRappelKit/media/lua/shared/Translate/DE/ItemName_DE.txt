@@ -1,0 +1,5 @@
+ItemName_DE = {
+    ItemName_Base.RappelRope = "Abseilseil",
+    ItemName_Base.SwissSeat = "Klettergurt",
+	ItemName_Base.EscapeRope = "Abseilset",
+}

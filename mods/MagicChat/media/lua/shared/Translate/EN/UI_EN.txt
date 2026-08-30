@@ -1,0 +1,18 @@
+UI_EN = {
+    UI_MagicChat_enableMagicChat = "Enable Magic Chat",
+    UI_MagicChat_enableMagicChat_tooltip = "Magic Chat is enabled by default. If it is intrusive to you, this option can be used to disable it in most situations, so that chat will (usually) stay closed when you close it. Note, however, that admins do have the right to override this behavior in order to ensure that players on their server have the opportunity to see specific important chat messages. Some hosts use this mod for that purpose. Controller users can manually activate magic chat using Right Bumper + D-Pad Up. There is no default keyboard binding, but one can be set in Key Bindings -> UI.",
+
+    UI_MagicChat_alternativeInputShortcut = "Alternative Input Shortcut",
+    UI_MagicChat_alternativeInputShortcut = "This will allow you to input messages by holding R1 and pressing your primary select button (A on Xbox, X on PlayStation, et cetera) instead. In other words, on a PlayStation controller, this will allow you to press R1 + X to open the input box. When this option is disabled, the default chat input shortcut for every controller is Right Bumper + D-Pad Down.",
+
+    UI_MagicChat_closeChatOnJoin = "Close Chat on Join",
+    UI_MagicChat_closeChatOnJoin_tooltip = "Sets the chat to close after character spawns into the game; the time it takes to close depends on Spell Duration below.",
+
+    UI_MagicChat_spellDuration = "Spell Duration",
+    UI_MagicChat_spellDuration_tooltip = "This determines how long the chat will magically remain visible after a new message appears.",
+
+    UI_MagicChat_inputMessage = "Enter a chat message in the box below.",
+    UI_MagicChat_messageInputPanelTitle = "Magic Chat Gamepad Input",
+
+    UI_optionscreen_binding_summonMagicChat = "Summon Magic Chat"
+}

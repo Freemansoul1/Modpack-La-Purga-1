@@ -1,0 +1,8 @@
+ ItemName_FR = {
+	Base.Cuffs = "Menottes de police",
+	Base.PlasticCuffs = "Menottes en plastique",
+	Base.FluffyCuffs = "Menottes duveteuses",
+	Base.RopeCuffs = "Menottes de corde",
+	Base.LeatherCuffs = "Menottes en cuir",
+	Base.FrontLeatherCuffs = "Menottes en cuir (avant)",
+} 

@@ -1,0 +1,8 @@
+name=No Building On Water
+id=NoBuildingOnWater1
+poster=poster.png
+description=Do not allow players to build on water or shoreline tiles.
+description=
+icon=icon.png
+tags=Build 41,Misc
+versionMin=41.0

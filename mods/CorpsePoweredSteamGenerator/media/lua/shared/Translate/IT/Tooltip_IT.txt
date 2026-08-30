@@ -1,0 +1,3 @@
+Tooltip_IT = {
+	Tooltip_SteamGenerator = "Un dispositivo che produce elettricità utilizzando ceppi di legno e carbone",
+}

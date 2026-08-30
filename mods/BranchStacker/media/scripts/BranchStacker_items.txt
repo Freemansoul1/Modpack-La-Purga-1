@@ -1,0 +1,42 @@
+module Base
+{
+    item Pila de ramas 5
+    {
+        DisplayName = Pile Of 5 Branches,
+        DisplayCategory = Material,
+        Weight = 1.0,
+        Type = Normal,
+        Icon = BranchPile,
+        WorldStaticModel = BranchPile5,
+    }
+
+    item Pila de ramas 10
+    {
+        DisplayName = Pile Of 10 Branches,
+        DisplayCategory = Material,
+        Weight = 2.0,
+        Type = Normal,
+        Icon = BranchPile,
+        WorldStaticModel = BranchPile10,
+    }
+
+    item Pila de ramas 25
+    {
+        DisplayName = Pile Of 25 Branches,
+        DisplayCategory = Material,
+        Weight = 5.0,
+        Type = Normal,
+        Icon = BranchPile,
+        WorldStaticModel = BranchPile25,
+    }
+
+    item Pila de ramas 50
+    {
+        DisplayName = Pile Of 50 Branches,
+        DisplayCategory = Material,
+        Weight = 10.0,
+        Type = Normal,
+        Icon = BranchPile,
+        WorldStaticModel = BranchPile50,
+    }
+}

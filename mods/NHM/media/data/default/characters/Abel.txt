@@ -1,7 +1,0 @@
-#name Abel|Abel
-
-#desc Nombre: Abel
-#desc_append Edad: Desconocida
-#desc_append Exmilitar, de voz sorprendentemente suave. Hermano gemelo de Caín.
-#desc_append Amable, dispuesto a compartir consejos.
-#exit

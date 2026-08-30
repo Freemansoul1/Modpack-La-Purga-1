@@ -1,5 +1,0 @@
-*pharmacist_q1
-#name Crear una cura
-#desc El farmacéutico te da un mortero y te pide que fabriques medicamentos en el quirófano.
-#desc
-#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través del Centinela se enumerarán como fallidas.

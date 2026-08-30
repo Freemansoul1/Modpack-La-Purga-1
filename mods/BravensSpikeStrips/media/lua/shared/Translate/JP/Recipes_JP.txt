@@ -1,0 +1,3 @@
+Recipes_JP = {
+    Recipe_craft_spikestrip = "鍛造スパイクストリップ",
+}

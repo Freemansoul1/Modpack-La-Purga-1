@@ -1,7 +1,0 @@
-#name Aspirin|Aspirin
-
-#desc Nombre: Aspirin
-#desc_append Edad: Desconocida
-#desc_append Demasiado joven para ser especialista en Medicina. Probablemente un prodigio. Experto en Primeros Auxilios, enseña el oficio a los sobrevivientes en el Oasis.
-#desc_append Establecido como hostil. Considera que enseñar a los novatos es una pérdida de tiempo.
-#exit

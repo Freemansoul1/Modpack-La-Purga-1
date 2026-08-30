@@ -1,0 +1,5 @@
+id=CloseVehicleDoor1
+name=CloseVehicleDoor
+description=When you starts moving with a vehicle, closes automatically the doors.
+poster=preview.png
+icon=previewIcon.png

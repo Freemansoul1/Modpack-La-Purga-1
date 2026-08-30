@@ -1,0 +1,8 @@
+ItemName_ES = {
+	Base.Cuffs = "Esposas policiales",
+	Base.PlasticCuffs = "Esposas de plastico",
+	Base.FluffyCuffs = "Esposas de peluche",
+	Base.RopeCuffs = "Nudo de esposas",
+	Base.LeatherCuffs = "Esposas de cuero",
+	Base.FrontLeatherCuffs = "Esposas de cuero (Frontal)",
+}

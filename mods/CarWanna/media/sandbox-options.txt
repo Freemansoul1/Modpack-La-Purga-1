@@ -1,0 +1,142 @@
+VERSION = 1,
+
+option CarWanna.EnableFoundLoot
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_EnableFoundLoot,
+}
+
+option CarWanna.FoundLootChance = {
+	type = double, min = 0, max = 0, default = 0, 
+    page = CarWanna, translation = CarWanna_FoundLootChance,
+}
+
+option CarWanna.EnableZedLoot
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_EnableZedLoot,
+}
+
+option CarWanna.ZedLootChance = {
+	type = double, min = 0, max = 0, default = 0, 
+    page = CarWanna, translation = CarWanna_ZedLootChance,
+}
+
+option CarWanna.LootBlackList = {
+	type = string, default =, 
+    page = CarWanna, translation = CarWanna_LootBlackList,
+}
+
+option CarWanna.EnableRegistration
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_EnableRegistration,
+}
+
+option CarWanna.VehicleBlacklist = {
+	type = string, default =, 
+    page = CarWanna, translation = CarWanna_VehicleBlacklist,
+}
+
+option CarWanna.Trailerlist = {
+	type = string, default = Base.UnimogTrailer;Base.TrailerTSMega;Base.TrailerFirst;Base.TrailerGenerator;Base.TrailerHome;Base.TrailerKbac;Base.TrailerSecond;Base.isoContainer2;Base.isoContainer3tanker;Base.isoContainer4;Base.isoContainer5;Base.TrailerKbacRSWater;Rotators.TrailerWaterSmall;Base.M870A1,
+    page = CarWanna, translation = CarWanna_Trailerlist,
+}
+
+
+option CarWanna.NeedForm
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_NeedForm,
+}
+
+option CarWanna.FormLoot
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_FormLoot,
+}
+
+option CarWanna.FormChance
+{
+	type = double, min = 0, max = 0, default = 0,
+	page = CarWanna, translation = CarWanna_FormChance,
+}
+
+option CarWanna.MustHaveKey
+{
+	type = boolean, default = true,
+	page = CarWanna, translation = CarWanna_MustHaveKey,
+}
+
+option CarWanna.AllowHotwire
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_AllowHotwire,
+}
+
+option CarWanna.MustHaveAllParts
+{
+	type = boolean, default = true,
+	page = CarWanna, translation = CarWanna_MustHaveAllParts,
+}
+
+option CarWanna.MustClearInventory
+{
+	type = boolean, default = true,
+	page = CarWanna, translation = CarWanna_MustClearInventory,
+}
+
+option CarWanna.PartWhiteList = {
+	type = string, default =, 
+    page = CarWanna, translation = CarWanna_PartWhiteList,
+}
+
+option CarWanna.MinmumCondition
+{
+	type = integer, min = 0, max = 100, default = 85,
+	page = CarWanna, translation = CarWanna_MinmumCondition,
+}
+
+option CarWanna.ShowAllParts
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_ShowAllParts,
+}
+
+option CarWanna.AdminOverride
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_AdminOverride,
+}
+
+
+
+option CarWanna.UdderlyRespawn
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_UdderlyRespawn,
+}
+
+option CarWanna.ExperimentalColor
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_ExperimentalColor,
+}
+
+option CarWanna.ExperimentalTsarModSupport
+{
+	type = boolean, default = true,
+	page = CarWanna, translation = CarWanna_ExperimentalTsarModSupport,
+}
+
+option CarWanna.IgnoreNodisplay
+{
+	type = boolean, default = true,
+	page = CarWanna, translation = CarWanna_IgnoreNodisplay,
+}
+
+option CarWanna.FixNodisplay
+{
+	type = boolean, default = false,
+	page = CarWanna, translation = CarWanna_FixNodisplay,
+}

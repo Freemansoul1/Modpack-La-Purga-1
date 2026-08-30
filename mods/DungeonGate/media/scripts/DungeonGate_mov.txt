@@ -1,0 +1,134 @@
+module Base
+{
+
+	item DungeonGate1
+	{
+		DisplayName		= Dungeon Gate 1,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_0,
+	}
+
+	item DungeonGate2
+	{
+		DisplayName		= Dungeon Gate 2,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_2,
+	}
+
+	item DungeonGate3
+	{
+		DisplayName		= Dungeon Gate 3,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_4,
+	}
+
+	item DungeonGate4
+	{
+		DisplayName		= Dungeon Gate 4,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_6,
+	}
+
+	item DungeonGate5
+	{
+		DisplayName		= Dungeon Gate 5,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_8,
+	}
+
+	item DungeonGate6
+	{
+		DisplayName		= Dungeon Gate 6,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_10,
+	}
+
+	item DungeonGate7
+	{
+		DisplayName		= Dungeon Gate 7,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_12,
+	}
+
+	item DungeonGate8
+	{
+		DisplayName		= Dungeon Gate 8,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_14,
+	}
+
+
+
+
+	item DungeonGate9
+	{
+		DisplayName		= Dungeon Gate 9,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_16,
+	}
+
+	item DungeonGate10
+	{
+		DisplayName		= Dungeon Gate 10,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_20,
+	}
+
+	item DungeonGate11
+	{
+		DisplayName		= Dungeon Gate 11,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_24,
+	}
+
+	item DungeonGate12
+	{
+		DisplayName		= Dungeon Gate 12,
+	    DisplayCategory = Junk,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          = 0.3,
+		WorldObjectSprite	= DungeonGate_28,
+	}
+
+
+
+
+
+
+
+
+}

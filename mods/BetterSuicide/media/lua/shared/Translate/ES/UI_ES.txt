@@ -1,0 +1,5 @@
+UI_ES = {
+    UI_suicide_are_you_sure = "Suicidio?, ¿Estas seguro?",
+    UI_no_Ammo = "No tienes municion o necesitas recargar",
+    UI_Suicide = "Suicidio"
+}

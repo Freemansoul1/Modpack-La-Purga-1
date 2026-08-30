@@ -1,0 +1,5 @@
+Sandbox_EN = {
+    Sandbox_FixInside = "Mod Fix Inside",
+    Sandbox_FixInside_ActivePatch = "Active Fix",
+    Sandbox_FixInside_ActivePatch_tooltip = "Reduces moderately game performances. Only usefull when you want to fix a building created before activating Fix Inside Player Building mod.",
+}

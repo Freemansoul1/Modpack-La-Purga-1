@@ -1,0 +1,3 @@
+Tooltip_IT = {
+	Tooltip_item_SpikeStrip = "Lasciali cadere o posizionali nel terreno per forare le gomme di qualsiasi auto di passaggio. ",
+}

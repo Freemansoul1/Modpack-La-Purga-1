@@ -1,0 +1,3 @@
+Tooltip_PTBR = {
+	Tooltip_item_SpikeStrip = "Solte ou coloque-os no chão para furar os pneus de qualquer carro que passe.",
+}

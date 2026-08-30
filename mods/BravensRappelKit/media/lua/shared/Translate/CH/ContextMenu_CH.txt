@@ -1,0 +1,5 @@
+ContextMenu_CH = {
+    ContextMenu_Climb_Escape_Rope = "使用绳降套件",
+    ContextMenu_Add_Escape_Rope = "部署绳降套件",
+	ContextMenu_Remove_Escape_Rope = "拆下绳降套件",
+}

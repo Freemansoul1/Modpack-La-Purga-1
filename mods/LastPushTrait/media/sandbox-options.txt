@@ -1,0 +1,111 @@
+VERSION = 1,
+
+
+option LastPushTrait.DamageChance
+{
+    type = double, min = 0, max = 1, default = 0.15,
+    page = LastPushTrait, translation = LastPushTrait_DamageChance,
+}
+option LastPushTrait.DamageMin
+{
+    type = double, min = 0, max = 2, default = 0.5,
+    page = LastPushTrait, translation = LastPushTrait_DamageMin,
+}
+option LastPushTrait.DamageMax
+{
+    type = double, min = 0.01, max = 2, default = 2,
+    page = LastPushTrait, translation = LastPushTrait_DamageMax,
+}
+
+option LastPushTrait.EarnIt
+{
+	type = boolean, default = false,
+	page = LastPushTrait, translation = LastPushTrait_EarnIt,
+}
+option LastPushTrait.StrengthRequirement
+{
+    type = integer, min = 1, max = 10, default = 10,
+    page = LastPushTrait, translation = LastPushTrait_StrengthRequirement,
+}
+
+option LastPushTrait.EnduranceCost
+{
+    type = double, min = 0, max = 100, default = 20,
+    page = LastPushTrait, translation = LastPushTrait_EnduranceCost,
+}
+option LastPushTrait.EnduranceMin
+{
+    type = double, min = 0, max = 100, default = 50,
+    page = LastPushTrait, translation = LastPushTrait_EnduranceMin,
+}
+option LastPushTrait.FatigueAddUp
+{
+    type = double, min = 0, max = 100, default = 40,
+    page = LastPushTrait, translation = LastPushTrait_FatigueAddUp,
+}
+option LastPushTrait.FatigueMax
+{
+    type = double, min = 0, max = 100, default = 80,
+    page = LastPushTrait, translation = LastPushTrait_FatigueMax,
+}
+
+option LastPushTrait.Cooldown
+{
+    type = integer, min = 0, max = 525600, default = 4320,
+    page = LastPushTrait, translation = LastPushTrait_Cooldown,
+}
+option LastPushTrait.CooldownRandomness
+{
+    type = double, min = 0, max = 1, default = 0.5,
+    page = LastPushTrait, translation = LastPushTrait_CooldownRandomness,
+}
+
+option LastPushTrait.UsesLimit
+{
+    type = integer, min = 0, max = 100, default = 0,
+    page = LastPushTrait, translation = LastPushTrait_UsesLimit,
+}
+
+option LastPushTrait.ZombiesLimit
+{
+    type = integer, min = 0, max = 1000, default = 0,
+    page = LastPushTrait, translation = LastPushTrait_ZombiesLimit,
+}
+option LastPushTrait.PushDistance
+{
+    type = double, min = 0.1, max = 8, default = 2.5,
+    page = LastPushTrait, translation = LastPushTrait_PushDistance,
+}
+
+option LastPushTrait.UseChance
+{
+    type = double, min = 0.01, max = 1, default = 1,
+    page = LastPushTrait, translation = LastPushTrait_UseChance,
+}
+option LastPushTrait.UseChanceReroll
+{
+    type = integer, min = 1, max = 300, default = 3,
+    page = LastPushTrait, translation = LastPushTrait_UseChanceReroll,
+}
+
+option LastPushTrait.HitActivation
+{
+	type = boolean, default = true,
+	page = LastPushTrait, translation = LastPushTrait_HitActivation,
+}
+option LastPushTrait.HitActivationZombies
+{
+    type = integer, min = 3, max = 50, default = 8,
+    page = LastPushTrait, translation = LastPushTrait_HitActivationZombies,
+}
+option LastPushTrait.HitActivationDistance
+{
+    type = double, min = 0.5, max = 10, default = 1.5,
+	page = LastPushTrait, translation = LastPushTrait_HitActivationDistance,
+}
+
+option LastPushTrait.SoundRadius
+{
+    type = integer, min = 0, max = 1000, default = 50,
+    page = LastPushTrait, translation = LastPushTrait_SoundRadius,
+}

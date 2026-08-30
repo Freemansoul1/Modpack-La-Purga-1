@@ -1,2 +1,0 @@
-#npc_create Gerente|NPC/Head.png|11595,7584,0
-#exit

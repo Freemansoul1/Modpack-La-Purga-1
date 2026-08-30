@@ -1,7 +1,0 @@
-name=In-game map reset (MP only)
-id=PI_EraseMapData1
-poster=poster.png
-icon=icon.png
-authors=DeadlyKitten
-modversion=1.0.0
-description=This mod automatically deletes Player's map data anytime reset ID changed on the server! Server can change their reset ID in ini file or through the admin panel for server options. This mod was originally developed for multiplier server Project Imperium. We have tons of custom-made non-public mod that create a one-of-a-kind experience. Join as at [url=discord.gg/pzimperium.] Discord link [/url].

@@ -1,5 +1,0 @@
-Sandbox_EN = {
-  Sandbox_IGMAR = "In-game Map Auto Reset",
-  Sandbox_IGMAR_AllowList = "Allowed Reset ID avoid map reset",
-  Sandbox_IGMAR_AllowList_tooltip = "As long as this field matches the current resetID, an in-game map reset will not happen on the client side. If not, an in-game map reset will be triggered when the player joins the server for the first time with the mod and whenever the reset ID changes and no longer matches this field.",
-}

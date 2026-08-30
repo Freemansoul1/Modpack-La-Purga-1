@@ -1,0 +1,13 @@
+Sandbox_ES = {
+Sandbox_ChevalDeFrise = "Cheval de frise",
+
+Sandbox_ChevalDeFrise_WoodBaseHealth = "Salud base",
+Sandbox_ChevalDeFrise_WoodBaseHealth_tooltip = "Salud base de cheval de frise",
+
+Sandbox_ChevalDeFrise_WoodScaleHealth = "Salud adicional por nivel de carpintería",
+Sandbox_ChevalDeFrise_WoodScaleHealth_tooltip = "Salud adicional por nivel de carpintería",
+
+Sandbox_ChevalDeFrise_WoodDamage = "Multiplicador de daño",
+Sandbox_ChevalDeFrise_WoodDamage_tooltip = "Multiplicador de daño de cheval de frise",
+
+}

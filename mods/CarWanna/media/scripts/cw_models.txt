@@ -1,0 +1,17 @@
+module CW
+{
+    model AutoTitle
+	{
+		mesh = WorldItems/SheetOfPaper,
+		texture = WorldItems/AutoTitle,
+		scale = 0.02,
+	}
+      
+    model AutoForm
+	{
+		mesh = WorldItems/SheetOfPaper,
+		texture = WorldItems/AutoForm,
+		scale = 0.02,
+	}
+
+}

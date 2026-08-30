@@ -1,5 +1,0 @@
-*head_q1
-#name Trae una bolsa de sangre
-#desc El Superintendente te pide que traigas una bolsa de sangre del gran gabinete médico en la oficina de Demiurgo.
-#desc
-#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través de Centinela se enumerarán como fallidas.

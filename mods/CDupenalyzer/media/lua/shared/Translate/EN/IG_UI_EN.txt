@@ -1,0 +1,15 @@
+IGUI_EN = {
+    IGUI_AdminPanel_DupeAnalyzer = "Dupe Analyzer",
+
+	IGUI_DupeAnalyzer_SelectZone = "Select Area",
+	IGUI_DupeAnalyzer_Select = "Select",
+	IGUI_DupeAnalyzer_DeleteItem = "Delete Dupe",
+	IGUI_DupeAnalyzer_TeleportItem = "Teleport to Dupe",
+	IGUI_DupeAnalyzer_TeleportCopy = "Teleport to Item",
+	IGUI_DupeAnalyzer_Close = "Close",
+	IGUI_DupeAnalyzer_Title = "Dupe Analyzer",
+	IGUI_DupeAnalyzer_SearchedLabel = "Items searched:",
+	IGUI_DupeAnalyzer_FoundLabel = "Dupes found:",
+	IGUI_DupeAnalyzer_CoordsLabel = "Coords:",
+
+}

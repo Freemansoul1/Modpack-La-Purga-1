@@ -1,0 +1,41 @@
+IG_UI_JP = {
+
+IGUI_Item_DoorsRepairKitWood = "このキットはドアの修理に使用します。修理は大工スキルによって、多かれ少なかれ効果を発揮するでしょう。",
+IGUI_Item_DoorsRepairKitMetal = "このキットはドアの補強に使用します。補強は大工スキルによって、多かれ少なかれ効果を発揮するでしょう。",
+IGUI_Item_DoorsRepairKitEpoxy = "この速乾性エポキシ樹脂は破損したドアの修理に使用できますが効果的ではありません。それより、ドア用補強キットの作成に使うのが良いです!",
+
+
+IGUI_CanRepairDoors_option = "ドアを修理する",
+
+IGUI_veryBadlyHealtDoor = "長くはもたないでしょう !!",
+IGUI_BadlyHealtDoor = "悪い状態です !",
+IGUI_midleHealtDoor = "まだ持ちこたえられる。",
+IGUI_maxHealtDoor = "良い状態です。",
+IGUI_damagedRenforcedHealtDoor = "強化済み（破損）",
+IGUI_renforcedHealtDoor = "強化済み",
+
+IGUI_CRD_Impossible_reinforce = "ドアの損傷が激しく、補強は不可能 !",
+IGUI_CRD_Impossible_repair = "ドアは修理済みです !",
+IGUI_CRD_Impossible_isFullReinforced = "ドアは強化済みです !",
+
+IGUI_CRD_impossibleHealthRaised = "不具合が発生し、アクションがキャンセルされました...",
+
+IGUI_Info = "情報",
+
+IGUI_repairDoorAdmin = "|ドアを修理する (Admin)|",
+IGUI_reinforceDoorAdmin = "|ドアを強化する (Admin)|",
+
+IGUI_CheckDoorMP = "ドアの状態をチェックする",
+
+IGUI_RepairDoorWithKitEpoxy = "エポキシでドアを修理する",
+IGUI_RepairDoorWithKitWood = "キットでドアを修理する",
+IGUI_RepairDoorWithKitMetal = "キットでドアを強化する",
+
+IGUI_RepairDoorWithKitEpoxyINFO = "この接着剤による補修は誰でも行うことができ、その効果にスキルは考慮されません。処理する部分に直接塗布してください。",
+IGUI_RepairDoorWithKitWoodINFO = "修理には大工技能レベル1が必要ですが、その効果は大工スキルのレベルによって異なります。",
+IGUI_RepairDoorWithKitMetalINFO = "補強には大工技能士2級が必要ですが、その効果は大工スキルのレベルによって異なります。",
+
+IGUI_CarpSkillNiv2Required = "大工スキル レベル が必要 ",
+IGUI_CarpSkillNiv1Required = "大工スキル レベル が必要 ",
+
+}

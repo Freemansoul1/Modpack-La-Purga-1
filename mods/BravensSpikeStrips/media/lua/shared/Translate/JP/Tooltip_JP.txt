@@ -1,0 +1,3 @@
+Tooltip_JP = {
+	Tooltip_item_SpikeStrip = "これらを地面に落とすか、地面に置いて、通過する車のタイヤに穴を開けます。 ",
+}

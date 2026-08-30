@@ -1,0 +1,5 @@
+ItemName_FR = {
+    ItemName_Base.RappelRope = "Corde de Rappel",
+    ItemName_Base.SwissSeat = "Harnais d'escalade",
+	ItemName_Base.EscapeRope = "Trousse de Rappel",
+}

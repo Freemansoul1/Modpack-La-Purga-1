@@ -1,0 +1,36 @@
+ItemName_JP = {
+--    /******************* REGULAR BICYCLE *******************/
+    ItemName_Base.BicycleFrameRegular = "通常の自転車フレーム",
+    ItemName_Base.BicycleSuspensionRegular3 = "通常の自転車のサスペンション",
+    ItemName_Base.BicycleBrakesRegular3 = "通常の自転車ブレーキ",
+    ItemName_Base.BicycleTireRegular = "通常の自転車用タイヤ",
+    ItemName_Base.BicycleSeat = "自転車サドル",
+
+    ItemName_Base.BicycleFrameRegularScrap = "通常の自転車フレーム（スクラップ）",
+    ItemName_Base.BicycleSuspensionRegularScrap3 = "通常の自転車のサスペンション（スクラップ）",
+    ItemName_Base.BicycleBrakesRegularScrap3 = "通常の自転車ブレーキ（スクラップ）",
+    ItemName_Base.BicycleTireRegularScrap = "通常の自転車用タイヤ（スクラップ）",
+    ItemName_Base.BicycleSeatScrap = "自転車サドル（スクラップ）",
+
+--    /******************* MOUNTAIN BICYCLE *******************/
+    ItemName_Base.BicycleFrameMTB = "マウンテンバイクフレーム",
+    ItemName_Base.BicycleSuspensionMTB3 = "マウンテンバイクサスペンション",
+    ItemName_Base.BicycleBrakesMTB3 = "マウンテンバイクブレーキ",
+    ItemName_Base.BicycleTireMTB = "マウンテンバイクタイヤ",
+
+    ItemName_Base.BicycleFrameMTBScrap = "マウンテンバイクフレーム（スクラップ）",
+    ItemName_Base.BicycleSuspensionMTBScrap3 = "マウンテンバイクサスペンション（スクラップ）",
+    ItemName_Base.BicycleBrakesMTBScrap3 = "マウンテンバイクブレーキ（スクラップ）",
+    ItemName_Base.BicycleTireMTBScrap = "マウンテンバイクタイヤ（スクラップ）",
+
+--    /******************* ACCESSORIES *******************/
+    ItemName_Base.BicycleBasket3 = "自転車バスケット",
+    ItemName_Base.BicycleHeadlight3 = "自転車のヘッドライト",
+
+--    /******************* MISC *******************/
+    ItemName_Base.BicycleLock = "自転車用の鍵",
+    ItemName_Base.BicycleLockKey = "自転車用の鍵",
+    ItemName_Base.BicyclesMagVol1 = "サイクリング Vol。1",
+    ItemName_Base.BicyclesMagVol2 = "サイクリング Vol。2",
+    ItemName_Base.BicyclesMagVol2 = "サイクリング Vol。3",
+}

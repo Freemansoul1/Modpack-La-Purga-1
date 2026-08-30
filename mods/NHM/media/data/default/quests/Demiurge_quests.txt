@@ -1,5 +1,0 @@
-*demiurge_q1
-#name Buscar un archivo de almacenamiento
-#desc Demiurgo te da un papel con notas clave y te pide que bajes al primer piso para encontrar el archivo en el archivador.
-#desc
-#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través de Centinela se enumerarán como fallidas.

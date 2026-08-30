@@ -1,0 +1,6 @@
+Recipe_CN = {
+
+Recipe_makeDoorsRepairKitWood = "制作修理工具组",
+Recipe_makeDoorsReinforceKitMetal = "制作加固工具组",
+
+}

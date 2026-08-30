@@ -1,4 +1,0 @@
-UI_EN = {
-	UI_DynamicGruntSounds = "Dynamic Grunt Sounds",
-    UI_DynamicGruntSoundsTooltip = "If this option is activated, the probability that the character will grunt depends on the character's stamina",
-}
