@@ -1,0 +1,18 @@
+IGUI_EN = {
+    IGUI_CUI_Display_RenderTypeRanged = "Ranged Weapon Crosshair",
+    IGUI_CUI_Display_RenderTypeRanged_Tooltip = "A Shape/Behavior of crosshair for Ranged Weapons",
+    IGUI_CUI_Display_RenderTypeMelee = "Melee Weapon Crosshair",
+    IGUI_CUI_Display_RenderTypeMelee_Tooltip = "A Shape/Behavior of crosshair for Melee Weapons",
+    IGUI_CUI_Display_EnableAmmoCounter = "Display Ammo Counter",
+    IGUI_CUI_Display_EnableAmmoCounter_Tooltip = "An Ammo Counter will appear near crosshair if this option is enabled.",
+    IGUI_CUI_Display_LimitMeleeDistance = "Lock Melee Crosshair around Melee Range",
+    IGUI_CUI_Display_LimitMeleeDistance_Tooltip = "Crosshair / Isocursor will be locked around the melee range instead of following the mouse.",
+    IGUI_CUI_Display_ShowLimitDistanceCursor = "Show Melee Crosshair Lock Target Cursor",
+    IGUI_CUI_Display_ShowLimitDistanceCursor_Tool = "If the Limit Melee Distance option is enabled, Enabling this option will display where your mouse cursor is.",
+    IGUI_CUI_Display_AmmoCounterFont = "Ammo Counter Display Font",
+    IGUI_CUI_Display_ShowLimitDistanceCursor_Tool = "A style for ammo counter.",
+	IGUI_CUI_Display_GenericCrosshairGap = "Generic Crosshair Base Gap",
+	IGUI_CUI_Display_GenericCrosshairMaxGap = "Generic Crosshair Recoil Gap",
+	IGUI_CUI_Display_GenericCrosshairLength = "Generic Crosshair Length",
+	IGUI_CUI_Display_GenericCrosshairWidth = "Generic Crosshair Width",
+}

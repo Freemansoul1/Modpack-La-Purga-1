@@ -1,0 +1,27 @@
+ItemName_EN = {
+
+    ItemName_traps.Grass = "Grass",
+
+    ItemName_traps.BearTrap = "Bear trap",
+    ItemName_traps.BearTrapClosed = "Bear trap (closed)",
+    ItemName_traps.BearTrapN1 = "Bear trap lvl 1",
+    ItemName_traps.BearTrapN2 = "Bear trap lvl 2",
+    ItemName_traps.BearTrapN3 = "Bear trap lvl 3",
+    ItemName_traps.BearTrapN4 = "Bear trap lvl 4",
+
+    ItemName_traps.SpikeTrap = "Spike trap",
+    ItemName_traps.SpikeTrapClosed = "Spike trap (closed)",
+
+    ItemName_traps.TripwireTrap = "Tripwire",
+    ItemName_traps.TripwireTrapBroken = "Tripwire",
+    ItemName_traps.TripwireAlarmTrap = "Tripwire with cans",
+    ItemName_traps.TripwireAlarmTrapBroken = "Tripwire with cans (broken)",
+
+    ItemName_traps.WoodPlankTrap = "Nailed plank",
+    ItemName_traps.WoodPlankTrapBroken = "Nailed plank (Broken)",
+    ItemName_traps.WoodPlankTrapN1 = "Nailed plank lvl 1",
+    ItemName_traps.WoodPlankTrapN2 = "Nailed plank lvl 2",
+    ItemName_traps.WoodPlankTrapN3 = "Nailed plank lvl 3",
+    ItemName_traps.WoodPlankTrapN4 = "Nailed plank lvl 4",
+
+}

@@ -1,0 +1,18 @@
+IGUI_ES = {
+IGUI_CUI_Display_RenderTypeRanged = "Mira de arma a distancia",
+     IGUI_CUI_Display_RenderTypeRanged_Tooltip = "Una forma/comportamiento de la mira para armas a distancia",
+     IGUI_CUI_Display_RenderTypeMelee = "Mira de arma cuerpo a cuerpo",
+     IGUI_CUI_Display_RenderTypeMelee_Tooltip = "Una forma/comportamiento de la mira para armas cuerpo a cuerpo",
+     IGUI_CUI_Display_EnableAmmoCounter = "Mostrar contador de munición",
+     IGUI_CUI_Display_EnableAmmoCounter_Tooltip = "Aparecerá un contador de munición cerca del punto de mira si esta opción está habilitada.",
+     IGUI_CUI_Display_LimitMeleeDistance = "Bloquear la mira cuerpo a cuerpo alrededor del rango cuerpo a cuerpo",
+     IGUI_CUI_Display_LimitMeleeDistance_Tooltip = "La mira/isocursor se bloqueará alrededor del rango cuerpo a cuerpo en lugar de seguir al mouse.",
+     IGUI_CUI_Display_ShowLimitDistanceCursor = "Mostrar el cursor objetivo de bloqueo en forma de cruz cuerpo a cuerpo",
+     IGUI_CUI_Display_ShowLimitDistanceCursor_Tool = "Si la opción Limitar distancia cuerpo a cuerpo está habilitada, al habilitar esta opción se mostrará dónde está el cursor del mouse.",
+     IGUI_CUI_Display_AmmoCounterFont = "Fuente de visualización del contador de munición",
+     IGUI_CUI_Display_ShowLimitDistanceCursor_Tool = "Un estilo para contador de munición.",
+IGUI_CUI_Display_GenericCrosshairGap = "Separación de base de mira genérica",
+IGUI_CUI_Display_GenericCrosshairMaxGap = "Separación de retroceso en forma de cruz genérica",
+IGUI_CUI_Display_GenericCrosshairLength = "Longitud de la cruz genérica",
+IGUI_CUI_Display_GenericCrosshairWidth = "Ancho de mira genérico",
+}
