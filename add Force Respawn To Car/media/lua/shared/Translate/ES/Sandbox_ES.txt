@@ -1,0 +1,11 @@
+Sandbox_ES = {
+
+Sandbox_RespawnInCarMod = "Reaparecer en el coche",
+
+     Sandbox_RespawnInCarModForceToRespawnInCarEvenIfNewPlayer = "Forzar al jugador a reaparecer",
+     Sandbox_RespawnInCarModForceToRespawnInCarEvenIfNewPlayer_tooltip = "Si es VERDADERO, durante un nuevo juego, después de la creación de un nuevo personaje, si se conoce una posición afiliada al nombre del personaje, incluso si el personaje es nuevo, se verá obligado a unirse a su posición, por supuesto , esta opción no es válida después de una muerte, esta opción está presente para el mod Avatar, esto ofrece a los administradores la posibilidad de colocar avatares con el nombre de un jugador que nunca se ha unido a la parte del servidor/Juego, y así obligar al nuevo jugador a únete a la posición grabada a través del Avatar.",
+
+     Sandbox_RespawnInCarModFullProtectDuringRespawn = "Protección total durante la reaparición",
+     Sandbox_RespawnInCarModFullProtectDuringRespawn_tooltip = "Si es VERDADERO, entonces se aplicará una protección completa y óptima a los jugadores durante sus reapariciones, solo cuando el mod RIC fuerce la reaparición, para tener prioridad en los servidores cooperativos (invisibles y sin reproductor de clips), si es FALSO, entonces simplemente no ataque por zombis.",
+
+}

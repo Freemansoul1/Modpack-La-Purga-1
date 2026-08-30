@@ -1,0 +1,14 @@
+VERSION = 1,
+
+font HUDFont
+{
+	fnt = bsbase.fnt,
+	img = bsbase_0.png,
+}
+
+font HUDFontBlur
+{
+	fnt = bsbase.fnt,
+	img = bsbaseb_0.png,
+}
+
