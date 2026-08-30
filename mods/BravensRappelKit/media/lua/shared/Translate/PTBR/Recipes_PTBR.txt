@@ -1,5 +1,0 @@
-Recipes_PTBR = {
-    Recipe_MakeRappelRope = "Fazer Corda de Rapel",
-    Recipe_MakeSwissSeat = "Fazer Arnês de Escalada",
-	Recipe_MakeEscapeRope = "Fazer Kit de Rapel",
-}

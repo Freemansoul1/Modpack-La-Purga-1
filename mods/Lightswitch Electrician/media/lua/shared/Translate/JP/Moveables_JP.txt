@@ -1,0 +1,4 @@
+Moveables_JP = {
+	Left_Light_Switch = "左のライトスイッチ",
+	Right_Light_Switch = "右のライトスイッチ",
+}

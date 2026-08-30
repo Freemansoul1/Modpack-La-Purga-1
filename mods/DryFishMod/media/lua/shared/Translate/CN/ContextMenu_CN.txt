@@ -1,0 +1,3 @@
+ContextMenu_CN = {
+    ContextMenu_DryFishMod_AddDrier = "将烤肉串加入篝火中",
+}

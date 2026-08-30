@@ -1,0 +1,12 @@
+VERSION = 1,
+
+option sts.MaxDaysInMonth
+{
+	type = double,
+	min = 1.0,
+	max = 15.0,
+	default = 10.0,
+
+	page = sts,
+	translation = sts_MaxDaysInMonth,
+}

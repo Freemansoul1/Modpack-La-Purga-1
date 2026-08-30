@@ -1,0 +1,10 @@
+ContextMenu_EN = {
+	ContextMenu_Knockout_DebugOption = "DEBUG: Force Knockout Player"
+
+	ContextMenu_Knockout_WakeUpOption = "Wake up"
+
+	ContextMenu_Knockout_WakeUpOptionDescription = "is knocked unconscious. You can try to wake him/her up."
+
+	ContextMenu_Knockout_Salt = "Salt"
+	}
+	

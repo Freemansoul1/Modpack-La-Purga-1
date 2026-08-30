@@ -1,0 +1,162 @@
+module Base
+{
+	item Cuffs
+	{
+		
+		Weight	        = 0.5,
+		Type	        = Normal,
+		DisplayName	= Police Cuffs,
+		Icon	        = cuffs,
+		StaticModel	= HandCuffs,
+		WorldStaticModel = HandCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = handscuffedright,
+        	secondaryAnimMask = handscuffedleft,
+		Tags = CanRestrain,
+		
+	}
+	model HandCuffs_Ground
+	{
+		mesh = WorldItems/cuffs_ground,
+		texture = WorldItems/CuffsTEXTURE,
+	}
+	model HandCuffs
+	{
+		mesh = cuffs_obj,
+		texture = WorldItems/CuffsTEXTURE,
+		scale = 0.8,
+		
+	}
+	item PlasticCuffs
+	{
+		
+		Weight	        = 0.2,
+		Type	        = Normal,
+		DisplayName	= Plastic Cuffs,
+		Icon	        = plasticcuffs,
+		StaticModel	= PlasticCuffs,
+		WorldStaticModel = PlasticCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = plasticcuffedright,
+        	secondaryAnimMask = plasticcuffedleft,
+		Tags = CanRestrain,
+		
+	}
+
+	model PlasticCuffs_Ground
+	{
+		mesh = WorldItems/plasticcuffs_ground,
+		texture = WorldItems/PlasticCuffs_TEXTURE,
+	}
+	model PlasticCuffs
+	{
+		mesh = plasticcuffs,
+		texture = WorldItems/PlasticCuffs_TEXTURE,
+	}
+	
+	item FluffyCuffs
+	{
+		
+		Weight	        = 0.5,
+		Type	        = Normal,
+		DisplayName	= Chains of Pleasure,
+		Icon	        = fluffycuffs,
+		StaticModel	= FluffyCuffs,
+		WorldStaticModel = FluffyCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = handscuffedright,
+        	secondaryAnimMask = handscuffedleft,
+		Tags = CanRestrain,
+		
+	}
+	model FluffyCuffs_Ground
+	{
+		mesh = WorldItems/FluffyCuffs_ground,
+		texture = WorldItems/FluffyCuffs_TEXTURE,
+	}
+	model FluffyCuffs
+	{
+		mesh = FluffyCuffs,
+		texture = WorldItems/FluffyCuffs_TEXTURE,
+		scale = 0.9,
+		
+	}
+
+
+
+
+	item RopeCuffs
+	{
+		Weight	        = 0.2,
+		Type	        = Normal,
+		DisplayName	= Rope Cuffs,
+		Icon	        = ropecuffs,
+		StaticModel	= RopeCuffs,
+		WorldStaticModel = RopeCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = ropecuffedright,
+        	secondaryAnimMask = ropecuffedleft,
+		Tags = CanRestrain,
+	}
+	model RopeCuffs_Ground
+	{
+		mesh = WorldItems/RopeCuffs_Ground,
+		texture = WorldItems/RopeCuffs_TEXTURE,
+	}
+	model RopeCuffs
+	{
+		mesh = RopeCuffs,
+		texture = WorldItems/RopeCuffs_TEXTURE,
+	}
+
+	
+	item LeatherCuffs
+	{
+		Weight	        = 0.2,
+		Type	        = Normal,
+		DisplayName	= Leather Chains,
+		Icon	        = leathercuffs,
+		StaticModel	= LeatherCuffs,
+		WorldStaticModel = LeatherCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = chainscuffedright,
+        	secondaryAnimMask = chainscuffedleft,
+		Tags = CanRestrain,
+	}
+	model LeatherCuffs_Ground
+	{
+		mesh = WorldItems/Leathercuffs_ground,
+		texture = WorldItems/LeatherCuffs_TEXTURE,
+	}
+	model LeatherCuffs
+	{
+		mesh = Leathercuffs,
+		texture = WorldItems/LeatherCuffs_TEXTURE,
+	}
+	
+	item FrontLeatherCuffs
+	{
+		Weight	        = 0.2,
+		Type	        = Normal,
+		DisplayName	= Front Leather Chains,
+		Icon	        = cuffs,
+		StaticModel	= FrontLeatherCuffs,
+		WorldStaticModel = FrontLeatherCuffs_Ground,
+		RequiresEquippedBothHands = true,
+		primaryAnimMask = frontcuffedright,
+        	secondaryAnimMask = frontcuffedleft,
+		Tags = CanRestrain,
+	}
+	model FrontLeatherCuffs_Ground
+	{
+		mesh = WorldItems/Leathercuffs_ground,
+		texture = WorldItems/FrontLeatherCuffs_TEXTURE,
+	}
+	model FrontLeatherCuffs
+	{
+		mesh = FrontLeathercuffs,
+		texture = WorldItems/FrontLeatherCuffs_TEXTURE,
+	}
+		
+
+}

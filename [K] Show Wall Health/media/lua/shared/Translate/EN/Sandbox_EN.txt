@@ -1,6 +1,0 @@
-Sandbox_EN = {
-	Sandbox_Kamer.WallHealthSettings = "[K] Show Wall Health",
-
-	Sandbox_Kamer.WallHealthSettings.immersionmode = "Realistic Mode",
-	Sandbox_Kamer.WallHealthSettings.immersionmode_tooltip = "Change the way you check object status to more realistic. (Remove UI, No Health Points, Player lines)",
-}

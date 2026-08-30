@@ -1,5 +1,0 @@
-ItemName_PTBR = {
-    ItemName_Base.RappelRope = "Corda de Rapel",
-    ItemName_Base.SwissSeat = "Arnês de Escalada",
-	ItemName_Base.EscapeRope = "Kit de Rapel",
-}

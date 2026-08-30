@@ -1,3 +1,0 @@
-Recipes_CH = {
-    Recipe_craft_spikestrip = "锻造钉条",
-}

@@ -1,5 +1,0 @@
-UI_EN = {
-
-	UI_prof_derbydriver = "Demolition Derby Driver",
-	UI_profdesc_derbydriver = "Skilled at the art of crashing into things.",
-}

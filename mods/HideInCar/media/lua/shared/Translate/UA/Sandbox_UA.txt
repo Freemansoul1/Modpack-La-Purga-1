@@ -1,0 +1,25 @@
+Sandbox_UA = {
+    Sandbox_HIC = "Ховатися в машині",
+
+    Sandbox_HIC_Active = "Мод активний",
+    Sandbox_HIC_Active_tooltip = "Увімкнути або вимкнути мод.",
+	
+	Sandbox_HIC_MoodleActive = "Мудл активний",
+	Sandbox_HIC_MoodleActive_tooltip = "Увімкнути або вимкнути мудл.",
+
+
+    Sandbox_HIC_MinimalCondition = "Мінімальний стан",
+    Sandbox_HIC_MinimalCondition_tooltip = "Мінімальний відсоток стану, необхідний для деталей автомобіля для ховання.",
+
+    Sandbox_HIC_Radius = "Радіус виявлення",
+    Sandbox_HIC_Radius_tooltip = "Радіус, в якому зомбі можуть виявити гравця в машині.",
+
+    Sandbox_HIC_CheckForTraits = "Перевірити риси",
+    Sandbox_HIC_CheckForTraits_tooltip = "Якщо увімкнено, перевіряє риси помітні та непомітні.",
+
+    Sandbox_HIC_TraitCoefficient = "Коефіцієнт впливу рис",
+    Sandbox_HIC_TraitCoefficient_tooltip = "Регулює радіус на основі коефіцієнта рис, що представляє значення від 0 до 100 відсотків.",
+
+    Sandbox_HIC_ZombieMemory = "Зомбі мають пам'ять",
+    Sandbox_HIC_ZombieMemory_tooltip = "Якщо увімкнено, гравець не може ховатися під час погоні зомбі, навіть якщо не видно. Якщо вимкнено, гравець може ховатися, коли його не бачать зомбі."
+}

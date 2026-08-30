@@ -1,4 +1,0 @@
-Recipes_ES = {
-    Recipe_makeDoorsRepairKitWood = "Hacer kit de reparación para puertas",
-    Recipe_makeDoorsReinforceKitMetal = "Hacer kit para reforzar puertas",
-}

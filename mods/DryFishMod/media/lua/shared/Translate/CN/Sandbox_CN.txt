@@ -1,0 +1,11 @@
+Sandbox_CN = {
+	Sandbox_DryFishMod = "鱼干模组",
+	Sandbox_DryFishMod_normalDryingMod = "干燥速度",
+	Sandbox_DryFishMod_normalDryingMod_tooltip = "准备好的鱼正常干燥的速度",
+	Sandbox_DryFishMod_campfireDryingMod = "干燥速度: 篝火",
+	Sandbox_DryFishMod_campfireDryingMod_tooltip = "准备好的鱼在篝火上用火烘干的速度",
+	Sandbox_DryFishMod_poisonChance = "中毒危险",
+	Sandbox_DryFishMod_poisonChance_tooltip = "如果不使用火进行干燥，鱼可能会变质。 X 中的几率为 1，1 始终有效，0 禁用毒药掷骰。",
+	Sandbox_DryFishMod_CraftingMagazine = "工艺杂志",
+	Sandbox_DryFishMod_CraftingMagazine_tooltip = "启用后，杂志将会生成，玩家需要阅读杂志才能使用模组配方。",
+}

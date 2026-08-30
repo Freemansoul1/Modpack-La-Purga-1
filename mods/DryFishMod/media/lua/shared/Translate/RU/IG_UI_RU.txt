@@ -1,0 +1,7 @@
+IGUI_RU = {
+    IGUI_ContainerTitle_DryFishNet = "Сеть для сушки рыбы",
+    IGUI_ContainerTitle_DryFishRack = "Подставка для сушки рыбы",
+    IGUI_ContainerTitle_DryFishSkewer = "Вертел для сушки рыбы",
+    IGUI_DryFishMod_RequiresCampfire = "Для сушки требуется костер",
+    IGUI_DryFishMod_DryProgressTooltip = "Прогресс сушки: %1%",
+}

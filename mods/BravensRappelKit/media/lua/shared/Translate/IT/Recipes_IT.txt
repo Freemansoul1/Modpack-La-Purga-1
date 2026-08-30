@@ -1,5 +1,0 @@
-Recipes_IT = {
-    Recipe_MakeRappelRope = "Crea una Corda da Discesa",
-    Recipe_MakeSwissSeat = "Realizza un'imbracatura da Arrampicata",
-	Recipe_MakeEscapeRope = "Crea un Kit di Discesa",
-}

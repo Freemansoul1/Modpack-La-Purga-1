@@ -1,7 +1,0 @@
-name=Aftermath Kill Command
-id=BB_KillCommand1
-poster=poster.png
-icon=icon.png
-authors=BitBraven
-modversion=1.0.0
-description=This simple mod lets Players commit self destruction upon entering the "/kill" or "/suicide" commands on Multiplayer chat!

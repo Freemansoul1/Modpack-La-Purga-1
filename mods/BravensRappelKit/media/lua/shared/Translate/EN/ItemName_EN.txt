@@ -1,5 +1,0 @@
-ItemName_EN = {
-    ItemName_Base.RappelRope = "Rappel Rope",
-    ItemName_Base.SwissSeat = "Swiss Seat",
-	ItemName_Base.EscapeRope = "Emergency Rappel Kit",
-}

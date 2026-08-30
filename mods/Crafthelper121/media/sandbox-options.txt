@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option WastelandFarming.EnableIndoorPenaltyWithoutLamp
+{
+  type = boolean,
+  default = true,
+
+  page = WastelandFarming,
+  translation = WastelandFarming.EnableIndoorPenaltyWithoutLamp,
+}

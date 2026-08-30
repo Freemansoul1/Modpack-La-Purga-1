@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Bag_TradersFannyPackBack.xml</path>
+		<guid>e67f0ada-dbc0-4322-896b-269814031cca</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_TradersFannyPackFront.xml</path>
+		<guid>48b63e1d-0846-407d-9007-2fdabb58eba3</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Bag_FieldMedicFannyPackBack.xml</path>
+		<guid>e67f0ada-dbc0-4322-896b-269814031ccz</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_FieldMedicFannyPackFront.xml</path>
+		<guid>48b63e1d-0846-407d-9007-2fdabb58eba7</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Bag_OutcastBox_LHand.xml</path>
+		<guid>bac509de-ada3-4af2-b15f-ec47da560bf1</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_OutcastBox_RHand.xml</path>
+		<guid>a4b604b0-602d-498c-bc90-099ee94b9a7f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Hat_TrackersHat.xml</path>
+		<guid>a4b604b0-602d-498c-bc90-099ee94b9a1f</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Gloves_WatchmensGloves.xml</path>
+		<guid>096acc98-7ac1-4867-82dd-af77afb6a87d</guid>
+	</files>
+
+	<files>
+		<path>media/clothing/clothingItems/Shirt_WoodcuttersShirt.xml</path>
+		<guid>88b27ecc-8a00-4d1a-882e-1ab4f4a46351</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Bag_ScoutsSatchel_LHand.xml</path>
+		<guid>876bf4c1-a516-491a-9ed9-33326b2ec41c</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_ScoutsSatchel_RHand.xml</path>
+		<guid>d917462a-b916-4ff1-9753-7c5fd8bdbf0b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Bag_ScoutsSatchel.xml</path>
+		<guid>f8988b1c-04bb-4b9a-8656-851d324d2fd1</guid>
+	</files>
+
+
+	<files>
+		<path>media/clothing/clothingItems/Gloves_TinkerersGloves.xml</path>
+		<guid>9c36a162-1348-46ad-81bd-70bf3ed7a93u</guid>
+	</files>
+
+
+</fileGuidTable>

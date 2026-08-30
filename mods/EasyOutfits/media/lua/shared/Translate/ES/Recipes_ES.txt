@@ -1,0 +1,3 @@
+Recipes_ES = {
+	Recipe_Make_Outfit_Tag = "Hacer etiqueta de atuendo",
+}

@@ -1,3 +1,0 @@
-Tooltip_EN = {
-	Tooltip_SteamGenerator = "An electricity-generating device that uses Logs & Charcoal",
-}

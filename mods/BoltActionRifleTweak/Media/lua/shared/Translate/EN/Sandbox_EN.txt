@@ -1,5 +1,0 @@
-Sandbox_EN = {
-	Sandbox_BoltRifleTweak = "BoltActionRifles Tweak",
-	Sandbox_FasterRacking = "If selected, Guns will have their fire rate adjusted",
-	Sandbox_FasterRacking_tooltip ="Increases firerate of bolt action rifles, that have very high delay between shots to fit more into animation."
-}

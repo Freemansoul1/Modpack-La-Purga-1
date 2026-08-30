@@ -1,7 +1,0 @@
-name=Corpse Powered Steam Generator
-poster=poster.png
-id=CorpsePoweredSteamGenerator1
-pack=steamgenerator
-description=A Steam Powered Generator, now with more corpses!
-tiledef=steamgenerator 280
-versionMin=41.56

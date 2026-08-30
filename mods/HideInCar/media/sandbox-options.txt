@@ -1,0 +1,43 @@
+VERSION = 1,
+
+option HIC.Active
+{
+	type = boolean, default = true,
+	page = HIC, translation = HIC_Active,
+}
+
+option HIC.MoodleActive
+{
+	type = boolean, default = true,
+	page = HIC, translation = HIC_MoodleActive,
+}
+
+option HIC.MinimalCondition
+{
+	type = integer, default = 15, min = 0, max = 100,
+	page = HIC, translation = HIC_MinimalCondition,
+}
+
+option HIC.Radius
+{
+	type = integer, default = 5, min = 2, max = 20,
+	page = HIC, translation = HIC_Radius,
+}
+
+option HIC.CheckForTraits
+{
+	type = boolean, default = true,
+	page = HIC, translation = HIC_CheckForTraits,
+}
+
+option HIC.TraitCoefficient
+{
+	type = integer, default = 60, min = 0, max = 100,
+	page = HIC, translation = HIC_TraitCoefficient,
+}
+
+option HIC.ZombieMemory
+{
+	type = boolean, default = false,
+	page = HIC, translation = HIC_ZombieMemory,
+}

@@ -1,0 +1,24 @@
+Sandbox_EN = {
+    Sandbox_crafthelper1255 = "Raiding System",
+    Sandbox_crafthelper1255_C4TileDamage = "C4TileDamage",
+    Sandbox_crafthelper1255_Whitelist = "Whitelist",
+    Sandbox_crafthelper1255_Whitelist_tooltip = "Write here the usernames of Players whose Safehouses cannot be damaged by Raid Tools.<br>Please separate usernames with a ','. ",
+
+    Sandbox_crafthelper1255_SafezoneRadius = "Safezone Radius",
+    Sandbox_crafthelper1255_SafezoneRadius_tooltip = "Determines the square area around Safehouses where Players cannot equip explosives. ",
+
+    Sandbox_crafthelper1255_ExplosivesHandlerFrequency = "Explosives Handler Frequency",
+    Sandbox_crafthelper1255_ExplosivesHandlerFrequency_tooltip = "Determines how often (In game FPS) the Explosives Handler runs.<br>The Handler is responsible for preventing Players from being able to equip and throw explosives at Safehouses. ",
+
+    Sandbox_crafthelper1255_RaidAxeDamage = "Raid Axe Damage",
+    Sandbox_crafthelper1255_RaidAxeDamage_tooltip = "Determines how much damage the Raid Axe deals to Player built Structures. ",
+
+    Sandbox_crafthelper1255_C4ExplosionRadius = "C4 Explosion Radius",
+    Sandbox_crafthelper1255_C4ExplosionRadius_tooltip = "Determines the square area around the square where the C4 landed. Player-built structures within this area will be destroyed.<br>Example: 1 means the center square plus 8 squares around it. So 1 square on each side.",
+
+    Sandbox_crafthelper1255_C4PlayerDamage = "C4 Player Damage",
+    Sandbox_crafthelper1255_C4PlayerDamage_tooltip = "Determines the amount of damage Players receive when hit by a C4 explosion. ",
+
+    Sandbox_crafthelper1255_VehicleHealth = "Vehicle Health",
+    Sandbox_crafthelper1255_VehicleHealth_tooltip = "Determines the amount of health a Vehicle has, against Raid Tools. ",
+}

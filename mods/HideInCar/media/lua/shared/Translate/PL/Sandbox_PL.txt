@@ -1,0 +1,25 @@
+Sandbox_PL = {
+    Sandbox_HIC = "Ukryj sie w samochodzie",
+
+    Sandbox_HIC_Active = "Mod aktywny",
+    Sandbox_HIC_Active_tooltip = "Wlacz lub wylacz mod.",
+	
+	Sandbox_HIC_MoodleActive = "Moodle aktywne",
+	Sandbox_HIC_MoodleActive_tooltip = "Wlacz lub wylacz moodle.",
+
+
+    Sandbox_HIC_MinimalCondition = "Minimalny stan",
+    Sandbox_HIC_MinimalCondition_tooltip = "Minimalny procent stanu wymagany dla czesci pojazdu, aby umozliwic ukrywanie sie.",
+
+    Sandbox_HIC_Radius = "Promien wykrywania",
+    Sandbox_HIC_Radius_tooltip = "Promien, w którym zombie moga wykryc gracza w samochodzie.",
+
+    Sandbox_HIC_CheckForTraits = "Sprawdz cechy",
+    Sandbox_HIC_CheckForTraits_tooltip = "Jesli wlaczone, sprawdza cechy Rzucajacy sie w oczy i Nierzucajacy sie w oczy.",
+
+    Sandbox_HIC_TraitCoefficient = "Wspólczynnik wplywu cechy",
+    Sandbox_HIC_TraitCoefficient_tooltip = "Reguluje promien na podstawie wspólczynnika cech przedstawiajacego wartosc od 0 do 100 procent.",
+
+    Sandbox_HIC_ZombieMemory = "Zombie maja pamiec",
+    Sandbox_HIC_ZombieMemory_tooltip = "Jesli wlaczone, gracz nie moze sie ukryc, gdy jest scigany przez zombie, nawet jesli nie jest widoczny. Jesli wylaczone, gracz moze sie ukryc, gdy nie jest widziany przez zombie."
+}

@@ -1,0 +1,6 @@
+Moodles_RU {
+
+Moodles_Knockedout_Bad_lvl4 = "Без сознания!",
+Moodles_Knockedout_Bad_desc_lvl4 = "Вы отключились из-за тяжёлых повреждений!",
+
+}

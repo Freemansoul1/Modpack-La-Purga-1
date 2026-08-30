@@ -1,0 +1,4 @@
+name=Log Stacker
+id=LogStacker1
+description=Simple log-stacking mod, allowing you to make stacks of 5, 15, and 40. Additionally changes the base Log item in the game to weigh 2.5 pounds (or whatever unit of measure they're using), instead of the vanilla 9 each; the log stack weights are based around this weight of 2.5 as well (so you can actually manage the stacks).
+poster=poster.png

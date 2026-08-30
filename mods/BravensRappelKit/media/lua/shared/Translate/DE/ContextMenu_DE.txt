@@ -1,5 +1,0 @@
-ContextMenu_DE = {
-    ContextMenu_Climb_Escape_Rope = "Abseilausrüstung Verwenden",
-    ContextMenu_Add_Escape_Rope = "Abseilausrüstung Bereitstellen",
-	ContextMenu_Remove_Escape_Rope = "Abseilset Entfernen",
-}

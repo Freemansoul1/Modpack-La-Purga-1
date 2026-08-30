@@ -1,0 +1,5 @@
+IGUI_EN = {
+
+    IGUI_PlayerText_HPA_OutOfRange = "Generator's out of range. Remind me to stick closer next time, brain.",
+
+}

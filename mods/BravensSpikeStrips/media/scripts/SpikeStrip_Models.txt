@@ -1,9 +1,0 @@
-module Braven
-{
-	model SpikeStrip
-    {
-        mesh = SpikeStrip|SpikeStrip,
-        texture = BravensPolishedMetal,
-        scale = 0.1,
-    }
-}

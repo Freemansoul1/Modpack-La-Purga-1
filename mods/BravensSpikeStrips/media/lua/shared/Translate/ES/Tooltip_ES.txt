@@ -1,3 +1,0 @@
-Tooltip_ES = {
-	Tooltip_item_SpikeStrip = "Tírelos o colóquelos en el suelo para pinchar las llantas de cualquier automóvil que pase. ",
-}

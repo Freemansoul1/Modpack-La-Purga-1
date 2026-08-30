@@ -1,0 +1,7 @@
+Items_ES = {
+
+DisplayName_Distiller = "Destilador",
+DisplayName_Distiller_with_water = "Destilador con agua",
+DisplayName_Distill_Gasohol = "Destilar gasolina",
+DisplayName_Create_Distiller = "Crear destilador",
+}

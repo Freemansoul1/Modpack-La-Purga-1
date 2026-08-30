@@ -1,0 +1,4 @@
+Moveables_PT = {
+	Left_Light_Switch = "Interruptor da luz esquerda",
+	Right_Light_Switch = "Interruptor da luz direita",
+}

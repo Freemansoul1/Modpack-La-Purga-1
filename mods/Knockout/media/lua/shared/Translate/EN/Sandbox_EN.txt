@@ -1,0 +1,39 @@
+Sandbox_EN = {
+	Sandbox_Knockout_knockoutOptions = "Knockout Options"
+
+	Sandbox_Knockout_knockoutCarCrash = "Car crash knockout chance"
+	Sandbox_Knockout_knockoutCarCrash_tooltip = "Chance for a player to get knocked out after a car crash. Zero means it's turned off."
+
+	Sandbox_Knockout_carCrashDamage = "Car crash knockout damage"
+	Sandbox_Knockout_carCrashDamage_tooltip = "The minimum amount of damage the player must take in a car crash in order to get knocked out.\ni.e. The player will get knocked out if damage taken after a car crash is more than or equal this value."
+
+	Sandbox_Knockout_knockoutWeaponHit = "Weapon hit knockout chance"
+	Sandbox_Knockout_knockoutWeaponHit_tooltip = "Chance for a player to get knocked out after being hit with a weapon/gun. Zero means it's turned off."
+
+	Sandbox_Knockout_weaponHitDamage = "Weapon hit knockout damage"
+	Sandbox_Knockout_weaponHitDamage_tooltip = "The minimum amount of damage the player must take after being hit by a weapon in order to get knocked out.\ni.e. The player will knocked out if the damage taken after being hit by a weapon is more than or equal this value"
+
+	Sandbox_Knockout_weaponHitBodyDamage = "Weapon hit knockout body damage"
+	Sandbox_Knockout_weaponHitBodyDamage_tooltip = "The minimum amount of health the player must have in order to be knocked out by a weapon hit.\ni.e. The player will get knocked out after being hit by a weapon only if his health is less than or equal to this value."
+
+	Sandbox_Knockout_knockoutBleeding = "Bleeding knockout chance"
+	Sandbox_Knockout_knockoutBleeding_tooltip = "Chance for a player to get knocked out after a body part bleeds. Zero means it's turned off."
+
+	Sandbox_Knockout_bleedingDamage = "Bleeding knockout damage"
+	Sandbox_Knockout_bleedingDamage_tooltip = "The minimum amount of damage the player must take after a body part bleeds in order to get knocked out.\ni.e. The player will get knocked out if damage taken after a body part bleeds is more than or equal this value.\nThe damage is calculated individually per body part per frame, and doesn't take into account cumulative bleeding damage."
+
+	Sandbox_Knockout_bleedingBodyDamage = "Bleeding knockout body damage"
+	Sandbox_Knockout_bleedingBodyDamage_tooltip = "The minimum amount of health the player must have in order to be knocked out due to bleeding.\ni.e. The player will get knocked out after a body part bleeds only if his health is less than or equal to this value."
+
+	Sandbox_Knockout_knockoutAmputation = "Amputation knockout chance"
+	Sandbox_Knockout_knockoutAmputation_tooltip = "Chance for a player to get knocked out after the amputation of a body part. Zero means it's turned off.\nThis option is relevant only if you're using The Only Cure mod."
+
+	Sandbox_Knockout_knockoutTime = "Knockout Duration"
+	Sandbox_Knockout_knockoutTime_tooltip = "The amount of in-game minutes that must pass before a knocked out player regains his consciousness."
+
+	Sandbox_Knockout_zombiesWakeupKnockedPlayers = "Zombie attacks will wake players up"
+	Sandbox_Knockout_zombiesWakeupKnockedPlayers_tooltip = "If checked, a knocked out player will wake up instantly after being attacked by a zombie"
+
+	Sandbox_Knockout_seatbeltPreventKnockout = "Seatbelt prevents knockouts"
+	Sandbox_Knockout_seatbeltPreventKnockout_tooltip = "If the mod 'Working Seatbelt' is enabled and a player wearing a seatbelt crashes, they won't be knocked out."
+}

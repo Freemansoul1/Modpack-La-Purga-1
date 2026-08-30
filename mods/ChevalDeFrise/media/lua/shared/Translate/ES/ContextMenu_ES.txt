@@ -1,5 +1,0 @@
-ContextMenu_ES = {
-ContextMenu_Defenses = "Defensa",
-   ContextMenu_WoodenChevalDeFrise = "Caballero de frise de madera",
-   ContextMenu_MetalChevalDeFrise = "Cheval de frise de metal",
-}

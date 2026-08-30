@@ -1,0 +1,10 @@
+UI_ES = {
+
+UI_trait_lastpush = "Ultimo empujon",
+UI_trait_lastpush_desc = "Intenta escapar de la muerte con tu ultimo empujon en tus ultimos momentos.",
+
+	UI_lastpush_phrase = "NO!!",
+	UI_lastpush_too_tired_phrase = "nooo...",
+	UI_lastpush_bad_luch_phrase = "...",
+
+}

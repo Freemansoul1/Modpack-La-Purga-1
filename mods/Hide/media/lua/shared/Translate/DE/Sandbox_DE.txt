@@ -1,0 +1,5 @@
+Sandbox_DE = {
+    Sandbox_Hide = "Versteck dich",
+    Sandbox_Hide_HidingSpeed = "Geschwindigkeit des Versteckens",
+    Sandbox_Hide_HidingSpeed_tooltip = "Bestimmt, wie lange es dauert, sich irgendwo zu verstecken. "
+}

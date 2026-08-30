@@ -1,3 +1,0 @@
-Recipes_ES {
-	Recipe_Claim_Vehicle = "Reclamar",
-}

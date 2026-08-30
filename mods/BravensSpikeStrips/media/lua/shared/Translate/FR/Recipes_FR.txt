@@ -1,3 +1,0 @@
-Recipes_FR = {
-    Recipe_craft_spikestrip = "Forger herse",
-}

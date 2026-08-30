@@ -1,3 +1,0 @@
-ContextMenu_EN = {
-    ContextMenu_CW_CreateTitle = "핑크 슬립 만들기",
-}

@@ -1,0 +1,8 @@
+ItemName_RU = {
+	Base.Cuffs = "Наручники",
+	Base.PlasticCuffs = "Стяжка",
+	Base.FluffyCuffs = "Пушистые наручники",
+	Base.RopeCuffs = "Веревка на руки",
+	Base.LeatherCuffs = "Кожаные оковы",
+
+}

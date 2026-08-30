@@ -1,0 +1,6 @@
+ContextMenu_EN = {
+	ContextMenu_WFDetachSprinkler = "Detach Sprinkler",
+    ContextMenu_WFAttachSprinkler = "Attach Sprinkler",
+    ContextMenu_WFUseSprinkler = "Use Sprinkler (Select)",
+    ContextMenu_WFUseSprinklerAll = "Use Sprinkler (All)",
+}

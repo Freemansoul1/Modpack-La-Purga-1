@@ -1,0 +1,7 @@
+ItemName_IT = {
+	Base.Cuffs = "Manette della polizia",
+	Base.PlasticCuffs =  "Manette in plastica",
+	Base.FluffyCuffs = "Manette pelose",
+	Base.RopeCuffs =  "Manette di corda",
+	Base.LeatherCuffs = "Manette di pelle",
+}

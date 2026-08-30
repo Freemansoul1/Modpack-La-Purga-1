@@ -1,0 +1,38 @@
+module Base
+{
+
+	recipe Distill Gasohol
+	{
+        Heat:-0.22,
+        FlaskAlcohol = 1,
+	Sugar = 1,
+	Corn = 20,
+	Water = 20,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Chemistry,
+	Result:PetrolCan,
+        Time:1000.0,
+        SkillRequired:Chemistry=6,
+        NearItem:NHStill,
+        OnGiveXP:Chemistry8_OnGiveXP,
+	}
+
+	recipe Distill Gasohol (Strawberries)
+	{
+        Heat:-0.22,
+	Strewberrie = 20,
+        FlaskAlcohol = 1,
+	Corn = 30,
+	Water = 20,
+        CanBeDoneFromFloor:true,
+	destroy EmptyPetrolCan,
+        Category:Chemistry,
+	Result:PetrolCan,
+        Time:2000.0,
+        NearItem:NHStill,
+        SkillRequired:Chemistry=6,
+        OnGiveXP:Chemistry8_OnGiveXP,
+	}
+
+}

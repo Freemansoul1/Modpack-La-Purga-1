@@ -1,7 +1,0 @@
-Sandbox_EN = {
-
-    Sandbox_interiorLock = "Lockable interior",
-
-    Sandbox_interiorLockKeepMainDoorLockableWithoutKey = "Main doors",
-    Sandbox_interiorLockKeepMainDoorLockableWithoutKey_tooltip = "TRUE = Keep the main door lockable/unlockable without a key, i.e. You will still be able to lock the doors leading to the outside without a key, like in vanilla.",
-}

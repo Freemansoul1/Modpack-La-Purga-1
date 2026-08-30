@@ -1,5 +1,0 @@
-ContextMenu_PL = {
-    ContextMenu_Climb_Escape_Rope = "U¿yj zestawu do zje¿d¿ania",
-    ContextMenu_Add_Escape_Rope = "Roz³ó¿ zestaw do zje¿d¿ania na linie",
-	ContextMenu_Remove_Escape_Rope = "Zdejmij zestaw zjazdowy",
-}

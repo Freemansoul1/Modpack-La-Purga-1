@@ -1,0 +1,4 @@
+Tooltip_ES = {
+Tooltip_Sprinkler_Crafted = "Un aspersor para regar las plantas que se puede conectar a un barril de agua.",
+     Tooltip_GrowLamp = "Una lampara de crecimiento que aumenta la velocidad de crecimiento de la planta.<LINE>Requerida para cultivo en interiores.<LINE>Tiene un alcance de 1 tile en todas las direcciones.",
+}

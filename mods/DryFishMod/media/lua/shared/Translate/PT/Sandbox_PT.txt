@@ -1,0 +1,11 @@
+Sandbox_PT = {
+	Sandbox_DryFishMod = "Mod de peixe seco",
+	Sandbox_DryFishMod_normalDryingMod = "Velocidade de secagem",
+	Sandbox_DryFishMod_normalDryingMod_tooltip = "Velocidade com que o peixe preparado secará normalmente",
+	Sandbox_DryFishMod_campfireDryingMod = "Velocidade de secagem: fogueira",
+	Sandbox_DryFishMod_campfireDryingMod_tooltip = "Velocidade com que o peixe preparado secará sobre uma fogueira com fogo",
+	Sandbox_DryFishMod_poisonChance = "Perigo de veneno",
+	Sandbox_DryFishMod_poisonChance_tooltip = "É possível que o peixe estrague ao secar sem fogo. A chance é 1 em X, 1 é sempre, 0 desativa as jogadas de veneno.",
+	Sandbox_DryFishMod_CraftingMagazine = "Revista de Artesanato",
+	Sandbox_DryFishMod_CraftingMagazine_tooltip = "Quando ativado, as revistas aparecerão e os jogadores precisarão ler a revista para usar as receitas do mod.",
+}

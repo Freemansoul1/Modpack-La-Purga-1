@@ -1,0 +1,5 @@
+Sandbox_EN = {
+    Sandbox_WastelandFarming = "Wasteland Farming",
+    Sandbox_WastelandFarming.EnableIndoorPenaltyWithoutLamp = "Indoor Penalty",
+    Sandbox_WastelandFarming.EnableIndoorPenaltyWithoutLamp_tooltip = "Enable indoor health decline of crops without lamp",
+}

@@ -1,3 +1,0 @@
-Tooltip_DE = {
-	Tooltip_item_SpikeStrip = "Lassen Sie diese fallen oder legen Sie sie in den Boden, um die Reifen eines vorbeifahrenden Autos zu beschädigen. ",
-}

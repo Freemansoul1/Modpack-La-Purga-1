@@ -1,0 +1,3 @@
+Moveables_ES = {
+    GrowLamp = "Lampara de crecimiento",
+}

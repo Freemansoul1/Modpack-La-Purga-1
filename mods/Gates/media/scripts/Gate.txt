@@ -1,0 +1,21 @@
+module Gate
+{
+	imports
+	{
+		Base
+	}
+	
+	
+	
+	
+	item GateKey
+	{
+		Weight    		= 0.1,
+		Type                	= Normal,
+        DisplayName         	= Gate Key,
+        icon 			= Key1,
+	}
+	
+
+	
+}

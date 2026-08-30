@@ -1,0 +1,7 @@
+ItemName_PL = {
+	Base.Cuffs = "Policyjne kajdanki",
+	Base.PlasticCuffs = "Plastikowe kajdanki.",
+	Base.FluffyCuffs = "Kajdanki z futerkiem",
+	Base.RopeCuffs = "Kajdanki z liny",
+	Base.LeatherCuffs = "Kajdanki ze skory",
+}

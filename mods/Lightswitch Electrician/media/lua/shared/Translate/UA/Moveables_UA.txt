@@ -1,0 +1,4 @@
+Moveables_UA = {
+	Left_Light_Switch = "Лівий вимикач світла",
+	Right_Light_Switch = "Правий вимикач світла",
+}

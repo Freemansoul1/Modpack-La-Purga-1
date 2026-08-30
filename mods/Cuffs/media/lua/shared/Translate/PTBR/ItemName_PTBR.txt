@@ -1,0 +1,8 @@
+ItemName_PTBR = {
+	Base.Cuffs = "Algemas Policial",
+	Base.PlasticCuffs = "Algemas de plástico",
+	Base.FluffyCuffs = "Algemas de pelúcias",
+	Base.RopeCuffs = "Nó de algema",
+	Base.LeatherCuffs = "Algemas de couro",
+	Base.FrontLeatherCuffs = "Algemas de couro (Frontal)",
+}

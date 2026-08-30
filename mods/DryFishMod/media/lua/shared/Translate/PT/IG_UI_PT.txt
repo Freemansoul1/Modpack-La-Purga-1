@@ -1,0 +1,7 @@
+IGUI_PT = {
+    IGUI_ContainerTitle_DryFishNet = "Rede de secagem de peixe",
+    IGUI_ContainerTitle_DryFishRack = "Rack de secagem de peixe",
+    IGUI_ContainerTitle_DryFishSkewer = "Espeto De Secagem De Peixe",
+    IGUI_DryFishMod_RequiresCampfire = "Requer uma fogueira para secar",
+    IGUI_DryFishMod_DryProgressTooltip = "Progresso da secagem: %1%",
+}

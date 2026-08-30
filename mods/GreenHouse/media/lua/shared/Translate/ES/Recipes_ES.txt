@@ -1,0 +1,10 @@
+Recipe_ES = {
+    /* Recetas para hacer vidrio */
+    Recipe_IGPrepareGlassShards = "Preparar vidrio para fundir",
+    Recipe_IGUnprepareGlassShards = "Retirar vidrio de la sarten",
+    Recipe_IGRemoveGlassPane = "Extraer panel de vidrio",
+
+    /* Recetas para romper vidrio */
+    Recipe_IGSmashGlassJar = "Romper en vidrio roto",
+    Recipe_IGSmashGlassPane = "Romper en vidrio roto",
+}
