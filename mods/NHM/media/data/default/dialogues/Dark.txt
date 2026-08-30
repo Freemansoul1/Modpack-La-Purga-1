@@ -1,0 +1,324 @@
+#is_flag dark_intro,true
+    #jump loop
+
+*intro
+#m Dark|NPCPortraits/DarkP.png|"¿Cómo has llegado hasta aquí?"
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Dark|NPCPortraits/DarkP.png|"De acuerdo."
+#exit
+
+*intro_hello
+#m "Hola."
+#m Dark|NPCPortraits/DarkP.png|"¿Qué tiene 2 patas y sangra?"
+#m "Eh... no lo sé."
+#m Dark|NPCPortraits/DarkP.png|"¡Medio perro!"
+#m Carter|NPCPortraits/CarterP.png|"¿Qué cojones?"
+#m Carter|NPCPortraits/CarterP.png|"Sacas el infierno de la gente con tus bromas."
+#m Dark|NPCPortraits/DarkP.png|"¡Sí, señor!, ese soy yo, Charles Dark, Cabo, Ejército de EE.UU."
+#m Dark|NPCPortraits/DarkP.png|"Luego el Capitán Carter, y allí, un poco más lejos, el Coronel Marshall."
+#m Dark|NPCPortraits/DarkP.png|"¿Qué es amarillo y no puede nadar?"
+#m "¿Qué?"
+#m Dark|NPCPortraits/DarkP.png|"¡Un autobús con niños!"
+#m Carter|NPCPortraits/CarterP.png|"Vete al carajo con tus bromas tío."
+#m Dark|NPCPortraits/DarkP.png|"¡Lo siento, capitán Carter!, oye, novato, no te ofendas. Casi no hay caras nuevas aquí, ¡así que estos chistes se han estado acumulando durante semanas!"
+#m Dark|NPCPortraits/DarkP.png|"Como sabes, solo dos cosas en el mundo no envejecen, el humor negro y los niños sin vacunar."
+#m "La mujer lanza una mirada maligna a Dark. Él vuelve a sus sentidos y se vuelve hacia ti."
+#m Dark|NPCPortraits/DarkP.png|"Puedes hacer mandados para mí, será difícil y peligroso, pero la recompensa será buena."
+#fade_out black
+#set_flag dark_intro,true
+#fade_in
+#reveal Dark
+#exit
+
+*loop
+#m Dark|NPCPortraits/DarkP.png|"Si mi abuela hubiera sabido cuánto dinero ahorré en su funeral, se habría revuelto en su tumba."
+
+#is_quest dark_q1|locked
+    #set_flag dark_q1_flag,false
+#is_quest dark_q1|completed
+    #set_flag dark_q1_flag,false
+#is_quest dark_q1|failed
+    #set_flag dark_q1_flag,false
+
+#is_quest dark_q2|locked
+    #set_flag dark_q2_flag,false
+#is_quest dark_q2|completed
+    #set_flag dark_q2_flag,false
+#is_quest dark_q2|failed
+    #set_flag dark_q2_flag,false
+    
+*backtolist
+#choice
+    questBunker|Misiones Dark
+    quest_exit|Salir
+
+*questBunker
+#choice
+    questZ1|Entrenamiento "utopía"
+    questZ2|Entrenamiento "Araña sin patas"
+    backtolist|Volver a la lista general
+    questZ1_complete|Completa la misión|dark_q1_flag
+    questZ2_complete|Completa la misión|dark_q2_flag
+
+*questZ1
+#is_quest dark_q2|unlocked,uncompleted,unfailed
+    #m Dark|NPCPortraits/DarkP.png|"Oye muchach@, no te sobreestimes, no más de una tarea a la vez."
+    #exit
+#is_quest dark_q1|locked
+    #m Dark|NPCPortraits/DarkP.png|"Un día mi amigo se perdió en un campo plagado de minas antipersona, ¿Sabes dónde lo encontramos?" 
+    #m "¿Dónde?.."
+    #m Dark|NPCPortraits/DarkP.png|"En todos lados." 
+    #m "Dark te mira a los ojos." 
+    #m Dark|NPCPortraits/DarkP.png|"Escucha, necesito que te cueles en el búnquer y que recolectes algo para mí, no sé si hablaste con Abel, quizás ya lo sepas o simplemente lo hayas adivinado, tenemos algunos problemas con las provisiones." 
+    #m Dark|NPCPortraits/DarkP.png|"No tenemos suficientes manos para conseguir comida, a los artesanos no les agradamos y los médicos tienen mejores cosas que hacer. Pero en realidad... hay una solución, estuve investigando el búnquer antes del incidente, y vi que criaron una variedad de cultivo sostenible, extremadamente resistente y extremadamente prolífico, crece rápido, requiere pocos cuidados."
+    #m Dark|NPCPortraits/DarkP.png|"El problema es que las semillas no funcionan en su estado actual, más precisamente ... no tuvieron tiempo para completar el desarrollo. Como resultado, ahora es solo una basura inestable, muriendo sin la temperatura adecuada. Aún quedan muchas existencias de este bien en el Búnquer."  
+    #m Dark|NPCPortraits/DarkP.png|"Pero aquí lamentablemente no tenemos las condiciones necesarias. Por lo tanto, usamos la única opción disponible para nosotros: colarnos en el búnquer y traer una muestra cada vez. No tiene mucho sentido traer más de una: los Doctores no pueden procesar más de una muestra antes de que la misma muera." 
+    #m Dark|NPCPortraits/DarkP.png|"Así que aquí está tu tarea, ve al búnquer, encuentra una cantina, encuentra las semillas de utopía (sí, realmente se llaman así). Y luego, en un espacio de tiempo muy corto, traelas aquí, si la temperatura no es lo suficientemente baja, las muestras morirán en 4 horas."
+    #m Dark|NPCPortraits/DarkP.png|"Por cierto, ¿sabes por qué mi papá no puede ir a fiestas?"
+    #m "¿Por qué?"
+    #m Dark|NPCPortraits/DarkP.png|"Porque murió." 
+    #m "Creo que es hora de irme."
+    #quest_unlock dark_q1
+    #task_unlock dark_q1|t1
+    #exit
+#is_quest dark_q1|uncompleted,unfailed
+    #m Dark|NPCPortraits/DarkP.png|"El humor negro es como la comida, no está disponible para todos. Ya estás haciendo un trabajo."
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"Vuelve mañana."
+#exit
+
+*q1_choosecont
+#roll con1,10|con2,20|con3,30|con4,40|con5,50|con6,60|con7,70|con8,80|con9,90|con10,100
+#exit
+
+*con1
+#task_unlock dark_q1|t4
+#exit
+
+*con2
+#task_unlock dark_q1|t5
+#exit
+
+*con3
+#task_unlock dark_q1|t6
+#exit
+
+*con4
+#task_unlock dark_q1|t7
+#exit
+
+*con5
+#task_unlock dark_q1|t8
+#exit
+
+*con6
+#task_unlock dark_q1|t9
+#exit
+
+*con7
+#task_unlock dark_q1|t10
+#exit
+
+*con8
+#task_unlock dark_q1|t11
+#exit
+
+*con9
+#task_unlock dark_q1|t12
+#exit
+
+*con10
+#task_unlock dark_q1|t13
+#exit
+
+*questZ1_complete
+#has_item NHM.QuestUtopiaSeed,1
+    #task_complete dark_q1|t15
+    #remove_item NHM.QuestUtopiaSeed,1
+    #m Dark|NPCPortraits/DarkP.png|"Un día mi hija y yo estábamos mirando el cielo estrellado, y ella me preguntó: Papá, ¿cómo mueren las estrellas?"
+    #m Dark|NPCPortraits/DarkP.png|"Generalmente de sobredosis - respondí."
+    #m Dark|NPCPortraits/DarkP.png|"Estoy bromeando, no tengo hija, gracias por las semillas."
+    #m "Estás realmente jodido de la mente."
+    #set_flag dark_q1_completed,true
+    #reward Base.Money,5,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,12
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,6
+        #exit
+    #reward EXP,RepArmy,9
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"¡Necesito la semilla!"
+#exit
+
+*fail_dark_q1
+#is_quest dark_q1|unlocked,uncompleted,unfailed
+    #set_flag dark_q1_flag,false
+    #quest_fail dark_q1
+    #exit
+#exit
+
+*quest_exit
+#exit
+
+*questZ2
+#is_quest dark_q1|unlocked,uncompleted,unfailed
+    #m Dark|NPCPortraits/DarkP.png|"Oye muchach@, no te sobreestimes, no más de una tarea a la vez."
+    #exit
+#is_quest dark_q2|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepArmy) >= 3|true
+        #has_item Radio.WalkieTalkie4,1
+            #m Dark|NPCPortraits/DarkP.png|"¿Sabes cuál es la diferencia entre una niña y las cucarachas?" 
+            #m Dark|NPCPortraits/DarkP.png|"No tengo cucarachas en mi sótano."
+            #m Dark|NPCPortraits/DarkP.png|"Bien, entonces... Tengo un par de mensajeros, intercambiamos información importante con ellos, y recursos a veces, viven cerca de Louisville y periódicamente van a la ciudad en busca de suministros."
+            #m Dark|NPCPortraits/DarkP.png|"Como probablemente ya sepa, Louisville está infectado, y hay demasiados zombis... En resumen, mi mensajero dejó de comunicarse, has que averiguar qué pasó".
+            #m Dark|NPCPortraits/DarkP.png|"Su nombre es Araña, te daré un par de lugares donde podría estar, revisa estos lugares, encuentra rastros de él y. Nos mantendremos en contacto por radio, puedes irte."
+            #m Dark|NPCPortraits/DarkP.png|"Y ahora la pregunta. ¿Cómo llamas a un perro sin patas?"
+            #m "Lo haré lo mejor que pueda... y bueno... ¿cómo?"
+            #m Dark|NPCPortraits/DarkP.png|"No importa cómo lo llames, no vendrá corriendo."
+            #m "Que idiota eres."
+            #quest_unlock dark_q2
+            #task_unlock dark_q2|t1
+            #exit
+        #m Dark|NPCPortraits/DarkP.png|"Para esta misión, necesitas un walkie táctico portátil."
+        #exit
+    #m Dark|NPCPortraits/DarkP.png|"Por supuesto, no eres un enano, pero aún no has crecido suficiente para asumir esta tarea."
+    #exit
+#is_quest dark_q2|uncompleted,unfailed
+    #m Dark|NPCPortraits/DarkP.png|"Te falta hacer más tareas. Hazlas para continuar."
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"Siempre recordaré las últimas palabras de mi abuelo. "¡Maldito imbécil, sostén la escalera!", cada vez que lo recuerdo me inundan las lágrimas... Todavía no tengo tareas para ti. Ven mañana."
+#exit
+
+*q2_choosepath
+#roll path1,33|path2,66|path3,100
+#exit
+
+*path1
+#task_unlock dark_q2|t2
+#exit
+
+*path2
+#task_unlock dark_q2|t12
+#exit
+
+*path3
+#task_unlock dark_q2|t15
+#exit
+
+*quest2_path1
+#has_item Radio.WalkieTalkie4,1
+    #m "Hola Dark. Fui al lugar que indicaste. Y luego... no encontré nada." 
+    #m Dark|NPCPortraits/DarkP.png|"¿Qué?, espera, él es la araña, no pudo no dejar una nota, mira de cerca."
+    #m "Parece que tienes razón, tengo una nota, solo eso..."
+    #m Dark|NPCPortraits/DarkP.png|"¿No entiendes lo que está escrito?, no lo intentes, el texto está encriptado, somos militares después de todo."
+    #m "UH, en realidad lo entiendo todo, dice: "Me hirieron, trataré de llegar a la iglesia, búsquenme allí". ¿Sabía que lo estarían buscando?"
+    #m Dark|NPCPortraits/DarkP.png|"Por supuesto que lo sabía, no dejo a mis informantes cuándo están en problemas, pero no será en la iglesia, busca datos, lo sabrás enseguida, aunque no podrás leerlos, están encriptados tal cómo dije."
+    #m "¿Qué te hace pensar que él no estará allí?"
+    #m Dark|NPCPortraits/DarkP.png|"Simplemente confía en mí, muévete."
+    #set_flag q2_p1_flag,true
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"No puedo contactar a Dark sin un walkie-talkie."
+#exit
+
+*q2_choosecont
+#roll c1,20|c2,40|c3,60|c4,80|c5,100
+#exit
+
+*c1
+#task_unlock dark_q2|t6
+#exit
+
+*c2
+#task_unlock dark_q2|t7
+#exit
+
+*c3
+#task_unlock dark_q2|t8
+#exit
+
+*c4
+#task_unlock dark_q2|t9
+#exit
+
+*c5
+#task_unlock dark_q2|t10
+#exit
+
+*quest2_path2
+#has_item Base.Crowbar,1|Radio.WalkieTalkie4,1
+    #m "Hola Dark, estoy aquí en el lugar que indicaste. Veo rieles aquí, y parece que han sido desmontados recientemente." 
+    #m Dark|NPCPortraits/DarkP.png|"Espero que tengas la palanca contigo, abre con ella, está en la nota de la Araña."
+    #m "Perfecto, lo haré..."
+    #add_item NHM.QuestSpiderNote,1
+    #m "¡Pan comido!"
+    #m Dark|NPCPortraits/DarkP.png|"Bien hecho."
+    #set_flag q2_p2_flag,true
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"No puedo contactar a Dark sin un walkie-talkie. Además, creo que necesito una forma de solucionar esto."
+#exit
+
+*quest2_path3
+#has_item Radio.WalkieTalkie4,1
+    #m "Recepción, ¿cómo se oye?" 
+    #m Araña|NPCPortraits/SpiderP.png|"¿Quién eres?"
+    #m "Para... ¿Araña?"
+    #m Araña|NPCPortraits/SpiderP.png|"Sí. ¿Dark te envió?"
+    #m "Sí, dice que dejaste de comunicarte."
+    #m Araña|NPCPortraits/SpiderP.png|"Los muertos me acorralaron y perdí el walkie-talkie, no es fácil encontrar uno táctico portáti. Encontré uno habitual y con él me puse en contacto contigo."
+    #m Araña|NPCPortraits/SpiderP.png|"Estoy en el edificio de al lado, encerrado en el techo, te vi entrar"
+    #m "Dark dijo que deberías darle algo."
+    #m Araña|NPCPortraits/SpiderP.png|"Ven y despeja el primer piso, te daré un mensaje para que se lo des a Dark."
+    #m "¿No necesitas ayuda?"
+    #m Araña|NPCPortraits/SpiderP.png|"No, limpia y vete al carajo. Con que hagas eso me las podré averiguar por mi mismo."
+    #set_flag q2_p3_flag,true
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"No puedo contactar a Dark sin un walkie-talkie."
+#exit
+
+*quest2_note    
+    #m Araña|NPCPortraits/SpiderP.png|"Oye, estoy aquí arriba atrapado."
+    #m "¿Qué, ni siquiera vas a bajar?"
+    #m Araña|NPCPortraits/SpiderP.png|"Me lastimé, voy a curarme y bajar en un par de horas, necesito tomar un descanso."
+    #m Araña|NPCPortraits/SpiderP.png|"No leas la nota, no lo entenderás de todos modos, dásela a Dark y listo. Gracias por la ayuda."
+    #add_item NHM.QuestSpiderNote,1
+    #set_flag q2_note_flag,true
+#exit
+
+*questZ2_complete
+#has_item NHM.QuestSpiderNote,1
+    #m Dark|NPCPortraits/DarkP.png|"De niño, lloraba cuando mi padre cortaba cebollas, Luke era un buen perro."
+    #m "¿Por qué hay tantos chistes sobre perros..."
+    #m Dark|NPCPortraits/DarkP.png|"Eh... no lo sé. Eres genial, gracias, toma tu recompensa."
+    #set_flag dark_q2_completed,true
+    #reward Base.Money,5,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepArmy,12
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepArmy,6
+        #exit
+    #reward EXP,RepArmy,9
+    #exit
+#m Dark|NPCPortraits/DarkP.png|"¿Dónde está la nota?"
+#exit
+
+*reset_dark_q1
+    #set_flag dark_q1_flag,false
+    #task_complete dark_q1|t0
+#exit
+
+*reset_dark_q2
+    #set_flag dark_q2_flag,false
+    #set_flag q2_p1_flag,false
+    #set_flag q2_p2_flag,false
+    #set_flag q2_p3_flag,false
+    #set_flag q2_note_flag,false
+    #task_complete dark_q2|t0
+#exit

@@ -1,0 +1,2 @@
+#npc_create Cain|NPC/Cain.png|11581,7642,0
+#exit

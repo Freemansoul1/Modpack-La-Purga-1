@@ -1,3 +1,0 @@
-IGUI_CN = {
-    IGUI_QNW_SC_SealedCrate         =   "密封箱子",
-}

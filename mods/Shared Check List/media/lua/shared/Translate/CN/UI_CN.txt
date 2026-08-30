@@ -1,4 +1,0 @@
-UI_CN = {
- UI_noList = "没有注册的任务。",
- UI_TitleList = "检查清单",
-}

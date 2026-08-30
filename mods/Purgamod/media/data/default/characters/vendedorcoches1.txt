@@ -1,9 +1,0 @@
-#name Jarrison Ford|Jarrison Ford
-#set_stat Jarrison Ford|reputation|10
-
-#desc Name: Jarrison Ford
-#desc_append Edad: 69
-#desc_append El vendedor de coches que me encontré poco después de aparecer en éste mundo.
-#is_alive Jarrison Ford,true
-    #desc_append Estado: Vivo
-#exit

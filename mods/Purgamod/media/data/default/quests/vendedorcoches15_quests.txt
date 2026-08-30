@@ -1,3 +1,0 @@
-*vendedorcoches15
-#name venta de vehículos
-#desc ...

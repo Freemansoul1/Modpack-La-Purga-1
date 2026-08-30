@@ -1,3 +1,0 @@
-ContextMenu_AR = {
-    ContextMenu_Take_Pill = "Tomar Pastilla",
-}

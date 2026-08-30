@@ -1,3 +1,0 @@
-Recipes_AR = {
-    Recipe_Pop_pill = "Sacas Pastilla de la Caja",
-}

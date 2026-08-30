@@ -1,0 +1,77 @@
+#is_flag sentry_intro,true
+    #jump loop
+
+*intro
+#m Часовой|NPCPortraits/SentryP.png|"Здравствуй, ${female,доченька,сынок}."
+#m Часовой|NPCPortraits/SentryP.png|"Всегда рад новым лицам в Госпитале!"
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Часовой|NPCPortraits/SentryP.png|"Ты заходи, если что."
+#exit
+
+*intro_hello
+#m "Здравствуйте. Чем вы занимаетесь?"
+#m Часовой|NPCPortraits/SentryP.png|"Я Часовой. Этим, собственно, и занимаюсь! Работаю тут лет с 20... считай, почти полвека уже! За порядком слежу, оружие держу наготове."
+#m Часовой|NPCPortraits/SentryP.png|"А еще людей вроде тебя провожаю в путь. Захочешь покинуть Госпиталь - обращайся ко мне." 
+#m Часовой|NPCPortraits/SentryP.png|"Но сразу тебя предупрежу. Обратно ты уже не попадешь. Не положено."
+#m Часовой|NPCPortraits/SentryP.png|"Если решишь выйти - я выдам тебе бонус за все пройденные обучения. Так что для начала не забудь их все изучить."
+#m Часовой|NPCPortraits/SentryP.png|"И про поручения не забудь! Лучше все задания от местных закончить перед уходом."
+#m "${female,Поняла,Понял}. Спасибо!"
+#fade_out black
+#set_flag sentry_intro,true
+#fade_in
+#reveal Sentry
+#exit
+
+*loop
+#m Часовой|NPCPortraits/SentryP.png|"${female,Надумала,Надумал} уходить?"
+
+#choice
+    questSENTRY|Покинуть Госпиталь Милосердия
+    tutorial8|[Обучение 8]
+    quest_exit|Уйти
+
+*tutorial8
+    #m Обучение|NPCPortraits/Tutorial.png|"Привет, ${female,выжившая,выживший}. На связи Команда сервера New Hope. Ты ${female,нашла,нашел} Восьмую обучающую подсказку. Собери все 8, прежде чем покинуть Госпиталь Милосердия, чтобы получить награду у Часового."
+    #m Обучение|NPCPortraits/Tutorial.png|"Одна из самых старых механик нашего сервера - это NPC. В далеком 2017 у нас появился первый не-игровой персонаж: Старик Джозеф. С тех пор мы развивались в этом направлении и научились делать много интересных штук."
+    #m Обучение|NPCPortraits/Tutorial.png|"За пределами Госпиталя ты найдешь много разных NPC из разных фракций, каждый из них способен что-то дать: задание, торговлю, полезную информацию, ресурсы и т.д. Для взаимодействия с NPC мы используем систему Репутации. Выполняя задания и торгуясь, ты будешь повышать Репутацию."
+    #m Обучение|NPCPortraits/Tutorial.png|"Каждый новый уровень Репутации будет открывать новые возможности: задания, предметы, ценная информация. На этом твое обучение окончено. Удачи, ${female,выжившая,выживший}. По любым вопросам обращайся в Discord сервера."
+#set_flag tutorial8,true
+#exit
+
+*questSENTRY
+#is_quest cleaner_q1|unlocked,uncompleted
+    #quest_fail cleaner_q1
+#is_quest cook_q1|unlocked,uncompleted
+    #quest_fail cook_q1
+#is_quest demiurge_q1|unlocked,uncompleted
+    #quest_fail demiurge_q1
+#is_quest head_q1|unlocked,uncompleted
+    #quest_fail head_q1
+#is_quest pharmacist_q1|unlocked,uncompleted
+    #quest_fail pharmacist_q1
+#is_quest nurse_q1|unlocked,uncompleted
+    #quest_fail nurse_q1
+#is_quest assistant_q1|unlocked,uncompleted
+    #quest_fail assistant_q1
+#is_flag tutorial1,true|tutorial2,true|tutorial3,true|tutorial4,true|tutorial5,true|tutorial6,true|tutorial7,true|tutorial8,true
+    #is_flag tutorial_all,true
+        #m Часовой|NPCPortraits/SentryP.png|"Бонус ты уже получал, так что просто желаю тебе удачи!"
+        #jump leaveHospital
+    #m Часовой|NPCPortraits/SentryP.png|"Надо же! Все обучения прошел. За это с меня бонус! Приятно было познакомиться."
+    #set_flag tutorial_all,true
+    #reward Base.Money,2,rare
+    #jump leaveHospital
+#m Часовой|NPCPortraits/SentryP.png|"Ты пропустил некоторые обучения. Надеюсь, ты знаешь, что делаешь! Береги себя."
+*leaveHospital
+#lua while (getPlayer():getInventory():contains("QuestHDailyFood") and getPlayer():getInventory():getItemCount("QuestHDailyFood") > 1)	do getPlayer():getInventory():Remove("QuestHDailyFood") end
+#lua while (getPlayer():getInventory():contains("QuestHDailyWater") and getPlayer():getInventory():getItemCount("QuestHDailyWater") > 1) do getPlayer():getInventory():Remove("QuestHDailyWater") end
+#teleport 11538,7603,0
+#exit
+
+*quest_exit
+#exit

@@ -1,0 +1,16 @@
+module NHM {
+    imports {
+        Base
+    }
+
+    item VirusTester
+    {
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = Virus Tester,
+        Icon = VirusTester,
+        DisplayCategory = FirstAid,
+        StaticModel = VirusTester,
+        WorldStaticModel = VirusTesterGround,
+    }
+}

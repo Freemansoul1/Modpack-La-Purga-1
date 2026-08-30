@@ -1,0 +1,6 @@
+#name Marshall|Marshall
+
+#desc Nombre: Bill Marshall
+#desc_append Edad: 57
+#desc_append Un viejo Coronel, un fiero guerrero. Absolutamente obsesionado con la destrucción de los no-muertos. Constantemente repite algo sobre "limpieza total".
+#exit

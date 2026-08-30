@@ -1,5 +1,0 @@
-#is_flag vendedorcoches4,true
-    #npc_create Jason Ford|NPC_jarrison3.png|6381,5531,0
-    #exit
-#npc_create Jason Ford|NPC_jarrison3.png|6381,5531,0
-#exit

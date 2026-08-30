@@ -1,0 +1,21 @@
+module NHM
+{
+	imports	{Base}
+
+/**********************Топор Рейдера****************************/
+	recipe Make Handmade Raider Axe
+	{
+		IngotSteel=2,
+		Plank,
+		ReadyThickLeather=2,
+		keep Scissors,
+		keep BallPeenHammer,
+		Result:HandmadeRaiderAxe,
+        NearItem:Engineer Workbench,
+		Time:600.0,
+		Category:Raiding,
+		SkillRequired:Engineering=5,
+        CanBeDoneFromFloor:true,
+    }
+
+}

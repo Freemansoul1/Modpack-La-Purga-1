@@ -1,4 +1,0 @@
-Recipe_FR = {
-Recipe_Create_BobbyPin = "Fabriquer une pince à cheveux",
-Recipe_Create_BobbyPin2 = "Fabriquer une pince à cheveux",
-}

@@ -1,5 +1,0 @@
-#is_flag vendedorcoches2,true
-    #npc_create Jerryson Ford|NPC_jarrison1.png|10550,9696,0
-    #exit
-#npc_create Jerryson Ford|NPC_jarrison1.png|10550,9696,0
-#exit

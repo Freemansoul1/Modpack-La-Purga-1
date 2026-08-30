@@ -1,3 +1,0 @@
-*El_Señor_Oscuro
-#name La choza
-#desc ...

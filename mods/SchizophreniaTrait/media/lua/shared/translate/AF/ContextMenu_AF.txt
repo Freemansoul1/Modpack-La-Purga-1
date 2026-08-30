@@ -1,3 +1,0 @@
-ContextMenu_AF = {
-    ContextMenu_Take_Pill = "Neem pil",
-}

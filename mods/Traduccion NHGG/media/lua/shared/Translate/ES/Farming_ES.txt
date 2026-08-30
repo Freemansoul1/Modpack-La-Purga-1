@@ -1,6 +1,0 @@
-FARMING_ES = {
-    Farming_Tobacco = "Tabaco",
-    Farming_Corn = "Maiz",
-    Farming_Cannabis = "Cannabis",
-    Farming_Rice = "Arroz",
-}

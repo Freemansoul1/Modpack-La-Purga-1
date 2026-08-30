@@ -1,8 +1,0 @@
-authors=Lexx,Wipe
-name=Water Trailer
-poster=preview.png
-icon=icon.png
-id=Purga_rWaterTrailer
-require=Purga_RotatorsLib
-description=<RGB:0.2,1,0.3>Adds two new water trailers to the game.
-url=https://rotators.net/

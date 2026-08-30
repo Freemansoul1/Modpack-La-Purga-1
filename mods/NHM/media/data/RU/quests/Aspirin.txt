@@ -1,0 +1,79 @@
+#quest aspirincooldown|hidden|unlocked
+    #task t1
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Aspirin.txt,reset_aspirin_q1
+    #task t2
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Aspirin.txt,reset_aspirin_q2
+
+#quest aspirin_q1
+    #task t1
+        #set Deliver|NHM.CoalPills,2
+        #action UnlockTask|aspirin_q1|t2
+    #task t2
+        #set RaiseFlag|aspirin_q1_completed
+        #action SetFlag|aspirin_q1_completed|false
+        #action SetFlag|aspirin_q1_flag|false
+        #action UnlockTask|aspirincooldown|t1
+        #action CompleteQuest|aspirin_q1
+
+#quest aspirin_q2
+    #task t1
+        #set Deliver|NHM.InfectedSample,2
+        #action UnlockTask|aspirin_q2|t2
+    #task t2
+        #set RaiseFlag|aspirin_q2_completed
+        #action SetFlag|aspirin_q2_completed|false
+        #action SetFlag|aspirin_q2_flag|false
+        #action UnlockTask|aspirincooldown|t2
+        #action CompleteQuest|aspirin_q2
+
+#quest aspirin_q3|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Aspirin.txt,reset_aspirin_q3
+    #task t1
+        #set GotoLocation|11815,6592,11825,6596,0|true
+        #action UnlockTask|aspirin_q3|t2
+    #task t2
+        #set ContextAction|Взять образец воды|11821,6591,0|5|Aspirin.txt,quest3_water|q3_water_flag
+        #action UnlockTask|aspirin_q3|t3
+    #task t3
+        #set FindItem|NHM.QuestAspirinWaterDry,1
+        #action UnlockTask|aspirin_q3|t4
+        #action SetFlag|aspirin_q3_flag|true
+    #task t4
+        #set RaiseFlag|aspirin_q3_completed
+        #action SetFlag|aspirin_q3_completed|false
+        #action SetFlag|aspirin_q3_flag|false
+        #action SetFlag|q3_water_flag|false
+        #action CompleteQuest|aspirin_q3
+
+#quest aspirin_q4|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Aspirin.txt,reset_aspirin_q4
+    #task t1
+        #set GotoLocation|11620,8722,11625,8728,0|true
+        #action UnlockTask|aspirin_q4|t2
+    #task t2
+        #set ContextAction|Искать Аконит|11623,8725,0|5|Aspirin.txt,quest4_akon|q4_akon_flag
+        #action UnlockTask|aspirin_q4|t3
+    #task t3
+        #set GotoLocation|11700,7135,11707,7142,0|true
+        #action UnlockTask|aspirin_q4|t4
+    #task t4
+        #set ContextAction|Искать Руту|11704,7139,0|5|Aspirin.txt,quest4_rutah|q4_rutah_flag
+        #action UnlockTask|aspirin_q4|t5
+    #task t5
+        #set KillZombie|10
+        #action UnlockTask|aspirin_q4|t6
+    #task t6
+        #set FindItem|NHM.QuestHerbMix,1
+        #action UnlockTask|aspirin_q4|t7
+        #action SetFlag|aspirin_q4_flag|true
+    #task t7
+        #set RaiseFlag|aspirin_q4_completed
+        #action SetFlag|aspirin_q4_completed|false
+        #action SetFlag|aspirin_q4_flag|false
+        #action SetFlag|q4_akon_flag|false
+        #action SetFlag|q4_rutah_flag|false
+        #action CompleteQuest|aspirin_q4

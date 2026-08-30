@@ -1,4 +1,0 @@
-Tooltip_ES = {
-    Tooltip_Contrabandoalta = "Droga de la mas alta calidad, se puede vender al contrabandista interesado en ella por pepitas.",
-    Tooltip_Contrabandobaja = "Droga de calidad media-alta, se puede vender al contrabandista interesado en ella por pepitas"
-}

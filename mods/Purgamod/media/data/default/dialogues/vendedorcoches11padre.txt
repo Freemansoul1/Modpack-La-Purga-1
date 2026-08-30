@@ -1,4 +1,0 @@
-*venta
-#cutscene true
-#m Jackson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Jackson, el padre de la familia Ford, antiguamente me dedicaba a la venta de coches, alguno de ellos especiales, actualmente estoy retirado, pero de vez en cuándo me gusta vender de forma aleatoria los coches que me quedan, ¿te gustaría probar suerte?"
-#choice

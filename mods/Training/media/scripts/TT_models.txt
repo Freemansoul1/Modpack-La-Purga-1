@@ -1,8 +1,0 @@
-module Base {
- model TrainingTargetModel
-    {
-        mesh = WorldItems/Magazine,
-        texture = WorldItems/TrainingTarget,
-        scale =  0.5,
-    }
-}

@@ -1,5 +1,0 @@
-#is_flag vendedorcoches12,true
-    #npc_create Harrinson Ford|NPC_jarrison7.png|4760,12136,0
-    #exit
-#npc_create Harrinson Ford|NPC_jarrison7.png|4760,12136,0
-#exit

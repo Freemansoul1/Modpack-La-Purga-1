@@ -1,0 +1,39 @@
+module NHM
+{
+    imports
+	{
+		Base
+	}
+
+    sound HandmadeRifle
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/HandmadeRifle1.wav,
+        }
+        clip
+        {
+            file = media/sound/HandmadeRifle2.wav,
+        }
+	}
+
+    sound HandmadeShotgun
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/HandmadeShotgun.wav,
+        }
+	}
+
+    sound HandmadeAssaultRifle
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/HandmadeAssaultRifle.wav,
+        }
+	}
+}
+

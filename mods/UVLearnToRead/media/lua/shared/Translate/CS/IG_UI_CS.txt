@@ -1,4 +1,0 @@
-IGUI_CS = {
-IGUI_perks_LearningReading = "Uèení se èíst",
-IGUI_perks_Learning = "Vzdìlání",
-}

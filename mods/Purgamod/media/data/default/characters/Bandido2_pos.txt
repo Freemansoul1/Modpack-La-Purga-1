@@ -1,3 +1,0 @@
---bandido droga opio
-#npc_create Bandido2|NPC_Bandido2.png|4855,11364,0
-#exit

@@ -1,3 +1,0 @@
-ContextMenu_TH = {
-	ContextMenu_Take_Pill = "กินยา",
-}

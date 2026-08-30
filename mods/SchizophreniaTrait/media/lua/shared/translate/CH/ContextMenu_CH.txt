@@ -1,3 +1,0 @@
-ContextMenu_CH = {
-    ContextMenu_Take_Pill = "服用藥物",
-}

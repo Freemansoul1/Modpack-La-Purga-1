@@ -1,5 +1,0 @@
-#is_flag vendedorcoches8,true
-    #npc_create Fernanson Ford|NPC_jarrison7.png|7388,5132,0
-    #exit
-#npc_create Fernanson Ford|NPC_jarrison7.png|7388,5132,0
-#exit

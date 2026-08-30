@@ -1,7 +1,0 @@
-UI_EN = {
-	UI_ZL_Trait_ChemExpert = "Chem Expert",
-	UI_ZL_Trait_ChemExpert_Description = "Resistance to getting addicted to Chems and +1 First Aid",
-	
-	UI_ZL_Trait_ChemJunkie = "Chem Junkie",
-	UI_ZL_Trait_ChemJunkie_Description = "Addicted to Chems and require them to function without problem",
-}

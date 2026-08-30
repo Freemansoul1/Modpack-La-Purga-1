@@ -1,6 +1,0 @@
-*gd_msq1_t0
-#name Desperté en éste lugar.
-*gd_msq1_t1
-#name El extraño tipo me explicó nociones acerca del funcionamiento de este mundo.
-*gd_msq1_t2
-#name El extraño hombre me ofreció lo que él llamó "un kit de comienzo" y me deseó buena suerte, al parecer la iba a necesitar.

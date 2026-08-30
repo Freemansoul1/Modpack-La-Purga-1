@@ -1,0 +1,94 @@
+module Base
+{
+    sound M16Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/M16Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+    sound M14Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/M14Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+	sound MSR700Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/MSR700Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+	sound MSR788Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/MSR788Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+	sound M9Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/M9Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+	sound M1911Shoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/M1911Shoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+	sound JS2000ShotgunShoot_Silenced
+	{	
+		category = Item,
+		clip
+		{
+			file = media/sound/suppressor/JS2000ShotgunShoot_Silenced.wav,	
+			distanceMin = 0,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 10,
+			volume = 0.5,
+		}
+	}
+}

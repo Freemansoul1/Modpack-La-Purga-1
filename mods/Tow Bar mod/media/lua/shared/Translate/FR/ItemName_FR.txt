@@ -1,6 +1,0 @@
-ItemName_FR = {
-
-ItemName_Base.TowBarCar		= "Barre de remorquage",
-
-
-}

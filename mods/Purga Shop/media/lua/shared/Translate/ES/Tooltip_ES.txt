@@ -1,7 +1,0 @@
-Tooltip_ES = {
-
-    Tooltip_ATMVendoOroExchange1 = "Cambia 1 lingote de Plata por 1 lingote de Oro.",
-    Tooltip_ATMVendoOroExchange2 = "Cambia 5 lingotes de Plata por 5 lingotes de Oro.",
-    Tooltip_ATMVendoOroNotEnoughRes = "No tienes lingotes de plata suficiente.",
-
-}

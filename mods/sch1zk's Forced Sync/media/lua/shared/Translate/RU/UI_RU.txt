@@ -1,3 +1,0 @@
-UI_RU = {
-    UI_optionscreen_binding_Force Sync Key = "Принуд. синхр.",
-}

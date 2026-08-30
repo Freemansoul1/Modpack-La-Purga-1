@@ -1,7 +1,0 @@
-UI_EN = {
-	UI_ZL_Trait_ChemExpert = "化学专家",
-	UI_ZL_Trait_ChemExpert_Description = "抗拒沉迷于化学和+1急救",
-	
-	UI_ZL_Trait_ChemJunkie = "化学瘾君子",
-	UI_ZL_Trait_ChemJunkie_Description = "沉迷于化学，并要求它们毫无问题地发挥作用",
-}

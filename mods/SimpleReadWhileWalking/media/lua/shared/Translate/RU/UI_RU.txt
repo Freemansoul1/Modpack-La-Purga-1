@@ -1,3 +1,0 @@
-UI_RU = {
-  UI_optionscreen_binding_RESUME_READ = "Почитать книгу",
-}

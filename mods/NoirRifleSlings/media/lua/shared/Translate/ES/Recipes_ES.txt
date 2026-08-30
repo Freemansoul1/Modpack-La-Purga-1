@@ -1,3 +1,0 @@
-Recipes_ES = {
-    Recipe_Make_Rifle_Sling = "Hacer Portafusil",
-}

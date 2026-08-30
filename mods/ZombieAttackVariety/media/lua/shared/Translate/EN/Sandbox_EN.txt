@@ -1,7 +1,0 @@
-Sandbox_EN = {
-    Sandbox_ZombieAttackVariety = "Zombie Attack Variety",
-    Sandbox_ZombieAttackVariety_chanceOfZombification = "Chance % of getting the zombie virus if scratched",
-    Sandbox_ZombieAttackVariety_chanceOfZombification_tooltip = "0% = no infection, 100% = infected on scratch",
-    Sandbox_ZombieAttackVariety_chanceOfFakeInfection = "Chance % of getting fake infected if scratched",
-    Sandbox_ZombieAttackVariety_chanceOfFakeInfection_tooltip = "0% = no infection, 100% = infected on scratch",
-}

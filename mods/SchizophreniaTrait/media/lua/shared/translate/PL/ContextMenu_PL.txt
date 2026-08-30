@@ -1,3 +1,0 @@
-ContextMenu_PL = {
-    ContextMenu_Take_Pill = "WeŸ tabletkê",
-}

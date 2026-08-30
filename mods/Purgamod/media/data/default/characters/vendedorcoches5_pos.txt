@@ -1,5 +1,0 @@
-#is_flag vendedorcoches5,true
-    #npc_create Charryson Ford|NPC_jarrison4.png|5538,12440,0
-    #exit
-#npc_create Charryson Ford|NPC_jarrison4.png|5538,12440,0
-#exit

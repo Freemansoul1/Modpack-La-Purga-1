@@ -1,0 +1,98 @@
+#is_flag assistant_intro,true
+    #jump loop
+
+*intro
+#m Ассистент|NPCPortraits/AssistantP.png|"Господи, как же я устал..."
+#m Ассистент|NPCPortraits/AssistantP.png|"А, привет. ${female,Новенькая,Новенький}? Это Госпиталь. Ну, ты уже в курсе, наверно."
+#m Ассистент|NPCPortraits/AssistantP.png|"Чего тебе?"
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Ассистент|NPCPortraits/AssistantP.png|"Ага... фух... ладно, бывай."
+#exit
+
+*intro_hello
+#m "Здравствуйте... Прошу прощения, я действительно ${female,новенькая,новенький}. Вы выглядите очень уставшим, так что я, наверное, в другой раз зайду..."
+#m Ассистент|NPCPortraits/AssistantP.png|"В другой раз? Когда я не буду уставшим? Это, считай, никогда."
+#m Ассистент|NPCPortraits/AssistantP.png|"Лучше уж сейчас, пока у меня руки не заняты." 
+#m Ассистент|NPCPortraits/AssistantP.png|"Я Ассистент. В прошлом был помощником хирурга, а сейчас... а сейчас я уже сам хирург. Кроме меня тут никто этого не умеет, поэтому я отдуваюсь за весь Госпиталь."
+#m Ассистент|NPCPortraits/AssistantP.png|"У меня дочка есть. Зовут Салли. Давно я ее не видал... она остается с Докторами в Осирисе. Надеюсь, у нее все хорошо."
+#m Ассистент|NPCPortraits/AssistantP.png|"Никак не найду время съездить к ней, повидаться. Ладно, неважно. Хочешь что-то узнать - спроси Демиурга."
+#m "Спасибо! А можете рассказать мне о самом Демиурге?"
+#m Ассистент|NPCPortraits/AssistantP.png|"А? О Демиурге?... А чего о нем рассказывать? Доктор, управляет Госпиталем. Ничего интересного, лучше не пытайся что-то узнать."
+#fade_out black
+#set_flag assistant_intro,true
+#fade_in
+#reveal Assistant
+#exit
+
+*loop
+#m Ассистент|NPCPortraits/AssistantP.png|"Ага, слушаю."
+
+#choice
+    questASSISTANT|Взять задание Ассистента
+    tutorial5|[Обучение 5]
+    quest_exit|Уйти
+    questASSISTANTcomplete|Сдать задание Ассистента|assistant_q1_flag
+
+*tutorial5
+    #m Обучение|NPCPortraits/Tutorial.png|"Привет, ${female,выжившая,выживший}. На связи Команда сервера New Hope. Ты ${female,нашла,нашел} Пятую обучающую подсказку. Собери все 8, прежде чем покинуть Госпиталь Милосердия, чтобы получить награду у Часового."
+    #m Обучение|NPCPortraits/Tutorial.png|"Создавая фракцию, вы получаете 1 очко захвата. Затем, за каждые +2 игрока во фракции (включая лидера), вы получаете +1 очко захвата. Чем больше очков захвата, тем большее по площади здание вы сможете заприватить."
+    #m Обучение|NPCPortraits/Tutorial.png|"Зайдя в здание, которое можно занять, вы заметите в углу флажок - это и есть опция привата. Приваты позволяют не беспокоиться о сохранности лута, но каждое воскресенье вечером все приваты снимаются на 3 реальных часа."
+    #m Обучение|NPCPortraits/Tutorial.png|"Это Рейд-тайм - время, когда можно напасть на чужую базу. А еще в собственном привате (и только в нем) можно использовать кувалду!"
+#set_flag tutorial5,true
+#exit
+
+*questASSISTANT
+#is_quest assistant_q1|locked
+    #m Ассистент|NPCPortraits/AssistantP.png|"Слушай, мне нужна помощь твоя... Я скоро поеду встречаться с дочерью. И я обещал ей нарисовать звездное небо."
+    #m Ассистент|NPCPortraits/AssistantP.png|"Понимаешь ли, у нас дома был телескоп. Она обожала любоваться звездами. Сейчас в том месте, где она находится, нет никакой радости для ребенка."
+    #m Ассистент|NPCPortraits/AssistantP.png|"Возьми этот набор для рисования и сделай это для меня, пожалуйста. Сам я не могу... Рисую отвратительно, да и некогда мне. Еще и руки постоянно дрожат после операций... Выручишь?"
+    #m Ассистент|NPCPortraits/AssistantP.png|"На втором этаже есть жилые комнаты. В одной из них найдешь телескоп, он уже обращен в нужную сторону и настроен. Просто посмотри в него и нарисуй все, что увидишь. Неважно, как хорошо ты рисуешь. Я все равно рисую хуже."
+    #quest_unlock assistant_q1
+    #task_unlock assistant_q1|t1 
+    #add_item NHM.QuestHEmptyStars,1
+    #exit
+#is_quest assistant_q1|unlocked,uncompleted
+    #m Ассистент|NPCPortraits/AssistantP.png|"Рисунок еще не готов?"
+    #exit
+#is_quest assistant_q1|unlocked,completed
+    #m Ассистент|NPCPortraits/AssistantP.png|"Ты уже ${female,помогла,помог}, спасибо."
+#exit
+
+*questASSISTANTcomplete
+#has_item NHM.QuestHStars,1
+    #remove_item NHM.QuestHStars,1
+    #m Ассистент|NPCPortraits/AssistantP.png|"Ох ты... У тебя талант."
+    #m Ассистент|NPCPortraits/AssistantP.png|"Спасибо! От меня и от Салли."
+    #set_flag assistant_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,4.5
+    #exit
+#m Ассистент|NPCPortraits/AssistantP.png|"Ты же не ${female,передумала,передумал} помочь моей девочке?"
+#exit
+
+*quest1_q1_assistant
+#cutscene true
+#m Интересно... Телескоп как новенький. Как он тут оказался?.. Впрочем, неважно. Посмотрим, что тут у нас...
+#pop_up NPCPortraits/Stars.png
+#m Невероятно... И как это рисовать?...
+#has_item NHM.QuestHEmptyStars,1
+    #remove_item NHM.QuestHEmptyStars,1
+    #add_item NHM.QuestHStars,1
+    #set_flag q1_assistant_flag,true
+    #m Вроде бы миленько... Надеюсь, ребенку понравится. Пойду найду Ассистента.
+    #exit
+#m Так... я, кажется, ${female,потеряла,потерял} набор для рисования.
+#exit
+
+*quest_exit
+#exit

@@ -1,4 +1,0 @@
-UI_JP = {
-UI_noList = "登録されたタスクはありません。",
-UI_TitleList = "チェックリスト",
-}

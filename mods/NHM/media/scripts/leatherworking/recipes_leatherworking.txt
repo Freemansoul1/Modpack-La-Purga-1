@@ -1,0 +1,318 @@
+module NHM
+{
+	imports	{Base}
+
+/**********************Дубление кожи****************************/
+	recipe Tan Thin Leather
+	{
+		Twigs=6,
+        SaltPinch=3,
+        Water=10,
+		RawThinLeather=2,
+		Result:ReadyThinLeatherWet=2,
+        NearItem:Leatherworking Workbench,
+		Time:500.0,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking6_OnGiveXP,
+    }
+
+    recipe Tan Thin Leather Alt
+	{
+		Limestone=2,
+        Water=10,
+		RawThinLeather=2,
+		Result:ReadyThinLeatherWet=2,
+        NearItem:Leatherworking Workbench,
+		Time:500.0,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking6_OnGiveXP,
+    }
+
+    recipe Tan Thin Leather Alt
+	{
+		BakingSoda=2,
+        Water=10,
+		RawThinLeather=2,
+		Result:ReadyThinLeatherWet=2,
+        NearItem:Leatherworking Workbench,
+		Time:500.0,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking6_OnGiveXP,
+    }
+
+    recipe Tan Thick Leather
+	{
+		ReadyThinLeather=2,
+        SaltPinch=2,
+        Fat,
+        Water=10,
+        keep Needle,
+        Thread=2,
+		Result:ReadyThickLeather,
+        SkillRequired:Leatherworking=4,
+        NearItem:Leatherworking Workbench,
+		Time:500.0,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking12_OnGiveXP,
+    }
+
+/**********************Крафт ремня****************************/
+    recipe Make Belt
+	{
+		ReadyThinLeather,
+        ScrapMetal,
+        keep Needle,
+        Thread=1,
+		Result:Belt2=2,
+		Time:300.0,
+        NearItem:Leatherworking Workbench,
+		Category:Leatherworking,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking4_OnGiveXP,
+    }
+
+    recipe Make Leather Gloves
+	{
+		ReadyThinLeather=3,
+        keep Needle,
+        Thread=2,
+		Result:Gloves_LeatherGloves,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking4_OnGiveXP,
+    }
+
+    recipe Make Black Leather Gloves
+	{
+		ReadyThinLeather=3,
+        keep Needle,
+        Thread=2,
+		Result:Gloves_LeatherGlovesBlack,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking4_OnGiveXP,
+    }
+
+
+    recipe Make Holster
+    {
+		ReadyThinLeather=3,
+        keep Needle,
+        Thread=3,
+        Belt2=1,
+		Result:HolsterSimple,
+        SkillRequired:Leatherworking=1,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+
+    recipe Make Fanny Pack
+    {
+		ReadyThinLeather=3,
+        keep Needle,
+        Thread=4,
+        Belt2=1,
+		Result:Bag_FannyPackFront,
+        SkillRequired:Leatherworking=1,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+    
+    recipe Make Double Holster
+    {
+		ReadyThinLeather=5,
+        keep Needle,
+        Thread=4,
+        Belt2=2,
+		Result:HolsterDouble,
+        SkillRequired:Leatherworking=2,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking12_OnGiveXP,
+    }
+
+    recipe Make Quiver
+    {
+		ReadyThinLeather=4,
+        keep Needle,
+        Thread=4,
+        Belt2=1,
+		Result:Quiver,
+        SkillRequired:Leatherworking=3,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+
+    recipe Make KnifeSheathLeg
+    {
+		ReadyThinLeather=2,
+        keep Needle,
+        Thread=3,
+        Belt2=1,
+		Result:KnifeSheathLeg,
+        SkillRequired:Leatherworking=1,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+
+    recipe Hacer vaina de daga
+    {
+		ReadyThinLeather=4,
+        keep Needle,
+        Thread=6,
+        Belt2=1,
+		Result:DaggerSheath,
+        SkillRequired:Leatherworking=2,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+
+        recipe Make SwordSheath
+    {
+		ReadyThinLeather=4,
+        keep Needle,
+        Thread=6,
+        Belt2=1,
+		Result:SwordSheath,
+        SkillRequired:Leatherworking=2,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking8_OnGiveXP,
+    }
+   
+   
+    recipe Make Satchel
+    {
+		ReadyThinLeather=4,
+        keep Needle,
+        Thread=6,
+        Belt2=2,
+		Result:Bag_Satchel,
+        SkillRequired:Leatherworking=1,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking12_OnGiveXP,
+    }
+
+    recipe Make ModuleBagStart
+    {
+		ReadyThinLeather=3,
+        keep Needle,
+        Thread=6,
+        Belt2=6,
+		Result:ModuleBagStart,
+        SkillRequired:Leatherworking=2,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking12_OnGiveXP,
+    }
+
+    recipe Make School Bag
+    {
+		ReadyThickLeather=5,
+        Tarp,
+        keep Needle,
+        Thread=10,
+        Belt2=2,
+		Result:Bag_Schoolbag,
+        SkillRequired:Leatherworking=2,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking16_OnGiveXP,
+    }
+
+    recipe Make ModuleBag2
+    {
+		ModuleBagStart,
+        ReadyThinLeather=5,
+        keep Needle,
+        Thread=4,
+		Result:ModuleBag2,
+        SkillRequired:Leatherworking=3,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking16_OnGiveXP,
+    }
+
+    recipe Make ModuleBag3
+    {
+		ModuleBag2,
+        ReadyThickLeather=2,
+        keep Needle,
+        Thread=4,
+		Result:ModuleBag3,
+        SkillRequired:Leatherworking=4,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking16_OnGiveXP,
+    }
+
+    recipe Make ModuleBagTop
+    {
+		ModuleBag3,
+        ReadyThickLeather=2,
+        keep Needle,
+        Thread=4,
+		Result:ModuleBagTop,
+        SkillRequired:Leatherworking=5,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking16_OnGiveXP,
+    }
+
+    recipe Make Tourist Bag
+    {
+		ReadyThickLeather=10,
+        Tarp=2,
+        keep Needle,
+        Thread=10,
+        Belt2=3,
+		Result:TuristBag,
+        SkillRequired:Leatherworking=6,
+		Time:300.0,
+		Category:Leatherworking,
+        NearItem:Leatherworking Workbench,
+        CanBeDoneFromFloor:true,
+        OnGiveXP:Leatherworking16_OnGiveXP,
+    }
+
+}

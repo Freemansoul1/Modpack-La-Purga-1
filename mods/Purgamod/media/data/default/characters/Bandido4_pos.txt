@@ -1,3 +1,0 @@
---Bandido drogas monguis
-#npc_create Bandido4|NPC_Bandido4.png|12108,10953,1
-#exit

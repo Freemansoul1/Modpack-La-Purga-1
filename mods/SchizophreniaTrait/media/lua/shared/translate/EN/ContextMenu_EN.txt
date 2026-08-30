@@ -1,3 +1,0 @@
-ContextMenu_EN = {
-	ContextMenu_Take_Pill = "Take pill",
-}

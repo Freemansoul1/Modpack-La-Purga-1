@@ -1,7 +1,0 @@
-Sandbox_EN = {
-
-	Sandbox_WizTrade = "Wizard Trade",
-	Sandbox_WizTrade_UseProfessionStartingItems = "Start the game with profession/trait specific extra gear.",
-	
-	
-}

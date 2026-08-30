@@ -1,0 +1,675 @@
+module NHM
+{
+	imports	{Base}
+
+/**********************************Сахар, чай, кофе и грибной порошок*************/
+    item PowderTea
+    {
+        Weight	=	0.02,
+        Type	=	Food,
+		HungerChange    =   -5,
+        FatigueChange	=	-10,
+		StressChange	=	5,
+        ThirstChange    =   10,		
+        DisplayName	=	Tea powder,
+        Icon	=	CoffeePowder,
+        FoodType    =   Coffee,
+		Carbohydrates 	= 19.12,
+		Proteins 	= 3.22,
+		Lipids 		= 0.34,
+        EvolvedRecipe = HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1,
+	}
+
+	item Sugarcube
+	{	
+		Weight	=	0.02,
+		Type	=		Food,
+		HungerChange	=	-2,		
+        ThirstChange    =   5,		
+		DisplayName	=	Sugarcube,		
+		Icon	=	Sugarcube,
+		FoodType    =   Sugar,
+		Carbohydrates = 5,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 10,
+		Packaged = TRUE,
+        WorldStaticModel = Sugarcube,
+        EvolvedRecipe = HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1,
+	}		
+	
+	item CoffeePowder
+    {
+        Weight	=	0.02,
+        Type	=	Food,
+		HungerChange    =   -5,
+        FatigueChange	=	-5,
+		StressChange	=	5,
+        ThirstChange    =   10,		
+        DisplayName	=	Coffee powder,
+        Icon	=	CoffeePowder,
+        FoodType    =   Coffee,
+		Carbohydrates 	= 19.12,
+		Proteins 	= 3.22,
+		Lipids 		= 0.34,
+	}
+	/*******************************ЭНЕРГЕТИКИ**********************/
+	item EnergyDrink
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-6,
+		Weight	=	0.8,
+		Type	=	Food,
+		FatigueChange	=	-20,
+		EnduranceChange = 40,
+		ThirstChange	=	-60,
+		DisplayName	=	EnergyDrink,
+		ReplaceOnUse	=	WaterBottleEmpty,
+		Icon	=	EnergyDrink,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+        Carbohydrates = 50,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 50,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PopBottle,
+        EatType = bottle,
+        WorldStaticModel = PopBottleWorld,
+	}
+
+    item Isotonic
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.8,
+        HungerChange	=	-6,
+		Type	=	Food,
+        ThirstChange	=	-60,
+		DisplayName	=	Isotonic,
+		Icon	=	Isotonic,
+        CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+        Carbohydrates = 50,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 50,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PopBottle,
+        EatType = bottle,
+        OnEat = OnEat_Isotonic,
+        WorldStaticModel = PopBottleWorld,
+	}
+
+	item MushroomDust
+	{
+		HungerChange	=	-5,
+		ThirstChange	=	5,
+		Weight	=	0.1,
+		Type	=	Food,
+		DisplayName	=	Mushroom dust,
+		Icon	=	CoffeePowder,
+		FoodType    =   Vegetables,
+		DaysFresh	=	60,
+		DaysTotallyRotten	=	120,
+        Carbohydrates = 2.12,
+        Proteins = 2.04,
+        Lipids = 0.24,
+        Calories = 30,
+	}	
+
+    /*******************************Всё что касается сахара**********************/
+        
+        item BerryDust
+	{
+		HungerChange 		=		-2,
+		Type				=		Food,
+		DisplayName			=		Smashed berry,
+		Icon				=		BerryDust,
+		Weight				=		0.01,
+		DaysFresh 			=		10,
+		DaysTotallyRotten 	=	 	20,
+		FoodType    =   Fruits,
+		DaysFresh	=	60,
+		DaysTotallyRotten	=	120,
+        Carbohydrates = 0.92,
+        Proteins = 0.08,
+        Lipids = 0.04,
+        Calories = 4,
+        DisplayCategory = Cooking,
+        WorldStaticModel = BerryDust,
+	}
+
+    	item SucrosePot
+    {
+		UnhappyChange	=	20,
+		Weight = 4,
+		Type = Food,
+		Icon = PotFull,
+		DisplayName = Sucrose pot,
+		RemoveNegativeEffectOnCooked = TRUE,
+		IsCookable = TRUE,
+		MinutesToCook = 60,
+		MinutesToBurn = 120,
+		ReplaceOnUse	=	Pot,
+        DisplayCategory = Cooking,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        CantEat = TRUE,
+	}
+
+    /*******************************Фруктовый джем***************************/
+
+    	item JamPot
+    {
+		UnhappyChange	=	20,
+		Weight = 4,
+		Type = Food,
+		Icon = PotFull,
+		DisplayName = JamPot,
+		RemoveNegativeEffectOnCooked = TRUE,
+		IsCookable = TRUE,
+		MinutesToCook = 60,
+		MinutesToBurn = 120,
+		ReplaceOnUse	=	Pot,
+        DisplayCategory = Cooking,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        CantEat = TRUE,
+	}
+        
+/**************************************Чипсы-Картошка фри********************************/
+
+	    item PotatoPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	Potato pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        CookingSound = FryingFood,
+    }
+
+      item FriesPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	FriesPan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        CookingSound = FryingFood,
+    }
+
+    /***********************Готовка разного***********************/
+
+
+        /*****************Ветчина*****************/
+     item HamPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	HamPot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+    /*************************Пирог, хлеб/багет торт************************/
+
+
+      /*************************круасан************/
+    item CroissantPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	Croissant Pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        CookingSound = FryingFood,
+    }
+
+    /********************************Тортилья***************/
+	    item TortillaPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	Tortilla Pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        CookingSound = FryingFood,
+    }
+
+    /************************************Тако******************/
+	    item TacoPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	TacoShell Pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        CookingSound = FryingFood,
+    }
+
+    /**************************************Вафли************************/
+	    item WafflesPan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	Waffles Pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        CookingSound = FryingFood,
+    }
+
+    /***Растительное масло***/
+        item OilPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	Oil Pot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+    /***Уксус***/
+        item VinegarPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	Vinegar Pot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+    /***Соль***/
+            item SaltPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	Salt Pot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+    /********Дрожжи*****/
+        item YeastMix
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	Yeast mix,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+    /*************************Сливочное масло**********/
+        item ButterPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	ButterPot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+        /*************************Сыр**********/
+        item CheesePot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	CheesePot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+        /*************************Сосиска**********/
+        item SausagePot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	SausagePot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+ 
+        /*************************Салями**********/
+        item SalamiPot
+	{
+	    DisplayCategory = Food,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	20,
+		MinutesToBurn	=	100,
+		DisplayName	=	SalamiPot,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        CookingSound = BoilingFood,
+        RemoveNegativeEffectOnCooked = TRUE,
+        CantEat = TRUE,
+	}
+
+ /*************************Песочное печенье************************/
+	item CookiesShortbreadBakingTray
+    {
+		UnhappyChange	=	20,
+		Weight = 4,
+		Type = Food,
+		Icon = Muffintray_Batter,
+		DisplayName = CookiesShortbreadBakingTray,
+		RemoveNegativeEffectOnCooked = TRUE,
+		IsCookable = TRUE,
+		MinutesToCook = 60,
+		MinutesToBurn = 120,
+		ReplaceOnUse	=	Muffintray,
+        DisplayCategory = Cooking,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = WorldStaticModel = BakingTray,
+        CookingSound = FryingFood,
+        CantEat = TRUE,
+	}
+
+        /**************************************Рожок************************/
+	    item ConePan
+    {
+		UnhappyChange	=	20,
+        HungerChange	=	-5,
+        Weight	=	1.5,
+        Type	=	Food,
+        DaysTotallyRotten	=	10,
+        DisplayName	=	Cone Pan,
+        Icon	=	PanFull,
+        DaysFresh	=	3,
+        Carbohydrates = 50.45,
+        Proteins = 54.53,
+        Lipids = 52.61,
+        Calories = 520,
+		RemoveNegativeEffectOnCooked = TRUE,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        ReplaceOnUse    =   Pan,
+        CantEat = TRUE,
+        WorldStaticModel = PanFriedVegetables_Ground,
+        CookingSound = FryingFood,
+    }
+}

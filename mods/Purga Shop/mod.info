@@ -1,8 +1,0 @@
-name=PurgaSHOP
-id=PurgaSHOP
-description= Tienda personalizada para el servidor La Purga PZ. Deli
-poster=poster.png
-pack=purga_01
-pack=AA_Paredes_03
-tiledef=purga_01 3877
-tiledef=AA_Paredes_03 3878

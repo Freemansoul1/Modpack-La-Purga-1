@@ -1,0 +1,1758 @@
+module NHM
+{
+	imports	{Base}
+
+    /************************* Category:Cooking ***************************/
+
+	recipe Open With Hands
+	{
+		TunaTin/CannedSardines/CannedCornedBeef,
+		Result:NHM.TinCanOpened,
+		Time:100.0,
+		Category:Cooking,
+        Sound:CanOpen,
+        RemoveResultItem:true,
+		OnCreate:OpenTinCan,
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Open Jar
+	{
+		CannedPotato/CannedCabbage/CannedBellPepper/CannedRedRadish/CannedLeek/CannedTomato/CannedBroccoli/CannedEggplant/CannedCarrots,
+		Result:NHM.OpenedJar,
+		Time:100.0,
+		Category:Cooking,
+        RemoveResultItem:true,
+		OnCreate:OpenJar,
+		OnGiveXP:Recipe.OnGiveXP.None,
+        Category:Storage,
+	}
+
+	recipe Open With Can Opener
+	{
+		TinnedSoup/TinnedBeans/Dogfood/CannedCorn/CannedBolognese/CannedChili/CannedMushroomSoup/CannedPeas/CannedPotato2/CannedTomato2/CannedFruitCocktail/CannedPeaches/CannedPineapple/CannedCarrots2/CannedMilk,
+		keep TinOpener,
+		Result:NHM.TinCanOpened,
+		Time:100.0,
+		Category:Cooking,
+        Sound:OpenCannedFood,
+        RemoveResultItem:true,
+		OnCreate:OpenWithCanOpener,
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Open Damaged Tin Can
+	{
+		TinnedSoup/TinnedBeans/Dogfood/CannedCorn/CannedBolognese/CannedChili/CannedMushroomSoup/CannedPeas/CannedPotato2/CannedTomato2/CannedFruitCocktail/CannedPeaches/CannedPineapple/CannedCarrots2/CannedMilk,
+		SharpedStone/Fork/LetterOpener/Scalpel/Spoon/Scissors/HandFork/IcePick,
+		Result:NHM.TinCanOpened,
+		Time:180.0,
+		Category:Cooking,
+        Sound:OpenCannedFood,
+        RemoveResultItem:true,
+		OnCreate:OpenDamagedTinCan,
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+	
+    recipe Open Sack of Apples
+    {
+        SackProduce_Apple,
+
+        Result:Apple=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Bell Peppers
+    {
+        SackProduce_BellPepper,
+
+        Result:BellPepper=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Broccoli
+    {
+        SackProduce_Broccoli,
+
+        Result:Broccoli=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Cabbages
+    {
+        SackProduce_Cabbage,
+
+        Result:farming.Cabbage=8,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Carrots
+    {
+        SackProduce_Carrot,
+
+        Result:Carrots=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Cherries
+    {
+        SackProduce_Cherry,
+
+        Result:Cherry=16,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Corn
+    {
+        SackProduce_Corn,
+
+        Result:Corn=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Eggplants
+    {
+        SackProduce_Eggplant,
+
+        Result:Eggplant=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Grapes
+    {
+        SackProduce_Grapes,
+
+        Result:Grapes=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Leeks
+    {
+        SackProduce_Leek,
+
+        Result:Leek=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Lettuce
+    {
+        SackProduce_Lettuce,
+
+        Result:Lettuce=8,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Onions
+    {
+        SackProduce_Onion,
+
+        Result:Onion=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Peaches
+    {
+        SackProduce_Peach,
+
+        Result:Peach=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Pears
+    {
+        SackProduce_Pear,
+
+        Result:Pear=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Potatoes
+    {
+        SackProduce_Potato,
+
+        Result:farming.Potato=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Radishes
+    {
+        SackProduce_RedRadish,
+
+        Result:farming.RedRadish=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Strawberries
+    {
+        SackProduce_Strawberry,
+
+        Result:farming.Strewberrie=16,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+    recipe Open Sack of Tomatoes
+    {
+        SackProduce_Tomato,
+
+        Result:farming.Tomato=12,
+        OnCreate:Recipe.OnCreate.OpenSackProduce,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Sound:PutItemInBag,
+        Time:15.0,
+    }
+
+/**********************************Сахар, чай, кофе и грибной порошок*************/
+
+    recipe Make Hot Cuppa
+    {
+        FullKettle=1,
+        destroy Teabag2/NHM.PowderTea/NHM.CoffeePowder,
+        destroy Mugl/MugRed/MugWhite/MugSpiffo,
+        Result:Mugful2,
+        Time:30.0,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Category:Cooking,
+        OnGiveXP:Give3CookingXP,
+    }
+
+    recipe Make EnergyDrink
+    {
+        WaterBottleEmpty/PopBottleEmpty,
+        destroy Teabag2/NHM.PowderTea/NHM.CoffeePowder,
+        WildGarlic/WildGarlic2/Comfrey/Plantain,
+        WildGarlic/WildGarlic2/Comfrey/Plantain,
+        Sugarcube=2,
+        Result:EnergyDrink,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:Cooking Workbench,
+        Category:Cooking,
+        SkillRequired:Cooking=4,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make Isotonic
+    {
+        WaterBottleEmpty/PopBottleEmpty,
+        Ginseng=5,
+        Water=5,
+        Sugarcube=1,
+        Result:Isotonic,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        Category:Cooking,
+        SkillRequired:Cooking=6,
+        NearItem:Cooking Workbench,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make Hot Sweet Cuppa
+    {
+        
+        FullKettle=1,
+		NHM.Sugarcube=1,
+        destroy Teabag2/NHM.PowderTea/NHM.CoffeePowder,
+        destroy Mugl/MugRed/MugWhite/MugSpiffo,
+        Result:Mugful1,
+        Time:30.0,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Category:Cooking,
+        OnGiveXP:Give3CookingXP,
+    }
+
+    recipe Make Pinecone Cuppa
+    {
+        Pinecone=3,
+        FullKettle=1,
+        destroy Mugl/MugRed/MugWhite/MugSpiffo,
+        Result:Mugful3,
+        Time:30.0,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Category:Cooking,
+        OnGiveXP:Give3CookingXP,
+    }
+
+	recipe 0. Make tea
+    {
+		GrapeLeaves/Rosehips/Violets/BlackSage,
+		GrapeLeaves/Rosehips/Violets/BlackSage,
+        MushroomDust,
+		keep MortarPestle,
+        Result:PowderTea,
+		Sound:grind,
+        Time:100.0,
+		Category:Cooking,
+		OnGiveXP:Give3CookingXP,
+    }	
+	
+	recipe  Grind mushroom
+	{
+		MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7,
+		keep MortarPestle,
+		Result:MushroomDust,
+		Sound:grind,
+		Category:Cooking,
+		Time:100.0,
+		OnGiveXP:Give3CookingXP,
+	}
+	
+    /*******************************Всё что касается сахара**********************/
+
+    	recipe 1. Grind berry
+	{
+		farming.Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/Cherry/Grapes/BerryPoisonIvy/WinterBerry/BeautyBerry/HollyBerry,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Result:BerryDust,
+		SkillRequired:Cooking=1,
+		Category:Cooking,
+		Time:100.0,
+		OnGiveXP:Give3CookingXP,
+	}
+    
+	recipe 1. Prepare sucrose pot
+	{
+		BerryDust = 25,
+		destroy WaterPot,
+		Result:SucrosePot,
+		SkillRequired:Cooking=1,
+		Category:Cooking,
+		Time:100.0,
+		OnGiveXP:Give3CookingXP,
+        NearItem:Cooking Workbench,
+	}    
+
+    	recipe 1. Filter sucrose
+    {
+        RippedSheets,
+		SucrosePot,
+		Result:Sugarcube=50,
+		Time:150.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+		Category:Cooking,
+    }
+	
+	recipe Extract sugar
+	{
+		Sugar/SugarBrown,
+		Result:EmptySandbag,
+		Sound:PutItemInBag,
+		Time:70.0,
+		OnCreate:UnpackSandbag,
+        Category:Storage,
+	}
+	
+	recipe Pack sugar
+	{
+		Sugarcube = 50,
+		EmptySandbag,
+		Result:Sugar,
+		Sound:PutItemInBag,
+		Time:70.0,
+        Category:Storage,
+	}	
+    /*************************************Фруктовый джем******************/
+
+    recipe 2. JamFruit
+	{
+		BerryDust = 15,
+        Sugarcube = 10,
+		destroy WaterPot,
+		
+		Result:JamPot,
+		SkillRequired:Cooking=2,
+		Category:Cooking,
+		Time:100.0,
+		OnGiveXP:Give3CookingXP,
+        NearItem:Cooking Workbench,
+	}    
+
+    	recipe 2 Extract Jam
+    {
+        
+		JamPot,
+        Glass=2,
+		Result:JamFruit=2,
+		Time:150.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+		Category:Cooking,
+    }
+
+    /**************************************Чипсы-картошка фри********************************/
+
+        recipe 2. Fill pan with potato
+	{
+		Pan,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Potato;60,
+		Salt;2,
+		[Recipe.GetItemTypes.BakingFat];10,
+		Result:PotatoPan,
+		SkillRequired:Cooking=2,
+		Category:Cooking,
+		Time:150.0,
+        NearItem:Cooking Workbench,
+    }
+
+	recipe 2. Extract Crisps
+    {
+        
+		PotatoPan,
+        Plastic=2,
+		Result:Crisps=4,
+		
+		Time:150.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+    }	
+
+        recipe 2 Fries Potato
+	{
+		Pan,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Potato;18,
+		Salt;1,
+		[Recipe.GetItemTypes.BakingFat];4,
+		Result:FriesPan,
+		SkillRequired:Cooking=2,
+		Category:Cooking,
+		Time:150.0,
+        NearItem:Cooking Workbench,
+    }
+
+	    recipe 2 Extract Fries
+    {
+        
+		FriesPan,
+        Plastic=1,
+		Result:Fries=2,
+		
+		Time:150.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+    }	
+
+    /*********************************Мука************************/
+
+
+        /*********************************Рисовое молоко************************/
+
+    	recipe 5. craft Milk
+	{
+        
+		Rice;60,
+        Water=10,
+		Plastic=2,
+		keep MortarPestle,
+		Result:Milk,
+		SkillRequired:Cooking=5,
+		Category:Cooking,
+		Time:200.0,
+        NearItem:Cooking Workbench,
+	}	
+	
+	/********************************Потрошить филе мясо*************/
+	
+	    recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+        SkillRequired:Cooking=1,
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:50.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+	
+        recipe Slice Frog
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Frog,
+        SkillRequired:Cooking=1,
+        Result:FrogMeat,
+        Sound:SliceMeat,
+        Time:50.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher Small Animal
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadMouse/DeadSquirrel/DeadRat,
+        SkillRequired:Cooking=1,
+        Result:Smallanimalmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal1,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher Rabbit
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadRabbit,
+        SkillRequired:Cooking=1,
+        Result:Rabbitmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal1,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher Bird
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        DeadBird,
+        SkillRequired:Cooking=1,
+        Result:Smallbirdmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+	
+/***********************Готовка разного***********************/
+
+        recipe Prepare Muffins
+    {
+        keep [Recipe.GetItemTypes.Spoon],
+	    keep Bowl,
+        destroy MuffinTray,
+        [Recipe.GetItemTypes.Egg]=2,
+        [Recipe.GetItemTypes.BakingFat];2,
+        [Recipe.GetItemTypes.Milk];2,
+        Sugarcube=10,
+        Flour=1,
+        BakingSoda,
+        SkillRequired:Cooking=4,
+        Result:BakingTray_Muffin,
+        Category:Cooking,
+        Time:60,
+        OnTest:Recipe.OnTest.WholeEgg,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Make PancakeMix
+    {
+        
+        Salt;4,
+		Flour = 4,
+		Milk,
+		NHM.Sugarcube=10,
+        BakingSoda,
+        [Recipe.GetItemTypes.BakingFat];4,
+        [Recipe.GetItemTypes.Egg]=2,
+        SkillRequired:Cooking=5,
+        Result:PancakeMix,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+	    recipe Make Pancake
+    {
+        keep [Recipe.GetItemTypes.Spoon],
+        keep Bowl,
+        PancakeMix,
+        Water=2,
+        SkillRequired:Cooking=4,
+        Result:PancakesCraft,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+/*Скрыт временно проверить на работоспособность в мп*/
+
+    	recipe 5. Extract pancake
+    {
+        PancakePan,
+		Result:Pancakes=2,
+		Time:50.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+        NeedToBeLearn:true
+    }	
+
+	    recipe Make Maki
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        [Recipe.GetItemTypes.FishMeat];2,
+        [Recipe.GetItemTypes.Rice];2,
+        Cabbage;5,
+        Carrots;2,
+        SkillRequired:Cooking=4,
+        Result:Maki,
+        Category:Cooking,
+        Time:30,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Make Sushi
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        [Recipe.GetItemTypes.FishMeat];5,
+        [Recipe.GetItemTypes.Rice];5,
+        SkillRequired:Cooking=4,
+        Result:SushiFish,
+        Category:Cooking,
+        Time:30,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Onigiri
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        [Recipe.GetItemTypes.FishMeat];5,
+        [Recipe.GetItemTypes.Rice];5,
+        Cabbage;5,
+        Carrots;2,
+        SkillRequired:Cooking=4,
+        Result:Onigiri,
+        Category:Cooking,
+        Time:30,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+/*********************Фарш******************/
+
+        recipe Make MincedMeat
+    {
+	    keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Rabbitmeat/Smallbirdmeat/Smallanimalmeat/MuttonChop/Steak/PorkChop;120,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=8,
+        Result:MincedMeat,
+        Category:Cooking,
+        Time:1000,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make MeatPatty
+    {
+	    
+        MincedMeat,
+        Result:MeatPatty,
+        Category:Cooking,
+        Time:200,
+        NearItem:Cooking Workbench,
+    }
+    
+    /*****************Ветчина*****************/
+
+        recipe Make Ham
+    {
+	    
+        MincedMeat,
+        SaltPinch,
+        Pot,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=9,
+        Result:HamPot,
+        Category:Cooking,
+        Time:1000,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe  Extract Ham
+    {
+        
+		HamPot,
+		Result:Ham,
+		Time:50,
+		OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+		Category:Cooking,
+	}
+
+    /*************************Пирог, хлеб/багет торт************************/
+
+        recipe Make Cake Batter
+    {
+        keep [Recipe.GetItemTypes.Spoon],
+		Bowl,
+		[Recipe.GetItemTypes.Flour]=1,
+		[Recipe.GetItemTypes.BakingFat];10,
+		NHM.Sugarcube=15,
+		[Recipe.GetItemTypes.Egg]=2,
+		Yeast,
+		[Recipe.GetItemTypes.Milk];5,
+		Result:CakeBatter,
+		SkillRequired:Cooking=3,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        OnTest:Recipe.OnTest.WholeEgg,
+        NearItem:Cooking Workbench,
+		
+    }
+
+    recipe Make Pie Dough
+    {
+        keep [Recipe.GetItemTypes.Spoon],
+        keep Bowl,
+		Water=2,
+		[Recipe.GetItemTypes.Flour]=1,
+		Butter/Lard/Margarine;10,
+		Salt;2,
+        BakingSoda=1,
+		Result:PieDough,
+		SkillRequired:Cooking=3,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Bread Dough
+    {
+        keep [Recipe.GetItemTypes.Spoon],
+		keep RollingPin,
+		Water=1,
+		[Recipe.GetItemTypes.Flour]=1,
+		Salt;1,
+		Yeast,
+		Result:BreadDough,
+		SkillRequired:Cooking=3,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Baguette Dough
+    {
+	   keep [Recipe.GetItemTypes.Spoon],
+	   keep Bowl,
+       keep RollingPin,
+       Water=1,
+       Flour=1,
+       Salt;1,
+       Yeast,
+       SkillRequired:Cooking=3,
+       Result:BaguetteDough,
+       Time:50.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking10,
+       NearItem:Cooking Workbench,
+    }
+
+  /*************************круасан************/
+
+        recipe Make Croissant
+    {
+        
+		Pan,
+        [Recipe.GetItemTypes.BakingFat];2,
+		Water=1,
+		Flour=1,
+		Salt;1,
+		Yeast,
+        Sugarcube=4,
+		Result:CroissantPan,
+		SkillRequired:Cooking=5,
+		Time:50,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+     recipe Extract Croissant
+    {
+        
+		CroissantPan,
+		Result:Croissant=4,
+		Time:50.0,
+		Category:Cooking,
+        OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+/********************************Тортилья***************/
+
+	    recipe  Extract Tortilla
+    {
+        
+		TortillaPan,
+		Result:Tortilla=4,
+		Time:50,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+	}
+
+	    recipe Make Tortilla
+    {
+        
+		Pan,
+        Water=2,
+		Salt;1,
+        Flour=1,
+        [Recipe.GetItemTypes.BakingFat];2,
+        SkillRequired:Cooking=3,
+        Result:TortillaPan,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    /************************************Тако******************/
+
+    	recipe  Extract Taco
+    {
+        
+		TacoPan,
+		Result:TacoShell=4,
+		Time:50,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+	}
+
+	    recipe Make Taco
+    {
+        
+		Pan,
+        Water=2,
+		Salt;1,
+        Flour=1,
+        [Recipe.GetItemTypes.BakingFat];2,
+        SkillRequired:Cooking=3,
+        Result:TacoPan,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+	/**************************************Вафли************************/
+
+	    recipe  Extract Waffles
+    {
+        
+		WafflesPan,
+		Result:Waffles=2,
+		Time:50,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+	}
+
+		recipe Waffles cook
+    {
+        
+		Pan,
+        Water=5,
+		Sugarcube=5,
+		[Recipe.GetItemTypes.Egg]=1,
+		Salt;2,
+        Flour=1,
+        BakingSoda,
+        [Recipe.GetItemTypes.BakingFat];4,
+        SkillRequired:Cooking=3,
+        Result:WafflesPan,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+/**********************************Консервирование****************/
+
+    recipe Make Jar of Tomatoes
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        farming.Tomato=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedTomato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Carrots
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        Carrots=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedCarrots,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Potatoes
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        farming.Potato=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedPotato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Eggplants
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        Eggplant=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedEggplant,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Leeks
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        Leek=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedLeek,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Red Radishes
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        farming.RedRadish=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedRedRadish,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Bell Peppers
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        BellPepper=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedBellPepper,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Cabbage
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        farming.Cabbage=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedCabbage,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make Jar of Broccoli
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        
+        EmptyJar,
+        JarLid,
+        Broccoli=5,
+        Water=10,
+        Vinegar,
+        Sugarcube=5,
+        SkillRequired:Cooking=6,
+        Result:CannedBroccoli,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    /********************Вяленое мясо******************/
+
+    	recipe Make BeefJerky
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Salt;2,
+        Rabbitmeat/Smallbirdmeat/Smallanimalmeat/Steak;25,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=8,
+        Result:BeefJerky,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    	recipe Make BeefJerkyFish
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Salt;2,
+        FishFillet;25,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=8,
+        Result:BeefJerky,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+/**********************Очистка сковородки, Кастрюли**********************/
+
+	recipe Empty Frying Pot
+	{
+	   
+
+	   Result:Pot,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:40.0,
+	   Category:Cooking,
+       NeedToBeLearn:true,
+	}
+
+
+    recipe Clean Tray
+    {
+        destroy BakingTray_Muffin/BakingTray_Muffin_Recipe/CookiesShortbreadBakingTray/Muffintray_Biscuit,
+
+        Result:MuffinTray,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.CleanMuffin,
+        Time:10,
+        Sound:EmptyPan,
+    }
+
+	recipe Empty Frying Pan
+	{
+	   destroy PancakePan/WafflesPan/TortillaPan/TacoPan/FriesPan/PotatoPan/PanFriedVegetables,
+
+	   Result:Pan,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:40.0,
+	   Category:Cooking,
+       Sound:EmptyPan,
+	}
+
+    recipe Empty Roasting Pan
+	{
+	   destroy PanFriedVegetables2,
+
+	   Result:RoastingPan,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:40.0,
+	   Category:Cooking,
+	   Sound:EmptyPan,
+	}
+
+    recipe Empty BakingTray
+	{
+	   destroy CookiesChocolateDough/CookieChocolateChipDough/CookiesOatmealDough/CookiesSugarDough/CookiesShortbreadDough,
+
+	   Result:BakingTray,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:40.0,
+	   Category:Cooking,
+       Sound:EmptyPan,
+	}
+
+
+/***Растительное масло***/
+
+		recipe OilVegetable
+    {
+        keep RollingPin,
+        Glass=2,
+		Water=10,
+        SunflowerSeeds=5,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=7,
+        Result:OilVegetable,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+/***Соль***/
+
+    	recipe Make Salt
+    {
+        
+		Glass,
+        NHM.SaltPinch=3,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=0,
+        Result:Salt,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        NearItem:Cooking Workbench,
+    }
+
+   
+
+/********Дрожжи*****/
+
+	recipe 3. Make yeast mix
+	{
+        
+		NHM.FlaskFungalSpores,
+		farming.Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5,
+		Pot,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Result:YeastMix,
+		
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		SkillRequired:Cooking=7,
+		Category:Cooking,
+		Time:200.0,
+        NearItem:Cooking Workbench,
+	}	
+
+    	recipe 3. Extract yeast
+    {
+        
+		YeastMix,
+		Result:Yeast,
+		
+		Time:150.0,
+		OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+		Category:Cooking,
+    }
+
+    /*************************Сливочное масло**********/
+
+    	recipe Make Butter
+    {
+        
+		Pot,
+        Milk,
+        keep RollingPin,
+        NeedToBeLearn:false,
+        SkillRequired:Cooking=7,
+        Result:ButterPot,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Extract Butter
+    {
+        
+		ButterPot,
+        NeedToBeLearn:false,
+        Result:Butter,
+        Category:Cooking,
+        Time:500,
+        OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+
+/**************************Хот дог*************************/
+
+    recipe Make DoughRolled
+    {
+        
+        keep RollingPin,
+		Water=5,
+        Flour=1,
+        Milk;1,
+        [Recipe.GetItemTypes.Egg]=1,
+        [Recipe.GetItemTypes.BakingFat];2,
+        NHM.Sugarcube=5,
+        Salt;1,
+        BakingSoda,
+        Result:Dough,
+        Category:Cooking,
+        SkillRequired:Cooking=5,
+        Time:500,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make HotDog
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Dough;5,
+        Sausage;10,
+        Result:Hotdog=2,
+        Category:Cooking,
+        Time:500,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    /*************************Сыр**********/
+
+    	recipe Make Cheese
+    {
+        
+		Pot,
+        Milk,
+        SkillRequired:Cooking=7,
+        Result:CheesePot,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Extract Cheese
+    {
+        
+		CheesePot,
+        Result:Cheese=2,
+        Category:Cooking,
+        Time:500,
+        OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+        /*************************Сосиска**********/
+
+    	recipe Make Sausage
+    {
+        keep RollingPin,
+		Pot,
+        MincedMeat,
+        SkillRequired:Cooking=8,
+        Result:SausagePot,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Extract Sausage
+    {
+        
+		SausagePot,
+        Plastic,
+        Result:Sausage=2,
+        Category:Cooking,
+        Time:500,
+        OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+        /*************************Салями**********/
+
+    	recipe Make Salami
+    {
+        keep RollingPin,
+		Pot,
+        SaltPinch=2,
+        MincedMeat,
+        SkillRequired:Cooking=8,
+        Result:SalamiPot,
+        Category:Cooking,
+        Time:500,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        recipe Extract Salami
+    {
+        
+		SalamiPot,
+        Plastic,
+        Result:Salami=2,
+        Category:Cooking,
+        Time:500,
+        OnTest:PotGood_IsValid,
+		OnCreate:pot_OnCreate,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    /**************************Пицца*************************/
+
+    recipe Make Pizza
+    {
+       keep [Recipe.GetItemTypes.Spoon],
+	   keep Bowl,
+       keep RollingPin,
+       Water=3,
+       [Recipe.GetItemTypes.Flour]=2,
+       Salt;2,
+       Yeast,
+	   [Recipe.GetItemTypes.Oil];3,
+	   Cheese;15,
+	   [Recipe.GetItemTypes.PizzaSauce];10,
+       Result:PizzaRecipe,
+       Time:50.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking10,
+       NearItem:Cooking Workbench,
+    }
+
+
+
+    /*************************Бисквит*************************/
+
+    recipe Make Biscuits
+    {
+       destroy MuffinTray,
+	   keep [Recipe.GetItemTypes.Spoon],
+	   keep Bowl,
+       Water=1,
+       Flour=1,
+       Salt;1,
+       BakingSoda=1,
+	   [Recipe.GetItemTypes.BakingFat];1,
+       Result:Muffintray_Biscuit,
+       Category:Cooking,
+       Time:50,
+       SkillRequired:Cooking=2,
+       NearItem:Cooking Workbench,
+    }
+
+    recipe Get 6 Biscuits
+    {
+        Muffintray_Biscuit,
+
+        Result:Biscuit=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetBiscuit,
+        Time:60,
+    }
+
+    /**************************Шоколадное печенье и не только*************************/
+
+recipe Make Chocolate Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.Spoon],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,	   
+		[Recipe.GetItemTypes.BakingFat];2,
+		NHM.Sugarcube=5,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		CocoaPowder;10,
+		Water=1,
+		Flour=1,
+
+		Result:CookiesChocolateDough,
+		SkillRequired:Cooking=2,
+        NearItem:Cooking Workbench,
+		Category:Cooking,
+		Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Get 6 Cookies
+    {
+        CookiesChocolateDough,
+
+        Result:CookiesChocolate=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetCookies,
+        Time:60,
+    }
+	
+    recipe Make Chocolate Chip Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.Spoon],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,	   
+		[Recipe.GetItemTypes.BakingFat];2,
+		NHM.Sugarcube=5,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		ChocolateChips;6,
+		Water=1,
+		Flour=1,
+
+		Result:CookieChocolateChipDough,
+		SkillRequired:Cooking=2,
+        NearItem:Cooking Workbench,
+		Category:Cooking,
+		Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Get 6 Cookies
+    {
+        CookieChocolateChipDough,
+
+        Result:CookieChocolateChip=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetCookies,
+        Time:60,
+    }
+	
+    recipe Make Oatmeal Cookie Dough
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,	   
+		[Recipe.GetItemTypes.BakingFat];2,
+		NHM.Sugarcube=5,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		OatsRaw;10,
+		Water=1,
+		Flour=1,
+
+		Result:CookiesOatmealDough,
+		SkillRequired:Cooking=2,
+        NearItem:Cooking Workbench,
+		Category:Cooking,
+		Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Get 6 Cookies
+    {
+        CookiesOatmealDough,
+
+        Result:CookiesOatmeal=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetCookies,
+        Time:60,
+    }
+	
+    recipe Make Sugar Cookie Dough
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,	   
+		[Recipe.GetItemTypes.BakingFat];2,
+		NHM.Sugarcube=10,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		Water=1,
+		Flour=1,
+
+		Result:CookiesSugarDough,
+		SkillRequired:Cooking=2,
+        NearItem:Cooking Workbench,
+		Category:Cooking,
+		Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Get 6 Cookies
+    {
+        CookiesSugarDough,
+
+        Result:CookiesSugar=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetCookies,
+        Time:60,
+    }
+	
+    recipe Make Shortbread Cookie Dough
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,	   
+		Butter;4,
+		NHM.Sugarcube=10,
+		Water=1,
+		Flour=1,
+
+		Result:CookiesShortbreadDough,
+		SkillRequired:Cooking=2,
+        NearItem:Cooking Workbench,
+		Category:Cooking,
+		Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Get 6 Cookies
+    {
+        CookiesShortbreadDough,
+
+        Result:CookiesShortbread=6,
+        Category:Cooking,
+        OnCanPerform:Recipe.OnCanPerform.GetBiscuit,
+        OnCreate:Recipe.OnCreate.GetCookies,
+        Time:60,
+    }
+
+   /**************************Кетчуп, Томатная паста*************************/
+
+    recipe Make Ketchup
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		keep Bowl,
+        Salt;2,
+        Sugarcube=5,
+        Vinegar=1,
+        Tomato=3,
+        Plastic=1,
+        Result:Ketchup,
+        Category:Cooking,
+        SkillRequired:Cooking=5,
+        Time:200,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    recipe Make TomatoPaste
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		keep Bowl,
+        Salt;1,
+        Sugarcube=5,
+        Tomato=3,
+        Plastic=1,
+        Result:TomatoPaste,
+        Category:Cooking,
+        SkillRequired:Cooking=5,
+        Time:200,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+       /**************************Майонез*************************/
+
+    recipe Make Mayonnaise
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		keep Bowl,
+        Salt;2,
+        Sugarcube=5,
+        Vinegar=1,
+        OilVegetable;2,
+        [Recipe.GetItemTypes.Egg]=2,
+        Plastic=2,
+        Result:MayonnaiseFull,
+        Category:Cooking,
+        SkillRequired:Cooking=5,
+        Time:200,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        /*******************Подливка*************/
+
+    recipe 0.Make Gravy
+    {        
+		keep Bowl,
+        GravyMix,
+        Water=2,
+        Result:Gravy,
+        Category:Cooking,
+        SkillRequired:Cooking=0,
+        Time:50,
+		OnGiveXP:Recipe.OnGiveXP.None,
+        NearItem:Cooking Workbench,
+    }
+
+    	/**************************************Рожок************************/
+
+	    recipe Extract Cone
+    {
+        
+		ConePan,
+		Result:Cone=6,
+		Time:50,
+		OnTest:PotGood_IsValid,
+		OnCreate:pan_OnCreate,
+		Category:Cooking,
+	}
+
+		recipe Make ConePan
+    {
+        
+		Pan,
+        Water=5,
+		Sugarcube=5,
+		[Recipe.GetItemTypes.Egg]=1,
+		Salt;2,
+        Flour=1,
+        BakingSoda,
+        [Recipe.GetItemTypes.BakingFat];4,
+        SkillRequired:Cooking=3,
+        Result:ConePan,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+        /******************Мороженое*****************/
+
+        recipe 3.Icecream
+    {
+        
+		keep Bowl,
+        Milk,
+		Sugarcube=5,		
+        Butter;4,
+        SkillRequired:Cooking=3,
+        Result:Icecream,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        NearItem:Cooking Workbench,
+    }
+
+    /***Горсть соли***/
+
+    	recipe 0.Make SaltPinch
+    {        
+        Salt;10,
+        SkillRequired:Cooking=0,
+        Result:NHM.SaltPinch=3,
+        Category:Cooking,
+        Time:50,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        NearItem:Cooking Workbench,
+    }
+
+}

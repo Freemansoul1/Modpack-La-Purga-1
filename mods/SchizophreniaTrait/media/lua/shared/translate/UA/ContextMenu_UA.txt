@@ -1,3 +1,0 @@
-ContextMenu_UA = {
-    ContextMenu_Take_Pill = "Прийми таблетку",
-}

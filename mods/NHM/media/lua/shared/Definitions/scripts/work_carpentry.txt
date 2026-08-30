@@ -1,0 +1,47 @@
+module NHM
+{
+    imports
+    {
+        Base
+    }
+
+    item MeleeJournal
+    {
+        Type = Literature,
+        DisplayName = MeleeJournal,
+        Icon = MeleeJournal,
+        Weight = 0.3,
+        TeachedRecipes = Make Regular Sword;Make Advanced Sword;Make Advanced Axe;Make Dagger;Make Advanced Mace;Make Regular Big Hammer;Make Regular Halberd;Make Advanced Halberd;Make Shield2,
+    }
+
+    item Reinforcedwood
+    {
+        Type = Normal,
+        DisplayName = Reinforcedwood,
+        Icon = Reinforcedwood,
+        Weight = 2,
+    }
+
+    item ReinforcedwoodWet
+    {
+        Type = Normal,
+        DisplayName = ReinforcedwoodWet,
+        Icon = ReinforcedwoodWet,
+        Wet		= TRUE,
+		WetCooldown	= 100000,
+		ItemWhenDry	= NHM.Reinforcedwood,
+        Weight = 2,
+    }
+
+    recipe Make ReinforcedwoodWet
+    {
+        Plank  = 4,
+        Woodglue = 3,
+        Result:ReinforcedwoodWet,
+        SkillRequired:Woodwork=4,
+        Time:150.0,
+        Category:Carpentry,
+        CanBeDoneFromFloor:true,
+    }
+
+}

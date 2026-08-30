@@ -1,0 +1,202 @@
+#quest abel_q1|daily
+    #task t1
+        #set Deliver|CannedFood,10
+        #action UnlockTask|abel_q1|t2
+    #task t2
+        #set RaiseFlag|abel_q1_completed
+        #action SetFlag|abel_q1_completed|false
+        #action SetFlag|abel_q1_flag|false
+        #action CompleteQuest|abel_q1
+
+#quest abel_q2|daily
+    #task t1
+        #set Deliver|Camo,4
+        #action UnlockTask|abel_q2|t2
+    #task t2
+        #set RaiseFlag|abel_q2_completed
+        #action SetFlag|abel_q2_completed|false
+        #action SetFlag|abel_q2_flag|false
+        #action CompleteQuest|abel_q2
+
+#quest abel_q3|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Abel.txt,reset_abel_q3
+    #task t1
+        #set GotoLocation|10798,7898,10802,7902,0|true
+        #action UnlockTask|abel_q3|t2
+    #task t2
+        #set ContextAction|lanzar fuegos artificiales|10800,7900,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t3
+        #set GotoLocation|10798,8308,10802,8312,0|true
+        #action UnlockTask|abel_q3|t4
+    #task t4
+        #set ContextAction|lanzar fuegos artificiales|10800,8310,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t5
+        #set GotoLocation|11298,7898,11302,7902,0|true
+        #action UnlockTask|abel_q3|t6
+    #task t6
+        #set ContextAction|lanzar fuegos artificiales|11300,7900,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t7
+        #set GotoLocation|11198,8328,11202,8332,0|true
+        #action UnlockTask|abel_q3|t8
+    #task t8
+        #set ContextAction|lanzar fuegos artificiales|11200,8330,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t9
+        #set GotoLocation|10998,7898,11002,7902,0|true
+        #action UnlockTask|abel_q3|t10
+    #task t10
+        #set ContextAction|lanzar fuegos artificiales|11000,7900,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t11
+        #set GotoLocation|11598,7918,11602,7922,0|true
+        #action UnlockTask|abel_q3|t12
+    #task t12
+        #set ContextAction|lanzar fuegos artificiales|11600,7920,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t13
+        #set GotoLocation|11648,8198,11652,8202,0|true
+        #action UnlockTask|abel_q3|t14
+    #task t14
+        #set ContextAction|lanzar fuegos artificiales|11650,8200,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t15
+        #set GotoLocation|11398,8323,11402,8327,0|true
+        #action UnlockTask|abel_q3|t16
+    #task t16
+        #set ContextAction|lanzar fuegos artificiales|11400,8325,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t17
+        #set GotoLocation|11633,8398,11637,8402,0|true
+        #action UnlockTask|abel_q3|t18
+    #task t18
+        #set ContextAction|lanzar fuegos artificiales|11635,8400,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t19
+        #set GotoLocation|11648,8448,11652,8452,0|true
+        #action UnlockTask|abel_q3|t20
+    #task t20
+        #set ContextAction|lanzar fuegos artificiales|11650,8450,0|4|Abel.txt,quest3_rem1|q3_rem1_flag
+    #task t21|hidden
+        #set TaskCondition|abel_q3|t1,t2/t3,t4/t5,t6/t7,t8/t9,t10/t11,t12/t13,t14/t15,t16/t17,t18/t19,t20
+        #action RunScript|Abel.txt,q_rem2
+        #action UnlockTask|abel_q3|t22
+        #action UnlockTask|abel_q3|t43
+        #action UnlockTask|abel_q3|t44
+    #task t22|hidden
+        #set WaitUntil|time|false|120
+        #action RunScript|Abel.txt,fail_abel_q3
+    #task t23
+        #set GotoLocation|11618,9018,11622,9022,0|true
+        #action UnlockTask|abel_q3|t24
+    #task t24
+        #set ContextAction|lanzar fuegos artificiales|11620,9020,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t25
+        #set GotoLocation|11748,8968,11752,8972,0|true
+        #action UnlockTask|abel_q3|t26
+    #task t26
+        #set ContextAction|lanzar fuegos artificiales|11750,8970,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t27
+        #set GotoLocation|11758,9098,11762,9102,0|true
+        #action UnlockTask|abel_q3|t28
+    #task t28
+        #set ContextAction|lanzar fuegos artificiales|11760,9100,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t29
+        #set GotoLocation|11398,9078,11402,9082,0|true
+        #action UnlockTask|abel_q3|t30
+    #task t30
+        #set ContextAction|lanzar fuegos artificiales|11400,9080,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t31
+        #set GotoLocation|11543,9078,11547,9082,0|true
+        #action UnlockTask|abel_q3|t32
+    #task t32
+        #set ContextAction|lanzar fuegos artificiales|11545,9080,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t33
+        #set GotoLocation|12103,8998,12107,9002,0|true
+        #action UnlockTask|abel_q3|t34
+    #task t34
+        #set ContextAction|lanzar fuegos artificiales|12105,9000,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t35
+        #set GotoLocation|11298,9078,11302,9082,0|true
+        #action UnlockTask|abel_q3|t36
+    #task t36
+        #set ContextAction|lanzar fuegos artificiales|11300,9080,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t37
+        #set GotoLocation|11558,9248,11562,9252,0|true
+        #action UnlockTask|abel_q3|t38
+    #task t38
+        #set ContextAction|lanzar fuegos artificiales|11560,9250,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t39
+        #set GotoLocation|11748,9248,11752,9252,0|true
+        #action UnlockTask|abel_q3|t40
+    #task t40
+        #set ContextAction|lanzar fuegos artificiales|11750,9250,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t41
+        #set GotoLocation|11998,9048,12002,9052,0|true
+        #action UnlockTask|abel_q3|t42
+    #task t42
+        #set ContextAction|lanzar fuegos artificiales|12000,9050,0|4|Abel.txt,quest3_rem2|q3_rem2_flag
+    #task t43|hidden
+        #set TaskCondition|abel_q3|t23,t24/t25,t26/t27,t28/t29,t30/t31,t32/t33,t34/t35,t36/t37,t38/t39,t40/t41,t42
+        #action RunScript|Abel.txt,q_rem3
+        #action UnlockTask|abel_q3|t65
+    #task t44|hidden
+        #set QuestArea|fw|10700,7400,12500,9500|1|Quest_Fireworks
+    #task t45
+        #set GotoLocation|12098,7898,12102,7902,0|true
+        #action UnlockTask|abel_q3|t46
+    #task t46
+        #set ContextAction|lanzar fuegos artificiales|12100,7900,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t47
+        #set GotoLocation|12098,8318,12102,8322,0|true
+        #action UnlockTask|abel_q3|t48
+    #task t48
+        #set ContextAction|lanzar fuegos artificiales|12100,8320,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t49
+        #set GotoLocation|12098,7768,12102,7772,0|true
+        #action UnlockTask|abel_q3|t50
+    #task t50
+        #set ContextAction|lanzar fuegos artificiales|12100,7770,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t51
+        #set GotoLocation|11998,7938,12002,7942,0|true
+        #action UnlockTask|abel_q3|t52
+    #task t52
+        #set ContextAction|lanzar fuegos artificiales|12000,7940,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t53
+        #set GotoLocation|12248,7898,12252,7902,0|true
+        #action UnlockTask|abel_q3|t54
+    #task t54
+        #set ContextAction|lanzar fuegos artificiales|12250,7900,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t55
+        #set GotoLocation|12258,8498,12262,8502,0|true
+        #action UnlockTask|abel_q3|t56
+    #task t56
+        #set ContextAction|lanzar fuegos artificiales|12260,8500,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t57
+        #set GotoLocation|11848,7898,11852,7902,0|true
+        #action UnlockTask|abel_q3|t58
+    #task t58
+        #set ContextAction|lanzar fuegos artificiales|11850,7900,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t59
+        #set GotoLocation|12098,8098,12102,8102,0|true
+        #action UnlockTask|abel_q3|t60
+    #task t60
+        #set ContextAction|lanzar fuegos artificiales|12100,8100,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t61
+        #set GotoLocation|12238,8338,12242,8342,0|true
+        #action UnlockTask|abel_q3|t62
+    #task t62
+        #set ContextAction|lanzar fuegos artificiales|12240,8340,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t63
+        #set GotoLocation|12048,7518,12052,7522,0|true
+        #action UnlockTask|abel_q3|t64
+    #task t64
+        #set ContextAction|lanzar fuegos artificiales|12050,7520,0|4|Abel.txt,quest3_rem3|q3_rem3_flag
+    #task t65|hidden
+        #set TaskCondition|abel_q3|t45,t46/t47,t48/t49,t50/t51,t52/t53,t54/t55,t56/t57,t58/t59,t60/t61,t62/t63,t64
+        #action SetFlag|abel_q3_flag|true 
+        #action UnlockTask|abel_q3|t66
+        #action CompleteTask|abel_q3|t22
+        #action CompleteTask|abel_q3|t44
+    #task t66
+        #set RaiseFlag|abel_q3_completed
+        #action SetFlag|q3_rem1_flag|false
+        #action SetFlag|q3_rem2_flag|false
+        #action SetFlag|q3_rem3_flag|false
+        #action SetFlag|abel_q3_completed|false
+        #action SetFlag|abel_q3_flag|false
+        #action CompleteQuest|abel_q3

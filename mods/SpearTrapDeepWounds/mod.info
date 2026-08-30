@@ -1,6 +1,0 @@
-name=Spear Traps Fall & Deep Wounds
-id=SpearTrapDeepWounds1
-description=Addon to Spear Traps mod. If player death from traps is turned off you will fall and get deep wounds on legs on trap tiles and falls while running and sprinting on ordinary graves. 
-poster=poster.png
-icon=Moodle_Icon_Bleeding.png
-require=SpearTraps1

@@ -1,0 +1,25 @@
+module NHM
+{	
+	imports
+	{
+		Base
+	}
+        /***Шина***/
+
+    	item RubberTire
+	{
+		Weight = 4,
+		Type = Normal,
+		DisplayName = RubberTire,
+		Icon = RubberTire,
+		WorldStaticModel = RubberTire,
+	}
+
+    
+
+}
+
+
+
+
+

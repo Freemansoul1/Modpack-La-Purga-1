@@ -1,4 +1,0 @@
-UI_PTBR = {
-    UI_optionscreen_binding_Crawl_Key = "Rastejar",
-	UI_optionscreen_binding_CrawlUnder_Key = "Rastejar Sob",
-}

@@ -1,3 +1,0 @@
---bandido droga coca
-#npc_create Contrabandista1|NPC_Contrabandista1.png|12157,10940,1
-#exit

@@ -1,5 +1,0 @@
-#is_flag vendedorcoches11padre,true
-    #npc_create Jackson Ford|NPC_jarrison10.png|12979,1128,0
-    #exit
-#npc_create Jackson Ford|NPC_jarrison10.png|12979,1128,0
-#exit

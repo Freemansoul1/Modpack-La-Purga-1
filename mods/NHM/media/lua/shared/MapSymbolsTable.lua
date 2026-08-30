@@ -1,0 +1,4 @@
+MapSymbolsTable = {
+    tableMarkers = {},
+    loaded = false
+}

@@ -1,0 +1,215 @@
+module NHM
+{
+	imports	{Base}
+
+    /**************************Wet*************************/
+
+	item CornBeerWet
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 200000,
+		ItemWhenDry	= NHM.CornBeer,
+		DisplayName	=	CornBeerWet,
+		Icon	=	CornBeer,
+		WorldStaticModel = BeerBottle,
+	}
+
+	item MushroomBeerWet
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 200000,
+		ItemWhenDry	= NHM.MushroomBeer,
+		DisplayName	=	MushroomBeerWet,
+		Icon	=	MushroomBeer,
+		WorldStaticModel = BeerBottle,
+	}
+
+	item StrawberryWineWet
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 200000,
+		ItemWhenDry	= NHM.StrawberryWine,
+		DisplayName	=	StrawberryWineWet,
+		Icon	=	StrawberryWine,
+		WorldStaticModel = WineRedGround,
+	}
+
+	item PotatoWhiskeyWet
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 200000,
+		ItemWhenDry	= NHM.PotatoWhiskey,
+		DisplayName	=	PotatoWhiskeyWet,
+		Icon	=	PotatoWhiskey,
+		WorldStaticModel = WhiskeyBottleGround,
+	}
+
+	item SamogonWet
+	{
+	    DisplayCategory = Food,
+		Weight	=	0.3,
+		Type	=	Normal,
+        Wet		= TRUE,
+		WetCooldown	= 200000,
+		ItemWhenDry	= NHM.Samogon,
+		DisplayName	=	SamogonWet,
+		Icon	=	Samogon,
+		WorldStaticModel = WhiskeyBottleGround,
+	}
+	
+    /**************************Ready*************************/
+	
+	item CornBeer
+	{
+		DisplayName = CornBeer,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = CornBeer,
+		EvolvedRecipe = Soup:9;Stew:9;Beer:9;Beer2:9,
+		FoodType = Beer,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		ReplaceOnUse = BeerEmpty,
+		HungerChange = -14,
+		ThirstChange = -15,
+		UnhappyChange = -16,
+		Calories = 170,
+		Carbohydrates = 39,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = BeerBottle,
+		WorldStaticModel = BeerBottle,
+		Tags = LowAlcohol,
+		EvolvedRecipeName = Beer,
+	}
+
+	item MushroomBeer
+	{
+		DisplayName = MushroomBeer,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = MushroomBeer,
+		EvolvedRecipe = Soup:9;Stew:9;Beer:9;Beer2:9,
+		FoodType = Beer,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		ReplaceOnUse = BeerEmpty,
+		HungerChange = -12,
+		ThirstChange = -15,
+		UnhappyChange = -16,
+		Calories = 170,
+		Carbohydrates = 39,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = BeerBottle,
+		WorldStaticModel = BeerBottle,
+		Tags = LowAlcohol,
+		EvolvedRecipeName = Beer,
+	}
+
+	item StrawberryWine
+	{
+		DisplayName = StrawberryWine,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = StrawberryWine,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;WineInGlass:4;PastaPot:4;PastaPan:4,
+		/*EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4,*/
+		FoodType = Wine,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WineEmpty2,
+		HungerChange = -15,
+		ThirstChange = -25,
+		UnhappyChange = -30,
+		Calories = 510,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+	}
+
+	item PotatoWhiskey
+	{
+		DisplayName = PotatoWhiskey,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = PotatoWhiskey,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4, /*;Soup:4;Stew:4,*/
+		FoodType = Liquor,
+		AlcoholPower = 2,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WhiskeyEmpty,
+		HungerChange = -25,
+		ThirstChange = -15,
+		UnhappyChange = -15,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Liquor,
+	}
+
+	item Samogon
+	{
+		DisplayName = SamogonBottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.7,
+		Icon = Samogon,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4, /*;Soup:4;Stew:4,*/
+		FoodType = Liquor,
+		AlcoholPower = 2,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		ReplaceOnUse = WhiskeyEmpty,
+		HungerChange = -20,
+		ThirstChange = 20,
+		UnhappyChange = -10,
+		Calories = 1500,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Liquor,
+	}	
+}

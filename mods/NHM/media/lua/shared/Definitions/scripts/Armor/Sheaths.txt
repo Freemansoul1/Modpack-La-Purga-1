@@ -1,0 +1,65 @@
+module Base
+{
+
+   item KnifeSheathLeg
+    {
+        DisplayCategory = Accessory,
+        Weight	=	0.1,
+        Type	=	Clothing,
+        DisplayName	=	Knife Sheath Leg,
+        Icon	=	KnifeSheath,
+        BodyLocation = KnifeSheathLeg,
+        ClothingItem = KnifeSheathLeg,
+        AttachmentsProvided = KnifeSheathLeg,   
+        WorldStaticModel = FannyPack_Ground,
+    }
+
+	item SwordSheath
+    {
+        DisplayCategory = Accessory,
+        ClothingItem = SwordSheath,
+        Weight	=	0.1,
+        Type	=	Clothing,
+        DisplayName	=	Sword Sheath,
+        Icon	=	SwordSheath,
+        BodyLocation = SwordSheath,
+        AttachmentsProvided = SwordSheath,   
+        WorldStaticModel = KatanaSheathGround,
+    }
+
+   item DaggerSheath
+    {
+        DisplayCategory = Accessory,
+        Weight	=	0.1,
+        Type	=	Clothing,
+        DisplayName	=	Dagger Sheath,
+        Icon	=	DaggerSheath,
+        BodyLocation = DaggerSheath,
+        ClothingItem = DaggerSheath,
+        AttachmentsProvided = DaggerSheath,   
+        WorldStaticModel = FannyPack_Ground,
+    }
+    
+    	item TacticalHolster
+    {
+        WeightReduction	=	86,
+        Weight	=	0.4,
+        Type	=	Container,
+        Capacity	=	5,
+        DisplayName	=	 Tactical Holster,
+        Icon        =  TacticalHolster,
+        BodyLocation = TacticalHolster,
+        OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = TacticalHolster,
+		ClothingItemExtra = TacticalHolster,
+        ClothingItemExtraOption = WearIt,
+		CanBeEquipped = TacticalHolster,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+		Tooltip = Tooltip_TacticalHolster,  
+		DisplayCategory = Accessory,
+        AttachmentsProvided = TacticalHolster,   
+    }
+}

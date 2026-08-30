@@ -1,4 +1,0 @@
-ContextMenu_DE = {
-    ContextMenu_VehicleRecycling_RemoveVehicle = "Fahrzeug zerlegen",
-    ContextMenu_VehicleRecycling_RemoveTrailer = "Anhänger zerlegen",
-}

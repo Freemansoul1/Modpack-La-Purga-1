@@ -1,0 +1,6 @@
+*asistente_q1_t1
+#name Encuentra una sala de estar con un telescopio
+*asistente_q1_t2
+#name Mira a través de un telescopio
+*asistente_q1_t3
+#name Volver al asistente

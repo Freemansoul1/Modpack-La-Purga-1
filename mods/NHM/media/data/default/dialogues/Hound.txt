@@ -1,0 +1,477 @@
+#is_flag hound_intro,true
+    #jump loop
+
+*intro
+#m Sabueso|NPCPortraits/HoundP.png|"Hola recién llegado. Encantado de darte la bienvenida al Oasis"
+#m Sabueso|NPCPortraits/HoundP.png|"Puedes llamarme Sabueso. Cómo posiblemente notarás, estoy a cargo de la cacería aquí."
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Sabueso|NPCPortraits/HoundP.png|"Nos volveremos a ver."
+#exit
+
+*intro_hello
+#m "Hola Sabueso. Estoy aquí... tratando de ponerme cómodo, ¿Qué me sugieres?"
+#m Sabueso|NPCPortraits/HoundP.png|"Viniste en el momento adecuado, te enseñaré mi oficio y te daré tareas, no te aburrirás."
+#fade_out black
+#set_flag hound_intro,true
+#fade_in
+#reveal Sabueso
+#exit
+
+*loop
+#m Sabueso|NPCPortraits/HoundP.png|"Hola de nuevo, ¿List@ para la caza?"
+
+#is_quest hound_q1|locked
+    #set_flag hound_q1_flag,false
+#is_quest hound_q1|completed
+    #set_flag hound_q1_flag,false
+#is_quest hound_q1|failed
+    #set_flag hound_q1_flag,false
+
+#is_quest hound_q2|locked
+    #set_flag hound_q2_flag,false
+#is_quest hound_q2|completed
+    #set_flag hound_q2_flag,false
+#is_quest hound_q2|failed
+    #set_flag hound_q2_flag,false
+
+#is_quest hound_q3|locked
+    #set_flag hound_q3_flag,false
+#is_quest hound_q3|completed
+    #set_flag hound_q3_flag,false
+#is_quest hound_q3|failed
+    #set_flag hound_q3_flag,false
+
+#is_quest hound_q4|locked
+    #set_flag hound_q4_flag,false
+#is_quest hound_q4|completed
+    #set_flag hound_q4_flag,false
+#is_quest hound_q4|failed
+    #set_flag hound_q4_flag,false
+
+*backtolist
+#choice
+    questsHOUND|Tareas de tutorial
+    questsHOUND2|Tareas regulares
+    quest_exit|Salir
+    questsHOUNDabandon|Reiniciar tareas
+
+*questsHOUND
+#choice
+    questHOUND1_1|Tarea "Ala acolchada"
+    questHOUND1_2|Tarea "Queso gratis"
+    backtolist|Volver a la lista general
+    questHOUND1_1_complete|Completar Tarea|hound_q1_flag
+    questHOUND1_2_complete|Completar Tarea|hound_q2_flag
+
+*questHOUND1_1
+#is_quest hound_q2|unlocked,uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"No puedo ponerte en riesgo, no más de una tarea a la vez."
+    #exit
+#is_quest hound_q1|locked
+    #m Sabueso|NPCPortraits/HoundP.png|"Querido estudiante, la caza es un antiguo gran oficio, y lo más importante, lo que la caza requiere de ti no es habilidad para disparar, sino atención y paciencia."
+    #m Sabueso|NPCPortraits/HoundP.png|"En primer lugar, ve al bosque y mantén los ojos abiertos [Modo de rebusca]. Esté atento a las huellas, todo lo que un animal o un pájaro puede dejar atrás..."
+    #m Sabueso|NPCPortraits/HoundP.png|"Al encontrar un rastro: localiza a la bestia con él. Bueno, más precisamente... trata de rastrearlo. Y date prisa, las huellas se disiparán, tendrás un par de minutos antes de que el rastro se vuelva demasiado difuso."
+    #m Sabueso|NPCPortraits/HoundP.png|"No uses armas de fuego, es demasiado poco práctico, asustarás a los seres vivos y atraerás a los muertos. Usa un arco o una ballesta en su lugar, suficiente para abrumar cualquier objetivo."
+    #m Sabueso|NPCPortraits/HoundP.png|"Comencemos poco a poco, tu primera presa son las aves, pollos salvajes, cuervos... tráeme 3 plumas de pájaro."
+    #quest_unlock hound_q1
+    #task_unlock hound_q1|t1 
+    #set_flag hound_q1_flag,true
+    #exit
+#is_quest hound_q1|uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"todavía no has realizado esta tarea."
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"Has tenido suficiente por ahora. Ven después de las 9 am."
+#exit
+
+*questHOUND1_1_complete
+#deliver hound_q1|t1
+    #m Sabueso|NPCPortraits/HoundP.png|"No está mal para un principiante, aprendes rápido. Estas plumas se utilizarán para hacer flechas para el Oasis."
+    #set_flag hound_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,1
+        #exit
+    #reward EXP,RepCrafts,1.5
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"No te apresures. Este oficio requiere paciencia."
+#exit
+
+*questHOUND1_2
+#is_quest hound_q1|unlocked,uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"No puedo ponerte en riesgo. No más de una tarea a la vez."
+    #exit
+#is_quest hound_q2|locked
+    #m Sabueso|NPCPortraits/HoundP.png|"Continuemos. Además de la Caza activa con la búsqueda de rastros, que espero que ya hayas dominado, también existe la llamada Caza pasiva."
+    #m Sabueso|NPCPortraits/HoundP.png|"La caza pasiva es el uso de trampas. Haz una trampa, ponla en algún lugar, agrega el cebo y olvidate de ella por un día o más. Luego vuelves a ella y tomas la presa."
+    #m Sabueso|NPCPortraits/HoundP.png|"Es importante conocer algunos secretos. Las bestias tienen buen oído, por lo que comenzarán a acercarse a tus trampas cuando estés a 75 o más metros de distancia. ¡Y también, los animales prefieren el cebo fresco!"
+    #m Sabueso|NPCPortraits/HoundP.png|"En total, puedes atrapar 5 animales: ardillas, conejos, ratones, ratas y pájaros. Las ardillas y las liebres se capturan de 19:00 a 05:00, el resto, en cualquier momento. Cada animal tiene su propia zona de caza. Los ratones, ratas y pájaros se capturan mejor en tierras de cultivo; conejos y ardillas, en las profundidades del bosque."
+    #m Sabueso|NPCPortraits/HoundP.png|"Si aún no lo ha adivinado, puede crear trampas para la Caza usted mismo. Y esta será tu primera Tarea - trata de hacer una ratonera y tráemela."
+    #quest_unlock hound_q2
+    #task_unlock hound_q2|t1 
+    #set_flag hound_q2_flag,true
+    #exit
+#is_quest hound_q2|uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"Todavía no has realizado esta tarea."
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"Has tenido suficiente por ahora. Ven después de las 9 am."
+#exit
+
+*questHOUND1_2_complete
+#deliver hound_q2|t1
+    #m Sabueso|NPCPortraits/HoundP.png|"Hazte un par de estas cosas y úsalas sabiamente. Y recuerda: para las trampas para ratones, el mejor cebo es el queso y la crema de cacahuete."
+    #set_flag hound_q2_completed,true
+    #reward Base.Money,1,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,4
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #reward EXP,RepCrafts,3
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"¿Cómo lo llevas?."
+#exit
+
+*reset_hound_q1
+#quest_reset hound_q1
+#task_reset houndcooldown|t1
+#exit
+
+*reset_hound_q2
+#quest_reset hound_q2
+#task_reset houndcooldown|t2
+#exit
+
+*quest_exit
+#exit
+
+*questsHOUNDabandon
+#m Sabueso|NPCPortraits/HoundP.png|"Lo entiendo, no te preocupes, no todo el mundo puede dominarlo la primera vez. Gana experiencia y vuelve, no me voy a ningún lado."
+#is_quest hound_q1|unlocked,uncompleted,unfailed
+    #quest_fail hound_q1
+    #set_flag hound_q1_flag,false
+    #task_unlock houndcooldown|t1
+#is_quest hound_q2|unlocked,uncompleted,unfailed
+    #quest_fail hound_q2
+    #set_flag hound_q2_flag,false
+    #task_unlock houndcooldown|t2
+#exit
+
+*questsHOUND2
+#choice
+    questHOUND1_3|Tarea "Enemigo del Oasis"
+    questHOUND1_4|Tarea "El viento de cambio"
+    backtolist|Volver a la lista general
+    questHOUND1_3_complete|Completar Tarea|hound_q3_flag
+    questHOUND1_4_complete|Completar Tarea|hound_q4_flag
+
+*questHOUND1_3
+#is_quest hound_q4|unlocked,uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"No puedo ponerte en riesgo. No más de una tarea a la vez."
+    #exit
+#is_quest hound_q3|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 3|true
+        #m Sabueso|NPCPortraits/HoundP.png|"Esta Tarea es bastante arriesgada, la gente del Oasis confía en mí, pero no puedo hacerlo solo, necesitamos tu ayuda."
+        #m Sabueso|NPCPortraits/HoundP.png|"Aquí cerca, en lo profundo de los bosques, se asentó una docena de osos pardos, no suelen pasar el rato aquí... y aún no he averiguado de dónde vinieron exactamente, pero no hay suficiente comida para ellos..."
+        #m Sabueso|NPCPortraits/HoundP.png|"Debido a la falta de comida, asaltan el Oasis. La última vez que uno de ellos intentó atacar a uno de nosotros, pero pudo defenderse, esto no puede seguir así."
+        #m Sabueso|NPCPortraits/HoundP.png|"No podemos vencer a una multitud de osos, pero, para nuestra gran suerte, les gusta vagar solos. Tendrás que ir al abrevadero que visitan con frecuencia y seguir las huellas para encontrar a un individuo solitario. No te preocupes, no estarán allí en este momento."
+        #m Sabueso|NPCPortraits/HoundP.png|"Cuando lo localices, asegúrate de que esté solo y mátalo, para matarlo necesitas una ballesta. El arma de fuego atraerá a otros y el arco no perforará su gruesa piel, así que no hay opciones. Ballesta y unas 5 flechas."
+        #m Sabueso|NPCPortraits/HoundP.png|"El oso en si es muy pesado, no necesito que lo arrastres hasta aquí, solo despieza su cadáver y tráeme su cabeza como prueba. Puedes cortarlo con cualquier cosa afilada, incluso con una piedra afilada, trae la cabeza de un oso pardo y obtendrás la recompensa."
+        #quest_unlock hound_q3
+        #task_unlock hound_q3|t1 
+        #task_unlock hound_q3|t18 
+        #exit
+    #m Sabueso|NPCPortraits/HoundP.png|"Serás asesinado, vuelve cuando tengas una reputación más alta. Todavía es demasiado pronto."
+    #exit    
+#is_quest hound_q3|uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"Todavía no has realizado esta tarea."
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"Has tenido suficiente por ahora. Ven mañana."
+#exit
+
+*quest3_trail
+#m "Sí... cazar un oso grizzly es probablemente una exageración... pero no hay vuelta atrás."
+#pop_up NPCPortraits/BearFP.png
+#m "Vamos a ver..."
+#m "Muchos rastros, y todos conducen en diferentes direcciones, ¿Dónde voy?"
+#choice
+    trail1|Seguir el rastro 1
+    trail2|Seguir el rastro 2
+    trail3|Seguir el rastro 3
+    trail4|Seguir el rastro 4
+    trail5|Seguir el rastro 5
+    quest_exit|Salir
+
+*trail1
+#m "Seguiré éste... El sendero se adentra en el bosque."
+#set_flag q3_trail_flag,true
+#task_unlock hound_q3|t3
+#exit
+
+*trail2
+#m "Seguiré éste... Conduce a la carretera."
+#set_flag q3_trail_flag,true
+#task_unlock hound_q3|t6
+#exit
+
+*trail3
+#m "Seguiré éste... Conduce hacia el Oasis."
+#set_flag q3_trail_flag,true
+#task_unlock hound_q3|t9
+#exit
+
+
+*trail4
+#m "Seguiré éste... Lleva a un gran camino."
+#set_flag q3_trail_flag,true
+#task_unlock hound_q3|t12
+#exit
+
+
+*trail5
+#m "¿Quizás este?, parece que conduce a alrededor del lago."
+#set_flag q3_trail_flag,true
+#task_unlock hound_q3|t15
+#exit
+
+*quest3_hunt1
+#has_item NHM.HandmadeCrossbow,1|NHM.LightArrow,5
+    #cutscene true
+    #m "¡Dónde estás! ¿Decidiste ir al segundo lago?, bueno, ahora no te irás..."
+    #remove_item NHM.LightArrow,5
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearDeath
+    #wait 4
+    #add_item NHM.QuestBearCarcass,1 
+    #m "Que sano... Queda por descuartizar el cadáver y llevarle la cabeza al Sabueso."
+    #set_flag q3_killbear_flag,true
+    #exit
+#m "Sabueso me avisó... Necesito una ballesta y 5 flechas."
+#exit
+    
+*quest3_hunt2
+#has_item NHM.HandmadeCrossbow,1|NHM.LightArrow,5
+    #cutscene true
+    #m "¡Bien! ¡Fue directo a la carretera!"
+    #remove_item NHM.LightArrow,5
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearDeath
+    #wait 4
+    #add_item NHM.QuestBearCarcass,1 
+    #m "Que sano... Queda por descuartizar el cadáver y llevarle la cabeza al Sabueso."
+    #set_flag q3_killbear_flag,true
+    #exit
+#m "Sabueso me avisó... Necesito una ballesta y 5 flechas."
+#exit
+
+*quest3_hunt3
+#has_item NHM.HandmadeCrossbow,1|NHM.LightArrow,5
+    #cutscene true
+    #m "¡Veo el objetivo!, ¡Rumbo al Oasis!"
+    #remove_item NHM.LightArrow,5
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearDeath
+    #wait 4
+    #add_item NHM.QuestBearCarcass,1 
+    #m "Que sano... Queda por descuartizar el cadáver y llevarle la cabeza al Sabueso."
+    #set_flag q3_killbear_flag,true
+    #exit
+#m "Sabueso me avisó... Necesito una ballesta y 5 flechas."
+#exit
+
+*quest3_hunt4
+#has_item NHM.HandmadeCrossbow,1|NHM.LightArrow,5
+    #cutscene true
+    #m "El rastro va a otra parte del bosque, no hay pérdida..."
+    #remove_item NHM.LightArrow,5
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearDeath
+    #wait 4
+    #add_item NHM.QuestBearCarcass,1 
+    #m "Que sano... Queda por descuartizar el cadáver y llevarle la cabeza al Sabueso."
+    #set_flag q3_killbear_flag,true
+    #exit
+#m "Sabueso me avisó... Necesito una ballesta y 5 flechas."
+#exit
+
+*quest3_hunt5
+#has_item NHM.HandmadeCrossbow,1|NHM.LightArrow,5
+    #cutscene true
+    #m "Pasó por alrededor del perímetro del lago... Es hora de atacar."
+    #remove_item NHM.LightArrow,5
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearShot
+    #wait 2
+    #sfx Quest_BearDeath
+    #wait 4
+    #add_item NHM.QuestBearCarcass,1 
+    #m "Que sano... Queda por descuartizar el cadáver y llevarle la cabeza al Sabueso"
+    #set_flag q3_killbear_flag,true
+    #exit
+#m "Sabueso me avisó... Necesito una ballesta y 5 flechas."
+#exit
+
+*questHOUND1_3_complete
+#has_item NHM.QuestBearHead,1
+    #m "¡Aquí tengo la cabeza grizzly para ti!"
+    #m Sabueso|NPCPortraits/HoundP.png|"Madre de Dios... como has..."
+    #m Sabueso|NPCPortraits/HoundP.png|"Sí-ah-ah... obviamente te subestimé. Gran trabajo."
+    #remove_item NHM.QuestBearHead,1
+    #set_flag hound_q3_completed,true
+    #reward Base.Money,4,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,3
+        #exit
+    #reward EXP,RepCrafts,4.5
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"Esperando la cabeza grizzly."
+#exit
+
+*questHOUND1_4
+#is_quest hound_q3|unlocked,uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"No puedo ponerte en riesgo. No más de una tarea a la vez."
+    #exit
+#is_quest hound_q4|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 6|true
+        #m Sabueso|NPCPortraits/HoundP.png|"La carne principal en el Oasis es el venado. He rastreado ciervos durante muchos años y no he tenido problemas para conseguirlo."
+        #m Sabueso|NPCPortraits/HoundP.png|"Pero ahora todo está cambiando. Los movimientos de los muertos, la invasión de los grizzlies y mucho más... Y los fuegos artificiales de Abel... Por todo ello, los ciervos cambian sus rutas migratorias."
+        #m Sabueso|NPCPortraits/HoundP.png|"Voy a buscarlos en sus hábitats típicos y no encuentro ninguno. Podemos estirarnos durante un tiempo con las presas de las trampas, pero no es suficiente."
+        #m Sabueso|NPCPortraits/HoundP.png|"Les daré uno de varios puntos propuestos para su nuevo itinerario. Debes ir al grano y buscar rastros de su presencia. Cualquier cosa: ramas rotas, huellas de pezuñas, pasto comido."
+        #m Sabueso|NPCPortraits/HoundP.png|"Si hay rastros, tómales una foto y vuelve a consultarme. Si no, simplemente vuelve."
+        #quest_unlock hound_q4
+        #roll cam1,20|cam2,40|cam3,60|cam4,80|cam5,100
+        #task_unlock hound_q4|t11 
+        #add_item NHM.QuestCamera
+        #exit
+    #m Sabueso|NPCPortraits/HoundP.png|"Esta Tarea la asigno sólo a los más confiables."
+    #exit
+#is_quest hound_q4|uncompleted,unfailed
+    #m Sabueso|NPCPortraits/HoundP.png|"Todavía no has realizado esta tarea."
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"Has tenido suficiente por ahora. Ven mañana."
+#exit
+
+*cam1
+#task_unlock hound_q4|t1
+#ret
+
+*cam2
+#task_unlock hound_q4|t3
+#ret
+
+*cam3
+#task_unlock hound_q4|t5
+#ret
+
+*cam4
+#task_unlock hound_q4|t7
+#ret
+
+*cam5
+#task_unlock hound_q4|t9
+#ret
+
+*quest4_hunt
+#has_item NHM.QuestCamera,1
+    #cutscene true
+    #m "Definitivamente hay huellas aquí... se comieron la hierba y se ve que hay un montón. A Sabueso le encantará."
+    #sfx Quest_Camera
+    #pop_up NPCPortraits/DeerFP.png
+    #set_flag q4_hunt_flag,true
+    #m "Es hora de volver."
+    #exit
+#m "Sin una cámara, no tengo nada que hacer aquí."
+#exit
+
+*quest4_huntfail
+#has_item NHM.QuestCamera,1
+    #cutscene true
+    #m "Vacío. Hay algunos rastros de actividad, pero más bien se basa en pequeños animales. Como mapaches o ardillas..."
+    #sfx Quest_Camera
+    #set_flag q4_huntfail_flag,true
+    #m "Es hora de volver."
+    #exit
+#m "Sin una cámara, no tengo nada que hacer aquí."
+#exit
+
+*questHOUND1_4_complete
+#has_item NHM.QuestCamera,1
+    #is_flag q4_hunt_flag,true
+        #remove_item NHM.QuestCamera,1
+        #m "¡Buenas noticias! Encontré huellas de venado!"
+        #m Sabueso|NPCPortraits/HoundP.png|"Vamos a ver..."
+        #m Sabueso|NPCPortraits/HoundP.png|"Hmm... Los cálculos no defraudaron. Realmente pasan por aquí..."
+        #m Sabueso|NPCPortraits/HoundP.png|"Gracias por la valiosa información."
+        #set_flag hound_q4_completed,true
+        #reward Base.Money,3,rare
+        #is_lua getPlayer():HasTrait("Goodmanners")|true
+            #reward EXP,RepCrafts,8
+            #exit
+        #is_lua getPlayer():HasTrait("Badmanners")|true
+            #reward EXP,RepCrafts,4
+            #exit
+        #reward EXP,RepCrafts,6
+        #exit
+    #remove_item NHM.QuestCamera,1
+    #m "Malas noticias. No hay venados en este punto..."
+    #m Sabueso|NPCPortraits/HoundP.png|"Veamos..."
+    #m Sabueso|NPCPortraits/HoundP.png|"Sí, estas claramente no son huellas de ciervos. ¡Pero cuántas huellas de conejos hay aquí!"
+    #m Sabueso|NPCPortraits/HoundP.png|"Este no es un hallazgo menos valioso pero valioso aùn así. Pondré trampas allí. ¡Gracias!."
+    #set_flag hound_q4_completed,true
+    #reward Base.Money,3,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,8
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,4
+        #exit
+    #reward EXP,RepCrafts,6
+    #exit
+#m Sabueso|NPCPortraits/HoundP.png|"No puedes tomar esta tarea sin una cámara."
+#exit
+
+*reset_hound_q3
+    #set_flag q3_water_flag,false
+    #set_flag hound_q3_flag,false
+    #task_complete hound_q3|t0
+#exit
+
+*reset_hound_q4
+    #set_flag q4_hunt_flag,false
+    #set_flag q4_huntfail_flag,false
+    #set_flag hound_q4_flag,false
+    #task_complete hound_q4|t0
+#exit

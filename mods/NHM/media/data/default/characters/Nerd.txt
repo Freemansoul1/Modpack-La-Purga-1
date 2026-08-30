@@ -1,0 +1,7 @@
+#name Nerd|Nerd
+
+#desc Nombre: Empollón
+#desc_append Edad: Desconocida
+#desc_append Chico sorprendentemente joven para su bagaje de conocimientos. Enseña Química en el Oasis.
+#desc_append Los lugareños suelen llamarlo "asfixiante". los entiendo, no es agresivo, pero la comunicación prolongada con él es agotadora..
+#exit

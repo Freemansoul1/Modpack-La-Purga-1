@@ -1,8 +1,0 @@
-ContextMenu_ES = {
-
-    ContextMenu_ATMVendoOroExchange = "Vendo Oro",
-    ContextMenu_ATMVendoOroExchange1 = "1 lingote de Plata = 1 lingote de Oro",
-    ContextMenu_ATMVendoOroExchange2 = "5 lingotes de Plata = 5 lingotes de Oro",
-    ContextMenu_ATMTrader = "ATM Vendo Oro",
-    
-}

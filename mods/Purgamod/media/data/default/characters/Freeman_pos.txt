@@ -1,2 +1,0 @@
-#npc_create Freeman|NPC_Freeman.png|11541,7602,0
-#exit

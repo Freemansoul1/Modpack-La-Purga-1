@@ -1,0 +1,40 @@
+module NHM
+{
+    imports
+{
+    Base
+}
+
+    item TrashBomb
+	{
+	    DisplayCategory = Explosives,
+		MaxRange	=	20,
+		Type	=	Weapon,
+		MinimumSwingTime	=	0.5,
+		SwingAnim	=	Throw,
+		WeaponSprite = HandmadeBomb,
+		UseSelf	=	TRUE,
+		DisplayName	=	Trash Bomb,
+		SwingTime	=	0.5,
+		SwingAmountBeforeImpact	=	0,
+		PhysicsObject	=	Football,
+		MinDamage	=	0,
+		Weight	=	0.8,
+		MaxDamage	=	0,
+		MaxHitCount	=	0,
+		Icon	=	HandmadeBomb,
+                TriggerExplosionTimer    =	50,
+		ExplosionPower  =   90,
+		ExplosionRange  =   7,
+		ExtraDamage     =   100,
+                FirePower	=   97,
+                FireRange	=   6,
+                SmokeRange     	=   3,
+		ExplosionSound = PipeBombExplode,
+		SwingSound = PipeBombThrow,
+		Tooltip = Tooltip_Trap,
+		WorldStaticModel = PipeBomb,
+                AttachmentType = Knife,
+	}
+	
+}

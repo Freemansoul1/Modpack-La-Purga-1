@@ -1,4 +1,0 @@
-Recipe_PL = {
-Recipe_Create_BobbyPin = "Zrób wytrych",
-Recipe_Create_BobbyPin2 = "Zrób wytrych",
-}

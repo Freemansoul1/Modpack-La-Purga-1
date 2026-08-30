@@ -1,2 +1,0 @@
-#npc_create Miguel|NPC_Miguel.png|11609,7651,0
-#exit

@@ -1,3 +1,0 @@
-ContextMenu_PTBR = {
-	ContextMenu_Take_Pill = "Tomar comprimido",
-}

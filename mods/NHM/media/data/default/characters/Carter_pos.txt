@@ -1,0 +1,2 @@
+#npc_create Carter|NPC/Carter.png|12168,10946,1
+#exit

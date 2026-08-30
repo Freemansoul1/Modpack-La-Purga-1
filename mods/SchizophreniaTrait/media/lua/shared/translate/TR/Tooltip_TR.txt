@@ -1,3 +1,0 @@
-Tooltip_TR = {
-    Tooltip_Chlorpromazine = "Öncelikle şizofreni gibi psikotik bozuklukları tedavi etmek için kullanılan bir antipsikotik ilaç, 24 saatte bir alın. önerilen miktarı geçmeyin."
-}

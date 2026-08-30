@@ -1,0 +1,65 @@
+#is_flag trader_intro,true
+    #jump loop
+
+*intro
+#m Торгаш|NPCPortraits/TraderP.png|"Подходи, обменивай. У Торгаша есть деньги, пока у клиента есть товар."
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Торгаш|NPCPortraits/TraderP.png|"Еще увидимся!"
+#exit
+
+*intro_hello
+#m "Привет. Что обмениваешь?"
+#m Торгаш|NPCPortraits/TraderP.png|"О-хо-хо. Торгаш знал, что ты не сможешь пройти мимо!"
+#m Торгаш|NPCPortraits/TraderP.png|"Все очень просто. 10 кусочков золота или серебра покупаю на 1 доллар. Слиток золота или серебра покупаю на 10 долларов."
+#m "Понятно. А зачем тебе серебро и золото...в этом... "новом" мире?"
+#m Торгаш|NPCPortraits/TraderP.png|"Чрезмерно любопытный новичок. Торгаш здесь, чтобы обменивать, а не отвечать на вопросы! Меняй или не занимай очередь!"
+#fade_out black
+#set_flag trader_intro,true
+#fade_in
+#reveal Trader
+#exit
+
+*loop
+#m Торгаш|NPCPortraits/TraderP.png|"Торгаш здесь, чтобы скупить все золото и серебро округа Нокс!"
+
+*backtolist
+#choice
+    buyNugget|Обменять кусочки
+    buyIngot|Обменять слитки
+    quest_exit|Уйти
+
+*buyNugget
+#has_item NHM.NuggetGold,10
+    #remove_item NHM.NuggetGold,10
+    #add_item Base.Money,1
+    #m Торгаш|NPCPortraits/TraderP.png|"Торгаш рад полезному обмену!"
+    #exit
+#has_item NHM.NuggetSilver,10
+    #remove_item NHM.NuggetSilver,10
+    #add_item Base.Money,1
+    #m Торгаш|NPCPortraits/TraderP.png|"Торгаш рад полезному обмену!"
+    #exit
+#m Торгаш|NPCPortraits/TraderP.png|"Торгаша злит, когда его время тратят впустую. Убирайся!"
+#exit
+
+*buyIngot
+#has_item NHM.IngotGold,1
+    #remove_item NHM.IngotGold,1
+    #add_item Base.Money,10
+    #m Торгаш|NPCPortraits/TraderP.png|"С вами приятно иметь дело! А с Торгашом еще приятнее!"
+    #exit
+#has_item NHM.IngotSilver,1
+    #remove_item NHM.IngotSilver,1
+    #add_item Base.Money,10
+    #m Торгаш|NPCPortraits/TraderP.png|"С вами приятно иметь дело! А с Торгашом еще приятнее!"
+    #exit
+#m Торгаш|NPCPortraits/TraderP.png|"Торгаша злит, когда его время тратят впустую. Убирайся!"
+#exit
+
+*quest_exit
+#exit

@@ -1,5 +1,0 @@
-name=Trombo's Nutrition Helper (req. Simple UI Library)
-poster=nutritionHelper.png
-description= View your nutrition levels. Levels are color-coded to indicate if they are too high or too low.
-require=UIAPI1
-id=TrombosNutritionHelper1

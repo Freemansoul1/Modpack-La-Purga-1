@@ -1,8 +1,0 @@
-Sandbox_ES = {
-	Sandbox_PurgaRaids = "Configuracion Purga",
-	
-	Sandbox_RaidsPurga_Activar = "Activar Purga",
-	
-	Sandbox_RaidsPurga_Countdown = "Tiempo de Respawn",
-	Sandbox_RaidsPurga_Countdown_tooltip = "Configurado en segundos",
-}

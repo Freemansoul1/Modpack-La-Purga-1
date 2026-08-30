@@ -1,0 +1,7 @@
+#name Kioshi|Kioshi
+
+#desc Nombre: Kioshi
+#desc_append Edad: Desconocida
+#desc_append Líder del Oasis. Hombre asiático alto. Posiblemente un ingeniero en una "vida pasada", enseñando el oficio a los sobrevivientes en el Oasis.
+#desc_append Sabio y paciente. Muy lacónico.
+#exit

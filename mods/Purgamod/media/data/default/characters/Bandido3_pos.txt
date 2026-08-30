@@ -1,4 +1,0 @@
---Bandido droga hachis
-
-#npc_create Bandido3|NPC_Bandido3.png|14555,4964,0
-#exit

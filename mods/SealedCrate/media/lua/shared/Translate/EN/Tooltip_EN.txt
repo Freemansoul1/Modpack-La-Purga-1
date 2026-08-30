@@ -1,6 +1,0 @@
-Tooltip_EN = {
-    Tooltip_QNW_SC_MissingNail              =   "Missing Nail",
-    Tooltip_QNW_SC_MissingScrew             =   "Missing Screw",
-    Tooltip_QNW_SC_MissingHammerOrCrowbar   =   "Missing Hammer Or Crowbar",
-    Tooltip_QNW_SC_NotOpenSpace             =   "Not Open Space",
-}

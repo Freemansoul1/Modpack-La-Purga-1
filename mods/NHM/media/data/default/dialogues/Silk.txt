@@ -1,0 +1,343 @@
+#is_flag silk_intro,true
+    #jump loop
+
+*intro
+#m Silk|NPCPortraits/SilkP.png|"¡Oh hola!, Bienvenido a Oasis!"
+#m Silk|NPCPortraits/SilkP.png|"Soy Silk, experto en Peletería y Costura, ¡También entreno a novatos!"
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Silk|NPCPortraits/SilkP.png|"Bueno... ¡Nos vemos la próxima!"
+#exit
+
+*intro_hello
+#m "Hola Silk, soy nuevo aqui, que me recomiendas?"
+#m Silk|NPCPortraits/SilkP.png|"Tengo un par de tareas aquí para ti, ¡En el proceso, prometo enseñar mi oficio!, si estás interesado - !ven!"
+#fade_out black
+#set_flag silk_intro,true
+#fade_in
+#reveal Silk
+#exit
+
+*loop
+#m Silk|NPCPortraits/SilkP.png|"Hey muchach@, ¡estoy contento de verte!"
+
+#is_quest silk_q1|locked
+    #set_flag silk_q1_flag,false
+#is_quest silk_q1|completed
+    #set_flag silk_q1_flag,false
+#is_quest silk_q1|failed
+    #set_flag silk_q1_flag,false
+
+#is_quest silk_q2|locked
+    #set_flag silk_q2_flag,false
+#is_quest silk_q2|completed
+    #set_flag silk_q2_flag,false
+#is_quest silk_q2|failed
+    #set_flag silk_q2_flag,false
+
+#is_quest silk_q3|locked
+    #set_flag silk_q3_flag,false
+#is_quest silk_q3|completed
+    #set_flag silk_q3_flag,false
+#is_quest silk_q3|failed
+    #set_flag silk_q3_flag,false
+
+#is_quest silk_q4|locked
+    #set_flag silk_q4_flag,false
+#is_quest silk_q4|completed
+    #set_flag silk_q4_flag,false
+#is_quest silk_q4|failed
+    #set_flag silk_q4_flag,false
+
+*backtolist
+#choice
+    questsSILK|Tareas de tutoría
+    questsSILK2|Tareas regulares
+    quest_exit|Salir
+    questsSILKabandon|Reiniciar tareas
+
+*questsSILK
+#choice
+    questSILK1_1|Misión "Kotomka"
+    questSILK1_2|Misión "Piel delgada"
+    backtolist|Volver a la lista general
+    questSILK1_1_complete|Entrega la misión|silk_q1_flag
+    questSILK1_2_complete|Entrega la misión|silk_q2_flag
+
+*questSILK1_1
+#is_quest silk_q2|unlocked,uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"¿Dónde vas?, ¡Tomemos turnos!, ¡Una tarea a la vez!"
+    #exit
+#is_quest silk_q1|locked
+    #m Silk|NPCPortraits/SilkP.png|"Bueno... ¡comencemos a entrenar! En general, podemos decir que Costura y Peletería se complementan. Ambas habilidades te "visten"."
+    #m Silk|NPCPortraits/SilkP.png|"La costura es responsable de la calidez, la peletería tiene más que ver con la practicidad. La costura le permite crear ropa abrigada, un impermeable por ejemplo, así como utilidades como cuerdas. El principal recurso son los trapos desgarrados."
+    #m Silk|NPCPortraits/SilkP.png|"Casi cualquier atuendo servirá. Por cierto, así es como se sube la habilidad. También puedes remendar tu ropa para una mayor protección contra rasguños y mordeduras... y eso también es genial para subir de nivel"
+    #m Silk|NPCPortraits/SilkP.png|"Comencemos poco a poco. Tu primera tarea es una mochila. La bolsa más simple y asequible. Hecha de cuerda de trapo, cuando lo hagas, vuelve a mí."
+    #quest_unlock silk_q1
+    #task_unlock silk_q1|t1 
+    #set_flag silk_q1_flag,true
+    #exit
+#is_quest silk_q1|uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"Ya estás haciendo esta tarea.!"
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"¡Eso es todo por hoy!, Ven después de las 9 a.m."
+#exit
+
+*questSILK1_1_complete
+#deliver silk_q1|t1
+    #m Silk|NPCPortraits/SilkP.png|"¡Vaya, tienes un gran futuro en mi oficio!, cosido, no muy limpio, pero bien hecho.!"
+    #set_flag silk_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,1
+        #exit
+    #reward EXP,RepCrafts,1.5
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"Vuelve cuando tengas lo que necesitas."
+#exit
+
+*questSILK1_2
+#is_quest silk_q1|unlocked,uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"¿Dónde vas?, ¡Tomemos turnos!, Una tarea a la vez!"
+    #exit
+#is_quest silk_q2|locked
+    #m Silk|NPCPortraits/SilkP.png|"¡Sigamos con nuestra formación! Peletería es un poco más difícil que la costura. Y los recursos para ello se obtienen a través de la Cacería, el Sabueso Sangriento te lo contará."
+    #m Silk|NPCPortraits/SilkP.png|"Lo principal que debe saber: la piel húmeda debe secarse antes de usar. Se seca durante mucho tiempo, el proceso se puede acelerar poniendo la piel en el fuego o en el horno.."
+    #m Silk|NPCPortraits/SilkP.png|"Pero la espera merece el resultado: podrás crear bolsos, mochilas, así como cinturones, fundas y guantes. Se sube de nivel curtiendo cuero y creando pequeños artículos de cuero."
+    #m Silk|NPCPortraits/SilkP.png|"Entonces, a la tarea. Su objetivo es una piel fina y seca, solo 1 pieza. La piel que obtienes al sacrificar animales, pero para usarla, primero debes empaparla en tanino. Una vez que la piel esté seca, tráemela."
+    #quest_unlock silk_q2
+    #task_unlock silk_q2|t1 
+    #set_flag silk_q2_flag,true
+    #exit
+#is_quest silk_q2|uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"¿Ya tienes piel?"
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"¡Eso es todo por hoy!, Ven después de las 9 a.m."
+#exit
+
+*questSILK1_2_complete
+#deliver silk_q2|t1
+    #m Silk|NPCPortraits/SilkP.png|"¡Guau... gran trabajo! "
+    #set_flag silk_q2_completed,true
+    #reward Base.Money,3,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,4
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,2
+        #exit
+    #reward EXP,RepCrafts,3
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"¡No lo olvides, la piel se seca durante mucho tiempo! Lo principal es la paciencia."
+#exit
+
+*reset_silk_q1
+#quest_reset silk_q1
+#task_reset silkcooldown|t1
+#exit
+
+*reset_silk_q2
+#quest_reset silk_q2
+#task_reset silkcooldown|t2
+#exit
+
+*quest_exit
+#exit
+
+*questsSILKabandon
+#m Silk|NPCPortraits/SilkP.png|"Bueno... ¡lo siento mucho!, no te preocupes, un poco de práctica y estarás bien., ven cuando seas maduro."
+#is_quest silk_q1|unlocked,uncompleted,unfailed
+    #quest_fail silk_q1
+    #set_flag silk_q1_flag,false
+    #task_unlock silkcooldown|t1 
+#is_quest silk_q2|unlocked,uncompleted,unfailed
+    #quest_fail silk_q2
+    #set_flag silk_q2_flag,false
+    #task_unlock silkcooldown|t2 
+#exit
+
+*questsSILK2
+#choice
+    questSILK1_3|Misión "Oficial"
+    questSILK1_4|Misión "Índigo"
+    backtolist|Volver a la lista general
+    questSILK1_3_complete|Entrega la misión|silk_q3_flag
+    questSILK1_4_complete|Entrega la misión|silk_q4_flag
+
+*questSILK1_3
+#is_quest silk_q4|unlocked,uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"Oye, ¿de qué vas?, ¡No te apresures!, ¡Solo una tarea a la vez!"
+    #exit
+#is_quest silk_q3|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 3|true
+        #m Silk|NPCPortraits/SilkP.png|"Hola, cariño. Así que necesitas un trabajo, cierto?"
+        #m Silk|NPCPortraits/SilkP.png|"Este es un trozo de piel real de un animal salvaje, no diré cuál... y no importa. Es necesario preparar esta piel para el secado, lo haría yo mismo, pero no tengo tiempo ...."
+        #m Silk|NPCPortraits/SilkP.png|"Primero necesitas un rodillo, pásalo un par de veces sobre esta piel, elimine todas las irregularidades, mejor en el Banco de Trabajo de Cocina, para hacerlo más cómodo.."
+        #m Silk|NPCPortraits/SilkP.png|"Después de eso, deberá remojar la piel en agua muy salada. Luego espere hasta que se seque, corte todas las piezas adicionales y cosa el agujero."
+        #m Silk|NPCPortraits/SilkP.png|"Tráeme la piel terminada y serás recompensado. Date prisa, querid@."
+        #add_item NHM.QuestStartSkin,1
+        #quest_unlock silk_q3
+        #task_unlock silk_q3|t1 
+        #exit
+    #m Silk|NPCPortraits/SilkP.png|"Aunque me gustas, no puedo darte esta tarea. ¡Por ahora!"
+    #exit
+#is_quest silk_q3|uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"¡No es fácil engañarme! ¡Ya estás en esta misión!"
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"No querido. Ven mañana."
+#exit
+
+
+*questSILK1_3_complete
+#has_item NHM.QuestFinalSkin,1
+    #remove_item NHM.QuestFinalSkin,1
+    #m "Eso es todo, aquí está lo que necesitas, ¿Qué opinas?"
+    #m Silk|NPCPortraits/SilkP.png|"Vaya... ¡Espero que esta misión te haya ayudado a subir de nivel en Peletería!, vuelve de nuevo."
+    #set_flag silk_q3_completed,true
+    #reward Base.Money,5,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,3
+        #exit
+    #reward EXP,RepCrafts,4.5
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"Cariño, ¿dónde están mis cosas?"
+#exit
+
+*questSILK1_4
+#is_quest silk_q3|unlocked,uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"Oye, ¿de qué vas?, ¡No te apresures!, ¡Solo una tarea a la vez!"
+    #exit
+#is_quest silk_q4|locked
+    #is_lua getPlayer():getPerkLevel(Perks.RepCrafts) >= 6|true
+        #has_item Radio.WalkieTalkie2,1
+            #m Silk|NPCPortraits/SilkP.png|"veamos si puedes impresionarme."
+            #m Silk|NPCPortraits/SilkP.png|"Necesito tinte, pero no uno de los que se usan en el distrito. Mezclar flores molidas es, por supuesto, una solución muy práctica, pero a mí no me va a funcionar..."
+            #m Silk|NPCPortraits/SilkP.png|"Hay un lugar, te lo marcaré en el mapa, tengo un alijo allí... Allí, en teoría, deberían haber quedado provisiones. Consíguelas y tráemelas."
+            #m Silk|NPCPortraits/SilkP.png|"Cuando llegue al edificio, contácteme."
+            #quest_unlock silk_q4
+            #task_unlock silk_q4|t1 
+            #exit
+        #m Silk|NPCPortraits/SilkP.png|"¡Necesitas una radio!, amarilla, Valu-Teh, ¡No te dejaré ir sin ella!"
+        #exit
+    #m Silk|NPCPortraits/SilkP.png|"Lo lamento, pero es demasiado pronto para que asuman tales tareas."
+    #exit
+#is_quest silk_q4|uncompleted,unfailed
+    #m Silk|NPCPortraits/SilkP.png|"¡No es fácil engañarme!, ¡Ya estás en esta misión!"
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"No querido. Ven mañana."
+#exit
+
+*quest4_school
+#has_item Radio.WalkieTalkie2,1
+    #m "Silk, ¿me escuchas?, estoy en el lugar, ¿dónde debo ir?"
+    #m Silk|NPCPortraits/SilkP.png|"No esperaba que te pusieras en contacto."
+    #roll room1,33|room2,66|room3,100
+    #exit
+#m "Necesito un walkie-talkie para comunicarme con Silk."
+#exit
+
+*room1
+#m Silk|NPCPortraits/SilkP.png|"Necesitas ir al primer trastero a la izquierda. En él, busca en el contenedor de metal de la esquina, busca <Extracto de índigo>."
+#set_flag q4_school_flag,true
+#task_unlock silk_q4|t3
+#exit
+
+*room2
+#m Silk|NPCPortraits/SilkP.png|"Necesitas ir al segundo lavadero a la izquierda. En él, revisa el contenedor de metal, busca <Extracto de índigo>."
+#set_flag q4_school_flag,true
+#task_unlock silk_q4|t5
+#exit
+
+*room3
+#m Silk|NPCPortraits/SilkP.png|"Necesita ir al lavadero a la derecha. En él, revisa el gran armario de hierro, busca <Extracto de índigo>."
+#set_flag q4_school_flag,true
+#task_unlock silk_q4|t7
+#exit
+
+*q4_call_silk
+#m "Silk, ¿estás?"
+#m Silk|NPCPortraits/SilkP.png|"¡Ajá!, Satisfaceme."
+#m "Desafortunadamente, nada. Sin extracto..."
+#m Silk|NPCPortraits/SilkP.png|"Mierda.. llegaron a mis suministros."
+#m "¿Quiénes son?"
+#m Silk|NPCPortraits/SilkP.png|"Bueno... escucha, tendrás que crear este tinte tú mismo."
+#m Silk|NPCPortraits/SilkP.png|"Primero, sube al segundo piso de la escuela. Encuentra un pequeño armario allí, encontrarás una herramienta en él, un extractor. No creo que lo reconozcas."
+#m Silk|NPCPortraits/SilkP.png|"Con él, puedes convertir el extracto de índigo en tinte índigo. El extracto se puede encontrar en las ciudades, era bastante popular antes del Incidente, y muchos lo usaban con fines medicinales."
+#m Silk|NPCPortraits/SilkP.png|"En resumen, tome el Extractor de la despensa en la escuela. Consigue el extracto en algún lugar de la ciudad, usa el extractor para hacer mi tinte a partir del extracto,¿Todo claro?"
+#m "Sí... Corto y cambio."
+#exit
+
+
+*q4_call_silk2
+#m "Bueno... aquí está el Extractor, queda por conseguir el extracto en si."
+#has_item Radio.WalkieTalkie2,1
+    #is_flag script1,true|script2,false
+        #m Desconocido|"Hola, ¿puedes oírme?"
+        #m "Esa voz otra vez..."
+        #m "Escucho. ¿Qué es esta vez?"
+        #m Desconocido|"El destino le susurra al guerrero que se avecina una tormenta."
+        #m Desconocido|"Y el guerrero susurra de vuelta:"
+        #m Desconocido|"soy la tormenta"
+        #m "Eh... ¿Y eso qué significa?"
+        #m Desconocido|"solo recuérdalo."
+        #m Desconocido|"¿Qué opinas de Silk?"
+        #m "Ella es linda, ¿por qué?"
+        #m Desconocido|"Ella es una asesina, pero no tienes nada de qué preocuparte, el Demiurgo puede controlarla."
+        #m "Escuche, esta es su segunda acusación de alto perfil, ¿Por qué te creería?, ¡Ni siquiera sé quién eres!"
+        #m Desconocido|"Lo sabrás pronto, no apresures las cosas. Tú y yo tenemos una tarea importante, cuento contigo."
+        #m "Cuentas conmigo?, ¿De qué estás hablando?"
+        #m Desconocido|"Dime por favor, ¿como llegaste aquí al condado de Knox?, Demiurgo les cuenta a todos historias de que perdieron la memoria, pero...."
+        #m "Es verdad, no recuerdo mucho.."
+        #m Desconocido|"... pero y si te dijera... que no perdiste la memoria?, Tú... lo has borrado."
+        #m "En el sm... ¿cómo fue borrada? ¿OMS?"
+        #m Desconocido|"¿Sabes por qué el Sabueso sangriento se llama así?, probablemente ya lo sepas o escuchaste un montón de tonterías como "es un ex-detective que busca gente" o "es tan bueno en la Caza que lo comparan con un perro rastreador", pero eso son tonterías."
+        #m Desconocido|"Obviamente, el apodo Cazador sería más adecuado para él, entonces, ¿por qué no se llama Cazador?"
+        #m "¿Qué tonterías hablas?,, nunca se suele saber el por qué de las cosas, tal vez le gusta más la palabra "Snoop"."
+        #m Desconocido|"Ay... no, no, no. Usted no entiende. No se llama Cazador por una sola razón."
+        #m Desconocido|"El cazador soy yo."
+        #m "Espera... entiendo... tú mismo te reíste de usar apodos en nuestro primer diálogo, y ahora... te presentas a mí... ¿como un apodo?"
+        #m Cazador|"Ja, muchach@. Se trata de objetivos, oculto mi nombre por seguridad, pero los muchachos de Oasis y Hospital... pronto lo descubrirán."
+        #m Cazador|"Esté atento y siga haciendo sus diligencias. Me pondré en contacto con usted pronto".
+        #set_flag script2,true
+        #exit
+#m "Silk ya no contesta por la radio, iré a mirar."
+#exit
+
+*questSILK1_4_complete
+#has_item NHM.QuestIndigoDye,1
+    #remove_item NHM.QuestIndigoDye,1
+    #m "Aquí está el tinte índigo, ¿Qué opinas?"
+    #m Silk|NPCPortraits/SilkP.png|"Sabes, cariño, hasta me sorprende que lo hayas hecho, ¿Cuánto tiempo buscaste el extracto?"
+    #m Silk|NPCPortraits/SilkP.png|"Está bien, no respondas. Gracias!"
+    #set_flag silk_q4_completed,true
+    #reward Base.Money,4,rare
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepCrafts,10
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepCrafts,5
+        #exit
+    #reward EXP,RepCrafts,7.5
+    #exit
+#m Silk|NPCPortraits/SilkP.png|"¿Y dónde está mi tinte?"
+#exit
+
+*reset_silk_q3
+    #set_flag silk_q3_flag,false
+    #task_complete silk_q3|t0
+#exit
+
+*reset_silk_q4
+    #set_flag silk_q4_flag,false
+    #set_flag q4_school_flag,false
+    #task_complete silk_q4|t0
+#exit

@@ -1,9 +1,0 @@
-VERSION = 1,
-
-option SpearTraps.SpearTrapsKillPlayer
-{
-	type = boolean,
-	default = false,
-	page = SadisticAIDirector,
-	translation = SpearTraps_SpearTrapsKillPlayer,
-}

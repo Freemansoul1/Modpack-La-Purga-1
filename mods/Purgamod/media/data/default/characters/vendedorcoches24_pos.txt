@@ -1,5 +1,0 @@
-#is_flag vendedorcoches24,true
-    #npc_create Ferrison Ford|NPC_jarrison7.png|8938,7094,0
-    #exit
-#npc_create Ferrison Ford|NPC_jarrison7.png|8938,7094,0
-#exit

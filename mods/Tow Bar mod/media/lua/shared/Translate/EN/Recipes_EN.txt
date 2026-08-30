@@ -1,5 +1,0 @@
-Recipe_EN = {
-
-Recipe_make_TowBar 					= "Make a tow bar",
-
-}

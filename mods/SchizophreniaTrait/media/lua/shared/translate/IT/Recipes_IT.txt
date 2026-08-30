@@ -1,3 +1,0 @@
-Recipes_IT = {
-    Recipe_Pop_pill = "Togli una pillola",
-}

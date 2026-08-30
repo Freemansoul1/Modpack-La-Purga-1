@@ -1,3 +1,0 @@
-*vendedorcoches24
-#name venta de vehículos
-#desc ...

@@ -1,2 +1,0 @@
-*vendedorcoches20_t0
-#name vendedor

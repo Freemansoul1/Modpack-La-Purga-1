@@ -1,6 +1,0 @@
-IGUI_FR = {
-	IGUI_perks_Lockpicking = "Crochetage",
-	IGUI_perks_Miscellaneous = "Divers",
-	
-	IGUI_zreIsReinforced = "Je ne peux pas faire ceci, la porte est renforcée !",
-}

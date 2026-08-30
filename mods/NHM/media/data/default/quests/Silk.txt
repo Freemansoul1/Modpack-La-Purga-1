@@ -1,0 +1,100 @@
+#quest silkcooldown|hidden|unlocked
+    #task t1
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Silk.txt,reset_silk_q1
+    #task t2
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Silk.txt,reset_silk_q2
+
+#quest silk_q1
+    #task t1
+        #set Deliver|NHM.Kotomka,1
+        #action UnlockTask|silk_q1|t2
+    #task t2
+        #set RaiseFlag|silk_q1_completed
+        #action SetFlag|silk_q1_completed|false
+        #action SetFlag|silk_q1_flag|false
+        #action UnlockTask|silkcooldown|t1
+        #action CompleteQuest|silk_q1
+
+#quest silk_q2
+    #task t1
+        #set Deliver|NHM.ReadyThinLeather,1
+        #action UnlockTask|silk_q2|t2
+    #task t2
+        #set RaiseFlag|silk_q2_completed
+        #action SetFlag|silk_q2_completed|false
+        #action SetFlag|silk_q2_flag|false
+        #action UnlockTask|silkcooldown|t2
+        #action CompleteQuest|silk_q2
+
+#quest silk_q3|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Silk.txt,reset_silk_q3
+    #task t1
+        #set FindItem|NHM.QuestRawSkin,1
+        #action UnlockTask|silk_q3|t2
+    #task t2
+        #set FindItem|NHM.QuestReadySkinWet,1
+        #action UnlockTask|silk_q3|t3
+    #task t3
+        #set FindItem|NHM.QuestReadySkin,1
+        #action UnlockTask|silk_q3|t4
+    #task t4
+        #set FindItem|NHM.QuestFinalSkin,1
+        #action SetFlag|silk_q3_flag|true
+        #action UnlockTask|silk_q3|t5
+    #task t5
+        #set RaiseFlag|silk_q3_completed
+        #action SetFlag|silk_q3_completed|false
+        #action SetFlag|silk_q3_flag|false
+        #action CompleteQuest|silk_q3
+
+#quest silk_q4|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Silk.txt,reset_silk_q4
+    #task t1
+        #set GotoLocation|11360,6800,0|building|true
+        #action UnlockTask|silk_q4|t2
+    #task t2
+        #set ContextAction|Contactar Silk|11345,6783,0|2|Silk.txt,quest4_school|q4_school_flag
+        #action UnlockTask|silk_q4|t9
+    #task t3
+        #set GotoLocation|11336,6782,0|room|true
+        #action UnlockTask|silk_q4|t4
+    #task t4
+        #set OpenContainer|metal_shelves|11331,6786,0
+    #task t5
+        #set GotoLocation|11332,6782,0|room|true
+        #action UnlockTask|silk_q4|t6
+    #task t6
+        #set OpenContainer|metal_shelves|11331,6784,0
+    #task t7
+        #set GotoLocation|11335,6775,0|room|true
+        #action UnlockTask|silk_q4|t8
+    #task t8
+        #set OpenContainer|metal_shelves|11332,6774,0
+    #task t9|hidden
+        #set TaskCondition|silk_q4|t3,t4/t5,t6/t7,t8
+        #action RunScript|Silk.txt,q4_call_silk
+        #action UnlockTask|silk_q4|t10
+    #task t10
+        #set GotoLocation|11330,6769,1|room|true
+        #action UnlockTask|silk_q4|t11
+    #task t11
+        #set LootContainer|metal_shelves|11331,6767,1|NHM.QuestSilkInstrument,false
+        #action RunScript|Silk.txt,q4_call_silk2
+        #action UnlockTask|silk_q4|t12
+    #task t12
+        #set FindItem|NHM.QuestIndigoFlower,1
+        #action UnlockTask|silk_q4|t13
+    #task t13
+        #set FindItem|NHM.QuestIndigoDye,1
+        #action UnlockTask|silk_q4|t14
+        #action SetFlag|silk_q4_flag|true
+    #task t14
+        #set RaiseFlag|silk_q4_completed
+        #action SetFlag|silk_q4_completed|false
+        #action SetFlag|q4_school_flag|false
+        #action SetFlag|silk_q4_flag|false
+        #action CompleteQuest|silk_q4

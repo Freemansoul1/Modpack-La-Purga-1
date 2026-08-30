@@ -1,5 +1,0 @@
-#is_flag El_Señor_Oscuro,true
-    #npc_create Señor Oscuro|NPC_SenorOscuro.png|11546,7707,0
-    #exit
-#npc_create Señor Oscuro|NPC_SenorOscuro.png|11546,7707,0
-#exit

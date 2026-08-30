@@ -1,0 +1,6 @@
+*cleaner_q1_t1
+#name Найти пятно на втором этаже
+*cleaner_q1_t2
+#name Отмыть пятно
+*cleaner_q1_t3
+#name Вернуться к Уборщице

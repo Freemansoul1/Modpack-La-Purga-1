@@ -1,2 +1,0 @@
-#npc_create Juanito|NPC_Juanito.png|8620,9722,0
-#exit

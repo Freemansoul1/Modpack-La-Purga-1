@@ -1,0 +1,139 @@
+module NHM
+{
+
+	imports	{Base}
+	
+    item SpearCraftedExample
+    {
+        Type	=	Normal,
+        Weight	=	1.5,
+        DisplayName	=	Spear Upgraded,
+        Icon	=	SpearMachete,
+    }
+
+	recipe Make Sharped Stone
+	{ 
+		Stone,
+		keep Hammer/HammerStone, 
+		Result:SharpedStone,
+		Time:180.0,
+		Category:Survivalist,
+	}
+
+	recipe Obsosat Kost
+	{
+	    keep Bone,
+	    Result:Bone,
+	    RemoveResultItem:true,
+	    Time:500,
+	    Category:Survivalist,
+	    OnTest:CheckForWalter,
+	}
+
+    recipe Make Stone
+	{ 
+		SharpedStone=2,
+		keep Hammer/HammerStone, 
+		Result:Stone,
+		Time:180.0,
+		Category:Survivalist,
+	}
+    
+    recipe Make Bowl
+	{ 
+		Plank,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Result:Bowl=2,
+		Time:180.0,	
+		Category:Survivalist,
+	}
+
+    recipe Make Mugl
+	{ 
+		Plank,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+		Result:Mugl=2,
+		Time:180.0,	
+		Category:Survivalist,
+	}
+
+    recipe Make Torchlight
+    {
+        TreeBranch,
+        RippedSheets=2,
+        Result:Torchlight,
+        Time:180.0,
+		Category:Survivalist,
+    }
+
+    recipe Make Cigarettes
+	{ 
+		SheetPaper2=2,
+		Plantain/Comfrey/WildGarlic/WildGarlic2, 
+		Plantain/Comfrey/WildGarlic/WildGarlic2,
+		Result:Cigarettes=2,
+		Time:180.0,
+		Category:Survivalist,
+	}
+
+	recipe Make Stone Saw
+	{
+        TreeBranch,
+        SharpedStone=5,
+        keep Hammer/HammerStone,
+        Result:StoneSaw,
+        Time:150.0,
+		Sound:Hammering,		
+        Category:Survivalist,
+		OnGiveXP:GiveSawLogsXP,
+	}
+
+    item StoneSaw   
+	{
+	    DisplayCategory = Tool,
+		Weight	=	0.7,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.05,
+		DisplayName	=	Stone Saw,
+		Icon	=	StoneSaw,
+		MetalValue = 35,
+		StaticModel = StoneSaw,
+        WorldStaticModel = StoneSawGround,
+	}
+
+	recipe Saw Logs3
+    {
+       Log,
+       NHM.StoneSaw,
+
+       CanBeDoneFromFloor:true,
+       Result:Plank=3,
+       Sound:Sawing,
+       Time:460.0,
+       Category:Carpentry,
+       OnGiveXP:Recipe.OnGiveXP.SawLogs,
+       AnimNode:SawLog,
+       Prop1:StoneSaw,
+       Prop2:Log,
+    }
+
+    recipe Rip Paper Sheets
+    {
+        ComicBook/Notebook/Journal/Magazine/Newspaper/TVMagazine/Map/MuldraughMap/WestpointMap/MarchRidgeMap/RosewoodMap/RiversideMap/LouisvilleMap1/LouisvilleMap2/LouisvilleMap3/LouisvilleMap4/LouisvilleMap5/LouisvilleMap6/LouisvilleMap7/LouisvilleMap8/LouisvilleMap9/MagazineCrossword1/MagazineCrossword2/MagazineCrossword3/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/HerbalistMag/MechanicMag1/MechanicMag2/MechanicMag3/MetalworkMag1/MetalworkMag2/MetalworkMag3/EngineerMagazine2/MagazineWordsearch1/MagazineWordsearch2/MagazineWordsearch3,
+
+        Result:SheetPaper2=5,
+        Time:50,
+        Category:Survivalist,
+    }
+
+    recipe Rip Books
+    {
+        Book/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/BookMechanic5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookCooking1/BookCooking2/BookCooking3/BookCooking4/BookCooking5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookCarpentry1/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5,
+
+        Result:SheetPaper2=15,
+        Time:100,
+        Category:Survivalist,
+    }
+
+}

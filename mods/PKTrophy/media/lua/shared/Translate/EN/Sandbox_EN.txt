@@ -1,6 +1,0 @@
-Sandbox_EN = {
-    Sandbox_PKTrophy = "Player Kill Trophy",
-
-    Sandbox_PKTrophy_Username = "Display Username",
-    Sandbox_PKTrophy_FullName = "Display Full Name",
-}

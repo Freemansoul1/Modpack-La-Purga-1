@@ -1,0 +1,94 @@
+IGUI_EN = {
+
+    /****************************Sections****************************/
+
+    IGUI_CraftCategory_Sewing = "Sewing",
+    IGUI_CraftCategory_Storage = "Storage",
+    IGUI_CraftCategory_Mechanic = "Mechanics",
+    IGUI_CraftCategory_Chemistry = "Chemistry",
+    IGUI_CraftCategory_Dyes = "Dyes",
+    IGUI_CraftCategory_Leatherworking = "Leatherworking",
+    IGUI_CraftCategory_Mining = "Mining",
+    IGUI_CraftCategory_Engineer = "Engineering",
+    IGUI_CraftCategory_BlackSmith = "Blacksmithing",
+    IGUI_CraftCategory_Fixing = "Fixing",
+    IGUI_CraftCategory_Raiding = "Raiding",
+    IGUI_CraftCategory_Faction = "Faction",
+    IGUI_CraftCategory_Blueprints = "Blueprints",
+    IGUI_CraftCategory_Dismantle = "Dismantle",
+    IGUI_CraftCategory_TradingCrafts = "Trading: Craftsmen",
+    IGUI_CraftCategory_Art = "Art",
+    IGUI_CraftCategory_Temp = "Temp",
+    IGUI_SYMS_CopyElements = "Save markings",
+    IGUI_SYMS_DisableAutoUpdate = "Disable auto-update",
+    IGUI_SYMS_PasteElements = "Paste markings",
+
+    /****************************Workbenches****************************/
+
+    IGUI_NearItem_ChemistryWorkbench = "Chemical Workbench",
+    IGUI_NearItem_LeatherworkingWorkbench = "Leatherworking Workbench",
+    IGUI_NearItem_EngineerWorkbench = "Engineering  Workbench",
+    IGUI_NearItem_CookingWorkbench = "Cooking Workbench",
+    IGUI_NearItem_MechanicsWorkbench = "Mechanics Workbench",
+    IGUI_NearItem_FirstAidWorkbench = "Medical Workbench",
+    IGUI_NearItem_ElectricWorkbench = "Electronics Workbench",
+    IGUI_NearItem_TailorWorkbench = "Tailoring Workbench",
+    IGUI_NearItem_NHAnvil = "Anvil",
+    IGUI_NearItem_StoneFurnace = "Stone Furnace",
+    IGUI_NearItem_BlastFurnace = "Blast Furnace",
+    IGUI_NearItem_FoundryKettle = "Foundry Kettle",
+    IGUI_NearItem_NHStill = "Moonshine Still",
+    IGUI_NearItem_ResearchWorkbench = "Research Workbench",
+    IGUI_NearItem_ShopCrafts = "Craftsmen Shop",
+
+    IGUI_ContainerTitle_Furnace = "Stone Furnace",
+    IGUI_ContainerTitle_BlastFurnace = "Blast Furnace",
+    IGUI_ContainerTitle_WorkbenchEngineer = "Engineering  Workbench",
+    IGUI_ContainerTitle_WorkbenchMed = "Medical Workbench",
+    IGUI_ContainerTitle_WorkbenchCook = "Cooking Workbench",
+    IGUI_ContainerTitle_WorkbenchLeather = "Leatherworking Workbench",
+    IGUI_ContainerTitle_WorkbenchTailor = "Tailoring Workbench",
+    IGUI_ContainerTitle_WorkbenchChem = "Chemical Workbench",
+    IGUI_ContainerTitle_WorkbenchMech = "Mechanics Workbench",
+    IGUI_ContainerTitle_WorkbenchEng = "Electronics Workbench",
+
+    IGUI_NearItem_MVK = "Arc Steel Furnace",
+
+    /****************************NPCs****************************/
+
+    IGUI_NearItem_Silk = "NPC Silk",
+    IGUI_NearItem_Sparkle = "NPC Sparkle",
+    IGUI_NearItem_Aspirin = "NPC Aspirin",
+    IGUI_NearItem_Nerd = "NPC Nerd",
+    IGUI_NearItem_Kioshi = "NPC Kioshi",
+    IGUI_NearItem_Hound = "NPC Hound",
+    IGUI_NearItem_Cain = "NPC Cain",
+    IGUI_NearItem_Abel = "NPC Abel",
+
+    /****************************PerksWindow****************************/
+
+    IGUI_perks_Additional = "Crafring - Advanced",
+    IGUI_perks_Chemistry = "Chemistry",
+    IGUI_perks_Engineering = "Engineering",
+    IGUI_perks_Leatherworking = "Leatherworking",
+    IGUI_perks_Art = "Art",
+    IGUI_perks_Endurance = "Endurance",
+    IGUI_perks_MineEndurance = "Energy",
+    IGUI_perks_Reputation = "Reputation",
+    IGUI_perks_RepDoc = "Doctors",
+    IGUI_perks_RepArmy = "Military",
+    IGUI_perks_RepCrafts = "Craftsmen",
+
+    /****************************Another****************************/
+    
+    IGUI_ItemCat_Arrows = "Arrows",
+    IGUI_ItemCat_Chemistry = "Chemistry",
+    IGUI_ItemCat_Ores = "Ores",
+    IGUI_ItemCat_Ingots = "Ingots",
+    IGUI_ItemCat_Leatherworking = "Leatherworking",
+    IGUI_ItemCat_Dyes = "Dyes",
+
+    IGUI_HotbarAttachment_SwordSheath = "Sword Sheath",
+    IGUI_HotbarAttachment_KnifeSheath = "Knife Sheath",
+
+}

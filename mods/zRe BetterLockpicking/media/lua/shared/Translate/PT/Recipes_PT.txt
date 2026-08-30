@@ -1,4 +1,0 @@
-Recipe_PT = {
-Recipe_Create_BobbyPin = "Criar Grampo de Cabelo",
-Recipe_Create_BobbyPin2 = "Criar Grampo de Cabelo",
-}

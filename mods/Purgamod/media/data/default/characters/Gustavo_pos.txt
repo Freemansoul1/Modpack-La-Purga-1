@@ -1,2 +1,0 @@
-#npc_create Gustavo|NPC_Gustavo.png|8622,9742,0
-#exit

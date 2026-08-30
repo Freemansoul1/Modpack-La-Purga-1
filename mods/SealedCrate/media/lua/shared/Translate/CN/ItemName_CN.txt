@@ -1,5 +1,0 @@
-ItemName_CN =   {
-    ItemName_SealedCrate.SealedCrateWood1    =   "木箱(封)",
-    ItemName_SealedCrate.SealedCrateWood2    =   "木箱(封)",
-    ItemName_SealedCrate.SealedCrateWood3    =   "金属箱(封)",
-}

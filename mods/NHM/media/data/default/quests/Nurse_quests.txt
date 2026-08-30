@@ -1,0 +1,5 @@
+*nurse_q1
+#name Cargar datos en disquete
+#desc Sister te da un disquete vacío y te pide que cargues datos de la computadora en la oficina de Demiurgo.
+#desc
+#desc Las misiones del Purgatorio son únicas. Todas las tareas inconclusas realizadas al salir del Purgatorio a través del Centinela se enumerarán como fallidas.

@@ -1,3 +1,0 @@
-Recipes_NL = {
-    Recipe_Pop_pill = "Tablet uitnemen",
-}

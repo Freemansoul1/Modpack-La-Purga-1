@@ -1,3 +1,0 @@
---Contrabandista drogas monguis
-#npc_create Contrabandista4|NPC_Contrabandista4.png|4853,6267,0
-#exit

@@ -1,5 +1,0 @@
-Sandbox_RU = {
-    Sandbox_KnockedDown = "Knocked Down",
-    Sandbox_KnockedDown_HealthThreshold = "Порог здоровья",
-    Sandbox_KnockedDown_HealthReduceCut = "Множитель уменьшения здоровья",
-}

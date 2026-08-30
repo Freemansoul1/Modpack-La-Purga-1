@@ -1,4 +1,0 @@
-ContextMenu_NL = {
-    ContextMenu_VehicleRecycling_RemoveVehicle = "Demonteer voertuig",
-    ContextMenu_VehicleRecycling_RemoveTrailer = "Demonteer trailer",
-}

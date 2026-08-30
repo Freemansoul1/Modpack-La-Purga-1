@@ -1,3 +1,0 @@
-Tooltip_NL = {
-    Tooltip_Chlorpromazine = "Een antipsychotische drug die voornamelijk wordt gebruikt om psychotische stoornissen zoals schizofrenie te behandelen. Gebruiksaanwijzing: Een tablet elke 24 uur. Aanbevolen dosering niet overschrijden.",
-}

@@ -1,0 +1,698 @@
+module Base
+{
+    model MarijuanaJoint
+    {
+        mesh = MarijuanaJoint,
+        texture = MarijuanaJoint,
+    }
+	model GuitarAcousticAnim
+	{
+		mesh = GuitarAcousticAnim,
+		texture = Weapons/2Handed/Guitar_Acoustic,
+	}
+	model PropaneTankHand
+	{
+	    mesh = PropaneTankHand,
+	    texture = WorldItems/PropaneTank,
+	}
+	model FluteAnim
+	{
+		mesh = FluteAnim,
+		texture = Weapons/1Handed/Flute,
+	}
+	model StoneSaw
+	{
+		mesh = StoneSaw,
+
+	}
+	model StoneSawGround
+	{
+		mesh = StoneSawGround,
+		texture = StoneSaw,
+	}
+	model LightArrow
+    {
+        mesh = LightArrow,
+    }
+	model HandmadeKnife
+	{
+		mesh = weapons/1handed/WrenchKnife,
+		
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularKnife
+	{
+		mesh = weapons/1handed/RegularKnife,
+		
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedKnife
+	{
+		mesh = weapons/1handed/AdvancedKnife,
+		
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model FoldingKnife
+	{
+		mesh = weapons/1handed/FoldingKnife,
+		
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model SulfurOre
+	{
+		mesh = SulfurOre,
+	}
+	model SulfurPowder
+	{
+		mesh = SulfurPowder,
+	}
+	model Plastic
+	{
+		mesh = Rubber,
+        texture = Plastic,
+	}
+	model Rubber
+	{
+		mesh = Rubber,
+	}
+	model SaltPinch
+	{
+		mesh = SulfurPowder,
+        texture = SaltPinch,
+	}
+	model Glass
+	{
+		mesh = Rubber,
+        texture = Glass,
+	}
+	model ChemicalFlask
+	{
+		mesh = ChemicalFlask,
+	}
+	model BerryDust
+	{
+		mesh = SulfurPowder,
+        texture = BerryDust,
+	}
+	model Roll-up
+	{
+		mesh = Roll-up,
+	}
+	model ElectrolysisBattery
+    {
+        mesh = ElectrolysisBattery,
+    }
+	model AmmoPouchesGround
+    {
+        mesh = PouchGround,
+        texture = Clothes/ChestArmor/AmmoPouches,
+    }
+	model MedicalPouchesGround
+    {
+        mesh = PouchGround,
+        texture = Clothes/ChestArmor/MedicalPouches,
+    }
+	model SupplyPouchesGround
+    {
+        mesh = PouchGround,
+        texture = Clothes/ChestArmor/SupplyPouches,
+    }
+	model QuiverGround
+    {
+        mesh = QuiverGround,
+        texture = Clothes/ChestArmor/Quiver,
+    }
+	model Sugarcube
+    {
+        mesh = Sugarcube,
+        texture = SaltPinch,
+    }
+	model CoffeePowder
+    {
+        mesh = SulfurPowder,
+        texture = CoffeePowder,
+    }
+	model RubberTire
+    {
+        mesh = Tire,
+    }
+	model RawThinLeather
+    {
+        mesh = RawThinLeather,
+    }
+	model RawThickLeather
+    {
+        mesh = RawThickLeather,
+    }
+	model WolfCarcass
+    {
+        mesh = WolfCarcass,
+    }
+	model BearCarcass
+    {
+        mesh = BearCarcass,
+    }
+	model BoarCarcass
+    {
+        mesh = BoarCarcass,
+    }
+	model ChickenCarcass
+    {
+        mesh = ChickenCarcass,
+    }
+	model CowCarcass
+    {
+        mesh = CowCarcass,
+    }
+	model CoyoteCarcass
+    {
+        mesh = CoyoteCarcass,
+    }
+	model CrowCarcass
+    {
+        mesh = CrowCarcass,
+    }
+	model YDeerCarcass
+    {
+        mesh = YDeerCarcass,
+    }
+	model ODeerCarcass
+    {
+        mesh = ODeerCarcass,
+    }
+	model FoxCarcass
+    {
+        mesh = FoxCarcass,
+    }
+	model GoatCarcass
+    {
+        mesh = GoatCarcass,
+    }
+	model HareCarcass
+    {
+        mesh = HareCarcass,
+    }
+	model MooseCarcass
+    {
+        mesh = MooseCarcass,
+    }
+	model DogCarcass
+    {
+        mesh = DogCarcass,
+    }
+	model PipeSword
+	{
+		mesh = weapons/2handed/PipeSword,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model PipeSwordBlunt
+    {
+        mesh = weapons/2handed/PipeSwordBlunt,
+        texture = weapons/2handed/PipeSword,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+    }
+	model HandmadeAxe
+	{
+		mesh = weapons/2handed/HandmadeAxe,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularAxe
+	{
+		mesh = weapons/2handed/RegularAxe,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedAxe
+	{
+		mesh = weapons/2handed/AdvancedAxe,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model HandmadeHelbard
+	{
+		mesh = weapons/2handed/HandmadeHelbard,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularHelbard
+	{
+		mesh = weapons/2handed/RegularHelbard,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedHelbard
+	{
+		mesh = weapons/2handed/AdvancedHelbard,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model HandmadeMetalSword
+	{
+		mesh = weapons/2handed/HandmadeMetalSword,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularMetalSword
+	{
+		mesh = weapons/2handed/RegularMetalSword,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedMetalSword
+	{
+		mesh = weapons/2handed/AdvancedMetalSword,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model HandmadeBigHammer
+	{
+		mesh = weapons/2handed/HandmadeBigHammer,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularBigHammer
+	{
+		mesh = weapons/2handed/RegularBigHammer,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedBigHammer
+	{
+		mesh = weapons/2handed/AdvancedBigHammer,
+			
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model Dagger
+    {
+        mesh = Weapons/1handed/Dagger,
+        texture = Weapons/1handed/Dagger,
+
+        attachment world
+        {
+            offset = -0.0010 0.0000 0.0020,
+            rotate = -27.0000 -88.0000 -117.0000,
+        }
+    }
+	model HandmadeCrossbow
+	{
+		mesh = weapons/firearm/HandmadeCrossbow,
+
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -90.0000 -1.0000 -89.0000,
+		}
+	}
+		model Bow
+	{
+		mesh = weapons/firearm/Bow,
+		texture = weapons/firearm/Bow,
+	}
+
+	model Bow3
+	{
+		mesh = weapons/firearm/Bow3,
+		texture = weapons/firearm/Bow,
+	}
+	model RBow
+	{
+		mesh = weapons/firearm/RBow,
+		texture = weapons/firearm/RBow,
+	}
+
+	model RBow3
+	{
+		mesh = weapons/firearm/RBow3,
+		texture = weapons/firearm/RBow,
+	}
+	model HandmadeBomb
+	{
+		mesh = weapons/1handed/HandmadeBomb,
+	}
+	model C4
+	{
+		mesh = weapons/1handed/C4,
+	}
+	model IngotCopper
+	{
+		mesh = Ingot,
+		texture = IngotCopper,
+	}
+	model IngotTin
+	{
+		mesh = Ingot,
+		texture = IngotTin,
+	}
+	model IngotIron
+	{
+		mesh = Ingot,
+		texture = IngotIron,
+	}
+	model IngotLead
+	{
+		mesh = Ingot,
+		texture = IngotLead,
+	}
+	model IngotNickel
+	{
+		mesh = Ingot,
+		texture = IngotNickel,
+	}
+	model IngotChromium
+	{
+		mesh = Ingot,
+		texture = IngotChromium,
+	}
+	model IngotBronze
+	{
+		mesh = Ingot,
+		texture = IngotBronze,
+	}
+	model IngotSteel
+	{
+		mesh = Ingot,
+		texture = IngotSteel,
+	}
+	model IngotSilver
+	{
+		mesh = Ingot,
+		texture = IngotSilver,
+	}
+	model IngotGold
+	{
+		mesh = Ingot,
+		texture = IngotGold,
+	}
+	model CopperOre
+	{
+		mesh = Ore,
+		texture = CopperOre,
+	}
+	model TinOre
+	{
+		mesh = Ore,
+		texture = TinOre,
+	}
+	model IronOre
+	{
+		mesh = Ore,
+		texture = IronOre,
+	}
+	model GalenaOre
+	{
+		mesh = Ore,
+		texture = GalenaOre,
+	}
+	model NickelOre
+	{
+		mesh = Ore,
+		texture = NickelOre,
+	}
+	model ChromiumOre
+	{
+		mesh = Ore,
+		texture = ChromiumOre,
+	}
+	model HandmadeRaiderAxe
+	{
+		mesh = weapons/2handed/HandmadeRaiderAxe,
+
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -52.0000 -8.0000 169.0000,
+		}
+	}
+	model HandmadeMace
+	{
+		mesh = weapons/1handed/HandmadeMace,
+
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model RegularMace
+	{
+		mesh = weapons/1handed/RegularMace,
+
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model AdvancedMace
+	{
+		mesh = weapons/1handed/AdvancedMace,
+		
+		attachment world
+		{
+			offset = -0.0010 0.0000 0.0020,
+			rotate = -27.0000 -88.0000 -117.0000,
+		}
+	}
+	model MetalFlask
+    {
+        mesh = MetalFlask,
+        texture = MetalFlask,
+    }
+	
+	model GreenCard
+    {
+        mesh = keycard,
+		texture = GreenCard,
+    }
+	
+	model YellowCard
+    {
+        mesh = keycard,
+		texture = YellowCard,
+    }
+	
+	model RedCard
+    {
+        mesh = keycard,
+		texture = RedCard,
+    }
+
+	model DyeTurquoise
+	{
+        mesh = Dye,
+		texture = DyeTurquoise,
+    }
+
+	model DyeCyan
+	{
+        mesh = Dye,
+		texture = DyeCyan,
+    }
+
+	model DyeLightBlue
+	{
+        mesh = Dye,
+		texture = DyeLightBlue,
+    }
+
+	model DyeYellow
+	{
+        mesh = Dye,
+		texture = DyeYellow,
+    }
+
+	model DyeGreen
+	{
+        mesh = Dye,
+		texture = DyeGreen,
+    }
+
+	model DyeBrown
+	{
+        mesh = Dye,
+		texture = DyeBrown,
+    }
+
+	model DyeRed
+	{
+        mesh = Dye,
+		texture = DyeRed,
+    }
+
+	model DyeOrange
+	{
+        mesh = Dye,
+		texture = DyeOrange,
+    }
+
+	model DyePink
+	{
+        mesh = Dye,
+		texture = DyePink,
+    }
+
+	model DyeLightBrown
+	{
+        mesh = Dye,
+		texture = DyeLightBrown,
+    }
+
+	model DyeGrey
+	{
+        mesh = Dye,
+		texture = DyeGrey,
+    }
+
+	model DyeBlue
+	{
+        mesh = Dye,
+		texture = DyeBlue,
+    }
+
+	model DyePurple
+	{
+        mesh = Dye,
+		texture = DyePurple,
+    }
+
+	model DyeBlack
+	{
+        mesh = Dye,
+		texture = DyeBlack,
+    }
+
+	model DyeMagenta
+	{
+        mesh = Dye,
+		texture = DyeMagenta,
+    }
+
+	model BlueprintAssaultRifle
+	{
+        mesh = Blueprint,
+		texture = BlueprintAssaultRifle,
+    }
+
+	model BlueprintRifle
+	{
+        mesh = Blueprint,
+		texture = BlueprintRifle,
+    }
+
+	model BlueprintPistol
+	{
+        mesh = Blueprint,
+		texture = BlueprintPistol,
+    }
+
+	model BlueprintRevolver
+	{
+        mesh = Blueprint,
+		texture = BlueprintRevolver,
+    }
+
+	model BlueprintSMG
+	{
+        mesh = Blueprint,
+		texture = BlueprintSMG,
+    }
+
+	model BlueprintShotgun
+	{
+        mesh = Blueprint,
+		texture = BlueprintShotgun,
+    }
+
+	model BlueprintShard
+	{
+        mesh = BlueprintShard,
+		texture = BlueprintShard,
+    }
+
+	model Feather
+	{
+        mesh = Feather,
+		texture = Feather,
+    }
+
+	model Felt
+	{
+        mesh = Felt,
+		texture = Felt,
+    }
+}

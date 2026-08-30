@@ -1,0 +1,394 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+	item HandmadeCrossbow
+	{
+
+		/*Display*/
+		DisplayName 				= Crossbow,
+		WeaponSprite 				= HandmadeCrossbow,
+		Icon 						= HandmadeCrossbow,
+		RunAnim 					= Run_Weapon2,
+		Type 						= Weapon,
+		SubCategory 				= Firearm,
+		TwoHandWeapon 				= TRUE,
+		KnockBackOnNoDeath 			= TRUE,
+		Ranged 						= TRUE,
+		RequiresEquippedBothHands 	= TRUE,
+		ConditionLowerChanceOneIn 	= 40,
+		
+		/*Weapon Stats*/
+		Weight 						= 1.5,
+		SplatNumber 				= 5,
+		PushBackMod 				= 0.6,
+		KnockdownMod 				= 8,
+		AimingMod 					= 2,
+		ConditionMax 				= 10,
+		IsAimedHandWeapon 			= TRUE,
+		IsAimedFirearm 				= TRUE,
+		RangeFalloff 				= TRUE,
+		MinAngle 					= 0.95,
+		SwingTime 					= 0.1,
+		AngleFalloff 				= TRUE,
+		SplatBloodOnNoDeath 		= TRUE,
+		MetalValue 					= 50,
+		DoorDamage 					= 40,
+		SoundRadius 				= 8,
+		SoundVolume 				= 8,
+		SoundGain 					= 2,
+		
+		/*Sounds*/
+		EquipSound 					= SawnOffJS2000ShotgunEquip,
+		UnequipSound				= SawnOffJS2000ShotgunUnEquip,
+		ClickSound 					= BowClick,
+		InsertAmmoSound 			= BowReload,
+		EjectAmmoSound 				= BowToBear,
+		RackSound 					= BowClick,
+		SwingSound 					= BowHit,
+		HitSound 					= BulletHitBody,
+		BringToBearSound 			= BowToBear,
+		BreakSound 					= BreakingWeapon1,
+
+		/*Reloading*/
+		WeaponReloadType 			= revolver,
+		RackAfterShoot 				= FALSE,
+		haveChamber 				= FALSE,
+		ReloadTime 					= 80,
+
+		/*Ammo*/
+		AmmoType 					= NHM.LightArrow,
+		MaxAmmo 					= 1,
+		JamGunChance 				= 0,
+		AttachmentType 				= Rifle,
+
+		/*Shooting*/
+		MinDamage 					= 1.6,
+		MaxDamage 					= 2.1,
+		MinRange 					= 0.61,
+		MaxRange 					= 15,
+		HitChance 					= 50,
+		CriticalChance 				= 30,
+		CritDmgMultiplier 			= 8,
+		AimingPerkCritModifier 		= 8,
+        AimingPerkRangeModifier 	= 2,
+		AimingPerkHitChanceModifier = 5,
+		RecoilDelay 				= 35,
+		AimingTime 					= 20,
+		ProjectileCount 			= 1,
+		MaxHitCount 				= 1,
+	}
+
+
+	item Bow
+	{
+
+		/*Display*/
+		DisplayName 				= Composite Bow,
+		WeaponSprite 				= Bow,
+		Icon 						= Bow,
+		RunAnim 					= Run_Weapon2,
+		Type 						= Weapon,
+		SubCategory 				= Firearm,
+		TwoHandWeapon 				= TRUE,
+		KnockBackOnNoDeath 			= TRUE,
+		Ranged 						= TRUE,
+		RequiresEquippedBothHands 	= TRUE,
+		ConditionLowerChanceOneIn 	= 20,
+
+		/*Weapon Stats*/
+		Weight 						= 1.5,
+		SplatNumber 				= 5,
+		PushBackMod 				= 0.6,
+		KnockdownMod 				= 8,
+		AimingMod 					= 2,
+		ConditionMax 				= 10,
+		IsAimedHandWeapon 			= TRUE,
+		IsAimedFirearm 				= TRUE,
+		RangeFalloff 				= TRUE,
+		MinAngle 					= 0.95,
+		SwingTime 					= 0.1,
+		AngleFalloff 				= TRUE,
+		SplatBloodOnNoDeath 		= TRUE,
+		MetalValue 					= 50,
+		DoorDamage 					= 40,
+		SoundRadius 				= 8,
+		SoundVolume 				= 8,
+		SoundGain 					= 2,
+
+		/*Sounds*/
+		EquipSound 					= SawnOffJS2000ShotgunEquip,
+		UnequipSound				= SawnOffJS2000ShotgunUnEquip,
+		ClickSound 					= BowClick,
+		InsertAmmoSound 			= BowReload,
+		EjectAmmoSound 				= BowToBear,
+		RackSound 					= BowClick,
+		SwingSound 					= BowHit,
+		HitSound 					= BulletHitBody,
+		BringToBearSound 			= BowToBear,
+		BreakSound 					= BreakingWeapon1,
+
+		/*Reloading*/
+		WeaponReloadType 			= revolver,
+		RackAfterShoot 				= FALSE,
+		haveChamber 				= FALSE,
+		ReloadTime 					= 40,
+
+		/*Ammo*/
+		AmmoType 					= NHM.LightArrow,
+		MaxAmmo 					= 1,
+		JamGunChance 				= 0,
+		AttachmentType 				= Rifle,
+
+		/*Shooting*/
+		MinDamage 					= 0.9,
+		MaxDamage 					= 1.4,
+		MinRange 					= 0.61,
+		MaxRange 					= 12,
+		HitChance 					= 30,
+		CriticalChance 				= 40,
+		CritDmgMultiplier 			= 4,
+		AimingPerkCritModifier 		= 12,
+        AimingPerkRangeModifier 	= 3,
+		AimingPerkHitChanceModifier = 10,
+		RecoilDelay 				= 20,
+		AimingTime 					= 20,
+		ProjectileCount 			= 1,
+		MaxHitCount 				= 1,
+	}
+
+	item Bow3
+	{
+
+		/*Display*/
+		DisplayName 				= Composite Bow,
+		WeaponSprite 				= Bow3,
+		Icon 						= Bow,
+		RunAnim 					= Run_Weapon2,
+		Type 						= Weapon,
+		SubCategory 				= Firearm,
+		TwoHandWeapon 				= TRUE,
+		KnockBackOnNoDeath 			= TRUE,
+		Ranged 						= TRUE,
+		RequiresEquippedBothHands 	= TRUE,
+		ConditionLowerChanceOneIn 	= 20,
+
+		/*Weapon Stats*/
+		Weight 						= 1.5,
+		SplatNumber 				= 5,
+		PushBackMod 				= 0.6,
+		KnockdownMod 				= 8,
+		AimingMod 					= 2,
+		ConditionMax 				= 10,
+		IsAimedHandWeapon 			= TRUE,
+		IsAimedFirearm 				= TRUE,
+		RangeFalloff 				= TRUE,
+		MinAngle 					= 0.95,
+		SwingTime 					= 0.1,
+		AngleFalloff 				= TRUE,
+		SplatBloodOnNoDeath 		= TRUE,
+		MetalValue 					= 50,
+		DoorDamage 					= 40,
+		SoundRadius 				= 8,
+		SoundVolume 				= 8,
+		SoundGain 					= 2,
+
+		/*Sounds*/
+		EquipSound 					= SawnOffJS2000ShotgunEquip,
+		UnequipSound				= SawnOffJS2000ShotgunUnEquip,
+		ClickSound 					= BowClick,
+		InsertAmmoSound 			= BowReload,
+		EjectAmmoSound 				= BowToBear,
+		RackSound 					= BowClick,
+		SwingSound 					= BowHit,
+		HitSound 					= BulletHitBody,
+		BringToBearSound 			= BowToBear,
+		BreakSound 					= BreakingWeapon1,
+
+		/*Reloading*/
+		WeaponReloadType 			= revolver,
+		RackAfterShoot 				= FALSE,
+		haveChamber 				= FALSE,
+		ReloadTime 					= 40,
+
+		/*Ammo*/
+		AmmoType 					= NHM.LightArrow,
+		MaxAmmo 					= 1,
+		JamGunChance 				= 0,
+		AttachmentType 				= Rifle,
+
+		/*Shooting*/
+		MinDamage 					= 0.9,
+		MaxDamage 					= 1.4,
+		MinRange 					= 0.61,
+		MaxRange 					= 12,
+		HitChance 					= 30,
+		CriticalChance 				= 40,
+		CritDmgMultiplier 			= 4,
+		AimingPerkCritModifier 		= 12,
+        AimingPerkRangeModifier 	= 3,
+		AimingPerkHitChanceModifier = 10,
+		RecoilDelay 				= 20,
+		AimingTime 					= 20,
+		ProjectileCount 			= 1,
+		MaxHitCount 				= 1,
+	}
+
+	item RBow
+	{
+
+		/*Display*/
+		DisplayName 				= Recurse Bow,
+		WeaponSprite 				= RBow,
+		Icon 						= RBow,
+		RunAnim 					= Run_Weapon2,
+		Type 						= Weapon,
+		SubCategory 				= Firearm,
+		TwoHandWeapon 				= TRUE,
+		KnockBackOnNoDeath 			= TRUE,
+		Ranged 						= TRUE,
+		RequiresEquippedBothHands 	= TRUE,
+		ConditionLowerChanceOneIn 	= 60,
+
+		/*Weapon Stats*/
+		Weight 						= 1.5,
+		SplatNumber 				= 5,
+		PushBackMod 				= 0.6,
+		KnockdownMod 				= 8,
+		AimingMod 					= 2,
+		ConditionMax 				= 10,
+		IsAimedHandWeapon 			= TRUE,
+		IsAimedFirearm 				= TRUE,
+		RangeFalloff 				= TRUE,
+		MinAngle 					= 0.95,
+		SwingTime 					= 0.1,
+		AngleFalloff 				= TRUE,
+		SplatBloodOnNoDeath 		= TRUE,
+		MetalValue 					= 50,
+		DoorDamage 					= 40,
+		SoundRadius 				= 8,
+		SoundVolume 				= 8,
+		SoundGain 					= 2,
+
+		/*Sounds*/
+		EquipSound 					= SawnOffJS2000ShotgunEquip,
+		UnequipSound				= SawnOffJS2000ShotgunUnEquip,
+		ClickSound 					= BowClick,
+		InsertAmmoSound 			= BowReload,
+		EjectAmmoSound 				= BowToBear,
+		RackSound 					= BowClick,
+		SwingSound 					= BowHit,
+		HitSound 					= BulletHitBody,
+		BringToBearSound 			= BowToBear,
+		BreakSound 					= BreakingWeapon1,
+
+		/*Reloading*/
+		WeaponReloadType 			= revolver,
+		RackAfterShoot 				= FALSE,
+		haveChamber 				= FALSE,
+		ReloadTime 					= 40,
+
+		/*Ammo*/
+		AmmoType 					= NHM.LightArrow,
+		MaxAmmo 					= 1,
+		JamGunChance 				= 0,
+		AttachmentType 				= Rifle,
+
+		/*Shooting*/
+		MinDamage 					= 1.2,
+		MaxDamage 					= 1.8,
+		MinRange 					= 0.61,
+		MaxRange 					= 15,
+		HitChance 					= 45,
+		CriticalChance 				= 40,
+		CritDmgMultiplier 			= 6,
+		AimingPerkCritModifier 		= 12,
+        AimingPerkRangeModifier 	= 3,
+		AimingPerkHitChanceModifier = 14,
+		RecoilDelay 				= 20,
+		AimingTime 					= 25,
+		ProjectileCount 			= 1,
+		MaxHitCount 				= 1,
+	}
+
+	item RBow3
+	{
+
+		/*Display*/
+		DisplayName 				= Recurse Bow,
+		WeaponSprite 				= RBow3,
+		Icon 						= RBow,
+		RunAnim 					= Run_Weapon2,
+		Type 						= Weapon,
+		SubCategory 				= Firearm,
+		TwoHandWeapon 				= TRUE,
+		KnockBackOnNoDeath 			= TRUE,
+		Ranged 						= TRUE,
+		RequiresEquippedBothHands 	= TRUE,
+		ConditionLowerChanceOneIn 	= 60,
+
+		/*Weapon Stats*/
+		Weight 						= 1.5,
+		SplatNumber 				= 5,
+		PushBackMod 				= 0.6,
+		KnockdownMod 				= 8,
+		AimingMod 					= 2,
+		ConditionMax 				= 10,
+		IsAimedHandWeapon 			= TRUE,
+		IsAimedFirearm 				= TRUE,
+		RangeFalloff 				= TRUE,
+		MinAngle 					= 0.95,
+		SwingTime 					= 0.1,
+		AngleFalloff 				= TRUE,
+		SplatBloodOnNoDeath 		= TRUE,
+		MetalValue 					= 50,
+		DoorDamage 					= 40,
+		SoundRadius 				= 8,
+		SoundVolume 				= 8,
+		SoundGain 					= 2,
+
+		/*Sounds*/
+		EquipSound 					= SawnOffJS2000ShotgunEquip,
+		UnequipSound				= SawnOffJS2000ShotgunUnEquip,
+		ClickSound 					= BowClick,
+		InsertAmmoSound 			= BowReload,
+		EjectAmmoSound 				= BowToBear,
+		RackSound 					= BowClick,
+		SwingSound 					= BowHit,
+		HitSound 					= BulletHitBody,
+		BringToBearSound 			= BowToBear,
+		BreakSound 					= BreakingWeapon1,
+
+		/*Reloading*/
+		WeaponReloadType 			= revolver,
+		RackAfterShoot 				= FALSE,
+		haveChamber 				= FALSE,
+		ReloadTime 					= 40,
+
+		/*Ammo*/
+		AmmoType 					= NHM.LightArrow,
+		MaxAmmo 					= 1,
+		JamGunChance 				= 0,
+		AttachmentType 				= Rifle,
+
+		/*Shooting*/
+		MinDamage 					= 1.2,
+		MaxDamage 					= 1.8,
+		MinRange 					= 0.61,
+		MaxRange 					= 15,
+		HitChance 					= 45,
+		CriticalChance 				= 40,
+		CritDmgMultiplier 			= 6,
+		AimingPerkCritModifier 		= 12,
+        AimingPerkRangeModifier 	= 3,
+		AimingPerkHitChanceModifier = 14,
+		RecoilDelay 				= 20,
+		AimingTime 					= 25,
+		ProjectileCount 			= 1,
+		MaxHitCount 				= 1,
+	}
+
+}

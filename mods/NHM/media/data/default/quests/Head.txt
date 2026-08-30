@@ -1,0 +1,15 @@
+#quest head_q1
+    #task t1
+        #set GotoLocation|11536,7552,11543,7562,1|true
+        #action UnlockTask|head_q1|t2
+    #task t2
+        #set ContextAction|Busca una bolsa de sangre|11536,7552,1|2|Head.txt,quest1_q1_head|q1_head_flag
+        #action UnlockTask|head_q1|t3
+        #action SetFlag|head_q1_flag|true
+        #action SetFlag|q1_head_flag|false
+    #task t3
+        #set RaiseFlag|head_q1_completed
+        #action Reward|Base.Money,1,common
+        #action SetFlag|head_q1_completed|false
+        #action SetFlag|head_q1_flag|false
+        #action CompleteQuest|head_q1

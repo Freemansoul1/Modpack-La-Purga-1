@@ -1,0 +1,188 @@
+#is_flag ghost_intro,true
+    #jump loop
+
+*intro
+#m Призрак|NPCPortraits/GhostP.png|Незнакомец в маске смотрит в вашу сторону.
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Призрак|NPCPortraits/GhostP.png|...
+#exit
+
+*intro_hello
+#m "Прошу прощения... Я тут освоиться пытаюсь... Вы можете мне что-нибудь рассказать?"
+#m Призрак|NPCPortraits/GhostP.png|Незнакомец в маске медленно поднимает правую руку и показывает пальцем на нашивку на груди. Вы вглядываетесь и читаете "П-Р-И-З-Р-А-К".
+#m "Ага! Призрак - это ваше имя?" 
+#m Призрак|NPCPortraits/GhostP.png|Незнакомец в маске кивает и продолжает смотреть на вас.
+#m "Ясно... Не очень-то вы и общительны! Вы вообще умеете разговаривать?"
+#m Призрак|NPCPortraits/GhostP.png|Незнакомец в маске поворачивается так, словно под маской смотрит вам прямо в глаза.
+#m "Так, хорошо... Больше не спрашиваю... Может, и у вас есть для меня работа?"
+#fade_out black
+#set_flag ghost_intro,true
+#fade_in
+#reveal Ghost
+#exit
+
+*loop
+#m Призрак|NPCPortraits/GhostP.png|Призрак громко вздыхает. Вы слышите в этом вздохе раздраженность.
+
+#choice
+    questGHOST|Взять задание?
+    questGHOST2|Сокровищница
+    quest_exit|Уйти
+
+*questGHOST
+#has_item Base.Money,25
+    #is_event GhostQuest|false
+        #remove_item Base.Money,25
+        #m Призрак|NPCPortraits/GhostP.png|Призрак протягивает вам записку.
+        #m Этот предмет приведет тебя к одному из моих схронов в округе Нокс. Используй с умом. Устрйоство покажет векторное расстояние до точки и самоуничтожится в радиусе нескольких метров возле схрона.
+        #m "Ага, понятно! Спасибо."
+        #m Призрак|NPCPortraits/GhostP.png|Призрак медленно отводит взгляд.
+        #set_event GhostQuest|true|12
+        #roll take_1,5|take_2,10|take_3,15|take_4,20|take_5,25|take_6,30|take_7,35|take_8,40|take_9,45|take_10,50|take_11,55|take_12,60|take_13,65|take_14,70|take_15,75|take_16,80|take_17,85|take_18,90|take_19,95|take_20,100|
+        #exit
+    #m Призрак|NPCPortraits/GhostP.png|Призрак качает головой, показывая пальцем на часы. 
+    #exit
+#m Призрак|NPCPortraits/GhostP.png|Призрак качает головой, показывая жестами, что за это задание нужно заплатить 25 долларов.
+#exit
+
+*quest_exit
+#exit
+
+*take_1
+#reward NHM.GhostQuest1,1,rare
+#exit
+
+*take_2
+#reward NHM.GhostQuest2,1,rare
+#exit
+
+*take_3
+#reward NHM.GhostQuest3,1,rare
+#exit
+
+*take_4
+#reward NHM.GhostQuest4,1,rare
+#exit
+
+*take_5
+#reward NHM.GhostQuest5,1,rare
+#exit
+
+*take_6
+#reward NHM.GhostQuest6,1,rare
+#exit
+
+*take_7
+#reward NHM.GhostQuest7,1,rare
+#exit
+
+*take_8
+#reward NHM.GhostQuest8,1,rare
+#exit
+
+*take_9
+#reward NHM.GhostQuest9,1,rare
+#exit
+
+*take_10
+#reward NHM.GhostQuest10,1,rare
+#exit
+
+*take_11
+#reward NHM.GhostQuest11,1,rare
+#exit
+
+*take_12
+#reward NHM.GhostQuest12,1,rare
+#exit
+
+*take_13
+#reward NHM.GhostQuest13,1,rare
+#exit
+
+*take_14
+#reward NHM.GhostQuest14,1,rare
+#exit
+
+*take_15
+#reward NHM.GhostQuest15,1,rare
+#exit
+
+*take_16
+#reward NHM.GhostQuest16,1,rare
+#exit
+
+*take_17
+#reward NHM.GhostQuest17,1,rare
+#exit
+
+*take_18
+#reward NHM.GhostQuest18,1,rare
+#exit
+
+*take_19
+#reward NHM.GhostQuest19,1,rare
+#exit
+
+*take_20
+#reward NHM.GhostQuest20,1,rare
+#exit
+
+*questGHOST2
+#is_quest ghost_q1|locked
+    #has_item NHM.RedCard,1
+        #m Призрак|NPCPortraits/GhostP.png|Призрак протягивает вам бумажку с кодом. Призрак указывает пальцем на код, затем касается пальцем виска. 
+        #m "Запомнить код. ${female,Поняла,Понял}. Что дальше?"
+        #m Призрак|NPCPortraits/GhostP.png|Призрак раскрывает большую карту и указывает пальцем на место, подписанное как "Гора Блэк". Призрак достает из кармана желтую карточку и показывает пальцем вниз.
+        #m "Мне нужно использовать желтую карточку, чтобы... куда-то спуститься?"
+        #m Призрак|NPCPortraits/GhostP.png|Призрак кивает. Он достает фото внутреннего обустройства Бункера. 
+        #m "Спуститься в Бункер! Понятно."
+        #m Призрак|NPCPortraits/GhostP.png|Призрак достает из кармана красную ключ-карту и проводит рукой, словно куда-то заходит. 
+        #m "По красной карточке я могу войти в какое-то помещение в Бункере?"
+        #m Призрак|NPCPortraits/GhostP.png|Призрак кивает. Затем указывает на часы и показывает 2 пальца. 
+        #m "2 часа. Что случится через 2 часа?"
+        #m Призрак|NPCPortraits/GhostP.png|Призрак указывает пальцем на нашивку с черепом на своей броне. 
+        #m "Смерть. Понятно... Мне нужно спуститься в бункер, найти какую-то особую комнату, войти в нее по красной карточке и провести в ней не больше 2 часов, иначе умру. А что мне там делать?"
+        #m Призрак|NPCPortraits/GhostP.png|Призрак протягивает вам записку. 
+        #m Можно создать: Высококачественный металл. Можно добыть: Обвесы, Консервы, Патроны, Компонент Вакцины. Код для входа обновляется каждую неделю по алгоритму, известному лишь Призраку.
+        #m "Сокровищница какая-то. Вроде, все понятно. Спасибо!"
+        #quest_unlock ghost_q1
+        #task_unlock ghost_q1|t1
+        #exit
+    #m Призрак|NPCPortraits/GhostP.png|Призрак качает головой, затем медленно достает из кармана красную ключ-карту. Призрак указывает пальцем на вас, затем на красную карточку.
+    #m "Мне нужно достать красную карточку. Понятно."
+    #m Призрак|NPCPortraits/GhostP.png|Призрак кивает. 
+    #exit
+#is_quest ghost_q1|uncompleted,unfailed
+    #m Призрак|NPCPortraits/GhostP.png|Призрак смотрит на вас и крутит пальцем у виска.
+    #exit
+#m Призрак|NPCPortraits/GhostP.png|Призрак показывает на часы и качает головой.
+#exit
+
+*quest1_enter
+#teleport 9109,4895,1
+#set_flag q1_enter_flag,true
+#exit
+
+*quest1_exit
+#teleport 9116,4895,1
+#set_flag q1_exit_flag,true
+#exit
+
+*fail_ghost_q1
+#is_quest ghost_q1|unlocked,uncompleted,unfailed
+    #set_flag q1_enter_flag,false
+    #set_flag q1_exit_flag,false
+    #quest_fail ghost_q1
+    #exit
+#exit
+
+*reset_ghost_q1
+#set_flag q1_enter_flag,false
+#set_flag q1_exit_flag,false
+#exit

@@ -1,0 +1,9 @@
+*marshall_q1_t1
+#name Убить 150 зомби
+*marshall_q1_t2
+#name Завершить задание
+
+*marshall_q2_t1
+#name Убить 400 зомби
+*marshall_q2_t2
+#name Завершить задание

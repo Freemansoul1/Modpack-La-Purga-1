@@ -1,0 +1,88 @@
+#is_flag head_intro,true
+    #jump loop
+
+*intro
+#m Gerente|NPCPortraits/HeadP.png|"Un dibujo interesante... ¿Y por qué el Asistente desparrama sus cosas?"
+#m Gerente|NPCPortraits/HeadP.png|"Se entusiasma con su hija y trata sus regalos con tanta despreocupación, embrollador"
+#m Gerente|NPCPortraits/HeadP.png|"¿Me equivoco?"
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Gerente|NPCPortraits/HeadP.png|"Bueno, como quieras."
+#exit
+
+*intro_hello
+#m "S-sí... Probablemente..."
+#m Gerente|NPCPortraits/HeadP.png|"... quién eres y cómo estás aquí no lo sé, solo me lo pregunto."
+#m Gerente|NPCPortraits/HeadP.png|"Probablemente todos te envíen al Demiurgo, y debe haber estado diciendo alguna tontería loca, ¿Adivino?" 
+#m Gerente|NPCPortraits/HeadP.png|"Bueno, acude a él, la experiencia es inolvidable."
+#m Gerente|NPCPortraits/HeadP.png|"Soy Gerente, Jefe legítimo del Purgatorio, o mejor dicho, debería haberlo sido, lo fui durante muchos años. Y entonces, de la nada, aparece este lunático, toma el control de todo, nos prohíbe usar nombres...."
+#m Gerente|NPCPortraits/HeadP.png|"En la dura nueva realidad solo soy un peón...¿qué necesitas?"
+#fade_out black
+#set_flag head_intro,true
+#fade_in
+#reveal Gerente
+#exit
+
+*loop
+#m Gerente|NPCPortraits/HeadP.png|"¿De negocios o qué?"
+
+#choice
+    questHEAD|Asumir la tarea del Gerente
+    tutorial4|[Tutorial 4]
+    quest_exit|Salir
+    questHEADcomplete|Completar tarea del Gerente|head_q1_flag
+
+*tutorial4
+    #m Tutorial|NPCPortraits/Tutorial.png|"Hola, muchach@. El equipo del servidor La Purga está en contacto. Este es el cuarto tutorial. Recoge los 8 antes de salir del Purgatorio para recibir tu recompensa adicional del Centinela."
+    #m Tutorial|NPCPortraits/Tutorial.png|"La Purga tiene muchas ubicaciones personalizadas que debe explorar e investigar. En este momento, se encuentra en uno de ellos: este es el Purgatorio, un lugar de inicio cerrado."
+    #m Tutorial|NPCPortraits/Tutorial.png|"Con la ayuda del Centinela, puedes salir de este lugar y llegar al Oasis, el refugio de la facción Artesana y dos miembros de la facción Militar."
+    #m Tutorial|NPCPortraits/Tutorial.png|"Además, encontrarás: <br> - Vertederos: te permiten obtener recursos iniciales (y no solo recursos iniciales). <br> - Hopetown: una ciudad al otro lado del río que tiene minas. Puedes obtener metales en las minas. <br> - Montaña Negra: Una gran montaña con muchos recursos extraíbles como azufre, piedra caliza, sal, etc., y hay 3 descensos al búnquer en la montaña."
+    #m Tutorial|NPCPortraits/Tutorial.png|"- Búnquer: un lugar donde puedes conseguir partes de armas, armaduras, así como un componente activo de la vacuna de antizina. <br> - Blasted Lands: una gran ubicación en la parte suroeste del mapa. <br> - Osiris: hogar de dos facciones: los Militares y los Doctores. <br> ¡Y eso no es todo! ¡Red de alcantarillado debajo de Louisville, Oil Derrick y más!"
+#set_flag tutorial4,true
+#exit
+
+*questHEAD
+#is_quest head_q1|locked
+    #m Gerente|NPCPortraits/HeadP.png|"Ve a la habitación del Demiurgo, en una esquina de la segunda planta, allí tiene un enorme gabinete médico en la esquina. En él encontrarás una bolsa de sangre fresca, tráemela."
+    #m Gerente|NPCPortraits/HeadP.png|"No te desmallarás si no lo lees. Solo tómalo y tráelo, ¿Vale?"
+    #quest_unlock head_q1
+    #task_unlock head_q1|t1 
+    #exit
+#is_quest head_q1|unlocked,uncompleted
+    #m Gerente|NPCPortraits/HeadP.png|"Entonces, ¿dónde está la sangre?"
+    #exit
+#is_quest head_q1|unlocked,completed
+    #m Gerente|NPCPortraits/HeadP.png|"Es suficiente. Gracias."
+#exit
+
+*questHEADcomplete
+#has_item NHM.QuestHBloodBag,1
+    #remove_item NHM.QuestHBloodBag,1
+    #m "Perdón por la pregunta, pero... ¿por qué Demiurgo necesita sangre?, ¿Él está enfermo?"
+    #m Gerente|NPCPortraits/HeadP.png|"No metas la nariz en lo que no te incumbe. No importa... sí está enfermo, mientras hagamos transfusiones de sangre, se mantendrá bien."
+    #set_flag head_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,4.5
+    #exit
+#m Gerente|NPCPortraits/HeadP.png|"¿Por qué volviste sin la sangre?"
+#exit
+
+*quest1_q1_head
+#cutscene true
+#pop_up NPCPortraits/Blood.png
+#m "¿Para el Demiurgo"?, interesante... ¿Se lo bebe?.."
+    #add_item NHM.QuestHBloodBag,1
+    #set_flag q1_head_flag,true
+#exit
+
+*quest_exit
+#exit

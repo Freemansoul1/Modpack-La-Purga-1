@@ -1,6 +1,0 @@
-Tooltip_CN = {
-    Tooltip_QNW_SC_MissingNail              =   "缺少钉子",
-    Tooltip_QNW_SC_MissingScrew             =   "缺少螺丝",
-    Tooltip_QNW_SC_MissingHammerOrCrowbar   =   "缺少铁锤或者撬棍",
-    Tooltip_QNW_SC_NotOpenSpace             =   "不是空地",
-}

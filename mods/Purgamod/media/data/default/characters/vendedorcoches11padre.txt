@@ -1,9 +1,0 @@
-#name Jackson Ford|Jackson Ford
-#set_stat Jackson Ford|reputation|10
-
-#desc Name: Jackson Ford
-#desc_append Edad: 69
-#desc_append El padre de la familia Ford.
-#is_alive Jackson Ford,true
-    #desc_append Estado: Vivo
-#exit

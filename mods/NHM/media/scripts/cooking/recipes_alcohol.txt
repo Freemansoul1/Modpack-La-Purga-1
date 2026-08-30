@@ -1,0 +1,93 @@
+module NHM
+{
+	imports	{Base}
+
+    /************************* Category:Cooking ***************************/
+
+    recipe Make CornBeer
+    {
+        BeerEmpty,
+        Corn=2,
+        WildGarlic/WildGarlic2,
+		Sugar=1,
+		Ginseng=1,
+        Water=15,
+        Result:CornBeerWet,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:NHStill,
+        Category:Cooking,
+        SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make MushroomBeer
+    {
+        BeerEmpty,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+        MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5,
+		Sugar=2,
+		BlackSage=1,
+        Water=15,
+        Result:MushroomBeerWet,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:NHStill,
+        Category:Cooking,
+        SkillRequired:Cooking=3,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make StrawberryWine
+    {
+        WineEmpty2,
+        Strewberrie=5,
+		Sugar=4,
+		Rosehips=1,
+        Water=15,
+        Result:StrawberryWineWet,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:NHStill,
+        Category:Cooking,
+        SkillRequired:Cooking=4,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make PotatoWhiskey
+    {
+        WhiskeyEmpty,
+        Potato=6,
+		Sugar=4,
+		Yeast=1,
+		CommonMallow=3,
+        Water=25,
+        Result:PotatoWhiskeyWet,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:NHStill,
+        Category:Cooking,
+        SkillRequired:Cooking=5,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make Samogon
+    {
+        WineEmpty/WineEmpty2/WhiskeyEmpty,
+        Yeast=2,
+		Sugar=2,
+        Water=35,
+        Result:SamogonWet,
+        Time:200.0,
+        CanBeDoneFromFloor:true,
+        NearItem:NHStill,
+        Category:Cooking,
+        SkillRequired:Cooking=2,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+}

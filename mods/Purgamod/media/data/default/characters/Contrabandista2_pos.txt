@@ -1,4 +1,0 @@
---Contrabandista droga opio
-
-#npc_create Contrabandista2|NPC_Contrabandista2.png|14548,4973,0
-#exit

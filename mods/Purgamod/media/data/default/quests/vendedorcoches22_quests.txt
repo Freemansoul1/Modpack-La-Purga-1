@@ -1,3 +1,0 @@
-*vendedorcoches22
-#name venta de vehículos
-#desc ...

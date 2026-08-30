@@ -1,3 +1,0 @@
-Recipes_TH = {
-	Recipe_Pop_pill = "แกะยาออกจากแผง",
-}
