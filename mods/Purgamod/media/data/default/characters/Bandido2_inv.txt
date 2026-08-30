@@ -1,0 +1,34 @@
+--bandido compra droga opio alta calidad 
+
+#offer NHM.IngotGold,9999|1
+
+#demand Sprout.Fentanyl|6
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

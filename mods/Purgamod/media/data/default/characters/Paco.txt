@@ -1,0 +1,9 @@
+#name Paco|Paco
+#set_stat Paco|reputation|99
+
+#desc Name: Paco
+#desc_append Edad: Desconocida
+#desc_append Un extraño tipo
+#is_alive Paco,true
+    #desc_append Estado: Vivo
+#exit

@@ -1,0 +1,181 @@
+module Base
+{
+	model VVA_Vehicles_CarStationWagonOld_vve_a
+	{
+		mesh = vehicles/VVE/Car_StationWagonold_vve_animated|Vehicles_CarStationWagon,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	
+	model VVA_Vehicles_CarStationWagonOld_vve_DoorRearLeft
+	{
+		mesh = vehicles/VVE/Car_StationWagonold_vve_animated|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_CarStationWagonOld_vve_DoorRearRight
+	{
+		mesh = vehicles/VVE/Car_StationWagonold_vve_animated|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model VVA_Vehicles_CarStationWagonOld_vve_Trunk
+	{
+		mesh = vehicles/VVE/Car_StationWagonold_vve_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+
+	model VVA_Vehicles_CarStationWagonOld_vve_RearWindow
+	{
+		mesh = vehicles/VVE/Car_StationWagonold_vve_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	
+
+
+	template vehicle VVA_CarStationWagonOld_vve_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagonOld_vve_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagon_vve_DoorFrontLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagon_vve_DoorFrontRight,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagonOld_vve_DoorRearLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagonOld_vve_DoorRearRight,
+				rotate = 0 0 0,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CarStationWagon_vve_Hood,
+				rotate = 0 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{	
+			parent = DoorFrontLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicles_CarStationWagon_vve_WindowFrontLeft,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{	
+			parent = DoorFrontRight,
+            		model Default
+            		{
+                		file = VVA_Vehicles_CarStationWagon_vve_WindowFrontRight,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowRearLeft
+        	{	
+			parent = DoorRearLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicles_CarStationWagon_vve_WindowRearLeft,
+				rotate = 0 0 0,
+            		}
+            		
+        	}
+		part WindowRearRight
+        	{	
+			parent = DoorRearRight,
+            		model Default
+            		{
+                		file = VVA_Vehicles_CarStationWagon_vve_WindowRearRight,
+				rotate = 0 0 0,
+            		}
+            		
+        	}		
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VVA_Vehicles_CarStationWagon_vve_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model windshieldRear
+			{
+				file = VVA_Vehicles_CarStationWagonOld_vve_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_CarStationWagon_vve_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create =Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

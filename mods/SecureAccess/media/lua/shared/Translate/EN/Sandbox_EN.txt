@@ -1,0 +1,9 @@
+Sandbox_EN = {
+    Sandbox_SecureAccess = "Secure Access",
+
+    Sandbox_SecureAccess_DoorTimer = "Door Timer",
+    Sandbox_SecureAccess_DoorTimer_tooltip = "Determines how many in-game ticks (Frames Per Second) it takes before secure doors close again.",
+
+    Sandbox_SecureAccess_Delay = "Delay",
+    Sandbox_SecureAccess_Delay_tooltip = "Determines how many in-game ticks (Frames Per Second) it takes for sprites to switch.<br>Used for Multiplayer, in case of lag. If on Singleplayer, set it to 0.",
+}

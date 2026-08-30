@@ -1,0 +1,6 @@
+Sandbox_RU = {
+	Sandbox_ForcedSync = "Настройки принуд. синхр.",
+	Sandbox_ForcedSync_ForceSyncOnKey = "Синхронизация по клавише",
+	Sandbox_ForcedSync_ForceSyncOnWeaponHitCharacter = "Синхронизация при уроне оружием",
+	Sandbox_ForcedSync_ForceSyncOnWeaponSwing = "Синхронизация при взмахе оружием",
+}

@@ -1,0 +1,4 @@
+Tooltip_ES = {
+	Tooltip_item_DrinkableWater = "Potable."
+   Tooltip_item_WaterTrailerTankFilter = "Utiliza el remolque cisterna M149 para obtener agua segura para beber."
+}

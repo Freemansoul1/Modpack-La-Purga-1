@@ -1,0 +1,5 @@
+#is_flag vendedorcoches13,true
+    #npc_create Jayson Ford|NPC_jarrison7.png|12226,1373,1
+    #exit
+#npc_create Jayson Ford|NPC_jarrison7.png|12226,1373,1
+#exit

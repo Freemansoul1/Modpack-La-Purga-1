@@ -1,0 +1,3 @@
+*Freeman_q1
+#name ¿Hay un lugar seguro?
+#desc Al parecer Freeman menciona un lugar seguro llamado Pandora. ¿Será la  esperanza de este mundo devastado?

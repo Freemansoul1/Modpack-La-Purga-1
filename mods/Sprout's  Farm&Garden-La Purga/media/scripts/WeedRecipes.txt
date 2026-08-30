@@ -1,0 +1,248 @@
+module Sprout
+{
+	imports
+	{
+		Base
+	}
+
+recipe Dry Tobacco leaf
+	{
+        Tobaccoleaf=6,
+
+	keep DryingRack,
+
+        Result:DryTobaccoleaf=6,
+        Time:800.0,
+	  Category:Farming,
+	}
+recipe Grind Tobacco leaf
+	{
+        DryTobaccoleaf,
+
+	keep Grinder,
+
+        Result:GroundTobaccoleaf,
+        Time:100.0,
+	  Category:Farming,
+	}
+
+recipe Dry Sativa Buds
+	{
+        SativaBuds=6,
+
+	keep DryingRack,
+
+        Result:DrySativaBuds=6,
+        Time:800.0,
+	  Category:Farming,
+	}
+recipe Grind Sativa Buds
+	{
+        DrySativaBuds,
+
+	keep Grinder,
+
+        Result:GroundSativaBuds,
+        Time:100.0,
+	  Category:Farming,
+	}
+recipe Dry Indica Buds
+	{
+        IndicaBuds=6,
+
+	keep DryingRack,
+
+        Result:DryIndicaBuds=6,
+        Time:800.0,
+	  Category:Farming,
+	}
+recipe Grind Indica Buds
+	{
+        DryIndicaBuds,
+
+	keep Grinder,
+
+        Result:GroundIndicaBuds,
+        Time:100.0,
+	  Category:Farming,
+	}
+recipe Package Sativa Buds
+	{
+        DrySativaBuds=20,
+	 PaperBag,
+
+        Result:SativaBaggie,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Open Package Sativa Buds
+	{
+        SativaBaggie,
+
+        Result:DrySativaBuds=20,
+	  OnCreate:Recipe.OnCreate.GetPaperBag,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Package Sativa Buds
+	{
+        DryIndicaBuds=20,
+	 PaperBag,
+
+        Result:IndicaBaggie,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Open Package Sativa Buds
+	{
+        IndicaBaggie,
+
+        Result:DryIndicaBuds=20,
+	  OnCreate:Recipe.OnCreate.GetPaperBag,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Package Tobacco leaves
+	{
+        DryTobaccoleaf=20,
+	 PaperBag,
+
+        Result:TobaccoBaggie,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Open Package Tobacco leaves
+	{
+        TobaccoBaggie,
+
+        Result:DryTobaccoleaf=20,
+	  OnCreate:Recipe.OnCreate.GetPaperBag,
+        Time:50.0,
+	  Category:Farming,
+	}
+/*************************************** making drugs ************************************/
+
+recipe Pack Bong with Sativa
+	{
+	bong1,
+      GroundSativaBuds,
+
+        Result:bong1wSativa,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Pack Bong with Sativa
+	{
+	bong2,
+      GroundSativaBuds,
+
+        Result:bong2wSativa,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Pack Bong with Indica
+	{
+	bong1,
+      GroundIndicaBuds,
+
+        Result:bong1wIndica,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Pack Bong with Indica
+	{
+	bong2,
+      GroundIndicaBuds,
+
+        Result:bong2wIndica,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Roll Joint with Indica
+	{
+	RollingPapers=1,
+      GroundIndicaBuds,
+
+        Result:IndicaJoint,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Roll Joint with Sativa
+	{
+	RollingPapers=1,
+      GroundSativaBuds,
+
+        Result:SativaJoint,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Roll Blunt with Sativa
+	{
+	RollingPapers=1,
+      GroundSativaBuds,
+	GroundTobaccoleaf,
+
+        Result:Blunt,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Roll Blunt with Sativa
+	{
+	RollingPapers=1,
+      GroundIndicaBuds,
+	GroundTobaccoleaf,
+
+        Result:Blunt,
+        Time:50.0,
+	  Category:Farming,
+	}
+recipe Roll Cigarette
+	{
+	RollingPapers=1,
+	GroundTobaccoleaf,
+
+        Result:Cigarettes,
+        Time:50.0,
+	  Category:Farming,
+	}
+/**************************************food**********************************/
+recipe Make CannaButter
+	{
+	Butter=1,
+	GroundIndicaBuds/GroundSativaBuds,
+
+        Result:CannaButter,
+        Time:50.0,
+	  Category:Cooking,
+	}
+    recipe Make CannaBrownie
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+		keep BakingTray,
+		CannaButter,
+		[Recipe.GetItemTypes.Sugar];10,
+		Water=1,
+		Flour=1,
+		CannaChocolate,
+
+
+		Result:CannaBrownie=6,
+		Category:Cooking,
+		Time:50,
+    }
+    recipe Make CannaChocolate
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+		CannaButter,
+		ChocolateChips;6,
+
+
+
+		Result:CannaChocolate=3,
+		Category:Cooking,
+		Time:50,
+    }
+
+}

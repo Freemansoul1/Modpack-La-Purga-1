@@ -1,0 +1,77 @@
+#choice
+        LV| "Aún no he ido a Luisville. Tengo que prepararme bien."|!Lara_q3_cementerio
+        Verdad| "Sí claro. Encontré un mapa de un laboratorio escondido. Pero no sé realmente dónde está."|Lara_q3_cementerio    
+        Mentira| "Fuí a Luisville pero no encontré nada. Lo siento mucho."|Lara_q3_cementerio
+
+*LV
+#m Lara|media/ui/Lara.png| "Apresúrate antes de que la pista se enfríe. La radiación podría hacer que veas cosas que no están ahí."
+#exit
+
+*Verdad
+#set_flag verdad_Receta,true
+#m Lara|media/ui/Lara.png| "Excelente. El laboratorio cercano a la montaña es conocido solo por los más aventureros."
+#m Lara|media/ui/Lara.png| "Aquí tienes algo que podría ser útil. No olvides que los detalles pueden ser más importantes de lo que parecen."
+#reward Base.PetrolCan,1,common
+#task_unlock Lara_q3|t4
+#exit
+
+*Mentira
+#set_flag mentira_Receta,true
+#m Lara|media/ui/Lara.png| "Qué pena. Era una de las últimas pistas que tenía. Espero que encuentres lo que buscas."
+#m Lara|media/ui/Lara.png| "Toma esto por el esfuerzo. A veces, las decepciones son parte del camino."
+#reward Base.PetrolCan,1,common
+#task_unlock Lara_q3|t5
+#stat_inc Lara|Reputacion|20
+#fade_out black
+#npc_update Lara
+#fade_in
+#exit
+
+
+   
+*PistaCementerio
+#cutscene true
+#lua getPlayer():Say("Vayaa es un mapa dónde señala una ubicación.")
+#wait 3
+#lua getPlayer():Say("Debería hablar con Lara, pero ¿debería mencionar el mapa? Tal vez sea mejor guardarlo por ahora.")
+#wait 4
+#lua getPlayer():Say("Bueno lo pensaré por el camino.")
+#wait 4 
+#set_flag Lara_q3_cementerio,true
+#exit
+
+*PistaLaboratorio
+#cutscene true
+#lua getPlayer():Say("Creo que Lara mencionó un laboratorio escondido. Puede que esté en su área de trabajo o en algún rincón olvidado.")
+#wait 4
+#task_unlock Lara_q3|t6
+#exit
+
+*PistaLaboratorio1
+#cutscene true
+#lua getPlayer():Say("Este laboratorio parece estar lleno de frascos y notas. Quizás la receta se encuentra en medio de todo este desorden.")
+#wait 4
+#task_unlock Lara_q3|t7
+#exit
+
+*muerto1
+#lua getPlayer():Say("Parece que este es el laboratorio. La receta podría estar en algún cajón o escondida en los rincones.")
+#wait 4  
+#task_unlock Lara_q3|t9
+#exit
+
+*muerto2
+#lua getPlayer():Say("Creo que he encontrado algo. Aunque es difícil de entender, parece importante.")
+#wait 4
+#is_flag verdad_Receta,true
+        #lua getPlayer():Say("Llevaré esto a Lara. Ella debería poder descifrarlo.")
+        #wait 4
+        #set_flag Lara_q3_muerto,true
+        #exit
+#is_flag mentira_Receta,true
+        #lua getPlayer():Say("Creo que me apañaré.")
+        #wait 4
+        #reward warpbiofuel.ResearchNotes,1,rare
+        #set_flag Lara_q3_cleared,true
+        #exit
+#exit

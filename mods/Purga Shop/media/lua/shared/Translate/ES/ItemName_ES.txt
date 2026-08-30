@@ -1,0 +1,3 @@
+ItemName_ES = {
+	ItemName_ATMReceiver = "Vendo Oro"
+	}

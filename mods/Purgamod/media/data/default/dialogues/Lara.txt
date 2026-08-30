@@ -1,0 +1,61 @@
+#is_flag Lara_intro,true
+	#jump loop
+
+*intro
+	#m Lara|media/ui/Lara.png| "¡Hola! ¿Cómo estás, superviviente? Soy Lara Trump. O eso creo..."
+	#m Lara|media/ui/Lara.png| "Me encargo de hacer biodiesel para el refugio. Sin combustible, todos estamos... ¿jodidos? No, no, estamos en un bucle sin fin... ¿O era un sueño? Cada día se hace más difícil, o tal vez sólo sea mi imaginación." 
+	#m Lara|media/ui/Lara.png| "No hay gasolina, ni aquí, ni allá, ni en ninguna parte. Y esos malditos zombies... están por todas partes, aumentando, multiplicándose, ¡invadiendo mis pensamientos! Estoy hasta el cuello, pero sigo... sigo porque... ¡debo seguir! Porque si no lo hago... ¿Quién lo hará? ¡¿Tú?!"
+	#set_flag Lara_intro,true
+	#is_lua getPlayer():HasTrait("Goodmanners")|true
+		#stat_inc Lara|Reputacion|5
+		#jump loop
+	#is_lua getPlayer():HasTrait("Badmanners")|true
+		#stat_inc Lara|Reputacion|1.5
+		#jump loop
+	#stat_inc Lara|Reputacion|3.5
+	
+
+*loop
+
+#is_stat Lara,Reputacion,100,gt
+	#set_flag Lara_Receta,true
+
+#m Lara|media/ui/Lara.png| "¿Qué es lo que quieres? ¡¿Gasolina, respuestas, una salida?!"
+
+--Menu principal
+#choice
+	gasolina|"Comprar gasolina"
+	Misiones|"Misiones"
+	receta|"Comprar fórmula de productividad"|Lara_q3_cleared
+	tutorial|[Tutorial Biodiesel]
+	intro_No|"Nada"
+
+*intro_No
+	#m Lara|media/ui/Lara.png| "Bien, bien... pero si no tienes nada, entonces... ¡no pierdas el tiempo! O tal vez... ¿soy yo la que está perdiendo tiempo?"
+	#exit	
+
+
+--Mercado
+*gasolina
+	#script EleccionLara.txt|gasolina1
+			
+
+--Menu misiones
+*Misiones
+	#script EleccionLara.txt|Misiones	
+
+--Fórmula
+
+*receta
+	#script EleccionLara.txt|receta	
+
+
+*tutorial
+#m Lara|media/ui/Lara.png| "¡Escucha! Hacer biodiesel es como desentrañar el caos... es complicado, pero con la determinación adecuada, y un poco de locura... ¡es posible! Necesitas matar zombies, arrancarles las bacterias, ¡esos malditos cadáveres tienen su utilidad!"
+#m Lara|media/ui/Lara.png| "Después, cultiva las bacterias en una placa de petri, ¡pero cuidado! Todo puede salir mal si no la esterilizas bien... Con un reactor y algo de compost, puedes... ¡puedes hacer que todo cobre sentido!"
+#m Lara|media/ui/Lara.png| "O... si todo eso te suena a un delirio... destila alcohol y agua, y tal vez, sólo tal vez, obtendrás algo parecido al combustible... o no, quién sabe."
+
+
+			
+
+

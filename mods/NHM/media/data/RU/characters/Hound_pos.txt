@@ -1,2 +1,0 @@
-#npc_create Hound|NPC/Hound.png|11576,7662,0
-#exit

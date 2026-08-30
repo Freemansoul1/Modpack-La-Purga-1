@@ -1,0 +1,5 @@
+#is_flag vendedorcoches22,true
+    #npc_create Jenson Ford|NPC_jarrison7.png|12546,2405,0
+    #exit
+#npc_create Jenson Ford|NPC_jarrison7.png|12546,2405,0
+#exit

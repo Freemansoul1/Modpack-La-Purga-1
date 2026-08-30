@@ -1,7 +1,0 @@
-#name Trader|Trader
-
-#desc Nombre: Comerciante
-#desc_append Edad: Desconocida
-#desc_append Hombre un poco loco, por alguna razón compra plata y oro. ¿Qué pretende hacer con él?, ¿A quién se lo entrega?.
-#desc_append Totalmente intratable.
-#exit

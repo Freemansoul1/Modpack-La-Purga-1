@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option SkipAndHop.SS
+{
+	type = boolean,
+	default = true,
+	page = SkipAndHop,
+	translation = SkipAndHop_SS,
+}
+
+option SkipAndHop.HP
+{
+	type = boolean,
+	default = true,
+	page = SkipAndHop,
+	translation = SkipAndHop_HP,
+}

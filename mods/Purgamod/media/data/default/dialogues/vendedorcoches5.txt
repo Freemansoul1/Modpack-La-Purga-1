@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Charryson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Charryson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos militares Tier1, ¿qué necesitas?"
+#choice
+     hmmwvht|hmmwvht
+     hmmwvtr|hmmwvtr
+     m151canvas|m151canvas
+     nada|De momento no necesito nada
+*hmmwvht
+#m Charryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+      #jump cochecomprado
+#m Charryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Charryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+      #jump cochecomprado1
+#m Charryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Charryson Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+      #jump cochecomprado2
+#m Charryson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Charryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Charryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up MilitarvhtT1.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,400
+#m Charryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.hmmwvht,1,rare
+#exit
+*na1
+#m Charryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Charryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up MilitarvrtT1.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,400
+#m Charryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.hmmwvtr,1,rare
+#exit
+*na2
+#m Charryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Charryson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up MilitarcanvasT1.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,400
+#m Charryson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.m151canvas,1,rare
+#exit
+*na3
+#m Charryson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

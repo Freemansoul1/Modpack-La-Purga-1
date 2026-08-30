@@ -1,0 +1,79 @@
+#is_flag primerencuentro,true
+    #jump volviendo
+    #exit
+*elprimerencuentro
+     #set_flag primerencuentro,true
+     #door 11551,7707,0|unlock
+     #cutscene true
+     #lua getPlayer():Say("Me siento arrastrado por una extraña fuerza superior a mi voluntad")
+     #walk_to 11552,7707,0
+     #look_at 11551,7707
+     #door 11551,7707,0|open
+     #m Señor Oscuro|darklord.png|"¿Que buscas en terreno sagrado, mortal?."
+     #walk_to 11549,7707,0
+     #m Señor Oscuro|darklord.png|"¡Contesta mortal!"
+*eleccion
+     #choice
+         bendicion|Bendicion maldita(curacion).
+         resurreccion|Transmigrar(resurreccion).
+         explicacion|Explicame de que trata todo esto.
+         nada|No necesito nada actualmente
+     *bendicion
+     #m Señor Oscuro|darklord.png|"Estas de enhorabuena mortal, hoy estoy de humor,¿estas seguro de que quieres obtener el beneficio de mi bendición maldita?."
+     #choice
+          Si|Si.
+          No|No.
+     *Si
+        #script bendicionmaldita.txt|bendicion
+        #exit
+*No
+        #bgm trueno|false|true
+        #wait 1
+        #apply_stat Fear,50
+        #wait 2
+        #sfx mofa
+        #wait 1
+        #apply_stat Panic,50     
+        #wait 2
+        #m Senor Oscuro|darklord.png|"¿Para esto osas perturbar mi descanso?, ¡desaparece de mi vista mortal!"
+        #walk_to 11552,7707,0
+        #wait 1
+        #door 11551,7707,0|close
+        #wait 1
+       #exit
+*explicacion
+        #m Señor Oscuro|darklord.png|"Éste es un lugar sagrado, aquí podrás obtener el beneficio de mi poder alimentando mis arcas de oro."
+        #m Señor Oscuro|darklord.png|"A cambio de 3 lingotes de oro podrás restablecer la totalidad de la vitalidad de esa cárcel de carne que te apresa llamada cuerpo, aparte, también podrás recuperar los conocimientos de tu antiguo ser a un módico precio."
+        #m Señor Oscuro|darklord.png|"Y ahora, ¡desembolsa tus lingotes o deja de hacerme perder el tiempo!."
+        #script eleccionoscura.txt|eleccion1
+        #exit
+*nada 
+        #script bendicionmaldita.txt|7 
+        #exit    
+*resurreccion
+          #m Señor Oscuro|darklord.png|"Estas de enhorabuena mortal, hoy estoy de humor,¿estas seguro de que quieres recuperar tu conocimiento perdido?."
+     #choice
+          Si1|Si.
+          No1|No.
+     *Si1
+        #script bendicionmaldita1.txt|resurreccion
+        #exit
+*No1
+        #bgm trueno|false|true
+        #wait 1
+        #apply_stat Fear,50
+        #wait 2
+        #sfx mofa
+        #wait 1
+        #apply_stat Panic,50     
+        #wait 2
+        #m Senor Oscuro|darklord.png|"¿Para esto osas perturbar mi descanso?, ¡desaparece de mi vista mortal!"
+        #walk_to 11552,7707,0
+        #wait 1
+        #door 11551,7707,0|close
+        #wait 1
+       #exit
+  
+*volviendo
+#script bendicionmaldita1.txt|regreso
+#exit 

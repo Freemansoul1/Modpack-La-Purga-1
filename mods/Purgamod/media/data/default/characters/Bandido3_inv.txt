@@ -1,0 +1,32 @@
+--Bandido compra droga hachis alta calidad  
+#offer NHM.IngotGold,9999|1
+#demand Sprout.Polen_Brick|6
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

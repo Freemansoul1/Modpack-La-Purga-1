@@ -1,2 +1,0 @@
-#npc_create Ghost|NPC/Ghost.png|11566,7667,0
-#exit

@@ -1,0 +1,3 @@
+IGUI_EN = {
+    IGUI_QNW_SC_SealedCrate         =   "Sealed Crate",
+}

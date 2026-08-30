@@ -1,2 +1,0 @@
-*loop
-#m Carter|NPCPortraits/CarterP.png|"¡Hola, me alegro de verte de nuevo!, espero qué no sea la última."

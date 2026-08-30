@@ -1,0 +1,32 @@
+module SealedCrate
+{
+
+    item SealedCrateWood1
+    {
+    	Weight	        =	1,
+    	Type	        =	Normal,
+    	DisplayName	    =	SealedCrateWood,
+    	DisplayCategory =   Container,
+    	Icon	        =	SealedCrateWood1,
+    }
+
+    item SealedCrateWood2
+    {
+    	Weight	        =	1,
+    	Type	        =	Normal,
+    	DisplayName	    =	SealedCrateWood,
+    	DisplayCategory =   Container,
+    	Icon	        =	SealedCrateWood2,
+    }
+
+    item SealedCrateWood3
+    {
+    	Weight	        =	1,
+    	Type	        =	Normal,
+    	DisplayName	    =	SealedCrateWood,
+    	DisplayCategory =   Container,
+    	Icon	        =	SealedCrateWood3,
+    }
+
+}
+	

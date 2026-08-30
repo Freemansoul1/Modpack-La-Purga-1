@@ -1,0 +1,16 @@
+ContextMenu_PTBR = {
+	ContextMenu_FireMode = "Modo de Disparo:    ",
+	ContextMenu_Full-Auto = "Automático",
+	ContextMenu_Semi-Auto = "Semi-Automático",
+	ContextMenu_LoadedMixed = "Munição Carregada:    Mista",
+	ContextMenu_LoadedAmmo = "Munição Carregada:    ",
+	ContextMenu_Extra_Building = "Construção Extendida",
+	ContextMenu_FireModeBinding = "Pressione a tecla 'Alt' para alterar o modo de disparo.",
+	ContextMenu_SilencerD = "Condição do Silenciador:",
+	ContextMenu_SlingshotD = "Condição do Ferrolho:",
+	ContextMenu_StoneD = "Condição:",
+	ContextMenu_Pry_Open_Locked_Container = "Abrir o Recipiente Trancado",
+	ContextMenu_Unlock_Container = "Destrancar Recipiente",
+	ContextMenu_Enter_Combination = "Digitar Combinação",
+	ContextMenu_Cut_Padlock = "Cortar Cadeado",
+}

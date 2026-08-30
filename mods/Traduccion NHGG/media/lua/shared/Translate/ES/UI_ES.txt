@@ -1,0 +1,132 @@
+UI_ES = {
+    UI_ClickToSkip = "Deposita tu cuenta de banco para comenzar",
+    UI_PressAToStart = "Deposita tu cuenta de banco para comenzar",
+	UI_Cant_Disassemble = "No se pueden desmontar los muebles",
+	UI_TooBigBuilding = "El edificio es demasiado grande!",
+	UI_Text_TooManyFloors = "Edificio de mas de dos plantas!",
+	UI_IMissed = "El animal ha escapado...",
+	UI_FakeInf = "Nivel de exposicion: ",
+	UI_prof_Chemist = "Quimico",
+	UI_prof_Weaponer = "Ingeniero",
+	UI_prof_Leatherman = "Peletero",
+	UI_prof_Superviviente = "Superviviente",
+	UI_trait_task_start_med = "Esta realizando una tarea (Medico)",
+	UI_trait_task_start_army = "Esta ejecutando una tarea (Militar)",
+	UI_trait_task_start_artisan = "Estas ejecutando una tarea (Artesanos)",
+        UI_profdesc_burglar = "."
+
+	UI_trait_quest_cd = "Estas realizando una busqueda (Cain y Abel)",
+	UI_trait_quest_cd1 = "Cooldown/tiempo de espera (quedan 4 horas)",
+	UI_trait_quest_cd1_r1 = "Cooldown/tiempo de espera (quedan 3 horas)",
+	UI_trait_quest_cd1_r2 = "Cooldown/tiempo de espera (quedan 2 horas)",
+	UI_trait_quest_cd1_r3 = "Cooldown/tiempo de espera (queda 1 hora)",
+
+	UI_trait_quest_cd_sp = "Cooldown/tiempo de espera (Sparkle)",
+	UI_trait_quest_cd_si = "Cooldown/tiempo de espera (Silk)",
+	UI_trait_quest_cd_ki = "Cooldown/tiempo de espera (Kyoshi)",
+	UI_trait_quest_cd_ho = "Cooldown/tiempo de espera (Buscador)",
+	UI_trait_quest_cd_as = "Cooldown/tiempo de espera (Aspirina)",
+	UI_trait_quest_cd_ne = "Cooldown/tiempo de espera (Friki)",
+
+
+	UI_trait_cannibal = "Canibal",
+	UI_trait_cannibal_desc = "Supervivencia a partir de la carne de tus semejantes..",
+	UI_trait_inert = "Inerte",
+	UI_trait_inert_desc = "Regeneracion de energia lenta",
+	UI_trait_miner = "Minero",
+	UI_trait_miner_desc = "Tienes probabilidad de obtener mas materiales al recolectar usando energia",
+	UI_QuestWindow = "Ventana de interaccion con los NPC",
+
+	UI_ContextMenu_Healthy = "Sano",
+	UI_ContextMenu_Infected = "Infectado",
+	UI_ContextMenu_Test = "Test",
+	UI_ContextMenu_Inject = "Inyectar",
+	UI_ContextMenu_Apply = "Aplicar",
+
+	UI_Treasure = "Distancia hasta el objetivo:",
+
+	UI_OnConnectFailed_InvalidSteamAccount = "No se Rick.. parece falso.. me da a mi que te has equivocado escribiendo el nombre o contraseña de tu cuenta.",
+
+
+UI_Rename_Weapon_Notch = "Hacer grabado en arma",
+UI_Rename_Weapon_Notch_Window = "Ingresar texto para grabado",
+UI_Notch_Text = "Grabado",
+UI_Notch_Created_By = "Autor",
+
+UI_RuleSet_CannedFood = "Comida enlatada",
+UI_RuleSet_Camo = "Chaquetas Militares",
+
+UI_prof_raider = "Asaltante",
+UI_prof_Bountyhunter = "Cazador de Recompensas",
+UI_prof_watchman = "Vigilante",
+UI_prof_junkdiver = "Chatarrero",
+UI_prof_jaeger = "Jaeger",
+UI_prof_Inventor = "Inventor",
+UI_prof_bandit = "Bandido",
+UI_prof_Chef = "Chef",
+UI_prof_zedhunter = "Cazador de Zeds",
+UI_prof_tech = "Tecnico",
+
+    UI_Achievement_cleanermeet_Name = "¿Por qué hay sangre?",
+    UI_Achievement_cleanermeet_Description = "Conociste a Limpiadora",
+
+    UI_Achievement_demiurgemeet_Name = "Los antimemes son reales",
+    UI_Achievement_demiurgemeet_Description = "Conociste a Demiurgo",
+
+    UI_Achievement_nursemeet_Name = "Problemas con papa",
+    UI_Achievement_nursemeet_Description = "Conociste a Enfermera",
+
+    UI_Achievement_assistantmeet_Name = "La hija de Schrodinger",
+    UI_Achievement_assistantmeet_Description = "Conociste a Asistente",
+
+    UI_Achievement_cookmeet_Name = "Si trabajas puedes comer",
+    UI_Achievement_cookmeet_Description = "Conoce a Cocinera",
+
+    UI_Achievement_headmeet_Name = "Quién es el jefe realmente?",
+    UI_Achievement_headmeet_Description = "Conoce a Head",
+
+    UI_Achievement_pharmacistmeet_Name = "Toma tus pildoras",
+    UI_Achievement_pharmacistmeet_Description = "Conoce a Farmaceutica",
+
+    UI_Achievement_sentrymeet_Name = "El superviviente mas viejo",
+    UI_Achievement_sentrymeet_Description = "Conociste a Centinela",
+
+    UI_Achievement_sentryquit_Name = "El mejor amigo de Demiurgo",
+    UI_Achievement_sentryquit_Description = "Completa todas las misiones del Purgatorio",
+
+    UI_Achievement_abelmeet_Name = "¿Conoces a mi hermano?",
+    UI_Achievement_abelmeet_Description = "Conociste a Abel",
+
+    UI_Achievement_cainmeet_Name = "Referencia biblica",
+    UI_Achievement_cainmeet_Description = "Conociste a Cain",
+
+    UI_Achievement_aspirinmeet_Name = "Toma tus pildoras 2",
+    UI_Achievement_aspirinmeet_Description = "Conociste a Aspirin",
+
+    UI_Achievement_houndmeet_Name = "Caza o se cazado",
+    UI_Achievement_houndmeet_Description = "Conociste a Sabueso",
+
+    UI_Achievement_kioshimeet_Name = "Cuatro palabras restantes",
+    UI_Achievement_kioshimeet_Description = "Conociste a Kioshi",
+
+    UI_Achievement_nerdmeet_Name = "¿Soy asi de aburrido?",
+    UI_Achievement_nerdmeet_Description = "Conociste a Nerd",
+
+    UI_Achievement_silkmeet_Name = "Mueve los hilos",
+    UI_Achievement_silkmeet_Description = "Conociste a Silk",
+
+    UI_Achievement_sparklemeet_Name = "Brillante",
+    UI_Achievement_sparklemeet_Description = "Conociste a Sparkle",
+
+    UI_Achievement_marshallmeet_Name = "Necesitas purificarte",
+    UI_Achievement_marshallmeet_Description = "Conociste a Marshall",
+
+    UI_Achievement_cartermeet_Name = "La madre",
+    UI_Achievement_cartermeet_Description = "Conociste a Carter",
+
+    UI_Achievement_darkmeet_Name = "Humor negro - El mejor humor",
+    UI_Achievement_darkmeet_Description = "Conociste a Dark",
+
+    UI_Achievement_tradermeet_Name = "¿Para que necesita oro?",
+    UI_Achievement_tradermeet_Description = "Conociste a Trader",
+}

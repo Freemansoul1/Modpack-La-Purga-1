@@ -1,0 +1,4 @@
+UI_FR = {
+UI_noList = "Aucune tâche enregistrée.",
+UI_TitleList = "Liste de contrôle",
+}

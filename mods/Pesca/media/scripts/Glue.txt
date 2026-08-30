@@ -1,0 +1,22 @@
+module Base
+{
+
+	item FishScales
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=   Fish Scales,
+        Icon	=	FishScales,
+        WorldStaticModel = FishScales_Ground,
+		Tooltip = Tooltip_FishScales,
+    }
+	
+	model FishScales_Ground
+    {
+        mesh = WorldItems/FishScales,
+		texture = WorldItems/FishScales,
+        scale = 0.3,
+    }
+
+}

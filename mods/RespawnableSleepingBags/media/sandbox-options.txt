@@ -1,0 +1,31 @@
+VERSION = 1,
+
+option RespawnableSBags.MaxSlots
+{
+    type = integer,
+    min = 1,
+    default = 3,
+    max = 999,
+    page = RespawnableSBags,
+    translation = RespawnableSBags_MaxSlots,
+}
+
+option RespawnableSBags.Cooldown
+{
+    type = integer,
+    min = 0,
+    default = 72,
+    max = 36000,
+    page = RespawnableSBags,
+    translation = RespawnableSBags_Cooldown,
+}
+
+option RespawnableSBags.TpDelay
+{
+    type = integer,
+    min = 0,
+    default = 150,
+    max = 1000,
+    page = RespawnableSBags,
+    translation = RespawnableSBags_TpDelay,
+}

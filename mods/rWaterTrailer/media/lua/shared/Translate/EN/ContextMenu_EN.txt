@@ -1,0 +1,17 @@
+ContextMenu_EN = {
+	ContextMenu_Add_Water_To_Trailer = "Refill Water Tank",
+
+	ContextMenu_VehicleAddWater = "Pour Item into Tank",
+
+	ContextMenu_VehicleSiphonWater = "Add Water from Tank",
+   
+	ContextMenu_VehicleAddSingleWater = "Add Water from<br>",
+   
+	ContextMenu_VehicleAddWaterToItem = "Fill Item from Tank",
+	ContextMenu_VehicleAddWaterToSingleItem = "<br>from Tank",
+
+   ContextMenu_Open_TankLid = "Open Tank Lid"
+   ContextMenu_Close_TankLid = "Close Tank Lid"
+   
+   ContextMenu_Drain_Tank = "Drain Tank"
+}

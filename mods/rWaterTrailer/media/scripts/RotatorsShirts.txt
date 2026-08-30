@@ -1,0 +1,16 @@
+module RotatorsClothing {
+	item TShirt_RotatorsBlack
+		{
+      DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Rotators Black T-Shirt,
+		ClothingItem = TShirt_RotatorsBlack,
+		BodyLocation = Tshirt,
+		Icon = black_shirt,
+		BloodLocation = Shirt,
+		Insulation = 0.2,
+		WindResistance = 0.2,
+		FabricType = Cotton,
+		WorldStaticModel = TShirt_Ground,
+	}
+}

@@ -1,2 +1,0 @@
-#npc_create Kioshi|NPC/Kioshi.png|11565,7646,0
-#exit

@@ -1,0 +1,218 @@
+--Comercio gasolina
+
+*gasolina1
+#m Lara|media/ui/Lara.png| "¿Ofertas? ¡Claro! Claro que tengo ofertas... ¡Siempre hay ofertas, pero nunca son suficientes! ¡Nunca! ¡Mira, mira rápido antes de que cambie de opinión!"
+#choice
+	Agua|"Te relleno tu botella de agua vacía por 1 dolar"
+	Bidon|"Te relleno tu bidón por 7 dólares"
+	Oferta|"Oferta de 5 bidones por 25 dólares"
+	No|"No me interesa"
+
+*Agua
+#has_item Base.Money,1
+    #has_item Base.WaterBottleEmpty,1  
+        #remove_item Base.WaterBottleEmpty
+        #remove_item Base.Money,1
+        #cutscene true
+        #hide_panel
+        #fade_out
+        #wait 1
+        #sfx gasolinaSound
+        #pop_up laraSurtidor.png|5
+        #fade_in
+        #show_panel
+        #m Lara|media/ui/Lara.png| "Aquí está... ¿O era agua? No importa, ¡tómala antes de que cambie!"
+        #reward Base.WaterBottlePetrol,1,common
+        #exit
+    #m Lara|media/ui/Lara.png| "¡No! ¡No, no tienes una botella vacía! ¿Por qué me haces esto?"
+    #exit
+#m Lara|media/ui/Lara.png| "No tienes suficiente dinero... ¡Siempre falta dinero!"
+#exit
+
+*Bidon
+#has_item Base.Money,7
+    #has_item Base.EmptyPetrolCan,1
+        #remove_item Base.EmptyPetrolCan,1
+        #remove_item Base.Money,7
+        #cutscene true
+        #hide_panel
+        #fade_out
+        #wait 1
+        #sfx gasolinaSound
+        #pop_up laraSurtidor.png|5
+        #fade_in
+        #show_panel
+        #m Lara|media/ui/Lara.png| "Aquí tienes... Pero ten cuidado... ¡Ten cuidado! ¡No sé qué más puede salir mal!"
+        #reward Base.PetrolCan,1,common
+        #exit
+    #m Lara|media/ui/Lara.png| "¡¿Dónde está tu bidón vacío?! ¡Esto no es un juego!"
+    #exit
+#m Lara|media/ui/Lara.png| "No tienes suficiente dinero... ¡Lo sabía, lo sabía!"
+#exit
+
+*Oferta
+#has_item Base.Money,25
+    #has_item Base.EmptyPetrolCan,5
+        #remove_item Base.EmptyPetrolCan,5
+        #remove_item Base.Money,25
+        #cutscene true
+        #hide_panel
+        #fade_out
+        #wait 1
+        #sfx gasolinaSound
+        #pop_up laraSurtidor.png|5
+        #fade_in
+        #show_panel
+        #m Lara|media/ui/Lara.png| "¡CINCO bidones! ¡CINCO! ¿Puedes sentirlo? ¡El poder de la gasolina corre por tus venas! ¡Toma, aquí tienes, pero recuerda... la gasolina nunca duerme!"
+        #reward Base.PetrolCan,5,common
+        #exit
+    #m Lara|media/ui/Lara.png| "¿Cinco bidones? ¿¡Dónde están!? ¡Sin bidones no hay trato, es simple matemáticas!"
+    #exit
+#m Lara|media/ui/Lara.png| "No tienes dinero suficiente... ¿O es que el dinero te tiene a ti? Piénsalo... piénsalo bien."
+#exit
+
+*No
+#m Lara|media/ui/Lara.png| "¿No? ¡NO! ¿Estás seguro? ¡Esto podría cambiarlo todo! ¡Pero bueno, sigue con tu vida, yo aquí con mis bidones... y mis secretos!"
+#exit
+
+*receta
+#is_flag verdad_Receta,true
+    #m Lara|media/ui/Lara.png| "¡La receta de mi padre! ¿La has perdido? ¡Ja! Menos mal que siempre tengo una copia... o quizás es la copia la que me tiene a mí. En fin, 200 dólares y es tuya, si te atreves."
+    #has_item Base.Money,200
+        #m Lara|media/ui/Lara.png| "¡Ja! ¡Aquí tienes la fórmula! ¿La entiendes? ¿De verdad la entiendes? ¡Gracias a ti, todo será diferente ahora!"
+        #reward warpbiofuel.ResearchNotes,1,rare
+        #exit
+    #m Lara|media/ui/Lara.png| "No tienes suficiente dinero... ni suficiente valor, tal vez."
+    #exit
+#is_flag mentira_Receta,true   
+    #m Lara|media/ui/Lara.png| "¡El cementerio, claro! ¡Ahí estaba todo! Gracias por ir, he encontrado el diario de mi padre. Ahora, 200 dólares y te la vendo. Pero cuidado... las palabras tienen poder."
+    #has_item Base.Money,200
+        #m Lara|media/ui/Lara.png| "¡Perfecto! Aquí está la fórmula, pero recuerda... la gasolina y el biodiesel tienen secretos, y ahora tú también."
+        #reward warpbiofuel.ResearchNotes,1,rare
+        #exit
+    #m Lara|media/ui/Lara.png| "No tienes suficiente dinero... las sombras no te lo permitirán, lo sé."
+    #exit
+
+--Menu misiones
+*Misiones
+#choice
+	Misiones1_Lara|"Trae 20 fresas"
+    Misiones2_Lara|"Trae 10 muestras sintetizadas"
+    Misiones3_Lara|"Encuentra la fórmula secreta del Biodiesel"|Lara_Receta	
+    No|"No, gracias."	
+
+--Misiones diarias
+
+
+#is_quest Lara_q1|locked
+    #set_flag Lara_q1_cleared,false
+#is_quest Lara_q1|completed
+    #set_flag Lara_q1_cleared,false
+#is_quest Lara_q1|failed
+    #set_flag Lara_q1_cleared,false
+
+#is_quest Lara_q2|locked
+    #set_flag Lara_q2_cleared,false
+#is_quest Lara_q2|completed
+    #set_flag Lara_q2_cleared,false
+#is_quest Lara_q2|failed
+    #set_flag Lara_q2_cleared,false
+
+
+
+*Misiones1_Lara
+#is_quest Lara_q1|locked
+	#quest_unlock Lara_q1
+	#m Lara|media/ui/Lara.png| "Como buena empresaria, tengo que mantener mi reputación y mis clientes contentos, aunque los fresas a veces me hablan de cosas raras."
+	#m Lara|media/ui/Lara.png| "Las fresas no son solo frutas, son portadoras de secretos olvidados. Necesito que me traigas 20 fresas."
+	#m Lara|media/ui/Lara.png| "No te preocupes si de repente empiezas a escuchar susurros; es normal."
+	#exit
+#is_quest Lara_q1|unlocked,uncompleted
+	#has_item farming.Strewberrie,20,any
+		#m Lara|media/ui/Lara.png| "¡Oh, qué alegría! Estas fresas cantaban como sirenas en mi jardín."
+		#m Lara|media/ui/Lara.png| "Aquí tienes tu recompensa. No olvides que los sueños pueden ser tan reales como el biodiesel."
+		#remove_item farming.Strewberrie,20
+		#reward Base.Money,1,common
+		#set_flag Lara_q1_cleared,true
+        #is_lua getPlayer():HasTrait("Goodmanners")|true
+            #stat_inc Lara|Reputacion|5
+        #is_lua getPlayer():HasTrait("Badmanners")|true
+            #stat_inc Lara|Reputacion|1.5
+        #stat_inc Lara|Reputacion|3.5
+		#fade_out black
+		#npc_update Lara
+		#fade_in
+		#exit
+	#m Lara|media/ui/Lara.png| "Aún no tienes las 20 fresas. ¿Las fresas están hablándote de nuevo?"
+    #exit
+#is_quest Lara_q1|unlocked,completed
+	#m Lara|media/ui/Lara.png| "El reloj de arena de las fresas se detiene por hoy. Regresa cuando el tiempo se vuelva extraño de nuevo."
+	#exit
+
+*Misiones2_Lara
+#is_quest Lara_q2|locked
+    #quest_unlock Lara_q2
+    #m Lara|media/ui/Lara.png| "¿Sabías que los zombies tienen secretos que podrían cambiar la forma en que vemos el mundo? Lo sé porque lo escuché de una cucaracha."
+    #m Lara|media/ui/Lara.png| "Necesito 10 muestras de una bacteria que vive en los zombies. No te asustes si ves una danza macabra de bacterias"
+    #exit
+#is_quest Lara_q2|unlocked,uncompleted
+    #has_item warpbiofuel.ContaminatedSample,10,any
+        #m Lara|media/ui/Lara.png| "¡Perfecto! Con estas muestras, puedo crear biodiesel que podría hacer que los zombies bailen."
+        #m Lara|media/ui/Lara.png| "Aquí está tu pago. Si escuchas un zumbido, no te preocupes; es solo el biodiesel ganando vida."
+        #remove_item warpbiofuel.ContaminatedSample,10
+        #reward Base.Money,2,common
+        #set_flag Lara_q2_cleared,true
+        #is_lua getPlayer():HasTrait("Goodmanners")|true
+            #stat_inc Lara|Reputacion|5
+        #is_lua getPlayer():HasTrait("Badmanners")|true
+            #stat_inc Lara|Reputacion|1.5
+        #stat_inc Lara|Reputacion|3.5
+        #fade_out black
+        #npc_update Lara
+        #fade_in
+        #exit
+    #has_item warpbiofuel.ContaminatedSample2,10,any
+        #m Lara|media/ui/Lara.png| "Esa muestra es de una realidad paralela. Intenta de nuevo."
+        #exit
+    #m Lara|media/ui/Lara.png| "Aún no tienes las 10 muestras. ¿No ves que los zombis tienen algo que decir?"
+    #exit
+#is_quest Lara_q2|unlocked,completed
+    #m Lara|media/ui/Lara.png| "El ciclo de las muestras ha terminado por hoy. Vuelve mañana antes de que el reloj se detenga."
+    #exit
+
+--Mision receta
+*Misiones3_Lara
+
+#is_quest Lara_q3|unlocked,uncompleted
+    #m Lara|media/ui/Lara.png| "¿Descubriste algo?"
+        #is_flag Lara_q3_muerto,true
+            #m Lara|media/ui/Lara.png| "Sí, la receta está en un laberinto de zombis. Mi padre… ¿dónde está mi padre? Los ecos del pasado cantan en la oscuridad."
+            #m Lara|media/ui/Lara.png| "Gracias por tu esfuerzo. Toma esta receta; tal vez pueda ayudarte a entender lo que no es tangible."
+            #reward warpbiofuel.ResearchNotes,1,rare
+            #set_flag Lara_q3_cleared,true
+            #is_lua getPlayer():HasTrait("Goodmanners")|true
+                #stat_inc Lara|Reputacion|10
+            #is_lua getPlayer():HasTrait("Badmanners")|true
+                #stat_inc Lara|Reputacion|4
+            #stat_inc Lara|Reputacion|7
+            #fade_out black
+            #npc_update Lara
+            #fade_in
+            #exit
+    #script LaraReceta1.txt
+#is_quest Lara_q3|unlocked,completed
+    is_flag mentira_Receta,true
+        #m Lara|media/ui/Lara.png| "Una pena que no encontraste nada. La pista se ha perdido en el tiempo, como los recuerdos de mi padre."
+        #exit
+    is_flag verdad_Receta,true
+        #m Lara|media/ui/Lara.png| "Gracias por traer la receta. Ahora los ecos del biodiesel se han alineado."
+        #exit
+    
+
+
+#is_flag Lara_RecetaNo,true
+    #script LaraReceta.txt
+#m Lara|media/ui/Lara.png| "Tu esfuerzo ha amplificado mi producción, y los zombies aplauden en la distancia."
+#m Lara|media/ui/Lara.png| "Permíteme compartir un secreto: mi padre inventó una fórmula que transforma la muerte en productividad. Pero la pista es tan enigmática como la vida misma."
+#m Lara|media/ui/Lara.png| "Él dijo: La energía de la muerte puede dar vida. Busca en el lugar donde los muertos ayudan a los vivos a crecer. Quizás en el cementerio de Luisville encontrarás más que solo tumbas."
+#script LaraReceta.txt

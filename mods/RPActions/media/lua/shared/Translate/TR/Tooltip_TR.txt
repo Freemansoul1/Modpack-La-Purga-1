@@ -1,0 +1,3 @@
+Tooltip_TR = {
+	Tooltip_RPAcard = "Bu kart envanterinizde olduğunda özel danslar erişilebilir",
+}

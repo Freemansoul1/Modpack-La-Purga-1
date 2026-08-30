@@ -1,0 +1,135 @@
+--Contrabandista drogas monguis
+
+#cutscene true
+#is_flag Contrabandista4_intro,true
+	#jump loop
+
+*intro
+	#m Tú|3D:Player|"Oye, me han dicho que tienes algo... especial. Algo de alta calidad."
+	#m Contrabandista|media/ui/Contrabandista4.png| "Ah, veo que has oído bien. No suelo hablar de esto con cualquiera, pero tú pareces tener interés... Tengo una mercancía que pocos pueden manejar, pero no te equivoques: esto es lo mejor que hay."
+	#m Tú|3D:Player|"Estoy escuchando, ¿qué es lo que ofreces?"
+	#m Contrabandista|media/ui/Contrabandista4.png| "Es lo más potente que existe. Solo los más atrevidos o desesperados buscan esto. No la vendo así como así, pero... te puedo hacer un trato especial." 
+	#m Tú|3D:Player|"¿Un trato? ¿De qué hablas?"
+	#m Contrabandista|media/ui/Contrabandista4.png|"Esto... viene de la mejor fuente. Pero no cualquier versión barata, no. Esta es pura, refinada de las mismas semillas que yo vendo. La diferencia es que la mía ha sido cultivada con experiencia, cuidado, y paciencia. La mayoría no tiene ni idea de cómo manejar esta planta, pero yo... llevo años en este juego."
+	#m Tú|3D:Player|"Entonces, ¿me estás diciendo que vendes las semillas también?"
+	#m Contrabandista|media/ui/Contrabandista4.png|"Claro, vendo las semillas. Pero escúchame bien, cualquiera puede plantar unas semillas, pero no cualquiera puede lograr un producto como este. Se necesita dedicación, conocimiento... y, por supuesto, tener el entorno perfecto. Eso es lo que yo hago. Mientras otros fallan o se conforman con una droga mediocre, yo saco lo mejor. Pero, aquí está el problema..."
+	#m Tú|3D:Player|"¿Qué problema?"
+	#m Contrabandista|media/ui/Contrabandista4.png|"Mis ventas han bajado... y no porque mi producto sea malo, todo lo contrario. El problema son esos malditos zombis. Cada vez hay más. La gente ya no se atreve a moverse como antes, ni siquiera los traficantes más atrevidos. Nadie quiere arriesgarse en las zonas más hostiles, y eso está limitando mi mercado."
+	#m Tú|3D:Player|"¿Y qué esperas que haga yo con todo esto?"
+	#m Contrabandista|media/ui/Contrabandista4.png|"Aquí es donde entras tú. Necesito a alguien que no le tenga miedo a los zombis, a las zonas más peligrosas. Hay sitios allá afuera, llenos de tipos duros, saqueadores y sobrevivientes desesperados, donde este producto se vendería a un precio altísimo. Yo no tengo tiempo para moverme por ahí, pero tú... tú podrías hacerlo."
+	#m Tú|3D:Player|"¿Quieres que sea tu vendedor?"	
+	#m Contrabandista|media/ui/Contrabandista4.png|"No exactamente. Yo te vendo la mercancía a un precio justo, tú la llevas a esas zonas y seguro que lo vendes a un precio más alto. Todo lo que ganes, te lo quedas. El riesgo es tuyo, pero también la recompensa. Si juegas bien tus cartas, podrías hacerte rico rápido."
+	#m Contrabandista|media/ui/Contrabandista4.png|"Tambien puedes comprar mis semillas y plantarlas, pero te saldrá un producto de más baja calidad y solo yo, soy tu único cliente garantizado. Venderla en otro lado es arriesgado, podrías atraer la atención equivocada."
+	#set_flag Contrabandista4_intro,true
+
+#set_flag Contrabandista4_intro,true
+#is_lua getPlayer():HasTrait("Goodmanners")|true
+	#stat_inc Contrabandista4|Reputacion|5
+	#jump loop
+#is_lua getPlayer():HasTrait("Badmanners")|true
+	#stat_inc Contrabandista4|Reputacion|1.5
+	#jump loop
+#stat_inc Contrabandista4|Reputacion|3.5
+
+#is_quest Contrabandista4_q1|locked
+	#quest_unlock Contrabandista4_q1
+
+#is_quest Contrabandista4_q1|unlocked,uncompleted
+	#set_flag Contrabandista4_q1_cleared,true
+	#restock Contrabandista4
+
+*loop
+
+#m Contrabandista|media/ui/Contrabandista4.png| "Venga, no me hagas perder el tiempo. ¿Hay trato?"
+
+--Menu principal
+#choice
+	compra|"Comprar monguis de alta calidad"
+	semilla|"Comprar esporas de monguis"
+	venta|"Vender monguis de baja calidad"
+	tutorial|"Explicame de nuevo el trato"
+	no|"Nada, solo pasaba por aquí"
+
+*no
+#m Contrabandista|media/ui/Contrabandista4.png| "Entonces lárgate y no me hagas perder el tiempo."
+#cutscene false
+#exit	
+
+
+
+
+--venta de monguis de baja calidad
+*venta
+#trade Contrabandista4
+#cutscene false
+#exit
+		
+
+--compra de la semilla
+*semilla
+#m Contrabandista|media/ui/Contrabandista4.png| "Te vendo las esporas por 50 pepitas de oro. ¿Aceptas?"
+	#choice
+		siSemilla|"Comprar unas esporas de monguis por 50 pepitas"
+		no|"No gracias, por ahora no me interesa."
+	
+*siSemilla
+#has_item NHM.NuggetGold,50
+	#m Contrabandista|media/ui/Contrabandista4.png|"Toma las esporas y ven a verme en cuanto tengas el producto."
+        #remove_item NHM.NuggetGold,50
+	#reward Sprout.MonguiBagSpore,1,unique
+	#exit
+#m Contrabandista|media/ui/Contrabandista4.png|"No tienes suficientes pepitas de oro."
+#cutscene false
+#exit
+
+
+--Tutorial
+
+*tutorial
+#m Contrabandista|media/ui/Contrabandista4.png|"¿De qué trato te gustaría hablar?"
+	#choice
+		bajaCalidad|"Trato de la droga de baja calidad"
+		altaCalidad|"Trato de la droga de alta calidad"
+
+*bajaCalidad	
+#m Contrabandista|media/ui/Contrabandista4.png|"Verás, la droga en sí no la consigo en cualquier esquina. Proviene de una planta extremadamente rara, que solo crece en ciertos lugares bajo condiciones específicas. Te podría ofrecer unas esporas."
+#m Tú|3D:Player|"¿Unas esporas? ¿Y qué se supone que haría con eso?"
+#m Contrabandista|media/ui/Contrabandista4.png|"Esta pequeña joya es la clave de todo. Si la plantas en un buen lugar, le das el cuidado necesario y la cosechas en el momento justo... tendrás en tus manos algo que podría hacerte rico, o simplemente darte poder. Una vez que coseches la planta, puedes vendérmela directamente. Te aseguro que te pagaré bien, siempre y cuando la calidad sea decente."
+#m Tú|3D:Player|"Interesante... ¿y cuánto me va a costar esas esporas?"
+#m Contrabandista|media/ui/Contrabandista4.png|"Todo buen negocio tiene su precio, amigo. Por estas esporas, te pediré 50 pepitas. Un precio justo, considerando el valor de lo que obtendrás si juegas bien tus cartas. "
+#m Tú|3D:Player|"Entonces, si planto estas esporas y cosecho las setas, ¿me comprarás el producto?"
+#m Contrabandista|media/ui/Contrabandista4.png|"Así es. Yo soy tu único cliente garantizado. Venderla en otro lado es arriesgado, podrías atraer la atención equivocada. Pero conmigo, tienes una transacción segura. Tú solo trae el producto, y ambos nos haremos más ricos.
+#jump loop
+
+*altaCalidad
+#m Contrabandista|media/ui/Contrabandista4.png|"Escúchame bien, mis ventas han bajado... y no porque mi producto sea malo, todo lo contrario. El problema son esos malditos zombis. Cada vez hay más. La gente ya no se atreve a moverse como antes, ni siquiera los traficantes más atrevidos. Nadie quiere arriesgarse en las zonas más hostiles, y eso está limitando mi mercado."
+#m Tú|3D:Player|"¿Y qué esperas que haga yo?"
+#m Contrabandista|media/ui/Contrabandista4.png|"Aquí es donde entras tú. Necesito a alguien que no le tenga miedo a los zombis, a las zonas más peligrosas. Hay sitios allá afuera, llenos de tipos duros, saqueadores y sobrevivientes desesperados, donde este producto se vendería a un precio altísimo. Yo no tengo tiempo para moverme por ahí, pero tú... tú podrías hacerlo."
+#m Tú|3D:Player|"¿Quieres que sea tu vendedor?"
+#m Contrabandista|media/ui/Contrabandista4.png|"No exactamente. Yo te doy la mercancía a un precio fijo, sin importar cuánto te paguen allá afuera. Si logras sobrevivir y venderla, podrías volver cargado de dinero. Si no... bueno, al menos lo intentaste."
+#m Tú|3D:Player|"Me gusta el trato. Pero dime, ¿cuánto por la mercancía?"
+#m Contrabandista|media/ui/Contrabandista4.png|"No es barato, pero es una inversión. Por este lote, te lo dejaré en 200 pepitas."
+#m Contrabandista|media/ui/Contrabandista4.png| "Pero recuerda, no todos te comprarán esta droga. Tendrás que ir con ojo y buscar a la persona adecuada."
+#jump loop
+
+
+--Compra de droga de alta calidad
+*compra
+#m Contrabandista|media/ui/Contrabandista4.png| "Te vendo monguis de alta calidad por 200 pepitas. ¿Aceptas?"
+	#choice
+		siDroga|"Comprar monguis por 200 pepitas"
+		no|"No gracias, por ahora no me interesa."
+	
+*siDroga
+#has_item NHM.NuggetGold,200
+	#m Contrabandista|media/ui/Contrabandista4.png|"Toma la droga. Suerte ahí fuera."
+        #remove_item NHM.NuggetGold,200
+	#reward Sprout.Hongomagico,1,unique
+	#exit
+#m Contrabandista|media/ui/Contrabandista4.png|"No tienes suficientes pepitas."
+#cutscene false
+#exit
+
+		
+
+

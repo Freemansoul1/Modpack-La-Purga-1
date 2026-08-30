@@ -1,2 +1,0 @@
-#npc_create Aspirin|NPC/Aspirin.png|11563,7673,1
-#exit

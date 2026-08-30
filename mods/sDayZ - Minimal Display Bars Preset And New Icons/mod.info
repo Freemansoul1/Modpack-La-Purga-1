@@ -1,0 +1,5 @@
+name=sDayZ - Minimal Display Bars Preset And New Icons
+id=sDayZ.MinimalDisplayBars
+description=Preset And New Icons. <LINE><RGB:0.0,0.7,0.0>v1.2
+poster=poster.png
+require=MinimalDisplayBars

@@ -1,0 +1,58 @@
+module gzGrunts {
+    sound male_grunt1 {
+        category = MaleGrunt,
+        clip { 
+            file = media/sound/male_grunt1.ogg,
+            volume = 1.1,
+            }
+    }
+    sound male_grunt2 {
+        category = MaleGrunt,
+        clip { 
+            file = media/sound/male_grunt2.ogg,
+            volume = 1.1,
+            }
+    }
+    sound male_grunt3 {
+        category = MaleGrunt,
+        clip { 
+            file = media/sound/male_grunt3.ogg,
+            volume = 1.1,
+            }
+    }
+    sound male_grunt4 {
+        category = MaleGrunt,
+        clip { 
+            file = media/sound/male_grunt4.ogg,
+            volume = 0.8,
+            }
+    }
+    sound male_grunt5 {
+        category = MaleGrunt,
+        clip { 
+            file = media/sound/male_grunt4.ogg,
+            volume = 1,
+            }
+    }
+    sound female_grunt1 {
+        category = FemaleGrunt,
+        clip { 
+            file = media/sound/female_grunt1.ogg,
+            volume = 0.6,
+            }
+    }
+    sound female_grunt2 {
+        category = FemaleGrunt,
+        clip { 
+            file = media/sound/female_grunt2.ogg,
+            volume = 0.3,
+            }
+    }
+    sound female_grunt3 {
+        category = FemaleGrunt,
+        clip { 
+            file = media/sound/female_grunt3.ogg,
+            volume = 0.3,
+            }
+    }
+}

@@ -1,6 +1,0 @@
-#name Carter|Carter
-
-#desc Nombre: Jill Carter
-#desc_append Edad: 30-35 años
-#desc_append Tiene una amplia experiencia en combate. Capitán de todas las Fuerzas Armadas, ella es probablemente la más aplicada.
-#exit

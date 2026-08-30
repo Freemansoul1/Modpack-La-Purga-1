@@ -1,0 +1,6 @@
+ItemName_EN = {
+
+ItemName_Base.TowBarCar		= "Tow bar",
+
+
+}

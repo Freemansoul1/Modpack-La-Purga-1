@@ -1,0 +1,500 @@
+module Sprout
+{
+	imports
+	{
+		Base
+	}
+/*****************Make Dyes*************************/
+recipe Make Red Dye
+	{
+      RedRose=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result: RedDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category: Dyes,
+	}
+recipe Make Orange Dye
+	{
+      OrangeDahlia=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:OrangeDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Yellow Dye
+	{
+      YellowDaisy=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:YellowDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Green Dye
+	{
+      YellowDaisy=1,
+	BlueDelphinium=1,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:GreenDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Blue Dye
+	{
+	BlueDelphinium=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:BlueDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Purple Dye
+	{
+	BlueDelphinium=1,
+	MagentaPenta=1,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:PurpleDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Magenta Dye
+	{
+	MagentaPenta=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:MagentaDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Black Dye
+	{
+	BlackGeranium=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:BlackDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make White Dye
+	{
+	WhiteLarkspur=2,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:WhiteDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Grey Dye
+	{
+	WhiteLarkspur=1,
+	BlackGeranium=1,
+	
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:GreyDye,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Make Brown Dye
+	{
+	BlueDelphinium=1,
+	MagentaPenta=1,
+	YellowDaisy=1,
+	OilOlive/OilVegetable=1,
+
+	keep MortarPestle,
+
+        Result:BrownDye2,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+/********************************* Paint ***************************************/
+recipe Make Xanthan Gum
+	{
+	Yeast=1,
+	Cabbage=1,
+	Salt=1,
+	Water=1,
+
+	keep MortarPestle,
+	keep Pot,
+
+        Result:XanthanGum=2,
+       NeedToBeLearn:true,
+        Time:800.0,
+	  Category:Dyes,
+	}
+recipe Make Paintbrush
+	{
+	WoodenStick=1,
+	Twine=1,
+	Wire=1,
+
+	keep Scissors,
+
+        Result:Paintbrush,
+       NeedToBeLearn:true,
+        Time:100.0,
+	  Category:Dyes,
+	}
+recipe Mix Red Paint
+	{
+	RedDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintRed,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Black Paint
+	{
+	BlackDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintBlack,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Brown Paint
+	{
+	BrownDye2=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintBrown,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Green Paint
+	{
+	GreenDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintGreen,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Grey Paint
+	{
+	GreyDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintGrey,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Orange Paint
+	{
+	OrangeDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintOrange,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Pink Paint
+	{
+	PinkDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintPink,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Purple Paint
+	{
+	PurpleDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintPurple,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix White Paint
+	{
+	WhiteDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintWhite,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Yellow Paint
+	{
+	YellowDye=2,
+	XanthanGum=2,
+	PaintbucketEmpty=1,
+	Water=5,
+
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintYellow,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Turquoise Paint
+	{
+	PaintBlue=1,
+	PaintGreen=1,
+	PaintbucketEmpty=1,
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintTurquoise,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Cyan Paint
+	{
+	PaintBlue=1,
+	PaintGreen=1,
+	PaintWhite=1,
+	PaintbucketEmpty=1,
+
+	keep WoodenStick/Spoon,
+        Result:PaintLigh,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Light Brown Paint
+	{
+	PaintBrown=1,
+	PaintWhite=1,
+	PaintbucketEmpty=1,
+
+	keep WoodenStick/Spoon,
+
+        Result:PaintLightBrown,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Light Blue Paint
+	{
+	PaintBlue=1,
+	PaintWhite=1,
+	PaintbucketEmpty=1,
+
+	keep WoodenStick/Spoon,
+        Result:PaintLightBlue,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+/********************************* hair dye ***************************************/
+
+recipe Mix Blonde HairDye
+	{
+	OilOlive/OilVegetable=2,
+	YellowDye=1,
+	BrownDye2=1,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeBlonde,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Black HairDye
+	{
+	OilOlive/OilVegetable=2,
+	BlackDye=1,
+	BrownDye2=1,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeBlack,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix White HairDye
+	{
+	OilOlive/OilVegetable=2,
+	WhiteDye=1,
+	Bleach=1,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeWhite,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Pink HairDye
+	{
+	OilOlive/OilVegetable=2,
+	PinkDye=1,
+	MagentaDye=1,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyePink,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Yellow HairDye
+	{
+	OilOlive/OilVegetable=2,
+	YellowDye=2,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeYellow,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Red HairDye
+	{
+	OilOlive/OilVegetable=2,
+	RedDye=2,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeRed,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Strawberry Blonde HairDye
+	{
+	OilOlive/OilVegetable=2,
+	YellowDye=1,
+	MagentaDye=1,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeGinger,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Green HairDye
+	{
+	OilOlive/OilVegetable=2,
+	GreenDye=2,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeGreen,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+recipe Mix Blue HairDye
+	{
+	OilOlive/OilVegetable=2,
+	BlueDye=2,
+
+	keep WoodenStick/Spoon,
+	keep Bowl,
+
+        Result:HairDyeBlue,
+       NeedToBeLearn:true,
+        Time:200.0,
+	  Category:Dyes,
+	}
+}

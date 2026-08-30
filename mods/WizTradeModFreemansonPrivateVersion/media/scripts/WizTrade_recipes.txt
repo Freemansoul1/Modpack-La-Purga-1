@@ -1,0 +1,1689 @@
+module Base
+{
+
+	/*********************************** SWISS KNIFE RECIPES ***********************************************/
+	
+	
+	
+	recipe Slice Bread
+    {
+        keep Wiz_SwissKnife,
+        Bread,
+
+        Result:BreadSlices=3,
+        OnCreate:Recipe.OnCreate.SliceBread,
+        Sound:SliceBread,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	 recipe Slice Bread
+    {
+        keep Wiz_SwissKnife,
+        BreadDough,
+
+        Result:BreadSlices=3,
+        Sound:SliceBread,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+        OnTest:Recipe.OnTest.SliceBreadDough,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+	recipe Slice Watermelon
+	{
+	   Watermelon,
+	   keep Wiz_SwissKnife,
+
+	   Result:WatermelonSliced=10,
+	   OnCreate:Recipe.OnCreate.SliceWatermelon,
+	   Time:70.0,
+	   Category:Admin,
+	   IsHidden:true,
+	   OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	}
+
+	recipe Slice Pie
+    {
+        keep Wiz_SwissKnife,
+        PieWholeRaw,
+
+        Result:Pie=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SlicePie,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Slice Cake
+    {
+        keep Wiz_SwissKnife,
+        CakeRaw,
+
+        Result:CakeSlice=5,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.SlicePie,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Slice Fillet
+    {
+        keep Wiz_SwissKnife,
+        Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:50.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Slice Ham
+    {
+        keep Wiz_SwissKnife,
+        Ham,
+
+        Result:HamSlice=6,
+        OnCreate:Recipe.OnCreate.SliceHam,
+        Sound:SliceMeat,
+        Time:50.0,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Slice Frog
+    {
+        keep Wiz_SwissKnife,
+        Frog,
+
+        Result:FrogMeat,
+        Sound:SliceMeat,
+        Time:50.0,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+	recipe Make Fishing Rod
+    {
+        keep Wiz_SwissKnife,
+        WoodenStick,
+        Twine=2,
+        Paperclip/Nails,
+
+        Result:CraftedFishingRodTwineLine,
+        Time:80.0,
+        Category:Admin,
+        IsHidden:true,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Fishing Rod
+    {
+        keep Wiz_SwissKnife,
+        WoodenStick,
+        FishingLine=2,
+        Paperclip/Nails,
+
+        Result:CraftedFishingRod,
+        Time:80.0,
+        Category:Admin,
+        IsHidden:true,
+        NeedToBeLearn:true,
+    }
+
+	recipe Drill Plank
+    {
+        Plank/Log,
+        keep Wiz_SwissKnife,
+
+        Result:PercedWood,
+        Time:40.0,
+        Prop1:Source=2,
+        Prop2:Source=1,
+    }
+
+	recipe Butcher Small Animal
+    {
+        keep Wiz_SwissKnife,
+        DeadMouse/DeadSquirrel/DeadRat,
+
+        Result:Smallanimalmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher Rabbit
+    {
+        keep Wiz_SwissKnife,
+        DeadRabbit,
+
+        Result:Rabbitmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Butcher Bird
+    {
+        keep Wiz_SwissKnife,
+        DeadBird,
+
+        Result:Smallbirdmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+	recipe Create Spear
+    {
+        Plank/TreeBranch,
+        keep Wiz_SwissKnife,
+
+        Result:SpearCrafted,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CreateSpear,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+
+	
+
+	recipe Make Squid Calamari
+    {
+        keep Wiz_SwissKnife,
+        destroy Squid,
+
+        Result:SquidCalamari=2,
+        Category:Admin,
+        IsHidden:true,
+        Time:30,
+    }
+
+	recipe Make Halloween Pumpkin
+    {
+        Pumpkin,
+        keep Wiz_SwissKnife,
+
+        Result:HalloweenPumpkin,
+        Category:Admin,
+        IsHidden:true,
+        Time:60,
+    }
+
+	recipe Make Stake
+    {
+        TreeBranch,
+        keep Wiz_SwissKnife,
+
+        Result:Stake,
+        Time:80.0,
+        Category:Admin,
+        IsHidden:true,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+
+
+
+    recipe Rip Clothing
+    {
+        [Recipe.GetItemTypes.RipClothing_Denim],
+        keep Wiz_SwissKnife,
+
+        Result:DenimStrips,
+        RemoveResultItem:true,
+        Sound:ClothesRipping,
+        Time:150.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+    }
+
+    recipe Rip Clothing
+    {
+        [Recipe.GetItemTypes.RipClothing_Leather],
+        keep Wiz_SwissKnife,
+
+        Result:LeatherStrips,
+        RemoveResultItem:true,
+        Sound:ClothesRipping,
+        Time:150.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+    }
+
+
+
+    recipe Make Sturdy Stick
+    {
+        Plank,
+        keep Wiz_SwissKnife,
+
+        Result:WoodenStick=8,
+        Sound:Sawing,
+        Time:150.0,
+    }
+
+    recipe Make Wooden Cage Trap
+    {
+        keep Wiz_SwissKnife,
+        Plank=3,
+        Nails=5,
+
+        Result:TrapCrate,
+        Sound:Sawing,
+        Time:200.0,
+        Category:Admin,
+        IsHidden:true,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Snare Trap
+    {
+        keep Wiz_SwissKnife,
+        Plank=1,
+        Twine=2,
+
+        SkillRequired:Trapping=1,
+        Result:TrapSnare,
+        Sound:Sawing,
+        Time:220.0,
+        Category:Admin,
+        IsHidden:true,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Trap Box
+    {
+        keep Wiz_SwissKnife,
+        Plank=4,
+        Nails=7,
+
+        SkillRequired:Woodwork=1;Trapping=2;,
+        Result:TrapBox,
+        Sound:Sawing,
+        Time:250.0,
+        Category:Admin,
+        IsHidden:true,
+        NeedToBeLearn:true,
+    }
+
+    recipe Make Mortar and Pestle
+	{
+	   Plank,
+	   keep Wiz_SwissKnife,
+
+	   Result:MortarPestle,
+	   SkillRequired:Woodwork=2,
+	   Sound:Hammering,
+	   Time:100.0,
+	   Category:Carpentry,
+	   IsHidden:true,
+	}
+	
+
+	
+	/************************************ DESINFECT ITEMS ************************************************/
+	recipe Disinfect Bandage (with Gallon)
+    {
+		Wiz_LargeDisinfectant;3,
+        destroy Bandage,      
+        Result:AlcoholBandage,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+
+    recipe Disinfect Rag (with Gallon)
+    {
+		Wiz_LargeDisinfectant;3,
+        RippedSheets,
+        Result:AlcoholRippedSheets,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+	
+	recipe Disinfect Cotton (with Gallon)
+    {
+        Wiz_LargeDisinfectant;1,
+        destroy CottonBalls,
+        Result:AlcoholedCottonBalls,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+	
+	recipe Disinfect Bandage (with Ethanol 70 Bottle)
+    {
+		Wiz_Ethanol70Bottle;3,
+        destroy Bandage,      
+        Result:AlcoholBandage,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+
+    recipe Disinfect Rag (with Ethanol 70 Bottle)
+    {
+		Wiz_Ethanol70Bottle;3,
+        RippedSheets,
+        Result:AlcoholRippedSheets,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+	
+	recipe Disinfect Cotton (with Ethanol 70 Bottle)
+    {
+        Wiz_Ethanol70Bottle;1,
+        destroy CottonBalls,
+        Result:AlcoholedCottonBalls,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+    }
+	
+	/************************ TAKING PILLS/USING DRUGS ******************************************/
+	recipe Take Amphetamine Pills
+		{
+			Wiz_AwakePills;1,
+			Result:Wiz_AwakePills,
+			RemoveResultItem:true,
+			Time:20.0,
+			CanBeDoneFromFloor:TRUE,
+			IsHidden:true,
+			OnCreate: WizStimulantPillTake,
+		}
+	
+	recipe Take Sickness Pills
+		{
+			Wiz_SicknessPills;1,
+			Result:Wiz_SicknessPills,
+			RemoveResultItem:true,
+			Time:20.0,
+			CanBeDoneFromFloor:TRUE,
+			IsHidden:true,
+			OnCreate:WizSickPillTake,
+		}
+		
+	recipe Take a Cannabis Cigarette
+		{
+			Wiz_PrescriptionCannabis;1,
+			
+			Result:Wiz_WeedCigarette,
+			Time:20.0,
+			NeedToBeLearn:false,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,
+		}
+		
+	recipe Prepare Adrenaline Shot
+		{
+			Wiz_InjectionVial_Adrenaline;1,
+			Wiz_SyringeEmpty,
+			
+			Result:Wiz_SyringeAdrenaline,
+			Time:80.0,
+			NeedToBeLearn:false,
+		    CanBeDoneFromFloor:TRUE,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+	recipe Take Adrenaline Shot
+		{
+			Wiz_SyringeAdrenaline,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:80.0,
+			OnCreate:WizAdrenalineShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		
+	recipe Prepare Morphine Shot
+		{
+			Wiz_InjectionVial_Morphine;1,
+			Wiz_SyringeEmpty,
+			
+			Result:Wiz_SyringeMorphine,
+			Time:80.0,
+			NeedToBeLearn:false,
+		    CanBeDoneFromFloor:TRUE,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Take Morphine Shot
+		{
+			Wiz_SyringeMorphine,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:80.0,
+			OnCreate:WizMorphineShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+	
+		
+		recipe Test for Zombie Infection
+		{
+			Wiz_BloodTest_zombification;1,
+			Wiz_SyringeBlood,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizZombieInfectionTest,
+			IsHidden:true,
+		}
+		
+		recipe Prepare Zombification Cure Shot
+		{
+			Wiz_InjectionVial_ZombieCure;1,
+			Wiz_SyringeEmpty,
+			
+			Result:Wiz_SyringeZombieCure,
+			Time:80.0,
+			NeedToBeLearn:false,
+		    CanBeDoneFromFloor:TRUE,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Take Knox-XT1 Shot
+		{
+			Wiz_SyringeZombieCure,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizZombieVirusCure,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Inject Cat's Eye Gene
+		{
+			Wiz_Syringe_Catseye,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizCatsEyeShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Inject Strong Gene
+		{
+			Wiz_Syringe_Strong,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizStrongShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Inject Fast Healer Gene
+		{
+			Wiz_Syringe_Fastheal,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizFastHealShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Inject Fast Learner Gene
+		{
+			Wiz_Syringe_FastLearn,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizFastLearnShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Inject Keen Hearing Gene
+		{
+			Wiz_Syringe_KeenHear,
+			
+			Result:Wiz_SyringeEmpty,
+			Time:100.0,
+			OnCreate:WizKeenHearShot,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Use Dermal Regenerator
+		{
+			Wiz_DermalRegenerator;1,
+			
+			Result:WizDNAtube,
+			Time:80.0,
+			OnCreate:WizDermalRegUse,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Recharge Dermal Regenerator
+		{
+		
+			destroy Wiz_DermalRegenerator,
+			Wiz_EnergyRechargerMedic;1,
+			WizDNAtube=5,
+		
+			Result:Wiz_DermalRegenerator,		
+			Sound:energyclip_recharge,
+			SkillRequired:Electricity=1,
+			Time:300.0,
+			Category:Admin,
+			IsHidden:true,
+		}
+		
+		recipe Tricorder - Scan for Viruses
+		{
+			Wiz_Tricorder;1,
+			
+			Result:WizDNAtube,
+			Sound:tricorder_scan,
+			SkillRequired:Doctor=4,
+			Time:200.0,
+			OnCreate:WizTricorderDetectVirus,
+			Category:Admin,
+			IsHidden:true,
+		}
+	
+	
+	recipe Chew Cocain Pastilles
+		{
+			Wiz_OldPharmacyCocain;1,
+			Result:Wiz_OldPharmacyCocain,
+			RemoveResultItem:true,
+			Time:120.0,
+			CanBeDoneFromFloor:TRUE,
+			Sound:PZ_Eating,
+			OnCreate: WizStimulantPillTake,
+		}
+		
+	/********************************* PRIEST *******************************************/
+	
+	recipe Pray for Happyness
+	{
+			Wiz_HolyBible,
+			
+			Result:Wiz_HolyBible,
+			Time:400.0,
+			NeedToBeLearn:true,
+			CanBeDoneFromFloor:TRUE,
+			AnimNode:RemoveBarricade,
+			OnCreate:WizPrayHappy,		
+	}
+	
+	recipe Pray for Peace
+	{
+			Wiz_HolyBible,
+			
+			Result:Wiz_HolyBible,
+			Time:400.0,
+			NeedToBeLearn:true,
+			CanBeDoneFromFloor:TRUE,
+			AnimNode:RemoveBarricade,
+			OnCreate:WizPrayPeace,		
+	}
+	
+	recipe Pray for Inspiration
+	{
+			Wiz_HolyBible,
+			
+			Result:Wiz_HolyBible,
+			Time:400.0,
+			NeedToBeLearn:true,
+			CanBeDoneFromFloor:TRUE,
+			AnimNode:RemoveBarricade,
+			OnCreate:WizPrayBored,		
+	}
+	
+	
+	
+	/*************************** OCULTISTA *************************************/
+	
+	recipe Recharge Ring of Winter (Left)
+	{
+			
+			Wiz_Ring_ColdProtection,
+			
+			Result:Wiz_Ring_ColdProtection,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,			
+	}
+	
+	recipe Recharge Ring of Winter (Right)
+	{
+			
+			Wiz_Ring_ColdProtection_R,
+			
+			Result:Wiz_Ring_ColdProtection_R,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,			
+	}
+	
+	recipe Recharge Lesser Ring of Protection (Left)
+	{
+			
+			Wiz_Ring_Protection1,
+			
+			Result:Wiz_Ring_Protection1,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,			
+	}
+	
+	recipe Recharge Lesser Ring of Protection (Right)
+	{
+			
+			Wiz_Ring_Protection1_R,
+			
+			Result:Wiz_Ring_Protection1_R,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,
+	}
+	
+	recipe Recharge Greater Ring of Protection (Left)
+	{
+			
+			Wiz_Ring_Protection2,
+			
+			Result:Wiz_Ring_Protection2,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,
+	}
+	
+	recipe Recharge Greater Ring of Protection (Right)
+	{
+			
+			Wiz_Ring_Protection2_R,
+			
+			Result:Wiz_Ring_Protection2_R,
+			Time:800.0,
+			keep Wiz_CrystalBall,
+			NeedToBeLearn:true,
+			AnimNode:RemoveBarricade,
+			CanBeDoneFromFloor:TRUE,
+		    OnCreate:WizRechargeDebuf,
+	}
+	
+	
+	
+	    
+		
+	/************************ COOKING RECIPES ******************************************/
+	
+	recipe Dissolve Powder Milk
+    {
+        Wiz_PowderMilk;1,
+        Water=8,
+
+        Result:Milk,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+        OnTest:Recipe.OnTest.NotTaintedWater,
+    }
+	
+	recipe Open MRE Ration Pack
+    {
+        Wiz_MREration,
+        Water=5,
+
+        Result:CookieJelly,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+		Sound:PutItemInBag,
+        OnTest:Recipe.OnTest.NotTaintedWater,
+		OnCreate:MRE_ExtraItems,
+    }
+	
+	
+	
+	/************************* OPEN BULLET BOXES ********************************************/
+	
+	recipe Open Box of 10x24mm Ammo
+    {
+        Wiz_10x24mm_Box,
+
+        Result:Wiz_10x24mm_Bullets=20,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	recipe Open Box of M41A Grenades
+    {
+        Wiz_M41AGrenade_Box,
+
+        Result:Wiz_M41AGrenade=25,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	recipe Open Box of Crossbow Bolts
+    {
+        Wiz_BoltBox,
+
+        Result:Wiz_Bolt=60,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	recipe Open Box of .50 BMG Bullets
+    {
+        Wiz_50BMG_Box,
+
+        Result:Wiz_50BMG_Bullet=5,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	recipe Open Box of 4.2mm Golden Bullets
+    {
+        Wiz_GoldenBulletBox,
+
+        Result:Wiz_GoldenBullet=40,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	recipe Open Box of Railgun Bolts (Pistol)
+    {
+        Wiz_RailgunBoltBox,
+
+        Result:Wiz_RailGunBolts=20,
+        Sound:PutItemInBag,
+		IsHidden:true,
+        Time:20.0,
+    }
+	
+	/************************ RECHARGE ENERGY WEAPONS AND STUFF  ***********************************************/
+	
+	recipe Recharge EE-3 Carbine Rifle Clip
+	{
+	    Wiz_EE3CarbineRifle_Clip,
+		Wiz_EnergyWeaponRechargerLP;1,
+		
+	    Result:Wiz_EE3CarbineRifle_Clip,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+		IsHidden:true,
+	}
+	
+	recipe Recharge Prism Shooter Clip
+	{
+	    Wiz_PrismShooterClip,
+		Wiz_EnergyWeaponRechargerLP;1,
+		
+	    Result:Wiz_PrismShooterClip,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+	        IsHidden:true,
+	}
+	
+	recipe Recharge Change Blaster Clip
+	{
+	    Wiz_ChangeFogoClip,
+		Wiz_EnergyWeaponRechargerLP;1,
+		
+	    Result:Wiz_ChangeFogoClip,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+		IsHidden:true,
+	}
+	
+	recipe Recharge Tricorder
+		{
+		
+			destroy Wiz_Tricorder,
+			Wiz_EnergyRechargerMedic;1,
+			WizDNAtube=5,
+		
+			Result:Wiz_Tricorder,		
+			Sound:energyclip_recharge,
+			SkillRequired:Electricity=1,
+			Time:300.0,
+			Category:Admin,
+			IsHidden:true,
+		}
+	
+	recipe Recharge Flashman Helmet Light
+	{
+	    destroy Wiz_SentaiHelmet_Chip_Light,
+		Battery,
+		
+	    Result:Wiz_SentaiHelmet_Chip_Light,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+		IsHidden:true,
+	    Time:80.0,
+		
+	}
+	
+	
+	recipe Recharge Type 2 Phaser Clip
+	{
+	    Wiz_Type2PhaserClip,
+		Wiz_EnergyWeaponRechargerLP;1,
+		
+	    Result:Wiz_Type2PhaserClip,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+		IsHidden:true,
+	}
+	
+	recipe Recharge Atomizer Gun
+	{
+	    Wiz_AtomizerGunClip,
+		Wiz_EnergyWeaponRechargerLP;1,
+		
+	    Result:Wiz_AtomizerGunClip,		
+	    Sound:energyclip_recharge,
+		SkillRequired:Electricity=1,
+	    Time:800.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+		IsHidden:true,
+	}
+	
+	recipe Recharge Noise Horn
+	{
+	    Wiz_ClownHornClip,
+		PropaneTank;1,
+		
+	    Result:Wiz_ClownHornClip,		
+	    Sound:acid_dissolve,
+	    Time:120.0,
+		OnCreate:Wiz_RechargeEnergyWeapon,
+		IsHidden:true,
+	}
+	
+	
+	recipe Change Miner Helmet Flashlight Battery
+	{
+	    destroy Wiz_MinerHelmet_Light_NoBat,
+		destroy Battery,
+		
+	    Result:Wiz_MinerHelmet_Light,
+        IsHidden:true,		
+	    Time:80.0,
+		
+	}
+	
+	recipe Roll Dice
+	{
+	   destroy Dice,
+
+	   Result:Dice,
+	   Sound:PutItemInBag,
+	   Time:20.0,
+	   IsHidden:true,
+	   OnCreate:Wiz_DiceRoll,
+	}
+	
+	recipe Play Ballerina Music Box
+	{
+        Wiz_MusicBox,
+		Result:Wiz_MusicBox,
+		Time:60.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:TRUE,
+		IsHidden:true,
+        OnCreate:Wiz_MusicBoxSong,		
+	}
+	
+	recipe Refill Zippo Lighter
+    {
+       destroy Wiz_EmptyLighter,
+       Wiz_ZippoFluid;1,
+       Result:Lighter,
+       Time:200.0,
+	   IsHidden:true,
+       Category:Admin,
+    }
+	
+	recipe Refill Gold Zippo Lighter
+    {
+       destroy Wiz_GoldLighter_Empty,
+       Wiz_ZippoFluid;1,
+       Result:Wiz_GoldLighter,
+       Time:200.0,
+	   IsHidden:true,
+       Category:Admin,
+    }
+	
+	recipe Refill Vietnam Zippo Lighter
+    {
+       destroy Wiz_Wiz_VietnamZippoEmpty,
+       Wiz_ZippoFluid;1,
+       Result:Wiz_VietnamZippo,
+       Time:200.0,
+	   IsHidden:true,
+       Category:Admin,
+    }
+	
+	recipe Assemble the Gold Gun
+    {
+       Wiz_GoldLighter_Empty/Wiz_GoldLighter,
+       Wiz_GoldenCigarrete,
+	   Wiz_GoldPen,
+       Result:Wiz_GoldenGun,
+       Time:600.0,
+       Category:Admin,
+	   IsHidden:true,
+	   OnCreate:Wiz_GoldGunAssemble,
+    }
+	
+	recipe Disassemble the Gold Gun
+    {
+	   Wiz_GoldenGun,
+       
+       Result:Wiz_GoldPen,
+       Time:600.0,
+       Category:Admin,
+	   IsHidden:true,
+	   OnCreate:Wiz_GoldGunDisassemble,
+    }
+	
+	recipe Collect Atmosphere Water (Canteen)
+    {
+       Wiz_AirWaterCollector;1,
+       destroy Wiz_Canteen2Empty,
+       Result:Wiz_Canteen2Water,
+       Time:200.0,
+	   Sound:GetWaterFromDispenserGlass,
+       Category:Admin,
+	   IsHidden:true,
+    }
+	
+	recipe Collect Atmosphere Water (Military Canteen)
+    {
+       Wiz_AirWaterCollector;1,
+       destroy Wiz_CanteenEmpty,
+	   
+       Result:Wiz_CanteenWater,
+       Time:200.0,
+	   Sound:GetWaterFromDispenserGlass,
+	   CanBeDoneFromFloor:TRUE,
+       Category:Admin,
+	   IsHidden:true,
+    }
+	
+	recipe Collect Atmosphere Water (Bottle)
+    {
+       Wiz_AirWaterCollector;1,
+       destroy WaterBottleEmpty,
+	   
+       Result:WaterBottleFull,
+       Time:200.0,
+	   Sound:GetWaterFromDispenserGlass,
+	   CanBeDoneFromFloor:TRUE,
+       Category:Admin,
+	   IsHidden:true,
+    }
+	
+	recipe Change Atmosphere Collector Batteries
+	
+	{
+       destroy Wiz_AirWaterCollector,
+       destroy Battery=4,
+       Result:Wiz_AirWaterCollector,
+       Time:100.0,
+	   Sound:PutItemInBag,
+       Category:Admin,
+	   IsHidden:true,
+    }
+	
+	
+	
+	/*******************************************************************************************************/
+	
+	recipe Open Surprise Easter Egg
+    {
+        destroy Wiz_EasterEggRapped,
+
+        Result:Wiz_EasterEgg_Chocolate,
+        Time:40.0,
+        Category:Admin,
+        IsHidden:true,
+		Sound:PutItemInBag,
+		OnCreate:WizEasterEggSurprises,
+    }
+	
+	
+	/******************** PLAY GAMES ****************************************************/
+	
+	
+	recipe GameBoy - Play Super Mario Land
+    {
+       Wiz_GameBoy;1,
+       Wiz_GameBoy_Mario,
+       Time:500.0,
+	   
+	   Result:Wiz_GameBoy_Mario,
+       OnCreate:Wiz_PlayVideoGame,
+       /*AnimNode:Craft,*/
+       Sound:Wiz_gameboy_mario,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+	
+	recipe GameBoy - Play Tetris
+    {
+       Wiz_GameBoy;1,
+       Wiz_GameBoy_Tetris,
+       Time:500.0,
+	   
+	   Result:Wiz_GameBoy_Tetris,
+       OnCreate:Wiz_PlayVideoGame,
+       /*AnimNode:Craft,*/
+       Sound:wiz_gameboy_tetris,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+	
+	recipe GameBoy - Play Legend of Zelda
+    {
+       Wiz_GameBoy;1,
+       Wiz_GameBoy_Zelda,
+       Time:500.0,
+	   
+	   Result:Wiz_GameBoy_Zelda,
+       OnCreate:Wiz_PlayVideoGame,
+       /*AnimNode:Craft,*/
+       Sound:wiz_gameboy_zelda,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+	
+	recipe GameBoy - Play Castlevania II
+    {
+       Wiz_GameBoy;1,
+       Wiz_GameBoy_Castlevania2,
+       Time:500.0,
+	   
+	   Result:Wiz_GameBoy_Castlevania2,
+       OnCreate:Wiz_PlayVideoGame,
+       /*AnimNode:Craft,*/
+       Sound:wiz_gameboy_castlevania2,
+	   CanBeDoneFromFloor:true,
+	   IsHidden:true,
+    }
+	
+	recipe Change GameBoy Batteries
+	
+	{
+       destroy Wiz_GameBoy,
+       destroy Battery=1,
+       Result:Wiz_GameBoy,
+       Time:100.0,
+	   Sound:PutItemInBag,
+       Category:Admin,
+	   IsHidden:true,
+    }
+	
+	recipe Dismantle GameBoy
+    {
+       destroy Wiz_GameBoy,
+       keep Screwdriver,
+
+       Result:ElectronicsScrap,
+       Time:200.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnGiveXP:Recipe.OnGiveXP.DismantleElectronics,
+       Category:Admin,
+	   IsHidden:true,
+       OnCreate:Recipe.OnCreate.DismantleTVRemote,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer, 
+    }
+	
+	
+	
+	recipe Decypher Voynich Manuscript Secrets
+    {
+        Wiz_VoynichManuscript,
+
+        Result:Wiz_VoynichManuscript,
+        Time:800.0,
+		NeedToBeLearn:true,
+		SkillRequired:PlantScavenging=4
+		AnimNode:Craft,
+		IsHidden:true,
+		OnCreate:WizVoynichSecret,
+    }
+	
+	recipe Decypher Freemason Secret Techniques
+    {
+        Wiz_FreemasonBuildTechs,
+
+        Result:Wiz_FreemasonBuildTechs,
+        Time:800.0,
+		NeedToBeLearn:true,
+		SkillRequired:Woodwork=4
+		AnimNode:Craft,
+		IsHidden:true,
+		OnCreate:WizFreemasonHandy,
+    }
+	
+	recipe Memorise Nutritional Values
+    {
+        keep Wiz_NutricionistGuide,
+
+        Result:Wiz_NutricionistGuide,
+		RemoveResultItem:true,
+        Time:400.0,
+		NeedToBeLearn:true,
+		SkillRequired:Cooking=4,
+		AnimNode:Craft,
+		IsHidden:true,
+		OnCreate:WizNutricionistaGive,
+    }
+	
+	
+	recipe Dismantle Pocket TV
+    {
+       destroy Wiz_PocketTV,
+       keep Screwdriver,
+
+       Result:Receiver,
+       Time:200.0,
+       OnTest:Recipe.OnTest.DismantleElectronics,
+       OnGiveXP:Recipe.OnGiveXP.DismantleElectronics,
+       Category:Admin,
+	   IsHidden:true,
+       OnCreate:Recipe.OnCreate.DismantleTVRemote,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer, 
+    }
+	
+	recipe Open RPG Dice Pack
+	{
+	   destroy Wiz_RPGDicesSet,
+
+	   Result:Wiz_D4Dice,
+	   Sound:PutItemInBag,
+	   Time:20.0,
+	   IsHidden:true,
+	   OnCreate:Wiz_CreateExtraDice,
+	}
+	
+	recipe Roll D6 Dice
+	{
+	   destroy Wiz_D6Dice,
+
+	   Result:Wiz_D6Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD6,
+	}
+	
+	recipe Roll D4 Dice
+	{
+	   destroy Wiz_D4Dice,
+
+	   Result:Wiz_D4Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD4,
+	}
+	
+	recipe Roll D8 Dice
+	{
+	   destroy Wiz_D8Dice,
+
+	   Result:Wiz_D8Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD8,
+	}
+	
+	recipe Roll D10 Dice
+	{
+	   destroy Wiz_D10Dice,
+
+	   Result:Wiz_D10Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD10,
+	}
+	
+	recipe Roll D12 Dice
+	{
+	   destroy Wiz_D12Dice,
+
+	   Result:Wiz_D12Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD12,
+	}
+	
+	recipe Roll D20 Dice
+	{
+	   destroy Wiz_D20Dice,
+
+	   Result:Wiz_D20Dice,
+	   Sound:Wiz_RollDice,
+	   Time:20.0,
+	   IsHidden:true,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_DiceRollD20,
+	}
+	
+	recipe Read Kandarian Passage Loud
+    {
+        keep Wiz_Necronomicon,
+
+        Result:Wiz_Necronomicon,
+		RemoveResultItem:true,
+        Time:40.0,
+		AnimNode:Craft,
+		IsHidden:true,
+		OnCreate:WizNecronomiconRead,
+    }
+	
+	recipe Open Dungeons and Dragons Set
+	{
+	   Wiz_DungeonsDragonsBoxSealed,
+
+	   Result:Wiz_DungeonsDragonsBox,
+	   Sound:PutItemInBag,
+	   Time:80.0,
+	   IsHidden:true,
+	   OnCreate:Wiz_DungeonsBoxOpen,
+	}
+	
+
+	
+	recipe Assemble TOS Enterprise Model
+	{
+	   destroy Wiz_TOSconnieBox,
+	   Glue/Wiz_LargeGlue;2,
+	   Wiz_ModelPaintVials;1,
+	   keep Scalpel,
+	   keep Wiz_SmallBrush,
+	
+	   Result:Wiz_TOSconnie,
+	   Sound:crackwood,
+	   Time:800.0,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_BuildKitEffect,
+	}
+	
+	recipe Assemble F-14 Tomcat Model
+	{
+	   destroy Wiz_ModelBox_f14,
+	   Glue/Wiz_LargeGlue;2,
+	   Wiz_ModelPaintVials;1,
+	   keep Scalpel,
+	   keep Wiz_SmallBrush,
+	
+	   Result:Wiz_Model_f14,
+	   Sound:crackwood,
+	   Time:800.0,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_BuildKitEffect,
+	}
+	
+	recipe Assemble MiG-29 Fulcrum Model
+	{
+	   destroy Wiz_ModelBox_mig29,
+	   Glue/Wiz_LargeGlue;2,
+	   Wiz_ModelPaintVials;1,
+	   keep Scalpel,
+	   keep Wiz_SmallBrush,
+	
+	   Result:Wiz_Model_mig29,
+	   Sound:crackwood,
+	   Time:800.0,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_BuildKitEffect,
+	}
+	
+	recipe Assemble F-5E Tiger II Model
+	{
+	   Wiz_ModelBox_f5,
+	   Glue/Wiz_LargeGlue;2,
+	   Wiz_ModelPaintVials;1,
+	   keep Scalpel,
+	   keep Wiz_SmallBrush,
+	
+	   Result:Wiz_Model_f5,
+	   Sound:crackwood,
+	   Time:800.0,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_BuildKitEffect,
+	}
+	
+	recipe Assemble F-16 Fightning Falcon Model
+	{
+	   Wiz_ModelBox_f16,
+	   Glue/Wiz_LargeGlue;2,
+	   Wiz_ModelPaintVials;1,
+	   keep Scalpel,
+	   keep Wiz_SmallBrush,
+	
+	   Result:Wiz_Model_f16,
+	   Sound:crackwood,
+	   Time:800.0,
+	   CanBeDoneFromFloor:TRUE,
+	   OnCreate:Wiz_BuildKitEffect,
+	}
+	
+	
+	recipe Open Sealed Contact Lenses Case
+	{
+			Wiz_ContactLensCaseSealed,
+			
+			Result:Wiz_ContactLensCase,
+			Time:20.0,
+		    CanBeDoneFromFloor:TRUE,
+			IsHidden:true,
+			OnCreate:Wiz_GenRandomLenses,
+			
+	}
+	
+	
+	recipe Take a Cuban Cigar
+	{
+			Wiz_CubanCigarBox;1,
+			
+			Result:Wiz_CubanCigar,
+			Time:20.0,
+			NeedToBeLearn:false,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,
+	}
+	
+	recipe Recharge Magic Wand (Wood)
+	{
+	    Wiz_WandMagicWood,
+		
+	    Result:Wiz_WandMagicWood,		
+	    /*Sound:energyclip_recharge,*/
+		NeedToBeLearn:true,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeMagicWeapon,
+	}
+	
+	recipe Recharge Magic Wand (Astral)
+	{
+	    Wiz_WandAstral,
+		
+	    Result:Wiz_WandAstral,		
+	    /*Sound:energyclip_recharge,*/
+		NeedToBeLearn:true,
+	    Time:1200.0,
+		OnCreate:Wiz_RechargeMagicWeapon,
+	}
+	
+	recipe Talk to Member Berry
+	{
+	    keep Wiz_MemberBerry,
+		
+	    Result:Wiz_CubanCigar,
+	    Time:10.0,
+		OnCreate:Wiz_memberberrytalk,
+		RemoveResultItem:true,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+	}
+	
+	recipe Sniff Fairy Dust
+	{
+	    Wiz_FairyDust,
+		
+	    Result:Wiz_CubanCigar,
+	    Time:60.0,
+		OnCreate:Wiz_fairydustsniff,
+		Sound:wiz_quicksniff,
+		RemoveResultItem:true,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+	}
+
+
+	recipe Convert Cigar to Clothing
+	{
+			Wiz_CubanCigar,
+			
+			Result:Wiz_CigarClothing,
+			Time:10.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Convert Cigar to Consumable
+	{
+			Wiz_CigarClothing,
+			
+			Result:Wiz_CubanCigar,
+			Time:10.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Convert Pipe to Clothing
+	{
+			Wiz_SmokingPipe_Empty,
+			
+			Result:Wiz_PipeClothing,
+			Time:10.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Convert Pipe to Consumable
+	{
+			Wiz_PipeClothing,
+			
+			Result:Wiz_SmokingPipe_Empty,
+			Time:10.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Fill Pipe with Tobaco
+	{
+			Wiz_SmokingPipe_Empty,
+			Wiz_PipeTobaco;1,
+			
+			Result:Wiz_SmokingPipe_Tobaco,
+			AnimNode:Disassemble,
+			Time:100.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Convert Pocket Watch to Clothing Item
+	{
+			Wiz_AntiquePocketWatch,
+			
+			Result:Wiz_PocketWatchCloth,
+			Time:10.0,
+			IsHidden:true,
+		    CanBeDoneFromFloor:TRUE,	
+	}
+	
+	recipe Squeeze Pikachu belly
+	{
+	    keep Wiz_Pikachu,
+		
+	    Result:Wiz_CubanCigar,
+	    Time:10.0,
+		OnCreate:Wiz_pikachutalk,
+		RemoveResultItem:true,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+	}
+	
+	recipe Eat Magic Clover
+	{
+	    Wiz_CloverBadge,
+		
+	    Result:Wiz_CubanCigar,
+	    Time:40.0,
+		OnCreate:WizEatClover,
+		RemoveResultItem:true,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_Eating,
+	}
+	
+	recipe Open Bono Strawberry Pack
+	{
+	    Wiz_BonoPacoteMorango,
+		
+	    Result:Wiz_BonoMorango=15,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	recipe Open Bono Chocolate Pack
+	{
+	    Wiz_BonoPacoteChocolate,
+		
+	    Result:Wiz_BonoChocolate=15,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	recipe Open Bono Duche de Leche Pack
+	{
+	    Wiz_BonoPacoteDocedeleite,
+		
+	    Result:Wiz_BonoDocedeleite=15,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	recipe Grab a handful of Chips (Classic)
+	{
+	    Wiz_PringlesClassic;1,
+		
+	    Result:Wiz_ChipsClassic,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	recipe Grab a handful of Chips (Cheddar)
+	{
+	    Wiz_PringlesCheedar;1,
+		
+	    Result:Wiz_ChipsCheedar,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	recipe Grab a handful of Chips (Onion)
+	{
+	    Wiz_PringlesOnion;1,
+		
+	    Result:Wiz_ChipsOnion,
+	    Time:40.0,
+		IsHidden:true,
+		CanBeDoneFromFloor:TRUE,
+		Sound:PZ_DuctTape,
+	}
+	
+	
+	
+	recipe Make Bowl of Froot Loops
+    {
+       Bowl,
+       Wiz_FrootLoops;5,
+       [Recipe.GetItemTypes.Milk];2,
+
+       Result:CerealBowl,
+       Time:20.0,
+       Category:Admin,
+	   IsHidden:true,
+       OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+	
+	
+}

@@ -1,0 +1,4 @@
+ContextMenu_CN = {
+    ContextMenu_QNW_SC_Open                =   "打开",
+    ContextMenu_QNW_SC_Close               =   "密封",
+}

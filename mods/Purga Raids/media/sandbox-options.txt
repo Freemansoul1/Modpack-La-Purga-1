@@ -1,0 +1,20 @@
+VERSION = 1,
+
+option RaidsPurga.Countdown
+{
+	type = integer,
+	default = 20,
+	min = 0,
+	max = 2700,
+
+	page = PurgaRaids,
+	translation = RaidsPurga_Countdown,
+}
+
+option RaidsPurga.Activar = {
+	type = boolean,
+	default = false,
+
+	page = PurgaRaids,
+	translation = RaidsPurga_Activar,
+}

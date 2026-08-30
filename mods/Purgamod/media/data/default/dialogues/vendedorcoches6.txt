@@ -1,0 +1,56 @@
+*venta
+#cutscene true
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Charlyson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos militares Tier2, ¿qué necesitas?"
+#choice
+     hmmwvht|K153
+     m151A2canvas|m35A2covered
+     nada|De momento no necesito nada
+*hmmwvht
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Perfecto, son 700 monedas"
+#has_item Base.Money,700
+      #jump cochecomprado
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+
+*m151A2canvas
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Perfecto, son 700 monedas"
+#has_item Base.Money,700
+      #jump cochecomprado2
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Militark15T1.png|5
+#choice
+    se|Si.
+    na|No.
+*se
+#remove_item Base.Money,700
+#m Charlyson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.k153turret,1,rare
+#exit
+*na
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up MilitarcoveredT2.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,700
+#m Charlyson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.m35a2covered,1,rare
+#exit
+*na2
+#m Charlyson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+

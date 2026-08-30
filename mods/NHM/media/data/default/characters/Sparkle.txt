@@ -1,7 +1,0 @@
-#name Sparkle|Sparkle
-
-#desc Nombre: Sparkle
-#desc_append Edad: Desconocida
-#desc_append Chica eléctrica, un poco loca. Las quemaduras eléctricas son visibles en sus manos.
-#desc_append Sabe poco sobre el Oasis. Ella parece haber llegado aquí recientemente.
-#exit

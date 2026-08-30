@@ -1,0 +1,190 @@
+module Base
+{
+	model VVA_Vehicle_StepVan_a
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Vehicle_StepVan,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicle_StepVan_NoRandom_a
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Vehicle_StepVan,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}	
+
+	model VVA_Vehicle_StepVan_internals
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Vehicle_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicle_StepVan_DoorFrontLeft
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicle_StepVan_DoorFrontRight
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicle_StepVan_WindowFrontLeft
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model VVA_Vehicle_StepVan_WindowFrontRight
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}	
+	model VVA_Vehicles_StepVan_Trunk
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model VVA_Vehicle_StepVan_Hood
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicle_StepVan_Windshield
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicle_StepVan_RearWindow
+	{
+		mesh = vehicles/Vehicles_StepVan_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+
+	template vehicle VVA_StepVan_animatedDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_DoorFrontLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_DoorFrontRight,
+				rotate = 0 0 0,
+			}
+		}
+
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_Hood,
+				rotate = 0 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicle_StepVan_WindowFrontLeft,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{
+			parent = DoorFrontRight,
+            		model Default
+            		{
+                		file = VVA_Vehicle_StepVan_WindowFrontRight,
+				rotate = 0 0 0,
+            		}
+
+        	}
+				
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VVA_Vehicle_StepVan_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model windshieldRear
+			{
+				file = VVA_Vehicle_StepVan_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicle_StepVan_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create =Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

@@ -1,0 +1,4945 @@
+module Base
+{
+	model Wiz_JusticeSword	{
+		mesh = weapons/2handed/Wiz_JusticeSword,
+		texture = weapons/2handed/Wiz_JusticeSword,	
+	}
+	model Wiz_SheraSword	{
+		mesh = weapons/2handed/Wiz_SheraSword,
+		texture = weapons/2handed/Wiz_SheraSword,
+	}
+	model Wiz_HeManSword	{
+		mesh = weapons/2handed/Wiz_HeManSword,
+		texture = weapons/2handed/Wiz_HeManSword,
+	}
+	model Wiz_WonderWomanSword	{
+		mesh = weapons/1handed/Wiz_WonderWomanSword,
+		texture = weapons/1handed/Wiz_WonderWomanSword,
+	}
+	model Wiz_HarleyBaseballBat	{
+		mesh = weapons/2handed/Baseballbat,
+		texture = weapons/2handed/Wiz_HarleyBaseballBat,
+	}
+	model Wiz_RaphaelSai	{
+		mesh = weapons/1handed/Wiz_RaphaelSai,
+		texture = weapons/1handed/Wiz_RaphaelSai,
+	}
+	model Wiz_LeonardoKatana	{
+		mesh = weapons/2handed/Wiz_LeonardoKatana,
+		texture = weapons/2handed/Wiz_LeonardoKatana,
+	}
+	model Wiz_Anduril	{
+		mesh = weapons/2handed/Wiz_Anduril,
+		texture = weapons/2handed/Wiz_Anduril,
+	}
+	model Wiz_GambitStaff	{
+		mesh = weapons/2handed/Wiz_GambitStaff,
+		texture = weapons/2handed/Wiz_GambitStaff,
+	}
+	model Wiz_KitanaFan	{
+		mesh = weapons/1handed/Wiz_KitanaFan,
+		texture = weapons/1handed/Wiz_KitanaFan,
+	}
+	model Wiz_ChetaraBo	{
+		mesh = weapons/2handed/Wiz_ChetaraBo,
+		texture = weapons/2handed/Wiz_ChetaraBo,
+	}
+	model Wiz_SkeletorStaff	{
+		mesh = weapons/2handed/Wiz_SkeletorStaff,
+		texture = weapons/2handed/Wiz_SkeletorStaff,
+	}
+	model Wiz_ChangeFogoMagazine
+    {
+        mesh = Weapons/Firearm/gun_magazine,
+		texture = weapons/firearm/Wiz_ChangeFogoClip,
+    }
+	model Wiz_ChangeFogo
+    {
+        mesh = Weapons/firearm/Wiz_ChangeFogo,
+		texture = weapons/firearm/Wiz_ChangeFogo,	
+    }
+	model Wiz_ChangeEspada
+    {
+        mesh = Weapons/1handed/Wiz_ChangeEspada,
+		texture = weapons/firearm/Wiz_ChangeFogo,	
+    }
+	model Wiz_Excalibur	{
+		mesh = weapons/2handed/Wiz_Excalibur,
+		texture = weapons/2handed/Wiz_Excalibur,
+	}
+	model Wiz_FlashmanBlueStar	{
+		mesh = weapons/1handed/Wiz_FlashmanBlueStar,
+		texture = weapons/1handed/Wiz_FlashmanBlueStar,
+	}
+	model Wiz_PrismSword	{
+		mesh = weapons/1handed/Wiz_PrismSword,
+		texture = weapons/firearm/Wiz_PrismShooter,
+	}
+	model Wiz_PrismLaser
+    {
+        mesh = Weapons/firearm/Wiz_PrismLaser,
+		texture = weapons/firearm/Wiz_PrismShooter,	
+    }
+	model Wiz_Flashman_RedSword	{
+		mesh = weapons/2handed/Wiz_Flashman_RedSword,
+		texture = weapons/2handed/Wiz_Flashman_RedSword,
+	}
+	model Wiz_RobocopGun
+	{
+		mesh = Weapons/firearm/Wiz_RobocopGun,
+		texture = weapons/firearm/Wiz_RobocopGun,
+
+		attachment wizgunlight
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+		
+		attachment wizgunlaser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+		
+	}
+	model Wiz_EvilLynStaff	{
+		mesh = weapons/2handed/Wiz_EvilLynStaff,
+		texture = weapons/2handed/Wiz_EvilLynStaff,
+	}
+	model Wiz_Lightsaber_Luke	{
+		mesh = weapons/2handed/Wiz_Lightsaber_Luke,
+		texture = weapons/2handed/Wiz_Lightsaber_Luke,
+	}
+	model Wiz_Lightsaber_Luke_Hilt	{
+		mesh = weapons/2handed/Wiz_Lightsaber_Luke_Hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_Luke,
+	}
+	model Wiz_WolverineClaw	{
+		mesh = weapons/1handed/Wiz_WolverineClaw,
+		texture = weapons/1handed/Wiz_WolverineClaw,
+	}
+	model Wiz_m41APulseRifle
+	{
+		mesh = Weapons/firearm/Wiz_m41APulseRifle,
+		texture = weapons/firearm/Wiz_m41APulseRifle,
+	}
+	model Wiz_10x24mm_Box_ground
+	{
+		mesh = WorldItems/RifleAmmoBox,
+		texture = WorldItems/Wiz_10x24mm_Box,
+		scale = 0.6,
+	}
+	model Wiz_10x24mm_Clip_Ground
+    {
+        mesh = WorldItems/Gun_Magazine,
+		texture = WorldItems/Wiz_10x24mm_Clip_Ground,
+        scale = 0.4,
+    }
+	model Wiz_lightsaber_vader	{
+		mesh = weapons/2handed/Wiz_lightsaber_vader,
+		texture = weapons/2handed/Wiz_Lightsaber_Vader,
+	}
+	model Wiz_lightsaber_vader_hilt	{
+		mesh = weapons/2handed/Wiz_lightsaber_vader_hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_Vader,
+	}
+	model Wiz_BobaFettEE3Rifle
+	{
+		mesh = Weapons/firearm/Wiz_BobaFettEE3Rifle,
+		texture = weapons/firearm/Wiz_BobaFettEE3Rifle,
+	}
+	model Wiz_Lightsaber_ObiWan	{
+		mesh = weapons/2handed/Wiz_Lightsaber_ObiWan,
+		texture = weapons/2handed/Wiz_Lightsaber_ObiWan,
+	}
+	model Wiz_Lightsaber_ObiWan_hilt	{
+		mesh = weapons/2handed/Wiz_Lightsaber_ObiWan_hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_ObiWan,
+	}
+	model Wiz_Darksaber	{
+		mesh = weapons/1handed/Wiz_Darksaber,
+		texture = weapons/1handed/Wiz_Darksaber,
+	}
+	model Wiz_Darksaber_hilt	{
+		mesh = weapons/1handed/Wiz_Darksaber_hilt,
+		texture = weapons/1handed/Wiz_Darksaber,
+	}
+	model Wiz_Crossbow
+	{
+		mesh = Weapons/firearm/Wiz_Crossbow,
+		texture = weapons/firearm/Wiz_Crossbow,
+	}
+	model Wiz_Wakizashi	{
+		mesh = weapons/1handed/Wiz_Wakizashi,
+		texture = weapons/1handed/Wiz_Wakizashi,
+	}
+	model Wiz_Shuriken	{
+		mesh = weapons/1handed/Wiz_Shuriken,
+		texture = weapons/1handed/Wiz_Shuriken,
+	}
+	model Wiz_WaltherPPK
+	{
+		mesh = Weapons/firearm/Wiz_WaltherPPK,
+		texture = weapons/firearm/Wiz_WaltherPPK,
+
+		attachment wizsmalpistolight
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		attachment wizsmalpistolsilencer
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
+	model Wiz_SyringeEmpty
+	{
+		mesh = weapons/1handed/Wiz_SyringeEmpty,
+		texture = weapons/1handed/Wiz_SyringeEmpty,
+	}
+	model Wiz_MilitaryKnife
+	{
+		mesh = weapons/1handed/Wiz_MilitaryKnife,
+		texture = weapons/1handed/Wiz_MilitaryKnife,
+	}
+	model Wiz_SwissKnife
+	{
+		mesh = weapons/1handed/Wiz_SwissKnife,
+		texture = weapons/1handed/Wiz_SwissKnife,
+	}
+	model Wiz_NinjaSmokeBomb
+	{
+		mesh = weapons/1handed/Wiz_NinjaSmokeBomb,
+		texture = weapons/1handed/Wiz_NinjaSmokeBomb,
+	}
+	model Wiz_Mp5
+	{
+		mesh = Weapons/firearm/Wiz_Mp5,
+		texture = weapons/firearm/Wiz_Mp5,
+
+		attachment wizgunlaser
+		{
+			offset = 0.0000 -0.0009 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		attachment wizsmalpistolight
+		{
+			offset = 0.0000 -0.0008 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		attachment wizsmgsilencer
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
+	model Wiz_Mp5_ground
+	{
+		mesh = WorldItems/Wiz_Mp5_ground,
+		texture = weapons/firearm/Wiz_Mp5,
+	}
+	model Wiz_NinjaSmokeBomb_ground {
+		mesh = WorldItems/Wiz_NinjaSmokeBomb_ground,
+		texture = weapons/1handed/Wiz_NinjaSmokeBomb,
+	}
+	model Wiz_SwissKnife_ground {
+		mesh = WorldItems/Wiz_SwissKnife_ground,
+		texture = weapons/1handed/Wiz_SwissKnife,
+	}
+	model Wiz_MilitaryKnife_ground {
+		mesh = WorldItems/Wiz_MilitaryKnife_ground,
+		texture = weapons/1handed/Wiz_MilitaryKnife,
+	}
+	model Wiz_WaltherPPK_ground
+	{
+		mesh = WorldItems/Wiz_WaltherPPK_ground,
+		texture = weapons/firearm/Wiz_WaltherPPK,
+	}
+	model Wiz_Wakizashi_ground {
+		mesh = WorldItems/Wiz_Wakizashi_ground,
+		texture = weapons/1handed/Wiz_Wakizashi,
+	}
+	model Wiz_Crossbow_ground
+	{
+		mesh = WorldItems/Wiz_Crossbow_ground,
+		texture = weapons/firearm/Wiz_Crossbow,
+	}
+	model Wiz_Bolt_ground
+	{
+		mesh = WorldItems/Wiz_Bolt_ground,
+		texture = weapons/firearm/Wiz_Crossbow,
+	}
+	model Wiz_Darksaber_ground {
+		mesh = WorldItems/Wiz_Darksaber_ground,
+		texture = weapons/1handed/Wiz_Darksaber,
+	}
+	model Wiz_Lightsaber_ObiWan_ground {
+		mesh = WorldItems/Wiz_Lightsaber_ObiWan_ground,
+		texture = weapons/2handed/Wiz_Lightsaber_ObiWan,
+	}
+	model Wiz_EE3CarbineCip_ground
+	{
+		mesh = WorldItems/Wiz_EE3CarbineCip_ground,
+		texture = weapons/firearm/Wiz_BobaFettEE3Rifle,
+	}
+	model Wiz_BobaFettEE3Rifle_ground
+	{
+		mesh = WorldItems/Wiz_BobaFettEE3Rifle_ground,
+		texture = weapons/firearm/Wiz_BobaFettEE3Rifle,
+	}
+	model Wiz_lightsaber_vader_ground {
+		mesh = WorldItems/Wiz_lightsaber_vader_ground,
+		texture = weapons/2handed/Wiz_Lightsaber_Vader,
+	}
+	model Wiz_m41APulseRifle_ground {
+		mesh = WorldItems/Wiz_m41APulseRifle_ground,
+		texture = weapons/firearm/Wiz_m41APulseRifle,
+	}
+	model Wiz_WolverineClaw_ground {
+		mesh = WorldItems/Wiz_WolverineClaw_ground,
+		texture = weapons/1handed/Wiz_WolverineClaw,
+	}
+	model Wiz_Lightsaber_Luke_Hilt_ground {
+		mesh = WorldItems/Wiz_Lightsaber_Luke_Hilt_ground,
+		texture = weapons/2handed/Wiz_Lightsaber_Luke,
+	}
+	model Wiz_JusticeSword_ground {
+		mesh = WorldItems/Wiz_JusticeSword_ground,
+		texture = weapons/2handed/Wiz_JusticeSword,
+		scale = 0.01,
+	}
+	model Wiz_SheraSword_ground {
+		mesh = WorldItems/Wiz_SheraSword_ground,
+		texture = weapons/2handed/Wiz_SheraSword,
+		scale = 0.01,
+	}
+	model Wiz_HeManSword_ground {
+		mesh = WorldItems/Wiz_HeManSword_ground,
+		texture = weapons/2handed/Wiz_HeManSword,
+		scale = 0.01,
+	}
+	model Wiz_RaphaelSai_ground {
+		mesh = WorldItems/Wiz_RaphaelSai_ground,
+		texture = weapons/1handed/Wiz_RaphaelSai,	
+	}
+	model Wiz_WonderWomanSword_ground {
+		mesh = WorldItems/Wiz_WonderWomanSword_ground,
+		texture = weapons/1handed/Wiz_WonderWomanSword,
+	}
+	model Wiz_LeonardoKatana_ground {
+		mesh = WorldItems/Wiz_LeonardoKatana_ground,
+		texture = weapons/2handed/Wiz_LeonardoKatana,	
+	}
+	model Wiz_Anduril_ground {
+		mesh = WorldItems/Wiz_Anduril_ground,
+		texture = weapons/2handed/Wiz_Anduril,	
+	}
+	model Wiz_GambitStaff_ground {
+		mesh = WorldItems/Wiz_GambitStaff_ground,
+		texture = weapons/2handed/Wiz_GambitStaff,	
+	}
+	model Wiz_KitanaFanGround
+	{
+		mesh = WorldItems/Wiz_KitanaFanGround,
+		texture = weapons/1handed/Wiz_KitanaFan,	
+	}
+	model Wiz_ChetaraBo_ground
+	{
+		mesh = WorldItems/Wiz_ChetaraBo_ground,
+		texture = weapons/2handed/Wiz_ChetaraBo,	
+	}
+	model Wiz_SkeletorStaff_ground
+	{
+		mesh = WorldItems/Wiz_SkeletorStaff_ground,
+		texture = weapons/2handed/Wiz_SkeletorStaff,	
+	}
+	model Wiz_ChangeFogo_ground
+    {
+        mesh = WorldItems/Wiz_ChangeFogo_ground,
+		texture = weapons/firearm/Wiz_ChangeFogo, 
+    }
+	model Wiz_ChangeFogoClip_Ground
+    {
+        mesh = WorldItems/Gun_Magazine,
+		texture = weapons/firearm/Wiz_ChangeFogoClip,
+        scale = 0.4,
+    }
+	model Wiz_ChangeEspada_ground
+	{
+		mesh = WorldItems/Wiz_ChangeEspada_ground,
+		texture = weapons/firearm/Wiz_ChangeFogo,
+	}
+	model Wiz_Excalibur_ground
+	{
+		mesh = WorldItems/Wiz_Excalibur_ground,
+		texture = weapons/2handed/Wiz_Excalibur,	
+	}
+	model Wiz_RobocopGun_ground
+    {
+        mesh = WorldItems/Wiz_RobocopGun_ground,
+		texture = weapons/firearm/Wiz_RobocopGun,  
+    }
+	model Wiz_RobocopGunClip_ground
+    {
+        mesh = WorldItems/Wiz_RobocopGunClip_ground,
+		texture = weapons/firearm/Wiz_RobocopGun,
+       
+    }
+	model Wiz_FlashmanBlueStar_ground
+	{
+		mesh = WorldItems/Wiz_FlashmanBlueStar_ground,
+		texture = weapons/1handed/Wiz_FlashmanBlueStar,
+		
+	}
+	model Wiz_PrismSword_ground
+	{
+		mesh = WorldItems/Wiz_PrismSword_ground,
+		texture = weapons/firearm/Wiz_PrismShooter,
+		
+	}
+	model Wiz_PrismLaser_ground
+	{
+		mesh = WorldItems/Wiz_PrismLaser_ground,
+		texture = weapons/firearm/Wiz_PrismShooter,
+	}
+	model Flashman_RedSword_ground
+	{
+		mesh = WorldItems/Flashman_RedSword_ground,
+		texture = weapons/2handed/Wiz_Flashman_RedSword,	
+	}
+	model Wiz_EvilLynStaff_ground
+	{
+		mesh = WorldItems/Wiz_EvilLynStaff_ground,
+		texture = weapons/2handed/Wiz_EvilLynStaff,	
+	}
+	model Wiz_Shuriken_ground
+	{
+		mesh = WorldItems/Wiz_Shuriken_ground,
+		texture = weapons/1handed/Wiz_Shuriken,	
+	}
+	model Wiz_BunnySuitRed_Ground
+	{
+		mesh = WorldItems/Clothing/BunnyOutfit_Ground,
+		texture = WorldItems/Wiz_BunnyOutfit_Red_Ground,
+		scale = 0.5,
+	}
+	model Wiz_SheraHelmet_Ground
+    {
+        mesh = WorldItems/Wiz_SheraHelmet_ground,
+		texture = WorldItems/Wiz_SheraHelmet,  
+    }
+	model Wiz_KitanaHair_Ground
+    {
+        mesh = WorldItems/Wiz_KitanaHair_Ground,
+		texture = Clothes/Hat/Wiz_KitanaHair,  
+    }
+	model Wiz_Mask_Ground
+    {
+        mesh = WorldItems/Wiz_Mask_Ground,
+		texture = Clothes/Mascaras/Wiz_KitanaMask,   
+    }
+	model Wiz_KitanaBracers_ground
+    {
+        mesh = WorldItems/Wiz_KitanaBracers_ground,
+		texture = Clothes/Bracers/Wiz_KitanaBracers,   
+    }
+	model Wiz_KitanaTop_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_BulletVest_Ground,
+		texture = WorldItems/Wiz_KitanaTop_Ground,
+		scale = 0.33,
+    }
+	model Wiz_KitanaSkirt_ground
+    {
+        mesh = WorldItems/Wiz_KitanaSkirt_ground,
+		texture = clothes/Dresses/Wiz_KitanaSkirt,
+    }
+	model Wiz_KitanaBoot_Ground
+    {
+        mesh = WorldItems/Wiz_KitanaBoot_Ground,
+		texture = clothes/shoes_socks_textres/Wiz_KitanaBoot,
+    }
+	model Wiz_TurtleHeadGround_L
+    {
+        mesh = WorldItems/Wiz_TurtleHeadGround,
+		texture = Clothes/Hat/Wiz_TurtleHead_L,
+    }
+	model Wiz_TurtleHeadGround_R
+    {
+        mesh = WorldItems/Wiz_TurtleHeadGround,
+		texture = Clothes/Hat/Wiz_TurtleHead_R,
+        
+    }
+	model Wiz_TurtleHeadGround_M
+    {
+        mesh = WorldItems/Wiz_TurtleHeadGround,
+		texture = Clothes/Hat/Wiz_TurtleHead_M,
+        
+    }
+	model Wiz_TurtleHeadGround_D
+    {
+        mesh = WorldItems/Wiz_TurtleHeadGround,
+		texture = Clothes/Hat/Wiz_TurtleHead_D,
+        
+    }
+	model Wiz_GinyuHead_ground
+    {
+        mesh = WorldItems/Wiz_GinyuHead_ground,
+		texture = Clothes/Hat/Wiz_GinyuHead,
+        
+    }
+	model Wiz_GinyuArmor_ground
+    {
+        mesh = WorldItems/Wiz_GinyuArmor_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_GinyuArmor,
+        
+    }
+	model Wiz_GinyuBracers_ground
+    {
+        mesh = WorldItems/Wiz_GinyuBracers_ground,
+		texture = Clothes/Bracers/Wiz_GinyuBracers,
+        
+    }
+	model Wiz_GinyuBoots_ground
+    {
+        mesh = WorldItems/Wiz_GinyuBoots_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_GinyuBoots,
+        
+    }
+	model Wiz_GokuHair_ground
+    {
+        mesh = WorldItems/Wiz_GokuHair_ground,
+		texture = Clothes/Hat/Wiz_GokuHair,
+        
+    }
+	model Wiz_GokuBoots_ground
+    {
+        mesh = WorldItems/Wiz_GokuBoots_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_GokuBoots,
+        
+    }
+	model Wiz_GokuTop_ground
+    {
+        mesh = WorldItems/Wiz_GokuTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_GokuTop,
+        
+    }
+	model Wiz_GokuArmbands_ground
+    {
+        mesh = WorldItems/Wiz_GokuArmbands_ground,
+		texture = Clothes/Bracers/Wiz_GokuArmbands,
+        
+    }
+	model Wiz_PanthroEars_ground
+    {
+        mesh = WorldItems/Wiz_PanthroEars_ground,
+		texture = Clothes/Jewellery/Wiz_PanthroEars,
+        
+    }
+	model Wiz_PanthroBracers_ground
+    {
+        mesh = WorldItems/Wiz_PanthroBracers_ground,
+		texture = Clothes/Bracers/Wiz_PanthroBracers,
+        
+    }
+	model Wiz_PanthroTop_ground
+    {
+        mesh = WorldItems/Wiz_PanthroTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_PanthroTop,
+        
+    }
+	model Wiz_PanthroBootDetails_ground
+    {
+        mesh = WorldItems/Wiz_PanthroBootDetails_ground,
+		texture = Clothes/LegsExtra/Wiz_PanthroBootDetails,
+        
+    }
+	model Wiz_SkeletorHead_ground
+    {
+        mesh = WorldItems/Wiz_SkeletorHead_ground,
+		texture = Clothes/Hat/Wiz_SkeletorHead,
+    }
+	model Wiz_SkeletorTop_ground
+    {
+        mesh = WorldItems/Wiz_SkeletorTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_SkeletorTop,
+        
+    }
+	model Wiz_SkeletorSkirt_ground
+    {
+        mesh = WorldItems/Wiz_SkeletorSkirt_ground,
+		texture = Clothes/Dresses/Wiz_SkeletorSkirt,
+        
+    }
+	model Wiz_ChangemanHelmet_Dragon_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanHelmet_Dragon_ground,
+		texture = Clothes/Hat/Wiz_ChangemanHelmet_Dragon,
+    }
+	model Wiz_ChangemanHelmet_Fenix_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanHelmet_Fenix_ground,
+		texture = Clothes/Hat/Wiz_ChangemanHelmet_Fenix,
+    }
+	model Wiz_ChangemanHelmet_Mermaid_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanHelmet_Mermaid_ground,
+		texture = Clothes/Hat/Wiz_MermaidHelmet,
+    }
+	model Wiz_ChangemanHelmet_Grifon_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanHelmet_Grifon_ground,
+		texture = Clothes/Hat/Wiz_ChangemanHelmet_Grifon,
+    }
+	model Wiz_ChangemanHelmet_Pegasus_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanHelmet_Pegasus_ground,
+		texture = Clothes/Hat/Wiz_ChangemanHelmet_Pegasus,
+    }
+	model Wiz_ChangemanTop_M_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanTop_M_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_ChangemanTop_M,
+        
+    }
+	model Wiz_ChangemanTop_Fenix_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanTop_F_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_ChangemanTop_Fenix,
+        
+    }
+	model Wiz_ChangemanTop_Mermaid_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanTop_F_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_ChangemanTop_Mermaid,
+        
+    }
+	model Wiz_ChangemanBelt_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanBelt_ground,
+		texture = Clothes/BackPacks/Wiz_ChangemanBelt,
+    }
+	model Wiz_ChangemanBracers_ground
+    {
+        mesh = WorldItems/Wiz_ChangemanBracers_ground,
+		texture = Clothes/Bracers/Wiz_ChangemanBracers,
+    }
+	model Wiz_TorsoBelt_ground
+    {
+        mesh = WorldItems/Wiz_TorsoBelt_ground,
+		texture = Clothes/BackPacks/Wiz_TorsoBelt,
+    }
+	model Wiz_JeiceHair_ground
+    {
+        mesh = WorldItems/Wiz_JeiceHair_ground,
+		texture = Clothes/Hat/Wiz_JeiceHair,
+		scale = 0.7,
+    }
+	model Wiz_JeiceArmor_ground
+    {
+        mesh = WorldItems/Wiz_JeiceArmor_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_JeiceArmor, 
+    }
+	model Wiz_JeiceBracers_ground
+    {
+        mesh = WorldItems/Wiz_GinyuBracers_ground,
+		texture = Clothes/Bracers/Wiz_JeiceBracers,
+    }
+	model Wiz_JeiceBoots_ground
+    {
+        mesh = WorldItems/Wiz_GinyuBoots_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_JeiceBoots,   
+    }
+	model Wiz_PlateHelmet01_ground
+    {
+        mesh = WorldItems/Wiz_PlateHelmet01_ground,
+		texture = Clothes/Hat/Wiz_KnightHelmet1,
+    }
+	model Wiz_PlateBreast01_ground
+    {
+        mesh = WorldItems/Wiz_PlateBreast01_ground,
+		texture = Clothes/Jacket/Wiz_PlateTop1,
+    }
+	model Wiz_PlateBottom01_ground
+    {
+        mesh = WorldItems/Wiz_PlateBottom01_ground,
+		texture = Clothes/Dresses/Wiz_PlatePants1,
+    }
+	model Wiz_DBScouter_ground_blue
+    {
+        mesh = WorldItems/Wiz_DBScouter_ground,
+		texture = Clothes/Glasses/Wiz_DBScouter_blue,
+    }
+	model Wiz_DBScouter_ground_green
+    {
+        mesh = WorldItems/Wiz_DBScouter_ground,
+		texture = Clothes/Glasses/Wiz_DBScouter,
+    }
+	model Wiz_BurterBoots_ground
+    {
+        mesh = WorldItems/Wiz_GinyuBoots_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_BurterBoots,   
+    }
+	model Wiz_BurterArmbands_ground
+    {
+        mesh = WorldItems/Wiz_GokuArmbands_ground,
+		texture = Clothes/Bracers/Wiz_BurterBracer,
+    }
+	model Wiz_BurterArmor_ground
+    {
+        mesh = WorldItems/Wiz_JeiceArmor_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_BurterArmor, 
+    }
+	model Wiz_BurterHead_ground
+    {
+        mesh = WorldItems/Wiz_BurterHead_ground,
+		texture = Clothes/Hat/Wiz_BurterHead, 
+    }
+	model Wiz_DBScouter_ground_red
+    {
+        mesh = WorldItems/Wiz_DBScouter_ground,
+		texture = Clothes/Glasses/Wiz_DBScouter_red,
+    }
+	model Wiz_Joelheira_brown_ground
+    {
+        mesh = WorldItems/Wiz_Joelheira_ground,
+		texture = Clothes/LegsExtra/Wiz_Joelheira_Brown,
+    }
+	model Wiz_Joelheira_Black_ground
+    {
+        mesh = WorldItems/Wiz_Joelheira_ground,
+		texture = Clothes/LegsExtra/Wiz_Joelheira_Black,
+    }
+	model Wiz_HeManBracer_ground
+    {
+        mesh = WorldItems/Wiz_HeManBracer_ground,
+		texture = Clothes/Bracers/Wiz_HeManBracer,
+    }
+	model Wiz_HeManTop_ground
+    {
+        mesh = WorldItems/Wiz_HeManTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_HeManTop, 
+    }
+	model Wiz_HeManBottom_ground
+    {
+        mesh = WorldItems/Wiz_HeManBottom_ground,
+		texture = Clothes/Pants/Wiz_HeManBottom, 
+    }
+	model Wiz_HeManBootAddon_ground
+    {
+        mesh = WorldItems/Wiz_HeManBootAddon_ground,
+		texture = Clothes/LegsExtra/Wiz_HeManBootAddon,
+    }
+	model Wiz_HeManHair_ground
+    {
+        mesh = WorldItems/Wiz_HeManHair_ground,
+		texture = Clothes/Hat/Wiz_HeManHair, 
+    }
+	model Wiz_JulietTop_ground
+    {
+        mesh = WorldItems/Wiz_JulietTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_JulietTop, 
+    }
+	model Wiz_JulietSkirt_ground
+    {
+        mesh = WorldItems/Wiz_JulietSkirt_ground,
+		texture = Clothes/Dresses/Wiz_JulietSkirt, 
+    }
+	model Wiz_SheRaDress_ground
+    {
+        mesh = WorldItems/Wiz_SheRaDress_ground,
+		texture = Clothes/Dresses/Wiz_SheraDress, 
+    }
+	model Wiz_SheRaCape_ground
+    {
+        mesh = WorldItems/Wiz_SheRaCape_ground,
+		texture = Clothes/Necklace/Wiz_SheraCape, 
+    }
+	model Wiz_RobocopSuit_ground
+    {
+        mesh = WorldItems/Wiz_RobocopSuit_ground,
+		texture = Clothes/boliersuit/Wiz_RobocopSuit, 
+    }
+	model Wiz_RobocopHelmet_ground
+    {
+        mesh = WorldItems/Wiz_RobocopHelmet_ground,
+		texture = Clothes/Hat/Wiz_RobocopHelmet, 
+    }
+	model Wiz_FlashmanHelmet_M_ground_red
+    {
+        mesh = WorldItems/Wiz_FlashmanHelmet_M_ground,
+		texture = Clothes/Hat/Wiz_FlashmanHelmetRed, 
+    }
+	model Wiz_FlashmanHelmet_M_ground_green
+    {
+        mesh = WorldItems/Wiz_FlashmanHelmet_M_ground,
+		texture = Clothes/Hat/Wiz_FlashmanHelmetGreen, 
+    }
+	model Wiz_FlashmanHelmet_M_ground_blue
+    {
+        mesh = WorldItems/Wiz_FlashmanHelmet_M_ground,
+		texture = Clothes/Hat/Wiz_FlashmanHelmetBlue, 
+    }
+	model Wiz_FlashmanHelmet_Yellow_ground
+    {
+        mesh = WorldItems/Wiz_FlashmanHelmet_Yellow_ground,
+		texture = Clothes/Hat/Wiz_FlashmanHelmetYellow, 
+    }
+	model Wiz_FlashmanHelmet_Pink_ground
+    {
+        mesh = WorldItems/Wiz_FlashmanHelmet_Pink_ground,
+		texture = Clothes/Hat/Wiz_FlashmanHelmetPink, 
+    }
+	model Wiz_FlashmanBelt_ground
+    {
+        mesh = WorldItems/Wiz_FlashmanBelt_ground,
+		texture = Clothes/BackPacks/Wiz_FlashmanBelt,
+    }
+	model Wiz_FlashmanBadge_ground
+    {
+        mesh = WorldItems/Wiz_FlashmanBadge_ground,
+		texture = Clothes/Jewellery/Wiz_FlashmanBadge,
+    }
+	model Wiz_FlashmanBracer_ground_red
+    {
+        mesh = WorldItems/Wiz_FlashmanBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashmanBracer_red,
+    }
+	model Wiz_FlashmanBracer_ground_green
+    {
+        mesh = WorldItems/Wiz_FlashmanBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashmanBracer_green,
+    }
+	model Wiz_FlashmanBracer_ground_blue
+    {
+        mesh = WorldItems/Wiz_FlashmanBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashmanBracer_blue,
+    }
+	model Wiz_FlashmanBracer_ground_yellow
+    {
+        mesh = WorldItems/Wiz_FlashmanBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashmanBracer_yellow,
+    }
+	model Wiz_FlashmanBracer_ground_pink
+    {
+        mesh = WorldItems/Wiz_FlashmanBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashmanBracer_pink,
+    }
+	model Wiz_EvilLynBracers_ground
+    {
+        mesh = WorldItems/Wiz_EvilLynBracers_ground,
+		texture = Clothes/Bracers/Wiz_EvilLynBracers,
+    }
+	model Wiz_EvillynHat_ground
+    {
+        mesh = WorldItems/Wiz_EvillynHat_ground,
+		texture = Clothes/Hat/Wiz_EvillynHat, 
+    }
+	model Wiz_EvillynOutfit_ground
+    {
+        mesh = WorldItems/Wiz_EvillynOutfit_ground,
+		texture = Clothes/Dresses/Wiz_EvillynOutfit, 
+    }
+	model Wiz_EvilLynCape_ground
+    {
+        mesh = WorldItems/Wiz_EvilLynCape_ground,
+		texture = Clothes/Necklace/Wiz_EvilLynCape, 
+    }
+	model Wiz_EvilynBootAddon_ground
+    {
+        mesh = WorldItems/Wiz_EvilynBootAddon_ground,
+		texture = Clothes/LegsExtra/Wiz_EvilynBootAddon, 
+    }
+	model Wiz_GreenFlashGloves_ground
+    {
+        mesh = WorldItems/Wiz_GreenFlashGloves_ground,
+		texture = Clothes/Gloves/Wiz_GreenFlashGloves, 
+    }
+	model Wiz_BobaFettHelmet_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettHelmet_ground,
+		texture = Clothes/Hats/Wiz_BobaFettHelmet, 
+    }
+	model Wiz_BobaFettAntena_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettAntena_ground,
+		texture = Clothes/HatAttachment/Wiz_BobaFettAntena, 
+    }
+	model Wiz_BobaFettBracers_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettBracers_ground,
+		texture = Clothes/Bracers/Wiz_BobaFettBracers,
+    }
+	model Wiz_BobaFettOutfit_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettOutfit_ground,
+		texture = Clothes/boliersuit/Wiz_BobaFettOutfit,
+    }
+	model Wiz_BobaFettBackpack_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettBackpack_ground,
+		texture = Clothes/BackPacks/Wiz_BobaFettBackpack,
+    }
+	model Wiz_BobaFettBelt_ground
+    {
+        mesh = WorldItems/Wiz_BobaFettBelt_ground,
+		texture = Clothes/BackPacks/Wiz_BobaFettBelt,
+    }
+	model Wiz_DarthVaderHelmet_ground
+    {
+        mesh = WorldItems/Wiz_DarthVaderHelmet_ground,
+		texture = Clothes/Hats/Wiz_DarthVaderHelmet, 
+    }
+	model Wiz_VaderOutfit_ground
+    {
+        mesh = WorldItems/Wiz_VaderOutfit_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_VaderOutfit, 
+    }
+	model Wiz_VaderBelt_ground
+    {
+        mesh = WorldItems/Wiz_VaderBelt_ground,
+		texture = Clothes/BackPacks/Wiz_VaderBelt, 
+    }
+	model Wiz_ObiWan_BeltBags_ground
+    {
+        mesh = WorldItems/Wiz_ObiWan_BeltBags_ground,
+		texture = Clothes/Dresses/Wiz_ObiWanBody, 
+    }
+	model Wiz_ObiWan_Robe_ground
+    {
+        mesh = WorldItems/Wiz_ObiWan_Robe_ground,
+		texture = Clothes/Dresses/Wiz_ObiWanBody, 
+    }
+	model Wiz_ObiWan_Bracer_ground
+    {
+        mesh = WorldItems/Wiz_ObiWan_Bracer_ground,
+		texture = Clothes/Bracers/Wiz_ObiWanGeneralBracer, 
+    }
+	model Wiz_AhsokaOutfit_ground
+    {
+        mesh = WorldItems/Wiz_AhsokaOutfit_ground,
+		texture = Clothes/Dresses/Wiz_AhsokaOutfit, 
+    }
+	model Wiz_AhsokaHat_ground
+    {
+        mesh = WorldItems/Wiz_AhsokaHat_ground,
+		texture = Clothes/Hat/Wiz_AhsokaHat, 
+    }
+	model Wiz_AhsokaBoot_ground
+    {
+        mesh = Skinned/Clothes/Wiz_AhsokaBoot,
+		texture = Clothes/shoes_socks_textres/Wiz_AhsokaBoot, 
+    }
+	model Wiz_NinjaBoot_ground
+    {
+        mesh = Skinned/Clothes/Wiz_NinjaBoot,
+		texture = Clothes/shoes_socks_textres/Wiz_NinjaBoot, 
+    }
+	model Wiz_NinjaHood_ground
+    {
+        mesh = WorldItems/Wiz_NinjaHood_ground,
+		texture = Clothes/Hat/Wiz_NinjaHood, 
+    }
+	model Wiz_NinjaOutfit_ground
+    {
+        mesh = WorldItems/Wiz_NinjaOutfit_ground,
+		texture = Clothes/boliersuit/Wiz_NinjaOutfit,
+    }
+	model Wiz_BobaFettAntena
+    {
+        mesh = ClothingAttachments/Wiz_BobaFettAntena,
+		texture = Clothes/HatAttachment/Wiz_BobaFettAntena, 
+    }
+	model Wiz_NurseHat_ground
+    {
+        mesh = WorldItems/Wiz_NurseHat_ground,
+		texture = Clothes/Hat/Wiz_NurseHat,
+    }
+	model Wiz_NurseOutfit_ground
+    {
+        mesh = WorldItems/Wiz_NurseOutfit_ground,
+		texture = Clothes/Dresses/Wiz_NurseOutfit, 
+    }
+	model Wiz_BurglarMask_ground
+    {
+        mesh = WorldItems/Wiz_BurglarMask_ground,
+		texture = Clothes/Hat/Wiz_BurglarMask, 
+    }
+	model Wiz_MoneyBagGround
+	{
+		mesh = WorldItems/SandBag,
+		texture = Clothes/BackPacks/Wiz_MoneyBag,
+		scale = 0.2,
+	}
+	model Wiz_Toolbelt_ground
+	{
+		mesh = WorldItems/Wiz_Toolbelt_ground,
+		texture = Clothes/BackPacks/Wiz_Toolbelt,
+	}
+	
+	model Wiz_SpecialForcesBeret_ground
+    {
+        mesh = WorldItems/Wiz_SpecialForcesBeret_ground,
+		texture = Clothes/Hat/Wiz_BOPEBeret, 
+    }
+	
+	model Wiz_PriestTunic_ground
+    {
+        mesh = WorldItems/Wiz_PriestTunic_ground,
+		texture = Clothes/Jacket/Wiz_PriestTunic, 
+    }
+	
+	model Wiz_NunOutfit_ground
+    {
+        mesh = WorldItems/Wiz_NunOutfit_ground,
+		texture = Clothes/Jacket/Wiz_NunOutfit, 
+    }
+	
+	model Wiz_NunHat_ground
+    {
+        mesh = WorldItems/Wiz_NunHat_ground,
+		texture = Clothes/Hat/Wiz_NunHat, 
+    }
+	
+	/********************** ITEMS ********************************/
+	model WizTradingUnit_Ground
+    {
+        mesh = WorldItems/WizTradingUnit_Ground,
+		texture = WorldItems/WizTradingUnit_Ground,
+        scale = 0.004,
+    }
+	model Wiz_LargeGlue_ground
+    {
+        mesh = WorldItems/Wiz_LargeGlue_ground,
+        texture = WorldItems/Wiz_LargeGlue,
+        scale = 0.008,
+    }
+	model Wiz_LargeDisinfectant_ground
+    {
+        mesh = WorldItems/Wiz_LargeDisinfectant_ground,
+        texture = WorldItems/Wiz_LargeDisinfectant,
+        scale = 0.008,
+    }
+	model Wiz_StimulantPills_Ground
+    {
+        mesh = WorldItems/SleepingTablets,
+		texture = WorldItems/Wiz_StimulantPills_Ground,
+        scale = 0.4,
+    }
+	model Wiz_SicknessPills_Ground
+    {
+        mesh = WorldItems/SleepingTablets,
+		texture = WorldItems/Wiz_SicknessPills_Ground,
+        scale = 0.4,
+    }
+	model Wiz_chip_ground_light
+    {
+        mesh = WorldItems/Wiz_chip_ground,
+		texture = Item_Wiz_Chip_Light,
+    }
+	model Wiz_chip_ground_radio
+    {
+        mesh = WorldItems/Wiz_chip_ground,
+		texture = Item_Wiz_Chip2,
+    }
+	model Wiz_PowderMilk_ground
+	{
+		mesh = WorldItems/Wiz_PowderMilk_ground,
+		texture = WorldItems/Wiz_PowderMilk,
+		scale = 0.002,
+	}
+	model Wiz_Gatorade_ground
+	{
+		mesh = WorldItems/Wiz_Gatorade_ground,
+		texture = WorldItems/Wiz_Gatorade,
+		scale = 0.0021,
+	}
+	model Wiz_proteinbar_ground
+	{
+		mesh = WorldItems/Chocolate,
+		texture = WorldItems/Wiz_proteinbar,
+		scale = 0.3,
+	}
+	model Wiz_PrescriptionCannabis_ground
+    {
+        mesh = PillBottle,
+        texture = WorldItems/Wiz_PrescriptionCannabis,
+        scale = 1.0,
+    }
+	model Wiz_WeedCigarette_ground
+	{
+		mesh = WorldItems/Wiz_WeedCigarette_ground,
+		texture = WorldItems/Wiz_WeedCigarette,
+		scale = 2.0,
+	}
+	model Wiz_Syringe_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe,
+		scale = 0.003,
+	}
+	model Wiz_Syringe_blood_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_blood,
+		scale = 0.003,
+	}
+	model Wiz_Syringe_zombieblood_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_zombieblood,
+		scale = 0.003,
+	}
+	model Wiz_InjectionVial_adrenaline_ground
+	{
+		mesh = WorldItems/Wiz_InjectionVial_ground,
+		texture = WorldItems/Wiz_InjectionVial_Adrenaline,
+		scale = 0.003,
+	}
+	model Wiz_InjectionVial_Morphine_ground
+	{
+		mesh = WorldItems/Wiz_InjectionVial_ground,
+		texture = WorldItems/Wiz_InjectionVial_Morphine,
+		scale = 0.003,
+	}
+	model Wiz_Ethanol70Bottle
+	{
+		mesh = WorldItems/Wiz_Ethanol70Bottle,
+		texture = WorldItems/Wiz_Ethanol70Bottle,
+		scale = 0.0025,
+	}
+	model Wiz_M41AGrenade_ground
+	{
+		mesh = WorldItems/Wiz_M41AGrenade_ground,
+		texture = WorldItems/Wiz_M41AGrenade_ground,
+		scale = 0.0025,
+	}
+	model Wiz_M41AGrenadeBox
+	{
+		mesh = WorldItems/Wiz_M41AGrenadeBox,
+		texture = WorldItems/Wiz_M41AGrenadeBox,
+		scale = 0.0025,
+	}
+	model Wiz_10x24mm_Bullets
+	{
+		mesh = WorldItems/Wiz_10x24mm_Bullets,
+		texture = WorldItems/Wiz_10x24mm_Bullets,
+		scale = 0.0025,
+	}
+	model Wiz_BloodTest_zombification
+	{
+		mesh = WorldItems/Comb,
+		texture = WorldItems/Wiz_BloodTest_zombification,
+		scale = 0.4,
+	}
+	model Wiz_InjectionVial_ZombieCure_ground
+	{
+		mesh = WorldItems/Wiz_InjectionVial_ground,
+		texture = WorldItems/Wiz_InjectionVial_ZombieCure,
+		scale = 0.003,
+	}
+	model Wiz_NinjaLightfootBook_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_BookNinja,
+        scale = 0.4,
+    }
+	model Wiz_NinjaBook
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_BookNinja,
+	}
+	model Wiz_Gatorade
+	{
+		mesh = Wiz_Gatorade,
+		texture = WorldItems/Wiz_Gatorade,
+		
+	}
+	model Wiz_WeedCigarette
+	{
+		mesh = Cigarette,
+		texture = WorldItems/Wiz_WeedCigarette,
+	}
+	model Wiz_EnergyDrink
+	{
+		mesh = WorldItems/Wiz_TallCan,
+		texture = WorldItems/Wiz_EnergyDrink,
+		scale = 0.0025,
+	}
+	model Wiz_CoughSyrup
+	{
+		mesh = WorldItems/Wiz_CoughSyrup,
+		texture = WorldItems/Wiz_CoughSyrup,
+		scale = 0.0025,
+	}
+	model Wiz_TOSComunicator_Off
+	{
+		mesh = Wiz_TOSComunicator_Off,
+		texture = WorldItems/Wiz_TOSComunicator,
+		
+	}
+	model Wiz_TOSComunicator_On
+	{
+		mesh = Wiz_TOSComunicator_On,
+		texture = WorldItems/Wiz_TOSComunicator,
+		
+	}
+	model Wiz_TOSComunicator_ground
+	{
+		mesh = WorldItems/Wiz_TOSComunicator_ground,
+		texture = WorldItems/Wiz_TOSComunicator,
+		
+	}
+	model Wiz_FabergeEgg_Green
+	{
+		mesh = WorldItems/faberge_egg,
+		texture = WorldItems/Wiz_FabergeEgg_Green,
+		scale = 0.5,
+	}
+	model Wiz_RareCoin1
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin1,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin2
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin2,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin3
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin3,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin4
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin4,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin5
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin5,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin6
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin6,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin7
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin7,
+		scale = 0.8,		
+	}
+	model Wiz_RareCoin8
+	{
+		mesh = WorldItems/Wiz_coin,
+		texture = WorldItems/Wiz_RareCoin8,
+		scale = 0.8,		
+	}
+	model Wiz_FlashawkWheel_ground_red
+	{
+		mesh = WorldItems/Wiz_FlashawkWheel_ground,
+		texture = vehicles/Wiz_FlashHawkWheel_Red,
+	    scale = 0.5,
+	}
+	model Wiz_Petridish_ground
+	{
+		mesh = WorldItems/Wiz_Petridish,
+		texture = WorldItems/Wiz_Petridish,
+		scale = 0.003,
+	}
+	model Wiz_Petridish_Blood_ground
+	{
+		mesh = WorldItems/Wiz_Petridish,
+		texture = WorldItems/Wiz_Petridish_Blood,
+		scale = 0.003,
+	}
+	model Wiz_Petridish_BloodZombie_ground
+	{
+		mesh = WorldItems/Wiz_Petridish,
+		texture = WorldItems/Wiz_Petridish_BloodZombie,
+		scale = 0.003,
+	}
+	model Wiz_Petridish_ZombieVirusCulture_ground
+	{
+		mesh = WorldItems/Wiz_Petridish,
+		texture = WorldItems/Wiz_Petridish_ZombieVirusCulture,
+		scale = 0.003,
+	}
+	model Wiz_BloodExamMagazine_ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_BloodExamMagazine,
+        scale = 0.3,
+    }
+	
+	model Wiz_Microscope_ground
+	{
+		mesh = WorldItems/Wiz_Microscope,
+		texture = WorldItems/Wiz_Microscope,
+		scale = 0.0025,
+	}
+	model Wiz_Incubator_Ground
+	{
+		mesh = WorldItems/Wiz_Incubator,
+		texture = WorldItems/Wiz_Incubator,
+		scale = 0.0025,
+	}
+	model Wiz_Centrifuge_Ground
+	{
+		mesh = WorldItems/Wiz_Centrifuge,
+		texture = WorldItems/Wiz_Centrifuge,
+		scale = 0.0025,
+	}
+	model Wiz_DNATube_Ground
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/Wiz_DNATube,
+		scale = 0.0045,
+	}
+	model Wiz_DNATube_XT1_Ground
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/Wiz_DNATube_XT1,
+		scale = 0.0045,
+	}
+	model Wiz_SyringeMorphine_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_morphine,
+		scale = 0.003,
+	}
+	model Wiz_SyringeAdrenaline_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_SyringeAdrenaline,
+		scale = 0.003,
+	}
+	model Wiz_SyringeZombieCure_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_XT1,
+		scale = 0.003,
+	}
+	
+	model Wiz_HolyBible_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_HolyBible,
+        scale = 0.4,
+    }
+	
+	model Wiz_HolyBible
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_HolyBible,
+	}
+	
+	model Wiz_Lightsaber_Purple	{
+		mesh = weapons/2handed/Wiz_Lightsaber_Luke,
+		texture = weapons/2handed/Wiz_Lightsaber_purple,
+	}
+	model Wiz_Lightsaber_Purple_Hilt	{
+		mesh = weapons/2handed/Wiz_Lightsaber_Luke_Hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_purple,
+	}
+	
+	model Wiz_MarretaBionica	{
+		mesh = weapons/1handed/Wiz_MarretaBionica,
+		texture = weapons/1handed/Wiz_MarretaBionica,
+	}
+	model Wiz_MarretaBionica_ground	{
+		mesh = WorldItems/Wiz_MarretaBionica_ground,
+		texture = weapons/1handed/Wiz_MarretaBionica,
+	}
+	
+	model Wiz_ChapolinHat_ground
+    {
+        mesh = WorldItems/Wiz_ChapolinHat_ground,
+		texture = Clothes/Hat/Wiz_ChapolinHat,   
+    }
+	
+	model Wiz_ChapolinOutfit_ground
+    {
+        mesh = WorldItems/Wiz_ChapolinOutfit_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_ChapolinOutfit,   
+    }
+	
+	model Wiz_Lightsaber_double_red	{
+		mesh = weapons/2handed/Wiz_DoubleLightSaber,
+		texture = weapons/2handed/Wiz_Lightsaber_double_red,
+	}
+	
+	model Wiz_Lightsaber_double_red_Hilt	{
+		mesh = weapons/2handed/Wiz_DoubleLightSaber_hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_double_red,
+	}
+	
+	model Wiz_DoubleLightSaber_ground	{
+		mesh = WorldItems/Wiz_DoubleLightSaber_ground,
+		texture = weapons/2handed/Wiz_Lightsaber_double_red,
+	}
+	
+	model Wiz_Sting	{
+		mesh = weapons/1handed/Wiz_Sting,
+		texture = weapons/1handed/Wiz_Sting,
+	}
+	
+	model Wiz_Sting_ground	{
+		mesh = WorldItems/Wiz_Sting_ground,
+		texture = weapons/1handed/Wiz_Sting,
+	}
+	
+	model Wiz_Dagger	{
+		mesh = weapons/1handed/Wiz_Dagger,
+		texture = weapons/1handed/Wiz_Dagger,
+	}
+	
+	model Wiz_Dagger_ground	{
+		mesh = WorldItems/Wiz_Dagger_ground,
+		texture = weapons/1handed/Wiz_Dagger,
+	}
+	
+	model Wiz_Gladius	{
+		mesh = weapons/1handed/Wiz_Gladius,
+		texture = weapons/1handed/Wiz_Gladius,
+	}
+	
+	model Wiz_Gladius_ground	{
+		mesh = WorldItems/Wiz_Gladius_ground,
+		texture = weapons/1handed/Wiz_Gladius,
+	}
+	
+	model Wiz_RomanHelmet_ground
+    {
+        mesh = WorldItems/Wiz_RomanHelmet_ground,
+		texture = Clothes/Hat/Wiz_RomanHelmet,   
+    }
+	
+	model Wiz_LongSword	{
+		mesh = weapons/2handed/Wiz_LongSword,
+		texture = weapons/2handed/Wiz_LongSword,
+	}
+	
+	model Wiz_LongSword_ground	{
+		mesh = WorldItems/Wiz_LongSword_ground,
+		texture = weapons/2handed/Wiz_LongSword,
+	}
+	
+	model Wiz_Mace	{
+		mesh = weapons/1handed/Wiz_Mace,
+		texture = weapons/1handed/Wiz_Mace,
+	}
+	
+	model Wiz_Mace_ground	{
+		mesh = WorldItems/Wiz_Mace_ground,
+		texture = weapons/1handed/Wiz_Mace,
+	}
+	
+	model Wiz_RomanShield_ground	{
+		mesh = WorldItems/Wiz_RomanShield_ground,
+		texture = Clothes/ShieldCloth/Wiz_RomanShield,
+	}
+	
+	model Wiz_LeatherBracers_ground	{
+		mesh = WorldItems/Wiz_LeatherBracers_ground,
+		texture = Clothes/Bracers/Wiz_LeatherBracers,
+	}
+	
+	model Wiz_RomanArmor_ground	{
+		mesh = WorldItems/Wiz_RomanArmor_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_LeatherBracers,
+	}
+	
+	model Wiz_RomanSandals_ground	{
+		mesh = Skinned/Clothes/Wiz_RomanSandals,
+		texture = Clothes/shoes_socks_textres/Wiz_RomanSandals,
+	}
+	
+	model Wiz_Tanto	{
+		mesh = weapons/1handed/Wiz_Tanto,
+		texture = weapons/1handed/Wiz_Tanto,
+	}
+	
+	model Wiz_Tanto_ground	{
+		mesh = WorldItems/Wiz_Tanto_ground,
+		texture = weapons/1handed/Wiz_Tanto,
+	}
+	
+	model Wiz_Greatsword	{
+		mesh = weapons/2handed/Wiz_Greatsword,
+		texture = weapons/2handed/Wiz_Greatsword,
+	}
+	
+	model Wiz_Greatsword_ground	{
+		mesh = WorldItems/Wiz_Greatsword_ground,
+		texture = weapons/2handed/Wiz_Greatsword,
+	}
+	
+	model Wiz_Oathkeeper	{
+		mesh = weapons/1handed/Wiz_Oathkeeper,
+		texture = weapons/1handed/Wiz_Oathkeeper,
+	}
+	
+	model Wiz_Oathkeeper_ground	{
+		mesh = WorldItems/Wiz_Oathkeeper_ground,
+		texture = weapons/1handed/Wiz_Oathkeeper,
+	}
+	
+	model Wiz_Rapier	{
+		mesh = weapons/1handed/Wiz_Rapier,
+		texture = weapons/1handed/Wiz_Rapier,
+	}
+	
+	model Wiz_Rapier_ground	{
+		mesh = WorldItems/Wiz_Rapier_ground,
+		texture = weapons/1handed/Wiz_Rapier,
+	}
+	
+	model Wiz_FigurineKnight
+	{
+		mesh = WorldItems/Wiz_FigurineKnight,
+		texture = WorldItems/Wiz_FigurineKnight,
+		scale = 0.0025,
+	}
+	
+	model Wiz_OlmecStatue
+	{
+		mesh = WorldItems/Wiz_OlmecStatue,
+		texture = WorldItems/Wiz_OlmecStatue,
+		scale = 0.0025,
+	}
+	
+	model Wiz_SupermanN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_SupermanN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_ActionComicN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_ActionComicN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_HulkN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_HulkN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_TopSecretDoc
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_TopSecretDoc,
+        scale = 0.3,
+    }
+	
+	model Wiz_Card_1
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_1,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_2
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_2,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_3
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_3,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_4
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_4,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_5
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_5,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_6
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_6,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_7
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_7,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_8
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_8,
+		scale = 0.0025,
+	}
+	
+	model Wiz_AntiquePocketWatch
+	{
+		mesh = WorldItems/Wiz_AntiquePocketWatch,
+		texture = WorldItems/Wiz_AntiquePocketWatch,
+		scale = 0.004,
+	}
+	
+	model Wiz_CCCapsule
+    {
+        mesh = WorldItems/Wiz_CCCapsule,
+		texture = Clothes/BackPacks/Wiz_CCCapsule,
+		scale = 0.005,
+    }
+	
+	model Wiz_RareWine1
+    {
+        mesh = WorldItems/Wine,
+        texture = WorldItems/Wiz_RareWine1,
+        scale = 0.4,
+    }
+	
+	model Wiz_RareWine1_hand
+	{
+		mesh = RedWineBottle,
+		texture = WorldItems/Wiz_RareWine1,
+	}
+	
+	model Wiz_AtomicToy
+    {
+        mesh = WorldItems/Clothing/Briefcase_Ground,
+        texture = WorldItems/Wiz_AtomicToy,
+        scale = 0.4,
+    }
+	
+	model Wiz_Ring_ColdProtection_Ground
+    {
+        mesh = WorldItems/Wiz_Ring_ground,
+		texture = Clothes/Jewellery/Wiz_Ring_ColdProtection,
+		scale = 1.5,		
+    }
+	
+	model Wiz_WWShield_ground	{
+		mesh = WorldItems/Wiz_WWShield_ground,
+		texture = Clothes/ShieldCloth/Wiz_WWShield,
+	}
+	
+	model Wiz_HolyWater_ground
+	{
+		mesh = WorldItems/Wiz_HolyWater_ground,
+		texture = WorldItems/Wiz_HolyWater,
+		scale = 0.0017,
+	}
+	
+	model Wiz_HolyWater	{
+		mesh = weapons/1handed/Wiz_HolyWater,
+		texture = WorldItems/Wiz_HolyWater,
+	}
+	
+	model Wiz_Ring_Protection_Ground
+    {
+        mesh = WorldItems/Wiz_Ring_ground,
+		texture = Clothes/Jewellery/Wiz_Ring_Protection,
+		scale = 1.5,		
+    }
+	
+	model Wiz_CrystalBall
+	{
+		mesh = WorldItems/Wiz_CrystalBall,
+		texture = WorldItems/Wiz_CrystalBall,
+		scale = 0.0025,
+	}
+	
+	model Wiz_AztecStatue
+	{
+		mesh = WorldItems/Wiz_AztecStatue,
+		texture = WorldItems/Wiz_AztecStatue,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Lightsaber_Yellow	{
+		mesh = weapons/2handed/Wiz_Lightsaber_ObiWan,
+		texture = weapons/2handed/Wiz_Lightsaber_Yellow,
+	}
+	
+	model Wiz_Lightsaber_Yellow_Hilt	{
+		mesh = weapons/2handed/Wiz_Lightsaber_ObiWan_hilt,
+		texture = weapons/2handed/Wiz_Lightsaber_Yellow,
+	}
+	
+	model Wiz_DermalRegenerator_ground
+	{
+		mesh = WorldItems/Wiz_DermalRegenerator,
+		texture = WorldItems/Wiz_DermalRegenerator,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DermalRegenerator
+	{
+		mesh = WorldItems/Wiz_DermalRegenerator,
+		texture = WorldItems/Wiz_DermalRegenerator,
+		scale = 1.0,
+	}
+	
+	model Wiz_BatmanN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_BatmanN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_XMenN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_XMenN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_FlashN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_FlashN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_CapAmericaN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_CapAmericaN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_MarvelComicsN1
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_MarvelComicsN1,
+        scale = 0.3,
+    }
+	
+	model Wiz_Tricorder_ground
+	{
+		mesh = WorldItems/Wiz_Tricorder,
+		texture = WorldItems/Wiz_Tricorder,
+		scale = 0.0025,
+	}
+	
+	model Wiz_ElixirLongLife_ground
+	{
+		mesh = WorldItems/Wiz_ElixirLongLife_ground,
+		texture = WorldItems/Wiz_ElixirLongLife,
+		scale = 0.0025,
+	}
+	
+	model Wiz_ElixirLongLife
+	{
+		mesh = Wiz_ElixirLongLife,
+		texture = WorldItems/Wiz_ElixirLongLife,
+		scale = 0.32,
+	}
+	
+	model Wiz_Ingot_Steel
+	{
+		mesh = WorldItems/Wiz_Ingot,
+		texture = WorldItems/Wiz_Ingot_Steel,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Anvil
+	{
+		mesh = WorldItems/Wiz_Anvil,
+		texture = WorldItems/Wiz_Anvil,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BlacksmithManualWeapons_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_BlacksmithManualWeapons,
+        scale = 0.4,
+    }
+	
+	model Wiz_BlacksmithManualWeapons
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_BlacksmithManualWeapons,
+	}
+	
+	model Wiz_BlacksmithManualArmors_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_BlacksmithManualArmors,
+        scale = 0.4,
+    }
+	
+	model Wiz_BlacksmithManualArmors
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_BlacksmithManualArmors,
+	}
+	
+	model Wiz_Battleaxe	{
+		mesh = weapons/2handed/Wiz_Battleaxe,
+		texture = weapons/2handed/Wiz_Battleaxe,
+	}
+	
+	model Wiz_Battleaxe_ground	{
+		mesh = WorldItems/Wiz_Battleaxe_ground,
+		texture = weapons/2handed/Wiz_Battleaxe,
+	}
+	
+	model Wiz_Greataxe	{
+		mesh = weapons/2handed/Wiz_Greataxe,
+		texture = weapons/2handed/Wiz_Greataxe,
+	}
+	
+	model Wiz_Greataxe_ground	{
+		mesh = WorldItems/Wiz_Greataxe_ground,
+		texture = weapons/2handed/Wiz_Greataxe,
+	}
+	
+	model Wiz_PirateHat_ground	{
+		mesh = WorldItems/Wiz_PirateHat_ground,
+		texture = Clothes/Hat/Wiz_PirateHat,
+	}
+	
+	model Wiz_PirateJacket_ground	{
+		mesh = WorldItems/Wiz_PirateJacket_ground,
+		texture = Clothes/Jacket/Wiz_PirateJacket,
+	}
+	
+	model Wiz_PiratePants_ground	{
+		mesh = WorldItems/Wiz_PiratePants_ground,
+		texture = Clothes/Pants/Wiz_PiratePants,
+	}
+	
+	model Wiz_Cutlass	{
+		mesh = weapons/1handed/Wiz_Cutlass,
+		texture = weapons/1handed/Wiz_Cutlass,
+	}
+	
+	model Wiz_Cutlass_ground	{
+		mesh = WorldItems/Wiz_Cutlass_ground,
+		texture = weapons/1handed/Wiz_Cutlass,
+	}
+	
+	model Wiz_ThorHammer	{
+		mesh = weapons/1handed/Wiz_ThorHammer,
+		texture = weapons/1handed/Wiz_ThorHammer,
+	}
+	
+	model Wiz_ThorHammer_ground	{
+		mesh = WorldItems/Wiz_ThorHammer_ground,
+		texture = weapons/1handed/Wiz_ThorHammer,
+	}
+	
+	model Wiz_PentacleTalisman_ground	{
+		mesh = WorldItems/Wiz_PentacleTalisman_ground,
+		texture = Clothes/Necklace/Wiz_PentacleTalisman,
+	}
+	
+	model Wiz_SkillBook_SmallBlade_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_SkillBook_SmallBlade,
+        scale = 0.4,
+    }
+	model Wiz_SkillBook_SmallBlade
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_SkillBook_SmallBlade,
+	}
+	
+	model Wiz_SkillBook_LongBlade_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_SkillBook_LongBlade,
+        scale = 0.4,
+    }
+	model Wiz_SkillBook_LongBlade
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_SkillBook_LongBlade,
+	}
+	
+	model Wiz_AcidFlask_ground
+	{
+		mesh = WorldItems/Wiz_AcidFlask_ground,
+		texture = WorldItems/Wiz_AcidFlask,
+		scale = 0.0017,
+	}
+	
+	model Wiz_AcidFlask	{
+		mesh = weapons/1handed/Wiz_AcidFlask,
+		texture = WorldItems/Wiz_AcidFlask,
+	}
+	
+	model Wiz_BoilingFlask_ground
+	{
+		mesh = WorldItems/Wiz_AcidFlask_ground,
+		texture = WorldItems/Wiz_BoilingFlask,
+		scale = 0.0017,
+	}
+	
+	model Wiz_animals_wolf
+	{
+		mesh = WorldItems/Wiz_animals_wolf,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_deer_doe
+	{
+		mesh = WorldItems/Wiz_animals_deer_doe,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_deer_buck
+	{
+		mesh = WorldItems/Wiz_animals_deer_buck,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_bear
+	{
+		mesh = WorldItems/Wiz_animals_bear,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0020,
+	}
+	
+	model Wiz_animals_boar
+	{
+		mesh = WorldItems/Wiz_animals_boar,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_fox
+	{
+		mesh = WorldItems/Wiz_animals_fox,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_owl
+	{
+		mesh = WorldItems/Wiz_animals_owl,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_animals_rabbit
+	{
+		mesh = WorldItems/Wiz_animals_rabbit,
+		texture = WorldItems/Wiz_AnimalsStatues,
+		scale = 0.0025,
+	}
+	
+	model Wiz_JaspionHelmet_ground	{
+		mesh = WorldItems/Wiz_JaspionHelmet_ground,
+		texture = Clothes/Hat/Wiz_JaspionHelmet,
+	}
+	
+	model Wiz_JaspionArmor_ground	{
+		mesh = WorldItems/Wiz_JaspionArmor_ground,
+		texture = Clothes/Fullsuit/Wiz_JaspionArmor,
+	}
+	
+	model Wiz_Ingot_Gold
+	{
+		mesh = WorldItems/Wiz_Ingot,
+		texture = WorldItems/Wiz_Ingot_Gold,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Jaspion_Light
+    {
+        mesh = ClothingAttachments/Wiz_Jaspion_Light,
+		texture = Clothes/HatAttachment/Wiz_Jaspion_Light, 
+    }
+	
+	model Wiz_JaspionSword	{
+		mesh = weapons/1handed/Wiz_JaspionSword,
+		texture = weapons/1handed/Wiz_JaspionSword,
+	}
+	
+	model Wiz_JaspionSword_ground	{
+		mesh = WorldItems/Wiz_JaspionSword_ground,
+		texture = weapons/1handed/Wiz_JaspionSword,
+	}
+	
+	model Wiz_JapsionSword_ON	{
+		mesh = weapons/1handed/Wiz_JapsionSword_ON,
+		texture = weapons/1handed/Wiz_JaspionSword,
+	}
+	
+	model Wiz_Longclaw_ground	{
+		mesh = WorldItems/Wiz_Longclaw_ground,
+		texture = weapons/2handed/Wiz_Longclaw,
+	}
+	
+	model Wiz_Longclaw	{
+		mesh = weapons/2handed/Wiz_Longclaw,
+		texture = weapons/2handed/Wiz_Longclaw,
+	}
+	
+	model Wiz_BarretM82
+	{
+		mesh = Weapons/firearm/Wiz_BarretM82,
+		texture = weapons/firearm/Wiz_BarretM82,
+		
+		attachment wizlargesilencer
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		
+	}
+	model Wiz_BarretM82_ground
+	{
+		mesh = WorldItems/Wiz_BarretM82_ground,
+		texture = weapons/firearm/Wiz_BarretM82,
+	}
+	
+	model Wiz_PictureUFO1
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO1,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO2
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO2,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO3
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO3,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO4
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO4,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO5
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO5,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO6
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO6,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO7
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO7,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureUFO8
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureUFO8,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureAlienAutopsia
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureAlienAutopsia,
+		scale = 0.0035,
+	}
+	
+	model Wiz_SupermanLunchBox_Ground
+    {
+        mesh = WorldItems/Clothing/PlasticLunchBox_Ground,
+        texture = clothes/BackPacks/Wiz_SupermanLunchBox,
+        scale = 0.4,
+    }
+	
+	model Wiz_Colt1851
+	{
+		mesh = Weapons/firearm/Wiz_Colt1851,
+		texture = weapons/firearm/Wiz_Colt1851,
+	}
+	
+	model Wiz_Colt1851_ground
+	{
+		mesh = WorldItems/Wiz_Colt1851_ground,
+		texture = weapons/firearm/Wiz_Colt1851,
+	}
+	
+	model Wiz_OldShotgun
+	{
+		mesh = Weapons/firearm/Wiz_OldShotgun,
+		texture = weapons/firearm/Wiz_OldShotgun,
+	}
+	
+	model Wiz_OldShotgun_ground
+	{
+		mesh = WorldItems/Wiz_OldShotgun_ground,
+		texture = weapons/firearm/Wiz_OldShotgun,
+	}
+	
+	model Wiz_MarioHat_ground
+    {
+        mesh = WorldItems/Wiz_MarioBrosHat_ground,
+		texture = Clothes/Hat/Wiz_MarioHat, 
+    }
+	
+	model Wiz_LuigiHat_ground
+    {
+        mesh = WorldItems/Wiz_MarioBrosHat_ground,
+		texture = Clothes/Hat/Wiz_LuigiHat, 
+    }
+	
+	model Wiz_MusicBox_ground
+	{
+		mesh = WorldItems/Wiz_MusicBox_ground,
+		texture = weapons/1handed/Wiz_MusicBox,
+		scale = 0.0025,
+	}
+	
+	model Wiz_MusicBox	{
+		mesh = weapons/1handed/Wiz_MusicBox,
+		texture = weapons/1handed/Wiz_MusicBox,
+	}
+	
+	model Wiz_GoldViolin
+	{
+		mesh = Weapons/1Handed/Violin,
+		texture = weapons/1handed/Wiz_GoldViolin,
+
+		attachment world
+		{
+			offset = 0.0000 0.1300 0.0000,
+			rotate = -56.0000 90.0000 56.0000,
+		}
+	}
+	
+	model Wiz_Diamond
+	{
+		mesh = WorldItems/Wiz_Diamond,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Ruby
+	{
+		mesh = WorldItems/Wiz_Ruby,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Sapphire
+	{
+		mesh = WorldItems/Wiz_Sapphire,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Emerald
+	{
+		mesh = WorldItems/Wiz_Emerald,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Morganite
+	{
+		mesh = WorldItems/Wiz_Morganite,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Amethyst
+	{
+		mesh = WorldItems/Wiz_Amethyst,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_FireOpal
+	{
+		mesh = WorldItems/Wiz_FireOpal,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_Topaz
+	{
+		mesh = WorldItems/Wiz_Topaz,
+		texture = WorldItems/Wiz_GemColors,
+		scale = 0.8,		
+	}
+	
+	model Wiz_SamuraiHelmet_ground
+    {
+        mesh = WorldItems/Wiz_SamuraiHelmet_ground,
+		texture = Clothes/Hat/Wiz_SamuraiHelmet, 
+    }
+	
+	model Wiz_DestruidorArmor_ground
+    {
+        mesh = WorldItems/Wiz_DestruidorArmor_ground,
+		texture = Clothes/Jacket/Wiz_DestruidorArmor, 
+    }
+	
+	model Wiz_DestruidorHelmet_ground
+    {
+        mesh = WorldItems/Wiz_DestruidorHelmet_ground,
+		texture = Clothes/Hat/Wiz_DestruidorHelmet, 
+    }
+	
+	model Wiz_DestruidorCape_ground
+    {
+        mesh = WorldItems/Wiz_DestruidorCape_ground,
+		texture = Clothes/Necklace/Wiz_DestruidorCape, 
+    }
+	
+	model Wiz_TotallySpyBelt_ground
+    {
+        mesh = WorldItems/Wiz_TotallySpyBelt_ground,
+		texture = Clothes/BackPacks/Wiz_TotallySpiesBelt, 
+    }
+	
+	model Wiz_TotallySpyBootRed_ground
+    {
+        mesh = WorldItems/Wiz_TotallySpyBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_TotallySpiesBootRed, 
+    }
+	
+	model Wiz_TotallySpyBootGreen_ground
+    {
+        mesh = WorldItems/Wiz_TotallySpyBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_TotallySpiesBootGreen, 
+    }
+	
+	model Wiz_TotallySpyBootYellow_ground
+    {
+        mesh = WorldItems/Wiz_TotallySpyBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_TotallySpiesBootYellow, 
+    }
+	
+	model Wiz_XenaBoot_ground
+    {
+        mesh = Skinned/Clothes/Wiz_XenaBoot,
+		texture = Clothes/shoes_socks_textres/Wiz_XenaBoot, 
+    }
+	
+	model Wiz_XenaBracer_ground
+    {
+        mesh = WorldItems/Wiz_XenaBracer_ground,
+		texture = Clothes/Dresses/Wiz_XenaOutfit, 
+    }
+	
+	model Wiz_XenaOutfit_ground
+    {
+        mesh = WorldItems/Wiz_XenaOutfit_ground,
+		texture = Clothes/Dresses/Wiz_XenaOutfit, 
+    }
+	
+	model Wiz_VoyagerBadge_ground
+    {
+        mesh = WorldItems/Wiz_VoyagerBadge_ground,
+		texture = Clothes/Jewellery/Wiz_VoyagerBadge, 
+    }
+	
+	model Wiz_SSHat_ground
+    {
+        mesh = WorldItems/Wiz_SSHat_ground,
+		texture = Clothes/Hat/Wiz_SSHat, 
+    }
+	
+	model Wiz_MREration_ground
+	{
+		mesh = WorldItems/Wiz_MREration,
+		texture = WorldItems/Wiz_MREration,
+		scale = 0.001,
+	}
+	
+	model Wiz_XenaChakram	{
+		mesh = weapons/1handed/Wiz_XenaChakram,
+		texture = weapons/1handed/Wiz_XenaChakram,
+	}
+	
+	model Wiz_XenaChakram_ground	{
+		mesh = WorldItems/Wiz_XenaChakram_ground,
+		texture = weapons/1handed/Wiz_XenaChakram,
+	}
+	
+	model Wiz_FlashPrismBracer_ground
+    {
+        mesh = WorldItems/Wiz_FlashPrismBracer_ground,
+		texture = Clothes/Bracers/Wiz_FlashPrismBracer,   
+    }
+	
+	model Wiz_AndorianAntena_ground
+    {
+        mesh = WorldItems/Wiz_AndorianAntena_ground,
+		texture = Clothes/Hat/Wiz_AndorianAntena,  
+    }
+	
+	model Wiz_Type2Phaser
+    {
+        mesh = Weapons/firearm/Wiz_Type2Phaser,
+		texture = weapons/firearm/Wiz_Type2Phaser,	
+    }
+	
+	model Wiz_Type2Phaser_ground
+    {
+        mesh = WorldItems/Wiz_Type2Phaser_ground,
+		texture = weapons/firearm/Wiz_Type2Phaser, 
+    }
+	
+	model Wiz_AstronautHelmet_ground
+    {
+        mesh = WorldItems/Wiz_AstronautHelmet_ground,
+		texture = Clothes/Fullsuit/Wiz_Astronaut,  
+    }
+	
+	model Wiz_AstronautOutfit_ground
+    {
+        mesh = WorldItems/Wiz_AstronautOutfit_ground,
+		texture = Clothes/Fullsuit/Wiz_Astronaut,  
+    }
+	
+	model Wiz_AliceBackpackMedic
+    {
+        mesh = skinned\backpacks\m_alice_pack,
+        texture = Clothes/BackPacks/Wiz_AliceBackpackMedic,
+    }
+	
+	model Wiz_AliceBackpackMedic_Ground
+    {
+        mesh = WorldItems/Clothing/ALICE_Pack_Ground,
+		texture = Clothes/BackPacks/Wiz_AliceBackpackMedic,
+        scale = 0.4,
+    }
+	
+	model Wiz_ClownHorn
+	{
+		mesh = Weapons/firearm/Wiz_ClownHorn,
+		texture = weapons/firearm/Wiz_ClownHorn,
+	}
+	
+	model Wiz_ClownHorn_ground
+	{
+		mesh = WorldItems/Wiz_ClownHorn_ground,
+		texture = weapons/firearm/Wiz_ClownHorn,
+	}
+	
+	model Wiz_ClownHornClip
+	{
+		mesh = WorldItems/Wiz_ClownHornClip,
+		texture = weapons/firearm/Wiz_ClownHorn,
+	}
+	
+	
+	model Wiz_AtomizerGun
+	{
+		mesh = Weapons/firearm/Wiz_AtomizerGun,
+		texture = weapons/firearm/Wiz_AtomizerGun,
+	}
+	
+	model Wiz_AtomizerGun_ground
+	{
+		mesh = WorldItems/Wiz_AtomizerGun_ground,
+		texture = weapons/firearm/Wiz_AtomizerGun,
+	}
+	
+	model Wiz_AtomizerGunClip
+	{
+		mesh = WorldItems/Wiz_AtomizerGunClip,
+		texture = weapons/firearm/Wiz_AtomizerGun,
+	}
+	
+	model Wiz_BicLighter_White
+	{
+		mesh = WorldItems/Wiz_BicLighter,
+		texture = WorldItems/Wiz_BicLighter_White,
+		scale = 0.003,
+	}
+	
+	model Wiz_BicLighter_Black
+	{
+		mesh = WorldItems/Wiz_BicLighter,
+		texture = WorldItems/Wiz_BicLighter_Black,
+		scale = 0.003,
+	}
+	
+	model Wiz_BicLighter_Yellow
+	{
+		mesh = WorldItems/Wiz_BicLighter,
+		texture = WorldItems/Wiz_BicLighter_Yellow,
+		scale = 0.003,
+	}
+	
+	model Wiz_BicLighter_Blue
+	{
+		mesh = WorldItems/Wiz_BicLighter,
+		texture = WorldItems/Wiz_BicLighter_Blue,
+		scale = 0.003,
+	}
+	
+	model Wiz_BicLighter_Red
+	{
+		mesh = WorldItems/Wiz_BicLighter,
+		texture = WorldItems/Wiz_BicLighter_Red,
+		scale = 0.003,
+	}
+	
+	model Wiz_ZippoFluid
+	{
+		mesh = WorldItems/Wiz_ZippoFluid,
+		texture = WorldItems/Wiz_ZippoFluid,
+		scale = 0.0025,
+	}
+	
+	model Wiz_ScorpionOutfit_ground
+    {
+        mesh = WorldItems/Wiz_ScorpionOutfit_ground,
+		texture = Clothes/boliersuit/Wiz_ScorpionOutfit,  
+    }
+	
+	model Wiz_ScorpionHood_ground
+    {
+        mesh = WorldItems/Wiz_ScorpionHood_ground,
+		texture = Clothes/Hat/Wiz_ScorpionHood,  
+    }
+	
+	model Wiz_ScorpionBracer_ground
+    {
+        mesh = WorldItems/Wiz_ScorpionBracer_ground,
+		texture = Clothes/Bracers/Wiz_ScorpionBracer,  
+    }
+	
+	model Wiz_GoldenBullet
+	{
+		mesh = WorldItems/Wiz_SingleBullet,
+		texture = weapons/firearm/Wiz_GoldenGun,
+		scale = 1.0,
+	}
+	
+	model Wiz_GoldenGun
+	{
+		mesh = Weapons/firearm/Wiz_GoldenGun,
+		texture = weapons/firearm/Wiz_GoldenGun,
+	}
+	
+	model Wiz_GoldenGun_ground
+	{
+		mesh = WorldItems/Wiz_GoldenGun_ground,
+		texture = weapons/firearm/Wiz_GoldenGun,
+	}
+	
+	model Wiz_GoldenBulletBox
+	{
+		mesh = WorldItems/RifleAmmoBox,
+		texture = WorldItems/Wiz_GoldenBulletBox,
+		scale = 0.5,
+	}
+	
+	model Wiz_GoldLighter
+	{
+		mesh = WorldItems/Wiz_GoldLighter,
+		texture = weapons/firearm/Wiz_GoldenGun,
+		scale = 1.0,
+	}
+	
+	model Wiz_GoldPen
+	{
+		mesh = Weapons/1Handed/Pen,
+		texture = weapons/1handed/Wiz_GoldPen,
+
+		attachment world
+		{
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	
+	model Wiz_GoldenCigarrete
+	{
+		mesh = WorldItems/Wiz_GoldenCigarrete,
+		texture = weapons/firearm/Wiz_GoldenGun,
+		scale = 1.0,
+	}
+	
+	model Wiz_Canteen
+	{
+		mesh = Wiz_Canteen,
+		texture = WorldItems/Wiz_Canteen_Army,
+	}
+	model Wiz_Canteen_ground
+	{
+		mesh = WorldItems/Wiz_Canteen_ground,
+		texture = WorldItems/Wiz_Canteen_Army,
+	}
+	
+	model Wiz_Canteen2
+	{
+		mesh = Wiz_Canteen,
+		texture = WorldItems/Wiz_Canteen2,
+	}
+	model Wiz_Canteen2_ground
+	{
+		mesh = WorldItems/Wiz_Canteen_ground,
+		texture = WorldItems/Wiz_Canteen2,
+	}
+	
+	model Wiz_AirWaterCollector
+	{
+		mesh = WorldItems/Wiz_AirWaterCollector,
+		texture = WorldItems/Wiz_AirWaterCollector,
+		scale = 0.007,
+	}
+	
+	model Wiz_ClownWig_ground
+	{
+		mesh = WorldItems/Wiz_ClownWig_ground,
+		texture = Clothes/Hat/Wiz_ClownWig,
+	}
+	
+	model Wiz_ClownBowTie_groundGreen
+	{
+		mesh = WorldItems/Wiz_ClownBowTie_ground,
+		texture = Clothes/Necklace/Wiz_ClownBowTieGreen,
+	}
+	
+	model Wiz_ClownNoseRed_ground
+	{
+		mesh = WorldItems/Wiz_ClownNose_ground,
+		texture = Clothes/HatAttachment/Wiz_ClownNoseRed,
+	}
+	
+	model Wiz_ClownJacket_ground
+	{
+		mesh = WorldItems/Wiz_ClownJacket_ground,
+		texture = Clothes/Jacket/Wiz_ClownJacket,
+	}
+	
+	model Wiz_ClownShoe_ground
+	{
+		mesh = Skinned/Clothes/Wiz_ClownShoe,
+		texture = Clothes/shoes_socks_textres/Wiz_ClownShoe,
+	}
+	
+	
+	
+	model Wiz_RailgunBoltBox
+	{
+		mesh = WorldItems/HandGunAmmoBox,
+		texture = WorldItems/Wiz_RailgunBoltBox,
+		scale = 0.4,
+	}
+	
+	model Wiz_RailgunPistol
+	{
+		mesh = Weapons/firearm/Wiz_RailgunPistol,
+		texture = weapons/firearm/Wiz_RailgunPistol,
+	}
+	
+	model Wiz_RailgunPistol_ground
+	{
+		mesh = WorldItems/Wiz_RailgunPistol_ground,
+		texture = weapons/firearm/Wiz_RailgunPistol,
+	}
+	
+	model Wiz_RailgunPistol_Clip_Ground
+	{
+		mesh = WorldItems/Wiz_RailgunPistol_Clip,
+		texture = WorldItems/Wiz_RailgunPistol_Clip,
+	}
+	
+	model Wiz_RailgunBolts
+	{
+		mesh = WorldItems/Wiz_RailgunBolts,
+		texture = WorldItems/Wiz_RailgunBolts,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DustPile_Sulfur
+	{
+		mesh = WorldItems/Wiz_DustPile,
+		texture = WorldItems/Wiz_DustPile_Sulfur,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DustPile_Saltpeter
+	{
+		mesh = WorldItems/Wiz_DustPile,
+		texture = WorldItems/Wiz_DustPile_Saltpeter,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DustPile_Coal
+	{
+		mesh = WorldItems/Wiz_DustPile,
+		texture = WorldItems/Wiz_DustPile_Coal,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DustPile_Iron
+	{
+		mesh = WorldItems/Wiz_DustPile,
+		texture = WorldItems/Wiz_DustPile_Iron,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_magic
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_magic,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Card_pokemon
+	{
+		mesh = WorldItems/Wiz_Card,
+		texture = WorldItems/Wiz_Card_pokemon,
+		scale = 0.0025,
+	}
+	
+	model Wiz_EasterEggRapped
+	{
+		mesh = WorldItems/Wiz_EasterEggRapped,
+		texture = WorldItems/Wiz_EasterEggRapped,
+		scale = 0.0025,
+	}
+	
+	model Wiz_EasterEgg_Chocolate
+	{
+		mesh = Wiz_EasterEgg,
+		texture = WorldItems/Wiz_EasterEgg_Chocolate,
+		scale = 0.0020,
+	}
+	
+	model Wiz_EasterEgg_Chocolate_Ground
+	{
+		mesh = WorldItems/Wiz_EasterEgg_ground,
+		texture = WorldItems/Wiz_EasterEgg_Chocolate,
+		scale = 0.0020,
+	}
+	
+	model Wiz_ChemistrySet
+	{
+		mesh = WorldItems/Wiz_ChemistrySet,
+		texture = WorldItems/Wiz_ChemistrySet,
+		scale = 0.0025,
+	}
+	
+	model Wiz_AcidGuide
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_AcidGuide,
+	}
+	model Wiz_AcidGuide_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_AcidGuide,
+        scale = 0.4,
+    }
+	
+	model Wiz_ChemistryGeneralBook
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_ChemistryGeneralBook,
+	}
+	model Wiz_ChemistryGeneralBook_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_ChemistryGeneralBook,
+        scale = 0.4,
+    }
+	
+	model Wiz_BulletBook
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_BulletBook,
+	}
+	model Wiz_BulletBook_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_BulletBook,
+        scale = 0.4,
+    }
+	
+	model Wiz_BombBook
+	{
+		mesh = Book,
+		texture = WorldItems/Wiz_BombBook,
+	}
+	model Wiz_BombBook_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_BombBook,
+        scale = 0.4,
+    }
+	
+	model Wiz_VirusExamMagazine
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_VirusExamMagazine, 
+    }
+	model Wiz_VirusExamMagazine_ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_VirusExamMagazine,
+        scale = 0.35,
+    }
+	
+	model Wiz_VirusExamMagazine2
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_VirusExamMagazine2,
+    }
+	model Wiz_VirusExamMagazine_ground2
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_VirusExamMagazine2,
+        scale = 0.4,
+    }
+	
+	model Wiz_Syringe_Catseye_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_Catseye,
+		scale = 0.003,
+	}
+	
+	model Wiz_Syringe_Strong_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_Strong,
+		scale = 0.003,
+	}
+	
+	model Wiz_Syringe_Fastheal_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_Fastheal,
+		scale = 0.003,
+	}
+	
+	model Wiz_Syringe_FastLearn_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_FastLearn,
+		scale = 0.003,
+	}
+	
+	model Wiz_Syringe_KeenHear_ground
+	{
+		mesh = WorldItems/Wiz_Syringe_ground,
+		texture = WorldItems/Wiz_Syringe_KeenHear,
+		scale = 0.003,
+	}
+	
+	
+	
+	model Wiz_DeadGecko
+    {
+        mesh = Wiz_DeadGecko,
+        texture = WorldItems/Wiz_DeadGecko,
+    }
+	
+	
+	model Wiz_DeadGeckoWorld
+	{
+		mesh = WorldItems/Wiz_DeadGecko_ground,
+		texture = WorldItems/Wiz_DeadGecko,
+		scale = 0.005,
+	}
+	model Wiz_DeadGeckoBurnt
+	{
+		mesh = WorldItems/Wiz_DeadGecko_ground,
+		texture = WorldItems/Wiz_DeadGeckoBurnt,
+		scale = 0.005,
+	}
+	model Wiz_DeadGeckoCooked
+	{
+		mesh = WorldItems/Wiz_DeadGecko_ground,
+		texture = WorldItems/Wiz_DeadGeckoCooked,
+		scale = 0.005,
+	}
+	
+	
+	model Wiz_BloodExamMagazineAnimals_ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_BloodExamMagazineAnimals,
+        scale = 0.3,
+    }
+	
+	model Wiz_GeneticEngenierBook
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_GeneticEngenierBook, 
+    }
+	model Wiz_GeneticEngenierBook_ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_GeneticEngenierBook,
+        scale = 0.35,
+    }
+	
+	model Wiz_DNAsequencer
+	{
+		mesh = WorldItems/Wiz_DNAsequencer,
+		texture = WorldItems/Wiz_DNAsequencer,
+		scale = 0.0032,
+	}
+	
+	model WizDNAtube_GeckoGene_Ground
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/WizDNAtube_GeckoGene,
+		scale = 0.0045,
+	}
+	
+	model WizDNAtube_RabbitGene_Ground
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/WizDNAtube_RabbitGene,
+		scale = 0.0045,
+	}
+	
+	model WizDNAtube_LobsterGene
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/WizDNAtube_LobsterGene,
+		scale = 0.0045,
+	}
+	
+	model WizDNAtube_RatGene
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/WizDNAtube_RatGene,
+		scale = 0.0045,
+	}
+	
+	model WizDNAtube_BirdGene
+	{
+		mesh = WorldItems/Wiz_DNATube,
+		texture = WorldItems/WizDNAtube_BirdGene,
+		scale = 0.0045,
+	}
+	
+	model Wiz_GameBoy
+	{
+		mesh = Wiz_GameBoy,
+		texture = WorldItems/Wiz_GameBoy,
+		scale = 1,
+	}
+	
+	model Wiz_GameBoy_Ground
+	{
+		mesh = WorldItems/Wiz_GameBoy_Ground,
+		texture = WorldItems/Wiz_GameBoy,
+		scale = 1,
+	}
+	
+	model Wiz_GameBoy_Mario
+	{
+		mesh = WorldItems/Wiz_GameBoyCartridge,
+		texture = WorldItems/Wiz_GameBoy_Mario,
+		scale = 0.002,
+	}
+	
+	model Wiz_GameBoy_Tetris
+	{
+		mesh = WorldItems/Wiz_GameBoyCartridge,
+		texture = WorldItems/Wiz_GameBoy_Tetris,
+		scale = 0.002,
+	}
+	
+	model Wiz_GameBoy_Zelda
+	{
+		mesh = WorldItems/Wiz_GameBoyCartridge,
+		texture = WorldItems/Wiz_GameBoy_Zelda,
+		scale = 0.002,
+	}
+	
+	model Wiz_GameBoy_Castlevania2
+	{
+		mesh = WorldItems/Wiz_GameBoyCartridge,
+		texture = WorldItems/Wiz_GameBoy_Castlevania2,
+		scale = 0.002,
+	}
+	
+	
+	model Wiz_PictureBigFoot
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureBigFoot,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureChupacabras
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureChupacabras,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureMothman
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureMothman,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureFlatwoodET
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureFlatwoodET,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureFakeFairy
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureFakeFairy,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureLochNess
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureLochNess,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PictureThunderbird
+	{
+		mesh = WorldItems/Wiz_Picture,
+		texture = WorldItems/Wiz_PictureThunderbird,
+		scale = 0.0035,
+	}
+	
+	model Wiz_MalleusMaleficarum
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_MalleusMaleficarum, 
+    }
+	model Wiz_MalleusMaleficarum_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_MalleusMaleficarum,
+        scale = 0.35,
+    }
+	
+	model Wiz_SolomonKey
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_SolomonKey, 
+    }
+	model Wiz_SolomonKey_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_SolomonKey,
+        scale = 0.35,
+    }
+	
+	model Wiz_VoynichManuscript
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_VoynichManuscript, 
+    }
+	model Wiz_VoynichManuscript_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_VoynichManuscript,
+        scale = 0.35,
+    }
+	
+	model Wiz_FreemasonBuildTechs
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_FreemasonBuildTechs, 
+    }
+	model Wiz_FreemasonBuildTechs_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_FreemasonBuildTechs,
+        scale = 0.35,
+    }
+	
+	model Wiz_NutricionistGuide
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_NutricionistGuide, 
+    }
+	model Wiz_NutricionistGuide_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_NutricionistGuide,
+        scale = 0.35,
+    }
+	
+	model Wiz_proteinbar
+	{
+		mesh = Wiz_ProteinBar,
+		texture = WorldItems/Wiz_proteinbar,
+		scale = 0.0022,
+	}
+	
+	model Wiz_PocketTV
+	{
+		mesh = Wiz_PocketTV,
+		texture = WorldItems/Wiz_PocketTV,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PocketTV_ground
+	{
+		mesh = WorldItems/Wiz_PocketTV_ground,
+		texture = WorldItems/Wiz_PocketTV,
+		scale = 0.0015,
+	}
+	
+	model Wiz_BunsenBurner
+	{
+		mesh = WorldItems/Wiz_BunsenBurner,
+		texture = WorldItems/Wiz_BunsenBurner,
+		scale = 0.0025,
+	}
+	
+	model Wiz_GlassblowingMagazine
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/Wiz_GlassblowingMagazine,
+        scale = 0.3,
+    }
+	
+	model Wiz_TestTube_Empty
+	{
+		mesh = WorldItems/Wiz_TestTube,
+		texture = WorldItems/Wiz_TestTube_Empty,
+		scale = 0.0025,
+	}
+	
+	model Wiz_ShortSpear	{
+		mesh = weapons/2handed/Wiz_ShortSpear,
+		texture = weapons/2handed/Wiz_ShortSpear,
+	}
+	
+	model Wiz_ShortSpear_ground	{
+		mesh = WorldItems/Wiz_ShortSpear_ground,
+		texture = weapons/2handed/Wiz_ShortSpear,
+	}
+	
+	model Wiz_CrossbowRep
+	{
+		mesh = Weapons/firearm/Wiz_CrossbowRep,
+		texture = weapons/firearm/Wiz_Crossbow,
+	}
+	
+	model Wiz_CrossbowRep_ground
+	{
+		mesh = WorldItems/Wiz_CrossbowRep_ground,
+		texture = weapons/firearm/Wiz_Crossbow,
+	}
+	
+	model Wiz_Batarang	{
+		mesh = weapons/1handed/Wiz_Batarang,
+		texture = weapons/1handed/Wiz_Batarang,
+	}
+	
+	model Wiz_Batarang_ground
+	{
+		mesh = WorldItems/Wiz_Batarang_ground,
+		texture = weapons/1handed/Wiz_Batarang,	
+	}
+	
+	model Wiz_D4Dice
+	{
+		mesh = WorldItems/Wiz_D4Dice,
+		texture = WorldItems/Wiz_D4Dice,
+		scale = 0.005,
+	}
+	
+	model Wiz_D6Dice
+	{
+		mesh = WorldItems/Wiz_D6Dice,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.004,
+	}
+	
+	model Wiz_D8Dice
+	{
+		mesh = WorldItems/Wiz_D8Dice,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.0045,
+	}
+	
+	model Wiz_D10Dice
+	{
+		mesh = WorldItems/Wiz_D10Dice,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.0045,
+	}
+	
+	model Wiz_D12Dice
+	{
+		mesh = WorldItems/Wiz_D12Dice,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.0045,
+	}
+	
+	model Wiz_D20Dice
+	{
+		mesh = WorldItems/Wiz_D20Dice,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.0045,
+	}
+	
+	model Wiz_RPGDicesSet
+	{
+		mesh = WorldItems/Wiz_RPGDicesSet,
+		texture = WorldItems/Wiz_DiceSet,
+		scale = 0.0045,
+	}
+	
+	model Wiz_Necronomicon
+    {
+        mesh = Book,
+        texture = WorldItems/Wiz_Necronomicon, 
+    }
+	model Wiz_Necronomicon_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_Necronomicon,
+        scale = 0.35,
+    }
+	
+	
+	model Wiz_D&DSetBox
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_D&DSetBox,
+		scale = 0.0025,
+	}
+	
+	model Wiz_TorsoBeltBlack_ground
+    {
+        mesh = WorldItems/Wiz_TorsoBelt_ground,
+		texture = Clothes/BackPacks/Wiz_TorsoBeltBlack,
+    }
+	
+	model Wiz_PoliceBelt_ground
+	{
+		mesh = WorldItems/Wiz_PoliceBelt_ground,
+		texture = Clothes/BackPacks/Wiz_PoliceBelt,
+	}
+	
+	model Wiz_LegBelt_ground
+	{
+		mesh = WorldItems/Wiz_LegBelt_ground,
+		texture = Clothes/BackPacks/Wiz_PoliceBelt,
+	}
+	
+	model Wiz_LegBelts_ground
+	{
+		mesh = WorldItems/Wiz_LegBelts_ground,
+		texture = Clothes/BackPacks/Wiz_PoliceBelt,
+	}
+	
+	
+	model Wiz_MinerHelmetBattery
+	{
+		mesh = WorldItems/Battery,
+		texture = WorldItems/Wiz_MinerHelmetBattery,
+		scale = 0.6,
+	}
+	
+	model Wiz_MinerHelmet_ground
+    {
+        mesh = WorldItems/Wiz_MinerHelmet_ground,
+		texture = Clothes/Hat/Wiz_MinerHelmet,  
+    }
+	
+	model Wiz_MinerHelmet_Light
+    {
+        mesh = ClothingAttachments/Wiz_MinerHelmet_Light,
+		texture = Clothes/Hat/Wiz_MinerHelmet, 
+    }
+	
+	model Wiz_MinerHelmetLight_ground
+    {
+        mesh = WorldItems/Wiz_MinerHelmetLight_ground,
+		texture = Clothes/Hat/Wiz_MinerHelmet, 
+    }
+	
+	model Wiz_TOSconnieBox
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_TOSconnieBox,
+		scale = 0.002,
+	}
+	
+	model Wiz_TOSconnie
+	{
+		mesh = WorldItems/Wiz_TOSconnie,
+		texture = WorldItems/Wiz_TOSconnie,
+		scale = 0.0015,
+	}
+	
+	model Wiz_ModelBox_f14
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_ModelBox_f14,
+		scale = 0.002,
+	}
+	
+	model Wiz_Model_f14
+	{
+		mesh = WorldItems/Wiz_Model_f14,
+		texture = WorldItems/Wiz_Model_f14,
+		scale = 0.0015,
+	}
+	
+	model Wiz_ModelPaintVials
+	{
+		mesh = WorldItems/Wiz_ModelPaintVials,
+		texture = WorldItems/Wiz_ModelPaintVials,
+		scale = 0.002,
+	}
+	
+	model Wiz_SmallBrush
+	{
+		mesh = WorldItems/Wiz_SmallBrush,
+		texture = WorldItems/Wiz_SmallBrush,
+		scale = 0.002,
+	}
+	
+	
+	model Wiz_ModelBox_mig29
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_ModelBox_mig29,
+		scale = 0.002,
+	}
+	
+	model Wiz_Model_mig29
+	{
+		mesh = WorldItems/Wiz_Model_mig29,
+		texture = WorldItems/Wiz_Model_mig29,
+		scale = 0.0015,
+	}
+	
+	model Wiz_ModelBox_f5
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_ModelBox_f5,
+		scale = 0.002,
+	}
+	
+	model Wiz_Model_f5
+	{
+		mesh = WorldItems/Wiz_Model_f5,
+		texture = WorldItems/Wiz_Model_f5,
+		scale = 0.0015,
+	}
+	
+	model Wiz_ModelBox_f16
+	{
+		mesh = WorldItems/Wiz_BoardGameBox,
+		texture = WorldItems/Wiz_ModelBox_f16,
+		scale = 0.002,
+	}
+	
+	model Wiz_Model_f16
+	{
+		mesh = WorldItems/Wiz_Model_f16,
+		texture = WorldItems/Wiz_Model_f16,
+		scale = 0.0015,
+	}
+	
+	model Wiz_KarateHeadband_ground
+	{
+		mesh = WorldItems/Wiz_KarateHeadband_ground,
+		texture = Clothes/Hat/Wiz_KarateKidHeadband,
+		scale = 0.01,
+	}
+	
+	model Wiz_KarateHeadband2_ground
+	{
+		mesh = WorldItems/Wiz_KarateHeadband_ground,
+		texture = Clothes/Hat/Wiz_KarateKidHeadbandCobra,
+		scale = 0.01,
+	}
+	
+	model Wiz_PomPom_ground
+	{
+		mesh = WorldItems/Wiz_PomPom_ground,
+		texture = Clothes/Gloves/Wiz_Pompom_1,
+	}
+	
+	model Wiz_Skirt_Cheerleader_1_Ground
+    {
+        mesh = WorldItems/Wiz_JulietSkirt_ground,
+		texture = Clothes/dress_textures/Wiz_Skirt_Cheerleader_1, 
+    }
+	
+	model Wiz_GlassesLove_ground
+	{
+		mesh = WorldItems/Wiz_GlassesLove_ground,
+		texture = Clothes/Glasses/Wiz_GlassesLove,
+	}
+	
+	model Wiz_HippieColar_ground
+	{
+		mesh = WorldItems/Wiz_HippieColar_ground,
+		texture = Clothes/Necklace/Wiz_HippieCollarF,
+	}
+	
+	model Wiz_HeadbandHippie_ground
+	{
+		mesh = WorldItems/Wiz_HeadbandHippie_ground,
+		texture = Clothes/Hat/Wiz_HeadbandHippie,
+	}
+	
+	model Wiz_MalandroRosa_ground
+    {
+        mesh = WorldItems/Wiz_MalandroRosa_ground,
+		texture = Clothes/Jewellery/Wiz_MalandroRosa,
+    }
+	
+	model Wiz_FreddyGlove_ground
+	{
+		mesh = WorldItems/Wiz_FreddyGlove_ground,
+		texture = Clothes/Gloves/Wiz_FreddyGlove,
+	}
+	
+	model Wiz_ContactLensCase
+	{
+		mesh = WorldItems/Wiz_ContactLensCase,
+		texture = WorldItems/Wiz_ContactLensCase,
+		scale = 0.002,
+	}
+	
+	model Wiz_ProtestSign_hippie	{
+		mesh = weapons/2handed/Wiz_ProtestSign,
+		texture = weapons/2handed/Wiz_ProtestSign_hippie,
+	}
+	
+	model Wiz_ProtestSign_hippie_ground	{
+		mesh = WorldItems/Wiz_ProtestSign_ground,
+		texture = weapons/2handed/Wiz_ProtestSign_hippie,
+	}
+	
+	model Wiz_CubanCigar_ground
+	{
+		mesh = WorldItems/Wiz_CubanCigar_ground,
+		texture = WorldItems/Wiz_CubanCigar,
+		scale = 0.0035,
+	}
+	
+	model Wiz_CubanCigar
+	{
+		mesh = Wiz_CubanCigar,
+		texture = WorldItems/Wiz_CubanCigar,
+		scale = 0.0035,
+	}
+	
+	model Wiz_CubanCigarBox
+	{
+		mesh = WorldItems/Wiz_CubanCigarBox,
+		texture = WorldItems/Wiz_CubanCigarBox,
+		scale = 0.0025,
+	}
+	
+	model Wiz_JasonMask_ground
+	{
+		mesh = WorldItems/Wiz_JasonMask_ground,
+		texture = Clothes/Hat/Wiz_JasonMask,
+	}
+	
+	model Wiz_FreddyHat_ground
+	{
+		mesh = WorldItems/Wiz_FreddyHat_ground,
+		texture = Clothes/Hat/Wiz_FreddyHat,
+	}
+	
+	model Wiz_EasterBunnySuit_ground
+	{
+		mesh = WorldItems/Wiz_EasterBunnySuit_ground,
+		texture = Clothes/Fullsuit/Wiz_EasterBunnySuit,
+	}
+	
+	model Wiz_EasterBunnyHead_ground
+	{
+		mesh = WorldItems/Wiz_EasterBunnyHead_ground,
+		texture = Clothes/Hat/Wiz_EasterBunnyHead,
+	}
+	
+	model Wiz_PlaygirlOutfit_ground
+	{
+		mesh = WorldItems/Wiz_PlaygirlOutfit_ground,
+		texture = Clothes/Underwear/Wiz_PlaygirlOutfit,
+	}
+	
+	model Wiz_PlayboyGirlEar_ground
+	{
+		mesh = WorldItems/Wiz_PlayboyGirlEar_ground,
+		texture = Clothes/Hat/Wiz_PlayboyGirlEar,
+	}
+	
+	model Wiz_SockHeels_Ground
+    {
+        mesh = Skinned/Clothes/Wiz_SockHeels,
+		texture = Clothes/shoes_socks_textres/Wiz_SockHeels,
+    }
+	
+	model Wiz_LittleFlag_US	{
+		mesh = weapons/1handed/Wiz_LittleFlag,
+		texture = weapons/1handed/Wiz_LittleFlag_US,
+	}
+	
+	model Wiz_LittleFlag_US_ground	{
+		mesh = WorldItems/Wiz_LittleFlag_ground,
+		texture = weapons/1handed/Wiz_LittleFlag_US,
+	}
+	
+	model Wiz_LittleFlag_Brasil	{
+		mesh = weapons/1handed/Wiz_LittleFlag,
+		texture = weapons/1handed/Wiz_LittleFlag_Brasil,
+	}
+	
+	model Wiz_LittleFlag_Brasil_ground	{
+		mesh = WorldItems/Wiz_LittleFlag_ground,
+		texture = weapons/1handed/Wiz_LittleFlag_Brasil,
+		scale = 0.5,
+	}
+	
+	model Wiz_SoccerShirt_ground
+	{
+		mesh = WorldItems/Wiz_SoccerShirt_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_SoccerShirt_Brasil,
+	}
+	
+	model Wiz_SoccerShorts_ground
+	{
+		mesh = WorldItems/Wiz_SoccerShorts_ground,
+		texture = Clothes/Pants/Wiz_SoccerShorts_Brasil,
+	}
+	
+	model Wiz_Chuteira_ground
+	{
+		mesh = WorldItems/Wiz_Chuteira_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_Chuteira,
+	}
+	
+	model Wiz_TankTop_ground
+	{
+		mesh = WorldItems/Wiz_TankTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_TankTop_JackBurton,
+	}
+	
+	model Wiz_JackBurtonBoot_ground
+	{
+		mesh = Skinned/Clothes/Wiz_TallBoot,
+		texture = Clothes/shoes_socks_textres/Wiz_JackBurtonBoot,
+	}
+	
+	model Wiz_LeatherWatch_Brown_ground
+	{
+		mesh = WorldItems/Wiz_LeatherWatch_ground,
+		texture = Clothes/Jewellery/Wiz_LeatherWatch_Brown,
+	}
+	
+	model Wiz_ClanTunic_ground
+	{
+		mesh = WorldItems/Wiz_ClanTunic_ground,
+		texture = Clothes/Tunics/Wiz_ClanTunic,
+	}
+	
+	model Wiz_ClanHood_ground
+	{
+		mesh = WorldItems/Wiz_ClanHood_ground,
+		texture = Clothes/Hat/Wiz_ClanHood,
+	}
+	
+	model Wiz_PentacleTalisman_Magic_ground	{
+		mesh = WorldItems/Wiz_PentacleTalisman_ground,
+		texture = Clothes/Necklace/Wiz_PentacleTalisman_Magic,
+	}
+	
+	model Wiz_WizardRobeClassic_ground
+	{
+		mesh = WorldItems/Wiz_WizardRobe_ground,
+		texture = Clothes/Tunics/Wiz_WizardRobe,
+	}
+	
+	model Wiz_WizardHatClassic_ground
+	{
+		mesh = WorldItems/Wiz_WizardHat_ground,
+		texture = Clothes/Hat/Wiz_WizardHat,
+	}
+	
+	
+	model Wiz_WandMagicWood	{
+		mesh = weapons/firearm/Wiz_WandMagicWood,
+		texture = weapons/firearm/Wiz_WandMagicWood,
+	}
+	
+	model Wiz_WandWood_ground	{
+		mesh = WorldItems/Wiz_WandWood_ground,
+		texture = weapons/firearm/Wiz_WandMagicWood,
+		scale = 1.2,
+	}
+	
+	model Wiz_Grimoire_A
+	{
+		mesh = Wiz_Grimoire,
+		texture = WorldItems/Wiz_Grimoire_A,
+		scale = 1,
+	}
+	
+	model Wiz_Grimoire_A_Ground
+    {
+        mesh = WorldItems/BookClosed,
+        texture = WorldItems/Wiz_Grimoire_A,
+        scale = 0.5,
+    }
+	
+	model Wiz_MarioMushroom_Red
+	{
+		mesh = Wiz_MarioMushroom,
+		texture = WorldItems/Wiz_MarioMushroom_Red,
+		scale = 0.0025,
+	}
+	
+	model Wiz_MarioMushroom_Red_ground
+	{
+		mesh = WorldItems/Wiz_MarioMushroom_ground,
+		texture = WorldItems/Wiz_MarioMushroom_Red,
+		scale = 0.0025,
+	}
+	
+	
+	model Wiz_MemberBerry
+	{
+		mesh = Wiz_MemberBerry,
+		texture = WorldItems/Wiz_MemberBerry,
+		scale = 0.0025,
+	}
+	
+	model Wiz_MemberBerry_ground
+	{
+		mesh = WorldItems/Wiz_MemberBerry_ground,
+		texture = WorldItems/Wiz_MemberBerry,
+		scale = 0.0025,
+	}
+	
+	model Wiz_AlienGloves_ground
+    {
+        mesh = WorldItems/Wiz_AlienGloves_ground,
+		texture = Clothes/Gloves/Wiz_AlienGloves, 
+    }
+	
+	
+	model Wiz_AlienBoot_ground
+	{
+		mesh = Skinned/Clothes/Wiz_AlienBoot_M,
+		texture = Clothes/shoes_socks_textres/Wiz_AlienBoot,
+	}
+	
+	model Wiz_AlienOutfit_ground
+    {
+        mesh = WorldItems/Wiz_AlienOutfit_ground,
+		texture = Clothes/boliersuit/Wiz_AlienOutfit, 
+    }
+	
+	model Wiz_NavyCap_ground
+    {
+        mesh = WorldItems/Wiz_SSHat_ground,
+		texture = Clothes/Hat/Wiz_NavyCap, 
+    }
+	
+	model Wiz_AlienMask_Grey_ground
+    {
+        mesh = WorldItems/Wiz_AlienMask_Grey_ground,
+		texture = Clothes/Hat/Wiz_AlienMask_Grey, 
+    }
+	
+	model Wiz_PlaygirlOutfit_Red_ground
+	{
+		mesh = WorldItems/Wiz_PlaygirlOutfit_ground,
+		texture = Clothes/Underwear/Wiz_PlaygirlOutfit_Red,
+	}
+	
+	model Wiz_PlayboyGirlEar_Red_ground
+	{
+		mesh = WorldItems/Wiz_PlayboyGirlEar_ground,
+		texture = Clothes/Hat/Wiz_PlayboyGirlEar_Red,
+	}
+	
+	model Wiz_SockHeels_Red_Ground
+    {
+        mesh = Skinned/Clothes/Wiz_SockHeels,
+		texture = Clothes/shoes_socks_textres/Wiz_SockHeels_Red,
+    }
+	
+	model Wiz_BoStaff	{
+		mesh = weapons/2handed/Wiz_BoStaff,
+		texture = weapons/2handed/Wiz_BoStaff,
+	}
+	
+	model Wiz_BoStaff_ground {
+		mesh = WorldItems/Wiz_BoStaff_ground,
+		texture = weapons/2handed/Wiz_BoStaff,	
+	}
+	
+	model Wiz_Dragonball_4stars
+	{
+		mesh = WorldItems/Wiz_Dragonball_4stars,
+		texture = WorldItems/Wiz_Dragonball,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BoaterHat_White_ground
+	{
+		mesh = WorldItems/Wiz_BoaterHat_ground,
+		texture = Clothes/Hat/Wiz_BoaterHatWhite,
+	}
+	
+	model Wiz_TheMaskHat_ground
+	{
+		mesh = WorldItems/Wiz_TheMaskHat_ground,
+		texture = Clothes/Hat/Wiz_TheMaskHat,
+	}
+	
+	model Wiz_TheMaskJacket_ground
+    {
+        mesh = WorldItems/Wiz_TheMaskJacket_ground,
+		texture = Clothes/Jacket/Wiz_TheMaskJacket,
+    }
+	
+	model Wiz_FairyWing_ground_white
+    {
+        mesh = WorldItems/Wiz_FairyWing_ground,
+		texture = Clothes/Others/Wiz_FairyWing,
+    }
+	
+	model Wiz_GoldCrucifix_Ground
+    {
+        mesh = WorldItems/Necklace_Crucifix_Ground,
+		texture = Clothes/Jewellery/Wiz_PriestCrucifix_Gold, 
+    }
+	
+	model Wiz_FairyEar_ground
+    {
+        mesh = WorldItems/Wiz_FairyEars_ground,
+		texture = Body/MakeUp/Wiz_FairySkin,
+    }
+	
+	model Wiz_FairyEarZed_ground
+    {
+        mesh = WorldItems/Wiz_FairyEars_ground,
+		texture = Body/MakeUp/Wiz_ZedFairySkin,
+    }
+	
+	model Wiz_FairyDress_ground
+    {
+        mesh = WorldItems/Wiz_FairyDress_ground,
+		texture = clothes/Dresses/Wiz_FairyDress,
+    }
+	
+	model Wiz_FairyCrownGreen_ground
+	{
+		mesh = WorldItems/Wiz_FairyCrown_ground,
+		texture = Clothes/Hat/Wiz_FairyCrown,
+	}
+	
+	model Wiz_FairyShoes_ground
+    {
+        mesh = WorldItems/Wiz_FairyShoes_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_FairyShoes,
+    }
+	
+	model Wiz_WandAstral	{
+		mesh = weapons/firearm/Wiz_WandAstral,
+		texture = weapons/firearm/Wiz_WandAstral,
+	}
+	
+	model Wiz_WandAstral_ground	{
+		mesh = WorldItems/Wiz_WandAstral_ground,
+		texture = weapons/firearm/Wiz_WandAstral,
+		/*scale = 1.2,*/
+	}
+	
+	model Wiz_VampireTeeth_ground
+    {
+        mesh = WorldItems/Wiz_VampireTeeth_ground,
+		texture = Clothes/Others/Wiz_VampireTeeth,
+    }
+	
+	model Wiz_VampireMedallion_ground
+    {
+        mesh = WorldItems/Wiz_VampireMedallion_ground,
+		texture = Clothes/Necklace/Wiz_VampireMedallion, 
+    }
+	
+	model Wiz_VampireCape_ground
+    {
+        mesh = WorldItems/Wiz_VampireCape_ground,
+		texture = Clothes/Necklace/Wiz_VampireCape, 
+    }
+	
+	model Wiz_SheilaBoot_ground
+    {
+        mesh = WorldItems/Wiz_SheilaBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_SheilaBoot,
+    }
+	
+	model Wiz_SheilaClock_ground
+    {
+        mesh = WorldItems/Wiz_SheilaClock_ground,
+		texture = Clothes/Others/Wiz_SheilaCloack,
+    }
+	
+	model Wiz_LeavesBracer_ground
+    {
+        mesh = WorldItems/Wiz_LeavesBracer_ground,
+		texture = Clothes/Bracers/Wiz_LeaveBracers,   
+    }
+	
+	model Wiz_HulaCollar1_ground
+    {
+        mesh = WorldItems/Wiz_HulaCollar_ground,
+		texture = Clothes/Necklace/Wiz_HulaCollar1, 
+    }
+	
+	model Wiz_FlowerOnHairYellow_ground
+	{
+		mesh = WorldItems/Wiz_FlowerOnHair_ground,
+		texture = Clothes/Hat/Wiz_FlowerOnHairYellow,
+	}
+	
+	model Wiz_HulaTop_ground
+    {
+        mesh = WorldItems/Wiz_HulaTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_HulaTop,
+        
+    }
+	
+	model Wiz_PotionHOLD
+	{
+		mesh = Wiz_PotionHOLD,
+		texture = WorldItems/Wiz_Potion_Yellow,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Potion
+	{
+		mesh = WorldItems/Wiz_Potion,
+		texture = WorldItems/Wiz_Potion_Yellow,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PotionHOLD_aqua
+	{
+		mesh = Wiz_PotionHOLD,
+		texture = WorldItems/Wiz_Potion_Aqua,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Potion_aqua
+	{
+		mesh = WorldItems/Wiz_Potion,
+		texture = WorldItems/Wiz_Potion_Aqua,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Potion_Empty
+	{
+		mesh = WorldItems/Wiz_Potion,
+		texture = WorldItems/Wiz_Potion_Empty,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PotionHOLD_black
+	{
+		mesh = Wiz_PotionHOLD,
+		texture = WorldItems/Wiz_Potion_Black,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Potion_black
+	{
+		mesh = WorldItems/Wiz_Potion,
+		texture = WorldItems/Wiz_Potion_Black,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PotionHOLD_orange
+	{
+		mesh = Wiz_PotionHOLD,
+		texture = WorldItems/Wiz_Potion_Orange,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Potion_orange
+	{
+		mesh = WorldItems/Wiz_Potion,
+		texture = WorldItems/Wiz_Potion_Orange,
+		scale = 0.0025,
+	}
+	
+	model Wiz_AlchemistCauldron
+	{
+		mesh = WorldItems/Wiz_AlchemistCauldron,
+		texture = WorldItems/Wiz_AlchemistCauldron,
+		scale = 0.0025,
+	}
+	
+	model Wiz_SmokingPipe_ground
+	{
+		mesh = WorldItems/Wiz_SmokingPipe_ground,
+		texture = WorldItems/Wiz_SmokingPipe,
+		scale = 0.0035,
+	}
+	
+	model Wiz_SmokingPipe
+	{
+		mesh = Wiz_SmokingPipe,
+		texture = WorldItems/Wiz_SmokingPipe,
+		scale = 0.0035,
+	}
+	
+	model Wiz_PipeTobaco
+	{
+		mesh = WorldItems/Wiz_PipeTobaco,
+		texture = WorldItems/Wiz_PipeTobaco,
+		scale = 0.0025,
+	}
+	
+	model Wiz_CartolaHat_ground
+    {
+        mesh = WorldItems/Wiz_CartolaHat_ground,
+		texture = Clothes/Hat/Wiz_CartolaHat,   
+    }
+	
+	model Wiz_MagicianWand	{
+		mesh = weapons/1handed/Wiz_MagicianWand,
+		texture = weapons/1handed/Wiz_MagicianWand,
+	}
+	
+	model Wiz_MagicianWand_ground	{
+		mesh = WorldItems/Wiz_MagicianWand_ground,
+		texture = weapons/1handed/Wiz_MagicianWand,
+		scale=0.7,
+	}
+	
+	model Wiz_MonkTunic_ground
+    {
+        mesh = WorldItems/Wiz_MonkTunic_ground,
+		texture = Clothes/Tunics/Wiz_MonkTunic,   
+    }
+	
+	model Wiz_CrucifixLargeMonk_ground
+    {
+        mesh = WorldItems/Wiz_CrucifixLarge_ground,
+		texture = Clothes/Jewellery/Wiz_LargeCrucifix_Monk,   
+    }
+	
+	model Wiz_RopeBelt_ground
+    {
+        mesh = WorldItems/Wiz_RopeBelt_ground,
+		texture = Clothes/Others/Wiz_RopeBelt,   
+    }
+	
+	model Wiz_NativeAmericanHat_ground
+    {
+        mesh = WorldItems/Wiz_NativeAmericanHat_ground,
+		texture = Clothes/Hat/Wiz_NativeAmericanHat,   
+    }
+	
+	model Wiz_NativeAmericanCollar_ground
+    {
+        mesh = WorldItems/Wiz_NativeAmericanCollar_ground,
+		texture = Clothes/Jewellery/Wiz_NativeAmericanCollar,   
+    }
+	
+	model Wiz_BruxaDress_ground
+    {
+        mesh = WorldItems/Wiz_BruxaDress_ground,
+		texture = Clothes/Dresses/Wiz_BruxaDress,   
+    }
+	
+	model Wiz_BruxaHat_ground
+    {
+        mesh = WorldItems/Wiz_BruxaHat_ground,
+		texture = Clothes/Hat/Wiz_BruxaHat,   
+    }
+	
+	model Wiz_BruxaShoes_ground
+    {
+        mesh = WorldItems/Wiz_BruxaShoes_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_BruxaShoe,
+    }
+	
+	model Wiz_PriestHat_ground
+    {
+        mesh = WorldItems/Wiz_PriestHat_ground,
+		texture = Clothes/Hat/Wiz_PriestHat,   
+    }
+	
+	model Wiz_TheVampJacket_ground
+    {
+        mesh = WorldItems/Wiz_TheMaskJacket_ground,
+		texture = Clothes/Jacket/Wiz_VampireJacket,   
+    }
+	
+	model Wiz_SaciHat_ground
+    {
+        mesh = WorldItems/Wiz_SaciHat_ground,
+		texture = Clothes/Hat/Wiz_SaciHat,   
+    }
+	
+	
+	model Wiz_Tomahawk	{
+		mesh = weapons/1handed/Wiz_Tomahawk,
+		texture = weapons/1handed/Wiz_Tomahawk,
+	}
+	
+	model Wiz_Tomahawk_ground	{
+		mesh = WorldItems/Wiz_Tomahawk_ground,
+		texture = weapons/1handed/Wiz_Tomahawk,
+		scale = 0.75,
+	}
+	
+	model Wiz_NativeAmericanArms_ground
+    {
+        mesh = WorldItems/Wiz_NativeAmericanArms_ground,
+		texture = Clothes/Bracers/Wiz_NativeAmericanArms,   
+    }
+	
+	model Wiz_CastorTroyGlasses_ground
+    {
+        mesh = WorldItems/Wiz_CastorTroyGlasses_ground,
+		texture = Clothes/Glasses/Wiz_CastorTroyGlasses,
+    }
+	
+	model Wiz_m1911_castorTroy	{
+		mesh = weapons/firearm/Wiz_m1911,
+		texture = weapons/firearm/Wiz_m1911_castorTroy,
+	}
+	
+	model Wiz_m1911castorTroy_ground	{
+		mesh = WorldItems/Wiz_m1911_ground,
+		texture = weapons/firearm/Wiz_m1911_castorTroy,
+		scale=1.0,
+	}
+	
+	model Wiz_tec9	{
+		mesh = weapons/firearm/Wiz_tec9,
+		texture = weapons/firearm/Wiz_tec9,
+	}
+	
+	model Wiz_tec9_ground	{
+		mesh = WorldItems/Wiz_tec9_ground,
+		texture = weapons/firearm/Wiz_tec9,
+		scale=1.0,
+	}
+	
+	model Wiz_tec9Clip_ground	{
+		mesh = WorldItems/Wiz_tec9Clip_ground,
+		texture = weapons/firearm/Wiz_tec9,
+		scale=1.0,
+	}
+	
+	model Wiz_BigodaoBlack_ground
+    {
+        mesh = WorldItems/Wiz_Bigodao_ground,
+		texture = Clothes/HatAttachment/Wiz_BigodeBlack,   
+    }
+	
+	model Wiz_BigodaoWhite_ground
+    {
+        mesh = WorldItems/Wiz_Bigodao_ground,
+		texture = Clothes/HatAttachment/Wiz_BigodeWhite,   
+    }
+	
+	model Wiz_RomulanAle
+	{
+		mesh = Wiz_RomulanAle,
+		texture = WorldItems/Wiz_RomulanAle,
+	}
+	model Wiz_RomulanAle_ground
+	{
+		mesh = WorldItems/Wiz_RomulanAle_ground,
+		texture = WorldItems/Wiz_RomulanAle,
+	}
+	
+	
+	model Wiz_AirForceCap_ground
+    {
+        mesh = WorldItems/Wiz_SSHat_ground,
+		texture = Clothes/Hat/Wiz_AirForceCap, 
+    }
+	
+	model Wiz_Pikachu
+	{
+		mesh = WorldItems/Wiz_Pikachu,
+		texture = WorldItems/Wiz_Pikachu,
+		scale = 0.001,
+	}
+	
+	model Wiz_JacketArmbandgerman_ground
+    {
+        mesh = WorldItems/Wiz_JacketArmband_ground,
+		texture = Clothes/Bracers/Wiz_JacketArmband_german, 
+    }
+	
+	model Wiz_TickScarfRed_ground
+    {
+        mesh = WorldItems/Wiz_TickScarf_ground,
+		texture = Clothes/Necklace/Wiz_TickScarf_Red, 
+    }
+	
+	model Wiz_ClownShoeRonald_ground
+	{
+		mesh = Skinned/Clothes/Wiz_ClownShoe,
+		texture = Clothes/shoes_socks_textres/Wiz_ClownShoe_Ronald,
+	}
+	
+	model Wiz_RonaldSuit_ground
+	{
+		mesh = Skinned/Clothes/Wiz_RonaldSuit_ground,
+		texture = Clothes/dungarees/Wiz_RonaldSuit,
+	}
+	
+	model Wiz_RonaldWigRed_ground
+    {
+        mesh = WorldItems/Wiz_RonaldWig_ground,
+		texture = Clothes/Hat/Wiz_RonaldWig, 
+    }
+	
+	model Wiz_Luger	{
+		mesh = weapons/firearm/Wiz_Luger,
+		texture = weapons/firearm/Wiz_Luger,
+	}
+	
+	model Wiz_Luger_ground	{
+		mesh = WorldItems/Wiz_Luger_ground,
+		texture = weapons/firearm/Wiz_Luger,
+		scale=1.0,
+	}
+	
+	model Wiz_JokerJacket_ground	{
+		mesh = WorldItems/Wiz_JokerJacket_ground,
+		texture = Clothes/Jacket/Wiz_JokerJacket,
+	}
+	
+	model Wiz_MalandroRosaOrange_ground
+    {
+        mesh = WorldItems/Wiz_MalandroRosa_ground,
+		texture = Clothes/Jewellery/Wiz_RosePin_Orange,
+    }
+	
+	model Wiz_WaldoGlasses_ground
+    {
+        mesh = WorldItems/Wiz_WaldoGlasses_ground,
+		texture = Clothes/Glasses/Wiz_WaldoGlasses,
+    }
+	
+	model Wiz_LeprechauJacket_ground
+    {
+        mesh = WorldItems/Wiz_TheMaskJacket_ground,
+		texture = Clothes/Jacket/Wiz_LeprechauJacket,
+    }
+	
+	model Wiz_LeprechauShoe_ground
+	{
+		mesh = WorldItems/Wiz_LeprechauShoe_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_LeprechauShoe,
+	}
+	
+	model Wiz_LeprechauHat_ground
+    {
+        mesh = WorldItems/Wiz_LeprechauHat_ground,
+		texture = Clothes/Hat/Wiz_LeprechauHat, 
+    }
+	
+	model Wiz_CloverBadge_ground
+    {
+        mesh = WorldItems/Wiz_CloverBadge_ground,
+		texture = Clothes/Jewellery/Wiz_CloverBadge,
+    }
+	
+	model Wiz_WalkingCrane_Wood	{
+		mesh = weapons/1handed/Wiz_WalkingCrane,
+		texture = weapons/1handed/Wiz_WalkingCrane_Wood,
+	}
+	
+	model Wiz_WalkingCrane_Wood_ground	{
+		mesh = WorldItems/Wiz_WalkingCrane_ground,
+		texture = weapons/1handed/Wiz_WalkingCrane_Wood,
+		scale = 0.75,
+	}
+	
+	model Wiz_RiddlerHat_ground
+    {
+        mesh = WorldItems/Wiz_RiddlerHat_ground,
+		texture = Clothes/Hat/Wiz_RiddlerHat, 
+    }
+	
+	model Wiz_ShazamBoot_ground
+	{
+		mesh = WorldItems/Wiz_ShazamBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_ShazamBoots,
+	}
+	
+	model Wiz_ShazamBracer_ground
+    {
+        mesh = WorldItems/Wiz_ShazamBracer_ground,
+		texture = Clothes/Bracers/Wiz_ShazamBracers,   
+    }
+	
+	model Wiz_ShazamCape_ground
+    {
+        mesh = WorldItems/Wiz_ShazamCape_ground,
+		texture = Clothes/Necklace/Wiz_ShazamCape, 
+    }
+	
+	model Wiz_ShazamCapeRed_ground
+    {
+        mesh = WorldItems/Wiz_ShazamCape_ground,
+		texture = Clothes/Necklace/Wiz_ShazamCape_Red, 
+    }
+	
+	model Wiz_TriclopsHat_ground
+    {
+        mesh = WorldItems/Wiz_TriclopsHat_ground,
+		texture = Clothes/Hat/Wiz_TriklopsHat, 
+    }
+	
+	model Wiz_TriclopsTop_ground
+    {
+        mesh = WorldItems/Wiz_TriclopsTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_TriklopsTop,
+        
+    }
+	
+	model Wiz_ChavesHat_ground
+    {
+        mesh = WorldItems/Wiz_ChavesHat_ground,
+		texture = Clothes/Hat/Wiz_ChavesHat, 
+    }
+	
+	model Wiz_SockHeelsGold_Ground
+    {
+        mesh = Skinned/Clothes/Wiz_SockHeels,
+		texture = Clothes/shoes_socks_textres/Wiz_SockHeels_Golden,
+    }
+	
+	model Wiz_MirandaHat_ground
+    {
+        mesh = WorldItems/Wiz_MirandaHat_ground,
+		texture = Clothes/Hat/Wiz_MirandaHat, 
+    }
+	
+	model Wiz_CarmenMirandaBrinco_ground
+    {
+        mesh = WorldItems/Wiz_CarmenMirandaBrinco_ground,
+		texture = Clothes/Hat/Wiz_MirandaHat, 
+    }
+	
+	model Wiz_CarmenMirandaHat_ground
+    {
+        mesh = WorldItems/Wiz_CarmenMirandaHat_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_GoldGlitter,
+        
+    }
+	
+	model Wiz_CarmenMirandaCollar_ground
+    {
+        mesh = WorldItems/Wiz_CarmenMirandaCollar_ground,
+		texture = Clothes/Jewellery/Wiz_CarmenMirandaCollar,
+        
+    }
+	
+	model Wiz_CarnavalGirl_Sandals_ground
+    {
+        mesh = WorldItems/Wiz_CarnavalGirl_Sandals_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_RedGlitter,
+    }
+	
+	model Wiz_CarmenMirandaTop_ground
+    {
+        mesh = WorldItems/Wiz_CarmenMirandaTop_ground,
+		texture = Clothes/Shirt_Tshirt_Textures/Wiz_GoldGlitter,   
+    }
+	
+	model Wiz_CarnavalGirl_TopRed_ground
+    {
+        mesh = WorldItems/Wiz_CarmenMirandaTop_ground,
+		texture = Clothes/Underwear/Wiz_CarnavalGirl_Outfit, 
+    }
+	
+	model Wiz_CarnavalGirl_Bracer_ground
+    {
+        mesh = WorldItems/Wiz_CarnavalGirl_Bracer_ground,
+		texture = Clothes/Underwear/Wiz_CarnavalGirl_Outfit,    
+    }
+	
+	model Wiz_CarnavalGirl_Tail_ground
+    {
+        mesh = WorldItems/Wiz_CarnavalGirl_Tail_ground,
+		texture = Clothes/Underwear/Wiz_CarnavalGirl_Outfit,    
+    }
+	
+	model Wiz_CarnavalGirl_Hat_ground
+    {
+        mesh = WorldItems/Wiz_CarnavalGirl_Hat_ground,
+		texture = Clothes/Hat/Wiz_CarnavalGirl_Hat, 
+    }
+	
+	model Wiz_SockHeelsWhite_Ground
+    {
+        mesh = Skinned/Clothes/Wiz_SockHeels,
+		texture = Clothes/shoes_socks_textres/Wiz_SockHeels_White,
+    }
+	
+	model Wiz_HeartNecklacebff_ground
+    {
+        mesh = WorldItems/Wiz_HeartNecklace_ground,
+		texture = Clothes/Jewellery/Wiz_HearthNecklace_bff,  
+    }
+	
+	model Wiz_KikoHat_ground
+    {
+        mesh = WorldItems/Wiz_KikoHat_ground,
+		texture = Clothes/Hat/Wiz_KikoHat, 
+    }
+	
+	model Wiz_KikoTop_ground
+    {
+        mesh = WorldItems/Wiz_KikoTop_ground,
+		texture = Clothes/Jacket/Wiz_KikoTop,
+    }
+	
+	model Wiz_CowboyBeltBrownSilver_ground
+    {
+        mesh = WorldItems/Wiz_CowboyBelt_ground,
+		texture = Clothes/Others/Wiz_CowboyBelt_BrownandSilver,
+    }
+	
+	model Wiz_MartianManhunterBoot_ground
+	{
+		mesh = WorldItems/Wiz_ShazamBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_MartianManhunterBoots,
+	}
+	
+	model Wiz_MartianManhunterTop_ground
+    {
+        mesh = WorldItems/Wiz_MartianManhunterTop_ground,
+		texture = Clothes/Jacket/Wiz_MartianManhunter_Top,
+    }
+	
+	model Wiz_MartianManhunterBottom_ground
+    {
+        mesh = WorldItems/Wiz_MartianManhunterBottom_ground,
+		texture = Clothes/Pants/Wiz_MartianManhunter_Bottom, 
+    }
+	
+	model Wiz_MissMartianSkirt_ground
+    {
+        mesh = WorldItems/Wiz_MissMartianSkirt_ground,
+		texture = Clothes/dress_textures/Wiz_MissMartianSkirt, 
+    }
+	
+	model Wiz_MissMartianCape_ground
+    {
+        mesh = WorldItems/Wiz_MissMartianCape_ground,
+		texture = Clothes/Jacket/Wiz_MartianManhunter_Top, 
+    }
+	
+	
+	model Wiz_Lucille_ground	{
+		mesh = WorldItems/Wiz_Lucille_ground,
+		texture = weapons/2handed/Wiz_Lucille,
+		scale = 0.8,
+	}
+	
+	model Wiz_Lucille	{
+		mesh = weapons/2handed/Wiz_Lucille,
+		texture = weapons/2handed/Wiz_Lucille,
+	}
+	
+	model Wiz_CartolaHatBlack_ground
+    {
+        mesh = WorldItems/Wiz_CartolaHat_ground,
+		texture = Clothes/Hat/Wiz_CartolaHat_Black,   
+    }
+	
+	model Wiz_Monoculo_ground
+    {
+        mesh = WorldItems/Wiz_Monoculo_ground,
+		texture = Clothes/Glasses/Wiz_Monoculo,
+    }
+	
+	model Wiz_PriestStole_ground
+    {
+        mesh = WorldItems/Wiz_PriestStole_ground,
+		texture = Clothes/Necklace/Wiz_PriestStole, 
+    }
+	
+	model Wiz_Scarf_Gryffindor_ground
+    {
+        mesh = WorldItems/Wiz_PriestStole_ground,
+		texture = Clothes/Necklace/Wiz_Scarf_Gryffindor, 
+    }
+	
+	model Wiz_JeimeBoot_ground
+	{
+		mesh = WorldItems/Wiz_ShazamBoot_ground,
+		texture = Clothes/shoes_socks_textres/Wiz_JeimeBoot,
+	}
+	
+	model Wiz_JeimeArmor_ground
+    {
+        mesh = WorldItems/Wiz_JeimeArmor_ground,
+		texture = Clothes/Jacket/Wiz_JeimeArmor, 
+    }
+	
+	model Wiz_CerseiHair_ground
+    {
+        mesh = WorldItems/Wiz_CerseiHair_ground,
+		texture = Clothes/Hat/Wiz_CerseiHair,   
+    }
+	
+	model Wiz_CerseiDress_ground
+    {
+        mesh = WorldItems/Wiz_CerseiDress_ground,
+		texture = Clothes/Fullsuit/Wiz_CerseiDress,   
+    }
+	
+	model WWiz_CerseiNecklace_ground
+    {
+        mesh = WorldItems/Wiz_CerseiNecklace_ground,
+		texture = Clothes/Jewellery/Wiz_CerseiNecklace,
+        
+    }
+	
+	model Wiz_JuniorMints
+	{
+		mesh = Wiz_CandyBox1,
+		texture = WorldItems/Wiz_JuniorMints,
+		scale = 0.0025,
+	}
+	
+	model Wiz_JuniorMints_ground
+	{
+		mesh = WorldItems/Wiz_CandyBox1_ground,
+		texture = WorldItems/Wiz_JuniorMints,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Chocolate
+	{
+		mesh = Wiz_ProteinBar,
+		texture = WorldItems/Chocolate,
+		scale = 0.0022,
+	}
+	
+	model Wiz_BigLollypop
+	{
+		mesh = Wiz_BigLollypop,
+		texture = WorldItems/Wiz_BigLollypop,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BigLollypop_ground
+	{
+		mesh = WorldItems/Wiz_BigLollypop_ground,
+		texture = WorldItems/Wiz_BigLollypop,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoMorango
+	{
+		mesh = Wiz_Biscoito,
+		texture = WorldItems/Wiz_BonoMorango,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoMorango_ground
+	{
+		mesh = WorldItems/Wiz_Biscoito_ground,
+		texture = WorldItems/Wiz_BonoMorango,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoDocedeleite
+	{
+		mesh = Wiz_Biscoito,
+		texture = WorldItems/Wiz_BonoDocedeleite,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoDocedeleite_ground
+	{
+		mesh = WorldItems/Wiz_Biscoito_ground,
+		texture = WorldItems/Wiz_BonoDocedeleite,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoChocolate
+	{
+		mesh = Wiz_Biscoito,
+		texture = WorldItems/Wiz_BonoChocolate,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoChocolate_ground
+	{
+		mesh = WorldItems/Wiz_Biscoito_ground,
+		texture = WorldItems/Wiz_BonoChocolate,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BonoPacoteMorango
+	{
+		mesh = WorldItems/Wiz_BonoPacote,
+		texture = WorldItems/Wiz_BonoPacoteMorango,
+		scale = 0.0013,
+	}
+	
+	model Wiz_BonoPacoteChocolate
+	{
+		mesh = WorldItems/Wiz_BonoPacote,
+		texture = WorldItems/Wiz_BonoPacoteChocolate,
+		scale = 0.0013,
+	}
+	
+	model Wiz_BonoPacoteDocedeleite
+	{
+		mesh = WorldItems/Wiz_BonoPacote,
+		texture = WorldItems/Wiz_BonoPacoteDocedeleite,
+		scale = 0.0013,
+	}
+	
+	
+	model Wiz_BubbleJug
+	{
+		mesh = Wiz_BubbleJug,
+		texture = WorldItems/Wiz_BubbleJug,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BubbleJug_ground
+	{
+		mesh = WorldItems/Wiz_BubbleJug_ground,
+		texture = WorldItems/Wiz_BubbleJug,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Chips
+	{
+		mesh = Wiz_Chips,
+		texture = WorldItems/Wiz_Chips,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Chips_ground
+	{
+		mesh = WorldItems/Wiz_Chips_ground,
+		texture = WorldItems/Wiz_Chips,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PringlesOnion
+	{
+		mesh = WorldItems/Wiz_Pringles,
+		texture = WorldItems/Wiz_PringlesOnion,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PringlesClassic
+	{
+		mesh = WorldItems/Wiz_Pringles,
+		texture = WorldItems/Wiz_PringlesClassic,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PringlesCheedar
+	{
+		mesh = WorldItems/Wiz_Pringles,
+		texture = WorldItems/Wiz_PringlesCheedar,
+		scale = 0.0015,
+	}
+	
+	
+	model Wiz_Soda_Guarana
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/Wiz_Soda_Guarana,
+    }
+	
+	model Wiz_Soda_Sprite
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/Wiz_Soda_Sprite,
+    }
+	
+	model Wiz_Soda_FantaOrange
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/Wiz_Soda_FantaOrange,
+    }
+	
+	model Wiz_Soda_FantaGrape
+    {
+        mesh = PopCanRed,
+        texture = WorldItems/Wiz_Soda_FantaGrape,
+    }
+	
+	model Wiz_MilkwayBar
+	{
+		mesh = WorldItems/Wiz_CandyBar,
+		texture = WorldItems/Wiz_MilkwayBar,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PopsicleChocolate
+	{
+		mesh = Wiz_Picole,
+		texture = WorldItems/Wiz_Picole_Chocolate,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PopsicleChocolate_ground
+	{
+		mesh = WorldItems/Wiz_WrapedPopsicle,
+		texture = WorldItems/Wiz_PopsicleChocolate,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PopsicleStrawberry
+	{
+		mesh = Wiz_Picole,
+		texture = WorldItems/Wiz_Picole_Strawberry,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PopsicleStrawberry_ground
+	{
+		mesh = WorldItems/Wiz_WrapedPopsicle,
+		texture = WorldItems/Wiz_PopsicleStrawberry,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PopsicleMango
+	{
+		mesh = Wiz_Picole,
+		texture = WorldItems/Wiz_Picole_Manga,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PopsicleMango_ground
+	{
+		mesh = WorldItems/Wiz_WrapedPopsicle,
+		texture = WorldItems/Wiz_PopsicleMango,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PopsicleLemon
+	{
+		mesh = Wiz_Picole,
+		texture = WorldItems/Wiz_Picole_Limao,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PopsicleLemon_ground
+	{
+		mesh = WorldItems/Wiz_WrapedPopsicle,
+		texture = WorldItems/Wiz_PopsicleLemon,
+		scale = 0.0015,
+	}
+	
+	model Wiz_PopsicleGrape
+	{
+		mesh = Wiz_Picole,
+		texture = WorldItems/Wiz_Picole_Uva,
+		scale = 0.0025,
+	}
+	
+	model Wiz_PopsicleGrape_ground
+	{
+		mesh = WorldItems/Wiz_WrapedPopsicle,
+		texture = WorldItems/Wiz_PopsicleGrape,
+		scale = 0.0015,
+	}
+	
+	model Wiz_LoloBar
+	{
+		mesh = WorldItems/Wiz_CandyBar,
+		texture = WorldItems/Wiz_LoloBar,
+		scale = 0.0015,
+	}
+	
+	model Wiz_TwixBar
+	{
+		mesh = WorldItems/Wiz_CandyBar,
+		texture = WorldItems/Wiz_TwixBar,
+		scale = 0.0017,
+	}
+	
+	model Wiz_OldPharmacyCocain
+	{
+		mesh = WorldItems/Wiz_SmallMetalBox,
+		texture = WorldItems/Wiz_OldPharmacyCocain,
+		scale = 0.0015,
+	}
+	
+	model Wiz_TestTube_Blood
+	{
+		mesh = WorldItems/Wiz_TestTube,
+		texture = WorldItems/Wiz_TestTube_Blood,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Chumbinho
+	{
+		mesh = Wiz_CandyBox2,
+		texture = WorldItems/Wiz_Chumbinho,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Chumbinho_ground
+	{
+		mesh = WorldItems/Wiz_CandyBox2_ground,
+		texture = WorldItems/Wiz_Chumbinho,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Cachaca
+    {
+        mesh = WorldItems/Wine,
+        texture = WorldItems/Wiz_Cachaca,
+        scale = 0.4,
+    }
+	
+	model Wiz_Cachaca_hand
+	{
+		mesh = RedWineBottle,
+		texture = WorldItems/Wiz_Cachaca,
+	}
+	
+	model Wiz_BomBomBrown
+	{
+		mesh = Wiz_MemberBerry,
+		texture = WorldItems/Wiz_EasterEgg_Chocolate,
+		scale = 0.0025,
+	}
+	
+	model Wiz_SonhodeValsa_ground
+	{
+		mesh = WorldItems/Wiz_BomBom,
+		texture = WorldItems/Wiz_SonhodeValsa,
+		scale = 0.0025,
+	}
+	
+	model Wiz_BomBomWhite
+	{
+		mesh = Wiz_MemberBerry,
+		texture = WorldItems/Wiz_ChcolateWhite,
+		scale = 0.0025,
+	}
+	
+	model Wiz_OuroBranco_ground
+	{
+		mesh = WorldItems/Wiz_BomBom,
+		texture = WorldItems/Wiz_OuroBranco,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Yakult
+	{
+		mesh = Wiz_Yakult,
+		texture = WorldItems/Wiz_Yakult,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Yakult_ground
+	{
+		mesh = WorldItems/Wiz_Yakult_ground,
+		texture = WorldItems/Wiz_Yakult,
+		scale = 0.0025,
+	}
+	
+	
+	model Wiz_VietnamZippo
+	{
+		mesh = Zippo,
+		texture = WorldItems/Wiz_VietnamZippo,
+	}
+	
+	model Wiz_VietnamZippo_ground
+    {
+        mesh = WorldItems/Zippo,
+        texture = WorldItems/Wiz_VietnamZippo,
+        scale = 0.4,
+    }
+	
+	
+	model Wiz_Doritos
+	{
+		mesh = Wiz_Salgadinho,
+		texture = WorldItems/Wiz_Doritos,
+		scale = 0.0025,
+	}
+	
+	model Wiz_Doritos_ground
+	{
+		mesh = WorldItems/Chips,
+		texture = WorldItems/Wiz_Doritos,
+		scale = 0.28,
+	}
+	
+	model Wiz_FrootLoops
+	{
+		mesh = Wiz_Cereal,
+		texture = WorldItems/Wiz_FrootLoops,
+		scale = 0.004,
+	}
+	
+	model Wiz_FrootLoops_ground
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Wiz_FrootLoops,
+		scale = 0.4,
+	}
+	
+	model Wiz_DDSilverDragon
+	{
+		mesh = DDMiniatures/Wiz_DDSilverDragon,
+		texture = DDMiniatures/Wiz_DDSilverDragon,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDRedDragon
+	{
+		mesh = DDMiniatures/Wiz_DDRedDragon,
+		texture = DDMiniatures/Wiz_DDRedDragon,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGiantScorpion
+	{
+		mesh = DDMiniatures/Wiz_DDGiantScorpion,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGiantSpider
+	{
+		mesh = DDMiniatures/Wiz_DDGiantSpider,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGiantFrog
+	{
+		mesh = DDMiniatures/Wiz_DDGiantFrog,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGiantBeetle
+	{
+		mesh = DDMiniatures/Wiz_DDGiantBeetle,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDElementalFire
+	{
+		mesh = DDMiniatures/Wiz_DDElementalFire,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDElementalEarth
+	{
+		mesh = DDMiniatures/Wiz_DDElementalEarth,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDElementalWater
+	{
+		mesh = DDMiniatures/Wiz_DDElementalWater,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDElementalAir
+	{
+		mesh = DDMiniatures/Wiz_DDElementalAir,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDOgre
+	{
+		mesh = DDMiniatures/Wiz_DDOgre,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDBlueDragon
+	{
+		mesh = DDMiniatures/Wiz_DDBlueDragon,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDBlackDragon
+	{
+		mesh = DDMiniatures/Wiz_DDBlackDragon,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGoldDragon
+	{
+		mesh = DDMiniatures/Wiz_DDGoldDragon,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGiantConstrictor
+	{
+		mesh = DDMiniatures/Wiz_DDGiantConstrictor,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDFairyQueen
+	{
+		mesh = DDMiniatures/Wiz_DDFairyQueen,
+		texture = DDMiniatures/Wiz_256Pallete_TransparentHalf,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDCentaurFemale
+	{
+		mesh = DDMiniatures/Wiz_DDCentaurFemale,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDHumanCleric
+	{
+		mesh = DDMiniatures/Wiz_DDHumanCleric,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDHumanFighter
+	{
+		mesh = DDMiniatures/Wiz_DDHumanFighter,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDElfWizard
+	{
+		mesh = DDMiniatures/Wiz_DDElfWizard,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGnomeWizard
+	{
+		mesh = DDMiniatures/Wiz_DDGnomeWizard,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDHumanRogue
+	{
+		mesh = DDMiniatures/Wiz_DDHumanRogue,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDHalflingRogue
+	{
+		mesh = DDMiniatures/Wiz_DDHalflingRogue,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDDwarfCleric
+	{
+		mesh = DDMiniatures/Wiz_DDDwarfCleric,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDArchangel
+	{
+		mesh = DDMiniatures/Wiz_DDArchangel,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+	model Wiz_DDGoblinBarbarian
+	{
+		mesh = DDMiniatures/Wiz_DDGoblinBarbarian,
+		texture = DDMiniatures/Wiz_256Pallete,
+		scale = 0.0025,
+	}
+	
+}

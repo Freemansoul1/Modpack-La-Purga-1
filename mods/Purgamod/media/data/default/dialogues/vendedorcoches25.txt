@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Terrison Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Terrison, uno de los numerosos hermanos Ford, me dedico a la venta de remolques, ¿qué necesitas?"
+#choice
+    hmmwvht|TrailerM101A3cargo
+    hmmwvtr|TrailerSecond
+    m151canvas|TrailerM1095tarp
+    nada|De momento no necesito nada
+*hmmwvht
+#m Terrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 300 monedas"
+#has_item Base.Money,300
+    #jump cochecomprado
+#m Terrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Terrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+    #jump cochecomprado1
+#m Terrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Terrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 600 monedas"
+#has_item Base.Money,600
+    #jump cochecomprado2
+#m Terrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Terrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Terrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up TrailerM101A3cargo.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,300
+#m Terrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.TrailerM101A3cargo,1,rare
+#exit
+*na1
+#m Terrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Terrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Trailersecond.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,400
+#m Terrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.TrailerSecond,1,rare
+#exit
+*na2
+#m Terrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Terrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up TrailerM1095tarp.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,600
+#m Terrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.TrailerM1095tarp,1,rare
+#exit
+*na3
+#m Terrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

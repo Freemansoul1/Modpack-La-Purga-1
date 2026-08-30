@@ -1,0 +1,10 @@
+Recipe_EN = {
+	Recipe_Load_Stimpack = "Load Stimpack",
+	Recipe_Load_Jet = "Load Jet",
+	Recipe_Load_Med-X = "Load Med-X",
+	Recipe_Load_Psycho = "Load Psycho",
+	Recipe_Construct_Chemistry_Lab = "Construct Chemistry Lab",
+	Recipe_Construct_Empty_Jet = "Construct Empty Jet",
+	
+
+}

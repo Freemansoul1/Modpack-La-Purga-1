@@ -1,0 +1,7 @@
+Moodles_EN {
+    Moodles_stealthmode_lvl1 = "Imperceptible",
+    Moodles_stealthmode_desc_lvl1 = "Feeling like a ninja",
+	
+    Moodles_stealthmode_lvl2 = "Perceptible",
+    Moodles_stealthmode_desc_lvl2 = "Easy target", 
+}

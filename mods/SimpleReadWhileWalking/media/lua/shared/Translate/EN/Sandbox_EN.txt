@@ -1,0 +1,10 @@
+Sandbox_EN = {
+	Sandbox_Mods = "Other Mods",
+
+	Sandbox_ReadWalking_FogDarkness = "Reading Fog Darkness",
+	Sandbox_ReadWalking_FogDarkness_tooltip = "The darkness of the reading fog.\n0.0 means no darkness.\n1.0 means full darkness.",
+	
+	Sandbox_ReadWalking_ReadSpeed = "Reading Speed Multiplier",
+	Sandbox_ReadWalking_ReadSpeed_tooltip = "The mod: Read While Walking\n1.0 means x1 vanilla defaults.\n2.0 means speed x2, etc.",
+	
+}

@@ -1,0 +1,10 @@
+Sandbox_RU = {
+	Sandbox_Mods = "ƒругие моды",
+
+	Sandbox_ReadWalking_FogDarkness = "«атемнение чтени€",
+	Sandbox_ReadWalking_FogDarkness_tooltip = "—тепень черноты вокруг во врем€ чтени€ книг.\n0.0 означает отсутствие темноты.\n1.0 означает непрогл€дную темень.",
+	
+	Sandbox_ReadWalking_ReadSpeed = "ћножитель скорости чтени€",
+	Sandbox_ReadWalking_ReadSpeed_tooltip = "ћод: Read While Walking\n1.0 означает ванильные настройки x1.\n2.0 означает скорость чтени€ x2, и т.д.",
+	
+}

@@ -1,0 +1,4 @@
+name=Scavenging Skill
+poster=poster.png
+id=ScavengingSkillFixed1
+description=Adds a new Passive Skill called Scavenging. As you loot containers and this skill gives you a chance to find more loot. The higher your skill, the bigger the chance, and the greater the loot amount.

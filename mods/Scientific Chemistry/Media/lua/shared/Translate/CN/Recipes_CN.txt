@@ -1,0 +1,10 @@
+Recipe_CN = {
+	Recipe_Load_Stimpack = "负荷刺激包",
+	Recipe_Load_Jet = "负荷噴氣機",
+	Recipe_Load_Med-X = "负荷地中海-X",
+	Recipe_Load_Psycho = "负荷心理",
+	Recipe_Construct_Chemistry_Lab = "构建化学实验室",
+	Recipe_Construct_Empty_Jet = "构建空噴氣機",
+	
+
+}

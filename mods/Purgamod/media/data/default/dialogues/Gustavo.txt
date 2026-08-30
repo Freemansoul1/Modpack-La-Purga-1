@@ -1,0 +1,64 @@
+#is_flag gustavo_intro,true
+	#jump loop
+
+*intro
+	#m Gustavo|media/ui/Gustavo.png| "¿Qué haces aquí, mocoso? Soy Gustavo, y no tengo todo el día para tus tonterías."
+	#m Gustavo|media/ui/Gustavo.png| "Escúchame bien, que no me gusta repetir las cosas: soy el que compra frutas y verduras por aquí, y lo hago con dinero, el de verdad, no esas porquerías de trueque que se inventan los demás. Así que si tienes algo decente que vender, hablas; si no, te largas." 
+	
+	#set_flag gustavo_intro,true
+	#is_lua getPlayer():HasTrait("Goodmanners")|true
+		#stat_inc Gustavo|Reputacion|5
+		#jump loop
+	#is_lua getPlayer():HasTrait("Badmanners")|true
+		#stat_inc Gustavo|Reputacion|1.5
+		#jump loop
+	#stat_inc Gustavo|Reputacion|3.5
+	
+
+*loop
+--reinicio del stock
+#is_quest Gustavo_q1|locked
+	#quest_unlock Gustavo_q1
+
+#is_quest Gustavo_q1|unlocked,uncompleted
+	#set_flag Gustavo_q1_cleared,true
+	#restock Gustavo
+
+#m Gustavo|media/ui/Gustavo.png| "Venga, no me hagas perder el tiempo. ¿Qué tienes para mí?"
+
+--Menu principal
+#choice
+	venta|"Tengo algunas frutas y verduras para vender."
+	tutorial|[Tutorial Cultivos]
+	intro_no|"Nada, solo estaba viendo."
+
+*intro_no
+	#m Gustavo|media/ui/Gustavo.png| "Pues si solo estás viendo, lárgate. Este no es un lugar para curiosos."
+	#exit	
+
+
+
+
+--Mercado 
+*venta
+#is_quest Gustavo_q1|unlocked,completed
+	#m Gustavo|media/ui/Gustavo.png| "Cada semana, vendré con más pasta. Si no tengo dinero, es que no tengo dinero."
+#trade Gustavo
+	#in_stock Gustavo|Base.Money|true
+		#m Gustavo|media/ui/Gustavo.png| "¡Gracias! Este producto está bastante bien. Si no tienes nada más, hazme un favor y vete."
+		#exit	
+	#m Gustavo|media/ui/Gustavo.png| "Me quedé sin dinero. Regresa la semana que viene si quieres vender más frutas y verduras."
+	#exit
+#exit
+		
+			
+--Tutorial
+
+*tutorial
+	#m Gustavo|media/ui/Gustavo.png| "Ahora no tengo tiempo para enseñar a novatos."
+	#exit
+
+
+			
+
+

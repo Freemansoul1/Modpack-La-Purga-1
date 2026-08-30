@@ -1,0 +1,12 @@
+#name Freeman|Freeman
+
+#set_stat Freeman|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Freeman
+
+#desc_append Edad: Desconocido
+
+#desc_append Lo echaron del purgatorio por mala conducta, no quiere decir su edad, pero parece viejo...
+#exit

@@ -1,0 +1,5 @@
+ItemName_EN =   {
+    ItemName_SealedCrate.SealedCrateWood1    =   "WoodenCrate(Close)",
+    ItemName_SealedCrate.SealedCrateWood2    =   "WoodenCrate(Close)",
+    ItemName_SealedCrate.SealedCrateWood3    =   "MetalCrate(Close)",
+}

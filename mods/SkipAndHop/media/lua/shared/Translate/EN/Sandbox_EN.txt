@@ -1,0 +1,7 @@
+Sandbox_EN = {
+    Sandbox_SkipAndHop = "Skip and Hop",
+    Sandbox_SkipAndHop_SS = "Slippery Skipper",
+    Sandbox_SkipAndHop_SS_tooltip = "Add endurance cost to run startup",
+    Sandbox_SkipAndHop_HP = "Hopper Popper",
+    Sandbox_SkipAndHop_HP_tooltip = "Add endurance cost to slow vaulting",
+}

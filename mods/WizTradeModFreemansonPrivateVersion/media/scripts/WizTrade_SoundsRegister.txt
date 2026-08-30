@@ -1,0 +1,652 @@
+module Base
+{
+    
+	
+	sound saber_on
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_on.wav,   
+        }
+    }
+	
+	sound saber_idle
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_idle.wav,   
+        }
+    }
+	
+	sound saber_off
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_off.wav,   
+        }
+    }
+	
+	sound vader_breath
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/vader_breath.wav,   
+        }
+    }
+
+	sound saber_swing1
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_swing1.wav,   
+        }
+    }
+	
+	sound changefogo
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/changefogo.wav,   
+        }
+    }
+	
+	sound wiz_throwweapon
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_throwweapon.wav,   
+        }
+    }
+	
+	sound Wiz_EE3Shot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_EE3Shot.wav,   
+        }
+    }
+	
+	sound TOS_comunicator1
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/TOS_comunicator1.wav,   
+        }
+    }
+	
+	sound smoke1
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/smoke1.wav,   
+        }
+    }
+	
+	sound silencershot_rifle
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/silencershot_rifle.wav,   
+        }
+    }
+	
+	sound silencershot_pistol
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/silencershot_pistol.wav,   
+        }
+    }
+	
+	sound saber_hit1
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_hit1.wav,   
+        }
+    }
+	
+	sound saber_hit_floor
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_hit_floor.wav,   
+        }
+    }
+	
+	sound saber_hit_door
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/saber_hit_door.wav,   
+        }
+    }
+	
+	sound robocopshot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/robocopshot.wav,   
+        }
+    }
+	
+	sound M41AShooting
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/M41AShooting.wav,   
+        }
+    }
+	
+	sound light_tick
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/light_tick.wav,   
+        }
+    }
+	
+	sound grenade_launcher
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/grenade_launcher.wav,   
+        }
+    }
+	
+	sound flashprism_shoot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/flashprism_shoot.wav,   
+        }
+    }
+	
+	sound flashprism_hit
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/flashprism_hit.wav,   
+        }
+    }
+	
+	sound darksaber_swing
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/darksaber_swing.wav,   
+        }
+    }
+	
+	sound darksaber_on
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/darksaber_on.wav,   
+        }
+    }
+	
+	sound darksaber_off
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/darksaber_off.wav,   
+        }
+    }
+	
+	sound darksaber_idle
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/darksaber_idle.wav,   
+        }
+    }
+	
+	sound crossbow_fire
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/crossbow_fire.wav,   
+        }
+    }
+	
+	sound crossbow_reload
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/crossbow_reload.wav,   
+        }
+    }
+	
+	sound crossbow_break
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/crossbow_break.wav,   
+        }
+    }
+	
+	sound crossbow_click
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/crossbow_click.wav,   
+        }
+    }
+	
+	sound energyclip_recharge
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/energyclip_recharge.wav,   
+        }
+    }
+	
+	sound ppk_shot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/ppk_shot.wav,   
+        }
+    }
+	
+	sound ppk_reload
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/ppk_reload.wav,   
+        }
+    }
+	
+	sound ppk_silencer
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/ppk_silencer.wav,   
+        }
+    }
+	
+	sound ppk_click
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/ppk_click.wav,   
+        }
+    }
+	
+	sound ppk_rack
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/ppk_rack.wav,   
+        }
+    }
+	
+	sound mp5_shot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/mp5_shot.wav,   
+        }
+    }
+	
+	sound tricorder_scan
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/tricorder_scan.wav,   
+        }
+    }
+	
+	sound anvil_hammer
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/anvil_hammer.wav,   
+        }
+    }
+	
+	sound acid_dissolve
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/acid_dissolve.wav,   
+        }
+    }
+	
+	sound Wiz_BarretM82
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_BarretM82.wav,   
+        }
+    }
+	
+	sound Wiz_musicbox
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_musicbox.wav,   
+        }
+    }
+	
+	sound Wiz_ClownHorn
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_ClownHorn.wav,   
+        }
+    }
+	
+	sound wiz_atomizer
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_atomizer.wav,   
+        }
+    }
+	
+	sound wiz_railshot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_railshot.wav,   
+        }
+    }
+	
+	sound wiz_centrifuge
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_centrifuge.wav,   
+        }
+    }
+	
+	sound wiz_beepserie
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_beepserie.wav,   
+        }
+    }
+	
+	sound Wiz_gameboy_mario
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_gameboy_mario.wav,   
+        }
+    }
+	
+	sound wiz_gameboy_tetris
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_gameboy_tetris.wav,   
+        }
+    }
+	
+	sound wiz_gameboy_zelda
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_gameboy_zelda.wav,   
+        }
+    }
+	
+	sound wiz_gameboy_castlevania2
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_gameboy_castlevania2.wav,   
+        }
+    }
+	
+	sound Wiz_RollDice
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_RollDice.wav,   
+        }
+    }
+	
+	sound wiz_joinus
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_joinus.wav,   
+        }
+    }
+	
+	sound wiz_chainsaw_quick
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_chainsaw_quick.wav,   
+        }
+    }
+	
+	sound Wiz_magicmissile
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_magicmissile.wav,   
+        }
+    }
+	
+	sound Wiz_mariomushroomgrow
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/Wiz_mariomushroomgrow.wav,   
+        }
+    }
+	
+	
+	sound wiz_member_ghostbusters
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_member_ghostbusters.wav,   
+        }
+    }
+	
+	sound wiz_membe_tatoine
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_tatoine.wav,   
+        }
+    }
+	
+	sound wiz_membe_tantan
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_tantan.wav,   
+        }
+    }
+	
+	sound wiz_membe_deathstar
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_deathstar.wav,   
+        }
+    }
+	
+	sound wiz_membe_killya
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_killya.wav,   
+        }
+    }
+	
+	sound wiz_membe_fellsafe
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_fellsafe.wav,   
+        }
+    }
+	
+	sound wiz_membe_lando
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_lando.wav,   
+        }
+    }
+	
+	sound wiz_membe_goonies
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_membe_goonies.wav,   
+        }
+    }
+	
+	sound wiz_quicksniff
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_quicksniff.wav,   
+        }
+    }
+	
+	sound wiz_liquidboiling
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_liquidboiling.wav,   
+        }
+    }
+	
+	sound wiz_shockthunder
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_shockthunder.wav,   
+        }
+    }
+	
+	sound wiz_tec9shot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_tec9shot.wav,   
+        }
+    }
+	
+	sound wiz_pika1
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_pika1.wav,   
+        }
+    }
+	sound wiz_pika2
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_pika2.wav,   
+        }
+    }
+	sound wiz_pika3
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_pika3.wav,   
+        }
+    }
+	sound wiz_pika4
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_pika4.wav,   
+        }
+    }
+	
+	sound wiz_luger_shot
+    {
+        category = Object,
+        clip
+        {
+            file = media/sound/wiz_luger_shot.wav,   
+        }
+    }
+	
+	
+}

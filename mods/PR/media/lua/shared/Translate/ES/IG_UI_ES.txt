@@ -1,0 +1,14 @@
+IG_UI_ES = {
+    IGUI_RAID_RaidActivada = "Raid Activada! Tengo 30 minutos",
+    IGUI_RAID_RaiderIncluido = "Dentro del raideo, es hora de la accion!",
+    IGUI_RAID_SfProtegida = "Safehouse protegida, vuelve mas tarde",
+    IGUI_RAID_RaidCompletada = "Raid completada!",
+    IGUI_RAID_CooldownRaider = "Aun no puedo raidear, debo esperar un poco mas",
+    IGUI_RAID_CooldownRaiderTerminado = "Libre para raidear de nuevo, aprovecha!",
+    IGUI_RAID_MaxRaiders = "Maximo de atacantes alcanzado",
+    IGUI_RAID_5min = "No te relajes, quedan 5 minutos!",
+    IGUI_RAID_3min = "Solo tres minutos, apurate!",
+    IGUI_RAID_2min = "Dos minutos, el reloj corre!",
+    IGUI_RAID_1min = "QUEDA 1 MINUTO!!",
+    IGUI_RAID_Pve = "Zona PvE",
+}

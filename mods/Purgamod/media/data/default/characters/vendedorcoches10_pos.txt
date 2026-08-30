@@ -1,0 +1,5 @@
+#is_flag vendedorcoches10,true
+    #npc_create Ferryson Ford|NPC_jarrison9.png|12979,1128,0
+    #exit
+#npc_create Ferryson Ford|NPC_jarrison9.png|12979,1128,0
+#exit

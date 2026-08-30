@@ -1,0 +1,10 @@
+VERSION = 1,
+
+option NPCQuest.Whitelist
+{
+    type = string,
+    default = ,
+    page = Gremio Comerciantes,
+    translation = NPCQuest_Whitelist,
+}
+

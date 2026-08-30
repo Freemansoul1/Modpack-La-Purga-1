@@ -1,0 +1,8 @@
+#quest Contrabandista3_q1|daily|hidden
+    #task t1|unlocked|hidden
+        #set WaitUntil|time|false|1
+        #action UnlockTask|Contrabandista3_q1|t2
+    #task t2|hidden
+        #set RaiseFlag|Contrabandista3_q1_cleared
+        #action CompleteQuest|Contrabandista3_q1
+

@@ -1,0 +1,9 @@
+v1.3.1
+- Removed high-priority compatibility.
+
+v1.3.0
+- Fixed red popup in main menu if you press "R".
+- Added compatibility to all rude mods.
+- Added sandbox option for fog darkness.
+- Added sandbox option for reading speed.
+- Added high-priority compatibility to "Reading Speed" mods: this mod will negate their effect.

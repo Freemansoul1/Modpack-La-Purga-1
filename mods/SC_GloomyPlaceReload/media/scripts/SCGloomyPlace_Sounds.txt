@@ -1,0 +1,75 @@
+module SCGloomyPlaceReload {
+
+    sound GPRDefEnter
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_STEnter.ogg, distanceMax = 6, volume = 0.3, }
+    }
+
+    sound GPRDefExit
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_STExit.ogg, distanceMax = 6, volume = 0.3, }
+    }
+
+    sound GPRMetalDoor
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_MetallDoor.ogg, distanceMax = 6, volume = 0.3, }
+    }
+
+    sound GPRSlidingDoor
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_SlidingDoor.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRDoor1
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_Door1.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRDoor2
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_Door2.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRDoor3
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_Door3.ogg, distanceMax = 6, volume = 0.3, }
+    }
+
+    sound GPRBigDoor1
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_BigDoor1.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRWoodDoor1
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_WoodDoor1.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRWoodDoor1Enter
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_WoodDoor1Enter.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRWoodDoor1Exit
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_WoodDoor1Exit.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+    sound GPRHatch1
+    {
+        category = SCGloomyPlace, loop = false, is3D = false,
+        clip { file = media/sound/SCGloomyPlaceR_Hatch1.ogg, distanceMax = 6, volume = 0.4, }
+    }
+
+}

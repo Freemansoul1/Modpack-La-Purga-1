@@ -1,0 +1,9 @@
+name=Secure Access
+id=BB_SecureAccess1
+poster=poster.png
+icon=icon.png
+authors=BitBraven
+modversion=1.0.0
+description=This is mod lets you open custom doors with custom keycards! CUSTOM I tell you!
+pack=secure_access_pack
+tiledef=secure_access_def 5347

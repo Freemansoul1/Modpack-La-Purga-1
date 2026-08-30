@@ -1,0 +1,4 @@
+Recipe_TR = {
+Recipe_Create_BobbyPin = "Bobby pimi üret",
+Recipe_Create_BobbyPin2 = "Bobby pimi üret"
+}

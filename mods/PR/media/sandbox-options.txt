@@ -1,0 +1,31 @@
+VERSION = 1,
+
+option PurgaRaids.Enabled = {
+	type = boolean, default = false,
+	page = PurgaRaidsConfig, translation = PurgaRaids_Enabled,
+}
+
+option PurgaRaids.RaidingTime = {
+	type = integer, min = 0, max=345600, default = 3600,
+	page = PurgaRaidsConfig, translation = PurgaRaids_RaidingTime,
+}
+
+option PurgaRaids.MaxRaiders = {
+	type = integer, min = 0, max=345600, default = 15,
+	page = PurgaRaidsConfig, translation = PurgaRaids_MaxRaiders,
+}
+
+option PurgaRaids.ProtectionTime = {
+	type = integer, min = 0, max=345600, default = 10800,
+	page = PurgaRaidsConfig, translation = PurgaRaids_ProtectionTime,
+}
+
+option PurgaRaids.ExRaidingTime = {
+	type = integer, min = 0, max=345600, default = 3600,
+	page = PurgaRaidsConfig, translation = PurgaRaids_ExRaidingTime,
+}
+
+option PurgaRaids.ResetRaids = {
+	type = boolean, default = false,
+	page = PurgaRaidsConfig, translation = PurgaRaids_ResetRaids,
+}

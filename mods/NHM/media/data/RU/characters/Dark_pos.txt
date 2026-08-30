@@ -1,2 +1,0 @@
-#npc_create Dark|NPC/Dark.png|12169,10945,1
-#exit

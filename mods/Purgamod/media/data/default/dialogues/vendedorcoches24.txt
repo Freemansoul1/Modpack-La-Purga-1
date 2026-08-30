@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Ferrison, uno de los numerosos hermanos Ford, me dedico a la venta de generadores y motos, ¿qué necesitas?"
+#choice
+    hmmwvht|Trailergenerador
+    hmmwvtr|80kz1000
+    m151canvas|AMC_harley
+    nada|De momento no necesito nada
+*hmmwvht
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 500 monedas"
+#has_item Base.Money,500
+    #jump cochecomprado
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+    #jump cochecomprado1
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Perfecto, son 400 monedas"
+#has_item Base.Money,400
+    #jump cochecomprado2
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Trailergenerador.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,500
+#m Ferrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.Trailergenerador,1,rare
+#exit
+*na1
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Motokz1000.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,400
+#m Ferrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.80kz1000,1,rare
+#exit
+*na2
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningharley.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,400
+#m Ferrison Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.AMC_harley,1,rare
+#exit
+*na3
+#m Ferrison Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

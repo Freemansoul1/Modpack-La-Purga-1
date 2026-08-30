@@ -1,0 +1,250 @@
+module Base
+{
+	model VVA_Vehicles_SUV_a
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Vehicles_SUV,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	
+
+	model VVA_Vehicles_SUV_internals
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_SUV_DoorFrontLeft
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorFrontRight
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorRearLeft
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorRearRight
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowFrontLeft
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowFrontRight
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowRearLeft
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowRearRight
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_Trunk
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model VVA_Vehicles_SUV_Hood
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_SUV_Windshield
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_RearWindow
+	{
+		mesh = vehicles/Vehicles_CarSUV_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+
+
+	template vehicle VVA_SUV_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontRight,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearRight,
+				rotate = 0 0 0,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Hood,
+				rotate = 0 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicles_SUV_WindowFrontLeft,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowFrontRight
+        	{
+			parent = DoorFrontRight,
+            		model Default
+            		{
+                		file = VVA_Vehicles_SUV_WindowFrontRight,
+				rotate = 0 0 0,
+            		}
+
+        	}
+		part WindowRearLeft
+        	{
+			parent = DoorRearLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicles_SUV_WindowRearLeft,
+				rotate = 0 0 0,
+            		}
+            		
+        	}
+		part WindowRearRight
+        	{
+			parent = DoorRearRight,
+            		model Default
+            		{
+                		file = VVA_Vehicles_SUV_WindowRearRight,
+				rotate = 0 0 0,
+            		}
+            		
+        	}		
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VVA_Vehicles_SUV_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model windshieldRear
+			{
+				file = VVA_Vehicles_SUV_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_SUV_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create =Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

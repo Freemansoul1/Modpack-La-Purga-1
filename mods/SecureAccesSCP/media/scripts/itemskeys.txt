@@ -1,0 +1,84 @@
+module Base
+{
+    /************************Normal************************/
+
+        item BlueKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Blue Keycard,
+        Icon	=	KeyCardBlue,
+        WorldStaticModel = KeyCardBlue,
+    }
+
+        item CyanKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Cyan Keycard,
+        Icon	=	KeyCardCyan,
+        WorldStaticModel = KeyCardCyan,
+    }
+
+        item GreenKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Green Keycard,
+        Icon	=	KeyCardGreen,
+        WorldStaticModel = KeyCardGreen,
+    }
+
+        item OrangeKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Orange Keycard,
+        Icon	=	KeyCardOrange,
+        WorldStaticModel = KeyCardOrange,
+    }
+
+        item PurpleKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Purple Keycard,
+        Icon	=	KeyCardPurple,
+        WorldStaticModel = KeyCardPurple,
+    }
+
+        item RedKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Red Keycard,
+        Icon	=	KeyCardRed,
+        WorldStaticModel = KeyCardRed,
+    }
+
+        item WhiteKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	White Keycard,
+        Icon	=	KeyCardWhite,
+        WorldStaticModel = KeyCardWhite,
+    }
+        item YellowKeyCard
+    {
+        DisplayCategory = Security,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Yellow Keycard,
+        Icon	=	KeyCardYellow,
+        WorldStaticModel = KeyCardYellow,
+    }
+}
+

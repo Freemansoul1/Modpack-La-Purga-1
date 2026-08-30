@@ -1,0 +1,80 @@
+#is_flag Comerciante_intro,true
+	#jump loop
+
+*intro
+	#cutscene true
+	#m Comerciante|media/ui/Comerciante.png| "¡Saludos, viajero! Me llamo Malcom, pero muchos me conocen como "El Comerciante". Fui, durante muchos años, el comerciante más reconocido de Louisville. Antes de que todo se fuera al infierno, mi tienda era el centro del comercio en la ciudad. Vendía de todo, desde herramientas hasta víveres de lujo... claro, cuando aún existía el lujo."
+	#wait 1
+	#m Tú|3D:Player|"¿Louisville? He oído historias... ¿no fue devastada por la radiación y los zombies?"
+	#m Comerciante|media/ui/Comerciante.png| "Asi es. Tras el apocalipsis, todo cambió. Los bandidos se multiplicaron, las hordas de muertos vivientes no dejaban de aumentar, y la radiación convirtió la ciudad en un infierno radiactivo. Sobrevivir allí se volvió imposible... hasta que creamos algo que podría interesarte: el Gremio de Comerciantes." 
+	#wait 1
+	#m Tú|3D:Player|"¿El Gremio de Comerciantes? ¿Qué es eso exactamente?"
+	#m Comerciante|media/ui/Comerciante.png| "El Gremio es nuestra manera de mantener el comercio vivo y asegurarnos de que los que todavía tienen algo que ofrecer puedan hacerlo de manera segura. Levantamos el Mercado Central, un lugar protegido, libre de zombies y bandidos. Imagínate: un espacio donde puedes intercambiar bienes sin miedo a que te muerdan o te roben. ¡Es el único lugar donde la ley y el orden aún tienen peso!"
+	#wait 1
+	#m Tú|3D:Player|"Suena demasiado bueno para ser verdad... ¿cómo lo mantienes seguro?"
+	#m Comerciante|media/ui/Comerciante.png| "Es todo un esfuerzo colectivo. Todos los comerciantes y mercenarios del Gremio estamos armados y organizados. El mercado está fortificado, vigilado por día y noche. A cambio de unas pequeñas cuotas o trueques, garantizamos tu seguridad dentro de los muros. Además, nadie entra sin ser registrado y comprobado. No permitimos a los bandidos, y desde luego, ningún zombie se acerca lo suficiente para ser un problema."
+	#wait 1
+	#m Tú|3D:Player|"Interesante... pero, ¿qué tienes que ofrecer ahí dentro?¿Puedo vender mis productos?"
+	#m Comerciante|media/ui/Comerciante.png| "Todo lo que puedas necesitar. Armas, municiones, alimentos no contaminados, equipo médico… si puedes ofrecer algo a cambio, seguro que encuentras lo que buscas.
+	#wait 1
+	#m Tú|3D:Player|"Definitivamente suena como algo que necesito. ¿Cómo llego al Mercado Central?"
+	#m Comerciante|media/ui/Comerciante.png| "Está bastante lejos, más al este de Pandora dirección Riverside, pero no te recomiendo ir por la superficie."
+	#wait 1
+	#m Tú|3D:Player|"¿Ah, no? ¿Qué otra opción hay?"
+	#m Comerciante|media/ui/Comerciante.png|"Las alcantarillas. Hace un tiempo descubrimos que una red de túneles subterráneos aún es transitable. Claro, no están del todo limpias, pero al menos no tendrás que lidiar con las hordas de zombies ni los bandidos que patrullan la superficie. Es la forma más segura, pero hay un detalle importante."
+	#wait 1
+	#m Tú|3D:Player|"¿Qué detalle?"
+	#m Comerciante|media/ui/Comerciante.png|"El acceso a esas rutas está controlado exclusivamente por el Gremio de Comerciantes. Solo nosotros conocemos las entradas y salidas seguras, y para abrirte paso por ahí, necesitarás una tarjeta de gremio, algo que no entregamos a cualquiera."
+	#wait 1
+	#m Tú|3D:Player|"¿Y cómo consigo una de esas llaves?"
+	#m Comerciante|media/ui/Comerciante.png|"Fácil. Debes hacer una solicitud PVE mediante un ticket en Discord. Una vez que te reconozcan como parte de Pandora y recibas el rol de Pandorian, podrás volver a verme. Entonces, con gusto te entregaré la tarjeta del gremio."
+	#wait 1
+	#m Tú|3D:Player|"Ya veo…"
+	#m Comerciante|media/ui/Comerciante.png|"Una vez lo tengas, vuelve aquí, y haremos que las puertas del gremio y las rutas subterráneas se abran para ti."
+	#wait 1
+	#m Tú|3D:Player|"Entendido, Malcom. Regresaré cuando sea oficialmente un Pandorian."
+	#set_flag Comerciante_intro,true
+	#is_lua getPlayer():HasTrait("Goodmanners")|true
+		#stat_inc Comerciante|Reputacion|5
+		#jump loop
+	#is_lua getPlayer():HasTrait("Badmanners")|true
+		#stat_inc Comerciante|Reputacion|1.5
+		#jump loop
+	#stat_inc Comerciante|Reputacion|3.5
+	#exit
+
+*loop
+#cutscene true
+#is_flag Comerciante_tarjeta,false
+	#m Comerciante|media/ui/Comerciante.png|"¿Eres ya un Pandorian?"
+		#is_lua isUserInWhitelist()|true
+			#m Tú|3D:Player|"¡¡Ya soy un Pandorian!!"
+			#wait 2
+			#m Comerciante|media/ui/Comerciante.png|"Ya eres un pandorian. Me alegro de que te hayas unido. Toma tu tarjeta de acceso. Si se te pierde vuelve a verme y te daré otra."
+			#reward Base.CyanKeyCard,1,unique
+			#set_flag Comerciante_tarjeta,true
+			#cutscene false
+			#exit
+	#m Comerciante|media/ui/Comerciante.png|"Aún no eres un Pandorian. Crea un ticket en discord para que te otorguen el rol de pandorian. Vuelve a verme una vez lo tengas."
+	#cutscene false
+	#exit
+#m Comerciante|media/ui/Comerciante.png|"¿Que tal?¿Qué necesitas?"
+#choice
+	tarjeta|"Una nueva tarjeta"
+	nada|"Por ahora nada"
+
+*tarjeta
+	#is_lua isUserInWhitelist()|true
+		#m Comerciante|media/ui/Comerciante.png|"Toma tu nueva tarjeta de acceso. Si se te pierde vuelve a verme y te daré otra, pero ten cuaidado esta vez. Mejor que no caiga en malas manos."
+				#reward Base.CyanKeyCard,1,unique
+				#cutscene false
+				#exit
+	#m Comerciante|media/ui/Comerciante.png|"Ya no eres un Pandorian. Crea un ticket en discord para que te otorguen el rol de pandorian. Vuelve a verme una vez lo tengas."
+	#cutscene false
+	#exit
+*nada
+	#m Comerciante|media/ui/Comerciante.png|"Nos vemos en el mercado."
+	#cutscene false
+	#exit	
+
+

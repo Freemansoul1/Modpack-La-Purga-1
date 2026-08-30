@@ -1,0 +1,122 @@
+-- Encode this file as UTF-8
+UI_EN = {
+
+
+UI_optionscreen_binding_Hotbar 6 = "Hotbar 6",
+UI_optionscreen_binding_Hotbar 7 = "Hotbar 7",
+UI_optionscreen_binding_Hotbar 8 = "Hotbar 8",
+UI_optionscreen_binding_Hotbar 9 = "Hotbar 9",
+UI_optionscreen_binding_Hotbar 10 = "Hotbar 10",
+UI_optionscreen_binding_Hotbar 11 = "Hotbar 11",
+UI_optionscreen_binding_Hotbar 12 = "Hotbar 12",
+UI_optionscreen_binding_Hotbar 13 = "Hotbar 13",
+UI_optionscreen_binding_Hotbar 14 = "Hotbar 14",
+UI_optionscreen_binding_Hotbar 15 = "Hotbar 15",
+UI_optionscreen_binding_Hotbar 16 = "Hotbar 16",
+UI_optionscreen_binding_Hotbar 17 = "Hotbar 17",
+UI_optionscreen_binding_Hotbar 18 = "Hotbar 18",
+UI_optionscreen_binding_Hotbar 19 = "Hotbar 19",
+UI_optionscreen_binding_Hotbar 20 = "Hotbar 20",
+UI_optionscreen_binding_SlingBindings = "WizTrade Additional Hotkeys",
+
+UI_prof_Ninja = "Ninja",
+UI_profdesc_Ninja = "Start with a ninja outfit, a wakizashi and some few shurikens.",
+
+UI_prof_secretagent = "Secret Agent",
+UI_profdesc_secretagent = "You are like James Bond; start with a suit, a walter PKK and a silencer.",
+
+UI_prof_airforcepilot = "Air Force Pilot",
+UI_profdesc_airforcepilot = "Start with a pilot outfit with helmet, a pistol and some ammo.",
+
+UI_prof_infantarysoldier = "Infantry Soldier",
+UI_profdesc_infantarysoldier = "Start with a Assault Rifle, ammo, military uniform, military knife and military backpack.",
+
+UI_prof_microbiologist = "Microbilogist",
+UI_profdesc_microbiologist = "Start with scientist jacket, syringe, petri dishes, dna tubes, a small microscope and a ethanol 70 bottle. Start with all Recipes for infection tests and cure crafting.", 
+
+UI_prof_specialforces = "Special Forces",
+UI_profdesc_specialforces = "Start with a MP-5, with silencer and flashlight, a military knife, special forces uniform with bullet prof vest, walkie talkie.",
+
+UI_prof_priest = "Priest",
+UI_profdesc_priest = "Start with a priest/nun outfit, the Holy Bible, and start with the recipes for Praying; debuf cancellers .",
+
+UI_prof_Occultist = "Occultist",
+UI_profdesc_Occultist = "Start with a talisman and Crystal Ball; start with recipes to Recharge Protection Rings.",
+
+UI_prof_WizBlacksmith = "Blacksmith",
+UI_profdesc_WizBlacksmith = "Start with a Apron, Welder Mask, a hammer and recipes for several medieval meele weapons and armors, and materials to craft 1 meele weapon.",
+
+UI_prof_WizTailor = "Tailor",
+UI_profdesc_WizTailor = "Start with a needle, some ripped sheets, scissors and some thread.",
+
+UI_prof_WizBotanist = "Botanist",
+UI_profdesc_WizBotanist = "Start with Rain Boots and a mortar and pestle.",
+
+UI_prof_WizChemical = "Chemical",
+UI_profdesc_WizChemical = "Start with some usefull recipes like crafting acid.",
+
+UI_prof_WizMailman = "Postal Carrier",
+UI_profdesc_WizMailman = "Start with a satchel, maps of cities, and some trinkets.",
+
+UI_prof_WizPlumber = "Plumber",
+UI_profdesc_WizPlumber = "Start with some plumber tools on a toolbox, and a hard hat.",
+
+UI_prof_WizSurvivalist = "Survivalist",
+UI_profdesc_WizSurvivalist = "You live in the woods with weapons, hunting animals to survive, because you tought something like this would happen, people laugh at you, now its your turn to laugh..",
+
+UI_prof_WizSniper = "Sniper",
+UI_profdesc_WizSniper = "Start with a Barret M82 sniper rifle, some ammo, a army backpack and uniform and some gear.",
+
+UI_prof_WizFieldMedic = "Field Medic",
+UI_profdesc_WizFieldMedic = "Start with the basic military gear plus several medical suplies.",
+
+UI_prof_WizGeneticist = "Geneticist",
+UI_profdesc_WizGeneticist = "Start with Genetic Engineer recipes and some gear, capable of crafting genetic improvement treatments.",
+
+UI_trait_Expert_SmallBlade = "Expert (Small Blade)",
+UI_trait_Expert_SmallBlade_desc = "You had previous trainning with small blade weapons, like knifes and small swords.",
+
+UI_trait_Expert_LongBlade = "Expert (Long Blade)",
+UI_trait_Expert_LongBlade_desc = "You had previous trainning with long blade weapons, like longswords and katanas.",
+
+UI_trait_Expert_Axe = "Expert (Axe)",
+UI_trait_Expert_Axe_desc = "You had previous trainning with axes.",
+
+UI_trait_Expert_SmallBlunt = "Expert (Small Blunt)",
+UI_trait_Expert_SmallBlunt_desc = "You had previous trainning with small blunt weapons, like small hammers and pipes.",
+
+UI_trait_Expert_LongBlunt = "Expert (Long Blunt)",
+UI_trait_Expert_LongBlunt_desc = "You had previous trainning with long blunt weapons, like staff and bats.",
+
+UI_trait_Expert_Spear = "Expert (Spear)",
+UI_trait_Expert_Spear_desc = "You had previous trainning with spears and polearms.",
+
+UI_trait_ExplosiveExpert = "Explosive Expert",
+UI_trait_ExplosiveExpert_desc = "You can craft the vanilla explosive devices.",
+
+UI_trait_MilitaryTrained = "Military Training",
+UI_trait_MilitaryTrained_desc = "You have basic military training.",
+
+UI_trait_WizSharpshooter = "Sharpshooter",
+UI_trait_WizSharpshooter_desc = "You have specialist level trainning in long distance aiming rifles; a olympic shooter or a military sniper.",
+
+UI_trait_WizSamurai = "Samurai",
+UI_trait_WizSamurai_desc = "You descent from the noble samurai and trainned with the Katana.", 
+
+UI_trait_WizCoinCollector = "Coin Collector",
+UI_trait_WizCoinCollector_desc = "You gathered all collectables of this type and sold them as a pack. You will get +25% extra rewards on this type of collection.",
+
+UI_trait_WizUFOPictureCollector = "UFO Picture Collector",
+UI_trait_WizUFOPictureCollector_desc = "You gathered all collectables of this type and sold them as a pack. You will get +25% extra rewards on this type of collection.",
+
+UI_trait_WizComicCollector = "Comic Con Collector",
+UI_trait_WizComicCollector_desc = "You gathered all collectables of this type and sold them as a pack. You will get +25% extra rewards on this type of collection.",
+
+UI_trait_WizCryptidCollector = "Cryptid Collector",
+UI_trait_WizCryptidCollector_desc = "You gathered all collectables of this type and sold them as a pack. You will get +25% extra rewards on this type of collection.",
+
+UI_trait_WizGemCollector = "Gem Collector",
+UI_trait_WizGemCollector_desc = "You gathered all collectables of this type and sold them as a pack. You will get +25% extra rewards on this type of collection.",
+
+
+}

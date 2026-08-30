@@ -1,0 +1,178 @@
+module Base
+{
+    recipe Create Pile of 5 Stones
+    {
+        Stone=5,
+        Result: StonePile5,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        Stone=25,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        StonePile5, Stone=20,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        StonePile5=2, Stone=15,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        StonePile5=3, Stone=10,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        StonePile5=4, Stone=5,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 25 Stones
+    {
+        StonePile5=5,
+        Result: StonePile25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+
+
+    recipe Create Pile of 50 Stones
+    {
+        Stone=50,
+        Result: StonePile50,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 50 Stones
+    {
+        StonePile25=2,
+        Result: StonePile50,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Pile of 50 Stones
+    {
+        StonePile5=10,
+        Result: StonePile50,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+
+    recipe Create Stack of 100 Stones
+    {
+        Stone=100,
+        Result: StonePile100,
+        Time: 180.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Stack of 100 Stones
+    {
+        StonePile5=20,
+        Result: StonePile100,
+        Time: 180.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Stack of 100 Stones
+    {
+        StonePile25=4,
+        Result: StonePile100,
+        Time: 180.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Create Stack of 100 Stones
+    {
+        StonePile50=2,
+        Result: StonePile100,
+        Time: 180.0,
+        CanBeDoneFromFloor: True,
+    }
+
+
+
+    recipe Seperate Stone Stack
+    {
+        StonePile100,
+        Result: StonePile50=2,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Seperate Stone Stack
+    {
+        StonePile50,
+        Result: StonePile25=2,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Seperate Stone Stack
+    {
+        StonePile25,
+        Result: StonePile5=5,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+
+
+    recipe Break Down Stone Stack
+    {
+        StonePile5,
+        Result: Stone=5,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Break Down Stone Stack
+    {
+        StonePile25,
+        Result: Stone=25,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Break Down Stone Stack
+    {
+        StonePile50,
+        Result: Stone=50,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+    recipe Break Down Stone Stack
+    {
+        StonePile100,
+        Result: Stone=100,
+        Time: 120.0,
+        CanBeDoneFromFloor: True,
+    }
+
+}

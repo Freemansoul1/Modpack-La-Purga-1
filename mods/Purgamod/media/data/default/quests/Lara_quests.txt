@@ -1,0 +1,11 @@
+*Lara_q1
+#name ¿Te gusta las fresas con chocolate?
+#desc Al parecer la fresa es uno de los ingredientes principales para elaborar biodiesel. Lara necesita 20 fresas para poder mantener la producción diaria.
+
+*Lara_q2
+#name Las bacterías no son tan malas como pensabamos
+#desc Tras la falta de materia prima en este mundo devastado. Un científico descubrió una fórmula para producir biodiesel a partir de una bacteria que se reproduce en el interior de los zombies. Lara necesita 10 muestras para mantener la producción diaria. 
+
+*Lara_q3
+#name La fórmula secreta
+#desc Tras la falta de materia prima en este mundo devastado, un científico logró desarrollar una bacteria que ayuda a producir biodiesel.

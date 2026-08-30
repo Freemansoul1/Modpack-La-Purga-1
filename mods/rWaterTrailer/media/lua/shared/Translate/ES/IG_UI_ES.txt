@@ -1,0 +1,31 @@
+IG_UI_ES = {
+	IGUI_VehicleNameTrailerWaterSmall = "Remolque cisterna M149",
+	IGUI_VehicleNameTrailerWaterBig = "Remolque cisterna",
+
+   IGUI_VehiclePartCatwatertank = "Tanque de agua",
+   
+   IGUI_VehiclePart1500WaterTank = "Tanque",
+   IGUI_VehiclePart3000WaterTank = "Tanque",
+   IGUI_VehiclePart5000WaterTank = "Tanque",
+   IGUI_Vehicle_CondInfo1500WaterTank = "Almacenar agua. <LINE> Los tanques de agua en condiciones bajas tienen menos capacidad y pueden tener fugas."
+   IGUI_Vehicle_CondInfo3000WaterTank = "Almacenar agua. <LINE> Los tanques de agua en condiciones bajas tienen menos capacidad y pueden tener fugas."
+   IGUI_Vehicle_CondInfo5000WaterTank = "Almacenar agua. <LINE> Los tanques de agua en condiciones bajas tienen menos capacidad y pueden tener fugas."
+
+   IGUI_VehiclePartTrunkRight = "Compartimento derecho",
+   IGUI_Vehicle_CondInfoTrunkRight = "Los compartimentos dañados y deformados tienen menos capacidad de almacenamiento.",
+   IGUI_VehiclePartTrunkDoorRight = "Tapa del compartimento derecho",
+   IGUI_Vehicle_CondInfoTrunkDoorRight = "Una tapa dañada puede provocar la caída de objetos de su vehículo.",
+   IGUI_VehiclePartTrunkLeft = "Compartimento izquierdo",
+   IGUI_Vehicle_CondInfoTrunkLeft = "Los compartimentos dañados y deformados tienen menos capacidad de almacenamiento.",
+   IGUI_VehiclePartTrunkDoorLeft = "Tapa del compartimento izquierdo",
+   IGUI_Vehicle_CondInfoTrunkDoorLeft = "Una tapa dañada puede provocar la caída de objetos de su vehículo.",
+   
+   IGUI_VehiclePartWaterTankLid = "Cubierta",
+   IGUI_Vehicle_CondInfoWaterTankLid = "Una cubierta abierta o dañada puede provocar que el agua de lluvia caiga en el tanque.",
+   
+   IGUI_VehiclePartWaterTankPump = "Bomba",
+   IGUI_Vehicle_CondInfoWaterTankPump = "Una bomba dañada disminuirá su eficacia y resultará en tiempos de llenado más prolongados.",
+   
+   IGUI_VehiclePartWaterTankFilter = "Filtro",
+   IGUI_Vehicle_CondInfoWaterTankFilter = "El agua pasará por el filtro y será segura para beber.",
+}

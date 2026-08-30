@@ -1,0 +1,6 @@
+ItemName_FR = {
+ItemName_BetLock.BobbyPin = "Pince à cheveux",
+ItemName_BetLock.HandmadeBobbyPin = "Pince à cheveux artisanale",
+ItemName_BetLock.LockpickingMag = "Magazine : Le crochetage pour les nuls",
+ItemName_BetLock.AlarmMag = "Magazine : Les alarmes pour les nuls",
+}

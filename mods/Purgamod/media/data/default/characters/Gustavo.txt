@@ -1,0 +1,15 @@
+#name Gustavo|Gustavo
+
+#set_stat Gustavo|Reputacion|01
+
+#desc_append Status: Alive
+
+#desc Nombre: Gustavo Silva
+
+#desc_append Edad:75
+
+#desc_append Gustavo es un anciano de 70 años, malhumorado y gruñón, que a pesar de su edad avanzada, sigue siendo un hombre terco y determinado.
+#desc_append Siempre fue un tipo solitario, pero su amor por las hortalizas era innegable.
+#desc_append Así, mientras gruñe y regatea con los vendedores por cada pieza de fruta, Gustavo sigue adelante, manteniendo vivo no solo el mercado, sino también un pedazo del mundo que una vez conoció.
+
+#exit

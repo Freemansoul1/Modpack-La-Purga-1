@@ -1,0 +1,10 @@
+ContextMenu_RU = {
+    ContextMenu_SCGPRRemove = "Удалить телепорт",
+    ContextMenu_SCGPRCreate = "Создать телепорт",
+    ContextMenu_SCGPREnter = "Войти",
+    ContextMenu_SCGPRExit = "Выйти",
+
+    ContextMenu_SCGPREdit = "Редактировать телепорт",
+    ContextMenu_SCGPRMenu = "[Admin] | Мрачное место",
+    ContextMenu_SCGPRSharedEE = "Перемещение",
+}

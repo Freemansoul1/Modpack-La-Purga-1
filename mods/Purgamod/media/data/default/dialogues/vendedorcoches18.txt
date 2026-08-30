@@ -1,0 +1,79 @@
+*venta
+#cutscene true
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Hola, mi nombre es Gerickson, uno de los numerosos hermanos Ford, me dedico a la venta de vehículos reforzables, ¿qué necesitas?"
+#choice
+    hmmwvht|63Type2VanApocalypse
+    hmmwvtr|63Type2VanHippie
+    m151canvas|86fordE150
+    nada|De momento no necesito nada
+*hmmwvht
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*hmmwvtr
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado1
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*m151canvas
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Perfecto, son 800 monedas"
+#has_item Base.Money,800
+    #jump cochecomprado2
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Por lo que veo aún no tienes dinero suficiente, vuelve más tarde"
+#exit
+
+*nada
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningvanapocalypse.png|5
+#choice
+    se1|Si.
+    na1|No.
+*se1
+#remove_item Base.Money,800
+#m Gerickson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.63Type2VanApocalypse,1,rare
+#exit
+*na1
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado1
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningvanhippie.png|5
+#choice
+    se2|Si.
+    na2|No.
+*se2
+#remove_item Base.Money,800
+#m Gerickson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.63Type2VanHippie,1,rare
+#exit
+*na2
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+*cochecomprado2
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Estás seguro?"
+#pop_up Tuningforde150.png|5
+#choice
+    se3|Si.
+    na3|No.
+*se3
+#remove_item Base.Money,800
+#m Gerickson Ford|vehiculosvendedorbasico.png|"!Genial!, aquí tienes tu coche"
+#reward PinkSlip.86fordE150mm,1,rare
+#exit
+*na3
+#m Gerickson Ford|vehiculosvendedorbasico.png|"Vuelve en otro momento y de una pieza, suerte ahí fuera, si ves alguno de mis hermanos, dale recuerdos de mi parte"
+#exit
+
+

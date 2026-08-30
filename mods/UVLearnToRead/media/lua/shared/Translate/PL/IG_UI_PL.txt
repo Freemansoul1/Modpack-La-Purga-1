@@ -1,0 +1,4 @@
+IGUI_PL = {
+IGUI_perks_LearningReading = "Nauka Czytania",
+IGUI_perks_Miscellaneous = "Edukacja",
+}

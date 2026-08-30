@@ -1,4 +1,0 @@
-MapSymbolsTable = {
-    tableMarkers = {},
-    loaded = false
-}

@@ -1,0 +1,204 @@
+module Base
+{
+	model VVA_Vehicles_D90_CarSmall3_a
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Vehicles_Small03,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_D90_CarSmall3_internals
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicles_SmallCar03_Shell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_D90_CarSmall3_DoorFrontLeft
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_DoorFrontRight
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_WindowFrontLeft
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_WindowFrontRight
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_WindowRearLeft
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_D90_CarSmall3_WindowRearRight
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_D90_CarSmall3_Trunk
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_Hood
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_D90_CarSmall3_Windshield
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_D90_CarSmall3_RearWindow
+	{
+		mesh = vehicles/D90/D90_Vehicles_CarSmall03_animated|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+
+
+	template vehicle VVA_D90_CarSmall3_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_D90_CarSmall3_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_D90_CarSmall3_DoorFrontLeft,
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_D90_CarSmall3_DoorFrontRight,
+				rotate = 0 0 0,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_D90_CarSmall3_Hood,
+				rotate = 0 0 0,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+            		model Default
+            		{
+                		file = VVA_Vehicles_D90_CarSmall3_WindowFrontLeft,
+				rotate = 0 0 0,
+            		}
+        	}
+		part WindowFrontRight
+        	{
+			parent = DoorFrontRight,
+            		model Default
+            		{
+                		file = VVA_Vehicles_D90_CarSmall3_WindowFrontRight,
+				rotate = 0 0 0,
+            		}
+        	}
+		part WindowRearLeft
+        	{	
+            		model Default
+            		{
+                		file = VVA_Vehicles_D90_CarSmall3_WindowRearLeft,
+            		}            		
+        	}
+		part WindowRearRight
+        	{	
+            		model Default
+            		{
+                		file = VVA_Vehicles_D90_CarSmall3_WindowRearRight,
+            		}            		
+        	}		
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VVA_Vehicles_D90_CarSmall3_Windshield,
+				rotate = 0 0 0,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model windshieldRear
+			{
+				file = VVA_Vehicles_D90_CarSmall3_RearWindow,
+				rotate = 0 0 0,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_D90_CarSmall3_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create =Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

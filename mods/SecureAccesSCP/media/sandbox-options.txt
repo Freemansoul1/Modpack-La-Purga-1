@@ -1,0 +1,21 @@
+VERSION = 1,
+
+option SecureAccess.DoorTimer
+{
+    type = integer,
+    min = 20,
+    default = 180,
+    max = 999999,
+    page = SecureAccess,
+    translation = SecureAccess_DoorTimer,
+}
+
+option SecureAccess.Delay
+{
+    type = integer,
+    min = 0,
+    default = 20,
+    max = 999,
+    page = SecureAccess,
+    translation = SecureAccess_Delay,
+}

@@ -1,0 +1,159 @@
+module Sprout
+{
+	imports
+	{
+		Base
+	}
+recipe Open Packet of Black Geranium Seeds
+	{
+		BlackGeraniumBagSeed,
+  
+        Result:BlackGeraniumSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Black Geranium Seeds in Packet
+	{
+        BlackGeraniumSeed=50,
+
+        Result:BlackGeraniumBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Blue Delphinium Seeds
+	{
+		BlueDelphiniumBagSeed,
+  
+        Result:BlueDelphiniumSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Blue Delphinium Seeds in Packet
+	{
+        BlueDelphiniumSeed=50,
+
+        Result:BlueDelphiniumBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Magenta Penta Seeds
+	{
+		MagentaPentaBagSeed,
+  
+        Result:MagentaPentaSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Magenta Penta Seeds in Packet
+	{
+        MagentaPentaSeed=50,
+
+        Result:MagentaPentaBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Orange Dahlia Seeds
+	{
+		OrangeDahliaBagSeed,
+  
+        Result:OrangeDahliaSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Orange Dahlia Seeds in Packet
+	{
+        OrangeDahliaSeed=50,
+
+        Result:OrangeDahliaBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Pink Carnation Seeds
+	{
+		PinkCarnationBagSeed,
+  
+        Result:PinkCarnationSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Pink Carnation Seeds in Packet
+	{
+        PinkCarnationSeed=50,
+
+        Result:PinkCarnationBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Red Rose Seeds
+	{
+		RedRoseBagSeed,
+  
+        Result:RedRoseSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Red Rose Seeds in Packet
+	{
+        RedRoseSeed=50,
+
+        Result:RedRoseBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of White Larkspur Seeds
+	{
+		WhiteLarkspurBagSeed,
+  
+        Result:WhiteLarkspurSeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put White Larkspur Seeds in Packet
+	{
+        WhiteLarkspurSeed=50,
+
+        Result:WhiteLarkspurBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+recipe Open Packet of Yellow Daisy Seeds
+	{
+		YellowDaisyBagSeed,
+  
+        Result:YellowDaisySeed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+	}
+
+recipe Put Yellow Daisy Seeds in Packet
+	{
+        YellowDaisySeed=50,
+
+        Result:YellowDaisyBagSeed,
+        Time:30.0,
+	  Category:Storage,
+        Sound:OpenSeedPacket,
+	}
+}

@@ -1,0 +1,198 @@
+
+module Base
+{
+	
+	
+	
+	/**************************** ROBOCOP GUN ************************************************************/
+	item Wiz_RobocopGun_Light
+    {
+		
+        Type 				= WeaponPart,
+        DisplayName 		= Gun Flashlight,
+        Icon 				= WizGunLightsmall,
+        Weight 				= 0.2,
+        WeightModifier 		= 0.2,
+		StaticModel         = Wiz_RobocopGun_Light,	
+		WorldStaticModel 	= Wiz_RobocopGun_Light_ground,
+        AimingTimeModifier  = 5,
+		MountOn 			= Base.Wiz_RobocopGun,
+		PartType 			= Canon,
+		Tooltip 			= Tooltip_Wiz_RobocopGun_Light,
+        MetalValue 			= 1,
+	}
+	
+	model Wiz_RobocopGun_Light	{
+		mesh = weapons/parts/Wiz_RobocopGun_Light,
+		texture = weapons/parts/Wiz_GunLight_small,
+		scale = 0.01,
+	}
+	
+	model Wiz_RobocopGun_Light_ground	{
+		mesh = WorldItems/Wiz_RobocopGun_Light_ground,
+		texture = weapons/parts/Wiz_GunLight_small,
+		scale = 0.01,
+	}
+	
+	
+	
+	item Wiz_RobocopGun_Laser
+    {
+		
+        Type 				= WeaponPart,
+        DisplayName 		= Gun Laser Aim,
+        Icon 				= HandgunLaserGreen,
+        Weight 				= 0.2,
+        WeightModifier 		= 0.2,
+		StaticModel         = Wiz_RobocopGun_Laser,	
+		WorldStaticModel 	= Laser,
+		HitChanceModifier   = 10,
+		Tooltip 			= Tooltip_Wiz_RobocopGun_Laser,
+		MountOn 			= Base.Wiz_RobocopGun; Base.Wiz_Mp5,
+		PartType 			= Scope,
+        MetalValue 			= 1,
+	}
+	
+	model Wiz_RobocopGun_Laser	{
+		mesh = weapons/parts/Wiz_RobocopGun_Laser,
+		texture = weapons/parts/Handgun_Laser_Green,
+		scale = 0.01,
+	}
+	
+	/***************** WALTHER PPK *************************************************/
+	
+	item Wiz_SmallPistol_Light
+    {
+		
+        Type 				= WeaponPart,
+        DisplayName 		= Small Gun Flashlight,
+        Icon 				= WizGunLightsmall,
+        Weight 				= 0.1,
+        WeightModifier 		= 0.1,
+		StaticModel         = Wiz_SmallPistol_Light,	
+		WorldStaticModel 	= Wiz_SmallPistolLight_ground,
+        AimingTimeModifier  = 5,
+		MountOn 			= Base.Wiz_WaltherPPK; Base.Wiz_Mp5,
+		PartType 			= Scope,
+        MetalValue 			= 1,
+		Tooltip				= Tooltip_Wiz_SmallPistol_Light,
+	}
+	
+	model Wiz_SmallPistol_Light	{
+		mesh = weapons/parts/Wiz_SmallPistol_Light,
+		texture = weapons/parts/Handgun_Light,
+		scale = 0.01,
+	}
+	
+	model Wiz_SmallPistolLight_ground	{
+		mesh = WorldItems/Wiz_SmallPistolLight_ground,
+		texture = weapons/parts/Handgun_Light,
+		scale = 0.01,
+	}
+	
+	item Wiz_SmallPistol_Suppressor
+    {
+        Type                    = WeaponPart,
+        DisplayName             = Small Pistol Suppressor,
+        Icon                    = Wiz_Van_pistolsuppressor,
+        Weight                  = 0.1,
+        WeightModifier          = 0.1,
+		StaticModel         	= Wiz_SmallPistol_Suppressor,
+		WorldStaticModel 		= Wiz_SmallPistolSuppressor_ground,
+        HitChanceModifier       = 2,		
+        MinRangeModifier        = 0.1,		
+        RecoilDelayModifier     = 1,	
+	    AimingTimeModifier      = 1,	
+        ReloadTimeModifier      = 1,	
+        MountOn                 = Base.Wiz_WaltherPPK,
+        PartType                = Canon,
+        MetalValue              = 4,
+		Tooltip					= Tooltip_Wiz_SmallPistol_Suppressor,
+    }
+	
+	model Wiz_SmallPistol_Suppressor	{
+		mesh = weapons/parts/Wiz_SmallPistol_Suppressor,
+		texture = weapons/parts/Suppressor_Pistol_darkgrey,
+		scale = 0.01,
+	}
+	
+	model Wiz_SmallPistolSuppressor_ground	{
+		mesh = WorldItems/Wiz_SmallPistolSuppressor_ground,
+		texture = weapons/parts/Suppressor_Pistol_darkgrey,
+		scale = 0.01,
+	}
+	
+	
+	/********************** SMG *******************************************/
+	
+	item Wiz_SMG_Suppressor
+    {
+        Type                    = WeaponPart,
+        DisplayName             = SMG Suppressor,
+        Icon                    = Wiz_Van_riflesuppressor,
+        Weight                  = 0.2,
+        WeightModifier          = 0.2,
+		StaticModel         	= Wiz_SMG_Suppressor,
+		WorldStaticModel 		= Wiz_SMG_Suppressor_ground,
+        HitChanceModifier       = 2,		
+        MinRangeModifier        = 0.1,		
+        RecoilDelayModifier     = 1,	
+	    AimingTimeModifier      = 1,	
+        ReloadTimeModifier      = 1,	
+        MountOn                 = Base.Wiz_Mp5,
+        PartType                = Canon,
+        MetalValue              = 4,
+		Tooltip					= Tooltip_Wiz_SMG_Suppressor,
+    }
+	
+	model Wiz_SMG_Suppressor	{
+		mesh = weapons/parts/Wiz_SMG_Suppressor,
+		texture = weapons/parts/Suppressor_Pistol_darkgrey,
+		scale = 0.01,
+	}
+	
+	model Wiz_SMG_Suppressor_ground	{
+		mesh = WorldItems/Wiz_SMG_Suppressor_ground,
+		texture = weapons/parts/Suppressor_Pistol_darkgrey,
+		scale = 0.01,
+	}
+	
+	
+	/************** LARGE Supressor - snipers ********************************/
+	
+	item Wiz_SilencerLarge
+    {
+        Type                    = WeaponPart,
+        DisplayName             = Large Sniper Suppressor,
+        Icon                    = Wiz_Van_riflesuppressor,
+        Weight                  = 0.3,
+        WeightModifier          = 0.3,
+		StaticModel         	= Wiz_SilencerLarge,
+		WorldStaticModel 		= Wiz_SilencerLarge_ground,
+        HitChanceModifier       = 2,		
+        MinRangeModifier        = 0.1,		
+        RecoilDelayModifier     = 1,	
+	    AimingTimeModifier      = 1,	
+        ReloadTimeModifier      = 1,	
+        MountOn                 = Base.Wiz_BarretM82,
+        PartType                = Canon,
+        MetalValue              = 4,
+		Tooltip					= Tooltip_Wiz_Large_Suppressor,
+    }
+	
+	model Wiz_SilencerLarge	{
+		mesh = weapons/parts/Wiz_SilencerLarge,
+		texture = weapons/firearm/Wiz_BarretM82,
+		scale = 0.01,
+	}
+	
+	model Wiz_SilencerLarge_ground	{
+		mesh = WorldItems/Wiz_SilencerLarge_ground,
+		texture = weapons/firearm/Wiz_BarretM82,
+		scale = 0.01,
+	}
+	
+}
+
+
+

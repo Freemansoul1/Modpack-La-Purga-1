@@ -1,0 +1,12 @@
+IGUI_EN = {
+    IGUI_invpanel_Chem_Prop = "化学性质",
+    IGUI_invpanel_Chem_Jet = "12% 耐力增益 / 2.5% 饥饿损失 / 3% 醉酒增益 / 15% 失去的不快乐和无聊",
+    IGUI_invpanel_Chem_Buffout = "67% 耐力增益 / 45% 失去疲劳 / 10% 减轻疼痛 / 随机敏捷 技能经验值增益",
+    IGUI_invpanel_Chem_Daytrip = " 5% 减轻疼痛 / 10% 失去疲劳 / 85% 失去的不幸 / 65% 失去无聊 / 50% 恐惧，恐慌和压力丧失 / 格罗维时报",
+    IGUI_invpanel_Chem_Stimpack = "27% 健康 / 10% 减轻疼痛",
+    IGUI_invpanel_Chem_SuperStimpack = "68% 健康 / 35% 减轻疼痛 / 15% 醉酒增益",
+    IGUI_invpanel_Chem_Mentats = "85% 醉酒丢失 / 35% 失去疲劳 / 75% 压力损失 / 10% 失去的不快乐和无聊 / 随机制作技能经验值增益",
+    IGUI_invpanel_Chem_Psycho = "35% 健康 / 95% 减轻疼痛 / 58% 耐力增益 / 高愤怒增益 / 90% 恐惧，恐慌和压力丧失/ 15% 口渴获得 / 35% 醉酒增益 / 随机战斗技能经验值增益",
+    IGUI_invpanel_Chem_MedX = "65% 减轻疼痛 / 25% 醉酒增益 / 50% 压力损失 / 35% 失去的不快乐和无聊",
+    IGUI_invpanel_Chem_Xcell = "15% 健康 / 45% 减轻疼痛 / 40% 耐力增益 / 95% 失去疲劳 / 85% 醉酒丢失 / 50% 失去的不快乐和无聊 / 随机被动技能经验值增益",
+}

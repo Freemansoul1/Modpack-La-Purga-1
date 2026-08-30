@@ -1,7 +1,0 @@
-#name Cocinera|Cocinera
-
-#desc Nombre: Cocinera
-#desc_append Edad: Alrededor de los 40
-#desc_append Estricto pero justo. Amable con los recién llegados, pero el personal del Hospital no parece digerirle.
-#desc_append Reparte raciones gratis todos los días.
-#exit

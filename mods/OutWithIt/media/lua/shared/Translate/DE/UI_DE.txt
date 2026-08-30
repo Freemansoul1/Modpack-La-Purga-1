@@ -1,0 +1,6 @@
+UI_DE = {
+	UI_ModOptions_DamageItemsOnFall_Name = "Besch�dige Gegenst�nde beim Fallen"
+	UI_ModOptions_DamageItemsOnFall_Tooltip = "Wenn aktiviert, werden geworfene Gegenst�nde beim Herunterfallen besch�digt."
+	UI_ModOptions_AllowQuickEquippedItemsThrow_Name = "Erlaube das Schnell-Werfen von ausger�steten Gegenst�nden"
+	UI_ModOptions_AllowQuickEquippedItemsThrow_Tooltip = "Wenn aktiviert, k�nnen ausger�stete Gegenst�nde direkt durch die Interaktion mit einem Fenster / Zaun geworfen werden. Wenn deaktiviert, k�nnen Sie nur �ber das Inventar herausgeworfen werden.
+}

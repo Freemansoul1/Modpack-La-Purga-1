@@ -1,0 +1,4 @@
+name=No More Zone Checks
+poster=preview.png
+id=NoMoreZoneChecks1
+description=Skips the checks for "zones" in Autotsar and Aquatsar mods (besides the ones they come with) to let the game/server load faster!

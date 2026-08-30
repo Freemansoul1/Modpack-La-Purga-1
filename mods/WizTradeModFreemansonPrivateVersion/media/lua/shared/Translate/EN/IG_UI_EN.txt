@@ -1,0 +1,18 @@
+IG_UI_EN = {
+
+	
+	IGUI_HotbarAttachment_Wiz_SentaiHelmet_Chip_Light = "Helmet",
+	IGUI_HotbarAttachment_Wiz_SentaiHelmet_Chip_Radio = "Helmet",
+    IGUI_HotbarAttachment_Wiz_BobaFettAntena = "Helmet",
+	
+
+	IGUI_VehicleNameWiz_Flashhawk_Red = "Flashawk (Red)",
+	IGUI_VehicleNameWiz_Flashhawk_Green = "Flashawk (Green)",
+	IGUI_VehicleNameWiz_Flashhawk_Blue = "Flashawk (Blue)",
+	IGUI_VehicleNameWiz_Flashhawk_Yellow = "Flashawk (Yellow)",
+	IGUI_VehicleNameWiz_Flashhawk_Pink = "Flashawk (Pink)",
+	
+	IGUI_Wiz_Flashhawk_Red = "Motorcycle",
+	
+	
+}
