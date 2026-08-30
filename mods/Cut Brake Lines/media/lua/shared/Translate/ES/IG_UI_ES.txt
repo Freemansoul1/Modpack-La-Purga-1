@@ -1,6 +1,0 @@
-IGUI_ES = {
-	-- All the UI text used in game
-	-- InventoryPane
-    IGUI_Cut_Brake_Line = "Cortar linea de frenos",
-    
-}

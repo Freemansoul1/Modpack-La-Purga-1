@@ -1,5 +1,0 @@
-ItemName_JP = {
-    ItemName_Base.RappelRope = "懸垂下降ロープ",
-    ItemName_Base.SwissSeat = "クライミングハーネス",
-	ItemName_Base.EscapeRope = "ラペルキット",
-}

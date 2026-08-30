@@ -1,6 +1,0 @@
-ContextMenu_ES = {
-     ContextMenu_WFDetachSprinkler = "Desconectar aspersor",
-     ContextMenu_WFAttachSprinkler = "Conectar aspersor",
-     ContextMenu_WFUseSprinkler = "Usar aspersor (Seleccionar)",
-     ContextMenu_WFUseSprinklerAll = "Usar aspersor (todos)",
-}

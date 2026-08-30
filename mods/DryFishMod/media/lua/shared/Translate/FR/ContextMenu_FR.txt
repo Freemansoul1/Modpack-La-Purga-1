@@ -1,3 +1,0 @@
-ContextMenu_FR = {
-    ContextMenu_DryFishMod_AddDrier = "Ajouter une brochette au feu de camp",
-}

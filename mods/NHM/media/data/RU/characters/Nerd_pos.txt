@@ -1,0 +1,2 @@
+#npc_create Nerd|NPC/Nerd.png|11563,7660,1
+#exit

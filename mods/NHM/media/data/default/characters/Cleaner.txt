@@ -1,0 +1,7 @@
+#name Limpiadora|Limpiadora
+
+#desc Nombre: Limpiadora
+#desc_append Edad: 80+
+#desc_append Una anciana. El rostro y las manos están cubiertos de arrugas de aparentemente una vida dura llena de trabajo manual.
+#desc_append Su compromiso con el trabajo es un poco intimidante.
+#exit

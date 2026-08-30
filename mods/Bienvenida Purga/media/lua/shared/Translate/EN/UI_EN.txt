@@ -1,7 +1,0 @@
-UI_EN = {
-
-    UI_Intro1 = "Welcome to La Purga",
-    UI_Intro2 = "Season 5",
-    UI_Intro3 = "This is how you died..",
-	
-}

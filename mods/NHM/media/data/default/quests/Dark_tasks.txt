@@ -1,0 +1,43 @@
+*dark_q1_t1
+#name Llegar a la Montaña Negra
+*dark_q1_t2
+#name Baja al Búnquer
+*dark_q1_t3
+#name Encuentra la cantina del búnquer
+*dark_q1_t14
+#name Encuentra semillas de Utopia en la cantina del Búnquer
+*dark_q1_t16
+#name Lleva las semillas a Osiris en menos de 4 horas [de juego]
+
+*dark_q2_t1
+#name Llegar a Louisville
+*dark_q2_t2
+#name Llega al edificio de apartamentos de Dark
+*dark_q2_t3
+#name Despeja el edificio
+*dark_q2_t4
+#name Ver ubicación
+*dark_q2_t5
+#name Llegar a la iglesia
+*dark_q2_t11
+#name Encuentra una nota de la araña
+*dark_q2_t12
+#name Llega al edificio de Dark
+*dark_q2_t13
+#name Despeja el edificio
+*dark_q2_t14
+#name Abre el alijo debajo de la vía férrea
+*dark_q2_t15
+#name Llega al edificio de apartamentos de Dark
+*dark_q2_t16
+#name Despeja el edificio
+*dark_q2_t17
+#name Contactar a Dark por radio
+*dark_q2_t18
+#name Llega al edificio vecino
+*dark_q2_t19
+#name Despeja el edificio
+*dark_q2_t20
+#name Habla con la araña
+*dark_q2_t22
+#name Volver a ver a Dark

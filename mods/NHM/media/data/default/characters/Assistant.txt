@@ -1,0 +1,7 @@
+#name Asistente|Asistente
+
+#desc Nombre: Asistente
+#desc_append Edad: 30-35
+#desc_append Hombre de mediana edad. Apariencia extremadamente cansada, grandes hematomas debajo de los ojos. Anteriormente asistente de cirugía. Tener una hija.
+#desc_append Evita hablar de Demiurgo.
+#exit

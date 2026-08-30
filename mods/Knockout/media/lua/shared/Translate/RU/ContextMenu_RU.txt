@@ -1,9 +1,0 @@
-ContextMenu_RU = {
-ContextMenu_Knockout_DebugOption = "DEBUG: Активировать режим без сознания"
-
-ContextMenu_Knockout_WakeUpOption = "Разбудить"
-
-ContextMenu_Knockout_WakeUpOptionDescription = "находится без сознания. Вы можете попробовать привести его/её в чувство."
-
-ContextMenu_Knockout_Salt = "Соль"
-}

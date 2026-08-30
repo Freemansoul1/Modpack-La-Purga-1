@@ -1,3 +1,0 @@
-ContextMenu_JP = {
-    ContextMenu_Hide = "自分を隠す",
-}

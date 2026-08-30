@@ -1,8 +1,0 @@
-Sandbox_RU = {
-    Sandbox_zReDSZOF_main = "DONT SET ZOMBIES ON FIRE",
-
-    Sandbox_zReDSZOF_FireDamageMultiple = "Урон от огня по зомби. Множитель: ",
-    Sandbox_zReDSZOF_FireDamageMultiple_tooltip = "Значения для примера:<br>1 - как в ваниле.<br>4 - в 4 раза больше урона от огня (сгорают в 4 раза быстрее).<br>0.5 - в два раза меньше урона от огня (сгорают в два раза медленнее).<br>0 - отключает урон от горения.",
-	Sandbox_zReDSZOF_RunChance = "Шанс зомби побежать. Процент:",
-	Sandbox_zReDSZOF_RunChance_tooltip = "Влияет на шанс зомби начать бежать будучи подожённым.<br>Ивент триггерится каждую игровую минуту!",
-}

@@ -1,7 +1,0 @@
-IGUI_CN = {
-    IGUI_ContainerTitle_DryFishNet = "晒鱼网",
-    IGUI_ContainerTitle_DryFishRack = "鱼晾架",
-    IGUI_ContainerTitle_DryFishSkewer = "鱼干串",
-    IGUI_DryFishMod_RequiresCampfire = "需要篝火来干燥",
-    IGUI_DryFishMod_DryProgressTooltip = "干燥进度：%1%",
-}

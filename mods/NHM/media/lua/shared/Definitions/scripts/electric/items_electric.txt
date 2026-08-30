@@ -1,0 +1,40 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+/***Зарядное устройство для батареек***/
+item BatteryCharger
+    {
+        DisplayCategory = Electronics,
+		Weight	=	6,
+		Type	=	Drainable,
+		UseDelta = 0.05,
+		UseWhileEquipped = false,
+		DisplayName	=	BatteryCharger,
+		Icon	=	BatteryCharger,
+	}
+
+item GeigerCounter
+    {
+        DisplayCategory = Electronics,
+		Weight	=	0.5,
+		Type	=	Normal,
+		UseWhileEquipped = false,
+		DisplayName	=	GeigerCounter,
+		Icon	=	GeigerCounter,
+	}
+
+item PoisonAnalyzer
+    {
+        DisplayCategory = Electronics,
+		Weight	=	0.5,
+		Type	=	Normal,
+		HungerChange	=	0,
+		DisplayName	=	PoisonAnalyzer,
+		Icon	=	PoisonAnalyzer,
+	}
+
+}

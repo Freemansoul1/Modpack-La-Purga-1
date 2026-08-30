@@ -1,0 +1,169 @@
+#quest sparklecooldown|hidden|unlocked
+    #task t1
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Sparkle.txt,reset_sparkle_q1
+    #task t2
+        #set WaitUntil|time|false|09:00|0
+        #action RunScript|Sparkle.txt,reset_sparkle_q2
+
+#quest sparkle_q1
+    #task t1
+        #set Deliver|Base.ElectronicsScrap,5
+        #action UnlockTask|sparkle_q1|t2
+    #task t2
+        #set RaiseFlag|sparkle_q1_completed
+        #action SetFlag|sparkle_q1_completed|false
+        #action SetFlag|sparkle_q1_flag|false
+        #action UnlockTask|sparklecooldown|t1
+        #action CompleteQuest|sparkle_q1
+
+#quest sparkle_q2
+    #task t1
+        #set Deliver|NHM.SiliconOre,2
+        #action UnlockTask|sparkle_q2|t2
+    #task t2
+        #set RaiseFlag|sparkle_q2_completed
+        #action SetFlag|sparkle_q2_completed|false
+        #action SetFlag|sparkle_q2_flag|false
+        #action UnlockTask|sparklecooldown|t2
+        #action CompleteQuest|sparkle_q2
+
+#quest sparkle_q3|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Sparkle.txt,reset_sparkle_q3
+    #task t1
+        #set GotoLocation|8649,7254,0|building|true
+        #action RunScript|Sparkle.txt,q3_house1
+    #task t2
+        #set LootContainer|shelves|8647,7255,0|NHM.QuestSparkleRadio,false
+    #task t3
+        #set LootContainer|shelves|8641,7254,0|NHM.QuestSparkleRadio,false
+    #task t4
+        #set LootContainer|counter|8640,7261,0|NHM.QuestSparkleRadio,false
+    #task t5
+        #set GotoLocation|8733,7283,0|building|true
+        #action RunScript|Sparkle.txt,q3_house2
+    #task t6
+        #set LootContainer|shelves|8725,7279,0|NHM.QuestSparkleRadio,false
+    #task t7
+        #set LootContainer|shelves|8732,7280,0|NHM.QuestSparkleRadio,false
+    #task t8
+        #set LootContainer|shelves|8732,7285,0|NHM.QuestSparkleRadio,false
+    #task t9
+        #set GotoLocation|8607,7305,0|building|true
+        #action RunScript|Sparkle.txt,q3_house3
+    #task t10
+        #set LootContainer|counter|8599,7305,0|NHM.QuestSparkleRadio,false
+    #task t11
+        #set LootContainer|shelves|8604,7302,0|NHM.QuestSparkleRadio,false
+    #task t12
+        #set LootContainer|shelves|8605,7310,0|NHM.QuestSparkleRadio,false
+    #task t13
+        #set GotoLocation|8817,7280,0|building|true
+        #action RunScript|Sparkle.txt,q3_house4
+    #task t14
+        #set LootContainer|counter|8817,7283,0|NHM.QuestSparkleRadio,false
+    #task t15
+        #set LootContainer|shelves|8808,7288,0|NHM.QuestSparkleRadio,false
+    #task t16
+        #set LootContainer|counter|8810,7271,0|NHM.QuestSparkleRadio,false
+    #task t17
+        #set GotoLocation|8775,7292,0|building|true
+        #action RunScript|Sparkle.txt,q3_house5
+    #task t18
+        #set LootContainer|counter|8766,7290,0|NHM.QuestSparkleRadio,false
+    #task t19
+        #set LootContainer|shelves|8775,7286,0|NHM.QuestSparkleRadio,false
+    #task t20
+        #set LootContainer|counter|8770,7278,0|NHM.QuestSparkleRadio,false
+    #task t21|hidden
+        #set TaskCondition|sparkle_q3|t1,t2/t1,t3/t1,t4/t5,t6/t5,t7/t5,t8/t9,t10/t9,t11/t9,t12/t13,t14/t13,t15/t13,t16/t17,t18/t17,t19/t17,t20
+        #action UnlockTask|sparkle_q3|t22
+    #task t22
+        #set FindItem|NHM.QuestSparkleAmplifier,1
+        #action UnlockTask|sparkle_q3|t23
+    #task t23
+        #set FindItem|Base.Earbuds,1
+        #action UnlockTask|sparkle_q3|t24
+    #task t24
+        #set FindItem|Radio.WalkieTalkie3,1
+        #action UnlockTask|sparkle_q3|t25
+    #task t25
+        #set FindItem|NHM.QuestSparkleFinal,1
+        #action SetFlag|sparkle_q3_flag|true
+        #action UnlockTask|sparkle_q3|t26
+    #task t26
+        #set RaiseFlag|sparkle_q3_completed
+        #action SetFlag|sparkle_q3_completed|false
+        #action SetFlag|sparkle_q3_flag|false
+        #action CompleteQuest|sparkle_q3
+
+#quest sparkle_q4|daily
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Sparkle.txt,reset_sparkle_q4
+    #task t1
+        #set GotoLocation|8358,6826,8381,6845,0|true
+        #action UnlockTask|sparkle_q4|t2
+    #task t2
+        #set Secure|8358,6826,8381,6845,0
+        #action UnlockTask|sparkle_q4|t3
+    #task t3
+        #set ContextAction|Contactar con Sparkle|8359,6840,0|3|Sparkle.txt,quest4_contact|q4_cont_flag
+        #action UnlockTask|sparkle_q4|t8
+    #task t4
+        #set ContextAction|Solucionar problemas|8363,6839,0|3|Sparkle.txt,quest4_fix|q4_fix_flag
+    #task t5
+        #set ContextAction|Solucionar problemas|8372,6839,0|3|Sparkle.txt,quest4_fix|q4_fix_flag
+    #task t6
+        #set ContextAction|Solucionar problemas|8378,6840,0|3|Sparkle.txt,quest4_fix|q4_fix_flag
+    #task t7
+        #set ContextAction|Solucionar problemas|8369,6830,0|3|Sparkle.txt,quest4_fix|q4_fix_flag        
+    #task t8|hidden
+        #set TaskCondition|sparkle_q4|t4/t5/t6/t7
+        #action UnlockTask|sparkle_q4|t9
+    #task t9
+        #set ContextAction|Contactar con Sparkle|8359,6840,0|3|Sparkle.txt,quest4_contact2|q4_cont2_flag
+    #task t10
+        #set GotoLocation|9042,7742,9048,7748,0|true
+        #action UnlockTask|sparkle_q4|t11
+    #task t11
+        #set ContextAction|arreglar el cable|9045,7745,0|5|Sparkle.txt,quest4_cabel|q4_cabel_flag
+        #action UnlockTask|sparkle_q4|t12
+    #task t12
+        #set GotoLocation|10017,7742,10023,7748,0|true
+        #action UnlockTask|sparkle_q4|t13
+    #task t13
+        #set ContextAction|arreglar el cable|10020,7745,0|5|Sparkle.txt,quest4_cabel2|q4_cabel2_flag
+        #action SetFlag|sparkle_q4_flag|true
+        #action UnlockTask|sparkle_q4|t22
+    #task t14
+        #set GotoLocation|9532,8067,9538,8073,0|true
+        #action UnlockTask|sparkle_q4|t15
+    #task t15
+        #set ContextAction|arreglar el cable|9535,8070,0|3|Sparkle.txt,quest4_cabel|q4_cabel_flag
+        #action UnlockTask|sparkle_q4|t16
+    #task t16
+        #set GotoLocation|10747,7467,10753,7473,0|true
+        #action UnlockTask|sparkle_q4|t17
+    #task t17
+        #set ContextAction|arreglar el cable|10750,7470,0|3|Sparkle.txt,quest4_cabel2|q4_cabel2_flag
+        #action SetFlag|sparkle_q4_flag|true
+        #action UnlockTask|sparkle_q4|t22
+    #task t18
+        #set GotoLocation|10167,6882,10173,6888,0|true
+        #action UnlockTask|sparkle_q4|t19
+    #task t19
+        #set ContextAction|arreglar el cable|10170,6885,0|3|Sparkle.txt,quest4_cabel|q4_cabel_flag
+        #action UnlockTask|sparkle_q4|t20
+    #task t20
+        #set GotoLocation|11217,7497,11223,7503,0|true
+        #action UnlockTask|sparkle_q4|t21
+    #task t21
+        #set ContextAction|arreglar el cable|11220,7500,0|3|Sparkle.txt,quest4_cabel2|q4_cabel2_flag
+        #action SetFlag|sparkle_q4_flag|true
+        #action UnlockTask|sparkle_q4|t22
+    #task t22
+        #set RaiseFlag|sparkle_q4_completed
+        #action SetFlag|sparkle_q4_completed|false
+        #action SetFlag|sparkle_q4_flag|false
+        #action CompleteQuest|sparkle_q4

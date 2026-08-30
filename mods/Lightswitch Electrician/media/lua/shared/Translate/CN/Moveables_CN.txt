@@ -1,4 +1,0 @@
-Moveables_CN = {
-	Left_Light_Switch = "左灯开关",
-	Right_Light_Switch = "右灯开关",
-}

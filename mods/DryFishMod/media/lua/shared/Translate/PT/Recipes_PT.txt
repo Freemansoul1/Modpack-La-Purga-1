@@ -1,7 +1,0 @@
-Recipes_PT {
-    Recipe_Prepare_Dry_Fish = "Processar Peixe",
-    Recipe_Make_Drier_1 = "Rede de secagem artesanal",
-    Recipe_Make_Drier_9 = "Rede de secagem artesanal",
-    Recipe_Make_Drier_8 = "Rack de secagem artesanal",
-    Recipe_Make_Drier_15 = "Espeto de secagem artesanal",
-}

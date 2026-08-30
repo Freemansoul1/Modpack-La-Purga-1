@@ -1,4 +1,0 @@
-name=Never Add Null Item
-poster=poster.png
-id=NeverAddNullItem1
-description=Patch to address an error message regarding adding "nothing" to a container.

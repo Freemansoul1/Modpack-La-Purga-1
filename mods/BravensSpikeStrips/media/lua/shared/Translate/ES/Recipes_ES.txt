@@ -1,3 +1,0 @@
-Recipes_ES = {
-    Recipe_craft_spikestrip = "Forjar banda de pinchos",
-}

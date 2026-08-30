@@ -1,5 +1,0 @@
-name=More Difficult Zones
-poster=poster.png
-description=Custom zone difficulty
-id=MoreDifficultZones1
-require=MoodleFramework1

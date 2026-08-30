@@ -1,7 +1,0 @@
-name=Mutie's Context Menu icons Expanded
-id=MutiesContextMenuIconsExpanded1
-description=e
-poster=poster.png
-icon=icon.png
-require=MutiesContextMenuIcons1
-require=MutiesContextMenuIconsStorage1

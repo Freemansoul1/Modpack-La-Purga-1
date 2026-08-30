@@ -1,3 +1,0 @@
-ItemName_EN = {
-    ItemName_Braven.SpikeStrip = "Spike strip",
-}

@@ -1,8 +1,0 @@
-Sandbox_EN = {
-    Sandbox_zReDSZOF_main = "DONT SET ZOMBIES ON FIRE",
-
-    Sandbox_zReDSZOF_FireDamageMultiple = "Fire damage to zombies. Factor:",
-    Sandbox_zReDSZOF_FireDamageMultiple_tooltip = "For example:<br>1 - vanilla.<br>4 - Fire dmg 4x (burns 4 times faster).<br>0.5 - Fire dmg 0.5x (burns twice as slow).<br>0 - full resist to fire damage.",
-	Sandbox_zReDSZOF_RunChance = "Chance to zombie run. Percent:",
-	Sandbox_zReDSZOF_RunChance_tooltip = "When zombie burn - chance zombie start run every ingame minute.",
-}

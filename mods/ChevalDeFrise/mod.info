@@ -1,6 +1,0 @@
-name=Cheval de frise
-id=ChevalDeFrise1
-description=Mod that add buildable cheval de frise
-pack=defenses
-tiledef=Defenses 308
-poster=poster.png

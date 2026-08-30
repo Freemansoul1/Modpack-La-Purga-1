@@ -1,5 +1,0 @@
-ContextMenu_EN {
-    ContextMenu_FuelName = "Fuel",
-    ContextMenu_AddFuel = "Add Fuel",
-    ContextMenu_AddAllFuel = "Add All",
-}

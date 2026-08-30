@@ -1,0 +1,2 @@
+#npc_create Silk|NPC/Silk.png|11575,7650,0
+#exit

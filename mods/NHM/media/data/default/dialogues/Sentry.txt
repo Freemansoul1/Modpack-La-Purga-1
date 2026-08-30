@@ -1,0 +1,76 @@
+#is_flag sentry_intro,true
+    #jump loop
+
+*intro
+#m Centinela|NPCPortraits/SentryP.png|"Hola, muchach@."
+#m Centinela|NPCPortraits/SentryP.png|"¡Siempre me alegra ver caras nuevas en el Purgatorio!"
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Centinela|NPCPortraits/SentryP.png|"Vuelve si necesitas algo."
+#exit
+
+*intro_hello
+#m "Hola, ¿A qué te dedicas?"
+#m Centinela|NPCPortraits/SentryP.png|"Soy Centinela, ¡Eso es exactamente lo que hago!, Llevo desde los 20 años trabajando aquí..si lo cuento.. ¡casi medio siglo ya!, mantengo el orden, mantengo mis armas listas para defender éste lugar."
+#m Centinela|NPCPortraits/SentryP.png|"Y también veo gente como tú en el camino, si desea dejar el Purgatorio, habla conmigo." 
+#m Centinela|NPCPortraits/SentryP.png|"Pero te aviso que no podrás volver, no está permitido."
+#m Centinela|NPCPortraits/SentryP.png|"Si decides irte, te daré una recompensa adicional si has completado todos los tutoriales. Entonces, para empezar, no olvides estudiarlos todos."
+#m Centinela|NPCPortraits/SentryP.png|"¡Y no te olvides de las tareas!, es mejor terminar todas las tareas de los lugareños antes de partir."
+#m "¡Gracias!"
+#fade_out black
+#set_flag sentry_intro,true
+#fade_in
+#reveal Centinela
+#exit
+
+*loop
+#m Centinela|NPCPortraits/SentryP.png|"¿te vas?"
+
+#choice
+    questSENTRY|Abandonar el Purgatorio
+    tutorial8|[Tutorial 8]
+    quest_exit|Salir
+
+*tutorial8
+    #m Tutorial|NPCPortraits/Tutorial.png|"Hola, muchach@. El equipo del servidor La Purga está en contacto. Este es el octavo tutorial. Recoge los 8 antes de salir del Purgatorio para recibir tu recompensa adicional del Centinela."
+    #m Tutorial|NPCPortraits/Tutorial.png|"Fuera del Purgatorio, encontrarás muchos NPCs diferentes de diferentes facciones, cada uno de ellos puede dar algo: una tarea, comercio, información útil, recursos, etc. Usamos el sistema de Reputación en la interactuación con los NPCs y para comprar en la máquina expendedora qué está en el Oasis. Al completar tareas y negociar, aumentarás tu reputación y podrás por ejemplo acceder a la compra de mejores objetos."
+    #m Tutorial|NPCPortraits/Tutorial.png|"Cada nuevo nivel de Reputación abrirá nuevas oportunidades: tareas, elementos, información valiosa. Esto concluye tu Tutorial. Buena suerte muchach@. Para cualquier pregunta, comuníquese en el servidor de Discord."
+#set_flag tutorial8,true
+#exit
+
+*questSENTRY
+#is_quest cleaner_q1|unlocked,uncompleted
+    #quest_fail cleaner_q1
+#is_quest cook_q1|unlocked,uncompleted
+    #quest_fail cook_q1
+#is_quest Demiurge_q1|unlocked,uncompleted
+    #quest_fail Demiurge_q1
+#is_quest head_q1|unlocked,uncompleted
+    #quest_fail head_q1
+#is_quest pharmacist_q1|unlocked,uncompleted
+    #quest_fail pharmacist_q1
+#is_quest nurse_q1|unlocked,uncompleted
+    #quest_fail nurse_q1
+#is_quest assistant_q1|unlocked,uncompleted
+    #quest_fail assistant_q1
+#is_flag tutorial1,true|tutorial2,true|tutorial3,true|tutorial4,true|tutorial5,true|tutorial6,true|tutorial7,true|tutorial8,true
+    #is_flag tutorial_all,true
+        #m Centinela|NPCPortraits/SentryP.png|"Ya recibiste la recompensa adicional, ¡así que simplemente te deseo buena suerte!"
+        #jump leaveHospital
+    #m Centinela|NPCPortraits/SentryP.png|"¡Guau!, todo el Tutorial completado. ¡Para ésto tengo una recompensa adicional preparada!, encantado de conocerlo."
+    #set_flag tutorial_all,true
+    #reward Base.Money,2,rare
+    #jump leaveHospital
+#m Centinela|NPCPortraits/SentryP.png|"Te perdiste algunos tutoriales, ¡Espero que sepas lo que estás haciendo!, Cuídate."
+*leaveHospital
+#lua while (getPlayer():getInventory():contains("QuestHDailyFood") and getPlayer():getInventory():getItemCount("QuestHDailyFood") > 1)	do getPlayer():getInventory():Remove("QuestHDailyFood") end
+#lua while (getPlayer():getInventory():contains("QuestHDailyWater") and getPlayer():getInventory():getItemCount("QuestHDailyWater") > 1) do getPlayer():getInventory():Remove("QuestHDailyWater") end
+#teleport 11538,7603,0
+#exit
+
+*quest_exit
+#exit

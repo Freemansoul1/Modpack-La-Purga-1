@@ -1,0 +1,19 @@
+#quest ghost_q1|weekly
+    #task t0|hidden|unlocked
+        #set RaiseFlag|zaglooshka|Ghost.txt,reset_ghost_q1
+    #task t1
+        #set GotoLocation|5990,10805,6190,11045,0|true
+        #action UnlockTask|ghost_q1|t2
+    #task t2
+        #set GotoLocation|9170,4880,2|building|false
+        #action UnlockTask|ghost_q1|t3
+    #task t3
+        #set ContextAction|Войти в Сокровищницу|9116,4895,1|2|Ghost.txt,quest1_enter|q1_enter_flag
+        #action UnlockTask|ghost_q1|t4
+        #action UnlockTask|ghost_q1|t5
+    #task t4
+        #set ContextAction|Покинуть Сокровищницу|9109,4895,1|2|Ghost.txt,quest1_exit|q1_exit_flag
+        #action CompleteQuest|ghost_q1
+    #task t5|hidden
+        #set WaitUntil|time|false|120
+        #action RunScript|Ghost.txt,fail_ghost_q1

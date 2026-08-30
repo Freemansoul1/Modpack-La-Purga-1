@@ -1,4 +1,0 @@
-Moveables_EN = {
-	Left_Light_Switch = "Left Light Switch",
-	Right_Light_Switch = "Right Light Switch",
-}

@@ -1,0 +1,40 @@
+module NHM {
+    imports {
+        Base
+    }
+
+    item FullBloodBag
+    {
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Full Blood Bag,
+        Icon = FullBloodBag,
+        DisplayCategory = FirstAid,
+        StaticModel = FullBloodBag,
+        WorldStaticModel = FullBloodBagGround,
+        Tooltip = Tooltip_FullBloodBag,
+    }
+
+    item SalineBag
+    {
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Saline Bag,
+        Icon = SalineBag,
+        DisplayCategory = FirstAid,
+        StaticModel = SalineBag,
+        WorldStaticModel = SalineBagGround,
+        Tooltip = Tooltip_SalineBag,
+    }
+        item SalineBag1
+    {
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Bolsa salina1,
+        Icon = SalineBag,
+        DisplayCategory = FirstAid,
+        StaticModel = SalineBag,
+        WorldStaticModel = SalineBagGround,
+        Tooltip = Tooltip_SalineBag,
+    }
+}

@@ -1,5 +1,0 @@
-ContextMenu_RU = {
-    ContextMenu_Climb_Escape_Rope = "Используйте спусковой комплект",
-    ContextMenu_Add_Escape_Rope = "Развернуть спусковой комплект",
-	ContextMenu_Remove_Escape_Rope = "Снять спусковой комплект",
-}

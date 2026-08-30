@@ -1,0 +1,23 @@
+*silk_q1
+#name Mochila
+#desc Silk te enseña las nociones básicas de Costura y te pide que hagas una mochila.
+#desc
+#desc Las misiones del tutorial se reinician todos los días a las 9 a. m., hora del juego.
+
+*silk_q2
+#name Piel fina
+#desc Silk te enseña los conceptos básicos de Peletería y te pide que le consigas una piel fina. ¡Asegúrate de secar!
+#desc
+#desc Las misiones del tutorial se reinician todos los días a las 9 a. m., hora del juego.
+
+*silk_q3
+#name Oficial
+#desc Silk te pide que uses una pieza de cuero en bruto para crear un material completo para trabajar el cuero.
+#desc
+#desc Las misiones habituales de los artesanos son diarias.
+
+*silk_q4
+#nombre índigo
+#desc Silk te pide que traigas sus materiales de un escondite escondido en algún lugar de West Point.
+#desc
+#desc Las misiones habituales de los artesanos son diarias.

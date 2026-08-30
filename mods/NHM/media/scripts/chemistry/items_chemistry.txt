@@ -1,0 +1,272 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+/***Стекло***/
+item Glass
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Glass,
+		Icon	=	Glass,
+		WorldStaticModel = Glass,
+	}
+
+/***Набор Химика***/
+item ChemKit
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.4,
+		Type	=	Drainable,
+		UseWhileEquipped	= FALSE,
+		UseDelta		= 0.05,
+		ReplaceOnDeplete = ChemKitEmpty,
+		DisplayName	=	ChemKit,
+		Icon	=	ChemKit,
+	}
+
+/***Разряженный Набор Химика***/
+item ChemKitEmpty
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	ChemKitEmpty,
+		Icon	=	ChemKit,
+	}
+
+/***Пластик***/
+item Plastic
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Plastic,
+		Icon	=	Plastic,
+		WorldStaticModel = Plastic,
+	}
+
+/***Резина***/
+item Rubber
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Rubber,
+		Icon	=	Rubber,
+		WorldStaticModel = Rubber,
+	}
+
+/***Порох***/
+item Powder
+	{
+	    DisplayCategory = Chemistry,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Powder,
+		Icon	=	Powder,
+	}
+
+/***Химическая колба***/
+item ChemicalFlask
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	ChemicalFlask,
+		Icon	=	ChemicalFlask,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с Азотной кислотой***/
+item FlaskNitricAcid
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskNitricAcid,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		Icon	=	FlaskNitricAcid,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с щелочью***/
+item FlaskAlkali
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.25,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		DisplayName	=	FlaskAlkali,
+		Icon	=	FlaskAlkali,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с хлорной кислотой***/
+item FlaskChloricAcid
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.25,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		DisplayName	=	FlaskChloricAcid,
+		Icon	=	FlaskChloricAcid,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с азотом***/
+item FlaskNitrogen
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.25,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		DisplayName	=	FlaskNitrogen,
+		Icon	=	FlaskNitrogen,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с аммиаком***/
+item FlaskAmmonia
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskAmmonia,
+		Icon	=	FlaskAmmonia,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с калийной селитрой***/
+item FlaskPotassiumNitrate
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskPotassiumNitrate,
+		Icon	=	FlaskPotassiumNitrate,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с салицилатом***/
+item FlaskSalicylate
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskSalicylate,
+		Icon	=	FlaskSalicylate,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба со спиртом***/
+item FlaskAlcohol
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskAlcohol,
+		Icon	=	FlaskAlcohol,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба со спорами грибов***/
+item FlaskFungalSpores
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskFungalSpores,
+		Icon	=	FlaskFungalSpores,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Колба с серной кислотой***/
+item FlaskSulphuricAcid
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskSulphuricAcid,
+		Icon	=	FlaskSulphuricAcid,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Горсть соли***/
+item SaltPinch
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	SaltPinch,
+		Icon	=	SaltPinch,
+		WorldStaticModel = SaltPinch,
+	}
+
+/***Катализатор***/
+item FlaskCatalyst
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskCatalyst,
+		Icon	=	FlaskCatalyst,
+		WorldStaticModel = ChemicalFlask,
+	}
+
+/***Зола***/
+item WoodAsh
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	WoodAsh,
+		Icon	=	WoodAsh,
+		WorldStaticModel = SaltPinch,
+	}
+
+/***Известняк***/
+item Limestone
+    {
+        DisplayCategory = Chemistry,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Limestone,
+		Icon	=	Limestone,
+		WorldStaticModel = SaltPinch,
+	}
+
+}

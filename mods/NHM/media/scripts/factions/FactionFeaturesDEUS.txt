@@ -1,0 +1,477 @@
+module Base
+{		
+	/***КУЛЬТ***/
+    item CultArmor2
+   	{
+        Type = Clothing,
+        DisplayName = Cult Armor,
+        ClothingItem = CultArmor2,
+        BodyLocation = TorsoExtra,
+        Icon = CultArmor2,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 70,
+		BiteDefense = 70,
+		BulletDefense = 70,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 3,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Chest",
+    }
+    
+    item Hat_CultMask2
+	{
+		Type = Clothing,
+		DisplayName = Cult Mask,
+		ClothingItem = Hat_CultMask2,
+		BodyLocation = MaskEyes,
+		IconsForTexture = CultMask2,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 35,
+		ScratchDefense = 35,
+		BulletDefense = 35,
+		ChanceToFall = 1,
+		Insulation = 0,
+		WaterResistance = 0.75,
+        RemoveOnBroken = false,
+        Weight = 2,
+        CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 3,
+        BreakSound			= BreakMetalItem,
+		Tooltip 		= "Improvised Protection of The Face From Metal",
+    }
+	
+	item Hat_CultHelmet2
+	{
+		Type = Clothing,
+		DisplayName = Cult Helmet,
+		ClothingItem = Hat_CultHelmet2,
+		BodyLocation = Hat,
+		IconsForTexture = CultHelmet2,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 35,
+		ScratchDefense = 35,
+		BulletDefense = 35,
+		ChanceToFall = 1,
+		Insulation = 0,
+		WaterResistance = 0.75,
+        RemoveOnBroken = false,
+        Weight = 2,
+        CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 3,
+        BreakSound			= BreakMetalItem,
+		Tooltip 		= "Improvised Protection of The Head From Metal",
+    }
+
+    item CultPauldrons2
+	{
+	    Type = Clothing,
+		DisplayName = Cult Pauldrons,
+		ClothingItem = CultPauldrons2,
+		BodyLocation = Pauldrons,
+		Icon = CultPauldrons2,
+		CanHaveHoles = True,
+		BloodLocation = Neck,
+		BiteDefense = 70,
+		ScratchDefense = 70,
+		BulletDefense = 70,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 1,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 3,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Neck",
+    }
+
+    /***ДЕУС***/
+	item Tabard
+   	{
+        Type = Clothing,
+        DisplayName = Tabard,
+        ClothingItem = Tabard,
+        BodyLocation = TorsoExtra,
+        Icon = Tabard,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 70,
+		BiteDefense = 70,
+		BulletDefense = 70,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 2,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 3,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Chest",
+    }
+
+    item Chainmail
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Chainmail,
+        ClothingItem = Chainmail,
+        BodyLocation = JacketHat,
+        Icon = Chainmail,
+        BloodLocation = Shirt;FullHelmet;Trousers,
+        RunSpeedModifier = 0.9,
+        ClothingItemExtra = ChainmailDOWN,
+        ClothingItemExtraOption = DownHoodie,
+        clothingExtraSubmenu = UpHoodie,
+        ScratchDefense = 10,
+        Insulation = 0.1,
+        WindResistance = 0.35,
+        WaterResistance = 0.3,
+        WorldStaticModel = Chainmail,
+    }
+
+    item ChainmailDOWN
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Chainmail,
+        ClothingItem = ChainmailDOWN,
+        BodyLocation = Jacket,
+        Icon = Chainmail,
+        BloodLocation = Shirt;FullHelmet;Trousers,
+        RunSpeedModifier = 0.9,
+        ClothingItemExtra = Chainmail,
+        ClothingItemExtraOption = UpHoodie,
+        clothingExtraSubmenu = DownHoodie,
+        ScratchDefense = 10,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.15,
+        WindResistance = 0.35,
+        WaterResistance = 0.3,
+        WorldStaticModel = Chainmail,
+    }
+
+    item Trousers_Medival
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Medival Pants,
+        ClothingItem = Trousers_Medival,
+        BodyLocation = Pants,
+        BloodLocation = Trousers,
+        Icon = MedivalPants,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        RunSpeedModifier = 0.98,
+        Insulation = 0.65,
+        WindResistance = 0.60,
+        FabricType = Denim,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+    /***ЛВК***/
+    item LVKArmor
+   	{
+        Type = Clothing,
+        DisplayName = LVKArmor,
+        ClothingItem = LVKArmor,
+        BodyLocation = TorsoExtra,
+		CanBeEquipped = TorsoExtra,
+        Icon = LVKArmor,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 50,
+		BiteDefense = 50,
+		BulletDefense = 70,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 4,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Chest",
+    }
+	
+	item LVKHelmet
+	{
+		Type = Clothing,
+		DisplayName = LVKHelmet,
+		ClothingItem = LVKHelmet,
+		BodyLocation = FullHat,
+		IconsForTexture = LVKHelmet,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 50,
+		ChanceToFall = 1,
+		Insulation = 0,
+		WaterResistance = 0.75,
+        Weight = 1.5,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip 		= "Improvised Protection of The Head From Metal",
+    }
+
+    item LVKBracer
+	{
+	    Type = Clothing,
+		DisplayName = LVKBracer,
+		ClothingItem = LVKBracer,
+		BodyLocation = LowerArms,
+		Icon = LVKBracer,
+		BloodLocation = LowerArms,
+        Insulation = 0.15,
+        WindResistance = 0.15,
+        Weight = 2,
+        ScratchDefense = 75,
+		BiteDefense = 75,
+		BulletDefense = 65,
+        RemoveOnBroken = false,
+		CanHaveHoles = true,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your hand",
+    }
+
+    /***ББНБ***/
+    item BBNBArmor
+   	{
+        Type = Clothing,
+        DisplayName = BBNBArmor,
+        ClothingItem = BBNBArmor,
+        BodyLocation = TorsoExtra,
+		CanBeEquipped = TorsoExtra,
+        Icon = BBNBArmor,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 50,
+		BiteDefense = 50,
+		BulletDefense = 70,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 4,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Chest",
+    }
+	
+	item BBNBHelmet
+	{
+		Type = Clothing,
+		DisplayName = BBNBHelmet,
+		ClothingItem = Hat_BBNBHelmet,
+		BodyLocation = FullHat,
+		IconsForTexture = BBNBHelmet,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 50,
+		ChanceToFall = 1,
+		Insulation = 0,
+		WaterResistance = 0.75,
+        Weight = 1.5,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip 		= "Improvised Protection of The Head From Metal",
+    }
+
+    item BBNBBracer
+	{
+	    Type = Clothing,
+		DisplayName = BBNBBracer,
+		ClothingItem = BBNBBracer,
+		BodyLocation = LowerArms,
+		Icon = BBNBBracer,
+		BloodLocation = LowerArms,
+        Insulation = 0.15,
+        WindResistance = 0.15,
+        Weight = 2,
+        ScratchDefense = 75,
+		BiteDefense = 75,
+		BulletDefense = 65,
+        RemoveOnBroken = false,
+		CanHaveHoles = true,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your hand",
+    }
+
+    item BBNBLegPads
+	{
+	    Type = Clothing,
+		DisplayName = BBNBLegPads,
+		ClothingItem = BBNBLegPads,
+		BodyLocation = LowerLegs,
+        BloodLocation = LowerLegs,
+        Icon = BBNBLegPads,
+		ScratchDefense = 55,
+		BiteDefense = 55,
+		BulletDefense = 45,
+        Weight = 2,
+        RemoveOnBroken = false,
+		CanHaveHoles = true,
+		ConditionLowerChanceOneIn = 2,
+		ConditionMax = 4,
+		BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Shin",
+    }
+
+
+
+    /***КИНГ***/
+    item KINGArmor
+   	{
+        Type = Clothing,
+        DisplayName = KINGArmor,
+        ClothingItem = KINGArmor,
+        BodyLocation = TorsoExtra,
+		CanBeEquipped = TorsoExtra,
+        Icon = KINGArmor,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 50,
+		BiteDefense = 50,
+		BulletDefense = 70,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 4,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Chest",
+    }
+	
+	item KINGHelmet
+	{
+		Type = Clothing,
+		DisplayName = KINGHelmet,
+		ClothingItem = KINGHelmet,
+		BodyLocation = FullHat,
+		IconsForTexture = KINGHelmet,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 50,
+		ChanceToFall = 1,
+		Insulation = 0,
+		WaterResistance = 0.75,
+        Weight = 1.5,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip 		= "Improvised Protection of The Head From Metal",
+    }
+
+    item KINGBracer
+	{
+	    Type = Clothing,
+		DisplayName = KINGBracer,
+		ClothingItem = KINGBracer,
+		BodyLocation = LowerArms,
+		Icon = KINGBracer,
+		BloodLocation = LowerArms,
+        Insulation = 0.15,
+        WindResistance = 0.15,
+        Weight = 2,
+        ScratchDefense = 75,
+		BiteDefense = 75,
+		BulletDefense = 65,
+        RemoveOnBroken = false,
+		CanHaveHoles = true,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 4,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your hand",
+    }
+
+
+
+    item KINGMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	KINGMag,
+        Icon	=	DEUSMag,
+        TeachedRecipes  =   Make KINGArmor;Fix KINGArmor;Make KINGHelmet;Fix KINGHelmet;Make KINGBracer;Fix KINGBracer;Make KINGLegPads;Fix KINGLegPads,
+        ReplaceOnUse    =   KINGMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmGround,
+    }
+
+    item BBNBMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	BBNBMag,
+        Icon	=	DEUSMag,
+        TeachedRecipes  =   Make BBNBArmor;Fix BBNBArmor;Make BBNBHelmet;Fix BBNBHelmet;Make BBNBBracer;Fix BBNBBracer;Make BBNBLegPads;Fix BBNBLegPads,
+        ReplaceOnUse    =   BBNBMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmGround,
+    }
+
+	item CULTMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Cult Mag,
+        Icon	=	CULTMag,
+        TeachedRecipes  =   Make CultArmor2;Fix CultArmor2;Make CultMask2;Fix CultMask2;Make CultHelmet2;Fix CultHelmet2;Make CultPauldrons2;Fix CultPauldrons2,
+        ReplaceOnUse    =   CULTMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmGround,
+    }
+
+    item DEUSMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Deus Mag,
+        TeachedRecipes  =   Make Tabard;Fix Tabard;Make Chainmail;Make Trousers Medival,
+        Icon	=	DEUSMag,
+        ReplaceOnUse    =   DEUSMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmGround,
+    }
+
+    item LVKMag
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	LVK Mag,
+        TeachedRecipes  =   Make LVKArmor;Fix LVKArmor;Make LVKHelmet;Fix LVKHelmet;Make LVKBracer;Fix LVKBracer,
+        Icon	=	DEUSMag,
+        ReplaceOnUse    =   LVKMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmGround,
+    }
+}

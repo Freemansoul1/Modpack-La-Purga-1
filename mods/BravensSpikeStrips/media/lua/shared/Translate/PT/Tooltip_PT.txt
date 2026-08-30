@@ -1,3 +1,0 @@
-Tooltip_PT = {
-	Tooltip_item_SpikeStrip = "Solte ou coloque-os no chão para furar os pneus de qualquer carro que passe.",
-}

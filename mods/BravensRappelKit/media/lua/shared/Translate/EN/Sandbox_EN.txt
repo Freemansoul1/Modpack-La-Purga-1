@@ -1,6 +1,0 @@
-Sandbox_EN = {
-    Sandbox_RappelKit = "Rappel Kit",
-    Sandbox_RappelKit_MaxFloor = "Maximum Floor",
-    Sandbox_RappelKit_DeleteOnUse = "Delete on Use",
-    Sandbox_RappelKit_WorksBothWays = "Works Both Ways",
-}

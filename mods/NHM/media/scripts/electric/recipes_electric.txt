@@ -1,0 +1,486 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+    recipe Make Battery
+    {
+        SiliconOre,
+        UnusableMetal,
+        SulfurPowder,
+        keep Screwdriver,
+        Result:Battery,
+        NearItem:Electric Workbench,
+        Time:200.0,
+        Category:Electrical,
+        OnGiveXP:Electricity3_OnGiveXP,
+    }
+
+    recipe Make BatteryCharger
+    {
+        SiliconOre=4,
+        IngotCopper,
+        IngotSteel,
+        LightBulb=2,
+        ElectricWire=4,
+        Plastic=4,
+        keep Screwdriver,
+        Result:BatteryCharger,
+        SkillRequired:Electricity=4,
+        NearItem:Electric Workbench,
+        Time:400.0,
+        Category:Electrical,
+        OnGiveXP:Electricity30_OnGiveXP,
+    }
+
+    recipe Charge Battery
+    {
+        BatteryCharger,
+        destroy Battery,
+        Result:Battery,
+        Time:300.0,
+        Category:Electrical,
+        CanBeDoneFromFloor:true,
+    }
+
+   /***СОЗДАТЬ ЛАМПОЧКУ***/
+   recipe Make Bulb
+   {
+      Glass=3,
+      ElectronicsScrap,
+      Result:LightBulb,
+      Time:80.0,
+      Category:Electrical,
+      NearItem:Stone Furnace,
+      SkillRequired:Electricity=1,
+      OnGiveXP:Electricity3_OnGiveXP,
+   }
+
+    recipe Make Noise Maker
+    {
+       ElectronicsScrap=4,
+       Amplifier,
+       SiliconOre,
+       Plastic=2,
+       Battery=100000,
+       keep Screwdriver,
+       Result:NoiseTrap,
+       SkillRequired:Electricity=2,
+       Time:120.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity12_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make Amplifier
+    {
+       ElectronicsScrap=4,
+       SiliconOre,
+       ElectricWire,
+       keep Screwdriver,
+       Result:Amplifier,
+       Time:120.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make RadioTransmitter
+    {
+       ElectronicsScrap=5,
+       SiliconOre,
+       ElectricWire,
+       keep Screwdriver,
+       Result:RadioTransmitter,
+       Time:120.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make RadioReceiver
+    {
+       ElectronicsScrap=5,
+       SiliconOre,
+       ElectricWire,
+       keep Screwdriver,
+       Result:RadioReceiver,
+       Time:120.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make ElectricWire
+    {
+       IngotCopper,
+       keep Screwdriver,
+       Result:ElectricWire=4,
+       Time:500.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make WristWatchLeftDigitalRed
+    {
+       ElectronicsScrap=3,
+       ElectricWire,
+       Glass,
+       Plastic,
+       keep Screwdriver,
+       Result:WristWatch_Left_DigitalRed,
+       Time:200.0,
+       NearItem:Electric Workbench,
+       LightBulb,
+       SkillRequired:Electricity=1,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make HandTorch
+    {
+       ElectronicsScrap=2,
+       ElectricWire,
+       Glass,
+       Plastic=2,
+       LightBulb,
+       Battery=100000,
+       keep Screwdriver,
+       Result:HandTorch,
+       Time:200.0,
+       NearItem:Electric Workbench,
+       SkillRequired:Electricity=1,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make Torch
+    {
+       ElectronicsScrap=3,
+       ElectricWire=2,
+       Glass,
+       LightBulb,
+       Plastic=4,
+       Battery=100000,
+       keep Screwdriver,
+       Result:Torch,
+       Time:200.0,
+       NearItem:Electric Workbench,
+       SkillRequired:Electricity=2,
+       OnGiveXP:Electricity8_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make WalkieTalkie1
+    {
+       ElectronicsScrap=5,
+       RadioTransmitter,
+       RadioReceiver,
+       Battery=100000,
+       ElectricWire,
+       SiliconOre,
+       Plastic=2,
+        LightBulb,
+       keep Screwdriver,
+       Result:WalkieTalkie1,
+       SkillRequired:Electricity=2,
+       Time:200.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity8_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make WalkieTalkie2
+    {
+       ElectronicsScrap=7,
+       RadioTransmitter,
+       RadioReceiver,
+       ElectricWire=2,
+       Battery=100000,
+       SiliconOre,
+       Plastic=2,
+        LightBulb,
+       Glass,
+       keep Screwdriver,
+       Result:WalkieTalkie2,
+       SkillRequired:Electricity=3,
+       OnGiveXP:Electricity12_OnGiveXP,
+       Time:250.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make WalkieTalkie3
+    {
+       ElectronicsScrap=9,
+       RadioTransmitter,
+       RadioReceiver,
+       Battery=100000,
+       Amplifier=2,
+       ElectricWire=3,
+       SiliconOre=2,
+       Plastic=2,
+        LightBulb,
+       Glass,
+       keep Screwdriver,
+       Result:WalkieTalkie3,
+       SkillRequired:Electricity=4,
+       OnGiveXP:Electricity15_OnGiveXP,
+       Time:300.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make HamRadio1
+    {
+       ElectronicsScrap=12,
+       RadioTransmitter,
+       RadioReceiver,
+       Battery=100000,
+       Amplifier=3,
+       ElectricWire=4,
+       SiliconOre=3,
+        LightBulb=2,
+       keep Screwdriver,
+       Result:HamRadio1,
+       SkillRequired:Electricity=5,
+       OnGiveXP:Electricity20_OnGiveXP,
+       Time:350.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make RadioRed
+    {
+       ElectronicsScrap=9,
+       Amplifier,
+       RadioReceiver,
+       Battery=100000,
+       SiliconOre=2,
+       ElectricWire=4,
+       keep Screwdriver,
+       Result:RadioRed,
+       SkillRequired:Electricity=5,
+       OnGiveXP:Electricity20_OnGiveXP,
+       Time:350.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make WalkieTalkie4
+    {
+       ElectronicsScrap=12,
+       Amplifier=4,
+       RadioTransmitter,
+       Battery=100000,
+       RadioReceiver,
+       SiliconOre=2,
+       ElectricWire=4,
+        LightBulb,
+       keep Screwdriver,
+       Result:WalkieTalkie4,
+       SkillRequired:Electricity=6,
+       OnGiveXP:Electricity25_OnGiveXP,
+       Time:400.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make WalkieTalkie5
+    {
+       ElectronicsScrap=14,
+       Amplifier=5,
+       RadioTransmitter,
+       Battery=100000,
+       RadioReceiver,
+       SiliconOre=4,
+        LightBulb,
+       keep Screwdriver,
+       Result:WalkieTalkie5,
+       SkillRequired:Electricity=7,
+       OnGiveXP:Electricity30_OnGiveXP,
+       Time:450.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+    
+    recipe Make HamRadio2
+    {
+       ElectronicsScrap=30,
+       Amplifier=8,
+       SiliconOre=6,
+       Battery=100000,
+       RadioTransmitter=2,
+       RadioReceiver=2,
+        LightBulb=3,
+       Result:HamRadio2,
+       keep Screwdriver,
+       SkillRequired:Electricity=8,
+       OnGiveXP:Electricity35_OnGiveXP,
+       Time:500.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make Generator
+    {
+       ElectronicsScrap=50,
+       Amplifier=10,
+       SiliconOre=10,
+       ScrapMetal=10,
+       keep Screwdriver,
+        LightBulb,
+       Result:Base.Generator,
+       SkillRequired:Electricity=9,
+       Time:500.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity75_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make TvBlack
+    {
+       ElectronicsScrap=15,
+       Amplifier=2,
+       RadioReceiver,
+       Battery=100000,
+       SiliconOre=4,
+       ElectricWire=6,
+        LightBulb=4,
+       keep Screwdriver,
+       Result:TvBlack,
+       SkillRequired:Electricity=5,
+       OnGiveXP:Electricity20_OnGiveXP,
+       Time:300.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make CarBatteryCharger
+    {
+       ElectronicsScrap=8,
+       Amplifier=2,
+       SiliconOre=6,
+       ElectricWire=6,
+       LightBulb=4,
+       CarBattery1/CarBattery2/CarBattery3,
+		 FlaskSulphuricAcid,
+       keep Screwdriver,
+       Result:CarBatteryCharger,
+       SkillRequired:Electricity=5,
+       OnGiveXP:Electricity20_OnGiveXP,
+       Time:300.0,
+       NearItem:Electric Workbench,
+       Category:Electrical,
+    }
+
+    recipe Make CDplayer
+    {
+       ElectronicsScrap=3,
+       Battery=100000,
+       Plastic,
+       SiliconOre,
+       keep Screwdriver,
+       Result:CDplayer,
+       SkillRequired:Electricity=1,
+       Time:100.0,
+       NearItem:Electric Workbench,
+       OnGiveXP:Electricity5_OnGiveXP,
+       Category:Electrical,
+    }
+
+    recipe Make GeigerCounter
+   {
+      ElectronicsScrap=4,
+      Battery=100000,
+      Plastic=3,
+      Glass,
+      ElectricWire=2,
+      SiliconOre,
+      keep Screwdriver,
+      Result:GeigerCounter,
+      SkillRequired:Electricity=2,
+      Time:150.0,
+      NearItem:Electric Workbench,
+      OnGiveXP:Electricity8_OnGiveXP,
+      Category:Electrical,
+   }
+
+    recipe Make PoisonAnalyzer
+   {
+      ElectronicsScrap=6,
+      Battery=100000,
+      SiliconOre=2,
+      ElectricWire=2,
+      LightBulb,
+      Result:PoisonAnalyzer,
+      SkillRequired:Electricity=3,
+      Time:200.0,
+      NearItem:Electric Workbench,
+      OnGiveXP:Electricity12_OnGiveXP,
+      Category:Electrical,
+   }
+
+   recipe Get FakeInfection
+   {
+      PoisonAnalyzer,
+      Result:PoisonAnalyzer,
+      Time:30.0,
+      OnCreate:PoisonAnalyzer_OnCreate,
+      Category:Health,
+      IsHidden:true,
+   }
+
+   recipe Make HatPNV
+   {
+      Microchip=2,
+      ElectronicsScrap=6,
+      Glass=2,
+      DyeGreen=2,
+      Battery=100000,
+      LightBulb=2,
+      SiliconOre,
+      ElectricWire=2,
+      Belt2,
+      Result:Hat_PNV,
+      SkillRequired:Electricity=6,
+      OnGiveXP:Electricity20_OnGiveXP,
+      Time:300.0,
+      NearItem:Electric Workbench,
+      Category:Electrical,
+   }
+
+   recipe Fix HatPNV
+   {
+      ElectronicsScrap=3,
+      ElectricWire,
+      Battery=100000,
+      Hat_PNV,
+      Result:Hat_PNV,
+      NoBrokenItems:false,
+      SkillRequired:Electricity=5,
+      OnGiveXP:Electricity8_OnGiveXP,
+      Time:300.0,
+      NearItem:Electric Workbench,
+      Category:Electrical,
+   }
+
+   recipe Make VirusTester
+   {
+      ElectronicsScrap=4,
+      Battery=100000,
+      SiliconOre=2,
+      ElectricWire=2,
+      LightBulb,
+      InfectedSample,
+      Result:VirusTester,
+      SkillRequired:Electricity=2,
+      OnGiveXP:Electricity8_OnGiveXP,
+      Time:300.0,
+      NearItem:Electric Workbench,
+      Category:Electrical,
+   }
+}

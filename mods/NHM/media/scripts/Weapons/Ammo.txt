@@ -1,0 +1,36 @@
+module NHM
+{
+	imports	{Base}	
+    
+	item LightArrow
+	{
+		Weight 						= 0.03,
+		Type 						= Normal,
+		DisplayName 				= Arrow,
+		DisplayCategory 			= Arrows,
+		Icon 						= LightArrow,
+		WorldStaticModel 			= LightArrow,
+	}
+
+	recipe Make Light Arrow 
+	{
+		WoodenStick=2,
+		SheetPaper2/Feather,
+		keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete/SharpedStone,
+		Result:LightArrow=2,
+		NearItem:Engineer Workbench,
+		OnGiveXP:Engineer2_OnGiveXP,
+		Category:Engineer,
+		Time:150.0,
+	}
+
+	item RepairKit
+	{
+		Weight 						= 1,
+		Type 						= Drainable,
+		UseWhileEquipped			= false,
+		UseDelta					= 0.2,
+		DisplayName 				= RepairKit,
+		Icon 						= RepairKit,
+	}
+}

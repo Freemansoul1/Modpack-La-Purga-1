@@ -1,5 +1,0 @@
-ContextMenu_EN = {
-    ContextMenu_Climb_Escape_Rope = "Use Rappel Kit",
-    ContextMenu_Add_Escape_Rope = "Deploy Rappel Kit",
-	ContextMenu_Remove_Escape_Rope = "Remove Rappel Kit",
-}

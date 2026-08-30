@@ -1,0 +1,255 @@
+module Base
+{		
+	
+	item LeatherArmor
+   	{
+        Type = Container,
+        DisplayName = Leather Armor,
+        BodyLocation = TorsoExtra,
+		CanBeEquipped = TorsoExtra,
+        Icon = LeatherArmor,
+        BloodLocation = UpperBody; LowerBody,
+
+		Capacity	=	10,
+		WeightReduction	=	90,
+
+		OpenSound   =   BackpackOpen,
+        CloseSound   =   BackpackOpen,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = LeatherArmor,
+		ClothingItemExtra = LeatherArmor,
+        ClothingItemExtraOption = WearIt,
+
+		ScratchDefense = 80,
+		BiteDefense = 80,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 1.5,
+
+        ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+
+        RemoveOnBroken = false,
+		Tooltip = "Protects your Chest",
+    }
+
+	    item LeatherBelt
+	{
+	    Type = Container,
+		DisplayName = Leather Belt,
+		ClothingItem = LeatherBelt,
+		BodyLocation = LowerBody,
+		CanBeEquipped = LowerBody,
+		Icon = LeatherBelt,
+		BloodLocation = UpperLegs;Groin,
+
+		Capacity	=	15,
+		WeightReduction	=	90,
+
+		BiteDefense = 55,
+		ScratchDefense = 55,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.7,
+
+		ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+
+        RemoveOnBroken = false,
+		Tooltip = "Protects your Waist",
+    }
+
+	item LeatherPauldrons
+	{
+	    Type = Clothing,
+		DisplayName = Leather Pauldrons,
+		ClothingItem = LeatherPauldrons,
+		BodyLocation = Pauldrons,
+		Icon = LeatherPauldrons,
+		CanHaveHoles = True,
+		BloodLocation = Neck,
+		BiteDefense = 35,
+		ScratchDefense = 35,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.7,
+		ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+		Tooltip = "Protects your Neck",
+    }
+
+    item LeatherLegPadL
+	{
+	    Type = Clothing,
+		DisplayName = Left Leather Leg Pad,
+		ClothingItem = LeatherLegPadL,
+		BodyLocation = ThighLeft,
+		Icon = LeatherLegPadL,
+		CanHaveHoles = True,
+		BloodLocation = Trousers,
+		BiteDefense = 35,
+		ScratchDefense = 35,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.3,
+		ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+		Tooltip = "Protects your Leg",
+    }
+	
+	item LeatherLegPadR
+	{
+	    Type = Clothing,
+		DisplayName = Right Leather Leg Pad,
+		ClothingItem = LeatherLegPadR,
+		BodyLocation = ThighRight,
+		Icon = LeatherLegPadR,
+		CanHaveHoles = True,
+		BloodLocation = Trousers,
+		BiteDefense = 35,
+		ScratchDefense = 35,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.3,
+		ConditionLowerChanceOneIn = 15,
+        ConditionMax = 15,
+        RemoveOnBroken = false,
+		Tooltip = "Protects your Leg",
+    }
+
+    item LeatherShoulderPadL
+	{
+	    Type = Clothing,
+		DisplayName = Left Leather Shoulder Pad,
+		ClothingItem = LeatherShoulderPadL,
+		BodyLocation = UpperArmLeft,
+		Icon = LeatherShoulderPadL,
+		CanHaveHoles = True,
+		BloodLocation = UpperArms,
+		BiteDefense = 25,
+		ScratchDefense = 25,
+		BulletDefense = 25,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.5,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 2,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Shoulder",
+    }
+	
+	item LeatherShoulderPadR
+	{
+	    Type = Clothing,
+		DisplayName = Right Leather Shoulder Pad,
+		ClothingItem = LeatherShoulderPadR,
+		BodyLocation = UpperArmRight,
+		Icon = LeatherShoulderPadR,
+		CanHaveHoles = True,
+		BloodLocation = UpperArms,
+		BiteDefense = 25,
+		ScratchDefense = 25,
+		BulletDefense = 25,
+		Insulation = 0,
+		WaterResistance = 0,
+        Weight = 0.5,
+		ConditionLowerChanceOneIn = 2,
+        ConditionMax = 2,
+        RemoveOnBroken = false,
+        CanHaveHoles = true,
+        BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Shoulder",
+    }
+
+	item LeatherBracerR
+	{
+		Type = Clothing,
+		DisplayName = Leather Right Bracer,
+		ClothingItem = LeatherBracerR,
+		BodyLocation = HandPlateRight,
+		BloodLocation = Hands,
+		Icon = LeatherBracerR,
+		ScratchDefense = 25,
+		BiteDefense = 25,
+		BulletDefense = 25,
+		Weight = 0.3,
+		Insulation = 0,
+		WindResistance = 0,
+		CanHaveHoles = true,
+        RemoveOnBroken = false,
+		ConditionLowerChanceOneIn = 2,
+		ConditionMax = 2,
+		BreakSound			= BreakMetalItem,
+		Tooltip    =    "Protects your hand",
+	}
+	
+	item LeatherBracerL
+	{
+		Type = Clothing,
+		DisplayName = Leather Left Bracer,
+		ClothingItem = LeatherBracerL,
+		BodyLocation = HandPlateLeft,
+		BloodLocation = Hands,
+		Icon = LeatherBracerL,
+		ScratchDefense = 25,
+		BiteDefense = 25,
+		BulletDefense = 25,
+		Weight = 0.3,
+		Insulation = 0,
+		WindResistance = 0,
+		CanHaveHoles = true,
+        RemoveOnBroken = false,
+		ConditionLowerChanceOneIn = 1,
+		ConditionMax = 2,
+		BreakSound			= BreakMetalItem,
+		Tooltip    =    "Protects your hand",
+	}
+
+	item LeatherShinPlateR
+	{
+		Type = Clothing,
+		DisplayName = Leather Right Greaves,
+		ClothingItem = LeatherShinPlateR,
+		BodyLocation = ShinPlateRight,
+		BloodLocation = Trousers,
+		Icon = LeatherShinPlateR,
+		ScratchDefense = 25,
+		BiteDefense = 25,
+		BulletDefense = 25,
+		Weight = 0.5,
+		Insulation = 0,
+		WindResistance = 0,
+		CanHaveHoles = false,
+        RemoveOnBroken = true,
+		ConditionLowerChanceOneIn = 2,
+		ConditionMax = 2,
+		BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Shin",
+	}
+	
+	item LeatherShinPlateL
+	{
+		Type = Clothing,
+		DisplayName = Leather Left Greaves,
+		ClothingItem = LeatherShinPlateL,
+		BodyLocation = ShinPlateLeft,
+		BloodLocation = Trousers,
+		Icon = LeatherShinPlateL,
+		ScratchDefense = 25,
+		BiteDefense = 25,
+		BulletDefense = 25,
+		Weight = 0.5,
+		Insulation = 0,
+		WindResistance = 0,
+		CanHaveHoles = true,
+        RemoveOnBroken = false,
+		ConditionLowerChanceOneIn = 2,
+		ConditionMax = 2,
+		BreakSound			= BreakMetalItem,
+		Tooltip = "Protects your Shin",
+	}
+}

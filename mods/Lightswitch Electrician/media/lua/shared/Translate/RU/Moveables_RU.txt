@@ -1,4 +1,0 @@
-Moveables_RU = {
-	Left_Light_Switch = "Левый выключатель света",
-	Right_Light_Switch = "Правый выключатель света",
-}

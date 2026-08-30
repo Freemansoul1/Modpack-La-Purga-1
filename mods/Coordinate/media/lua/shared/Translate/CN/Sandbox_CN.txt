@@ -1,4 +1,0 @@
-Sandbox_CN = {
-	Sandbox_DisplayLocationEnable = "显示坐标",
-	Sandbox_DisplayLocationEnable_tooltip = "启用后将在信息栏显示玩家当前坐标",
-}

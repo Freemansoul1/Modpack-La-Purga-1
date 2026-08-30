@@ -1,8 +1,0 @@
-VERSION = 1,
-
-option interiorLock.KeepMainDoorLockableWithoutKey = {
-	type = boolean,
-	default = true,
-	page = interiorLock,
-	translation = interiorLockKeepMainDoorLockableWithoutKey,
-}

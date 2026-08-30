@@ -1,6 +1,0 @@
-name=Bloodlust Trait - Cost 8 points
-id=BloodlustTrait8Points1
-require=BloodlustTrait1
-icon=icon.png
-poster=poster.png
-description=Allows to pick the trait for 8 points

@@ -1,5 +1,0 @@
-ItemName_RU = {
-    ItemName_Base.RappelRope = "Спусковая веревка",
-    ItemName_Base.SwissSeat = "Альпинистская обвязка",
-	ItemName_Base.EscapeRope = "Спусковой комплект",
-}

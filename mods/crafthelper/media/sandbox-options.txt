@@ -1,9 +1,0 @@
-VERSION = 1,
-
-option WastelandPerformanceMonitor.Enabled
-{
-  type = boolean,
-  default = false,
-  page = WastelandPerformanceMonitor,
-  translation = WastelandPerformanceMonitor.Enabled,
-}

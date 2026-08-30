@@ -1,0 +1,445 @@
+module NHM
+{
+	imports	{Base}
+
+/**********************Войлок****************************/
+
+
+	recipe Make HandWraps
+	{
+        RippedSheets=6,
+        Result:HandWraps,
+        Time:250.0,
+        Sound:ClothesRipping,
+        AnimNode:RipSheets,		
+        Category:Sewing,
+	}
+
+	recipe Make SurvivalShirt
+	{
+        RippedSheets=12,
+        Result:SurvivalShirt,
+        Time:250.0,
+        Sound:ClothesRipping,
+        AnimNode:RipSheets,		
+        Category:Sewing,
+	}
+	
+	recipe Make Felt
+	{
+		Wool=3,
+		keep Needle,
+		keep Scissors,
+		Result:Felt,
+        NearItem:Tailor Workbench,
+		Time:200.0,
+		Category:Sewing,
+		OnGiveXP:Tailoring3_OnGiveXP,
+        CanBeDoneFromFloor:true,
+    }
+
+	recipe Make Kotomka
+	{
+        Sheet/Shirt_FormalWhite/Shirt_Lumberjack/Shirt_OfficerWhite/Shirt_PoliceBlue/Shirt_PrisonGuard/Shirt_Ranger/Shirt_Priest/Shirt_PoliceGrey/Tshirt_Sport/Shirt_Workman,
+        SheetRope,
+        Result:Kotomka,
+        Time:250.0,
+        Sound:ClothesRipping,
+        AnimNode:RipSheets,		
+        Category:Sewing,
+	}
+
+	recipe Make BrezentBag
+	{
+        Sheet=4,
+        Tarp=2,
+        Thread=10,
+        Belt2=2,
+        keep Scissors,
+        keep Needle,
+        Result:SumkaBrezent,
+        Time:250.0,
+        Sound:ClothesRipping,
+        SkillRequired:Tailoring=4,
+        AnimNode:RipSheets,		
+        Category:Sewing,
+	}
+
+	recipe Make Thread
+	{
+        RippedSheets/RippedSheetsDirty=50,
+		keep Scissors,
+		Result:Thread,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		OnGiveXP:Tailoring3_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Thread Alt
+	{
+		Wool=2,
+		keep Scissors,
+		Result:Thread,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		OnGiveXP:Tailoring3_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Eyepatch
+	{
+		Thread=2,
+		keep Scissors,
+		keep Needle,
+		Result:Glasses_Eyepatch_Left,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=1,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring3_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Twine
+	{
+		Thread=30,
+		keep Scissors,
+		keep Needle,
+		Result:Twine,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=1,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring5_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Tissue
+	{
+		RippedSheets=2,
+		keep Scissors,
+		Result:Tissue,
+		Time:100.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=1,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Hoodie
+	{
+		RippedSheets=10,
+		Thread=10,
+		keep Scissors,
+		keep Needle,
+		Result:HoodieUP_WhiteTINT,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=1,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring5_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Rope
+	{
+		Twine=5,
+		keep Scissors,
+		keep Needle,
+		Result:Rope,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=2,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring5_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Sheet
+	{
+		RippedSheets=12,
+		keep Scissors,
+		keep Needle,
+		Thread=2,
+		Result:Sheet,
+		NearItem:Tailor Workbench,
+		Time:400.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=2,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring5_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make EarMuffs
+	{
+		RippedSheets=3,
+		Thread=8,
+		Felt,
+		keep Scissors,
+		keep Needle,
+		Result:Hat_EarMuffs,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=2,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring5_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Scarf
+	{
+		RippedSheets=8,
+		Thread=8,
+		Felt=2,
+		keep Scissors,
+		keep Needle,
+		Result:Scarf_White,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=3,
+		OnGiveXP:Tailoring8_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make WoolyHat
+	{
+		RippedSheets=4,
+		Thread=3,
+		Felt,
+		keep Scissors,
+		keep Needle,
+		Result:Hat_WoolyHat,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=3,
+		OnGiveXP:Tailoring8_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Wool Cape
+	{
+		RippedSheets=4,
+		Thread=5,
+		Felt=3,
+		keep Scissors,
+		keep Needle,
+		Result:WoolcapeUP,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=5,
+		OnGiveXP:Tailoring8_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make WinterHat
+	{
+		RippedSheets=6,
+		Thread=3,
+		Felt=2,
+		keep Scissors,
+		keep Needle,
+		Result:Hat_WinterHat,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Tailoring12_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Balaclava
+	{
+		RippedSheets=3,
+		Thread=5,
+		Felt=2,
+		keep Scissors,
+		keep Needle,
+		Result:Hat_BalaclavaFull,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Tailoring12_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Jacket
+	{
+		RippedSheets=20,
+		Thread=10,
+		ScrapMetal=3,
+		Felt=3,
+		keep Scissors,
+		keep Needle,
+		Result:Jacket_WhiteTINT,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Tailoring15_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Jacket Ranger
+	{
+		RippedSheets=20,
+		Thread=10,
+		ScrapMetal=4,
+		Felt=4,
+		keep Scissors,
+		keep Needle,
+		Result:Jacket_Ranger,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=5,
+		OnGiveXP:Tailoring15_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Trousers Ranger
+	{
+		RippedSheets=20,
+		Thread=10,
+		Felt=4,
+		ScrapMetal=2,
+		keep Scissors,
+		keep Needle,
+		Result:Trousers_Ranger,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=5,
+		OnGiveXP:Tailoring15_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Jacket Padded
+	{
+		RippedSheets=30,
+		Thread=15,
+		Felt=5,
+		ScrapMetal=6,
+		keep Scissors,
+		keep Needle,
+		Result:Jacket_Padded,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=6,
+		OnGiveXP:Tailoring18_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Trousers Padded
+	{
+		RippedSheets=30,
+		Thread=10,
+		Felt=4,
+		ScrapMetal=3,
+		keep Scissors,
+		keep Needle,
+		Result:Trousers_Padded,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=6,
+		OnGiveXP:Tailoring18_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Poncho Yellow
+	{
+		RippedSheets=10,
+		Thread=10,
+		Felt=3,
+		Rubber=4,
+		ScrapMetal=2,
+		keep Scissors,
+		keep Needle,
+		Result:PonchoYellow,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=2,
+		OnGiveXP:Tailoring8_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Ammo Pouch
+	{
+		RippedSheets=10,
+		Thread=4,
+		Belt2=2,
+		ScrapMetal,
+		keep Scissors,
+		keep Needle,
+		Result:AmmoPouches,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnCreate:Needles_OnCreate,
+		OnGiveXP:Tailoring12_OnGiveXP,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Medical Pouch
+	{
+		RippedSheets=10,
+		Thread=4,
+		Belt2=2,
+		ScrapMetal,
+		keep Scissors,
+		keep Needle,
+		Result:MedicalPouches,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Tailoring12_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+	recipe Make Supply Pouch
+	{
+		RippedSheets=10,
+		Thread=4,
+		Belt2=2,
+		ScrapMetal,
+		keep Scissors,
+		keep Needle,
+		Result:SupplyPouches,
+		NearItem:Tailor Workbench,
+		Time:500.0,
+		Category:Sewing,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Tailoring12_OnGiveXP,
+		OnCreate:Needles_OnCreate,
+        CanBeDoneFromFloor:true,
+	}
+
+}

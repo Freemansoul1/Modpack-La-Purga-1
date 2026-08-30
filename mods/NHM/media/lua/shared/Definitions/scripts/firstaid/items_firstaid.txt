@@ -1,0 +1,89 @@
+module NHM
+{
+	imports	{Base}	
+    
+    item CoalPills
+	{
+	    DisplayCategory = FirstAid,
+		HungerChange	=	0,
+		Weight	=	0.01,
+		Type	=	Food,
+		DisplayName	=	CoalPills,
+		CustomContextMenu = TakePill,
+		Icon	=	CoalPills,
+		CantBeFrozen = TRUE,
+        OnEat = OnEat_CoalPills,
+	}
+
+	item LemonGrassHerbDec
+	{
+	    DisplayCategory = FirstAid,
+		HungerChange	=	1,
+		ThirstChange	=	10,
+		Weight	=	0.01,
+		Type	=	Food,
+		ReduceFoodSickness = 40,
+		DisplayName	=	LemonGrassHerbDec,
+		CustomContextMenu = TakeHerbDec,
+		Icon	=	MugFulll,
+		CantBeFrozen = TRUE,
+		ReplaceOnUse	=	Mugl,
+        StaticModel = Mug,
+        WorldStaticModel = Mug,
+        EatType = Mug,
+	}
+
+	item CommonMallowHerbDec
+	{
+	    DisplayCategory = FirstAid,
+		HungerChange	=	1,
+		ThirstChange	=	10,
+		Weight	=	0.01,
+		FluReduction    =   20,
+		Type	=	Food,
+		DisplayName	=	CommonMallowHerbDec,
+		CustomContextMenu = TakeHerbDec,
+		Icon	=	MugFulll,
+		CantBeFrozen = TRUE,
+		ReplaceOnUse	=	Mugl,
+        StaticModel = Mug,
+        WorldStaticModel = Mug,
+        EatType = Mug,
+	}
+
+	item FlaskActiveComp
+	{
+		DisplayCategory = FirstAid,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+        ReplaceOnDeplete = NHM.ChemicalFlask,
+		UseDelta		= 0.25,
+		DisplayName	=	FlaskActiveComp,
+		Icon = FlaskActiveComp,
+		Weight = 0.1,
+	}
+
+	item ZombieFlesh
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName	=	ZombieFlesh,
+		OnEat = OnEat_ZombieFlesh,
+		Icon = ZombieFlesh,
+		Weight = 0.1,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		HungerChange = -20,
+		Calories = 260,
+	}
+
+	item InfectedSample
+	{
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		DisplayName	=	InfectedSample,
+		Icon = InfectedSample,
+		Weight = 0.2,
+	}
+
+}

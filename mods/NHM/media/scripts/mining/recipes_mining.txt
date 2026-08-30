@@ -1,0 +1,317 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+recipe Make Coal
+{
+    Log,
+    Result:Coal=6,
+    Time:350,
+    Category:Mining,
+        CanBeDoneFromFloor:true,
+    NearItem:Stone Furnace,
+}
+
+recipe Make Coal Alt
+{
+    Plank,
+    Result:Coal=2,
+    Time:350,
+    Category:Mining,
+        CanBeDoneFromFloor:true,
+    NearItem:Stone Furnace,
+}
+
+recipe Make CokeCoal
+{
+    Coal=6,
+    Result:CokeCoal=2,
+    Time:800,
+    Category:Mining,
+    NearItem:Blast Furnace,
+}
+
+recipe Make Copper Ingot
+{
+    CopperOre,
+    Coal=2,
+    keep Tongs,
+    Result:IngotCopper,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding3_OnGiveXP,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Copper Ingot Alt
+{
+    UnusableMetal=30,
+    Coal=2,
+    keep Tongs,
+    Result:IngotCopper,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding3_OnGiveXP,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Tin Ingot
+{
+    TinOre,
+    Coal=2,
+    keep Tongs,
+    Result:IngotTin,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding3_OnGiveXP,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Tin Ingot Alt
+{
+    UnusableMetal=30,
+    Coal=2,
+    keep Tongs,
+    Result:IngotTin,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding3_OnGiveXP,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Iron Ingot
+{
+    IronOre,
+    keep Tongs,
+    CokeCoal=2,
+    Result:IngotIron,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Iron Ingot Alt
+{
+    UnusableMetal=40,
+    CokeCoal=2,
+    keep Tongs,
+    Result:IngotIron,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Lead Ingot
+{
+    GalenaOre,
+    CokeCoal=2,
+    keep Tongs,
+    Result:IngotLead,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Lead Ingot Alt
+{
+    UnusableMetal=40,
+    CokeCoal=2,
+    keep Tongs,
+    Result:IngotLead,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Nickel Ingot
+{
+    NickelOre,
+    CokeCoal=4,
+    keep Tongs,
+    Result:IngotNickel,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding12_OnGiveXP,
+    SkillRequired:MetalWelding=4,
+}
+
+recipe Make Chromium Ingot
+{
+    ChromiumOre,
+    CokeCoal=4,
+    keep Tongs,
+    Result:IngotChromium,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding12_OnGiveXP,
+    SkillRequired:MetalWelding=4,
+}
+
+recipe Make Bronze Ingot
+{
+    IngotCopper=3,
+    IngotTin,
+    Coal=2,
+    keep Tongs,
+    Result:IngotBronze=4,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding5_OnGiveXP,
+    SkillRequired:MetalWelding=1,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Bronze Ingot Alt
+{
+    CopperOre=3,
+    TinOre,
+    Coal=2,
+    keep Tongs,
+    Result:IngotBronze=4,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding5_OnGiveXP,
+    SkillRequired:MetalWelding=1,
+    OnCreate:CokeCoal_OnCreate,
+}
+
+recipe Make Steel Ingot
+{
+    IngotIron=2,
+    CokeCoal=3,
+    keep Tongs,
+    Result:IngotSteel=2,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+    SkillRequired:MetalWelding=3,
+}
+
+recipe Make HQSteel
+{
+    IngotSteel=6,
+    IngotNickel=1,
+    IngotChromium=1,
+    CokeCoal=5,
+    keep Tongs,
+    Result:HQSteel=2,
+    Time:300.0,
+	Category:Mining,
+    NearItem:MVK,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+    SkillRequired:MetalWelding=6;Engineering=1,
+}
+
+recipe Make ArmorPlate
+{
+    HQSteel=1,
+    keep BallPeenHammer,
+    keep Tongs,
+    Result:ArmorPlate=2,
+    Time:300.0,
+	Category:Engineer,
+    NearItem:Engineer Workbench,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:Engineer10_OnGiveXP,
+    SkillRequired:MetalWelding=6;Engineering=5,
+}
+
+recipe Make Steel Ingot Alt
+{
+    IronOre=2,
+    CokeCoal=3,
+    keep Tongs,
+    Result:IngotSteel=2,
+    Time:300.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+    SkillRequired:MetalWelding=3,
+}
+
+recipe Make Silver Nugget
+{
+    Necklace_Silver/Necklace_SilverCrucifix/BellyButton_RingSilverAmethyst/Necklace_SilverRuby/Necklace_SilverSapphire/NecklaceLong_SilverSapphire/NecklaceLong_SilverEmerald/Necklace_SilverDiamond/NecklaceLong_Silver/NecklaceLong_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverRuby/Ring_Left_MiddleFinger_SilverRuby/Ring_Right_RingFinger_SilverRuby/Ring_Left_RingFinger_SilverRuby/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_DangleSilverRuby/BellyButton_RingSilver/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilver/BellyButton_StudSilverDiamond,
+    keep Tongs,
+    Result:NuggetSilver,
+    Time:200.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding1_OnGiveXP,
+}
+
+recipe Make Gold Nugget
+{
+    Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/BellyButton_DangleGold/BellyButton_DangleGoldRuby/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond,
+    keep Tongs,
+    Result:NuggetGold,
+    Time:200.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding1_OnGiveXP,
+}
+
+recipe Make Silver Ingot
+{
+    NuggetSilver=100,
+    CokeCoal=5,
+    keep Tongs,
+    Result:IngotSilver,
+    Time:450.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+}
+
+recipe Make Gold Ingot 
+{
+    NuggetGold=100,
+    CokeCoal=5,
+    keep Tongs,
+    Result:IngotGold,
+    Time:450.0,
+	Category:Mining,
+    NearItem:Blast Furnace,
+    CanBeDoneFromFloor:true,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+}
+
+}

@@ -1,0 +1,98 @@
+#is_flag cook_intro,true
+    #jump loop
+
+*intro
+#m Кухарка|NPCPortraits/CookP.png|"Привет, еще один голодный рот. Чего надо?"
+
+#choice
+    intro_hello|Познакомиться
+    intro_leave|Уйти
+
+*intro_leave
+#m Кухарка|NPCPortraits/CookP.png|"Давай, меньше готовить придется."
+#exit
+
+*intro_hello
+#m "Здравствуйте. А вы здесь, видимо, кормите всех?"
+#m Кухарка|NPCPortraits/CookP.png|"Не всех, а только тех, кто работает. Кто не работает - тот не ест, ${female,слышала,слышал} такое?"
+#m Кухарка|NPCPortraits/CookP.png|"Ладно, не пугайся. Ты ${female,нездешняя,нездешний}, значит ты мне уже нравишься. Паёк выдаю раз в сутки, так что не зевай." 
+#m Кухарка|NPCPortraits/CookP.png|"Поработать на меня тоже можно, не обижу. Почаще заходи, а то эти одинаковые рожи персонала мне уже изрядно надоели."
+#m Кухарка|NPCPortraits/CookP.png|"Зови меня Кухарка. Гордона Рамзи знаешь? Да откуда тебе... Ну ничего, лет через 20 он станет мировой звездой! И я вместе с ним."
+#m "Спасибо! А что за работа?.."
+#fade_out black
+#set_flag cook_intro,true
+#fade_in
+#reveal Cook
+#exit
+
+*loop
+#m Кухарка|NPCPortraits/CookP.png|"Ну, здравствуй. За поручением?"
+
+#choice
+    questCOOK|Взять задание Кухарки
+    tutorial7|[Обучение 7]
+    quest_exit|Уйти
+    questCOOKcomplete|Сдать задание Кухарки|cook_q1_flag
+    questDAILYFOOD|Взять ежедневный паёк
+
+*tutorial7
+#m Обучение|NPCPortraits/Tutorial.png|"Привет, ${female,выжившая,выживший}. На связи Команда сервера New Hope. Ты ${female,нашла,нашел} Седьмую обучающую подсказку. Собери все 8, прежде чем покинуть Госпиталь Милосердия, чтобы получить награду у Часового."
+#m Обучение|NPCPortraits/Tutorial.png|"New Hope Great Expansion - это глобальный мод, влияющий на все аспекты игры. Профессии, перки, навыки, Ресурсные точки, локации и многое, многое другое. Возможно, тебе понадобятся десятки часов, чтобы прощупать весь контент."
+#m Обучение|NPCPortraits/Tutorial.png|"Большинство ванильных навыков были расширены в рамках нашего мода, чтобы добавить игре динамичности, а самим навыкам - больше смысла. Например, Первая помощь. Вариант прокачки Первой помощи через вытаскивание осколков из раны у нас не работает, но есть альтернатива в виде разделки трупов."
+#m Обучение|NPCPortraits/Tutorial.png|"На New Hope есть медикаменты, которые можно вколоть в любую (даже здоровую) часть тела, а также можно перетащить лекарство курсором из инвентаря на нужную часть тела. Более того, все это можно проделывать не только на себе, но и на ком-то другом."
+#m Обучение|NPCPortraits/Tutorial.png|"Первая помощь - лишь один из примеров расширенных ванильных навыков. О других ты узнаешь либо от Ремесленников из Оазиса, либо прощупаешь ${female,сама,сам}. Удачи!"
+#set_flag tutorial7,true
+#exit
+
+*questCOOK
+#is_quest cook_q1|locked
+    #m Кухарка|NPCPortraits/CookP.png|"Мне нужно, чтоб ты ${female,принесла,принес} пивка. На втором этаже есть комната отдыха, ну ты ее сразу узнаешь. Примерно над Уборщицей. Там в углу стоит ящик, заполнен льдом и бутылками пива. Вот возьми одну бутылку и мне принеси."
+    #quest_unlock cook_q1
+    #task_unlock cook_q1|t1
+    #exit
+#is_quest cook_q1|unlocked,uncompleted
+    #m Кухарка|NPCPortraits/CookP.png|"Где пиво?"
+    #exit
+#is_quest cook_q1|unlocked,completed
+    #m Кухарка|NPCPortraits/CookP.png|"Хватит с тебя, отдыхай."
+#exit
+
+*questCOOKcomplete
+#has_item NHM.QuestHBeer,1
+    #remove_item NHM.QuestHBeer,1
+    #m "Я ${female,принесла,принес} пиво. А вы не расскажете мне об этом месте?"
+    #m Кухарка|NPCPortraits/CookP.png|"Уфф... Вот оно - жидкое золото!"
+    #m Кухарка|NPCPortraits/CookP.png|"Хоть ты мне и нравишься, но о месте я тебе не расскажу. Не положено. Расскажу - Демиург узнает. Точно узнает. И будет плохо."
+    #m Кухарка|NPCPortraits/CookP.png|"Спасибо за помощь, но с этими вопросами как-нибудь ${female,сама,сам}."
+    #set_flag cook_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,4.5
+    #exit
+#m Кухарка|NPCPortraits/CookP.png|"А пиво где?"
+#exit
+
+*quest1_q1_cook
+#cutscene true
+#pop_up NPCPortraits/Beer.png
+#m С ума сойти. Огромный холодильник с пивом!
+#add_item NHM.QuestHBeer,1
+#set_flag q1_cook_flag,true
+#m Ага, вот эта сойдет. Отнесу Кухарке и попробую что-нибудь выведать об этом месте...
+#exit
+
+*questDAILYFOOD
+#is_event FoodCD|false
+    #m Кухарка|NPCPortraits/CookP.png|"Голодный рот! А работать кто будет? Да ладно, не переживай. Держи."
+    #set_event FoodCD|false|12
+    #reward NHM.QuestHDailyFood,1,rare|NHM.QuestHDailyWater,1,rare
+    #exit
+#m Кухарка|NPCPortraits/CookP.png|"Ты уже ${female,получала,получал} паек сегодня. Не объедай остальных. Приходи позже."
+#exit
+
+*quest_exit
+#exit

@@ -1,0 +1,57 @@
+module Base
+{
+    sound Mining_Pickaxe
+	{
+		category = Player,
+        clip
+        {
+            file = media/sound/Mining_Pickaxe.wav,
+            distanceMax = 20,
+        }
+	}
+	sound Trash_Searching
+	{
+	    category = Player,
+        clip
+        {
+            file = media/sound/trashsearch.wav,
+            distanceMax = 20,
+        }
+	}
+	sound Things_Searching
+    {
+        category = Player,
+           clip
+           {
+               file = media/sound/thingssearch.wav,
+               distanceMax = 20,
+           }
+    }
+	sound Propane_Filling
+	{
+	    category = Player,
+        clip
+        {
+            file = media/sound/BlowTorchFill.wav,
+            distanceMax = 20,
+        }
+	}
+	sound CardAccess
+    {
+        category = Player,
+           clip
+           {
+               file = media/sound/CardAcces.wav,
+               distanceMax = 20,
+           }
+    }
+	sound ActiveComponent
+    {
+        category = Player,
+           clip
+           {
+               file = media/sound/ActiveComp.wav,
+               distanceMax = 20,
+           }
+    }
+}

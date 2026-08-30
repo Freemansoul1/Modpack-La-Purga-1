@@ -1,3 +1,0 @@
-Recipes_IT = {
-    Recipe_craft_spikestrip = "Forgiare la striscia di punte",
-}

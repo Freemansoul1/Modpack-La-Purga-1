@@ -1,0 +1,98 @@
+#is_flag cook_intro,true
+    #jump loop
+
+*intro
+#m Cocinera|NPCPortraits/CookP.png|"Hola, otra boca hambrienta por lo que veo, ¿Qué deseas?"
+
+#choice
+    intro_hello|Hola
+    intro_leave|Salir
+
+*intro_leave
+#m Cocinera|NPCPortraits/CookP.png|"Cómo veas, menos que cocinar."
+#exit
+
+*intro_hello
+#m "Hola, ¿eres quién alimenta a todos aquí?"
+#m Cocinera|NPCPortraits/CookP.png|"No todos, solo los que trabajan, quien no trabaja no comerá, ¿entiendes?"
+#m Cocinera|NPCPortraits/CookP.png|"Está bien, no tengas miedo, mi antipatía no significa que no me gustes. Doy raciones una vez al día, así que no seas vago." 
+#m Cocinera|NPCPortraits/CookP.png|"Puedes trabajar para mí también.. Ven más a menudo, ya estoy bastante cansado de estas caras idénticas del personal."
+#m Cocinera|NPCPortraits/CookP.png|"Llámame Cocinera, ¿Conoces a Gordon Ramsay?, soy cómo él... ¡en 20 años seré una estrella mundial!, Y estás con ella ahora mismo."
+#m "¡Gracias!, ¿qué tipo de trabajo ofreces?.."
+#fade_out black
+#set_flag cook_intro,true
+#fade_in
+#reveal Cocinera
+#exit
+
+*loop
+#m Cocinera|NPCPortraits/CookP.png|"Hola, ¿listo para realizar una tarea?"
+
+#choice
+    questCOOK|Acepta la búsqueda del Cocinera
+    tutorial7|[Tutorial 7]
+    quest_exit|Salir
+    questCOOKcomplete|Entrega la búsqueda del Cocinera|cook_q1_flag
+    questDAILYFOOD|Tomar una ración diaria
+
+*tutorial7
+#m Tutorial 7|NPCPortraits/Tutorial.png|"Hola muchach@. El equipo del servidor La Purga está en contacto. Este es el séptimo tutorial. Recoge los 8 antes de salir del Purgatorio para recibir tu recompensa adicional del Centinela."
+#m Tutorial 7|NPCPortraits/Tutorial.png|"Éste servidor tiene profesiones, ventajas, habilidades, puntos de recursos, ubicaciones y mucho, mucho más. Es posible que necesite docenas de horas para sondear todo el contenido."
+#m Tutorial 7|NPCPortraits/Tutorial.png|"La mayoría de las habilidades básicas se han ampliado para agregar más dinamismo al juego y habilidades propias para que tengan más sentido. Por ejemplo, Primeros Auxilios: La opción de subir Primeros Auxilios mediante la extracción de fragmentos de cristal de una herida no funciona, pero existe una alternativa en forma de disertación de cadáveres para subir la experiencia y obtener muestras de ellos."
+#m Tutorial 7|NPCPortraits/Tutorial.png|"Existen medicamentos que se pueden inyectar en cualquier parte del cuerpo (incluso en una parte sana), se puede arrastrar el medicamento con el cursor desde el inventario hasta la parte deseada del cuerpo y se obtendrá el efecto del mismo. Además, todo esto se puede hacer no solo contigo mismo, sino también con otra persona."
+#m Tutorial 7|NPCPortraits/Tutorial.png|"Los Primeros Auxilios son solo un ejemplo de habilidades extendidas de vanilla. Otros los aprenderás de los Artesanos del Oasis justo al salir de aquí muchach@. ¡Buena suerte!"
+#set_flag tutorial7,true
+#exit
+
+*questCOOK
+#is_quest cook_q1|locked
+    #m Cocinera|NPCPortraits/CookP.png|"Necesito cerveza. En el segundo piso hay una sala recreativa, la reconocerás de inmediato. Aproximadamente encima de la señora de la limpieza. Hay una caja en la esquina, llena de hielo y botellas de cerveza, toma una botella y tráemela."
+    #quest_unlock cook_q1
+    #task_unlock cook_q1|t1
+    #exit
+#is_quest cook_q1|unlocked,uncompleted
+    #m Cocinera|NPCPortraits/CookP.png|"¿Dónde está la cerveza?"
+    #exit
+#is_quest cook_q1|unlocked,completed
+    #m Cocinera|NPCPortraits/CookP.png|"Ya es suficiente, descansa."
+#exit
+
+*questCOOKcomplete
+#has_item NHM.QuestHBeer,1
+    #remove_item NHM.QuestHBeer,1
+    #m "Aquí tienes la cerveza. ¿Puedes hablarme de este lugar?"
+    #m Cocinera|NPCPortraits/CookP.png|"¡Uf!... ¡Aquí está el oro líquido!"
+    #m Cocinera|NPCPortraits/CookP.png|"Aunque me gustas, no te hablaré del lugar, no está permitido. Si te lo digo el Demiurgo lo sabrá, lo sabe todo... Y se pondrá feo el asunto.."
+    #m Cocinera|NPCPortraits/CookP.png|"Gracias por la ayuda, trata de no hacer esa clase de preguntas."
+    #set_flag cook_q1_completed,true
+    #is_lua getPlayer():HasTrait("Goodmanners")|true
+        #reward EXP,RepDoc,6
+        #exit
+    #is_lua getPlayer():HasTrait("Badmanners")|true
+        #reward EXP,RepDoc,3
+        #exit
+    #reward EXP,RepDoc,5
+    #exit
+#m Cocinera|NPCPortraits/CookP.png|"¿Dónde está la cerveza?"
+#exit
+
+*quest1_q1_cook
+#cutscene true
+#pop_up NPCPortraits/Beer.png
+#m "Guau. Enorme nevera de cerveza!"
+#add_item NHM.QuestHBeer,1
+#set_flag q1_cook_flag,true
+#m "Bien, esta servirá, la llevaré a la Cocinera y trataré de averiguar algo sobre este lugar..."
+#exit
+
+*questDAILYFOOD
+#is_event FoodCD|false
+    #m Cocinera|NPCPortraits/CookP.png|"¡Boca hambrienta!, ¿has estado trabajando?, está bien, no te preocupes, espera."
+    #set_event FoodCD|false|12
+    #reward NHM.QuestHDailyFood,1,rare|NHM.QuestHDailyWater,1,rare
+    #exit
+#m Cocinera|NPCPortraits/CookP.png|"Tú ya comiste hoy, no quieras comerte lo de los demás. Vuelve mas tarde."
+#exit
+
+*quest_exit
+#exit

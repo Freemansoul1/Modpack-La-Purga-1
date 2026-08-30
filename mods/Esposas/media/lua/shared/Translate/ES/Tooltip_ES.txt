@@ -1,3 +1,0 @@
-Tooltip_ES = {
-    Tooltip_noRestrainingItem = "Necesitas unas esposas."
-}

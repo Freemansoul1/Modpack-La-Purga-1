@@ -1,6 +1,0 @@
-Recipe_ES = {
-
-Recipe_Distill_Gasohol = "Destilar gasolina",
-Recipe_Distill_Gasohol_(Strawberries) = "Destilar gasolina",
-Recipe_Create_Distiller = "Crear destilador",
-}

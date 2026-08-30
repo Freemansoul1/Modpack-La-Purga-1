@@ -1,0 +1,34 @@
+module Base
+{
+		item GardenSaw
+    {
+        DisplayCategory = Tool,
+        Weight	=	0.7,
+        Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.01,
+        DisplayName	=	Garden Saw,
+        Icon	=	Handsaw,
+        MetalValue = 35,
+        StaticModel = GardenSaw,
+        SurvivalGear = TRUE,
+        Tags = Saw,
+        WorldStaticModel = GardenSawGround,
+    }
+
+	item Saw
+	{
+	    DisplayCategory = Tool,
+		Weight	=	0.7,
+		Type	=	Drainable,
+        UseWhileEquipped	= FALSE,
+		UseDelta		= 0.005,
+		DisplayName	=	Saw,
+		Icon	=	Hacksaw,
+		MetalValue = 35,
+		StaticModel = Hacksaw,
+		SurvivalGear = TRUE,
+        Tags = Saw,
+        WorldStaticModel = HacksawGround,
+	}
+}

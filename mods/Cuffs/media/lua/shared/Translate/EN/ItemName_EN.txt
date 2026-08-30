@@ -1,8 +1,0 @@
-ItemName_EN = {
-	Base.Cuffs = "Police Handcuffs",
-	Base.PlasticCuffs = "Plastic Cuffs",
-	Base.FluffyCuffs = "Fluffy Cuffs",
-	Base.RopeCuffs = "Rope Cuffs",
-	Base.LeatherCuffs = "Leather Cuffs",
-	Base.FrontLeatherCuffs = "Leather Cuffs (frontal)",
-}

@@ -1,3 +1,0 @@
-ContextMenu_CN = {
-    ContextMenu_CheckThroughWindow = "探查窗外",
-}

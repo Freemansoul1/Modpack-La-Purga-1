@@ -1,5 +1,0 @@
-ContextMenu_IT = {
-    ContextMenu_Climb_Escape_Rope = "Usa il Kit di Discesa",
-    ContextMenu_Add_Escape_Rope = "Distribuisci il Kit di Discesa",
-	ContextMenu_Remove_Escape_Rope = "Rimuovi il Kit di Discesa",
-}

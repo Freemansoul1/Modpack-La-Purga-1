@@ -1,7 +1,0 @@
-Recipes_RU {
-    Recipe_Prepare_Dry_Fish = "Обработка рыбы",
-    Recipe_Make_Drier_1 = "Сделать сетку для сушки",
-    Recipe_Make_Drier_9 = "Сделать сетку для сушки",
-    Recipe_Make_Drier_8 = "Создать сушилку",
-    Recipe_Make_Drier_15 = "Сделать сушилку",
-}

@@ -1,5 +1,0 @@
-Sandbox_ES = {
-Sandbox_Moats = "Mod fosos",
-     Sandbox_Moats_RemoveShores = "Ocultar costas",
-     Sandbox_Moats_RemoveShores_tooltip = "<IMAGE:media/ui/SBOMoatsHideShore.png> <LINE> Vanilla muestra costas pero oculta caminos entre dos mosaicos de agua. <LINE> Esta opción oculta costas alrededor de fosos. <LINE> Salga y vuelva a cargar para que el cambio surta efecto .",
-}

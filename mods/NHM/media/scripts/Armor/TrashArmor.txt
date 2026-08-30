@@ -1,0 +1,42 @@
+module Base
+{		
+	
+	item Hat_BucketHelmet
+	{
+		Type = Clothing,
+		DisplayName = Bucket Helmet,
+		ClothingItem = Hat_BucketHelmet,
+		BodyLocation = FullHat,
+		IconsForTexture = BucketHelmet,
+		BloodLocation = FullHelmet,
+		BiteDefense = 30,
+		ScratchDefense = 30,
+		ChanceToFall = 2,
+		Insulation = 0,
+		WaterResistance = 0.80,
+        Weight = 1.5,
+		CanHaveHoles = true,
+        ConditionLowerChanceOneIn = 21,
+        ConditionMax = 1,
+		Tooltip 		= "Improvised Protection of The Head From Bucket",
+    }
+
+	item TrashArmor
+   	{
+        Type = Clothing,
+        DisplayName = Trash Armor,
+        ClothingItem = TrashArmor,
+        BodyLocation = TorsoExtra,
+        Icon = TrashArmor,
+        BloodLocation = UpperBody; LowerBody,
+		ScratchDefense = 20,
+		BiteDefense = 20,
+        Insulation = 0,
+        WindResistance = 0,
+        Weight = 1.5,
+        ConditionLowerChanceOneIn = 2,
+        ConditionMax = 1,
+        RemoveOnBroken = true,
+		Tooltip = "Protects your Chest",
+    }
+}

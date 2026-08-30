@@ -1,0 +1,649 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+/***СОЗДАТЬ ПЛАСТИК***/
+recipe Make Plastic
+{
+    destroy FirstAidKit/Razor/WaterBottleEmpty/PopBottleEmpty/MayonnaiseEmpty/BleachEmpty/RemouladeEmpty/Plunger/BucketEmpty/Hat_BicycleHelmet/CanoePadel/CanoePadelX2/Dart/Hat_CrashHelmet/Hat_CrashHelmet_Stars/Toothbrush/Dice/ToyCar/Yoyo/Hat_HardHat/CameraFilm/Keytar/Button/Lunchbox/Lunchbox2/CatToy/Cube/Bricktoys/Doll/MakeupEyeshadow/MakeupFoundation/Garbagebag/GolfBall/CameraDisposable/PlasticTray/PlasticCup/Lipstick/CameraExpensive/BadmintonRacket/Comb/Pen/RedPen/BluePen/WaterDish/TennisRacket/Cooler/Camera/Hat_FootballHelmet/Hat_HockeyMask/Hat_HockeyHelmet/Hat_JockeyHelmet01/Hat_JockeyHelmet02/Hat_JockeyHelmet03/Hat_JockeyHelmet04/Hat_JockeyHelmet05/Hat_CrashHelmet_Police/Hat_CrashHelmetFULL/Hat_JockeyHelmet06/Hat_RidingHelmet/Hat_HardHat_Miner/GreenCard/CreditCard/SnowShovel,
+    
+    Result:NHM.Plastic,
+    Time:80.0,
+    Category:Chemistry,
+    OnGiveXP:Chemistry3_OnGiveXP,
+    OnTest:NHIsMaterialValid,
+} 
+
+
+/***СОЗДАТЬ РЕЗИНУ***/
+recipe Make Rubber
+{
+    destroy Bikini_TINT/Basketball/Baseball/Football/Football2/TennisBall/RubberTire/Bikini_Pattern01/Toothpaste/DogChew/Plunger/Glasses_SafetyGoggles/CatToy/Eraser/Glasses_SkiGoggles/Gloves_Surgical/Glasses_SwimmingGoggles/GolfBall/Garter/RubberBand/Rubberducky/Shoes_Wellies/ClubHammer/Leash/SoccerBall,
+    Result:NHM.Rubber,
+    Time:80.0,
+    Category:Chemistry,
+    OnGiveXP:Chemistry3_OnGiveXP,
+    OnTest:NHIsMaterialValid,
+}
+
+/***СОЗДАТЬ СТЕКЛО***/
+recipe Make Glass
+{
+    destroy GlassWine/GlassTumbler/Perfume/Glasses_Shooting/Glasses_SafetyGoggles/Glasses_SkiGoggles/Glasses_Normal/Glasses_Reading/Glasses/Glasses_Sun/Glasses_Aviators/LightBulb/LightBulbCyan/LightBulbYellow/LightBulbGreen/LightBulbRed/LightBulbOrange/LightBulbMagenta/LightBulbPink/LightBulbBlue/LightBulbPurple/EmptyJar/WhiskeyEmpty/WineEmpty/WineEmpty2/BeerEmpty/MakeupEyeshadow/MakeupFoundation/Cologne/SmashedBottle/Mirror,
+    Result:NHM.Glass,
+    Time:80.0,
+    Category:Chemistry,
+    OnGiveXP:Chemistry3_OnGiveXP,
+    OnTest:NHIsMaterialValid,
+}
+
+/***СОЗДАТЬ СТЕКЛЯННУЮ КОЛБУ***/
+recipe Make Flask
+{
+    NHM.Glass=2,
+    Result:NHM.ChemicalFlask,
+    Time:80.0,
+    Category:Chemistry,
+    NearItem:Stone Furnace,
+    OnGiveXP:Chemistry3_OnGiveXP,
+}
+
+/***ОЧИСТИТЬ СТЕКЛЯННУЮ КОЛБУ***/
+recipe Empty Flask
+{
+    destroy FlaskSodium/FlaskEthanol/FlaskFungalSpores/FlaskHydrogen/FlaskPotassium/FlaskSalicylate/FlaskSulphuricAcid,
+    Result:ChemicalFlask,
+    Time:30.0,
+    Category:Chemistry,
+}
+
+/***СОЗДАТЬ НАБОР ХИМИКА***/
+recipe Make ChemKit
+{
+    ChemicalFlask=2,
+    Coldpack,
+    Plastic=2,
+    Glass,
+    ElectronicsScrap=2,
+    Battery=100000,
+    Result:ChemKit,
+    NearItem:Electric Workbench,
+    Time:500.0,
+    Category:Chemistry,
+}
+
+/***ЗАРЯДИТЬ НАБОР ХИМИКА***/
+recipe Power ChemKit
+{
+    Battery=100000,
+    ChemKitEmpty,
+    Result:ChemKit,
+    Time:30.0,
+    Category:Chemistry,
+}
+
+/***ОПУСТОШИТЬ НАБОР ХИМИКА***/
+recipe Empty ChemKit
+    {
+       destroy ChemKit,
+
+       Result:ChemKitEmpty,
+       Time:30.0,
+       Category:Chemistry,
+    }
+
+/***СОЗДАТЬ ПОРОХ***/
+recipe Make Powder
+{
+    SulfurPowder,
+    Coal=3,
+    ChemKit,
+    Result:Powder,
+    Time:120.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=1,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry3_OnGiveXP,
+}
+
+/***СОЗДАТЬ ПОРОХ АЛЬТ***/
+recipe Make Powder Alt
+{
+    FlaskPotassiumNitrate=2,
+    Coal=3,
+    SulfurPowder,
+    ChemKit,
+    Result:Powder=4,
+    Time:300.0,
+    Category:Chemistry,
+    NearItem:Chemistry Workbench,
+    SkillRequired:Chemistry=3,
+    OnGiveXP:Chemistry8_OnGiveXP,
+}
+
+/***СОЗДАТЬ СТЕКЛЯННУЮ БАНКУ***/
+recipe Make EmptyJar
+{
+    Glass=4,
+    Coal,
+    Result:EmptyJar,
+    Time:100.0,
+    Category:Chemistry,
+    NearItem:Stone Furnace,
+    SkillRequired:Chemistry=1,
+    OnGiveXP:Chemistry5_OnGiveXP,
+}
+
+
+/***СОЗДАТЬ ПЛАСТИКОВУЮ БУТЫЛКУ***/
+recipe Make Bottle
+{
+    Plastic=4,
+    Result:WaterBottleEmpty,
+    Time:80.0,
+    Category:Chemistry,
+    NearItem:Chemistry Workbench,
+    SkillRequired:Chemistry=2,
+    OnGiveXP:Chemistry5_OnGiveXP,
+}
+
+/***СОЗДАТЬ СЕРНУЮ РУДУ ИЗ КАМНЕЙ***/
+recipe Make Sulfur Ore
+    {
+        Stone=3,
+        Water=2,
+        keep MortarPestle,
+
+        Result:SulfurOre,
+        Time:100.0,
+        Category:Chemistry,
+        NearItem:Chemistry Workbench,
+        OnGiveXP:Chemistry3_OnGiveXP,
+    }
+
+/***СОЗДАТЬ ИЗВЕСТНЯК ИЗ КАМНЕЙ***/
+recipe Make Limestone
+    {
+        Stone=6,
+        Water=3,
+        keep MortarPestle,
+
+        Result:Limestone,
+        Time:100.0,
+        Category:Chemistry,
+        NearItem:Chemistry Workbench,
+        OnGiveXP:Chemistry3_OnGiveXP,
+    }
+
+
+/***СИНТЕЗИРОВАТЬ АЗОТНУЮ КИСЛОТУ***/
+recipe Synthesize Nitric Acid
+{
+    FlaskNitrogen,
+    FlaskCatalyst,
+    Water=1,
+    ChemKit,
+    Result:NHM.FlaskNitricAcid,
+    Time:250.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=1,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry3_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ СЕЛИТРУ***/
+recipe Synthesize Potassium Nitrate 
+{
+    ChemicalFlask,
+    WoodAsh=2,
+    Limestone,
+    Water=1,
+    ChemKit,
+    Result:NHM.FlaskPotassiumNitrate,
+    Time:25.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=1,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry5_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ ЗОЛУ***/
+recipe Synthesize Wood Ash
+{
+    Twigs=6,
+    Coal,
+    Result:WoodAsh,
+    Time:400.0,
+    Category:Chemistry,
+    NearItem:Stone Furnace,
+    OnGiveXP:Chemistry1_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ АММИАК***/
+recipe Synthesize Ammonia
+{
+    Water=1,
+    FlaskNitricAcid,
+    Coal,
+    ChemKit,
+    Result:FlaskAmmonia,
+    Time:400.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=2,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry5_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ СЕРНУЮ КИСЛОТУ***/
+recipe Synthesize SulphuricAcid
+{
+    SulfurOre=4,
+    FlaskCatalyst,
+    Water=2,
+    ChemKit,
+    Result:FlaskSulphuricAcid,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=3,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry7_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ ЩЕЛОЧЬ***/
+recipe Synthesize Alkali
+{
+    ChemicalFlask,
+    SaltPinch=3,
+    Limestone,
+    Coal,
+    ChemKit,
+    Result:FlaskAlkali,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=2,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry5_OnGiveXP,
+}
+
+
+/***СИНТЕЗИРОВАТЬ ХЛОРНУЮ КИСЛОТУ***/
+recipe Synthesize ChloricAcid
+{
+    FlaskSulphuricAcid,
+    Water=1,
+    Coal,
+    ChemKit,
+    Result:FlaskChloricAcid,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=4,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry12_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ СОЛЬ***/
+recipe Synthesize SaltPinch
+{
+    Coal=4,
+    Water,
+    ChemKit,
+    Result:SaltPinch,
+    Time:400.0,
+    Category:Chemistry,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry3_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ КАТАЛИЗАТОР***/
+recipe Synthesize Catalyst
+{
+    ChemicalFlask,
+    IngotCopper,
+    SulfurPowder,
+    Water,
+    Coal=2,
+    Result:FlaskCatalyst,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=1,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry8_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ КАТАЛИЗАТОР***/
+recipe Synthesize Catalyst Alt
+{
+    ChemicalFlask,
+    SiliconOre=2,
+    SulfurPowder,
+    Water,
+    Coal=2,
+    Result:FlaskCatalyst,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=1,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry8_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ СПОРЫ ГРИБОВ***/
+recipe Synthesize Fungal Spores
+{
+    ChemicalFlask,
+    MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/MushroomReshi/MushroomLionsMane/MushroomTurkeyTail/MushroomChaga/MushroomMaitake/MushroomCordycepsMilitaris,
+    MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/MushroomReshi/MushroomLionsMane/MushroomTurkeyTail/MushroomChaga/MushroomMaitake/MushroomCordycepsMilitaris,
+    MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/MushroomReshi/MushroomLionsMane/MushroomTurkeyTail/MushroomChaga/MushroomMaitake/MushroomCordycepsMilitaris,
+    Result:FlaskFungalSpores,
+    Time:150.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=2,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry8_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ СПИРТ***/
+recipe Synthesize Alcohol
+{
+    ChemicalFlask=3,
+    Sugarcube=20,
+    Water=4,
+    Yeast=2,
+    ChemKit,
+    Result:FlaskAlcohol=3,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=5,
+    NearItem:NHStill,
+    OnGiveXP:Chemistry18_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ АЗОТ***/
+recipe Synthesize Nitrogen
+{
+    ChemicalFlask,
+    CokeCoal=2,
+    Result:FlaskNitrogen,
+    Time:1000.0,
+    Category:Chemistry,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry3_OnGiveXP,
+}
+
+/***СИНТЕЗИРОВАТЬ САЛИЦИЛАТ***/
+recipe Synthesize Salicylate
+{
+    ChemicalFlask,
+    OilOlive/OilVegetable;10,
+    Result:FlaskSalicylate,
+    Time:1000.0,
+    Category:Chemistry,
+    SkillRequired:Chemistry=4,
+    NearItem:Chemistry Workbench,
+    OnGiveXP:Chemistry15_OnGiveXP,
+}
+
+/***Уксус***/
+    recipe Vinegar
+    {
+        Water=4,
+        FlaskAlcohol=2,
+        Glass=2,
+        ChemKit,
+        Result:Vinegar,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        Time:500.0,
+        OnGiveXP:Chemistry5_OnGiveXP,
+        NearItem:NHStill,
+    }
+
+/***СОДА***/
+    recipe Make BakingSoda
+    {
+		Water=5,
+        FlaskAmmonia,
+        FlaskAlkali,
+        Plastic=2,
+        ChemKit,
+        Result:BakingSoda,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        Time:500.0,
+        OnGiveXP:Chemistry8_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***ХЛАДАГЕНТ***/
+    recipe Make Cold Pack
+    {
+		Water=1,
+        FlaskNitrogen,
+        Plastic=2,
+        Result:Coldpack,
+        Category:Chemistry,
+        Time:150.0,
+        OnGiveXP:Chemistry3_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+
+/***Штукатурка***/
+    recipe Make PlasterPowder
+    {
+		WoodAsh=2,
+        Water=2,
+        Limestone=2,
+        SheetPaper2=8,
+        Result:PlasterPowder,
+        Category:Chemistry,
+        SkillRequired:Chemistry=3,
+        Time:400.0,
+        OnGiveXP:Chemistry12_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Скотч***/
+    recipe Make Scotch Tape
+    {
+		SheetPaper2=4,
+        Rubber=2,
+        Glue=5,
+        Result:Scotchtape,
+        Category:Chemistry,
+        SkillRequired:Chemistry=4,
+        Time:500.0,
+        OnGiveXP:Chemistry12_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Мыло***/
+    recipe Make Soap2
+    {
+		FlaskAlkali=2,
+        Water=2,
+        Coal,
+        Result:Soap2,
+        Category:Chemistry,
+        SkillRequired:Chemistry=2,
+        Time:700.0,
+        OnGiveXP:Chemistry5_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Удобрение***/
+    recipe Make Fertilizer
+    {
+		FlaskPotassiumNitrate,
+        FlaskAmmonia,
+        Dirtbag=4,
+        Result:Fertilizer,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        Time:600.0,
+        OnGiveXP:Chemistry15_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Краски***/
+    recipe Make PaintWhite
+    {
+		FlaskAmmonia,
+        FlaskChloricAcid,
+        destroy WaterPaintbucket,
+        Result:PaintWhite,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        Time:800.0,
+        OnGiveXP:Chemistry15_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+    recipe Make PaintColor
+    {
+        destroy PaintWhite,
+        DyeTurquoise/DyeLightBlue/DyeCyan/DyeYellow/DyeGreen/DyeBrown/DyeRed/DyeOrange/DyePink/DyeLightBrown/DyeGrey/DyeBlue/DyePurple/DyeBlack,
+
+        Result:PaintWhite,
+        RemoveResultItem:true,
+        SkillRequired:Chemistry=5,
+        Category:Chemistry,
+        OnCreate:PaintBucket,
+        Time:300.0,
+        NearItem:Chemistry Workbench,
+    }
+
+    /***Краски для волос***/
+    recipe Make HairDyeWhite
+    {
+		FlaskAmmonia,
+        FlaskNitricAcid,
+        WaterBottleFull,
+        Result:HairDyeWhite,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        Time:800.0,
+        OnGiveXP:Chemistry15_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+    recipe Make HairDyeColor
+    {
+        destroy HairDyeWhite,
+        DyeGrey/DyeYellow/DyeGreen/DyeRed/DyePink/DyeLightBrown/DyeOrange/DyeBlue/DyeBlack,
+
+        Result:HairDyeWhite,
+        RemoveResultItem:true,
+        Category:Chemistry,
+        SkillRequired:Chemistry=5,
+        OnCreate:PaintHair,
+        Time:300.0,
+        NearItem:Chemistry Workbench,
+    }
+
+    recipe Make BulbColor
+    {
+        LightBulb,
+        DyeCyan/DyeYellow/DyeGreen/DyeRed/DyeOrange/DyeMagenta/DyePink/DyeBlue/DyePurple,
+
+        Result:LightBulb,
+        RemoveResultItem:true,
+        Category:Chemistry,
+        SkillRequired:Chemistry=1,
+        OnCreate:PaintBulb,
+        Time:300.0,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Клей***/
+    recipe Make Glue
+    {
+		Plastic=2,
+        FlaskAlcohol,
+        Vinegar=2,
+        Result:Glue,
+        Category:Chemistry,
+        SkillRequired:Chemistry=4,
+        Time:200.0,
+        OnGiveXP:Chemistry12_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Клей для дерева***/
+    recipe Make Wood Glue
+    {
+		Plastic=2,
+        FlaskAlcohol,
+        Vinegar=3,
+        Result:Woodglue,
+        Category:Chemistry,
+        SkillRequired:Chemistry=4,
+        Time:200.0,
+        OnGiveXP:Chemistry12_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Бензин***/
+    recipe Make PetrolCan
+    {
+		FlaskAmmonia=2,
+        FlaskNitricAcid=2,
+        FlaskChloricAcid=2,
+        FlaskAlkali=1,
+        FlaskAlcohol=1,
+        Plastic=10,
+        Rubber=10,
+        EmptyPetrolCan,
+        Result:PetrolCan,
+        Category:Chemistry,
+        SkillRequired:Chemistry=7,
+        Time:900.0,
+        OnGiveXP:Chemistry24_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Изолента***/
+    recipe Make DuctTape
+    {
+		SheetPaper2=4,
+        Rubber=2,
+        Glue=5,
+        Result:DuctTape,
+        Category:Chemistry,
+        SkillRequired:Chemistry=4,
+        Time:200.0,
+        OnGiveXP:Chemistry12_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Отбеливатель***/
+    recipe Make Bleach
+    {
+		FlaskChloricAcid=2,
+        FlaskAlkali,
+        WaterBottleEmpty/BleachEmpty,
+        Result:Bleach,
+        Category:Chemistry,
+        SkillRequired:Chemistry=2,
+        Time:400.0,
+        OnGiveXP:Chemistry8_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+/***Брезент***/
+    recipe Make Tarp
+    {
+		RippedSheets=8,
+        SiliconOre,
+        FlaskNitricAcid,
+        Result:Tarp,
+        Category:Chemistry,
+        SkillRequired:Chemistry=1,
+        Time:600.0,
+        OnGiveXP:Chemistry5_OnGiveXP,
+        NearItem:Chemistry Workbench,
+    }
+
+}

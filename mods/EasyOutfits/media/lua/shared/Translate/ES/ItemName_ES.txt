@@ -1,3 +1,0 @@
-ItemName_ES = {
-	ItemName_EasyOutfits.OutfitTag = "Etiqueta de atuendo",
-}

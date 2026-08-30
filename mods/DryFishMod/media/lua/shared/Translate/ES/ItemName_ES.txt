@@ -1,4 +1,0 @@
-ItemName_ES = {
-    ItemName_DFM.PreppedFish = "Pescado procesado",
-    ItemName_DFM.DryFish = "Pescado seco",
-}

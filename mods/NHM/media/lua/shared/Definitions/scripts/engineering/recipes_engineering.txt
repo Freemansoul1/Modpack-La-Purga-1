@@ -1,0 +1,1501 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+recipe Make TattooNeedle
+{
+	Needle,
+	Plastic,
+	UnusableMetal,
+	BlowTorch=5,
+    keep WeldingMask,
+    Result:TattooNeedle,
+    Time:150.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    Sound:PartsCraft,
+}
+
+recipe Make Screwdriver
+{
+	Plastic,
+	UnusableMetal,
+	BlowTorch=5,
+    keep WeldingMask,
+    Result:Screwdriver,
+    Time:150.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    Sound:PartsCraft,
+}
+
+recipe Make NHGasMask
+{
+	Rubber=4,
+	Glass,
+	RippedSheets=2,
+    Result:Hat_Gasmask2,
+    Time:150.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    Sound:PartsCraft,
+    OnGiveXP:Engineer2_OnGiveXP,
+}
+
+recipe Make Handmade GasMask Filter
+{
+    UnusableMetal=2,
+    RippedSheets=2,
+    Coal,
+    Result:HandmadeGasMaskFilter,
+    Time:400.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    OnGiveXP:Engineer2_OnGiveXP,
+    Sound:PartsCraft,
+}
+
+recipe Make Regular GasMask Filter
+{
+    ScrapMetal,
+    Coal=2,
+    IngotTin,
+    BlowTorch=10,
+    keep WeldingMask,
+    Result:RegularGasMaskFilter,
+    Time:200.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    OnGiveXP:Engineer4_OnGiveXP,
+    SkillRequired:Engineering=2,
+    Sound:PartsCraft,
+}
+
+recipe Make Advanced GasMask Filter
+{
+    ScrapMetal,
+    Coal=4,
+    IngotIron,
+    BlowTorch=15,
+    keep WeldingMask,
+    Result:AdvancedGasMaskFilter,
+    Time:250.0,
+    Category:Engineer,
+    NearItem:Engineer Workbench,
+    OnGiveXP:Engineer6_OnGiveXP,
+    SkillRequired:Engineering=4,
+    Sound:PartsCraft,
+}
+
+recipe Make Wrench Knife
+{
+    Wrench,
+    DuctTape,
+    BlowTorch=10,
+    keep WeldingMask,
+    keep Screwdriver,
+    Result:HandmadeKnife,
+    Time:400.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding4_OnGiveXP,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+      SkillRequired:MetalWelding=1,
+}
+
+recipe Make Regular Knife
+{
+    ScrapMetal=3,
+    UnusableMetal=2,
+    IngotIron,
+    IngotBronze,
+    Screws=4,
+    DuctTape=2,
+    BlowTorch=10,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:RegularKnife,
+    Time:400.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+      SkillRequired:MetalWelding=3,
+}
+
+recipe Make Dagger
+{
+  Reinforcedwood = 1,
+  IngotSteel = 2,
+  ReadyThinLeather = 1,
+  Screws = 4,
+  BlowTorch = 10,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:Dagger,
+    Time:400.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+      SkillRequired:MetalWelding=3,
+      NeedToBeLearn:true,
+}
+
+recipe Make Handmade Sword
+{
+    ScrapMetal=2,
+    UnusableMetal=4,
+    BlowTorch=10,
+    Screws=2,
+    DuctTape=2,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:HandmadeMetalSword,
+    Time:500.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:Engineer10_OnGiveXP,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+}
+
+recipe Make Regular Sword
+{
+  Reinforcedwood = 1,
+  IngotSteel = 4,
+  ReadyThickLeather = 1,
+  Screws = 8,
+  BlowTorch = 15,
+  keep BallPeenHammer,
+  keep WeldingMask,
+  Result:RegularMetalSword,
+  Time:600.0,
+  Category:Welding,
+  NearItem:NHAnvil,
+  OnGiveXP:MetalWelding6_OnGiveXP,
+  AnimNode:BuildLow,
+  Prop1:Hammer,
+  Sound:Anvil,
+  SkillRequired:MetalWelding=3,
+  NeedToBeLearn:true,
+}
+
+recipe Make Advanced Sword
+{
+  Reinforcedwood = 1,
+  IngotSteel = 5,
+  ReadyThickLeather = 1,
+  Screws = 8,
+  BlowTorch = 15,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:AdvancedMetalSword,
+    Time:700.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    NearItem:NHAnvil,
+      AnimNode:BuildLow,
+      Prop1:Hammer,
+      Sound:Anvil,
+    SkillRequired:MetalWelding=6,
+      NeedToBeLearn:true,
+}
+
+recipe Make Handmade Halberd
+{
+    ScrapMetal=3,
+    UnusableMetal=2,
+    BlowTorch=10,
+    Screws=4,
+    DuctTape=1,
+    Log,
+    keep Saw/GardenSaw/NHM.StoneSaw,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:HandmadeHelbard,
+    OnGiveXP:Engineer4_OnGiveXP,
+    Time:500.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+}
+
+recipe Make Regular Halberd
+{
+  Reinforcedwood = 4,
+  IngotSteel = 1,
+  ReadyThickLeather = 2,
+  Screws = 8,
+  BlowTorch = 15,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:RegularHelbard,
+    Time:600.0,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+      AnimNode         : BuildLow,
+      Prop1         : Hammer,
+    SkillRequired:MetalWelding=2,
+      NeedToBeLearn:true,
+}
+
+recipe Make Advanced Halberd
+{
+  Reinforcedwood = 4,
+  IngotSteel = 3,
+  ReadyThickLeather = 2,
+  Screws = 8,
+  BlowTorch = 25,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:AdvancedHelbard,
+    Time:700.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+        AnimNode         : BuildLow,
+        Prop1         : Hammer,
+    SkillRequired:MetalWelding=4,
+      NeedToBeLearn:true,
+}
+
+recipe Make Handmade Mace
+{
+    ScrapMetal=4,
+    UnusableMetal=2,
+    BlowTorch=10,
+    Screws=4,
+    DuctTape,
+    Log,
+    keep Saw/GardenSaw/NHM.StoneSaw,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:HandmadeMace,
+    OnGiveXP:MetalWelding4_OnGiveXP,
+    Time:500.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:MetalWelding=1,
+}
+
+recipe Make Advanced Mace
+{
+  Reinforcedwood = 1,
+  IngotSteel = 2,
+  ReadyThinLeather = 3,
+  Screws = 8,
+  IngotBronze = 1,
+  BlowTorch = 25,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:AdvancedMace,
+    Time:700.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding8_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+        AnimNode:BuildLow,
+        Prop1:Hammer,
+    SkillRequired:MetalWelding=5,
+      NeedToBeLearn:true,
+}
+
+recipe Make Handmade Big Hammer
+{
+    ScrapMetal=2,
+    Stone=4,
+    UnusableMetal=2,
+    BlowTorch=10,
+    Screws=4,
+    DuctTape,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:HandmadeBigHammer,
+    OnGiveXP:Engineer4_OnGiveXP,
+    Time:500.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Regular Big Hammer
+{
+  Reinforcedwood = 2,
+  IngotSteel = 6,
+  ReadyThickLeather = 2,
+  Screws = 8,
+  BlowTorch = 20,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:RegularBigHammer,
+    Time:600.0,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+      AnimNode:BuildLow,
+      Prop1:Hammer,
+    SkillRequired:MetalWelding=4,
+}
+
+recipe Make Pipe Sword
+{
+    ScrapMetal=6,
+    UnusableMetal=5,
+    BlowTorch=20,
+    Screws=6,
+    DuctTape=3,
+    IngotIron=2,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:PipeSwordBlade,
+    Time:700.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+        AnimNode         : BuildLow,
+        Prop1         : Hammer,
+    SkillRequired:MetalWelding=4,
+}
+
+recipe Make Regular Axe
+{
+    ScrapMetal=3,
+    UnusableMetal=5,
+    BlowTorch=10,
+    Screws=6,
+    DuctTape=2,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:RegularAxe,
+    Time:500.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Advanced Axe
+{
+  Reinforcedwood = 3,
+  IngotSteel = 3,
+  ReadyThickLeather = 3,
+  Screws = 8,
+  BlowTorch = 20,
+  keep BallPeenHammer,
+  keep WeldingMask,
+    Result:AdvancedAxe,
+    Time:500.0,
+    Category:Welding,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:MetalWelding=6,
+    NeedToBeLearn:true,
+}
+
+item UniversalMold
+{
+  DisplayName = UniversalMold,
+  Type	=	Drainable,
+  UseWhileEquipped	= FALSE,
+  UseDelta		= 0.25,
+  Icon = BulletMold,
+  Weight = 1,
+}
+
+recipe Make Universal Mold
+{
+  IngotIron,
+  keep BallPeenHammer,
+  BlowTorch=10,
+  keep WeldingMask,
+  keep Tongs,
+  Result:UniversalMold,
+  Time:600.0,
+    Category:Engineer,
+    OnGiveXP:Engineer2_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:BuildLow,
+      Prop1:Hammer,
+      Prop2:Source=1,
+    SkillRequired:Engineering=1;MetalWelding=1,
+}
+
+item UniversalBullets
+{
+  Type = Normal,
+  DisplayName = UniversalBullets,
+  Icon = UniversalBullets,
+  Weight = 0.05,
+}
+
+recipe Make Universal Bullets
+{
+  IngotLead,
+  UniversalMold,
+  keep BallPeenHammer,
+  BlowTorch=10,
+  keep WeldingMask,
+  keep Tongs,
+  Result:UniversalBullets=25,
+  Time:600.0,
+    Category:Engineer,
+    OnGiveXP:Engineer2_OnGiveXP,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    AnimNode:BuildLow,
+      Prop1:Hammer,
+      Prop2:Source=1,
+    SkillRequired:Engineering=1;MetalWelding=1,
+}
+
+recipe Make Pistol Bullets
+{
+    UniversalBullets=15,
+    BulletCasing=15,
+    Powder=4,
+    keep Tongs,
+    OnGiveXP:Engineer5_OnGiveXP,
+    Result:Bullets9mm=3,
+    Time:600.0,
+    Category:Engineer,
+
+    Sound:WeaponCraft,
+    NearItem:Blast Furnace,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=1;MetalWelding=1,
+}
+
+recipe Make Trash Bomb
+{
+    ChemKit,
+    UnusableMetal=5,
+    Nails=10,
+    Powder=2,
+    DuctTape,
+    BeerCanEmpty/TinCanEmpty/PopEmpty/Pop2Empty/Pop3Empty/LeadPipe/MetalPipe/WaterBottleEmpty,
+
+    Result:TrashBomb,
+    Time:400.0,
+    Category:Engineer,
+    OnGiveXP:Engineer5_OnGiveXP,
+
+    Sound:WeaponCraft,
+    NearItem:Chemistry Workbench,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=5;Chemistry=4,
+}
+
+recipe Make 308 Bullets
+{
+    UniversalBullets=25,
+    BulletCasing=15,
+    Powder=6,
+    keep Tongs,
+
+    Result:308Bullets=3,
+    Time:600.0,
+    Category:Engineer,
+    OnGiveXP:Engineer5_OnGiveXP,
+
+    Sound:WeaponCraft,
+    NearItem:Blast Furnace,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=3;MetalWelding=1,
+}
+
+recipe Make 556 Bullets
+{
+    UniversalBullets=20,
+    BulletCasing=15,
+    Powder=6,
+    keep Tongs,
+
+    Result:556Bullets=3,
+    Time:600.0,
+    Category:Engineer,
+    OnGiveXP:Engineer5_OnGiveXP,
+    Sound:WeaponCraft,
+    NearItem:Blast Furnace,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=5;MetalWelding=1,
+}
+
+recipe Make 223 Bullets
+{
+    UniversalBullets=22,
+    BulletCasing=15,
+    Powder=5,
+    keep Tongs,
+
+    Result:223Bullets=3,
+    Time:600.0,
+    Category:Engineer,
+    OnGiveXP:Engineer5_OnGiveXP,
+    Sound:WeaponCraft,
+    NearItem:Blast Furnace,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=5;MetalWelding=1,
+}
+
+recipe Make Shotgun Shells
+{
+    UniversalBullets=25,
+    BulletCasing=18,
+    Powder=6,
+    keep Tongs,
+    Result:ShotgunShells=3,
+    Time:600.0,
+    OnGiveXP:Engineer5_OnGiveXP,
+    Category:Engineer,
+
+    Sound:WeaponCraft,
+    NearItem:Blast Furnace,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=1;MetalWelding=1,
+}
+
+recipe Make Composite Bow
+{
+    Reinforcedwood=3,
+    Screws=4,
+    Rope,
+    keep Screwdriver,
+    keep Saw/GardenSaw/NHM.StoneSaw,
+    keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete/HandmadeKnife,
+
+    Result:Bow,
+    OnGiveXP:Engineer6_OnGiveXP,
+    Time:500.0,
+    Category:Engineer,
+    Sound:Sawing,
+    NearItem:Engineer Workbench,
+    AnimNode:SawLog,
+    Prop1:Source=2,
+    Prop2:Log,
+    SkillRequired:Engineering=1;Woodwork=1,
+}
+
+recipe Make Recursive Bow
+{
+    Reinforcedwood=3,
+    IngotIron=1,
+    IngotNickel=1,
+    Screws=6,
+    Rope,
+    BlowTorch=20,
+    keep WeldingMask,
+    keep Screwdriver,
+    keep Saw/GardenSaw/NHM.StoneSaw,
+    keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete/HandmadeKnife,
+
+    Result:RBow,
+    OnGiveXP:Engineer8_OnGiveXP,
+    Time:600.0,
+    Category:Engineer,
+    Sound:Sawing,
+    NearItem:Engineer Workbench,
+    AnimNode:SawLog,
+    Prop1:Source=2,
+    Prop2:Log,
+    SkillRequired:Engineering=4,
+}
+
+recipe Make Crossbow
+{
+    Plank=2,
+    Reinforcedwood=4,
+    IngotIron=3,
+    Screws=8,
+    Rope,
+    BlowTorch=2,
+    keep WeldingMask,
+    keep Screwdriver,
+    keep Saw/GardenSaw/NHM.StoneSaw,
+    keep KitchenKnife/HuntingKnife/MeatCleaver/FlintKnife/Machete/HandmadeKnife,
+
+    Result:HandmadeCrossbow,
+    OnGiveXP:Engineer10_OnGiveXP,
+    Time:600.0,
+    Category:Engineer,
+    Sound:WeaponCraft,
+    NearItem:Engineer Workbench,
+    AnimNode:Disassemble,
+      Prop1:Screwdriver,
+      Prop2:Source=1,
+    SkillRequired:Engineering=5,
+}
+
+/******************************Shield******************************/
+
+recipe Make Shield1
+{
+    ScrapMetal=4,
+    UnusableMetal=4,
+    SmallSheetMetal=4,
+    Screws=4,
+    DuctTape=2,
+    BlowTorch=10,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:Shield1,
+    Time:400.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+	AnimNode:BuildLow,
+	Prop1:Hammer,
+	Sound:Anvil,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Make Shield2
+{
+    IngotSteel=4,
+    ScrapMetal=8,
+    Screws=12,
+    DuctTape=4,
+    BlowTorch=10,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:Shield2,
+    Time:400.0,
+    Category:Welding,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding10_OnGiveXP,
+	AnimNode:BuildLow,
+	Prop1:Hammer,
+	Sound:Anvil,
+    SkillRequired:MetalWelding=6,
+    NeedToBeLearn:true,
+}
+
+recipe Fix Shield1
+{
+    destroy Shield1,
+    SmallSheetMetal=2,
+    Screws=2,
+    DuctTape=1,
+    BlowTorch=10,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:Shield1,
+    NoBrokenItems:false,
+    Time:400.0,
+    Category:Fixing,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+	AnimNode:BuildLow,
+	Prop1:Hammer,
+	Sound:Anvil,
+    SkillRequired:MetalWelding=2,
+}
+
+recipe Fix Shield2
+{
+
+	destroy Shield2/Shield2Shark/Shield2LGN,
+    IngotSteel=2,
+    ScrapMetal=2,
+    Screws=3,
+    DuctTape=1,
+    BlowTorch=10,
+    keep BallPeenHammer,
+    keep WeldingMask,
+    keep Screwdriver,
+
+    Result:Shield2,
+    NoBrokenItems:false,
+    Time:400.0,
+    Category:Fixing,
+    Sound:Anvil,
+    NearItem:NHAnvil,
+    OnGiveXP:MetalWelding6_OnGiveXP,
+	AnimNode:BuildLow,
+	Prop1:Hammer,
+	Sound:Anvil,
+    SkillRequired:MetalWelding=6,
+}
+
+recipe Paint Shield2 Shark
+{
+	destroy Shield2,
+    PaintBlack=1,
+
+    keep Paintbrush,
+
+    Result:Shield2Shark,
+    Time:400.0,
+    Category:Faction,
+	AnimNode:Disassemble,
+}
+
+recipe Paint Shield2 LGN
+{
+	destroy Shield2,
+    PaintBlack=1,
+
+    keep Paintbrush,
+
+    Result:Shield2LGN,
+    Time:400.0,
+    Category:Faction,
+	AnimNode:Disassemble,
+}
+
+recipe Wash Shield2
+{
+	destroy Shield2LGN/Shield2Shark,
+    Soap/CleaningLiquid,
+
+    keep DishCloth,
+
+    Result:Shield2,
+    Time:400.0,
+    Category:Faction,
+	AnimNode:Disassemble,
+}
+
+/******************************Rifles******************************/
+
+    recipe Make ForearmMOS1
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=3,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:ForearmMOS1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make ForearmMOS2
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=3,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:ForearmMOS2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Forearm700M1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=3,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:Forearm700M1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make Forearm700M2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=3,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:Forearm700M2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=7,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardM1A1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardM1A1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardM1A2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardM1A2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockM1A1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+        Result:StockM1A1,
+		
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockM1A2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockM1A2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardSVD1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardSVD1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardSVD2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardSVD2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockSVD1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockSVD1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockSVD2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockSVD2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=8,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+	
+/******************************AssaultRifles******************************/
+
+    recipe Make HandguardAR1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardAR1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardAR2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardAR2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockAR1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockAR1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockAR2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockAR2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardAK1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardAK1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardAK2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardAK2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockAK1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockAK1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockAK2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockAK2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardMK1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardMK1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardMK2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardMK2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockMK1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockMK1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockMK2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockMK2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardDSA1
+    {
+        UnusableMetal=10,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardDSA1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make HandguardDSA2
+    {
+        Reinforcedwood=3,
+        MetalPipe=1,
+        ScrapMetal=10,
+        IngotSteel=1,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:HandguardDSA2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockDSA1
+    {
+        UnusableMetal=10,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockDSA1,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Make StockDSA2
+    {
+        Reinforcedwood=2,
+        ScrapMetal=10,
+        IngotSteel=2,
+        Screws=10,
+        DuctTape=2,
+        BlowTorch=10,
+        keep Screwdriver,
+        keep WeldingMask,
+		
+        Result:StockDSA2,
+        Time:600.0,
+        Category:Engineer,
+        NearItem:Engineer Workbench,
+        Sound:PartsCraft,
+        OnGiveXP:Engineer25_OnGiveXP,
+        SkillRequired:Engineering=9,
+        AnimNode:Disassemble,
+        Prop1:Screwdriver,
+        Prop2:Source=1,
+    }
+
+    recipe Fix AnyFirearm
+    {
+        keep AssaultRifleAR/AssaultRifleAK/AssaultRifleMK/AssaultRifleDSA/BRifle700M/BRifleMOS/SRifleSVD/SRifleM1A/PistolB1/PistolB2/Revolver1/Revolver2/ShotgunB1/ShotgunB2,
+        RepairKit=1,
+        Result:RepairKit,
+        RemoveResultItem:true,
+        NoBrokenItems:false,
+        Time:500.0,
+        Category:Fixing,
+        SkillRequired:Engineering=5,
+        AnimNode:Disassemble,
+        OnCreate:FixAnyFirearm,
+    }
+}

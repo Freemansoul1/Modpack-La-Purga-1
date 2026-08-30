@@ -1,3 +1,0 @@
-ContextMenu_RU = {
-    ContextMenu_DryFishMod_AddDrier = "Добавить сушилку на костер",
-}

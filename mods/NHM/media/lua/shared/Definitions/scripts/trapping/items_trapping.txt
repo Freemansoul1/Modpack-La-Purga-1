@@ -1,0 +1,331 @@
+module NHM
+{
+	imports
+	{
+		Base
+	}
+
+item WolfFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	WolfFootprints,
+		Icon	=	WolfFootprints,
+		WorldStaticModel = WolfFootprints,
+	}
+
+item BearFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	BearFootprints,
+		Icon	=	BearFootprints,
+		WorldStaticModel = BearFootprints,
+	}
+
+item BoarFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	BoarFootprints,
+		Icon	=	BoarFootprints,
+		WorldStaticModel = BoarFootprints,
+	}
+
+item ChickenFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	ChickenFootprints,
+		Icon	=	ChickenFootprints,
+		WorldStaticModel = ChickenFootprints,
+	}
+
+item CowFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	CowFootprints,
+		Icon	=	CowFootprints,
+		WorldStaticModel = CowFootprints,
+	}
+
+item CoyoteFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	CoyoteFootprints,
+		Icon	=	CoyoteFootprints,
+		WorldStaticModel = CoyoteFootprints,
+	}
+
+item CrowFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	CrowFootprints,
+		Icon	=	CrowFootprints,
+		WorldStaticModel = CrowFootprints,
+	}
+
+item YDeerFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	YDeerFootprints,
+		Icon	=	DeerFootprints,
+		WorldStaticModel = YDeerFootprints,
+	}
+
+item ODeerFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	ODeerFootprints,
+		Icon	=	DeerFootprints,
+		WorldStaticModel = ODeerFootprints,
+	}
+
+item FoxFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	FoxFootprints,
+		Icon	=	FoxFootprints,
+		WorldStaticModel = FoxFootprints,
+	}
+
+item GoatFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	GoatFootprints,
+		Icon	=	GoatFootprints,
+		WorldStaticModel = GoatFootprints,
+	}
+
+item HareFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	HareFootprints,
+		Icon	=	HareFootprints,
+		WorldStaticModel = HareFootprints,
+	}
+
+item MooseFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	MooseFootprints,
+		Icon	=	MooseFootprints,
+		WorldStaticModel = MooseFootprints,
+	}
+
+item DogFootprints
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		DisplayName	=	DogFootprints,
+		Icon	=	DogFootprints,
+		WorldStaticModel = DogFootprints,
+	}
+
+item WolfCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	10,
+		Type	=	Normal,
+		DisplayName	=	WolfCarcass,
+		Icon	=	WolfCarcass,
+		WorldStaticModel = WolfCarcass,
+	}
+
+item BoarCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	12,
+		Type	=	Normal,
+		DisplayName	=	BoarCarcass,
+		Icon	=	BoarCarcass,
+		WorldStaticModel = BoarCarcass,
+	}
+
+item BearCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	15,
+		Type	=	Normal,
+		DisplayName	=	BearCarcass,
+		Icon	=	BearCarcass,
+		WorldStaticModel = BearCarcass,
+	}
+
+item ChickenCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	ChickenCarcass,
+		Icon	=	ChickenCarcass,
+		WorldStaticModel = ChickenCarcass,
+	}
+
+item CowCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	16,
+		Type	=	Normal,
+		DisplayName	=	CowCarcass,
+		Icon	=	CowCarcass,
+		WorldStaticModel = CowCarcass,
+	}
+
+item CoyoteCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	11,
+		Type	=	Normal,
+		DisplayName	=	CoyoteCarcass,
+		Icon	=	CoyoteCarcass,
+		WorldStaticModel = CoyoteCarcass,
+	}
+
+item CrowCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	CrowCarcass,
+		Icon	=	CrowCarcass,
+		WorldStaticModel = CrowCarcass,
+	}
+
+item YDeerCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	15,
+		Type	=	Normal,
+		DisplayName	=	YDeerCarcass,
+		Icon	=	DeerCarcass,
+		WorldStaticModel = YDeerCarcass,
+	}
+
+item ODeerCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	18,
+		Type	=	Normal,
+		DisplayName	=	ODeerCarcass,
+		Icon	=	DeerCarcass,
+		WorldStaticModel = ODeerCarcass,
+	}
+
+item FoxCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	8,
+		Type	=	Normal,
+		DisplayName	=	FoxCarcass,
+		Icon	=	FoxCarcass,
+		WorldStaticModel = FoxCarcass,
+	}
+
+item GoatCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	10,
+		Type	=	Normal,
+		DisplayName	=	GoatCarcass,
+		Icon	=	GoatCarcass,
+		WorldStaticModel = GoatCarcass,
+	}
+
+item HareCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	HareCarcass,
+		Icon	=	HareCarcass,
+		WorldStaticModel = HareCarcass,
+	}
+
+item MooseCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	21,
+		Type	=	Normal,
+		DisplayName	=	MooseCarcass,
+		Icon	=	MooseCarcass,
+		WorldStaticModel = MooseCarcass,
+	}
+
+item DogCarcass
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	9,
+		Type	=	Normal,
+		DisplayName	=	DogCarcass,
+		Icon	=	DogCarcass,
+		WorldStaticModel = DogCarcass,
+	}
+
+item Bone
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Bone,
+		Icon	=	Bone,
+		WorldStaticModel = Bone,
+	}
+
+item Feather
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Feather,
+		Icon	=	Feather,
+		WorldStaticModel = Feather,
+	}
+
+	item Fat
+	{
+	    DisplayCategory = Trapping,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Fat,
+		Icon	=	Fat,
+		WorldStaticModel = Fat,
+	}
+}
